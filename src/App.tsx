@@ -5,6 +5,10 @@ import IstqbFormPage from './pages/IstqbFormPage';
 import UdemyPage from './pages/UdemyPage';
 import FragenPage from './pages/FragenPage';
 import DataManagementPage from './pages/DataManagementPage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import IstqbQuizPage from './pages/IstqbQuizPage';
+import UserStatsPage from './pages/UserStatsPage';
 import './App.css'
 
 function App() {
@@ -14,9 +18,15 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/user/stats" element={<UserStatsPage />} />
           <Route path="/quiz/:chapterId" element={<QuizPage />} />
           <Route path="/docs/istqb/:chapterId" element={<QuizPage />} />
           <Route path="/csm/istqb-form" element={<IstqbFormPage />} />
+          <Route path="/csm/istqb-quiz" element={<IstqbQuizPage />} />
+          <Route path="/csm/fragen-quiz" element={<IstqbQuizPage quizType="fragen" title="Fragen Soruları" />} />
+          <Route path="/csm/udemy-quiz" element={<IstqbQuizPage quizType="udemy" title="Udemy Soruları" />} />
           <Route path="/docs/csm/udemy" element={<UdemyPage />} />
           <Route path="/docs/csm/fragen" element={<FragenPage />} />
           <Route path="/data-management" element={<DataManagementPage />} />

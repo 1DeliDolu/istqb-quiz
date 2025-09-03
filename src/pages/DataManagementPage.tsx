@@ -80,7 +80,7 @@ const DataManagementPage: React.FC = () => {
                     </div>
                     <button
                         onClick={checkBackendStatus}
-                        className="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700"
+                        className="px-3 py-1 bg-blue-600 text-red text-sm rounded hover:bg-blue-700"
                     >
                         Yenile
                     </button>
@@ -117,13 +117,13 @@ const DataManagementPage: React.FC = () => {
                                         <div className="flex gap-2">
                                             <button
                                                 onClick={() => handleExportChapter(chapter.id)}
-                                                className="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700"
+                                                className="px-3 py-1 bg-blue-600 text-red text-sm rounded hover:bg-blue-700"
                                             >
                                                 JSON Göster
                                             </button>
                                             <button
                                                 onClick={() => handleClearChapter(chapter.id)}
-                                                className="px-3 py-1 bg-red-600 text-white text-sm rounded hover:bg-red-700"
+                                                className="px-3 py-1 bg-red-600 text-red text-sm rounded hover:bg-red-700"
                                             >
                                                 Temizle
                                             </button>

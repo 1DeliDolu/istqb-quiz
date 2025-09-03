@@ -1,85 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { DataService } from '@/services/dataService';
-
-// Kurs yapısını tanımlıyorum
-interface CourseItem {
-    id: string;
-    title: string;
-    duration?: string;
-    questions?: string;
-}
-
-interface CourseChapter {
-    title: string;
-    items: CourseItem[];
-}
-
-const courseStructure = {
-    "1": {
-        title: "Einführung",
-        items: [
-            { id: "1.1", title: "Über den Ausbilder", duration: "01:21" },
-            { id: "1.2", title: "ISTQB-Prüfung - Einführung und Ablauf", duration: "02:25" }
-        ]
-    },
-    "2": {
-        title: "Testgrundlagen",
-        items: [
-            { id: "2.1", title: "Quiz 1", questions: "23 soru" },
-            { id: "2.2", title: "Quiz 2", questions: "20 soru" },
-            { id: "2.3", title: "Quiz 3", questions: "20 soru" }
-        ]
-    },
-    "3": {
-        title: "Testen während des SDLC",
-        items: [
-            { id: "3.1", title: "Quiz 4", questions: "20 soru" },
-            { id: "3.2", title: "Quiz 5", questions: "20 soru" },
-            { id: "3.3", title: "Quiz 6", questions: "20 soru" }
-        ]
-    },
-    "4": {
-        title: "Statisches Testen",
-        items: [
-            { id: "4.1", title: "Quiz 7", questions: "20 soru" },
-            { id: "4.2", title: "Quiz 8", questions: "20 soru" },
-            { id: "4.3", title: "Quiz 9", questions: "10 soru" }
-        ]
-    },
-    "5": {
-        title: "Testanalyse und Testentwurf",
-        items: [
-            { id: "5.1", title: "Quiz 10", questions: "20 soru" },
-            { id: "5.2", title: "Quiz 11", questions: "20 soru" },
-            { id: "5.3", title: "Quiz 12", questions: "20 soru" },
-            { id: "5.4", title: "Quiz 13", questions: "10 soru" }
-        ]
-    },
-    "6": {
-        title: "Verwaltung der Testaktivitäten",
-        items: [
-            { id: "6.1", title: "Quiz 14", questions: "20 soru" },
-            { id: "6.2", title: "Quiz 15", questions: "20 soru" },
-            { id: "6.3", title: "Quiz 16", questions: "20 soru" },
-            { id: "6.4", title: "Quiz 17", questions: "10 soru" }
-        ]
-    },
-    "7": {
-        title: "Testwerkzeuge",
-        items: [
-            { id: "7.1", title: "Quiz 18", questions: "20 soru" },
-            { id: "7.2", title: "Quiz 19", questions: "20 soru" }
-        ]
-    },
-    "8": {
-        title: "Komplette Probeklausuren",
-        items: [
-            { id: "8.1", title: "Beispielprüfung 1", questions: "40 soru" },
-            { id: "8.2", title: "Beispielprüfung 2", questions: "40 soru" },
-            { id: "8.3", title: "Beispielprüfung 3", questions: "60 soru" }
-        ]
-    }
-};
+import { udemyChapters } from '@/constants/udemyChapters';
 
 const UdemyPage: React.FC = () => {
     const [chapter, setChapter] = useState('');
@@ -118,8 +39,7 @@ const UdemyPage: React.FC = () => {
             return;
         }
 
-        const selectedChapterInfo = courseStructure[chapter as keyof typeof courseStructure];
-        const selectedSubChapterInfo = selectedChapterInfo?.items.find(item => item.id === subChapter);
+        const selectedChapterInfo = udemyChapters[chapter as keyof typeof udemyChapters];
 
         const newQuestion = {
             id: Date.now(),
@@ -127,24 +47,24 @@ const UdemyPage: React.FC = () => {
             options: options.map(opt => opt.trim()),
             correctAnswer: correctAnswer.trim(),
             explanation: explanation.trim(),
-            subChapter: selectedSubChapterInfo?.title,
+            subChapter: subChapter,
         };
 
         try {
-            // Udemy soruları için özel bir chapter prefix kullan
-            const success = await DataService.addQuestion(`udemy_${chapter}`, newQuestion);
+            // Udemy soruları için chapter ID'sini direkt kullan
+            const success = await DataService.addQuestion(chapter, newQuestion);
 
             if (success) {
                 console.log('✅ Udemy sorusu başarıyla kaydedildi:', newQuestion);
-                alert(`Soru başarıyla Udemy ${chapter}. bölüme eklendi!\n\nBölüm: ${selectedChapterInfo?.title}\nAlt Bölüm: ${selectedSubChapterInfo?.title}`);
+                alert(`Soru başarıyla kaydedildi!\n\nBölüm: ${selectedChapterInfo?.title}\nAlt Bölüm: ${subChapter}`);
 
                 // Formu temizle
+                setChapter('');
+                setSubChapter('');
                 setQuestion('');
                 setOptions(['', '', '', '']);
                 setCorrectAnswer('');
                 setExplanation('');
-                setChapter('');
-                setSubChapter('');
             } else {
                 alert('Soru kaydedilirken bir hata oluştu!');
             }
@@ -154,7 +74,7 @@ const UdemyPage: React.FC = () => {
         }
     };
 
-    const availableSubChapters = chapter ? courseStructure[chapter as keyof typeof courseStructure]?.items || [] : [];
+    const availableSubChapters = chapter ? udemyChapters[chapter as keyof typeof udemyChapters]?.subChapters || [] : [];
 
     return (
         <div className="container mx-auto p-8 max-w-4xl">
@@ -173,9 +93,9 @@ const UdemyPage: React.FC = () => {
                             required
                         >
                             <option value="">Ana bölüm seçin...</option>
-                            {Object.entries(courseStructure).map(([key, chapterData]) => (
+                            {Object.entries(udemyChapters).map(([key, chapterData]) => (
                                 <option key={key} value={key}>
-                                    {key}. {chapterData.title}
+                                    {chapterData.title}
                                 </option>
                             ))}
                         </select>
@@ -194,9 +114,9 @@ const UdemyPage: React.FC = () => {
                             required
                         >
                             <option value="">Alt bölüm seçin...</option>
-                            {availableSubChapters.map((item) => (
-                                <option key={item.id} value={item.id}>
-                                    {item.title}
+                            {availableSubChapters.map((subChap) => (
+                                <option key={subChap} value={subChap}>
+                                    {subChap}
                                 </option>
                             ))}
                         </select>
@@ -277,7 +197,7 @@ const UdemyPage: React.FC = () => {
                 <div className="flex justify-center">
                     <button
                         type="submit"
-                        className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors duration-200 font-medium"
+                        className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
                     >
                         Soruyu Kaydet
                     </button>

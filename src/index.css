@@ -184,3 +184,20 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
 }
+
+/* Navigation Menu Hover Styles */
+@layer components {
+  .navigation-menu-trigger:hover + .navigation-menu-content,
+  .navigation-menu-content:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Ensure immediate hover response */
+  [data-slot="navigation-menu-item"]:hover
+    > [data-slot="navigation-menu-trigger"] {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
+}

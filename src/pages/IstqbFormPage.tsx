@@ -180,7 +180,7 @@ const IstqbFormPage: React.FC = () => {
                 <div className="flex justify-center">
                     <button
                         type="submit"
-                        className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors duration-200 font-medium"
+                        className="px-8 py-3 bg-purple-600 text-red rounded-lg hover:bg-purple-700 transition-colors duration-200 font-medium"
                     >
                         Soruyu Kaydet
                     </button>

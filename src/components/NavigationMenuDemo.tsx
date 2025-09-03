@@ -2,6 +2,8 @@
 
 import * as React from "react"
 import { istqbChapters } from "@/constants/istqbChapters"
+import { udemyChapters } from "@/constants/udemyChapters"
+import { fragenChapters } from "@/constants/fragenChapters"
 
 import {
     NavigationMenu,
@@ -14,62 +16,26 @@ import {
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 
-const components: { title: string; href: string; description: string }[] = [
-    {
-        title: "Alert Dialog",
-        href: "/docs/primitives/alert-dialog",
-        description:
-            "A modal dialog that interrupts the user with important content and expects a response.",
-    },
-    {
-        title: "Hover Card",
-        href: "/docs/primitives/hover-card",
-        description:
-            "For sighted users to preview content available behind a link.",
-    },
-    {
-        title: "Progress",
-        href: "/docs/primitives/progress",
-        description:
-            "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    },
-    {
-        title: "Scroll-area",
-        href: "/docs/primitives/scroll-area",
-        description: "Visually or semantically separates content.",
-    },
-    {
-        title: "Tabs",
-        href: "/docs/primitives/tabs",
-        description:
-            "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-        title: "Tooltip",
-        href: "/docs/primitives/tooltip",
-        description:
-            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-    },
-]
-
 export function NavigationMenuDemo() {
     const [selectedChapter, setSelectedChapter] = React.useState<string | null>(null);
+    const [selectedUdemyChapter, setSelectedUdemyChapter] = React.useState<string | null>(null);
+    const [selectedFragenChapter, setSelectedFragenChapter] = React.useState<string | null>(null);
 
     return (
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>ISTQB</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <div className="grid w-[800px] gap-3 p-4">
-                            <div className="grid grid-cols-2 gap-4">
+                        <div className="w-[800px] gap-3 p-4 overflow-visible min-h-96">
+                            <div className="grid grid-cols-2 gap-4 overflow-visible h-full" onMouseLeave={() => setSelectedChapter(null)}>
                                 <div>
-                                    <h3 className="mb-2 text-sm font-semibold">Ana Bölümler</h3>
+                                    <h3 className="mb-2 text-sm font-semibold text-purple-600">Ana Bölümler</h3>
                                     <ul className="space-y-1">
                                         {Object.entries(istqbChapters).map(([key, chapter]) => (
                                             <li key={key}>
                                                 <button
-                                                    onClick={() => setSelectedChapter(key)}
+                                                    onMouseEnter={() => setSelectedChapter(key)}
                                                     className={`block w-full text-left p-2 text-sm rounded hover:bg-accent hover:text-accent-foreground ${selectedChapter === key ? 'bg-accent text-accent-foreground' : ''
                                                         }`}
                                                 >
@@ -80,20 +46,18 @@ export function NavigationMenuDemo() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h3 className="mb-2 text-sm font-semibold">Alt Bölümler</h3>
+                                    <h3 className="mb-2 text-sm font-semibold text-purple-600">Alt Bölümler</h3>
                                     {selectedChapter && istqbChapters[selectedChapter as keyof typeof istqbChapters] ? (
-                                        <div className="max-h-80 overflow-y-auto">
+                                        <div className="h-full max-h-96 overflow-y-auto">
                                             <ul className="space-y-1">
                                                 {istqbChapters[selectedChapter as keyof typeof istqbChapters].subChapters.map((subChapter, index) => (
                                                     <li key={index}>
-                                                        <NavigationMenuLink asChild>
-                                                            <a
-                                                                href={`/quiz/${selectedChapter}?sub=${index}`}
-                                                                className="block p-2 text-sm rounded hover:bg-accent hover:text-accent-foreground"
-                                                            >
-                                                                {subChapter}
-                                                            </a>
-                                                        </NavigationMenuLink>
+                                                        <a
+                                                            href={`/quiz/${selectedChapter}?sub=${index}`}
+                                                            className="block p-2 text-sm rounded hover:bg-accent hover:text-accent-foreground text-left"
+                                                        >
+                                                            {subChapter}
+                                                        </a>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -107,22 +71,151 @@ export function NavigationMenuDemo() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
+                    <NavigationMenuTrigger>Udemy</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                        <div className="w-[800px] gap-3 p-4 overflow-visible min-h-96">
+                            <div className="grid grid-cols-2 gap-4 overflow-visible h-full" onMouseLeave={() => setSelectedUdemyChapter(null)}>
+                                <div>
+                                    <h3 className="mb-2 text-sm font-semibold text-blue-600">Udemy Kurs Bölümleri</h3>
+                                    <ul className="space-y-1">
+                                        {Object.entries(udemyChapters).map(([key, chapter]) => (
+                                            <li key={key}>
+                                                <button
+                                                    onMouseEnter={() => setSelectedUdemyChapter(key)}
+                                                    className={`block w-full text-left p-2 text-sm rounded hover:bg-accent hover:text-accent-foreground ${selectedUdemyChapter === key ? 'bg-accent text-accent-foreground' : ''
+                                                        }`}
+                                                >
+                                                    {chapter.title}
+                                                </button>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 className="mb-2 text-sm font-semibold text-blue-600">Quizler</h3>
+                                    {selectedUdemyChapter && udemyChapters[selectedUdemyChapter as keyof typeof udemyChapters] ? (
+                                        <div className="h-full max-h-96 overflow-y-auto">
+                                            <ul className="space-y-1">
+                                                {udemyChapters[selectedUdemyChapter as keyof typeof udemyChapters].subChapters.map((subChapter, index) => (
+                                                    <li key={index}>
+                                                        <a
+                                                            href={`/quiz/${selectedUdemyChapter}?sub=${index}`}
+                                                            className="block p-2 text-sm rounded hover:bg-accent hover:text-accent-foreground text-left"
+                                                        >
+                                                            {subChapter}
+                                                        </a>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    ) : (
+                                        <p className="text-sm text-muted-foreground">Bir kurs bölümü seçin</p>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <NavigationMenuTrigger>Fragen</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                        <div className="w-[800px] gap-3 p-4 overflow-visible min-h-96">
+                            <div className="grid grid-cols-2 gap-4 overflow-visible h-full" onMouseLeave={() => setSelectedFragenChapter(null)}>
+                                <div>
+                                    <h3 className="mb-2 text-sm font-semibold text-green-600">Genel Soru Kategorileri</h3>
+                                    <ul className="space-y-1">
+                                        {Object.entries(fragenChapters).map(([key, chapter]) => (
+                                            <li key={key}>
+                                                <button
+                                                    onMouseEnter={() => setSelectedFragenChapter(key)}
+                                                    className={`block w-full text-left p-2 text-sm rounded hover:bg-accent hover:text-accent-foreground ${selectedFragenChapter === key ? 'bg-accent text-accent-foreground' : ''
+                                                        }`}
+                                                >
+                                                    {chapter.title}
+                                                </button>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 className="mb-2 text-sm font-semibold text-green-600">Alt Kategoriler</h3>
+                                    {selectedFragenChapter && fragenChapters[selectedFragenChapter as keyof typeof fragenChapters] ? (
+                                        <div className="h-full max-h-96 overflow-y-auto">
+                                            <ul className="space-y-1">
+                                                {fragenChapters[selectedFragenChapter as keyof typeof fragenChapters].subChapters.map((subChapter, index) => (
+                                                    <li key={index}>
+                                                        <a
+                                                            href={`/quiz/${selectedFragenChapter}?sub=${index}`}
+                                                            className="block p-2 text-sm rounded hover:bg-accent hover:text-accent-foreground text-left"
+                                                        >
+                                                            {subChapter}
+                                                        </a>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    ) : (
+                                        <p className="text-sm text-muted-foreground">Bir kategori seçin</p>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
                     <NavigationMenuTrigger>CSM</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[300px] gap-3 p-4">
-                            <ListItem href="/csm/istqb-form" title="ISTQB">
-                                Add new questions via form.
-                            </ListItem>
-                            <ListItem href="/docs/csm/udemy" title="Udemy">
-                                Udemy related content.
-                            </ListItem>
-                            <ListItem href="/docs/csm/fragen" title="Fragen">
-                                General questions.
-                            </ListItem>
-                            <ListItem href="/data-management" title="Veri Yönetimi">
-                                View and export saved questions to JSON.
-                            </ListItem>
-                        </ul>
+                        <div className="grid w-[600px] gap-6 p-4">
+                            <div className="grid grid-cols-3 gap-4">
+                                {/* ISTQB Section */}
+                                <div>
+                                    <h3 className="mb-3 text-sm font-semibold text-purple-600">ISTQB</h3>
+                                    <ul className="space-y-2">
+                                        <ListItem href="/csm/istqb-form" title="Soru Ekle">
+                                            Yeni ISTQB sorusu ekle
+                                        </ListItem>
+                                        <ListItem href="/csm/istqb-quiz" title="Soruları Görüntüle">
+                                            ISTQB sorularını görüntüle ve çöz
+                                        </ListItem>
+                                    </ul>
+                                </div>
+
+                                {/* Udemy Section */}
+                                <div>
+                                    <h3 className="mb-3 text-sm font-semibold text-blue-600">Udemy</h3>
+                                    <ul className="space-y-2">
+                                        <ListItem href="/docs/csm/udemy" title="Soru Ekle">
+                                            Yeni Udemy sorusu ekle
+                                        </ListItem>
+                                        <ListItem href="/csm/udemy-quiz" title="Soruları Görüntüle">
+                                            Udemy sorularını görüntüle ve çöz
+                                        </ListItem>
+                                    </ul>
+                                </div>
+
+                                {/* Fragen Section */}
+                                <div>
+                                    <h3 className="mb-3 text-sm font-semibold text-green-600">Fragen</h3>
+                                    <ul className="space-y-2">
+                                        <ListItem href="/docs/csm/fragen" title="Soru Ekle">
+                                            Yeni Fragen sorusu ekle
+                                        </ListItem>
+                                        <ListItem href="/csm/fragen-quiz" title="Soruları Görüntüle">
+                                            Fragen sorularını görüntüle ve çöz
+                                        </ListItem>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            {/* Veri Yönetimi Section */}
+                            <div className="border-t pt-4">
+                                <ul className="grid w-[200px] gap-3">
+                                    <ListItem href="/data-management" title="Veri Yönetimi">
+                                        Tüm soruları görüntüle ve JSON'a aktar
+                                    </ListItem>
+                                </ul>
+                            </div>
+                        </div>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>

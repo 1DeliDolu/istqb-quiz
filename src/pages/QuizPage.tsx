@@ -1,7 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
 import { istqbChapters } from '@/constants/istqbChapters';
+import { udemyChapters } from '@/constants/udemyChapters';
+import { fragenChapters } from '@/constants/fragenChapters';
 import { DataService, type Question } from '@/services/dataService';
+import {
+    Pagination,
+    PaginationContent,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+} from "@/components/ui/pagination";
 
 const QuizPage: React.FC = () => {
     const { chapterId } = useParams<{ chapterId: string }>();
@@ -14,8 +24,26 @@ const QuizPage: React.FC = () => {
     const [isAnswered, setIsAnswered] = useState(false);
     const [quizCompleted, setQuizCompleted] = useState(false);
     const [score, setScore] = useState(0);
+    const [answeredQuestions, setAnsweredQuestions] = useState<Set<number>>(new Set());
 
-    const chapterInfo = chapterId ? istqbChapters[chapterId as keyof typeof istqbChapters] : null;
+    // Kullanıcı bilgisini al
+    const getCurrentUser = () => {
+        const userStr = localStorage.getItem('user');
+        return userStr ? JSON.parse(userStr) : null;
+    };
+
+    // Chapter türüne göre doğru chapters objesini seç
+    const getChapterInfo = (chapterId: string) => {
+        if (chapterId?.startsWith('udemy_')) {
+            return udemyChapters[chapterId as keyof typeof udemyChapters];
+        } else if (chapterId?.startsWith('fragen_')) {
+            return fragenChapters[chapterId as keyof typeof fragenChapters];
+        } else {
+            return istqbChapters[chapterId as keyof typeof istqbChapters];
+        }
+    };
+
+    const chapterInfo = chapterId ? getChapterInfo(chapterId) : null;
     const subChapterTitle = chapterInfo && subChapterIndex ?
         chapterInfo.subChapters[parseInt(subChapterIndex)] : null;
 
@@ -24,14 +52,17 @@ const QuizPage: React.FC = () => {
             if (!chapterId) return;
 
             try {
-                // İlk önce JSON dosyasındaki mevcut verileri import et
-                await DataService.importJsonData(chapterId);
+                // İlk önce JSON dosyasındaki mevcut verileri import et (ISTQB için)
+                if (!chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
+                    await DataService.importJsonData(chapterId);
+                }
 
                 // DataService'den soruları al (backend'den veya localStorage'dan)
-                let allQuestions = await DataService.getQuestions(chapterId);
+                // SubChapter filtresi ekle
+                let allQuestions = await DataService.getQuestions(chapterId, subChapterTitle || undefined);
 
-                // Eğer hiç soru yoksa, JSON dosyasından yüklemeyi dene
-                if (allQuestions.length === 0) {
+                // Eğer hiç soru yoksa ve ISTQB bölümüyse, JSON dosyasından yüklemeyi dene
+                if (allQuestions.length === 0 && !chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
                     try {
                         const data = await import(`../data/istqb/${chapterId}.json`);
                         allQuestions = data.default || [];
@@ -40,8 +71,8 @@ const QuizPage: React.FC = () => {
                     }
                 }
 
-                // Eğer belirli bir alt bölüm seçildiyse, o alt bölüme ait soruları filtrele
-                if (subChapterIndex && subChapterTitle) {
+                // Eğer backend'den gelen veriler yoksa ve localStorage'da subChapter filtresi gerekiyorsa
+                if (subChapterTitle && allQuestions.length > 0) {
                     allQuestions = allQuestions.filter((q: Question) =>
                         q.subChapter === subChapterTitle
                     );
@@ -60,15 +91,71 @@ const QuizPage: React.FC = () => {
         setIsAnswered(false);
         setQuizCompleted(false);
         setScore(0);
+        setAnsweredQuestions(new Set());
     }, [chapterId, subChapterIndex, subChapterTitle]);
 
-    const handleAnswerSelect = (option: string) => {
+    const handleAnswerSelect = async (option: string) => {
         if (isAnswered) return;
         setSelectedAnswer(option);
         setIsAnswered(true);
 
-        if (option === currentQuestion.correctAnswer) {
+        // Mark this question as answered
+        setAnsweredQuestions(prev => new Set([...prev, currentQuestionIndex]));
+
+        const isCorrect = option === currentQuestion.correctAnswer;
+        if (isCorrect) {
             setScore(prev => prev + 1);
+        }
+
+        // Kullanıcının cevabını kaydet
+        const currentUser = getCurrentUser();
+        if (currentUser && chapterId) {
+            try {
+                // Sub-chapter ID'sini hesapla
+                let subChapterId = null;
+                if (subChapterTitle && chapterId.startsWith('udemy_')) {
+                    // Udemy için sub-chapter ID formatı: udemy_2_1, udemy_2_2 vs
+                    // subChapterTitle format: "2.1 Quiz 1 - Grundlagen"
+                    const subChapterMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                    if (subChapterMatch) {
+                        subChapterId = `udemy_${subChapterMatch[1]}_${subChapterMatch[2]}`;
+                    }
+                } else if (subChapterTitle && chapterId.startsWith('fragen_')) {
+                    // Fragen için sub-chapter ID formatı hesapla
+                    // subChapterTitle format: "Genel.1 Temel Kavramlar"
+                    if (subChapterTitle.startsWith('Genel.')) {
+                        const match = subChapterTitle.match(/^Genel\.(\d+)/);
+                        if (match) subChapterId = `fragen_genel_${match[1]}`;
+                    } else if (subChapterTitle.startsWith('Deutsch.')) {
+                        const match = subChapterTitle.match(/^Deutsch\.(\d+)/);
+                        if (match) subChapterId = `fragen_deutsch_${match[1]}`;
+                    } else if (subChapterTitle.startsWith('Praxis.')) {
+                        const match = subChapterTitle.match(/^Praxis\.(\d+)/);
+                        if (match) subChapterId = `fragen_praxis_${match[1]}`;
+                    } else if (subChapterTitle.startsWith('Mixed.')) {
+                        const match = subChapterTitle.match(/^Mixed\.(\d+)/);
+                        if (match) subChapterId = `fragen_mixed_${match[1]}`;
+                    }
+                } else if (subChapterTitle && !chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
+                    // ISTQB için sub-chapter ID formatı hesapla
+                    // subChapterTitle format: "1.1 Test Nedir ve Neden Gereklidir?"
+                    const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                    if (istqbMatch) {
+                        subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}`;
+                    }
+                }
+
+                await DataService.recordUserAnswer(
+                    currentUser.id,
+                    currentQuestion.id,
+                    chapterId,
+                    subChapterId,
+                    option,
+                    isCorrect
+                );
+            } catch (error) {
+                console.error('Answer recording failed:', error);
+            }
         }
     };
 
@@ -82,12 +169,31 @@ const QuizPage: React.FC = () => {
         }
     };
 
+    const handleQuestionNavigation = (questionIndex: number) => {
+        if (questionIndex < 0 || questionIndex >= questions.length) {
+            return;
+        }
+
+        setCurrentQuestionIndex(questionIndex);
+
+        // Eğer bu soru daha önce cevaplandıysa, cevaplandığını göster
+        if (answeredQuestions.has(questionIndex)) {
+            setIsAnswered(true);
+            // Bu soru için kaydedilmiş cevabı bulamazsak varsayılan olarak işaretleme
+            setSelectedAnswer(null); // Gerçek uygulamada bu cevap veritabanından gelebilir
+        } else {
+            setSelectedAnswer(null);
+            setIsAnswered(false);
+        }
+    };
+
     const resetQuiz = () => {
         setCurrentQuestionIndex(0);
         setSelectedAnswer(null);
         setIsAnswered(false);
         setQuizCompleted(false);
         setScore(0);
+        setAnsweredQuestions(new Set());
     };
 
     if (questions.length === 0) {
@@ -136,7 +242,7 @@ const QuizPage: React.FC = () => {
                     </div>
                     <button
                         onClick={resetQuiz}
-                        className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                        className="px-6 py-3 bg-amber-100 text-black rounded-lg hover:bg-amber-200 border border-amber-300 transition-colors"
                     >
                         Tekrar Dene
                     </button>
@@ -149,7 +255,7 @@ const QuizPage: React.FC = () => {
 
     const getOptionClass = (option: string) => {
         if (!isAnswered) {
-            return "border-gray-300 hover:border-purple-500 hover:bg-purple-50 cursor-pointer";
+            return "border-gray-300 hover:border-amber-500 hover:bg-amber-50 cursor-pointer";
         }
         if (option === currentQuestion.correctAnswer) {
             return "border-green-500 bg-green-100 text-green-800";
@@ -180,7 +286,7 @@ const QuizPage: React.FC = () => {
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2 mt-3">
                     <div
-                        className="bg-purple-600 h-2 rounded-full transition-all duration-300"
+                        className="bg-amber-500 h-2 rounded-full transition-all duration-300"
                         style={{ width: `${((currentQuestionIndex + (isAnswered ? 1 : 0)) / questions.length) * 100}%` }}
                     ></div>
                 </div>
@@ -214,17 +320,59 @@ const QuizPage: React.FC = () => {
                 </div>
             )}
 
-            {/* Navigation */}
-            {isAnswered && (
-                <div className="text-center">
-                    <button
-                        onClick={handleNextQuestion}
-                        className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors text-lg font-medium"
-                    >
-                        {currentQuestionIndex < questions.length - 1 ? 'Sonraki Soru' : 'Sonuçları Gör'}
-                    </button>
-                </div>
-            )}
+            {/* Navigation with Pagination */}
+            <div className="flex flex-col items-center space-y-4">
+                {/* Pagination Navigation */}
+                <Pagination className="justify-center">
+                    <PaginationContent>
+                        <PaginationItem>
+                            <PaginationPrevious
+                                onClick={() => handleQuestionNavigation(currentQuestionIndex - 1)}
+                                className={`cursor-pointer ${currentQuestionIndex === 0 ? 'opacity-50 pointer-events-none' : ''}`}
+                            >
+                                <span className="hidden sm:block">Önceki</span>
+                            </PaginationPrevious>
+                        </PaginationItem>
+
+                        {/* Question Number Links */}
+                        {questions.map((_, index) => (
+                            <PaginationItem key={index}>
+                                <PaginationLink
+                                    onClick={() => handleQuestionNavigation(index)}
+                                    isActive={index === currentQuestionIndex}
+                                    className={`cursor-pointer ${answeredQuestions.has(index)
+                                        ? 'bg-green-100 border-green-500 text-green-800 hover:bg-green-200'
+                                        : ''
+                                        }`}
+                                >
+                                    {index + 1}
+                                </PaginationLink>
+                            </PaginationItem>
+                        ))}
+
+                        <PaginationItem>
+                            <PaginationNext
+                                onClick={() => handleQuestionNavigation(currentQuestionIndex + 1)}
+                                className={`cursor-pointer ${currentQuestionIndex === questions.length - 1 ? 'opacity-50 pointer-events-none' : ''}`}
+                            >
+                                <span className="hidden sm:block">Sonraki</span>
+                            </PaginationNext>
+                        </PaginationItem>
+                    </PaginationContent>
+                </Pagination>
+
+                {/* Submit Button */}
+                {isAnswered && (
+                    <div className="text-center">
+                        <button
+                            onClick={handleNextQuestion}
+                            className="px-8 py-3 bg-amber-100 text-black rounded-lg hover:bg-amber-200 border border-amber-300 transition-colors text-lg font-medium"
+                        >
+                            {currentQuestionIndex < questions.length - 1 ? 'Sonraki Soru' : 'Sonuçları Gör'}
+                        </button>
+                    </div>
+                )}
+            </div>
         </div>
     );
 };

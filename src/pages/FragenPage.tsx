@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { DataService } from '@/services/dataService';
+import { fragenChapters } from '@/constants/fragenChapters';
 
 const FragenPage: React.FC = () => {
     const [chapter, setChapter] = useState('');
@@ -19,7 +20,7 @@ const FragenPage: React.FC = () => {
         e.preventDefault();
 
         if (!chapter.trim() || !subChapter.trim()) {
-            alert('Lütfen hem ana bölüm hem de alt bölüm girin');
+            alert('Lütfen hem ana bölüm hem de alt bölüm seçin');
             return;
         }
 
@@ -43,12 +44,12 @@ const FragenPage: React.FC = () => {
         };
 
         try {
-            // Fragen soruları için özel bir chapter prefix kullan
-            const success = await DataService.addQuestion(`fragen_${chapter.replace(/\s+/g, '_')}`, newQuestion);
+            // Fragen soruları için seçili chapter ID'sini direkt kullan
+            const success = await DataService.addQuestion(chapter, newQuestion);
 
             if (success) {
                 console.log('✅ Fragen sorusu başarıyla kaydedildi:', newQuestion);
-                alert(`Soru başarıyla kaydedildi!\n\nBölüm: ${chapter}\nAlt Bölüm: ${subChapter}`);
+                alert(`Soru başarıyla kaydedildi!\n\nBölüm: ${fragenChapters[chapter as keyof typeof fragenChapters]?.title}\nAlt Bölüm: ${subChapter}`);
 
                 // Formu temizle
                 setChapter('');
@@ -71,32 +72,50 @@ const FragenPage: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label htmlFor="chapter" className="block text-sm font-medium text-gray-700 mb-2">
-                            Ana Bölüm
+                            Ana Kategori
                         </label>
-                        <input
-                            type="text"
+                        <select
                             id="chapter"
                             value={chapter}
-                            onChange={(e) => setChapter(e.target.value)}
+                            onChange={(e) => {
+                                setChapter(e.target.value);
+                                setSubChapter(''); // Alt kategoriyi sıfırla
+                            }}
                             className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-                            placeholder="Ana bölüm adını girin..."
                             required
-                        />
+                        >
+                            <option value="">Ana kategori seçin...</option>
+                            {Object.entries(fragenChapters).map(([key, chapterData]) => (
+                                <option key={key} value={key}>
+                                    {chapterData.title}
+                                </option>
+                            ))}
+                        </select>
                     </div>
 
                     <div>
                         <label htmlFor="subChapter" className="block text-sm font-medium text-gray-700 mb-2">
-                            Alt Bölüm
+                            Alt Kategori
                         </label>
-                        <input
-                            type="text"
+                        <select
                             id="subChapter"
                             value={subChapter}
                             onChange={(e) => setSubChapter(e.target.value)}
                             className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-                            placeholder="Alt bölüm adını girin..."
+                            disabled={!chapter}
                             required
-                        />
+                        >
+                            <option value="">Alt kategori seçin...</option>
+                            {chapter && fragenChapters[chapter as keyof typeof fragenChapters] &&
+                                fragenChapters[chapter as keyof typeof fragenChapters].subChapters.map((subChap, index) => (
+                                    <option key={index} value={subChap}>
+                                        {subChap}
+                                    </option>
+                                ))}
+                        </select>
+                        {chapter && (!fragenChapters[chapter as keyof typeof fragenChapters] || fragenChapters[chapter as keyof typeof fragenChapters].subChapters.length === 0) && (
+                            <p className="text-sm text-gray-500 mt-1">Bu kategori için alt kategori bulunmamaktadır.</p>
+                        )}
                     </div>
                 </div>
 
@@ -171,7 +190,7 @@ const FragenPage: React.FC = () => {
                 <div className="flex justify-center">
                     <button
                         type="submit"
-                        className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors duration-200 font-medium"
+                        className="px-8 py-3 bg-gray-800 text-black rounded-lg hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium"
                     >
                         Soruyu Kaydet
                     </button>

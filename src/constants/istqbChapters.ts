@@ -18,7 +18,7 @@ export const istqbChapters = {
     ],
   },
   "1": {
-    title: "1. Grundlagen des Testens – 180 Minuten",
+    title: "1. Grundlagen des Testens",
     description:
       "Was ist Testen? Warum ist es notwendig? Grundsätze, Aktivitäten und wesentliche Kompetenzen.",
     subChapters: [
@@ -44,7 +44,7 @@ export const istqbChapters = {
   },
   "2": {
     title:
-      "2. Testen während des Softwareentwicklungslebenszyklus – 130 Minuten",
+      "2. Testen während des Softwareentwicklungslebenszyklus",
     description:
       "Testen im Kontext eines SDLC, Teststufen, Testarten und Wartungstests.",
     subChapters: [
@@ -63,7 +63,7 @@ export const istqbChapters = {
     ],
   },
   "3": {
-    title: "3. Statischer Test – 80 Minuten",
+    title: "3. Statischer Test",
     description:
       "Grundlagen des statischen Tests, Feedback- und Reviewprozess.",
     subChapters: [
@@ -80,7 +80,7 @@ export const istqbChapters = {
     ],
   },
   "4": {
-    title: "4. Testanalyse und -entwurf – 390 Minuten",
+    title: "4. Testanalyse und -entwurf",
     description:
       "Testverfahren, Black-Box-, White-Box- und erfahrungsbasierte Testverfahren.",
     subChapters: [
@@ -105,7 +105,7 @@ export const istqbChapters = {
     ],
   },
   "5": {
-    title: "5. Management der Testaktivitäten – 335 Minuten",
+    title: "5. Management der Testaktivitäten",
     description:
       "Testplanung, Risikomanagement, Testüberwachung, Konfigurations- und Fehlermanagement.",
     subChapters: [
@@ -131,7 +131,7 @@ export const istqbChapters = {
     ],
   },
   "6": {
-    title: "6. Testwerkzeuge – 20 Minuten",
+    title: "6. Testwerkzeuge",
     description:
       "Werkzeugunterstützung für das Testen, Nutzen und Risiken von Testautomatisierung.",
     subChapters: [

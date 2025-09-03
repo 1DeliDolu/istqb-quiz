@@ -1,4 +1,4 @@
-interface Question {
+export interface Question {
   id: number;
   question: string;
   options: string[];
@@ -48,15 +48,25 @@ export class DataService {
   }
 
   // Bir bölümün sorularını getir (önce backend'den, sonra localStorage'dan)
-  static async getQuestions(chapter: string): Promise<Question[]> {
+  static async getQuestions(
+    chapter: string,
+    subChapter?: string
+  ): Promise<Question[]> {
     try {
       // İlk önce backend API'den dene
       if (await this.isBackendAvailable()) {
-        const response = await fetch(`${API_BASE_URL}/questions/${chapter}`);
+        let apiUrl = `${API_BASE_URL}/questions/${chapter}`;
+        if (subChapter) {
+          apiUrl += `?subChapter=${encodeURIComponent(subChapter)}`;
+        }
+
+        const response = await fetch(apiUrl);
         if (response.ok) {
           const questions = await response.json();
           console.log(
-            `📚 ${chapter} bölümü için ${questions.length} soru sunucudan yüklendi`
+            `📚 ${chapter} bölümü${subChapter ? ` (${subChapter})` : ""} için ${
+              questions.length
+            } soru sunucudan yüklendi`
           );
           return questions;
         }
@@ -65,12 +75,30 @@ export class DataService {
       // Backend yoksa localStorage'dan al
       console.log("⚠️ Backend mevcut değil, localStorage kullanılıyor");
       const stored = localStorage.getItem(this.getStorageKey(chapter));
-      return stored ? JSON.parse(stored) : [];
+      let questions = stored ? JSON.parse(stored) : [];
+
+      // SubChapter filtresi uygula
+      if (subChapter && questions.length > 0) {
+        questions = questions.filter(
+          (q: Question) => q.subChapter === subChapter
+        );
+      }
+
+      return questions;
     } catch (error) {
       console.error("Sorular yüklenirken hata:", error);
       // Son çare olarak localStorage'dan dene
       const stored = localStorage.getItem(this.getStorageKey(chapter));
-      return stored ? JSON.parse(stored) : [];
+      let questions = stored ? JSON.parse(stored) : [];
+
+      // SubChapter filtresi uygula
+      if (subChapter && questions.length > 0) {
+        questions = questions.filter(
+          (q: Question) => q.subChapter === subChapter
+        );
+      }
+
+      return questions;
     }
   }
 
@@ -169,9 +197,43 @@ export class DataService {
     return backendSuccess || localSuccess;
   }
 
+  // Bir soruyu güncelle
+  static async updateQuestion(question: Question): Promise<boolean> {
+    try {
+      if (await this.isBackendAvailable()) {
+        const response = await fetch(
+          `${API_BASE_URL}/questions/${question.id}`,
+          {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(question),
+          }
+        );
+
+        if (response.ok) {
+          console.log(`✏️ Soru güncellendi: ${question.id}`);
+          return true;
+        } else {
+          console.error("Backend güncelleme hatası:", await response.text());
+        }
+      }
+    } catch (error) {
+      console.error("Soru güncelleme hatası:", error);
+    }
+
+    // Şimdilik false döndür - backend API'si eklenmeli
+    console.warn("Soru güncelleme özelliği henüz backend'de mevcut değil");
+    return false;
+  }
+
   // Veriyi JSON formatında dışa aktar
-  static async exportChapterData(chapter: string): Promise<string> {
-    const questions = await this.getQuestions(chapter);
+  static async exportChapterData(
+    chapter: string,
+    subChapter?: string
+  ): Promise<string> {
+    const questions = await this.getQuestions(chapter, subChapter);
     return JSON.stringify(questions, null, 2);
   }
 
@@ -260,6 +322,139 @@ export class DataService {
       console.log(`${chapter} bölümü için mevcut veri bulunamadı`);
     }
   }
-}
 
-export type { Question };
+  // ========== USER STATISTICS METHODS ==========
+
+  // Kullanıcının verdiği cevabı kaydet
+  static async recordUserAnswer(
+    userId: number,
+    questionId: number,
+    chapterId: string,
+    subChapterId: string | null,
+    selectedAnswer: string,
+    isCorrect: boolean
+  ): Promise<boolean> {
+    try {
+      if (await this.isBackendAvailable()) {
+        const response = await fetch(`${API_BASE_URL}/user-stats/answer`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            userId,
+            questionId,
+            chapterId,
+            subChapterId,
+            selectedAnswer,
+            isCorrect,
+          }),
+        });
+
+        if (response.ok) {
+          console.log(
+            `📊 User ${userId} cevabı kaydedildi: ${
+              isCorrect ? "Doğru" : "Yanlış"
+            }`
+          );
+          return true;
+        }
+      }
+
+      // Backend yoksa localStorage'a kaydet (basit bir yedek sistem)
+      const storageKey = `user_stats_${userId}`;
+      let userStats = JSON.parse(localStorage.getItem(storageKey) || "[]");
+
+      userStats.push({
+        questionId,
+        chapterId,
+        subChapterId,
+        selectedAnswer,
+        isCorrect,
+        timestamp: new Date().toISOString(),
+      });
+
+      localStorage.setItem(storageKey, JSON.stringify(userStats));
+      console.log(`💾 User ${userId} cevabı localStorage'a kaydedildi`);
+      return true;
+    } catch (error) {
+      console.error("User answer recording error:", error);
+      return false;
+    }
+  }
+
+  // Kullanıcının istatistiklerini getir
+  static async getUserStats(userId: number): Promise<any> {
+    try {
+      if (await this.isBackendAvailable()) {
+        const response = await fetch(`${API_BASE_URL}/user-stats/${userId}`);
+        if (response.ok) {
+          const result = await response.json();
+          console.log(`📊 User ${userId} istatistikleri sunucudan yüklendi`);
+          return result.data;
+        }
+      }
+
+      // Backend yoksa localStorage'dan al
+      const storageKey = `user_stats_${userId}`;
+      const userStats = JSON.parse(localStorage.getItem(storageKey) || "[]");
+
+      // Basit istatistikler hesapla
+      const totalAnswers = userStats.length;
+      const correctAnswers = userStats.filter(
+        (stat: any) => stat.isCorrect
+      ).length;
+      const wrongAnswers = totalAnswers - correctAnswers;
+
+      return {
+        totalStats: {
+          total_questions_answered: totalAnswers,
+          total_correct: correctAnswers,
+          total_wrong: wrongAnswers,
+          overall_success_rate:
+            totalAnswers > 0
+              ? Math.round((correctAnswers / totalAnswers) * 100)
+              : 0,
+        },
+        chapterStats: [], // localStorage için basitleştirilmiş
+      };
+    } catch (error) {
+      console.error("User stats fetch error:", error);
+      return null;
+    }
+  }
+
+  // Kullanıcının yanlış cevapladığı soruları getir
+  static async getUserWrongAnswers(
+    userId: number,
+    chapterId: string,
+    subChapterId?: string
+  ): Promise<Question[]> {
+    try {
+      if (await this.isBackendAvailable()) {
+        let apiUrl = `${API_BASE_URL}/user-stats/${userId}/wrong-answers/${chapterId}`;
+        if (subChapterId) {
+          apiUrl += `?subChapterId=${encodeURIComponent(subChapterId)}`;
+        }
+
+        const response = await fetch(apiUrl);
+        if (response.ok) {
+          const result = await response.json();
+          console.log(
+            `🔍 User ${userId} yanlış cevapları sunucudan yüklendi: ${result.data.length} soru`
+          );
+          return result.data;
+        }
+      }
+
+      // Backend yoksa localStorage'dan basit bir filtreleme yap
+      console.log(
+        "⚠️ Backend mevcut değil, yanlış cevaplar için localStorage kullanılıyor"
+      );
+      return []; // localStorage için daha karmaşık implementasyon gerekir
+    } catch (error) {
+      console.error("Wrong answers fetch error:", error);
+      return [];
+    }
+  }
+}
