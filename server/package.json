@@ -1,0 +1,20 @@
+{
+    "name": "istqb-quiz-server",
+    "version": "1.0.0",
+    "description": "Backend server for saving ISTQB quiz questions",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.6.1",
+        "express": "^4.21.2",
+        "fs-extra": "^11.3.1",
+        "mysql2": "^3.14.4"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}

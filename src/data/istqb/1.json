@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "question": "Welches Lebenszyklusmodell eignet sich am besten für sicherheitskritische Systeme?",
+        "options": [
+            "Agile",
+            "Spiralmodell",
+            "V-Modell",
+            "Prototyping"
+        ],
+        "correctAnswer": "V-Modell",
+        "explanation": "Das V-Modell unterstützt strenge Validierung und wird in regulierten Branchen verwendet."
+    },
+    {
+        "id": 2,
+        "question": "Was ist das Hauptziel des Testens?",
+        "options": [
+            "Alle Fehler zu finden",
+            "Fehlerfreiheit zu beweisen",
+            "Informationen für Stakeholder bereitzustellen",
+            "Softwareentwicklung zu beschleunigen"
+        ],
+        "correctAnswer": "Informationen für Stakeholder bereitzustellen",
+        "explanation": "Testen liefert Stakeholdern Informationen über die Qualität des Produkts, um fundierte Entscheidungen zu treffen."
+    }
+]

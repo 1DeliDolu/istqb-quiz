@@ -1,0 +1,177 @@
+export const istqbChapters = {
+  "0": {
+    title: "0. Einführung in diesen Lehrplan",
+    description:
+      "Zweck, Certified Tester Foundation Level, Karriereweg, Geschäftlicher Nutzen und mehr.",
+    subChapters: [
+      "0.1 Zweck dieses Dokuments",
+      "0.2 Certified Tester Foundation Level im Softwaretest",
+      "0.3 Karriereweg für Tester",
+      "0.4 Geschäftlicher Nutzen",
+      "0.5 Prüfbare Lernziele und kognitive Stufen des Wissens",
+      "0.6 Die Foundation-Level-Zertifizierungsprüfung",
+      "0.7 Akkreditierung",
+      "0.8 Umgang mit Standards",
+      "0.9 Auf dem Laufenden bleiben",
+      "0.10 Detaillierungsgrad",
+      "0.11 Aufbau des Lehrplans",
+    ],
+  },
+  "1": {
+    title: "1. Grundlagen des Testens – 180 Minuten",
+    description:
+      "Was ist Testen? Warum ist es notwendig? Grundsätze, Aktivitäten und wesentliche Kompetenzen.",
+    subChapters: [
+      "1.1 Was ist Testen?",
+      "1.1.1 Testziele",
+      "1.1.2 Testen und Debugging",
+      "1.2 Warum ist Testen notwendig?",
+      "1.2.1 Der Beitrag des Testens zum Erfolg",
+      "1.2.2 Testen und Qualitätssicherung",
+      "1.2.3 Fehlhandlungen, Fehlerzustände, Fehlerwirkungen und Grundursachen",
+      "1.3 Grundsätze des Testens",
+      "1.4 Testaktivitäten, Testmittel und Rollen des Testens",
+      "1.4.1 Testaktivitäten und -aufgaben",
+      "1.4.2 Testprozess im Kontext",
+      "1.4.3 Testmittel",
+      "1.4.4 Verfolgbarkeit zwischen der Testbasis und den Testmitteln",
+      "1.4.5 Rollen des Testens",
+      "1.5 Wesentliche Kompetenzen und bewährte Praktiken beim Testen",
+      "1.5.1 Allgemeine Kompetenzen, die für das Testen erforderlich sind",
+      "1.5.2 Whole-Team-Ansatz (Whole Team Approach)",
+      "1.5.3 Unabhängigkeit des Testens",
+    ],
+  },
+  "2": {
+    title:
+      "2. Testen während des Softwareentwicklungslebenszyklus – 130 Minuten",
+    description:
+      "Testen im Kontext eines SDLC, Teststufen, Testarten und Wartungstests.",
+    subChapters: [
+      "2.1 Testen im Kontext eines Softwareentwicklungslebenszyklus (SDLC)",
+      "2.1.1 Auswirkungen des Softwareentwicklungslebenszyklus auf das Testen",
+      "2.1.2 Softwareentwicklungslebenszyklus und gute Praktiken für das Testen",
+      "2.1.3 Testen als Treiber für die Softwareentwicklung",
+      "2.1.4 DevOps und Testen",
+      "2.1.5 Shift-Left",
+      "2.1.6 Retrospektiven und Prozessverbesserung",
+      "2.2 Teststufen und Testarten",
+      "2.2.1 Teststufen",
+      "2.2.2 Testarten",
+      "2.2.3 Fehlernachtest und Regressionstest",
+      "2.3 Wartungstest",
+    ],
+  },
+  "3": {
+    title: "3. Statischer Test – 80 Minuten",
+    description:
+      "Grundlagen des statischen Tests, Feedback- und Reviewprozess.",
+    subChapters: [
+      "3.1 Grundlagen des statischen Tests",
+      "3.1.1 Arbeitsergebnisse, die durch statische Tests untersucht werden können",
+      "3.1.2 Wert des statischen Tests",
+      "3.1.3 Unterschiede zwischen statischem Test und dynamischem Test",
+      "3.2 Feedback- und Reviewprozess",
+      "3.2.1 Vorteile eines frühzeitigen und häufigen Stakeholder-Feedbacks",
+      "3.2.2 Aktivitäten des Reviewprozesses",
+      "3.2.3 Rollen und Verantwortlichkeiten bei Reviews",
+      "3.2.4 Arten von Reviews",
+      "3.2.5 Erfolgsfaktoren für Reviews",
+    ],
+  },
+  "4": {
+    title: "4. Testanalyse und -entwurf – 390 Minuten",
+    description:
+      "Testverfahren, Black-Box-, White-Box- und erfahrungsbasierte Testverfahren.",
+    subChapters: [
+      "4.1 Testverfahren im Überblick",
+      "4.2 Black-Box-Testverfahren",
+      "4.2.1 Äquivalenzklassenbildung",
+      "4.2.2 Grenzwertanalyse",
+      "4.2.3 Entscheidungstabellentest",
+      "4.2.4 Zustandsübergangstest",
+      "4.3 White-Box-Testverfahren",
+      "4.3.1 Anweisungstest und Anweisungsüberdeckung",
+      "4.3.2 Zweigtest und Zweigüberdeckung",
+      "4.3.3 Der Wert des White-Box-Tests",
+      "4.4 Erfahrungsbasierter Test",
+      "4.4.1 Intuitive Testfallermittlung",
+      "4.4.2 Explorativer Test",
+      "4.4.3 Checklistenbasierter Test",
+      "4.5 Auf Zusammenarbeit basierende Testansätze",
+      "4.5.1 Gemeinsames Schreiben von User-Storys",
+      "4.5.2 Akzeptanzkriterien",
+      "4.5.3 Abnahmetestgetriebene Entwicklung (ATDD)",
+    ],
+  },
+  "5": {
+    title: "5. Management der Testaktivitäten – 335 Minuten",
+    description:
+      "Testplanung, Risikomanagement, Testüberwachung, Konfigurations- und Fehlermanagement.",
+    subChapters: [
+      "5.1 Testplanung",
+      "5.1.1 Zweck und Inhalt eines Testkonzepts",
+      "5.1.2 Der Beitrag des Testers zur Iterations- und Releaseplanung",
+      "5.1.3 Eingangskriterien und Endekriterien",
+      "5.1.4 Schätzverfahren",
+      "5.1.5 Priorisierung von Testfällen",
+      "5.1.6 Testpyramide",
+      "5.1.7 Testquadranten",
+      "5.2 Risikomanagement",
+      "5.2.1 Risikodefinition und Risikoattribute",
+      "5.2.2 Projektrisiken und Produktrisiken",
+      "5.2.3 Produktrisikoanalyse",
+      "5.2.4 Produktrisikosteuerung",
+      "5.3 Testüberwachung, Teststeuerung und Testabschluss",
+      "5.3.1 Beim Testen verwendete Metriken",
+      "5.3.2 Zweck, Inhalt und Zielgruppen für Testberichte",
+      "5.3.3 Kommunikation des Teststatus",
+      "5.4 Konfigurationsmanagement",
+      "5.5 Fehlermanagement",
+    ],
+  },
+  "6": {
+    title: "6. Testwerkzeuge – 20 Minuten",
+    description:
+      "Werkzeugunterstützung für das Testen, Nutzen und Risiken von Testautomatisierung.",
+    subChapters: [
+      "6.1 Werkzeugunterstützung für das Testen",
+      "6.2 Nutzen und Risiken von Testautomatisierung",
+    ],
+  },
+  "7": {
+    title: "7. Literaturhinweise",
+    description:
+      "Normen, Standards, Fachliteratur, Artikel und Internetquellen.",
+    subChapters: [
+      "7.1 Normen und Standards",
+      "7.2 Fachliteratur",
+      "7.3 Artikel und Internetquellen",
+      "7.4 Deutschsprachige Bücher und Artikel",
+    ],
+  },
+  "8": {
+    title: "8. Anhang A – Lernziele/kognitive Stufen des Wissens",
+    description: "Lernziele und kognitive Stufen des Wissens.",
+    subChapters: [],
+  },
+  "9": {
+    title: "9. Anhang B – Verfolgbarkeitsmatrix des geschäftlichen Nutzens",
+    description:
+      "Verfolgbarkeitsmatrix des geschäftlichen Nutzens mit Lernzielen.",
+    subChapters: [],
+  },
+  "10": {
+    title: "10. Anhang C – Release Notes",
+    description: "Release Notes und Änderungsübersicht.",
+    subChapters: [],
+  },
+  "11": {
+    title: "11. Index",
+    description: "Alphabetisches Verzeichnis der wichtigsten Begriffe.",
+    subChapters: [],
+  },
+};
+
+export type IstqbChapter = (typeof istqbChapters)[keyof typeof istqbChapters];
+export type IstqbChapterKey = keyof typeof istqbChapters;
