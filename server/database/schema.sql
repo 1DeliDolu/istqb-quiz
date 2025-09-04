@@ -1,7 +1,7 @@
 -- ISTQB Quiz App Database Schema
 CREATE DATABASE IF NOT EXISTS istqb_quiz_app
-    DEFAULT CHARACTER SET = 'utf8mb4'
-    DEFAULT COLLATE = 'utf8mb4_unicode_ci';
+    DEFAULT CHARACTER SET utf8mb4
+    DEFAULT COLLATE utf8mb4_unicode_ci;
 
 USE istqb_quiz_app;
 
@@ -49,6 +49,42 @@ CREATE TABLE IF NOT EXISTS question_options (
     FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE
 );
 
+-- Kullanıcılar tablosu
+CREATE TABLE IF NOT EXISTS users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    INDEX idx_username (username),
+    INDEX idx_email (email)
+);
+
+-- Kullanıcı soru cevap geçmişi tablosu
+CREATE TABLE IF NOT EXISTS user_question_attempts (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    user_id BIGINT NOT NULL,
+    question_id BIGINT NOT NULL,
+    chapter_id VARCHAR(50) NOT NULL,
+    sub_chapter_id VARCHAR(50),
+    selected_answer TEXT NOT NULL,
+    is_correct BOOLEAN NOT NULL,
+    attempt_number INT DEFAULT 1,
+    answered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE,
+    FOREIGN KEY (chapter_id) REFERENCES chapters(id) ON DELETE CASCADE,
+    FOREIGN KEY (sub_chapter_id) REFERENCES sub_chapters(id) ON DELETE SET NULL,
+    INDEX idx_user_id (user_id),
+    INDEX idx_question_id (question_id),
+    INDEX idx_chapter_id (chapter_id),
+    INDEX idx_user_chapter (user_id, chapter_id),
+    INDEX idx_answered_at (answered_at)
+);
+
 -- Ana bölümler için başlangıç verileri
 INSERT INTO chapters (id, title, description) VALUES
 -- ISTQB Bölümleri
@@ -81,7 +117,8 @@ INSERT INTO chapters (id, title, description) VALUES
 ('fragen_deutsch', 'Almanca Test Soruları', 'Almanca dilinde hazırlanmış test soruları'),
 ('fragen_praxis', 'Pratik Test Soruları', 'Gerçek senaryolara dayalı pratik sorular'),
 ('fragen_mixed', 'Karışık Sorular', 'Çeşitli kaynaklardan derlenmiş sorular')
-ON DUPLICATE KEY UPDATE title = VALUES(title), description = VALUES(description);
+AS new_values
+ON DUPLICATE KEY UPDATE title = new_values.title, description = new_values.description;
 
 -- Alt bölümler için başlangıç verileri  
 INSERT INTO sub_chapters (id, chapter_id, title) VALUES
@@ -187,4 +224,5 @@ INSERT INTO sub_chapters (id, chapter_id, title) VALUES
 ('fragen_mixed_1', 'fragen_mixed', 'Mixed.1 Kolay Seviye'),
 ('fragen_mixed_2', 'fragen_mixed', 'Mixed.2 Orta Seviye'),
 ('fragen_mixed_3', 'fragen_mixed', 'Mixed.3 Zor Seviye')
-ON DUPLICATE KEY UPDATE title = VALUES(title);
+AS new_values
+ON DUPLICATE KEY UPDATE title = new_values.title;

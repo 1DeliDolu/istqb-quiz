@@ -7,7 +7,7 @@ async function simpleImport() {
   try {
     // JSON'u oku
     const data = JSON.parse(
-      fs.readFileSync("../questions_2_1_1_clean.json", "utf8")
+      fs.readFileSync("../json/Bölüm_2/questions_2_1_2_clean.json", "utf8")
     );
     console.log(`📖 JSON okundu: ${data.questions.length} soru`);
 
@@ -24,17 +24,17 @@ async function simpleImport() {
     console.log("🗑️ Eski sorular siliniyor...");
     await db.execute(
       "DELETE FROM question_options WHERE question_id IN (SELECT id FROM questions WHERE chapter_id = ? AND sub_chapter_id = ?)",
-      ["2", "2-1-1"]
+      ["2", "2-1-2"]
     );
     await db.execute(
       "DELETE FROM questions WHERE chapter_id = ? AND sub_chapter_id = ?",
-      ["2", "2-1-1"]
+      ["2", "2-1-2"]
     );
 
     // Alt bölümü ekle/güncelle
     await db.execute(
-      "INSERT INTO sub_chapters (id, chapter_id, title) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE title = VALUES(title)",
-      ["2-1-1", "2", data.subChapterTitle]
+      "INSERT INTO sub_chapters (id, chapter_id, title) VALUES (?, ?, ?) AS new_values ON DUPLICATE KEY UPDATE title = new_values.title",
+      ["2-1-2", "2", data.subChapterTitle]
     );
 
     // Soruları ekle
@@ -43,7 +43,7 @@ async function simpleImport() {
       // Soru ekle
       const [result] = await db.execute(
         "INSERT INTO questions (chapter_id, sub_chapter_id, question, explanation) VALUES (?, ?, ?, ?)",
-        ["2", "2-1-1", soru.question, soru.explanation]
+        ["2", "2-1-2", soru.question, soru.explanation]
       );
 
       const questionId = result.insertId;
@@ -64,7 +64,7 @@ async function simpleImport() {
     // Kontrol
     const [kontrol] = await db.execute(
       "SELECT COUNT(*) as toplam FROM questions WHERE chapter_id = ? AND sub_chapter_id = ?",
-      ["2", "2-1-1"]
+      ["2", "2-1-2"]
     );
     console.log(`\\n🎉 BAŞARILI! Toplam ${kontrol[0].toplam} soru eklendi.`);
 
