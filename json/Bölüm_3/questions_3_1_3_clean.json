@@ -1,0 +1,799 @@
+{
+    "chapter": "3",
+    "subChapter": "3-1-3",
+    "subChapterTitle": "Unterschiede zwischen statischem Test und dynamischem Test",
+    "questions": [
+        {
+            "question": "Welches Ziel teilen statische und dynamische Tests?",
+            "explanation": "Beide sollen helfen, Fehlerzustände in Arbeitsergebnissen zu erkennen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Erkennung von Fehlerzuständen",
+                    "correct": true
+                },
+                {
+                    "text": "Messung der Systemperformance",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung von Benutzerhandbüchern",
+                    "correct": false
+                },
+                {
+                    "text": "Automatisches Deployment",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie verhalten sich statische und dynamische Tests zueinander?",
+            "explanation": "Sie ergänzen sich gegenseitig, da sie unterschiedliche Arten von Fehlern aufdecken. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Sie ergänzen sich gegenseitig",
+                    "correct": true
+                },
+                {
+                    "text": "Sie schließen sich gegenseitig aus",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind identisch und redundant",
+                    "correct": false
+                },
+                {
+                    "text": "Sie können nicht parallel eingesetzt werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Unterschied zwischen statischem und dynamischem Test?",
+            "explanation": "Der statische Test benötigt keine Ausführung der Software, der dynamische Test schon. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Statischer Test benötigt keine Ausführung, dynamischer Test schon",
+                    "correct": true
+                },
+                {
+                    "text": "Beide benötigen immer die Ausführung der Software",
+                    "correct": false
+                },
+                {
+                    "text": "Statischer Test kann nur auf Hardware angewendet werden",
+                    "correct": false
+                },
+                {
+                    "text": "Dynamischer Test ist immer billiger",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Fehlern findet typischerweise die statische Analyse?",
+            "explanation": "Statische Tests finden strukturelle oder syntaktische Fehler, wie nicht erreichbaren Code. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Strukturelle oder syntaktische Fehler",
+                    "correct": true
+                },
+                {
+                    "text": "Fehler im Laufzeitverhalten",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler in der Netzwerkperformance",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler in der Benutzerinteraktion",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Fehlern decken dynamische Tests besser auf?",
+            "explanation": "Dynamische Tests erkennen Fehler im Laufzeitverhalten eines Systems. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Fehler im Laufzeitverhalten",
+                    "correct": true
+                },
+                {
+                    "text": "Fehler in Dokumentationen",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler in nicht-ausführbaren Modellen",
+                    "correct": false
+                },
+                {
+                    "text": "Rechtschreibfehler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Merkmal ist typisch für den statischen Test?",
+            "explanation": "Er untersucht Arbeitsergebnisse ohne deren Ausführung. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Untersuchung ohne Ausführung der Software",
+                    "correct": true
+                },
+                {
+                    "text": "Messung der Antwortzeiten im Betrieb",
+                    "correct": false
+                },
+                {
+                    "text": "Simulation von Benutzeraktionen",
+                    "correct": false
+                },
+                {
+                    "text": "Messung von Speicherverbrauch",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Merkmal ist typisch für dynamische Tests?",
+            "explanation": "Dynamische Tests setzen die Ausführung der Software voraus. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Ausführung der Software ist erforderlich",
+                    "correct": true
+                },
+                {
+                    "text": "Sie kommen ohne Ausführung aus",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind nur auf Dokumente anwendbar",
+                    "correct": false
+                },
+                {
+                    "text": "Sie können keine Laufzeitfehler finden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind statische und dynamische Tests beide notwendig?",
+            "explanation": "Weil sie unterschiedliche Fehlerarten abdecken und sich ergänzen. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Weil sie unterschiedliche Fehlerarten abdecken",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie dieselben Fehler finden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil dynamische Tests immer ungenauer sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil statische Tests immer teurer sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Gemeinsamkeit haben statische und dynamische Tests?",
+            "explanation": "Beide tragen zur Fehlererkennung und Qualitätsverbesserung bei. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Unterstützung bei der Erkennung von Fehlerzuständen",
+                    "correct": true
+                },
+                {
+                    "text": "Sie benötigen beide keine Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzen sich gegenseitig vollständig",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind nur in agilen Projekten notwendig",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen ist FALSCH?",
+            "explanation": "Statische und dynamische Tests ergänzen sich, sie schließen sich nicht gegenseitig aus. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Statische und dynamische Tests haben ähnliche Ziele",
+                    "correct": false
+                },
+                {
+                    "text": "Statische und dynamische Tests ergänzen sich",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Tests benötigen keine Ausführung, dynamische Tests schon",
+                    "correct": false
+                },
+                {
+                    "text": "Statische und dynamische Tests schließen sich gegenseitig aus",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Gemeinsamkeit haben statischer und dynamischer Test?",
+            "explanation": "Beide können zur Entdeckung von Fehlerzuständen beitragen. (Originalsatz: 'Sowohl statischer Test als auch dynamischer Test ... können zur Entdeckung von Fehlerzuständen führen.')",
+            "options": [
+                {
+                    "text": "Beide können Fehlerzustände aufdecken",
+                    "correct": true
+                },
+                {
+                    "text": "Beide benötigen keine Analyse",
+                    "correct": false
+                },
+                {
+                    "text": "Beide sind vollständig redundant",
+                    "correct": false
+                },
+                {
+                    "text": "Beide prüfen ausschließlich Dokumentation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Fehlerzuständen lassen sich ausschließlich durch statische Tests finden?",
+            "explanation": "Fehler wie nicht erreichbarer Code oder syntaktische Probleme können nur durch statische Analyse erkannt werden. (Originalsatz: '... allerdings gibt es einige Fehlerzustände, die nur durch statischen ... Test gefunden werden können.')",
+            "options": [
+                {
+                    "text": "Speicherlecks zur Laufzeit",
+                    "correct": false
+                },
+                {
+                    "text": "Nicht erreichbarer Code oder syntaktische Fehler",
+                    "correct": true
+                },
+                {
+                    "text": "Fehler in der Performance unter Last",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler in Benutzerinteraktionen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Fehlerzustände können nur durch dynamische Tests erkannt werden?",
+            "explanation": "Fehler im Laufzeitverhalten, z. B. Speicherlecks oder Performanceprobleme, können nur dynamisch gefunden werden. (Originalsatz: '... einige Fehlerzustände, die nur durch ... dynamischen Test gefunden werden können.')",
+            "options": [
+                {
+                    "text": "Nicht erreichbarer Code",
+                    "correct": false
+                },
+                {
+                    "text": "Rechtschreibfehler in Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Speicherlecks oder Laufzeit-Performanceprobleme",
+                    "correct": true
+                },
+                {
+                    "text": "Fehler in Modellspezifikationen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ergänzen sich statische und dynamische Tests gegenseitig?",
+            "explanation": "Weil sie unterschiedliche Arten von Fehlerzuständen aufdecken, die jeweils nur mit der einen oder anderen Methode auffindbar sind. (Originalsatz: '... allerdings gibt es einige Fehlerzustände, die nur durch statischen oder dynamischen Test gefunden werden können.')",
+            "options": [
+                {
+                    "text": "Weil einer den anderen überflüssig macht",
+                    "correct": false
+                },
+                {
+                    "text": "Weil beide nur für Code gelten",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie unterschiedliche Fehlerarten abdecken",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie exakt die gleichen Fehler finden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein typisches Merkmal des statischen Tests?",
+            "explanation": "Beim statischen Test werden Fehlerzustände direkt gefunden. (Originalsatz: 'Beim statischen Test werden Fehlerzustände direkt gefunden...')",
+            "options": [
+                {
+                    "text": "Fehlerzustände werden direkt gefunden",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerwirkungen werden analysiert",
+                    "correct": false
+                },
+                {
+                    "text": "Er setzt die Ausführung des Codes voraus",
+                    "correct": false
+                },
+                {
+                    "text": "Er findet nur Performanceprobleme",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie werden beim dynamischen Test Fehlerzustände ermittelt?",
+            "explanation": "Beim dynamischen Test treten Fehlerwirkungen auf, aus denen durch Analyse die Fehlerzustände ermittelt werden. (Originalsatz: '...während beim dynamischen Test Fehlerwirkungen auftreten, aus denen ... Fehlerzustände ermittelt werden.')",
+            "options": [
+                {
+                    "text": "Durch direkte Inspektion des Codes",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Analyse der auftretenden Fehlerwirkungen",
+                    "correct": true
+                },
+                {
+                    "text": "Durch Reviews von Dokumenten",
+                    "correct": false
+                },
+                {
+                    "text": "Durch eine automatische Rechtschreibprüfung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Vorgehensweise unterscheidet dynamische von statischen Tests?",
+            "explanation": "Statische Tests identifizieren Fehler direkt, dynamische Tests leiten sie aus beobachteten Fehlerwirkungen ab. (Originalsatz: '...Fehlerzustände direkt... während ... Fehlerwirkungen auftreten, aus denen ... Fehlerzustände ermittelt werden.')",
+            "options": [
+                {
+                    "text": "Statische Tests prüfen nur Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Dynamische Tests erkennen nur Dokumentationsfehler",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Tests leiten Fehler aus Wirkungen ab",
+                    "correct": false
+                },
+                {
+                    "text": "Dynamische Tests leiten Fehlerzustände aus Fehlerwirkungen ab",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt den Unterschied korrekt?",
+            "explanation": "Der Unterschied liegt darin, dass statische Tests Fehler direkt finden, dynamische Tests dagegen über die Analyse von Wirkungen arbeiten. (Originalsatz: 'Beim statischen Test ... während beim dynamischen Test ...')",
+            "options": [
+                {
+                    "text": "Statische Tests finden Fehlerzustände direkt, dynamische Tests über Fehlerwirkungen",
+                    "correct": true
+                },
+                {
+                    "text": "Beide finden Fehler nur über Fehlerwirkungen",
+                    "correct": false
+                },
+                {
+                    "text": "Beide finden Fehler ausschließlich durch Reviews",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Tests benötigen Laufzeitanalyse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Fehlerzuständen kann der statische Test besonders gut finden?",
+            "explanation": "Statischer Test deckt leichter Fehlerzustände auf Pfaden auf, die selten ausgeführt oder schwer dynamisch erreichbar sind. (Originalsatz: 'Statischer Test kann leichter Fehlerzustände aufdecken, die auf Pfaden ... schwer durch dynamische Tests zu erreichen sind.')",
+            "options": [
+                {
+                    "text": "Fehlerzustände auf selten ausgeführten oder schwer erreichbaren Codepfaden",
+                    "correct": true
+                },
+                {
+                    "text": "Performanceprobleme bei hoher Last",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler in der Benutzeroberfläche",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler in externen Schnittstellen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist der statische Test für selten ausgeführte Codepfade vorteilhaft?",
+            "explanation": "Dynamische Tests müssten diese Pfade aktiv ausführen, was schwierig ist; statische Tests analysieren sie direkt. (Originalsatz: '...die schwer durch dynamische Tests zu erreichen sind.')",
+            "options": [
+                {
+                    "text": "Weil dynamische Tests diese Pfade schwer erreichen können",
+                    "correct": true
+                },
+                {
+                    "text": "Weil er keine Codeanalyse benötigt",
+                    "correct": false
+                },
+                {
+                    "text": "Weil er immer schneller als dynamische Tests ist",
+                    "correct": false
+                },
+                {
+                    "text": "Weil er ausschließlich Performance misst",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Limitation dynamischer Tests wird durch statische Tests ausgeglichen?",
+            "explanation": "Dynamische Tests können schwer zugängliche oder selten genutzte Codepfade oft nicht ausreichend abdecken. (Originalsatz: '...die schwer durch dynamische Tests zu erreichen sind.')",
+            "options": [
+                {
+                    "text": "Dynamische Tests finden nie Fehler in Schnittstellen",
+                    "correct": false
+                },
+                {
+                    "text": "Dynamische Tests können schwer zugängliche Codepfade schlecht abdecken",
+                    "correct": true
+                },
+                {
+                    "text": "Dynamische Tests benötigen keine Ausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Dynamische Tests prüfen nur Dokumentationen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel beschreibt einen Vorteil statischer Tests gegenüber dynamischen Tests?",
+            "explanation": "Ein Vorteil ist, dass statische Tests Fehler in selten genutzten Codepfaden leichter identifizieren können. (Originalsatz: 'Statischer Test kann leichter Fehlerzustände aufdecken ... die selten ausgeführt werden.')",
+            "options": [
+                {
+                    "text": "Statische Tests identifizieren Fehler in selten genutzten Pfaden einfacher",
+                    "correct": true
+                },
+                {
+                    "text": "Statische Tests sind die einzige Methode für Laufzeittests",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Tests messen Antwortzeiten im Betrieb",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Tests ersetzen alle Dokumentationen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Auf welche Arbeitsergebnisse kann der statische Test angewandt werden?",
+            "explanation": "Statischer Test kann auch auf nicht ausführbare Arbeitsergebnisse angewendet werden. (Originalsatz: 'Statischer Test kann auf nicht ausführbare Arbeitsergebnisse angewandt werden...')",
+            "options": [
+                {
+                    "text": "Auf nicht ausführbare Arbeitsergebnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Nur auf ausführbare Arbeitsergebnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf Benutzerdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf Hardware-Treiber",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf kann der dynamische Test angewendet werden?",
+            "explanation": "Dynamischer Test kann nur auf ausführbare Arbeitsergebnisse angewandt werden. (Originalsatz: '...während dynamischer Test nur auf ausführbare Arbeitsergebnisse angewandt werden kann.')",
+            "options": [
+                {
+                    "text": "Auf nicht ausführbare Dokumentationen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf ausführbare Arbeitsergebnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Nur auf Verträge",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf Modelle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Qualitätsmerkmal wird typischerweise mit statischen Tests gemessen?",
+            "explanation": "Statische Tests messen Qualitätsmerkmale, die nicht von der Codeausführung abhängen, z. B. Wartbarkeit. (Originalsatz: '...zur Messung von Qualitätsmerkmalen ... die nicht von der Ausführung des Codes abhängen...')",
+            "options": [
+                {
+                    "text": "Performanz",
+                    "correct": false
+                },
+                {
+                    "text": "Wartbarkeit",
+                    "correct": true
+                },
+                {
+                    "text": "Antwortzeiten unter Last",
+                    "correct": false
+                },
+                {
+                    "text": "Durchsatz im Betrieb",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Qualitätsmerkmal wird typischerweise mit dynamischen Tests gemessen?",
+            "explanation": "Dynamische Tests messen Qualitätsmerkmale, die von der Ausführung des Codes abhängen, z. B. Performanz. (Originalsatz: '...dynamischer Test ... Qualitätsmerkmalen ... die von der Ausführung abhängen...')",
+            "options": [
+                {
+                    "text": "Wartbarkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Benutzbarkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Performanz",
+                    "correct": true
+                },
+                {
+                    "text": "Lesbarkeit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Fehlerzuständen in Anforderungen lassen sich besonders gut durch statische Tests finden?",
+            "explanation": "Statische Tests decken Inkonsistenzen, Mehrdeutigkeiten, Widersprüche, Auslassungen, Ungenauigkeiten und Duplikationen in Anforderungen auf.",
+            "options": [
+                {
+                    "text": "Inkonsistenzen, Mehrdeutigkeiten, Widersprüche",
+                    "correct": true
+                },
+                {
+                    "text": "Speicherlecks bei Last",
+                    "correct": false
+                },
+                {
+                    "text": "Antwortzeiten in Produktionsumgebung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler bei der Benutzerinteraktion",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche typischen Fehlerzustände im Entwurf können statische Tests aufdecken?",
+            "explanation": "Beispiele sind ineffiziente Datenbankstrukturen oder schlechte Modularität.",
+            "options": [
+                {
+                    "text": "Schlechte Modularität oder ineffiziente Datenbankstrukturen",
+                    "correct": false
+                },
+                {
+                    "text": "Speicherüberläufe zur Laufzeit",
+                    "correct": true
+                },
+                {
+                    "text": "Fehler bei der Benutzerfreundlichkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerhafte Netzwerkkonfiguration",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Fehlern im Code sind typische Befunde statischer Tests?",
+            "explanation": "Typische Beispiele: Variablen mit undefinierten Werten, nicht deklarierte Variablen, unerreichbarer oder duplizierter Code.",
+            "options": [
+                {
+                    "text": "Undefinierte oder nicht deklarierte Variablen, unerreichbarer Code",
+                    "correct": false
+                },
+                {
+                    "text": "Verbindungsfehler im Betriebssystem",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler bei Benutzeroberflächenaktionen",
+                    "correct": true
+                },
+                {
+                    "text": "Verlorene Netzwerkpakete",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Abweichungen von Standards werden durch statische Tests häufig entdeckt?",
+            "explanation": "Ein Beispiel ist die mangelnde Einhaltung von Namenskonventionen.",
+            "options": [
+                {
+                    "text": "Nicht eingehaltene Namenskonventionen in Programmierstandards",
+                    "correct": false
+                },
+                {
+                    "text": "Falsche Laufzeitparameter",
+                    "correct": false
+                },
+                {
+                    "text": "Langsame Datenübertragungsgeschwindigkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Benutzerfehler bei der Eingabe",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Fehler können durch statische Tests bei Schnittstellen erkannt werden?",
+            "explanation": "Ein typischer Befund sind nicht übereinstimmende Anzahl, Art oder Reihenfolge von Parametern.",
+            "options": [
+                {
+                    "text": "Nicht übereinstimmende Parameteranzahl oder -reihenfolge",
+                    "correct": true
+                },
+                {
+                    "text": "Verlust von Netzwerksignalen",
+                    "correct": false
+                },
+                {
+                    "text": "Falsche Benutzerrollenrechte",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlende Daten im Betriebssystem",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Sicherheits-Schwachstellen sind typische Befunde statischer Tests?",
+            "explanation": "Ein klassisches Beispiel ist der Pufferüberlauf.",
+            "options": [
+                {
+                    "text": "Pufferüberläufe",
+                    "correct": false
+                },
+                {
+                    "text": "Langsame Reaktionszeiten im Betrieb",
+                    "correct": true
+                },
+                {
+                    "text": "Falsch konfigurierte Hardware",
+                    "correct": false
+                },
+                {
+                    "text": "Versehentliche Benutzereingaben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bedeutet eine Lücke in der Überdeckung der Testbasis?",
+            "explanation": "Dies bedeutet, dass z. B. ein Akzeptanzkriterium keine entsprechenden Tests hat.",
+            "options": [
+                {
+                    "text": "Fehlende Tests für ein Akzeptanzkriterium",
+                    "correct": false
+                },
+                {
+                    "text": "Verlust von Testdaten während der Laufzeit",
+                    "correct": false
+                },
+                {
+                    "text": "Ungenaue Messung der Antwortzeiten",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlende Hardware-Treiber",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welcher Fehlerzustand ist KEIN typisches Ergebnis statischer Tests?",
+            "explanation": "Statische Tests finden keine Performanceprobleme bei Laufzeit, sondern strukturelle und syntaktische Fehler.",
+            "options": [
+                {
+                    "text": "Inkonsistenzen in Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Übermäßige Code-Komplexität",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlende Tests für Akzeptanzkriterien",
+                    "correct": false
+                },
+                {
+                    "text": "Lange Antwortzeiten unter Last",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage zu typischen Befunden statischer Tests ist korrekt?",
+            "explanation": "Sie decken u. a. undefinierte Variablen, Schnittstellenfehler und Standardverletzungen auf.",
+            "options": [
+                {
+                    "text": "Statische Tests finden Standardverletzungen, undefinierte Variablen und Schnittstellenfehler",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Tests finden nur Rechtschreibfehler",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Tests messen nur Performanz",
+                    "correct": true
+                },
+                {
+                    "text": "Statische Tests ersetzen dynamische Tests vollständig",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Beispiele zeigt einen Fehlerzustand im Entwurf?",
+            "explanation": "Ein typisches Beispiel ist eine ineffiziente Datenbankstruktur.",
+            "options": [
+                {
+                    "text": "Ineffiziente Datenbankstrukturen",
+                    "correct": false
+                },
+                {
+                    "text": "Nicht deklarierte Variablen im Code",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlende Tests für Akzeptanzkriterien",
+                    "correct": false
+                },
+                {
+                    "text": "Nicht eingehaltene Namenskonventionen",
+                    "correct": true
+                }
+            ]
+        }    
+    ]
+}

@@ -1,0 +1,447 @@
+{
+    "chapter": "3",
+    "subChapter": "3-2-1",
+    "subChapterTitle": "Vorteile eines frühzeitigen und häufigen Stakeholder-Feedbacks",
+    "questions": [
+        {
+            "question": "Welchen Vorteil bietet frühzeitiges und häufiges Feedback von Stakeholdern?",
+            "explanation": "Frühes Feedback ermöglicht die rechtzeitige Kommunikation über potenzielle Qualitätsprobleme. (Originalsatz: 'Ein frühzeitiges und häufiges Feedback ermöglicht die frühzeitige Kommunikation von potenziellen Qualitätsproblemen.')",
+            "options": [
+                {
+                    "text": "Frühzeitige Kommunikation von Qualitätsproblemen",
+                    "correct": true
+                },
+                {
+                    "text": "Vollständige Eliminierung aller Fehler",
+                    "correct": false
+                },
+                {
+                    "text": "Automatische Generierung von Testfällen",
+                    "correct": false
+                },
+                {
+                    "text": "Unbegrenzte Projektlaufzeit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was passiert, wenn Stakeholder während des SDLC nur wenig einbezogen werden?",
+            "explanation": "Dann entspricht das Produkt möglicherweise nicht den Vorstellungen der Stakeholder. (Originalsatz: 'Wenn die Stakeholder ... nur wenig einbezogen werden, entspricht das ... Produkt möglicherweise nicht den Vorstellungen der Stakeholder.')",
+            "options": [
+                {
+                    "text": "Das Produkt entspricht möglicherweise nicht den Stakeholder-Vorstellungen",
+                    "correct": false
+                },
+                {
+                    "text": "Das Produkt entspricht automatisch allen Qualitätsstandards",
+                    "correct": true
+                },
+                {
+                    "text": "Das Produkt wird ohne Tests fertiggestellt",
+                    "correct": false
+                },
+                {
+                    "text": "Das Projekt wird automatisch günstiger",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko entsteht, wenn die Wünsche der Stakeholder nicht erfüllt werden?",
+            "explanation": "Wenn die Wünsche nicht erfüllt werden, drohen kostspielige Nacharbeiten, verpasste Termine oder sogar Projektabbruch. (Originalsatz: 'Wenn die Wünsche der Stakeholder nicht erfüllt werden...')",
+            "options": [
+                {
+                    "text": "Das Projekt wird automatisch erfolgreich",
+                    "correct": false
+                },
+                {
+                    "text": "Es kommt zu kostspieligen Nacharbeiten oder Projektabbruch",
+                    "correct": false
+                },
+                {
+                    "text": "Es entstehen keine zusätzlichen Risiken",
+                    "correct": true
+                },
+                {
+                    "text": "Es werden automatisch mehr Tests erstellt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Folgen kann durch mangelndes Stakeholder-Feedback eintreten?",
+            "explanation": "Folgen sind Nacharbeiten, verpasste Termine, Schuldzuweisungen oder Projektscheitern. (Originalsatz: '... kann dies zu kostspieligen Nacharbeiten, verpassten Terminen, Schuldzuweisungen und sogar zu einem kompletten Scheitern ... führen.')",
+            "options": [
+                {
+                    "text": "Mehr Vertrauen in das Projekt",
+                    "correct": false
+                },
+                {
+                    "text": "Geringerer Dokumentationsaufwand",
+                    "correct": false
+                },
+                {
+                    "text": "Kostspielige Nacharbeiten und Projektscheitern",
+                    "correct": false
+                },
+                {
+                    "text": "Schnellere Automatisierung aller Tests",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Warum ist frühes Feedback von Stakeholdern kostensparend?",
+            "explanation": "Frühes Feedback reduziert die Wahrscheinlichkeit von teuren Nacharbeiten im späteren Verlauf. (Originaltext: '... kann dies zu kostspieligen Nacharbeiten ... führen.')",
+            "options": [
+                {
+                    "text": "Weil dadurch teure Nacharbeiten reduziert werden",
+                    "correct": true
+                },
+                {
+                    "text": "Weil dadurch keine Tests mehr notwendig sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil es Projekttermine automatisch einhält",
+                    "correct": false
+                },
+                {
+                    "text": "Weil es alle Dokumentation ersetzt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Auswirkung kann mangelndes Feedback auf Projekttermine haben?",
+            "explanation": "Ohne Feedback können wichtige Termine verpasst werden. (Originalsatz: '... verpassten Terminen ...')",
+            "options": [
+                {
+                    "text": "Projekttermine werden automatisch eingehalten",
+                    "correct": false
+                },
+                {
+                    "text": "Projekttermine werden möglicherweise verpasst",
+                    "correct": true
+                },
+                {
+                    "text": "Projekttermine werden überflüssig",
+                    "correct": false
+                },
+                {
+                    "text": "Projekttermine werden immer verschoben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen beschreibt ein Scheitern durch mangelndes Feedback?",
+            "explanation": "Mangelndes Feedback kann zu einem kompletten Scheitern des Projekts führen. (Originalsatz: '... und sogar zu einem kompletten Scheitern des Projekts führen.')",
+            "options": [
+                {
+                    "text": "Das Projekt scheitert möglicherweise komplett",
+                    "correct": false
+                },
+                {
+                    "text": "Das Projekt wird automatisch erfolgreicher",
+                    "correct": false
+                },
+                {
+                    "text": "Das Projekt wird rechtzeitig abgeschlossen",
+                    "correct": false
+                },
+                {
+                    "text": "Das Projekt benötigt keine Ressourcen mehr",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt Stakeholder-Feedback im Hinblick auf Qualität?",
+            "explanation": "Frühes Feedback macht potenzielle Qualitätsprobleme frühzeitig sichtbar. (Originalsatz: '... ermöglicht die frühzeitige Kommunikation von potenziellen Qualitätsproblemen.')",
+            "options": [
+                {
+                    "text": "Es macht potenzielle Qualitätsprobleme früh sichtbar",
+                    "correct": true
+                },
+                {
+                    "text": "Es ersetzt die Testautomatisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Es macht Qualität irrelevant",
+                    "correct": false
+                },
+                {
+                    "text": "Es verringert die Anzahl der Stakeholder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Gefahr birgt es, wenn Stakeholder nicht regelmäßig Feedback geben?",
+            "explanation": "Das Produkt entspricht möglicherweise nicht den aktuellen Vorstellungen der Stakeholder. (Originalsatz: '... entspricht das zu entwickelnde Produkt möglicherweise nicht den ... Vorstellungen der Stakeholder.')",
+            "options": [
+                {
+                    "text": "Das Produkt entspricht möglicherweise nicht den Stakeholder-Vorstellungen",
+                    "correct": false
+                },
+                {
+                    "text": "Das Produkt erfüllt automatisch alle Qualitätskriterien",
+                    "correct": false
+                },
+                {
+                    "text": "Das Produkt wird immer fehlerfrei ausgeliefert",
+                    "correct": false
+                },
+                {
+                    "text": "Das Produkt entspricht nicht den aktuellen Stakeholder-Vorstellungen",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Kombination beschreibt die Folgen von fehlendem Feedback am besten?",
+            "explanation": "Folgen sind kostspielige Nacharbeiten, verpasste Termine, Schuldzuweisungen und Projektscheitern. (Originalsatz: '... kann dies zu kostspieligen Nacharbeiten, verpassten Terminen, Schuldzuweisungen und sogar ... Scheitern ... führen.')",
+            "options": [
+                {
+                    "text": "Kostspielige Nacharbeiten, verpasste Termine, Projektscheitern",
+                    "correct": true
+                },
+                {
+                    "text": "Erhöhte Effizienz und Kostensenkung",
+                    "correct": false
+                },
+                {
+                    "text": "Vereinfachung der Testautomatisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Verkürzte Projektlaufzeit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Wirkung hat häufiges Stakeholder-Feedback auf Anforderungen?",
+            "explanation": "Es beugt Missverständnissen über Anforderungen vor. (Originalsatz: '... kann Missverständnisse über Anforderungen vorbeugen ...')",
+            "options": [
+                {
+                    "text": "Es beugt Missverständnissen über Anforderungen vor",
+                    "correct": true
+                },
+                {
+                    "text": "Es ersetzt alle Tests vollständig",
+                    "correct": false
+                },
+                {
+                    "text": "Es verringert die Dokumentationspflicht",
+                    "correct": false
+                },
+                {
+                    "text": "Es führt automatisch zu weniger Features",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterstützt häufiges Feedback den Umgang mit Änderungen?",
+            "explanation": "Änderungen an den Anforderungen werden verstanden und früher umgesetzt. (Originalsatz: '... und sicherstellen, dass Änderungen ... früher umgesetzt werden.')",
+            "options": [
+                {
+                    "text": "Es macht Änderungen unnötig",
+                    "correct": false
+                },
+                {
+                    "text": "Änderungen werden früher verstanden und umgesetzt",
+                    "correct": true
+                },
+                {
+                    "text": "Es verhindert jede Änderung",
+                    "correct": false
+                },
+                {
+                    "text": "Es ersetzt das Konfigurationsmanagement",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welchen Vorteil bringt häufiges Feedback für das Entwicklungsteam?",
+            "explanation": "Das Team versteht besser, was es entwickelt. (Originalsatz: 'Dies hilft dem Entwicklungsteam dabei, besser zu verstehen, was es entwickelt.')",
+            "options": [
+                {
+                    "text": "Das Team muss weniger dokumentieren",
+                    "correct": false
+                },
+                {
+                    "text": "Das Team versteht besser, was es entwickelt",
+                    "correct": false
+                },
+                {
+                    "text": "Das Team spart alle Tests ein",
+                    "correct": true
+                },
+                {
+                    "text": "Das Team kann Anforderungen ignorieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wirkt sich häufiges Feedback auf die Feature-Entwicklung aus?",
+            "explanation": "Das Team konzentriert sich auf Features, die den größten Nutzen für Stakeholder bringen. (Originalsatz: '... sich auf die Features zu konzentrieren, die ... den größten Nutzen bringen ...')",
+            "options": [
+                {
+                    "text": "Das Team entwickelt Features zufällig",
+                    "correct": false
+                },
+                {
+                    "text": "Das Team ignoriert Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Das Team konzentriert sich auf die wertvollsten Features",
+                    "correct": false
+                },
+                {
+                    "text": "Das Team entwickelt nur technische Features ohne Stakeholder-Bezug",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Warum ist häufiges Feedback besonders nützlich im Hinblick auf Anforderungen?",
+            "explanation": "Es sorgt dafür, dass Anforderungen klar sind und früh korrigiert werden können. (Originalsatz: '... Missverständnisse vorbeugen ... Änderungen ... früher umgesetzt ...')",
+            "options": [
+                {
+                    "text": "Es sorgt für Klarheit und frühe Korrekturen",
+                    "correct": true
+                },
+                {
+                    "text": "Es verringert die Zahl der Stakeholder",
+                    "correct": false
+                },
+                {
+                    "text": "Es ersetzt das Anforderungsmanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Es verhindert jegliche Änderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welchen Effekt hat Stakeholder-Feedback auf das Entwicklungsverständnis?",
+            "explanation": "Das Entwicklungsteam versteht dadurch besser, was es entwickelt. (Originalsatz: '... hilft dem Entwicklungsteam dabei, besser zu verstehen ...')",
+            "options": [
+                {
+                    "text": "Das Team versteht weniger vom Produkt",
+                    "correct": false
+                },
+                {
+                    "text": "Das Team versteht besser, was es entwickelt",
+                    "correct": true
+                },
+                {
+                    "text": "Das Team entwickelt Features ohne Bezug",
+                    "correct": false
+                },
+                {
+                    "text": "Das Team ignoriert Stakeholder-Wünsche",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt Feedback bei der Priorisierung von Features?",
+            "explanation": "Es ermöglicht, sich auf die Features zu konzentrieren, die den größten Nutzen bringen. (Originalsatz: '... sich auf die Features zu konzentrieren, die ... den größten Nutzen bringen ...')",
+            "options": [
+                {
+                    "text": "Es führt dazu, dass Features zufällig gewählt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Es macht die Feature-Priorisierung überflüssig",
+                    "correct": false
+                },
+                {
+                    "text": "Es erleichtert die Konzentration auf die nützlichsten Features",
+                    "correct": true
+                },
+                {
+                    "text": "Es verhindert die Entwicklung neuer Features",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie trägt häufiges Feedback zur Risikominimierung bei?",
+            "explanation": "Das Team fokussiert auf Features, die sich am positivsten auf die identifizierten Risiken auswirken. (Originalsatz: '... und die sich am positivsten auf die identifizierten Risiken auswirken.')",
+            "options": [
+                {
+                    "text": "Es erhöht die Projektkosten",
+                    "correct": false
+                },
+                {
+                    "text": "Es führt automatisch zu weniger Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Es konzentriert das Team auf risikomindernde Features",
+                    "correct": false
+                },
+                {
+                    "text": "Es verringert die Priorisierung von Risiken",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt die Verbindung zwischen Feedback und Anforderungen korrekt?",
+            "explanation": "Häufiges Feedback stellt sicher, dass Änderungen an den Anforderungen verstanden und früh umgesetzt werden. (Originalsatz: '... Änderungen ... verstanden und früher umgesetzt ...')",
+            "options": [
+                {
+                    "text": "Feedback ersetzt die Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Feedback stellt sicher, dass Änderungen verstanden und früh umgesetzt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Feedback verhindert Änderungen vollständig",
+                    "correct": false
+                },
+                {
+                    "text": "Feedback erhöht die Komplexität der Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Aspekt von Feedback ist entscheidend für Stakeholder-Nutzen?",
+            "explanation": "Feedback ermöglicht die Konzentration auf die Features mit dem größten Nutzen. (Originalsatz: '... sich auf die Features zu konzentrieren, die ... den größten Nutzen bringen ...')",
+            "options": [
+                {
+                    "text": "Zufällige Entwicklung aller Features",
+                    "correct": false
+                },
+                {
+                    "text": "Fokus auf Features mit dem größten Nutzen",
+                    "correct": false
+                },
+                {
+                    "text": "Vollständige Automatisierung aller Features",
+                    "correct": false
+                },
+                {
+                    "text": "Fokus auf Features, die Stakeholdern den größten Nutzen bringen",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

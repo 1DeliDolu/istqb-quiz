@@ -1,0 +1,667 @@
+{
+    "chapter": "2",
+    "subChapter": "2-2-1",
+    "subChapterTitle": "2.2.1 Teststufen",
+    "questions": [
+        {
+            "question": "Welche Teststufe wird auch als Unittest bezeichnet?",
+            "explanation": "Der Komponententest (auch Unittest genannt) konzentriert sich auf das Testen von isolierten Komponenten. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Komponententest",
+                    "correct": true
+                },
+                {
+                    "text": "Integrationstest",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf konzentriert sich der Komponententest?",
+            "explanation": "Der Komponententest (auch Unittest genannt) konzentriert sich auf das Testen von isolierten Komponenten. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Auf das Testen von isolierten Komponenten",
+                    "correct": true
+                },
+                {
+                    "text": "Auf die Zusammenarbeit mehrerer Systeme",
+                    "correct": false
+                },
+                {
+                    "text": "Auf die Validierung der Benutzeranforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Auf das Testen von Geschäftsprozessen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Unterstützung ist beim Komponententest oft erforderlich?",
+            "explanation": "Dies erfordert oft spezifische Unterstützung, wie Testrahmen oder Unittest-Frameworks. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Testrahmen oder Unittest-Frameworks",
+                    "correct": true
+                },
+                {
+                    "text": "Nur manuelle Checklisten",
+                    "correct": false
+                },
+                {
+                    "text": "Ausschließlich System-Emulatoren",
+                    "correct": false
+                },
+                {
+                    "text": "Exploratives Testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wer führt Komponententests in der Regel durch?",
+            "explanation": "Komponententests werden normalerweise von Entwicklern in ihrer Entwicklungsumgebung durchgeführt. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Von Entwicklern",
+                    "correct": true
+                },
+                {
+                    "text": "Von Endbenutzern",
+                    "correct": false
+                },
+                {
+                    "text": "Von Business-Analysten",
+                    "correct": false
+                },
+                {
+                    "text": "Von externen Auditoren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In welcher Umgebung finden Komponententests üblicherweise statt?",
+            "explanation": "Komponententests werden normalerweise von Entwicklern in ihrer Entwicklungsumgebung durchgeführt. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "In der Entwicklungsumgebung",
+                    "correct": true
+                },
+                {
+                    "text": "In der Produktionsumgebung",
+                    "correct": false
+                },
+                {
+                    "text": "Nur in der Testumgebung der Kunden",
+                    "correct": false
+                },
+                {
+                    "text": "Im Usability-Labor",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf konzentriert sich der Komponentenintegrationstest?",
+            "explanation": "Der Komponentenintegrationstest konzentriert sich auf das Testen der Schnittstellen und Interaktionen zwischen Komponenten. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Auf das Testen isolierter Komponenten",
+                    "correct": false
+                },
+                {
+                    "text": "Auf das Testen der Schnittstellen und Interaktionen zwischen Komponenten",
+                    "correct": true
+                },
+                {
+                    "text": "Auf die Validierung der Benutzeranforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Auf die Performanztests des Gesamtsystems",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Von was hängt der Komponentenintegrationstest stark ab?",
+            "explanation": "Komponentenintegrationstests sind stark abhängig von der Integrationsstrategie. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Von der Integrationsstrategie",
+                    "correct": true
+                },
+                {
+                    "text": "Von der Anzahl der Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Vom Budget",
+                    "correct": false
+                },
+                {
+                    "text": "Von den Usability-Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Strategien können beim Komponentenintegrationstest angewendet werden?",
+            "explanation": "Komponentenintegrationstests sind stark abhängig von der Integrationsstrategie, wie Bottom-up, Top-down oder Big Bang. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Bottom-up, Top-down oder Big Bang",
+                    "correct": true
+                },
+                {
+                    "text": "Agile oder Wasserfall",
+                    "correct": false
+                },
+                {
+                    "text": "Explorativ oder checklistenbasiert",
+                    "correct": false
+                },
+                {
+                    "text": "Manuell oder automatisiert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was wird im Komponentenintegrationstest primär überprüft?",
+            "explanation": "Der Komponentenintegrationstest konzentriert sich auf das Testen der Schnittstellen und Interaktionen zwischen Komponenten. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Die Schnittstellen und Interaktionen zwischen Komponenten",
+                    "correct": true
+                },
+                {
+                    "text": "Die Qualität der Testbasis",
+                    "correct": false
+                },
+                {
+                    "text": "Die Benutzerfreundlichkeit des Systems",
+                    "correct": false
+                },
+                {
+                    "text": "Die Dokumentation der Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Integrationsstrategie testet zuerst die unteren Module und arbeitet sich nach oben vor?",
+            "explanation": "Eine mögliche Integrationsstrategie ist Bottom-up. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Bottom-up",
+                    "correct": true
+                },
+                {
+                    "text": "Top-down",
+                    "correct": false
+                },
+                {
+                    "text": "Big Bang",
+                    "correct": false
+                },
+                {
+                    "text": "Exploratives Vorgehen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf konzentriert sich der Systemtest?",
+            "explanation": "Der Systemtest konzentriert sich auf das Gesamtverhalten und die Leistungsfähigkeiten eines gesamten Systems oder Produkts. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Auf isolierte Komponenten",
+                    "correct": false
+                },
+                {
+                    "text": "Auf Schnittstellen zwischen Modulen",
+                    "correct": false
+                },
+                {
+                    "text": "Auf das Gesamtverhalten und die Leistungsfähigkeiten eines Systems",
+                    "correct": true
+                },
+                {
+                    "text": "Auf einzelne Testfälle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arten von Tests umfasst der Systemtest häufig?",
+            "explanation": "Der Systemtest umfasst häufig funktionale Tests von End-to-End-Aufgaben und nicht-funktionale Tests von Qualitätsmerkmalen. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Nur funktionale Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur nicht-funktionale Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Funktionale End-to-End-Tests und nicht-funktionale Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Unit-Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Bei welchen Qualitätsmerkmalen ist es besser, sie an einem vollständigen System zu testen?",
+            "explanation": "Bei einigen nicht-funktionalen Qualitätsmerkmalen ist es besser, sie an einem vollständigen System in einer repräsentativen Testumgebung zu testen (z. B. Gebrauchstauglichkeit). (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Nicht-funktionalen Qualitätsmerkmalen wie Gebrauchstauglichkeit",
+                    "correct": true
+                },
+                {
+                    "text": "Nur funktionalen Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur bei Schnittstellentests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur bei explorativem Testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Möglichkeit besteht zusätzlich zum Testen in einer vollständigen Umgebung?",
+            "explanation": "Die Verwendung von Simulationen von Teilsystemen ist ebenfalls möglich. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Verwendung von Simulationen von Teilsystemen",
+                    "correct": true
+                },
+                {
+                    "text": "Einsatz ausschließlich echter Produktivsysteme",
+                    "correct": false
+                },
+                {
+                    "text": "Nur manuelle Checklisten",
+                    "correct": false
+                },
+                {
+                    "text": "Verzicht auf Testumgebungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wer kann den Systemtest durchführen?",
+            "explanation": "Der Systemtest kann von einem unabhängigen Testteam durchgeführt werden und bezieht sich auf Anforderungsspezifikationen für das System. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Von einem unabhängigen Testteam",
+                    "correct": true
+                },
+                {
+                    "text": "Nur von Entwicklern selbst",
+                    "correct": false
+                },
+                {
+                    "text": "Nur von Endanwendern",
+                    "correct": false
+                },
+                {
+                    "text": "Nur vom Projektmanagement",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf konzentriert sich der Systemintegrationstest?",
+            "explanation": "Der Systemintegrationstest konzentriert sich auf das Testen der Schnittstellen zwischen dem System unter Test und anderen Systemen und externen Diensten. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Auf das Testen einzelner Komponenten",
+                    "correct": false
+                },
+                {
+                    "text": "Auf das Testen der Schnittstellen zwischen Systemen und externen Diensten",
+                    "correct": true
+                },
+                {
+                    "text": "Auf das Testen der Benutzeroberfläche",
+                    "correct": false
+                },
+                {
+                    "text": "Auf das Testen von Geschäftsprozessen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Elemente stehen im Fokus des Systemintegrationstests?",
+            "explanation": "Der Systemintegrationstest konzentriert sich auf Schnittstellen zwischen dem System unter Test und anderen Systemen sowie externen Diensten. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Schnittstellen zwischen Systemen und externen Diensten",
+                    "correct": true
+                },
+                {
+                    "text": "Nur interne Variablen eines Moduls",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Spezifikationen der Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Ausführungszeit des Codes",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Voraussetzung ist für Systemintegrationstests besonders wichtig?",
+            "explanation": "Für Systemintegrationstests sind geeignete Testumgebungen erforderlich. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Geeignete Testumgebungen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur manuelle Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Keine Umgebung, nur theoretische Analysen",
+                    "correct": false
+                },
+                {
+                    "text": "Direkt die Produktionsumgebung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie sollten die Testumgebungen für Systemintegrationstests idealerweise gestaltet sein?",
+            "explanation": "Die Testumgebungen sollten vorzugsweise der Betriebsumgebung entsprechen. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Sie sollten der Betriebsumgebung entsprechen",
+                    "correct": true
+                },
+                {
+                    "text": "Sie sollten völlig unabhängig sein",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sollten nur minimale Konfiguration enthalten",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sollten ausschließlich simuliert sein",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Teststufe überprüft das Zusammenspiel mit externen Diensten?",
+            "explanation": "Der Systemintegrationstest konzentriert sich auf Schnittstellen mit anderen Systemen und externen Diensten. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Systemintegrationstest",
+                    "correct": true
+                },
+                {
+                    "text": "Komponententest",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": false
+                },
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf konzentriert sich der Abnahmetest?",
+            "explanation": "Der Abnahmetest konzentriert sich auf die Validierung und den Nachweis der Einsatzfähigkeit, d. h., dass das System die Geschäftsanforderungen des Benutzers erfüllt. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Auf das Testen isolierter Module",
+                    "correct": false
+                },
+                {
+                    "text": "Auf die Validierung und den Nachweis der Einsatzfähigkeit",
+                    "correct": true
+                },
+                {
+                    "text": "Auf die Performanzoptimierung",
+                    "correct": false
+                },
+                {
+                    "text": "Auf Schnittstellen zwischen Komponenten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wer sollte idealerweise Abnahmetests durchführen?",
+            "explanation": "Idealerweise sollten Abnahmetests von den vorgesehenen Benutzern durchgeführt werden. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Die vorgesehenen Benutzer",
+                    "correct": true
+                },
+                {
+                    "text": "Nur das Entwicklungsteam",
+                    "correct": false
+                },
+                {
+                    "text": "Externe Auditoren",
+                    "correct": false
+                },
+                {
+                    "text": "Das Projektmanagement",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was wird im Abnahmetest überprüft?",
+            "explanation": "Es wird überprüft, dass das System die Geschäftsanforderungen des Benutzers erfüllt. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Die Erfüllung der Geschäftsanforderungen des Benutzers",
+                    "correct": true
+                },
+                {
+                    "text": "Die interne Codequalität",
+                    "correct": false
+                },
+                {
+                    "text": "Die Dokumentation der Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Anzahl der durchgeführten Unit-Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche ist eine der wichtigsten Formen des Abnahmetests?",
+            "explanation": "Die wichtigsten Formen des Abnahmetests sind: der Benutzerabnahmetest, der betriebliche Abnahmetest, der vertragliche Abnahmetest, der regulatorische Abnahmetest, der Alpha-Test und der Beta-Test. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Benutzerabnahmetest (UAT)",
+                    "correct": true
+                },
+                {
+                    "text": "Unit-Test",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstest",
+                    "correct": false
+                },
+                {
+                    "text": "Explorativer Test",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Optionen gehört NICHT zu den Abnahmeformen?",
+            "explanation": "Die wichtigsten Formen sind: Benutzerabnahmetest, betrieblicher Abnahmetest, vertraglicher Abnahmetest, regulatorischer Abnahmetest, Alpha-Test und Beta-Test. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Regulatorischer Abnahmetest",
+                    "correct": false
+                },
+                {
+                    "text": "Alpha-Test",
+                    "correct": false
+                },
+                {
+                    "text": "Beta-Test",
+                    "correct": false
+                },
+                {
+                    "text": "Komponentenintegrationstest",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Warum werden die Teststufen durch bestimmte Attribute unterschieden?",
+            "explanation": "Die Teststufen werden in diesem Kapitel durch die folgende Liste von Attributen unterschieden, um Überschneidungen von Testaktivitäten zu vermeiden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Um Überschneidungen von Testaktivitäten zu vermeiden",
+                    "correct": true
+                },
+                {
+                    "text": "Um die Testkosten zu reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Testautomatisierung zu fördern",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Anzahl der Entwickler zu bestimmen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Attribut gehört zur Unterscheidung der Teststufen?",
+            "explanation": "Die Liste der Attribute umfasst u. a. das Testobjekt. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Testobjekt",
+                    "correct": true
+                },
+                {
+                    "text": "Release-Datum",
+                    "correct": false
+                },
+                {
+                    "text": "Projektbudget",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder-Namen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Attribut gehört ebenfalls zu den Unterscheidungsmerkmalen der Teststufen?",
+            "explanation": "Die Liste der Attribute umfasst auch die Testziele. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Testziele",
+                    "correct": true
+                },
+                {
+                    "text": "Projektmethodik",
+                    "correct": false
+                },
+                {
+                    "text": "Technologie-Stack",
+                    "correct": false
+                },
+                {
+                    "text": "Budgetplanung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Grundlage gehört zu den Attributen der Teststufen?",
+            "explanation": "Die Liste der Attribute umfasst auch die Testbasis. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Testbasis",
+                    "correct": true
+                },
+                {
+                    "text": "Geschäftsstrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Release-Plan",
+                    "correct": false
+                },
+                {
+                    "text": "Technische Schulungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Attribut beschreibt die Art der Fehler, die eine Teststufe finden soll?",
+            "explanation": "Die Liste der Attribute umfasst Fehlerzustände und Fehlerwirkungen. (Abschnitt 2.2.1)",
+            "options": [
+                {
+                    "text": "Fehlerzustände und Fehlerwirkungen",
+                    "correct": true
+                },
+                {
+                    "text": "Code-Komplexität",
+                    "correct": false
+                },
+                {
+                    "text": "Budgetabweichungen",
+                    "correct": false
+                },
+                {
+                    "text": "Projektlaufzeit",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

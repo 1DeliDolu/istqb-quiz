@@ -1,0 +1,666 @@
+{
+    "chapter": "2",
+    "subChapter": "2-2-2",
+    "subChapterTitle": "2.2.2 Testarten",
+    "questions": [
+        {
+            "question": "Wie viele Testarten werden in diesem Lehrplan behandelt?",
+            "explanation": "In diesem Lehrplan werden die folgenden vier Testarten behandelt. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Drei",
+                    "correct": false
+                },
+                {
+                    "text": "Vier",
+                    "correct": true
+                },
+                {
+                    "text": "Fünf",
+                    "correct": false
+                },
+                {
+                    "text": "Sechs",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf konzentriert sich der funktionale Test?",
+            "explanation": "Beim funktionalen Test werden die Funktionen bewertet, die eine Komponente oder ein System erfüllen soll. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Auf die Funktionen, die eine Komponente oder ein System erfüllen soll",
+                    "correct": true
+                },
+                {
+                    "text": "Auf die Systemintegration",
+                    "correct": false
+                },
+                {
+                    "text": "Auf die Benutzerfreundlichkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Auf die Testumgebungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was beschreibt der funktionale Test im Kern?",
+            "explanation": "Die Funktionen sind das, „was\" das Testobjekt tun soll. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Das, was das Testobjekt tun soll",
+                    "correct": true
+                },
+                {
+                    "text": "Wie effizient das System läuft",
+                    "correct": false
+                },
+                {
+                    "text": "Welche Schnittstellen angebunden sind",
+                    "correct": false
+                },
+                {
+                    "text": "Wie hoch die Codeabdeckung ist",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Hauptziel der funktionalen Tests?",
+            "explanation": "Das Hauptziel der funktionalen Tests ist die Überprüfung der funktionalen Vollständigkeit, der funktionalen Korrektheit und der funktionalen Angemessenheit. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Überprüfung von Vollständigkeit, Korrektheit und Angemessenheit",
+                    "correct": true
+                },
+                {
+                    "text": "Überprüfung der Usability",
+                    "correct": false
+                },
+                {
+                    "text": "Überprüfung der Performanz",
+                    "correct": false
+                },
+                {
+                    "text": "Überprüfung der Wartbarkeit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Qualitätsmerkmal steht im Mittelpunkt des funktionalen Tests?",
+            "explanation": "Funktionale Tests prüfen, ob die spezifizierten Funktionen korrekt und vollständig umgesetzt sind. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Funktionale Qualität",
+                    "correct": true
+                },
+                {
+                    "text": "Nicht-funktionale Qualität",
+                    "correct": false
+                },
+                {
+                    "text": "Architektonische Stabilität",
+                    "correct": false
+                },
+                {
+                    "text": "Prozesskonformität",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Worauf konzentriert sich der nicht-funktionale Test?",
+            "explanation": "Beim nicht-funktionalen Test werden andere als die funktionalen Eigenschaften einer Komponente oder eines Systems bewertet. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Auf die funktionalen Eigenschaften",
+                    "correct": false
+                },
+                {
+                    "text": "Auf andere als die funktionalen Eigenschaften",
+                    "correct": true
+                },
+                {
+                    "text": "Nur auf die Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf die Benutzeranforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Frage beantwortet der nicht-funktionale Test im Wesentlichen?",
+            "explanation": "Beim nicht-funktionalen Test wird geprüft, 'wie gut sich das System verhält'. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Was das System tut",
+                    "correct": false
+                },
+                {
+                    "text": "Wie gut sich das System verhält",
+                    "correct": true
+                },
+                {
+                    "text": "Wer das System benutzt",
+                    "correct": false
+                },
+                {
+                    "text": "Wann das System getestet wird",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Hauptziel des nicht-funktionalen Tests?",
+            "explanation": "Das Hauptziel des nicht-funktionalen Tests ist die Überprüfung der nicht-funktionalen Qualitätsmerkmale. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Überprüfung der funktionalen Vollständigkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Überprüfung der funktionalen Angemessenheit",
+                    "correct": false
+                },
+                {
+                    "text": "Überprüfung der nicht-funktionalen Qualitätsmerkmale",
+                    "correct": true
+                },
+                {
+                    "text": "Überprüfung der Entwicklungsprozesse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Norm klassifiziert die nicht-funktionalen Qualitätsmerkmale?",
+            "explanation": "Die Norm ISO/IEC 25010 bietet die folgende Klassifizierung der nicht-funktionalen Qualitätsmerkmale. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "ISO/IEC 25010",
+                    "correct": true
+                },
+                {
+                    "text": "ISO/IEC 12207",
+                    "correct": false
+                },
+                {
+                    "text": "IEEE 829",
+                    "correct": false
+                },
+                {
+                    "text": "CMMI",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches dieser Qualitätsmerkmale gehört zu den nicht-funktionalen Tests nach ISO/IEC 25010?",
+            "explanation": "Die Norm ISO/IEC 25010 listet u. a. Performanz, Kompatibilität, Gebrauchstauglichkeit, Zuverlässigkeit, Sicherheit (Security), Wartbarkeit, Übertragbarkeit und Sicherheit (Safety) auf. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Performanz",
+                    "correct": true
+                },
+                {
+                    "text": "Funktionale Vollständigkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Architektonische Stabilität",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungskonsistenz",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann kann es sinnvoll sein, nicht-funktionale Tests zu starten?",
+            "explanation": "Manchmal ist es sinnvoll, dass nicht-funktionale Tests schon früh im SDLC beginnen (z. B. im Rahmen von Reviews oder bereits in Komponententests). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Schon früh im SDLC, z. B. in Reviews oder Komponententests",
+                    "correct": true
+                },
+                {
+                    "text": "Nur nach dem Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Erst nach der Produktivsetzung",
+                    "correct": false
+                },
+                {
+                    "text": "Ausschließlich im Abnahmetest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie leiten sich viele nicht-funktionale Tests ab?",
+            "explanation": "Viele nicht-funktionale Tests leiten sich von funktionalen Tests ab, da sie dieselben funktionalen Tests verwenden, aber prüfen, ob eine nicht-funktionale Bedingung erfüllt ist. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Von funktionalen Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Von explorativen Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Von Teststrategien",
+                    "correct": false
+                },
+                {
+                    "text": "Von Systemintegrationstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel beschreibt eine nicht-funktionale Bedingung in einem Test?",
+            "explanation": "Beispiel: Prüfung, ob eine Funktion innerhalb einer bestimmten Zeit ausgeführt wird oder ob sie auf eine neue Plattform portiert werden kann. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Ob eine Funktion innerhalb einer bestimmten Zeit ausgeführt wird",
+                    "correct": true
+                },
+                {
+                    "text": "Ob eine Funktion die fachlichen Anforderungen erfüllt",
+                    "correct": false
+                },
+                {
+                    "text": "Ob alle Unit-Tests erfolgreich sind",
+                    "correct": false
+                },
+                {
+                    "text": "Ob die Dokumentation vollständig ist",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum kann die späte Entdeckung von nicht-funktionalen Fehlerzuständen problematisch sein?",
+            "explanation": "Die späte Entdeckung von nicht-funktionalen Fehlerzuständen kann den Erfolg eines Projekts ernsthaft gefährden. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Weil sie den Projekterfolg ernsthaft gefährden kann",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie keine Auswirkungen hat",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie die Testumgebung überlastet",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie nur die Dokumentation betrifft",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche spezielle Testumgebung kann für nicht-funktionale Tests erforderlich sein?",
+            "explanation": "Nicht-funktionale Tests erfordern manchmal eine sehr spezielle Testumgebung, wie z. B. ein Gebrauchstauglichkeitslabor für Gebrauchstauglichkeitstests. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Ein Gebrauchstauglichkeitslabor",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Produktionsdatenbank",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Bugtracking-System",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Versionsverwaltung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf basiert der Black-Box-Test?",
+            "explanation": "Der Black-Box-Test basiert auf Spezifikationen und leitet die Tests aus der Dokumentation ab. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Auf Spezifikationen und Dokumentation",
+                    "correct": true
+                },
+                {
+                    "text": "Auf der internen Struktur des Codes",
+                    "correct": false
+                },
+                {
+                    "text": "Auf den persönlichen Erfahrungen des Testers",
+                    "correct": false
+                },
+                {
+                    "text": "Auf den Ergebnissen von White-Box-Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf bezieht sich der Black-Box-Test ausdrücklich nicht?",
+            "explanation": "Die Tests beziehen sich nicht auf die interne Struktur des Testobjekts. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Auf die interne Struktur des Testobjekts",
+                    "correct": true
+                },
+                {
+                    "text": "Auf die Spezifikationen",
+                    "correct": false
+                },
+                {
+                    "text": "Auf die Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Auf die Benutzeranforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Hauptziel des Black-Box-Tests?",
+            "explanation": "Das Hauptziel des Black-Box-Tests besteht darin, das Verhalten des Systems gegen seine Spezifikationen zu überprüfen. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Überprüfung des Systemverhaltens gegen Spezifikationen",
+                    "correct": true
+                },
+                {
+                    "text": "Überprüfung des Quellcodes auf interne Logik",
+                    "correct": false
+                },
+                {
+                    "text": "Überprüfung der Testabdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Überprüfung der Projektpläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Informationsquelle wird für den Black-Box-Test genutzt?",
+            "explanation": "Die Tests werden aus der Dokumentation abgeleitet. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Dokumentation",
+                    "correct": true
+                },
+                {
+                    "text": "Code-Kommentare",
+                    "correct": false
+                },
+                {
+                    "text": "Testerfahrungen",
+                    "correct": false
+                },
+                {
+                    "text": "Exploratives Testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher andere Testansatz steht im Gegensatz zum Black-Box-Test?",
+            "explanation": "Der Black-Box-Test betrachtet nicht die interne Struktur, im Gegensatz zum White-Box-Test. (Abschnitt 2.2.2, Bezug zu 4.2)",
+            "options": [
+                {
+                    "text": "White-Box-Test",
+                    "correct": true
+                },
+                {
+                    "text": "Explorativer Test",
+                    "correct": false
+                },
+                {
+                    "text": "Benutzerabnahmetest",
+                    "correct": false
+                },
+                {
+                    "text": "Systemintegrationstest",
+                    "correct": false
+                }
+            ]
+        }, 
+        {
+            "question": "Worauf basiert der White-Box-Test?",
+            "explanation": "Der White-Box-Test ist strukturbasiert und leitet Tests aus der Implementierung oder der internen Struktur des Systems ab. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Auf der Implementierung oder internen Struktur des Systems",
+                    "correct": true
+                },
+                {
+                    "text": "Nur auf Spezifikationen und Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Auf Benutzerfeedback",
+                    "correct": false
+                },
+                {
+                    "text": "Auf explorativem Vorgehen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Elemente können beim White-Box-Test berücksichtigt werden?",
+            "explanation": "Beispiele sind Code, Architektur, Arbeitsabläufe und Datenflüsse. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Code, Architektur, Arbeitsabläufe und Datenflüsse",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Benutzeranforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Geschäftsprozesse",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Testdokumentation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Hauptziel des White-Box-Tests?",
+            "explanation": "Das Hauptziel des White-Box-Tests besteht darin, die zugrunde liegende Struktur durch die Tests bis zu einer akzeptablen Stufe zu überdecken. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Überdeckung der zugrunde liegenden Struktur bis zu einer akzeptablen Stufe",
+                    "correct": true
+                },
+                {
+                    "text": "Überprüfung der Benutzerfreundlichkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Überprüfung der funktionalen Vollständigkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung der Projektpläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Testansatz ist im Gegensatz zum White-Box-Test spezifikationsbasiert?",
+            "explanation": "Der Black-Box-Test basiert auf Spezifikationen, während der White-Box-Test auf der internen Struktur basiert. (Abschnitt 2.2.2, Bezug zu 4.2 und 4.3)",
+            "options": [
+                {
+                    "text": "Black-Box-Test",
+                    "correct": true
+                },
+                {
+                    "text": "Regressionstest",
+                    "correct": false
+                },
+                {
+                    "text": "Explorativer Test",
+                    "correct": false
+                },
+                {
+                    "text": "Benutzerabnahmetest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Test wird auch als strukturbasierter Test bezeichnet?",
+            "explanation": "Der White-Box-Test ist ein strukturbasierter Test. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "White-Box-Test",
+                    "correct": true
+                },
+                {
+                    "text": "Black-Box-Test",
+                    "correct": false
+                },
+                {
+                    "text": "Explorativer Test",
+                    "correct": false
+                },
+                {
+                    "text": "Usability-Test",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Auf welchen Teststufen können die vier genannten Testarten angewendet werden?",
+            "explanation": "Alle vier oben genannten Testarten können auf allen Teststufen angewandt werden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Auf allen Teststufen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur auf der Abnahmetest-Stufe",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf der Integrationstest-Stufe",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf der Systemtest-Stufe",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterscheidet sich der Schwerpunkt der Testarten je nach Stufe?",
+            "explanation": "Auch wenn die Testarten auf allen Stufen angewandt werden können, liegt der Schwerpunkt je nach Stufe unterschiedlich. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Er ist je nach Teststufe unterschiedlich",
+                    "correct": true
+                },
+                {
+                    "text": "Er ist immer identisch",
+                    "correct": false
+                },
+                {
+                    "text": "Er richtet sich nur nach der Testbasis",
+                    "correct": false
+                },
+                {
+                    "text": "Er hängt nur von den Testwerkzeugen ab",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was können für die genannten Testarten zur Ableitung von Testbedingungen und Testfällen eingesetzt werden?",
+            "explanation": "Für alle genannten Testarten können unterschiedliche Testverfahren zur Ableitung von Testbedingungen und Testfällen verwendet werden. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Unterschiedliche Testverfahren",
+                    "correct": true
+                },
+                {
+                    "text": "Nur White-Box-Methoden",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Exploratives Vorgehen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt die Anwendbarkeit der Testarten korrekt?",
+            "explanation": "Alle vier oben genannten Testarten können auf allen Teststufen angewandt werden, auch wenn der Schwerpunkt je nach Stufe anders ist. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Alle Testarten sind auf allen Stufen anwendbar",
+                    "correct": true
+                },
+                {
+                    "text": "Nur funktionale Tests sind auf allen Stufen möglich",
+                    "correct": false
+                },
+                {
+                    "text": "Nicht-funktionale Tests nur auf Systemebene",
+                    "correct": false
+                },
+                {
+                    "text": "Black-Box-Tests nur im Abnahmetest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage ist richtig in Bezug auf die Ableitung von Testfällen?",
+            "explanation": "Für alle genannten Testarten können unterschiedliche Testverfahren zur Ableitung von Testbedingungen und Testfällen verwendet werden. (Abschnitt 2.2.2)",
+            "options": [
+                {
+                    "text": "Unterschiedliche Verfahren können genutzt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Checklisten dürfen genutzt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Es gibt nur ein einziges standardisiertes Verfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle werden ausschließlich manuell erstellt",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

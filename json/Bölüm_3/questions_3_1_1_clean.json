@@ -1,0 +1,667 @@
+{
+    "chapter": "3",
+    "subChapter": "3-1-1",
+    "subChapterTitle": "Arbeitsergebnisse, die durch statische Tests untersucht werden können",
+    "questions": [
+        {
+            "question": "Welche Aussage über Arbeitsergebnisse und statische Tests ist korrekt?",
+            "explanation": "Fast jedes Arbeitsergebnis kann durch statische Tests untersucht werden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Fast jedes Arbeitsergebnis kann durch statische Tests untersucht werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Nur ausführbarer Quellcode kann statisch getestet werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Anforderungen können statisch geprüft werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Testfälle sind Gegenstand statischer Tests.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches der folgenden Artefakte kann NICHT durch statische Tests untersucht werden?",
+            "explanation": "Beispiele für prüfbare Artefakte sind Anforderungen, Quellcode, Testkonzepte, Backlog-Einträge, Test-Chartas, Dokumentation, Verträge oder Modelle. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Spezifikation der Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Produkt-Backlog-Einträge",
+                    "correct": false
+                },
+                {
+                    "text": "Laufzeit-Performance-Metriken",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Dokumente gehören zu den typischen Arbeitsergebnissen für statische Tests?",
+            "explanation": "Zu den typischen Arbeitsergebnissen gehören u. a. Anforderungen, Quellcode, Testkonzepte und Projektdokumentation. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Anforderungen, Quellcode, Testkonzepte, Projektdokumentation",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Anforderungen und Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Verträge und Modelle",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Testberichte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist es nützlich, Test-Chartas mit statischen Tests zu prüfen?",
+            "explanation": "Test-Chartas können auf Verständlichkeit und Vollständigkeit überprüft werden, bevor sie für explorative Tests genutzt werden. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Um Vollständigkeit und Verständlichkeit sicherzustellen",
+                    "correct": true
+                },
+                {
+                    "text": "Um deren Ausführungsgeschwindigkeit zu messen",
+                    "correct": false
+                },
+                {
+                    "text": "Um dynamische Tests zu vermeiden",
+                    "correct": false
+                },
+                {
+                    "text": "Um Regressionstests zu ersetzen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Artefakte können in frühen Projektphasen durch statische Tests geprüft werden?",
+            "explanation": "Früh können Anforderungen, Modelle oder Verträge überprüft werden. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Anforderungen, Modelle, Verträge",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Code nach Implementierung",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Testprotokolle",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Benutzerhandbücher",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil, wenn Backlog-Einträge statisch geprüft werden?",
+            "explanation": "Eine Prüfung von Backlog-Einträgen stellt sicher, dass sie klar, vollständig und testbar sind. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Sicherstellung von Klarheit, Vollständigkeit und Testbarkeit",
+                    "correct": true
+                },
+                {
+                    "text": "Ermittlung der Laufzeit-Performance",
+                    "correct": false
+                },
+                {
+                    "text": "Automatische Erstellung von Testfällen",
+                    "correct": false
+                },
+                {
+                    "text": "Messung des Benutzererlebnisses",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel gehört zu Arbeitsergebnissen, die durch statische Tests untersucht werden können?",
+            "explanation": "Verträge können ebenfalls mit statischen Tests überprüft werden, z. B. auf Konsistenz und Verständlichkeit. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Verträge",
+                    "correct": true
+                },
+                {
+                    "text": "Rechenzeitmessungen",
+                    "correct": false
+                },
+                {
+                    "text": "Datenbankabfragen zur Laufzeit",
+                    "correct": false
+                },
+                {
+                    "text": "Systemdurchsatz im Betrieb",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel hat die statische Prüfung von Projektdokumentation?",
+            "explanation": "Projektdokumentation wird auf Lesbarkeit, Konsistenz und Vollständigkeit überprüft. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Lesbarkeit, Konsistenz und Vollständigkeit sicherstellen",
+                    "correct": true
+                },
+                {
+                    "text": "Dynamische Tests überflüssig machen",
+                    "correct": false
+                },
+                {
+                    "text": "Automatisch Code generieren",
+                    "correct": false
+                },
+                {
+                    "text": "Performanz messen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was unterscheidet die statische Prüfung von Modellen von dynamischen Tests?",
+            "explanation": "Modelle können früh auf Konsistenz und Vollständigkeit geprüft werden, ohne dass eine Implementierung existieren muss. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Modelle können früh auf Konsistenz geprüft werden, ohne Implementierung",
+                    "correct": true
+                },
+                {
+                    "text": "Modelle können nur durch Ausführung überprüft werden",
+                    "correct": false
+                },
+                {
+                    "text": "Modelle sind nicht Gegenstand statischer Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Modelle ersetzen alle Testfälle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen ist FALSCH?",
+            "explanation": "Alle genannten Arbeitsergebnisse (Anforderungen, Quellcode, Testkonzepte etc.) sind prüfbar. Nur Laufzeitmetriken wie Performance gehören nicht dazu. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Anforderungen können durch statische Tests geprüft werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Quellcode kann durch statische Tests geprüft werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Produkt-Backlog-Einträge können geprüft werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Laufzeit-Performance-Messungen gehören zu statischen Tests.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welches Arbeitsergebnis kann prinzipiell Gegenstand eines Reviews sein?",
+            "explanation": "Jedes Arbeitsergebnis, das gelesen und verstanden werden kann, kann in einem Review überprüft werden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Jedes Arbeitsergebnis, das lesbar und verständlich ist",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Modelle",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Testkonzepte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was unterscheidet Reviews von statischer Analyse?",
+            "explanation": "Bei Reviews reicht Lesbarkeit und Verständlichkeit, während statische Analyse eine strukturierte Form benötigt. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Reviews benötigen nur Lesbarkeit, statische Analyse eine formale Struktur",
+                    "correct": true
+                },
+                {
+                    "text": "Beide benötigen ausschließlich formale Syntax",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Analyse benötigt keine Struktur",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews können nur auf Quellcode angewendet werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum benötigen Arbeitsergebnisse für die statische Analyse eine bestimmte Struktur?",
+            "explanation": "Werkzeuge können nur strukturierte Arbeitsergebnisse prüfen, z. B. Code oder Modelle mit formaler Syntax. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Damit Werkzeuge die Arbeitsergebnisse automatisch analysieren können",
+                    "correct": true
+                },
+                {
+                    "text": "Damit sie im Review leichter gelesen werden können",
+                    "correct": false
+                },
+                {
+                    "text": "Damit die Testfälle automatisch generiert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Damit keine Reviews mehr notwendig sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel ist für ein Arbeitsergebnis geeignet, das mit statischer Analyse untersucht werden kann?",
+            "explanation": "Beispiele sind strukturierte Artefakte wie Quellcode, Modelle oder formal strukturierte Texte. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Quellcode mit formaler Syntax",
+                    "correct": true
+                },
+                {
+                    "text": "Handschriftliche Notizen",
+                    "correct": false
+                },
+                {
+                    "text": "Projektziele in Prosaform",
+                    "correct": false
+                },
+                {
+                    "text": "Informelle Diskussionen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel ist besser für ein Review geeignet als für eine statische Analyse?",
+            "explanation": "Freitext-Dokumente wie Anforderungsspezifikationen oder Konzepte können gelesen und verstanden werden, auch wenn sie keine formale Syntax haben. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Anforderungsspezifikationen in natürlicher Sprache",
+                    "correct": true
+                },
+                {
+                    "text": "Quellcode mit Compilerstruktur",
+                    "correct": false
+                },
+                {
+                    "text": "Formale Modelle",
+                    "correct": false
+                },
+                {
+                    "text": "Tabellen mit fester Syntax",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Voraussetzung gilt für Reviews?",
+            "explanation": "Für ein Review genügt es, wenn die Arbeitsergebnisse lesbar und verständlich sind. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Arbeitsergebnisse müssen lesbar und verständlich sein",
+                    "correct": true
+                },
+                {
+                    "text": "Arbeitsergebnisse müssen eine formale Syntax besitzen",
+                    "correct": false
+                },
+                {
+                    "text": "Es dürfen nur technische Dokumente geprüft werden",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Code kann geprüft werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Voraussetzung gilt für die statische Analyse?",
+            "explanation": "Statische Analyse benötigt eine strukturierte Form, wie z. B. Modelle oder Code. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Arbeitsergebnisse müssen eine formale Struktur besitzen",
+                    "correct": true
+                },
+                {
+                    "text": "Sie müssen nur von Menschen lesbar sein",
+                    "correct": false
+                },
+                {
+                    "text": "Es dürfen nur Anforderungen analysiert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Sie dürfen ausschließlich Projektdokumente sein",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen zu Reviews ist FALSCH?",
+            "explanation": "Reviews können auf jedes lesbare und verständliche Arbeitsergebnis angewendet werden – nicht nur auf Quellcode. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Reviews können auf Quellcode angewendet werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews können auf Anforderungsdokumente angewendet werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews können auf Projektdokumentationen angewendet werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews können nur auf Quellcode angewendet werden.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welches der folgenden Beispiele gehört NICHT zu den Eingaben für eine statische Analyse?",
+            "explanation": "Unstrukturierte Freitexte können nicht automatisch mit Werkzeugen analysiert werden. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Formale Modelle",
+                    "correct": false
+                },
+                {
+                    "text": "Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Formale Textstrukturen",
+                    "correct": false
+                },
+                {
+                    "text": "Freitext ohne formale Syntax",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welches der folgenden Ergebnisse spiegelt die Stärke von Reviews wider?",
+            "explanation": "Reviews sind flexibel, weil sie auf allen lesbaren Arbeitsergebnissen angewendet werden können. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Flexibilität, da auch unstrukturierte Dokumente geprüft werden können",
+                    "correct": true
+                },
+                {
+                    "text": "Automatische Analyse mit Werkzeugen",
+                    "correct": false
+                },
+                {
+                    "text": "Messung der Performance des Codes",
+                    "correct": false
+                },
+                {
+                    "text": "Berechnung der Testabdeckung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arbeitsergebnisse eignen sich NICHT für statische Tests?",
+            "explanation": "Arbeitsergebnisse, die schwer zu interpretieren sind oder rechtlich nicht analysiert werden dürfen, wie z. B. Drittanbieter-Code, eignen sich nicht. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Arbeitsergebnisse, die schwer zu interpretieren sind oder rechtlich nicht analysiert werden dürfen",
+                    "correct": true
+                },
+                {
+                    "text": "Anforderungen in natürlicher Sprache",
+                    "correct": false
+                },
+                {
+                    "text": "Testkonzepte",
+                    "correct": false
+                },
+                {
+                    "text": "Modelle mit formaler Syntax",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist ausführbarer Drittanbieter-Code oft von statischen Tests ausgeschlossen?",
+            "explanation": "Aus rechtlichen Gründen darf Drittanbieter-Code häufig nicht untersucht werden. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Wegen rechtlicher Einschränkungen",
+                    "correct": true
+                },
+                {
+                    "text": "Weil er immer fehlerfrei ist",
+                    "correct": false
+                },
+                {
+                    "text": "Weil er nicht kompiliert werden kann",
+                    "correct": false
+                },
+                {
+                    "text": "Weil er nie getestet werden muss",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Kriterium macht ein Arbeitsergebnis ungeeignet für statische Tests?",
+            "explanation": "Wenn es für den Menschen schwer zu interpretieren ist oder nicht sinnvoll durch Werkzeuge analysiert werden kann, eignet es sich nicht. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Es ist schwer für Menschen zu interpretieren",
+                    "correct": true
+                },
+                {
+                    "text": "Es enthält Anforderungen in natürlicher Sprache",
+                    "correct": false
+                },
+                {
+                    "text": "Es ist Teil eines Backlogs",
+                    "correct": false
+                },
+                {
+                    "text": "Es ist Bestandteil eines Testkonzepts",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel gehört zu Arbeitsergebnissen, die statische Tests ausschließen?",
+            "explanation": "Ausführbarer Code von Drittanbietern ist ein Beispiel für ein ungeeignetes Arbeitsergebnis. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Ausführbarer Code von Drittanbietern",
+                    "correct": true
+                },
+                {
+                    "text": "Quellcode mit formaler Syntax",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungsspezifikationen",
+                    "correct": false
+                },
+                {
+                    "text": "Verträge",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sollte man bestimmte Arbeitsergebnisse nicht mit Werkzeugen analysieren?",
+            "explanation": "Weil sie nicht sinnvoll ausgewertet werden können oder rechtliche Beschränkungen bestehen. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Weil die Analyse rechtlich oder praktisch nicht sinnvoll ist",
+                    "correct": true
+                },
+                {
+                    "text": "Weil alle Werkzeuge unzuverlässig sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil nur dynamische Tests erlaubt sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie niemals Fehler enthalten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen ist korrekt?",
+            "explanation": "Nicht alle Arbeitsergebnisse eignen sich für statische Tests, z. B. Drittanbieter-Code oder schwer interpretierbare Daten. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Nicht alle Arbeitsergebnisse eignen sich für statische Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Alle Arbeitsergebnisse eignen sich gleichermaßen für statische Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Code eignet sich für statische Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Dokumentation eignet sich für statische Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Einschränkung besteht bei der statischen Analyse von externem Code?",
+            "explanation": "Bei externem oder Drittanbieter-Code gibt es häufig rechtliche Beschränkungen, die eine Analyse verhindern. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Rechtliche Beschränkungen",
+                    "correct": true
+                },
+                {
+                    "text": "Technisch ist dies unmöglich",
+                    "correct": false
+                },
+                {
+                    "text": "Er ist immer unvollständig dokumentiert",
+                    "correct": false
+                },
+                {
+                    "text": "Er wird automatisch fehlerfrei geliefert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arbeitsergebnisse sind für Reviews geeignet, aber nicht für statische Analyse?",
+            "explanation": "Arbeitsergebnisse ohne formale Struktur, die aber von Menschen gelesen und verstanden werden können, sind für Reviews geeignet. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Unstrukturierte Texte, die von Menschen gelesen werden können",
+                    "correct": true
+                },
+                {
+                    "text": "Quellcode mit fester Syntax",
+                    "correct": false
+                },
+                {
+                    "text": "Modelle mit definierten Regeln",
+                    "correct": false
+                },
+                {
+                    "text": "Formalisierte Verträge",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage zu Arbeitsergebnissen und statischen Tests ist FALSCH?",
+            "explanation": "Nicht jedes Arbeitsergebnis eignet sich für statische Tests – rechtliche oder praktische Einschränkungen können dagegen sprechen. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Schwer interpretierbare Arbeitsergebnisse sind nicht geeignet",
+                    "correct": false
+                },
+                {
+                    "text": "Rechtliche Gründe können die Analyse verhindern",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Arbeitsergebnisse sind immer für statische Tests geeignet",
+                    "correct": true
+                },
+                {
+                    "text": "Ausführbarer Drittanbieter-Code ist oft ungeeignet",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko entsteht, wenn Drittanbieter-Code statisch analysiert wird?",
+            "explanation": "Die Analyse von Drittanbieter-Code kann gegen Lizenz- oder Urheberrechte verstoßen. (Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Verstoß gegen Lizenz- oder Urheberrechte",
+                    "correct": true
+                },
+                {
+                    "text": "Automatisches Löschen des Codes",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerfreiheit des Codes",
+                    "correct": false
+                },
+                {
+                    "text": "Keine weitere Testnotwendigkeit",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,469 @@
+{
+    "chapter": "2",
+    "subChapter": "2-2-3",
+    "subChapterTitle": "2.2.3 Fehlernachtest und Regressionstest",
+    "questions": [
+        {
+            "question": "Warum werden Änderungen in der Regel an einer Komponente oder einem System vorgenommen?",
+            "explanation": "Änderungen werden in der Regel an einer Komponente oder einem System vorgenommen, um entweder durch Hinzufügen eines neuen Features eine Verbesserung oder durch Beseitigung eines Fehlerzustands eine Korrektur zu erreichen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Um neue Features hinzuzufügen oder Fehler zu beseitigen",
+                    "correct": true
+                },
+                {
+                    "text": "Um das Budget zu reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Dokumentation zu verbessern",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Releaseplanung zu vereinfachen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arten von Änderungen werden im Text genannt?",
+            "explanation": "Genannt werden das Hinzufügen eines neuen Features oder die Beseitigung eines Fehlerzustands. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Neue Features und Fehlerkorrekturen",
+                    "correct": true
+                },
+                {
+                    "text": "Änderungen an der Teststrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Anpassungen am Budget",
+                    "correct": false
+                },
+                {
+                    "text": "Organisatorische Umstrukturierungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte nach Änderungen am System durchgeführt werden?",
+            "explanation": "Das Testen sollte dann auch Fehlernachtests und Regressionstests beinhalten. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Fehlernachtests und Regressionstests",
+                    "correct": true
+                },
+                {
+                    "text": "Nur eine Code-Review",
+                    "correct": false
+                },
+                {
+                    "text": "Nur eine neue Anforderungsanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Nur eine Testautomatisierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel hat die Beseitigung eines Fehlerzustands?",
+            "explanation": "Änderungen dienen entweder der Verbesserung durch Features oder der Korrektur durch die Beseitigung von Fehlerzuständen. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Eine Korrektur zu erreichen",
+                    "correct": true
+                },
+                {
+                    "text": "Neue Features einzuführen",
+                    "correct": false
+                },
+                {
+                    "text": "Das Projektbudget zu reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Die Teamgröße zu verringern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche beiden Testarten sind bei Änderungen besonders relevant?",
+            "explanation": "Das Testen sollte nach Änderungen Fehlernachtests und Regressionstests beinhalten. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Fehlernachtests und Regressionstests",
+                    "correct": true
+                },
+                {
+                    "text": "Exploratives Testen und Usability-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Lasttests und Stresstests",
+                    "correct": false
+                },
+                {
+                    "text": "System- und Abnahmetests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bestätigt der Fehlernachtest?",
+            "explanation": "Der Fehlernachtest bestätigt, dass ein ursprünglicher Fehlerzustand erfolgreich behoben wurde. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Dass ein ursprünglicher Fehlerzustand erfolgreich behoben wurde",
+                    "correct": true
+                },
+                {
+                    "text": "Dass keine neuen Features hinzugefügt wurden",
+                    "correct": false
+                },
+                {
+                    "text": "Dass die Testabdeckung vollständig ist",
+                    "correct": false
+                },
+                {
+                    "text": "Dass alle Anforderungen erfüllt sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Tests können beim Fehlernachtest ausgeführt werden?",
+            "explanation": "Je nach Risiko kann man die behobene Version testen, indem man alle zuvor fehlgeschlagenen Tests erneut ausführt. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Alle Tests, die zuvor aufgrund des Fehlers fehlgeschlagen sind",
+                    "correct": true
+                },
+                {
+                    "text": "Nur explorative Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Performanztests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche zusätzliche Maßnahme kann beim Fehlernachtest durchgeführt werden?",
+            "explanation": "Neue Tests können hinzugefügt werden, um alle Änderungen zu überdecken, die zur Behebung des Fehlerzustands erforderlich waren. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Hinzufügen neuer Tests zur Abdeckung der Änderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die Dokumentation anpassen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur das Budget erhöhen",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Systemtests weglassen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie kann der Fehlernachtest durchgeführt werden, wenn Zeit oder Geld knapp sind?",
+            "explanation": "In diesem Fall kann sich der Fehlernachtest darauf beschränken, die Testschritte auszuführen, die die ursprüngliche Fehlerwirkung produziert haben. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Nur die Testschritte ausführen, die die Fehlerwirkung ursprünglich produziert haben",
+                    "correct": true
+                },
+                {
+                    "text": "Alle möglichen Tests weglassen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Regressionstests laufen lassen",
+                    "correct": false
+                },
+                {
+                    "text": "Keine Tests mehr durchführen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Prüfziel bei reduzierten Fehlernachtests?",
+            "explanation": "Das Ziel ist zu prüfen, ob die durch den Fehlerzustand verursachte Fehlerwirkung nicht mehr auftritt. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Ob die Fehlerwirkung nicht mehr auftritt",
+                    "correct": true
+                },
+                {
+                    "text": "Ob die Anforderungen vollständig dokumentiert sind",
+                    "correct": false
+                },
+                {
+                    "text": "Ob neue Features korrekt integriert wurden",
+                    "correct": false
+                },
+                {
+                    "text": "Ob die Testautomatisierung funktioniert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bestätigt der Regressionstest?",
+            "explanation": "Der Regressionstest bestätigt, dass eine Änderung, einschließlich einer bereits getesteten Fehlerbehebung, keine nachteiligen Folgen hat. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Dass eine Änderung keine nachteiligen Folgen hat",
+                    "correct": true
+                },
+                {
+                    "text": "Dass die Änderung nur neue Features enthält",
+                    "correct": false
+                },
+                {
+                    "text": "Dass keine weiteren Tests notwendig sind",
+                    "correct": false
+                },
+                {
+                    "text": "Dass nur Fehlernachtests erforderlich sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Bereiche können von nachteiligen Folgen betroffen sein?",
+            "explanation": "Die nachteiligen Folgen könnten die Komponente, andere Komponenten desselben Systems oder sogar andere verbundene Systeme betreffen. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Die geänderte Komponente, andere Komponenten oder verbundene Systeme",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Benutzeroberfläche",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Testumgebung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Muss sich der Regressionstest ausschließlich auf das Testobjekt beschränken?",
+            "explanation": "Der Regressionstest muss sich nicht auf das Testobjekt selbst beschränken, sondern kann sich auch auf die Umgebung beziehen. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Nein, er kann sich auch auf die Umgebung beziehen",
+                    "correct": true
+                },
+                {
+                    "text": "Ja, nur auf das Testobjekt",
+                    "correct": false
+                },
+                {
+                    "text": "Ja, nur auf die Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Ja, nur auf die Dokumentation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Analyse ist ratsam, bevor Regressionstests durchgeführt werden?",
+            "explanation": "Es ist ratsam, zunächst eine Auswirkungsanalyse durchzuführen, um den Umfang der Regressionstests zu erkennen. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Eine Auswirkungsanalyse",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Budgetanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Marktanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Risikoanalyse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was zeigt die Auswirkungsanalyse im Zusammenhang mit Regressionstests?",
+            "explanation": "Die Auswirkungsanalyse zeigt, welche Teile der Software betroffen sein könnten. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Welche Teile der Software betroffen sein könnten",
+                    "correct": true
+                },
+                {
+                    "text": "Welche Entwickler verfügbar sind",
+                    "correct": false
+                },
+                {
+                    "text": "Welche Tools eingesetzt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Welche Stakeholder informiert werden müssen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie oft werden Regressionstestsuiten typischerweise durchlaufen?",
+            "explanation": "Regressionstestsuiten werden viele Male durchlaufen. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Viele Male",
+                    "correct": true
+                },
+                {
+                    "text": "Nur ein einziges Mal",
+                    "correct": false
+                },
+                {
+                    "text": "Nur beim Projektabschluss",
+                    "correct": false
+                },
+                {
+                    "text": "Nur vor der Produktionseinführung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie verändert sich die Anzahl der Testfälle in Regressionstestsuiten im Laufe der Zeit?",
+            "explanation": "Im Allgemeinen nimmt die Anzahl der Testfälle mit jeder Iteration oder jedem Release zu. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Sie nimmt zu",
+                    "correct": true
+                },
+                {
+                    "text": "Sie nimmt ab",
+                    "correct": false
+                },
+                {
+                    "text": "Sie bleibt immer gleich",
+                    "correct": false
+                },
+                {
+                    "text": "Sie hängt nur vom Budget ab",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum eignen sich Regressionstests besonders gut für die Automatisierung?",
+            "explanation": "Regressionstestsuiten werden viele Male durchlaufen, daher eignen sie sich sehr gut für Automatisierung. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Weil sie viele Male wiederholt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie keine Testumgebungen benötigen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie nur manuell durchführbar sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie keine Testfälle erfordern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann sollte die Testautomatisierung für Regressionstests beginnen?",
+            "explanation": "Die Testautomatisierung sollte bereits in einem frühen Stadium des Projekts beginnen. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Bereits in einem frühen Stadium des Projekts",
+                    "correct": true
+                },
+                {
+                    "text": "Erst am Projektende",
+                    "correct": false
+                },
+                {
+                    "text": "Erst nach der Auslieferung",
+                    "correct": false
+                },
+                {
+                    "text": "Nur wenn Bugs gefunden werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche gute Praxis gilt beim Einsatz von CI (z. B. bei DevOps) für Regressionstests?",
+            "explanation": "Wenn CI eingesetzt wird, wie z. B. bei DevOps, ist es gute Praxis, auch automatisierte Regressionstests einzubeziehen. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Automatisierte Regressionstests einzubeziehen",
+                    "correct": true
+                },
+                {
+                    "text": "Regressionstests ganz wegzulassen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur manuelle Regressionstests durchzuführen",
+                    "correct": false
+                },
+                {
+                    "text": "Regressionstests nur in der Produktion durchzuführen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Auf welchen Teststufen sind Fehlernachtests und/oder Regressionstests erforderlich?",
+            "explanation": "Fehlernachtests und/oder Regressionstests sind auf allen Teststufen erforderlich, wenn Fehlerzustände behoben oder Änderungen vorgenommen wurden. (Abschnitt 2.2.3)",
+            "options": [
+                {
+                    "text": "Auf allen Teststufen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur auf der Systemtest-Stufe",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf der Abnahmetest-Stufe",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf der Integrationstest-Stufe",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

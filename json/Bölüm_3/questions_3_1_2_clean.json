@@ -1,0 +1,887 @@
+{
+    "chapter": "3",
+    "subChapter": "3-1-2",
+    "subChapterTitle": "Wert des statischen Tests",
+    "questions": [
+        {
+            "question": "Welchen Grundsatz unterstützt der statische Test besonders?",
+            "explanation": "Der statische Test kann Fehler bereits in den frühesten Phasen des SDLC aufdecken und erfüllt damit den Grundsatz des frühen Testens. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Grundsatz des frühen Testens",
+                    "correct": true
+                },
+                {
+                    "text": "Grundsatz der Fehlerfreiheit",
+                    "correct": false
+                },
+                {
+                    "text": "Grundsatz der vollständigen Testbarkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Grundsatz der Unabhängigkeit des Testens",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist der statische Test besonders wertvoll?",
+            "explanation": "Weil er Fehlerzustände frühzeitig erkennt, die später teurer zu beheben wären. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Weil Fehler frühzeitig erkannt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Weil dynamische Tests dadurch überflüssig werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil nur Dokumentation geprüft wird",
+                    "correct": false
+                },
+                {
+                    "text": "Weil keine Werkzeuge benötigt werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Fehlerzuständen kann durch statische Tests erkannt werden, die dynamische Tests nicht finden?",
+            "explanation": "Beispiele sind nicht erreichbarer Code, falsch implementierte Entwurfsmuster und Fehler in nicht ausführbaren Arbeitsergebnissen. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Nicht erreichbarer Code, fehlerhafte Entwurfsmuster, Fehler in Dokumenten",
+                    "correct": true
+                },
+                {
+                    "text": "Speicherlecks während der Laufzeit",
+                    "correct": false
+                },
+                {
+                    "text": "Antwortzeiten bei hoher Last",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler in der Hardwareumgebung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In welcher Phase des Softwareentwicklungslebenszyklus kann der statische Test eingesetzt werden?",
+            "explanation": "Der statische Test kann bereits in den frühesten Phasen des SDLC eingesetzt werden, noch bevor Code ausgeführt wird. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "In den frühesten Phasen des SDLC",
+                    "correct": true
+                },
+                {
+                    "text": "Nur nach der Systemimplementierung",
+                    "correct": false
+                },
+                {
+                    "text": "Erst nach dynamischen Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur während der Wartung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel zeigt einen Fehlerzustand, den dynamische Tests schwer erkennen können?",
+            "explanation": "Nicht erreichbarer Code ist ein typisches Beispiel, das durch statische Analyse erkannt werden kann. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Nicht erreichbarer Code",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerhafte Verarbeitung von Benutzereingaben",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlende Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Antwortzeiten unter Last",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil des statischen Tests gegenüber dynamischen Tests?",
+            "explanation": "Statische Tests können auch nicht-ausführbare Arbeitsergebnisse wie Dokumente oder Modelle prüfen. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Er kann nicht-ausführbare Arbeitsergebnisse prüfen",
+                    "correct": true
+                },
+                {
+                    "text": "Er ersetzt automatisch alle dynamischen Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Er erfordert keine Werkzeuge",
+                    "correct": false
+                },
+                {
+                    "text": "Er prüft ausschließlich Laufzeitverhalten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Problemen können durch statische Tests in Entwurfsmustern erkannt werden?",
+            "explanation": "Statische Tests können aufzeigen, wenn Entwurfsmuster nicht wie vorgesehen implementiert sind. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Fehlerhafte Implementierung von Entwurfsmustern",
+                    "correct": true
+                },
+                {
+                    "text": "Langsame Laufzeitperformance",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerhafte Benutzerinteraktionen",
+                    "correct": false
+                },
+                {
+                    "text": "Unzureichende Netzwerkkapazität",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel verfolgt der statische Test im Hinblick auf Kosten?",
+            "explanation": "Durch frühes Finden von Fehlern werden Nachbesserungskosten reduziert. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Reduktion der Kosten durch frühes Erkennen von Fehlern",
+                    "correct": true
+                },
+                {
+                    "text": "Erhöhung der Kosten durch mehr Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Kosteneinsparung durch Verzicht auf dynamische Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Reduktion der Lizenzkosten für Tools",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arbeitsergebnisse profitieren besonders vom statischen Test?",
+            "explanation": "Nicht ausführbare Arbeitsergebnisse wie Dokumentation, Verträge oder Modelle können durch statische Tests überprüft werden. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Nicht ausführbare Arbeitsergebnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Laufzeitdatenbanken",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Netzwerkkonfigurationen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Hardware-Treiber",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen ist FALSCH?",
+            "explanation": "Statische Tests können zwar viel, aber sie ersetzen dynamische Tests nicht vollständig. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Statische Tests unterstützen den Grundsatz des frühen Testens.",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Tests können Fehler in nicht-ausführbaren Arbeitsergebnissen finden.",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Tests ersetzen dynamische Tests vollständig.",
+                    "correct": true
+                },
+                {
+                    "text": "Statische Tests können nicht erreichbaren Code aufdecken.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welchen Beitrag leistet der statische Test zur Qualitätssicherung?",
+            "explanation": "Der statische Test ermöglicht die Bewertung der Qualität von Arbeitsergebnissen und trägt zum Vertrauen in diese bei. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Er bewertet die Qualität von Arbeitsergebnissen und baut Vertrauen auf",
+                    "correct": true
+                },
+                {
+                    "text": "Er ersetzt alle dynamischen Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Er überprüft ausschließlich die Performance",
+                    "correct": false
+                },
+                {
+                    "text": "Er reduziert die Notwendigkeit von Reviews",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie können Stakeholder durch den statischen Test profitieren?",
+            "explanation": "Durch die Überprüfung der dokumentierten Anforderungen können sie sicherstellen, dass ihre tatsächlichen Bedürfnisse abgedeckt sind. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Stakeholder können prüfen, ob Anforderungen ihre Bedürfnisse beschreiben",
+                    "correct": true
+                },
+                {
+                    "text": "Stakeholder müssen keine Anforderungen mehr dokumentieren",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder müssen keine Tests mehr durchführen",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder können dynamische Tests überspringen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel verfolgt der statische Test in Bezug auf Stakeholder?",
+            "explanation": "Ein gemeinsames Verständnis zwischen Stakeholdern kann früh geschaffen werden. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Er fördert ein gemeinsames Verständnis zwischen den Stakeholdern",
+                    "correct": true
+                },
+                {
+                    "text": "Er verhindert die Zusammenarbeit der Stakeholder",
+                    "correct": false
+                },
+                {
+                    "text": "Er ersetzt die Kommunikation zwischen Stakeholdern",
+                    "correct": false
+                },
+                {
+                    "text": "Er beschränkt sich nur auf Entwickler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Phase im SDLC wird durch den statischen Test besonders unterstützt?",
+            "explanation": "Da er früh eingesetzt wird, fördert er ein gemeinsames Verständnis schon in frühen Phasen des SDLC. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Frühe Phasen des SDLC",
+                    "correct": true
+                },
+                {
+                    "text": "Nur während der Wartung",
+                    "correct": false
+                },
+                {
+                    "text": "Erst nach dynamischen Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur nach der Abnahme",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist es empfehlenswert, viele Stakeholder in statische Tests einzubeziehen?",
+            "explanation": "Eine breite Beteiligung verbessert Qualität, Verständnis und Kommunikation. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Weil es Qualität, Verständnis und Kommunikation verbessert",
+                    "correct": true
+                },
+                {
+                    "text": "Weil dadurch keine Testwerkzeuge benötigt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil dynamische Tests dann nicht mehr erforderlich sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil die Anforderungen dadurch automatisch generiert werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welchen Effekt hat der statische Test auf die Kommunikation?",
+            "explanation": "Er verbessert die Kommunikation zwischen den beteiligten Stakeholdern. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Verbesserung der Kommunikation zwischen Stakeholdern",
+                    "correct": true
+                },
+                {
+                    "text": "Ersetzung von Kommunikation durch Tools",
+                    "correct": false
+                },
+                {
+                    "text": "Vermeidung von Kommunikation",
+                    "correct": false
+                },
+                {
+                    "text": "Kommunikation wird auf Entwickler beschränkt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Arbeitsergebnissen profitieren besonders von der Überprüfung durch Stakeholder?",
+            "explanation": "Dokumentierte Anforderungen profitieren stark, da Stakeholder ihre tatsächlichen Bedürfnisse bestätigen können. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Dokumentierte Anforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Systemtests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Infrastruktur",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie trägt der statische Test zum Vertrauen in Arbeitsergebnisse bei?",
+            "explanation": "Durch die Bewertung und Überprüfung entsteht Vertrauen in die Korrektheit und Qualität. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Durch die Bewertung und Überprüfung von Arbeitsergebnissen",
+                    "correct": true
+                },
+                {
+                    "text": "Durch die Messung von Laufzeitmetriken",
+                    "correct": false
+                },
+                {
+                    "text": "Durch die vollständige Ersetzung dynamischer Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Durch die automatische Generierung von Code",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage zum Nutzen des statischen Tests ist FALSCH?",
+            "explanation": "Der statische Test fördert die Kommunikation, statt sie zu ersetzen oder einzuschränken. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Statischer Test fördert gemeinsames Verständnis",
+                    "correct": false
+                },
+                {
+                    "text": "Statischer Test verbessert die Kommunikation",
+                    "correct": false
+                },
+                {
+                    "text": "Statischer Test ersetzt die Kommunikation vollständig",
+                    "correct": true
+                },
+                {
+                    "text": "Statischer Test trägt zum Vertrauen in Arbeitsergebnisse bei",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist eine direkte Folge der Einbeziehung vieler Stakeholder in Reviews?",
+            "explanation": "Die Qualität steigt, da unterschiedliche Perspektiven berücksichtigt werden. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Steigerung der Qualität durch unterschiedliche Perspektiven",
+                    "correct": true
+                },
+                {
+                    "text": "Wegfall aller Testaktivitäten",
+                    "correct": false
+                },
+                {
+                    "text": "Reduktion der Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Ausschluss von nicht-technischen Stakeholdern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum lohnen sich Reviews trotz der entstehenden Kosten?",
+            "explanation": "Die Gesamtkosten des Projekts sinken, da weniger Aufwand für späte Fehlerbehebungen entsteht. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Weil spätere Fehlerbehebungen teurer sind",
+                    "correct": true
+                },
+                {
+                    "text": "Weil dadurch alle Tests überflüssig werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil keine Dokumentation mehr notwendig ist",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Reviews kostenlos durchführbar sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Hauptvorteil ergibt sich aus der frühen Fehlererkennung durch Reviews?",
+            "explanation": "Frühe Fehlererkennung reduziert den Aufwand für die Behebung im späteren Projektverlauf. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Reduzierter Aufwand für spätere Fehlerbehebung",
+                    "correct": true
+                },
+                {
+                    "text": "Kompletter Wegfall dynamischer Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Automatische Erstellung von Testfällen",
+                    "correct": false
+                },
+                {
+                    "text": "Unbegrenzte Kostenfreiheit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kosten werden durch Reviews typischerweise gesenkt?",
+            "explanation": "Durch Reviews sinken die Gesamtkosten des Projekts, da weniger Fehler spät behoben werden müssen. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Gesamtkosten des Projekts",
+                    "correct": true
+                },
+                {
+                    "text": "Kosten für die Testwerkzeuge",
+                    "correct": false
+                },
+                {
+                    "text": "Kosten für Infrastruktur",
+                    "correct": false
+                },
+                {
+                    "text": "Kosten für Hardware",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was passiert, wenn in einem Projekt keine Reviews durchgeführt werden?",
+            "explanation": "Ohne Reviews entstehen höhere Kosten, da Fehler später mit mehr Aufwand behoben werden müssen. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Die Fehlerbehebung im späteren Verlauf wird aufwändiger und teurer",
+                    "correct": true
+                },
+                {
+                    "text": "Das Projekt wird automatisch günstiger",
+                    "correct": false
+                },
+                {
+                    "text": "Es treten keine Fehler auf",
+                    "correct": false
+                },
+                {
+                    "text": "Das Projekt benötigt keine Tests mehr",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Zusammenhang besteht zwischen Reviews und Fehlerbehebungskosten?",
+            "explanation": "Früh erkannte Fehler durch Reviews sind deutlich günstiger zu beheben als spät erkannte. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Früh erkannte Fehler sind günstiger zu beheben",
+                    "correct": true
+                },
+                {
+                    "text": "Spät erkannte Fehler sind billiger zu beheben",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews erhöhen die Fehlerbehebungskosten",
+                    "correct": false
+                },
+                {
+                    "text": "Kosten sind unabhängig vom Fehlerzeitpunkt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Kostenfaktor sinkt durch den Einsatz von Reviews besonders?",
+            "explanation": "Der Aufwand für die Behebung von Fehlern im späteren Projektverlauf sinkt. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Aufwand für späte Fehlerbehebungen",
+                    "correct": true
+                },
+                {
+                    "text": "Aufwand für die Testfallerstellung",
+                    "correct": false
+                },
+                {
+                    "text": "Aufwand für die Infrastruktur",
+                    "correct": false
+                },
+                {
+                    "text": "Aufwand für die Tool-Lizenzen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sinken die Gesamtkosten des Projekts durch Reviews?",
+            "explanation": "Weil Fehler früher gefunden und billiger behoben werden können. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Früh gefundene Fehler sind billiger zu beheben",
+                    "correct": true
+                },
+                {
+                    "text": "Es werden keine Tests mehr benötigt",
+                    "correct": false
+                },
+                {
+                    "text": "Die Projektlaufzeit wird unbegrenzt verlängert",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Dokumente entfallen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage zu den Kosten von Reviews ist korrekt?",
+            "explanation": "Reviews verursachen zwar Kosten, sparen aber langfristig mehr ein. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Reviews verursachen Kosten, sparen aber langfristig mehr ein",
+                    "correct": true
+                },
+                {
+                    "text": "Reviews verursachen keinerlei Kosten",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews erhöhen die Gesamtkosten",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews machen dynamische Tests unnötig",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage ist ein typisches Missverständnis zu Reviews?",
+            "explanation": "Es ist falsch zu glauben, dass Reviews kostenlos sind. Sie kosten Zeit und Ressourcen, sparen aber später ein Vielfaches ein. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Reviews sind völlig kostenlos",
+                    "correct": true
+                },
+                {
+                    "text": "Reviews senken Gesamtkosten trotz Aufwand",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews sparen Kosten für späte Fehlerbehebung",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews verbessern die Qualität",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Fazit kann man über den wirtschaftlichen Nutzen von Reviews ziehen?",
+            "explanation": "Auch wenn Reviews Kosten verursachen, sind die Gesamtkosten des Projekts mit ihnen geringer. (Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Mit Reviews sind die Gesamtkosten in der Regel geringer",
+                    "correct": true
+                },
+                {
+                    "text": "Mit Reviews sind die Gesamtkosten immer höher",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews haben keinen Einfluss auf die Gesamtkosten",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews ersetzen alle anderen Testmethoden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Fehlerzustände können besonders effizient durch statische Analyse gefunden werden?",
+            "explanation": "Bestimmte Fehlerzustände im Code lassen sich mit statischer Analyse schneller und günstiger erkennen als durch dynamische Tests. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Bestimmte Fehlerzustände im Code",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Performanceprobleme bei Last",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Benutzeroberflächenfehler",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Testfalldokumentationen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil ergibt sich aus der statischen Analyse im Vergleich zum dynamischen Test?",
+            "explanation": "Die statische Analyse deckt Fehler effizienter auf, bevor das System ausgeführt wird. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Effizientere Aufdeckung bestimmter Fehler",
+                    "correct": true
+                },
+                {
+                    "text": "Direkte Messung der Laufzeit-Performance",
+                    "correct": false
+                },
+                {
+                    "text": "Vollständiger Ersatz dynamischer Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Automatische Erstellung aller Testfälle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Auswirkung hat die frühere Fehlererkennung durch statische Tests?",
+            "explanation": "Weniger Fehler im Code führen zu einem geringeren Gesamtentwicklungsaufwand. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Weniger Fehler im Code und geringerer Gesamtentwicklungsaufwand",
+                    "correct": true
+                },
+                {
+                    "text": "Erhöhung der Testkosten",
+                    "correct": false
+                },
+                {
+                    "text": "Längere Entwicklungszeit",
+                    "correct": false
+                },
+                {
+                    "text": "Mehr Fehler im produktiven System",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum führen statische Tests in der Regel zu geringeren Entwicklungskosten?",
+            "explanation": "Weil Fehlerzustände früh und effizient erkannt und behoben werden, bevor teure Nacharbeiten entstehen. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Frühe Erkennung reduziert Nacharbeiten",
+                    "correct": true
+                },
+                {
+                    "text": "Weil dynamische Tests komplett überflüssig werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil keine Entwickler mehr benötigt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil keine Testwerkzeuge mehr nötig sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kombination beschreibt den Nutzen statischer Analyse am besten?",
+            "explanation": "Sie führt zu weniger Fehlern im Code und zu geringerem Gesamtaufwand. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Weniger Fehler + geringerer Gesamtentwicklungsaufwand",
+                    "correct": true
+                },
+                {
+                    "text": "Mehr Fehler + kürzere Projektlaufzeit",
+                    "correct": false
+                },
+                {
+                    "text": "Weniger Fehler + höherer Gesamtaufwand",
+                    "correct": false
+                },
+                {
+                    "text": "Mehr Fehler + geringerer Aufwand",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt die Rolle dynamischer Tests im Vergleich zur statischen Analyse?",
+            "explanation": "Dynamische Tests sind notwendig, um das Laufzeitverhalten zu prüfen, während statische Analyse strukturelle Fehler aufdecken kann. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Dynamische Tests prüfen Laufzeitverhalten, statische Analyse strukturelle Fehler",
+                    "correct": true
+                },
+                {
+                    "text": "Dynamische Tests sind schneller als statische Analyse",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Analyse prüft nur Benutzeroberflächen",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Analyse ersetzt alle dynamischen Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kostenwirkung haben spät erkannte Fehler im Vergleich zu früh erkannten Fehlern durch statische Tests?",
+            "explanation": "Früh entdeckte Fehler sind erheblich günstiger zu beheben. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Späte Fehler sind teurer zu beheben",
+                    "correct": true
+                },
+                {
+                    "text": "Späte Fehler sind günstiger zu beheben",
+                    "correct": false
+                },
+                {
+                    "text": "Die Kosten sind unabhängig vom Zeitpunkt",
+                    "correct": false
+                },
+                {
+                    "text": "Früh entdeckte Fehler sind teurer",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Wirkung hat die Kombination von statischen und dynamischen Tests?",
+            "explanation": "Beide ergänzen sich: statische Tests erkennen strukturelle Fehler, dynamische Tests Laufzeitfehler. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Sie ergänzen sich und decken unterschiedliche Fehlerarten auf",
+                    "correct": true
+                },
+                {
+                    "text": "Sie sind gleichwertig und redundant",
+                    "correct": false
+                },
+                {
+                    "text": "Sie schließen sich gegenseitig aus",
+                    "correct": false
+                },
+                {
+                    "text": "Sie werden nur in der Wartungsphase benötigt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage zu Effizienz der statischen Analyse ist korrekt?",
+            "explanation": "Statische Analyse ist für bestimmte Fehlerzustände effizienter als dynamische Tests. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Sie ist für bestimmte Fehlerzustände effizienter als dynamische Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ist immer weniger effizient als dynamische Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ist nur für UI-Tests effizienter",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ist identisch in Effizienz mit dynamischen Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen ist FALSCH?",
+            "explanation": "Statische Analyse ergänzt dynamische Tests, ersetzt sie aber nicht vollständig. (Abschnitt 3.1.3)",
+            "options": [
+                {
+                    "text": "Statische Analyse reduziert Fehler und Entwicklungsaufwand",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Analyse ist für manche Fehler effizienter als dynamische Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Analyse ersetzt dynamische Tests vollständig",
+                    "correct": true
+                },
+                {
+                    "text": "Statische Analyse hilft, Kosten zu senken",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

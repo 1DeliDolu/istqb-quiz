@@ -1,0 +1,359 @@
+{
+    "chapter": "3",
+    "subChapter": "3-2-5",
+    "subChapterTitle": "Erfolgsfaktoren für Reviews",
+    "questions": [
+        {
+            "question": "Welches Ziel sollte in einem Review NICHT verfolgt werden?",
+            "explanation": "Die Bewertung der Teilnehmer sollte niemals ein Ziel eines Reviews sein. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Die Aufdeckung von Anomalien",
+                    "correct": false
+                },
+                {
+                    "text": "Die Bewertung der Qualität",
+                    "correct": false
+                },
+                {
+                    "text": "Die Bewertung der Teilnehmer",
+                    "correct": true
+                },
+                {
+                    "text": "Die Prozessverbesserung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Auswahl der geeigneten Reviewart wichtig?",
+            "explanation": "Die Reviewart muss den Zielen, der Art des Arbeitsergebnisses, den Teilnehmern, Projektanforderungen und dem Kontext entsprechen. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Weil es gesetzlich vorgeschrieben ist",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Ziele zu erreichen und den Kontext zu berücksichtigen",
+                    "correct": true
+                },
+                {
+                    "text": "Um die Anzahl der Gutachter zu minimieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um Reviews komplett zu vermeiden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sollten Reviews in kleinen Einheiten durchgeführt werden?",
+            "explanation": "Damit die Gutachter ihre Konzentration behalten und effektiv Anomalien finden können. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Um den Zeitaufwand für die Moderation zu reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Konzentration der Gutachter sicherzustellen",
+                    "correct": true
+                },
+                {
+                    "text": "Um den Autor schneller zu bewerten",
+                    "correct": false
+                },
+                {
+                    "text": "Um den Einsatz von Tools zu vermeiden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welchen Nutzen hat Feedback aus Reviews?",
+            "explanation": "Feedback hilft Stakeholdern und Autoren, das Produkt und ihre Aktivitäten zu verbessern. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Es dient nur der Projektplanung",
+                    "correct": false
+                },
+                {
+                    "text": "Es verbessert Produkt und Aktivitäten der Beteiligten",
+                    "correct": true
+                },
+                {
+                    "text": "Es ersetzt die Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Es wird ausschließlich im Management gespeichert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist ausreichend Zeit für die Vorbereitung der Teilnehmer wichtig?",
+            "explanation": "Nur gut vorbereitete Teilnehmer können effektiv zum Erfolg eines Reviews beitragen. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Damit der Moderator entlastet wird",
+                    "correct": false
+                },
+                {
+                    "text": "Damit die Teilnehmer ihre Rolle effektiv erfüllen können",
+                    "correct": true
+                },
+                {
+                    "text": "Damit die Reviewberichte kürzer werden",
+                    "correct": false
+                },
+                {
+                    "text": "Damit weniger Gutachter eingeladen werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt das Management für erfolgreiche Reviews?",
+            "explanation": "Managementunterstützung ist ein zentraler Erfolgsfaktor für Reviews. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Das Management sollte sich nicht einmischen",
+                    "correct": false
+                },
+                {
+                    "text": "Das Management sollte Reviews vollständig ersetzen",
+                    "correct": false
+                },
+                {
+                    "text": "Das Management unterstützt den Reviewprozess",
+                    "correct": true
+                },
+                {
+                    "text": "Das Management schreibt die Reviewberichte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Einbettung von Reviews in die Unternehmenskultur wichtig?",
+            "explanation": "Dadurch werden Lernen und kontinuierliche Prozessverbesserung gefördert. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Um gesetzliche Anforderungen zu umgehen",
+                    "correct": false
+                },
+                {
+                    "text": "Um Lernen und Prozessverbesserung zu fördern",
+                    "correct": true
+                },
+                {
+                    "text": "Um den Reviewprozess abzuschaffen",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Anzahl der Gutachter zu reduzieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sollten alle Teilnehmer geeignete Schulungen erhalten?",
+            "explanation": "Teilnehmer müssen wissen, wie sie ihre Rolle effektiv ausfüllen können. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Damit sie den Autor besser bewerten können",
+                    "correct": false
+                },
+                {
+                    "text": "Damit sie ihre Rolle verstehen und erfüllen können",
+                    "correct": true
+                },
+                {
+                    "text": "Damit die Managementberichte kürzer werden",
+                    "correct": false
+                },
+                {
+                    "text": "Damit Reviews vollständig automatisiert werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor unterstützt den Ablauf einer Reviewsitzung zusätzlich?",
+            "explanation": "Eine gute Moderation ist ein wesentlicher Erfolgsfaktor. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Automatisierte Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Moderation der Sitzung",
+                    "correct": true
+                },
+                {
+                    "text": "Abschaffung von Gutachtern",
+                    "correct": false
+                },
+                {
+                    "text": "Einsatz externer Audits",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor trägt zur Konzentration der Gutachter bei?",
+            "explanation": "Reviews sollten in kleinen Einheiten durchgeführt werden, um Konzentrationsverlust zu vermeiden. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Große Reviews mit vielen Themen",
+                    "correct": false
+                },
+                {
+                    "text": "Kleine Einheiten im Review",
+                    "correct": true
+                },
+                {
+                    "text": "Nur schriftliche Reviews ohne Sitzungen",
+                    "correct": false
+                },
+                {
+                    "text": "Längere Pausen zwischen Reviews",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was passiert, wenn die Teilnehmer keine ausreichende Vorbereitungszeit erhalten?",
+            "explanation": "Ohne ausreichende Vorbereitung sinkt die Effektivität und die Qualität der Ergebnisse. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Die Reviewziele werden leichter erreicht",
+                    "correct": false
+                },
+                {
+                    "text": "Die Teilnehmer können ihre Rolle nicht effektiv erfüllen",
+                    "correct": true
+                },
+                {
+                    "text": "Die Gutachter werden überqualifiziert",
+                    "correct": false
+                },
+                {
+                    "text": "Der Moderator wird entlastet",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Nutzen ergibt sich aus der Managementunterstützung?",
+            "explanation": "Das Management kann Ressourcen, Zeit und organisatorische Unterstützung bereitstellen. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Nur die Erstellung der Testbasis",
+                    "correct": false
+                },
+                {
+                    "text": "Bereitstellung von Ressourcen und organisatorischer Rückhalt",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung aller Protokolle",
+                    "correct": false
+                },
+                {
+                    "text": "Durchführung der Reviews",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Moderation ein Erfolgsfaktor?",
+            "explanation": "Ein Moderator sorgt für effiziente Durchführung, Zeitmanagement und konstruktive Kommunikation. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Weil er die Gutachter bewertet",
+                    "correct": false
+                },
+                {
+                    "text": "Weil er Ressourcen verwaltet",
+                    "correct": false
+                },
+                {
+                    "text": "Weil er für Ablauf und Kommunikation sorgt",
+                    "correct": true
+                },
+                {
+                    "text": "Weil er die Testfälle auswählt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Maßnahme unterstützt die kontinuierliche Prozessverbesserung?",
+            "explanation": "Die Einbettung von Reviews in die Unternehmenskultur fördert Lernen und Verbesserung. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Reduzierung der Reviewanzahl",
+                    "correct": false
+                },
+                {
+                    "text": "Integration von Reviews in die Unternehmenskultur",
+                    "correct": true
+                },
+                {
+                    "text": "Einsatz externer Berater",
+                    "correct": false
+                },
+                {
+                    "text": "Ausschluss der Autoren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind Schulungen für Reviewteilnehmer wichtig?",
+            "explanation": "Nur durch Schulungen verstehen Teilnehmer ihre Rollen und tragen wirksam zum Erfolg bei. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Damit Reviews kürzer werden",
+                    "correct": false
+                },
+                {
+                    "text": "Damit Teilnehmer ihre Rolle verstehen",
+                    "correct": true
+                },
+                {
+                    "text": "Damit Gutachter ersetzt werden können",
+                    "correct": false
+                },
+                {
+                    "text": "Damit der Moderator entlastet wird",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel beschreibt die richtige Zielsetzung eines Reviews?",
+            "explanation": "Ein klares Ziel sind z. B. Qualitätsbewertung oder Anomalienfindung, nicht die Bewertung von Personen. (Kap. 3.2.5)",
+            "options": [
+                {
+                    "text": "Bewertung der Teilnehmer",
+                    "correct": false
+                },
+                {
+                    "text": "Aufdeckung von Anomalien",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung von Projektbudgets",
+                    "correct": false
+                },
+                {
+                    "text": "Abschluss von Verträgen",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

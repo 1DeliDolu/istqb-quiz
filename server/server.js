@@ -99,10 +99,27 @@ app.get("/api/questions/:chapter", async (req, res) => {
 
     const params = [chapter];
 
-    // SubChapter filtresi ekle
+    // SubChapter filtresi ekle - daha esnek eşleştirme
     if (subChapter) {
-      sql += ` AND sc.title = ?`;
-      params.push(subChapter);
+      console.log(`🔍 Alt bölüm filtresi uygulanıyor: "${subChapter}"`);
+
+      // Prefix eşleştirmesi (3.1.1 -> 3-1-1 formatına dönüştür)
+      const chapterPrefix = subChapter.match(/^(\d+\.\d+(\.\d+)?)/);
+      if (chapterPrefix) {
+        const normalizedPrefix = chapterPrefix[1].replace(/\./g, "-");
+        sql += ` AND (sc.title = ? OR sc.title LIKE ? OR sc.id = ? OR sc.id LIKE ?)`;
+        params.push(
+          subChapter,
+          `%${subChapter}%`,
+          normalizedPrefix,
+          `${normalizedPrefix}%`
+        );
+        console.log(`🔍 Normalized prefix için arama: "${normalizedPrefix}"`);
+      } else {
+        // Normal eşleştirme
+        sql += ` AND (sc.title = ? OR sc.title LIKE ?)`;
+        params.push(subChapter, `%${subChapter}%`);
+      }
     }
 
     sql += ` GROUP BY q.id ORDER BY q.created_at ASC`;

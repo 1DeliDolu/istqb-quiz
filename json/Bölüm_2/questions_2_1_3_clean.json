@@ -1,1 +1,447 @@
-[]
+{
+    "chapter": "2",
+    "subChapter": "2-1-3",
+    "subChapterTitle": "2.1.3 Testen als Treiber für die Softwareentwicklung",
+    "questions": [
+        {
+            "question": "Welches Prinzip setzen TDD, ATDD und BDD gemeinsam um?",
+            "explanation": "Alle drei Ansätze definieren Tests vor dem Coding → frühes Testen & Shift-Left. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Testen erfolgt ausschließlich am Projektende.",
+                    "correct": false
+                },
+                {
+                    "text": "Tests werden nach dem Coding erstellt.",
+                    "correct": false
+                },
+                {
+                    "text": "Frühes Testen und Shift-Left.",
+                    "correct": true
+                },
+                {
+                    "text": "Testen ersetzt Reviews.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Grundidee von Testgetriebener Entwicklung (TDD)?",
+            "explanation": "Bei TDD wird zuerst ein Test geschrieben, dann Code, danach Refactoring. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Erst Code schreiben, dann Tests hinzufügen.",
+                    "correct": false
+                },
+                {
+                    "text": "Zuerst Tests schreiben, dann Code schreiben, der die Tests erfüllt.",
+                    "correct": true
+                },
+                {
+                    "text": "Testen komplett durch manuelle Verfahren ersetzen.",
+                    "correct": false
+                },
+                {
+                    "text": "Umfangreichen Softwareentwurf vor dem Test erstellen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was charakterisiert ATDD?",
+            "explanation": "ATDD leitet Tests direkt aus Akzeptanzkriterien ab und schreibt diese vor der Entwicklung. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Testfälle basieren auf Unit-Tests der Entwickler.",
+                    "correct": false
+                },
+                {
+                    "text": "Tests werden aus Akzeptanzkriterien abgeleitet, bevor die Anwendungsteile entwickelt werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Tests ersetzen alle dynamischen Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "ATDD ignoriert Systementwurf.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Notation wird typischerweise in BDD verwendet?",
+            "explanation": "BDD drückt Verhalten mit Given/When/Then-Format aus. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "UML-Klassendiagramme.",
+                    "correct": false
+                },
+                {
+                    "text": "Pseudocode in Hochsprache.",
+                    "correct": false
+                },
+                {
+                    "text": "Natürlichsprachliches Format Gegeben/Wenn/Dann (Given/When/Then).",
+                    "correct": true
+                },
+                {
+                    "text": "Binärcode.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wirken TDD, ATDD und BDD auf das Entwicklungsmodell?",
+            "explanation": "Diese Ansätze fördern iteratives Vorgehen mit kleinen Zyklen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Sie unterstützen ein sequentielles Modell.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie unterstützen ein iteratives Modell.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ersetzen Entwicklungsmodelle vollständig.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie verhindern Refactoring.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was folgt typischerweise nach dem Schreiben eines Tests in TDD?",
+            "explanation": "Zyklus: Test schreiben → Code schreiben → Refactoring. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Refactoring, dann Schreiben des Codes.",
+                    "correct": false
+                },
+                {
+                    "text": "Schreiben des Codes, sodass der Test besteht.",
+                    "correct": true
+                },
+                {
+                    "text": "Endgültige Abnahme durch den Kunden.",
+                    "correct": false
+                },
+                {
+                    "text": "Überspringen der Testdurchführung.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil von ATDD?",
+            "explanation": "ATDD bindet Akzeptanzkriterien als Basis der Tests ein. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Entwickler entscheiden Tests ohne Einbeziehung von Stakeholdern.",
+                    "correct": false
+                },
+                {
+                    "text": "Tests sind direkt mit den Akzeptanzkriterien der Stakeholder verknüpft.",
+                    "correct": true
+                },
+                {
+                    "text": "Es werden keine automatisierten Tests erstellt.",
+                    "correct": false
+                },
+                {
+                    "text": "Akzeptanztests entfallen vollständig.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielen Stakeholder in BDD?",
+            "explanation": "BDD macht Testfälle für Stakeholder verständlich, da sie in natürlicher Sprache formuliert sind. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Keine – nur Entwickler schreiben Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie können das Verhalten verstehen, da es in einfacher Sprache beschrieben ist.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie schreiben den Code.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie übernehmen die Automatisierung.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches gemeinsame Ziel haben TDD, ATDD und BDD?",
+            "explanation": "Diese Ansätze fördern frühes Testen und bessere Codequalität. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Manuelle Tests überflüssig machen.",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler möglichst spät entdecken.",
+                    "correct": false
+                },
+                {
+                    "text": "Codequalität durch frühes Testen und Refactoring sichern.",
+                    "correct": true
+                },
+                {
+                    "text": "Umfangreiche Spezifikationen ersetzen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie werden die Testfälle aus BDD genutzt?",
+            "explanation": "BDD-Testfälle (Given/When/Then) können automatisiert ausführbar gemacht werden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Sie dienen nur als Dokumentation.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie werden automatisch in ausführbare Tests übersetzt.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie werden von Hand nachgestellt.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzen alle Teststufen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Abfolge gehört zum klassischen TDD-Zyklus?",
+            "explanation": "TDD-Zyklus: Test schreiben → Code schreiben → Refactoring. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Code → Test → Refactoring.",
+                    "correct": false
+                },
+                {
+                    "text": "Test → Code → Refactoring.",
+                    "correct": true
+                },
+                {
+                    "text": "Refactoring → Test → Code.",
+                    "correct": false
+                },
+                {
+                    "text": "Test → Refactoring → Code.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Ansatz verwendet Akzeptanztests zur Steuerung der Entwicklung?",
+            "explanation": "ATDD basiert auf Akzeptanztests aus den Akzeptanzkriterien. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "TDD",
+                    "correct": false
+                },
+                {
+                    "text": "ATDD",
+                    "correct": true
+                },
+                {
+                    "text": "BDD",
+                    "correct": false
+                },
+                {
+                    "text": "V-Modell",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt BDD korrekt?",
+            "explanation": "BDD beschreibt Verhalten in natürlicher Sprache (Given/When/Then). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Verhalten wird in technischer Notation dokumentiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Verhalten wird in einer einfach verständlichen Sprache beschrieben.",
+                    "correct": true
+                },
+                {
+                    "text": "Verhalten wird ausschließlich durch Unittests geprüft.",
+                    "correct": false
+                },
+                {
+                    "text": "Verhalten wird ohne Tests spezifiziert.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was geschieht beim Refactoring im TDD-Zyklus?",
+            "explanation": "Refactoring = Verbesserung des Codes (und ggf. Tests), ohne Verhalten zu ändern. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Code wird gelöscht.",
+                    "correct": false
+                },
+                {
+                    "text": "Tests werden abgeschafft.",
+                    "correct": false
+                },
+                {
+                    "text": "Code und Tests werden verbessert, ohne Funktionalität zu ändern.",
+                    "correct": true
+                },
+                {
+                    "text": "Anforderungen werden neu definiert.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Gemeinsamkeit haben TDD, ATDD und BDD?",
+            "explanation": "Alle drei definieren Tests vor dem Coding. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Tests werden erst nach dem Coding erstellt.",
+                    "correct": false
+                },
+                {
+                    "text": "Tests werden vor der Entwicklung definiert.",
+                    "correct": true
+                },
+                {
+                    "text": "Tests werden ausschließlich manuell ausgeführt.",
+                    "correct": false
+                },
+                {
+                    "text": "Tests werden von Entwicklern ohne Bezug zu Stakeholdern geschrieben.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel verfolgt BDD neben der Testautomatisierung?",
+            "explanation": "BDD nutzt einfache Sprache, damit auch Stakeholder die Tests verstehen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Hohe Verständlichkeit für alle Stakeholder.",
+                    "correct": true
+                },
+                {
+                    "text": "Ausschluss von Stakeholdern aus dem Testprozess.",
+                    "correct": false
+                },
+                {
+                    "text": "Vollständiger Verzicht auf Reviews.",
+                    "correct": false
+                },
+                {
+                    "text": "Ersatz aller dynamischen Tests.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum eignen sich TDD, ATDD und BDD für Refactoring?",
+            "explanation": "Automatisierte Tests sichern Codequalität auch nach Refactoring. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Tests können wiederverwendet und automatisiert ausgeführt werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Tests werden nach jedem Refactoring gelöscht.",
+                    "correct": false
+                },
+                {
+                    "text": "Refactoring findet ohne Testunterstützung statt.",
+                    "correct": false
+                },
+                {
+                    "text": "Tests verhindern Refactoring.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testart steht im Mittelpunkt von TDD?",
+            "explanation": "TDD nutzt vor allem Unit-Tests, um Code iterativ zu entwickeln. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Unittests.",
+                    "correct": true
+                },
+                {
+                    "text": "Systemtests.",
+                    "correct": false
+                },
+                {
+                    "text": "Lasttests.",
+                    "correct": false
+                },
+                {
+                    "text": "Beta-Tests.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil von BDD gegenüber TDD?",
+            "explanation": "BDD macht Tests für Stakeholder verständlich (Given/When/Then). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Höhere Lesbarkeit für Stakeholder durch natürliche Sprache.",
+                    "correct": true
+                },
+                {
+                    "text": "Keine Tests erforderlich.",
+                    "correct": false
+                },
+                {
+                    "text": "Schnellere Entwicklung ohne Testautomatisierung.",
+                    "correct": false
+                },
+                {
+                    "text": "Verzicht auf Refactoring.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage trifft für TDD, ATDD und BDD insgesamt zu?",
+            "explanation": "Alle drei fördern frühes Testen, Shift-Left und iterative Entwicklung. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.3)",
+            "options": [
+                {
+                    "text": "Sie unterstützen frühes Testen, Shift-Left und iteratives Vorgehen.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ersetzen die Notwendigkeit für Regressionstests.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie verhindern Refactoring.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erlauben nur manuelle Testverfahren.",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

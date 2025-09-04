@@ -1,0 +1,601 @@
+{
+    "chapter": "3",
+    "subChapter": "3-2-4",
+    "subChapterTitle": "Arten von Reviews",
+    "questions": [
+        {
+            "question": "Welche Faktoren beeinflussen den erforderlichen Grad der Formalität eines Reviews?",
+            "explanation": "Der Grad der Formalität hängt von SDLC, Prozessreife, Kritikalität, Komplexität, gesetzlichen Anforderungen und Prüfnachweisen ab. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Nur von der Erfahrung des Moderators",
+                    "correct": false
+                },
+                {
+                    "text": "Nur von der Anzahl der Gutachter",
+                    "correct": false
+                },
+                {
+                    "text": "Von SDLC, Reife, Kritikalität, Komplexität, Anforderungen und Prüfnachweis",
+                    "correct": true
+                },
+                {
+                    "text": "Nur vom verfügbaren Budget",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Reviewart gilt als die am wenigsten formale?",
+            "explanation": "Das informelle Review hat den geringsten Formalitätsgrad. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Technisches Review",
+                    "correct": false
+                },
+                {
+                    "text": "Inspektion",
+                    "correct": false
+                },
+                {
+                    "text": "Informelles Review",
+                    "correct": true
+                },
+                {
+                    "text": "Walkthrough",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann kann ein und dasselbe Arbeitsergebnis mit verschiedenen Reviewarten geprüft werden?",
+            "explanation": "Ein Arbeitsergebnis kann zuerst informell und später formaler geprüft werden. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Nie, jedes Arbeitsergebnis darf nur einmal geprüft werden",
+                    "correct": false
+                },
+                {
+                    "text": "Nur wenn es regulatorisch vorgeschrieben ist",
+                    "correct": false
+                },
+                {
+                    "text": "Immer zuerst informell und dann formal, wenn nötig",
+                    "correct": true
+                },
+                {
+                    "text": "Nur bei sicherheitskritischen Systemen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Grund spricht für die Durchführung eines formalen Reviews?",
+            "explanation": "Formale Reviews sind sinnvoll bei hoher Kritikalität, Komplexität oder wenn ein Prüfnachweis verlangt wird. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Wenn das Team keine Erfahrung hat",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn ein Prüfnachweis oder gesetzliche Anforderungen bestehen",
+                    "correct": true
+                },
+                {
+                    "text": "Wenn keine Zeit für Tests ist",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn der Autor dies wünscht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was beschreibt den Zweck der unterschiedlichen Reviewarten?",
+            "explanation": "Reviewarten reichen von informell bis formal, um je nach Kontext angemessen Feedback und Prüfnachweise zu liefern. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Sie dienen ausschließlich der Schulung neuer Teammitglieder",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ermöglichen unterschiedliche Formalitätsgrade für verschiedene Kontexte",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ersetzen dynamisches Testen vollständig",
+                    "correct": false
+                },
+                {
+                    "text": "Sie dienen nur dem Managementreporting",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wovon hängt die Auswahl der richtigen Reviewart ab?",
+            "explanation": "Die Auswahl richtet sich nach den Reviewzielen, dem Projektbedarf, Ressourcen, Art und Risiken des Arbeitsergebnisses, Unternehmensbereich und Unternehmenskultur. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Nur von der Erfahrung des Reviewleiters",
+                    "correct": false
+                },
+                {
+                    "text": "Nur von der Anzahl der Tester im Projekt",
+                    "correct": false
+                },
+                {
+                    "text": "Von Zielen, Projektbedarf, Ressourcen, Arbeitsergebnis, Risiken und Unternehmenskultur",
+                    "correct": true
+                },
+                {
+                    "text": "Nur von den verfügbaren Tools",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Auswahl der richtigen Reviewart entscheidend?",
+            "explanation": "Nur mit der passenden Reviewart können die geforderten Reviewziele erreicht werden. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Weil sonst keine Tests durchgeführt werden müssen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil dies die Kosten automatisch reduziert",
+                    "correct": false
+                },
+                {
+                    "text": "Weil nur so die geforderten Reviewziele erreicht werden können",
+                    "correct": true
+                },
+                {
+                    "text": "Weil es die Anzahl der Gutachter verringert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor gehört NICHT zu den Auswahlkriterien für die Reviewart?",
+            "explanation": "Nicht relevant sind z. B. individuelle Vorlieben oder Anzahl der Räume, sondern Ziele, Projektbedarf, Ressourcen, Art/Risiken, Unternehmensbereich und Kultur. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Unternehmenskultur",
+                    "correct": false
+                },
+                {
+                    "text": "Art und Risiken des Arbeitsergebnisses",
+                    "correct": false
+                },
+                {
+                    "text": "Projektbedarf und Ressourcen",
+                    "correct": false
+                },
+                {
+                    "text": "Persönliche Vorlieben des Moderators",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt die Rolle der Unternehmenskultur bei der Auswahl von Reviewarten?",
+            "explanation": "Auch die Unternehmenskultur beeinflusst, ob eher formale oder informelle Reviews gewählt werden. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Sie hat keinerlei Einfluss auf die Auswahl",
+                    "correct": false
+                },
+                {
+                    "text": "Sie bestimmt, ob überhaupt Reviews stattfinden",
+                    "correct": false
+                },
+                {
+                    "text": "Sie kann beeinflussen, ob eher formale oder informelle Reviews eingesetzt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ist nur für die Budgetplanung relevant",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Eigenschaft beschreibt ein informelles Review am besten?",
+            "explanation": "Ein informelles Review folgt keinem definierten Prozess und erfordert keine formalen, dokumentierten Ergebnisse. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Es folgt einem klar definierten Prozess",
+                    "correct": false
+                },
+                {
+                    "text": "Es liefert immer einen formellen Reviewbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Es folgt keinem definierten Prozess und erfordert keine formalen Ergebnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Es ist die formalste Art von Review",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Hauptziel hat ein informelles Review?",
+            "explanation": "Das Hauptziel ist die Aufdeckung von Anomalien. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Das Erreichen von Konsens bei technischen Entscheidungen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Erstellung detaillierter Reviewmetriken",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aufdeckung von Anomalien",
+                    "correct": true
+                },
+                {
+                    "text": "Die Schulung der Gutachter",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage ist für informelle Reviews NICHT zutreffend?",
+            "explanation": "Informelle Reviews haben keinen definierten Prozess und liefern keine formalen Ergebnisse. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Sie sind die am wenigsten formale Reviewart",
+                    "correct": false
+                },
+                {
+                    "text": "Sie dienen hauptsächlich zur Aufdeckung von Anomalien",
+                    "correct": false
+                },
+                {
+                    "text": "Sie liefern keine formalen, dokumentierten Ergebnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erfordern immer einen Moderator und ein formales Protokoll",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Wer leitet typischerweise ein Walkthrough?",
+            "explanation": "Ein Walkthrough wird in der Regel vom Autor des Arbeitsergebnisses geleitet. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Der Manager",
+                    "correct": false
+                },
+                {
+                    "text": "Der Moderator",
+                    "correct": false
+                },
+                {
+                    "text": "Der Gutachter",
+                    "correct": false
+                },
+                {
+                    "text": "Der Autor",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel gehört zu einem Walkthrough?",
+            "explanation": "Zu den Zielen gehören Qualität bewerten, Vertrauen aufbauen, Schulung, Konsens, neue Ideen, Motivation der Autoren und Aufdeckung von Anomalien. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Erhöhung des Projektbudgets",
+                    "correct": false
+                },
+                {
+                    "text": "Aufbau von Vertrauen in das Arbeitsergebnis",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung eines Testabschlussberichts",
+                    "correct": false
+                },
+                {
+                    "text": "Reduzierung der regulatorischen Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt ein mögliches Ergebnis eines Walkthroughs?",
+            "explanation": "Ein Walkthrough kann neue Ideen generieren, Autoren motivieren und Anomalien aufdecken. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Neue Ideen werden generiert",
+                    "correct": true
+                },
+                {
+                    "text": "Alle Testfälle werden automatisiert",
+                    "correct": false
+                },
+                {
+                    "text": "Die Releaseplanung wird abgeschlossen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Testabdeckung wird automatisch gemessen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielen Gutachter in einem Walkthrough?",
+            "explanation": "Gutachter können vor dem Walkthrough ein individuelles Review machen, dies ist aber nicht verpflichtend. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Sie müssen immer vorab ein individuelles Review durchführen",
+                    "correct": false
+                },
+                {
+                    "text": "Sie können optional vorab ein individuelles Review durchführen",
+                    "correct": true
+                },
+                {
+                    "text": "Sie sind von Walkthroughs ausgeschlossen",
+                    "correct": false
+                },
+                {
+                    "text": "Sie leiten das Walkthrough",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel gehört NICHT zu den Zielen eines Walkthroughs?",
+            "explanation": "Ziele sind u.a. Qualität, Vertrauen, Schulung, Konsens, Ideen, Motivation, Anomalien – Budgetmanagement gehört nicht dazu. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Bewertung der Qualität",
+                    "correct": false
+                },
+                {
+                    "text": "Generierung neuer Ideen",
+                    "correct": false
+                },
+                {
+                    "text": "Motivation der Autoren",
+                    "correct": false
+                },
+                {
+                    "text": "Projektbudget-Management",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Wer führt ein Technisches Review typischerweise durch?",
+            "explanation": "Ein Technisches Review wird von technisch qualifizierten Gutachtern durchgeführt. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Der Projektmanager",
+                    "correct": false
+                },
+                {
+                    "text": "Technisch qualifizierte Gutachter",
+                    "correct": true
+                },
+                {
+                    "text": "Nur der Autor",
+                    "correct": false
+                },
+                {
+                    "text": "Externe Auditoren ohne Fachwissen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle übernimmt in einem Technischen Review die Moderation?",
+            "explanation": "Ein Moderator leitet das Technische Review. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Der Moderator",
+                    "correct": true
+                },
+                {
+                    "text": "Der Gutachter",
+                    "correct": false
+                },
+                {
+                    "text": "Der Autor",
+                    "correct": false
+                },
+                {
+                    "text": "Der Manager",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel gehört zu einem Technischen Review?",
+            "explanation": "Ziele sind Konsens, Entscheidungsfindung, Anomalien aufdecken, Qualität bewerten, Vertrauen schaffen, Ideen entwickeln, Autoren motivieren. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Nur das Projektbudget zu erhöhen",
+                    "correct": false
+                },
+                {
+                    "text": "Konsens über ein technisches Problem zu erreichen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Schulung der Gutachter",
+                    "correct": false
+                },
+                {
+                    "text": "Die Releaseplanung zu erstellen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt ein mögliches Ergebnis eines Technischen Reviews?",
+            "explanation": "Ein Ergebnis kann die Entscheidungsfindung zu einem technischen Problem oder die Entwicklung neuer Ideen sein. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Entscheidung über ein technisches Problem",
+                    "correct": true
+                },
+                {
+                    "text": "Automatisierung aller Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung eines Abschlussberichts für das Management",
+                    "correct": false
+                },
+                {
+                    "text": "Einführung eines neuen SDLC-Modells",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel gehört NICHT zu einem Technischen Review?",
+            "explanation": "Ziele sind Konsens, Qualität, Vertrauen, Ideen, Motivation, Anomalien – Budgetmanagement gehört nicht dazu. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Aufdeckung von Anomalien",
+                    "correct": false
+                },
+                {
+                    "text": "Motivation und Befähigung der Autoren",
+                    "correct": false
+                },
+                {
+                    "text": "Bewertung der Qualität",
+                    "correct": false
+                },
+                {
+                    "text": "Projektbudget-Management",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Eigenschaft beschreibt eine Inspektion am besten?",
+            "explanation": "Die Inspektion ist die formalste Art von Reviews und folgt dem vollständigen allgemeinen Prozess. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Sie ist das informellste Reviewverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Sie folgt keinem definierten Prozess",
+                    "correct": false
+                },
+                {
+                    "text": "Sie folgt dem vollständigen allgemeinen Prozess",
+                    "correct": true
+                },
+                {
+                    "text": "Sie verzichtet auf Rollen und Regeln",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Hauptziel hat eine Inspektion?",
+            "explanation": "Das Hauptziel besteht darin, die maximale Anzahl von Anomalien zu finden. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Nur die Schulung der Gutachter",
+                    "correct": false
+                },
+                {
+                    "text": "Die Erstellung eines Management-Reports",
+                    "correct": false
+                },
+                {
+                    "text": "Die maximale Anzahl von Anomalien zu finden",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die Testplanung zu optimieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche weiteren Ziele können mit einer Inspektion verfolgt werden?",
+            "explanation": "Weitere Ziele sind die Qualitätsbewertung, Vertrauensaufbau, Motivation und Befähigung der Autoren. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Nur die Verkürzung des Projektzeitplans",
+                    "correct": false
+                },
+                {
+                    "text": "Qualität bewerten und Vertrauen aufbauen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die Erhöhung des Budgets",
+                    "correct": false
+                },
+                {
+                    "text": "Die Abschaffung von Testaktivitäten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Besonderheit gilt für die Rolle des Autors bei Inspektionen?",
+            "explanation": "Bei Inspektionen darf der Autor nicht als Reviewleiter oder Protokollant agieren. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Der Autor darf die Sitzung moderieren",
+                    "correct": false
+                },
+                {
+                    "text": "Der Autor kann als Protokollant eingesetzt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Der Autor darf nicht als Reviewleiter oder Protokollant agieren",
+                    "correct": true
+                },
+                {
+                    "text": "Der Autor leitet immer die Inspektion",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welchen zusätzlichen Nutzen liefern Inspektionen neben der Anomalienfindung?",
+            "explanation": "Inspektionen sammeln Metriken, die zur Verbesserung des SDLC und des Inspektionsprozesses genutzt werden. (Kap. 3.2.4)",
+            "options": [
+                {
+                    "text": "Sie liefern Kennzahlen zur Prozessverbesserung",
+                    "correct": true
+                },
+                {
+                    "text": "Sie reduzieren den Testaufwand auf null",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzen alle anderen Reviewarten",
+                    "correct": false
+                },
+                {
+                    "text": "Sie dienen nur der Kommunikation mit dem Management",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

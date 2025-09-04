@@ -1,1 +1,315 @@
-[]
+{
+    "chapter": "2",
+    "subChapter": "2-1-4",
+    "subChapterTitle": "2.1.4 DevOps und Testen",
+    "questions": [
+        {
+            "question": "Was ist DevOps im Kern?",
+            "explanation": "DevOps ist ein organisatorischer Ansatz, der Synergien zwischen Entwicklung, Test und Betrieb schafft. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Eine Programmiersprache.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein organisatorischer Ansatz zur Zusammenarbeit von Entwicklung (inkl. Testen) und Betrieb.",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Modell für manuelle Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein einzelnes Testwerkzeug.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel verfolgt DevOps?",
+            "explanation": "DevOps will Synergien durch Zusammenarbeit von Entwicklung und Betrieb erreichen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Stärkere Trennung von Entwicklung und Betrieb.",
+                    "correct": false
+                },
+                {
+                    "text": "Synergien schaffen und gemeinsame Ziele erreichen.",
+                    "correct": true
+                },
+                {
+                    "text": "Fokus nur auf Testautomatisierung.",
+                    "correct": false
+                },
+                {
+                    "text": "Verzicht auf Betrieb.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was erfordert DevOps innerhalb eines Unternehmens?",
+            "explanation": "DevOps verlangt eine neue Kultur, die Entwicklung, Test und Betrieb enger verzahnt. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Mehr Hardware.",
+                    "correct": false
+                },
+                {
+                    "text": "Einen Kulturwandel.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine neue Programmiersprache.",
+                    "correct": false
+                },
+                {
+                    "text": "Outsourcing der Tests.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche „Kluft“ soll DevOps überbrücken?",
+            "explanation": "DevOps überbrückt die Kluft zwischen Entwicklung, Test und Betrieb. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Zwischen Kunden und Testern.",
+                    "correct": false
+                },
+                {
+                    "text": "Zwischen Entwicklung (inkl. Testen) und Betrieb.",
+                    "correct": true
+                },
+                {
+                    "text": "Zwischen Projektmanagement und Endanwendern.",
+                    "correct": false
+                },
+                {
+                    "text": "Zwischen Hardware und Software.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie sollen Aufgaben von Entwicklung und Betrieb in DevOps behandelt werden?",
+            "explanation": "DevOps strebt gleiche Wertschätzung von Entwicklung, Test und Betrieb an. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Entwicklung ist wichtiger als Betrieb.",
+                    "correct": false
+                },
+                {
+                    "text": "Betrieb ist wichtiger als Entwicklung.",
+                    "correct": false
+                },
+                {
+                    "text": "Beide sollen gleichwertig behandelt werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Testen entfällt vollständig.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche technische Praktik ist typisch für DevOps?",
+            "explanation": "CI/CD sind zentrale technische Praktiken in DevOps. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Modellbasiertes Testen.",
+                    "correct": false
+                },
+                {
+                    "text": "Kontinuierliche Integration (CI) und kontinuierliche Auslieferung (CD).",
+                    "correct": true
+                },
+                {
+                    "text": "Nur manuelle Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Big-Bang-Integration.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil von DevOps aus Sicht des Testens?",
+            "explanation": "DevOps ermöglicht schnelle Feedbackzyklen zu Codequalität und Risiken. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Wegfall aller Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Schnelle Rückmeldung über Codequalität und Auswirkungen von Änderungen.",
+                    "correct": true
+                },
+                {
+                    "text": "Keine Notwendigkeit für Regressionstests.",
+                    "correct": false
+                },
+                {
+                    "text": "Fokus nur auf Systemtests.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie fördert CI in DevOps Shift-Left beim Testen?",
+            "explanation": "CI verschiebt Testen nach links, indem Tests und Qualitätssicherung direkt im Entwicklungsprozess erfolgen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Indem Entwickler qualitativ hochwertigen Code mit Komponententests und statischer Analyse bereitstellen.",
+                    "correct": true
+                },
+                {
+                    "text": "Indem Tests nur am Ende durchgeführt werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Indem Entwickler Tests vermeiden.",
+                    "correct": false
+                },
+                {
+                    "text": "Indem Betriebsteams Tests durchführen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was erleichtern automatisierte Prozesse wie CI/CD im Testkontext?",
+            "explanation": "CI/CD fördern stabile, reproduzierbare Testumgebungen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Erstellung von Testplänen.",
+                    "correct": false
+                },
+                {
+                    "text": "Aufbau stabiler Testumgebungen.",
+                    "correct": true
+                },
+                {
+                    "text": "Manuelle Regressionstests.",
+                    "correct": false
+                },
+                {
+                    "text": "Exploratives Testen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Qualitätsmerkmale werden durch DevOps sichtbarer?",
+            "explanation": "DevOps verbessert die Sichtbarkeit von nicht-funktionalen Eigenschaften (Performanz, Zuverlässigkeit). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Nur funktionale Korrektheit.",
+                    "correct": false
+                },
+                {
+                    "text": "Nicht-funktionale Merkmale wie Performanz und Zuverlässigkeit.",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Benutzerfreundlichkeit.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Sicherheit.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil ergibt sich aus der Automatisierung in DevOps?",
+            "explanation": "Automatisierung reduziert Wiederholungsaufwand, ersetzt aber nicht alle manuellen Tests. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Reduzierter Bedarf an wiederholten manuellen Tests.",
+                    "correct": true
+                },
+                {
+                    "text": "Vollständiger Ersatz aller manuellen Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Wegfall von Testumgebungen.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur funktionale Tests werden benötigt.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie trägt DevOps zur Minimierung von Regressionsrisiken bei?",
+            "explanation": "Automatisierte Regressionstests decken viele Szenarien ab und minimieren Risiken. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Durch vollständigen Verzicht auf Regressionstests.",
+                    "correct": false
+                },
+                {
+                    "text": "Durch breite Abdeckung mit automatisierten Regressionstests.",
+                    "correct": true
+                },
+                {
+                    "text": "Durch rein manuelle Retests.",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Auslagerung an externe Teams.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Herausforderung ist typisch für DevOps?",
+            "explanation": "Die Definition und Etablierung einer Delivery Pipeline ist eine Herausforderung. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Tests werden vollständig automatisiert, sodass keine Risiken bestehen.",
+                    "correct": false
+                },
+                {
+                    "text": "Aufbau und Pflege einer DevOps-Auslieferungskette.",
+                    "correct": true
+                },
+                {
+                    "text": "Vollständiger Wegfall aller Testwerkzeuge.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen erfolgt unabhängig von Entwicklung.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Aufwand entsteht in DevOps zusätzlich?",
+            "explanation": "CI/CD-Tools müssen eingeführt und kontinuierlich gewartet werden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.4)",
+            "options": [
+                {
+                    "text": "Mehr Dokumentation.",
+                    "correct": false
+                },
+                {
+                    "text": "Einführung und Wartung von CI/CD-Werkzeugen.",
+                    "correct": true
+                },
+                {
+                    "text": "Vollständiger Ersatz aller Stakeholder.",
+                    "correct": false
+                },
+                {
+                    "text": "Keine zusätzlichen Aufwände.",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

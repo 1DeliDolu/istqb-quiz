@@ -1,0 +1,1063 @@
+{
+    "chapter": "3",
+    "subChapter": "3-2-2",
+    "subChapterTitle": "Aktivitäten des Reviewprozesses",
+    "questions": [
+        {
+            "question": "Welche Norm definiert einen generischen Reviewprozess?",
+            "explanation": "Die Norm ISO/IEC 20246 beschreibt einen generischen Reviewprozess. (Originalsatz: 'Die Norm ISO/IEC 20246 definiert einen generischen Reviewprozess...')",
+            "options": [
+                {
+                    "text": "ISO/IEC 20246",
+                    "correct": true
+                },
+                {
+                    "text": "ISO/IEC 25010",
+                    "correct": false
+                },
+                {
+                    "text": "IEEE 829",
+                    "correct": false
+                },
+                {
+                    "text": "ISTQB 29119",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird der in ISO/IEC 20246 definierte Reviewprozess beschrieben?",
+            "explanation": "Er ist ein strukturierter, aber flexibler Rahmen. (Originalsatz: '... der einen strukturierten, aber flexiblen Rahmen bietet...')",
+            "options": [
+                {
+                    "text": "Er ist vollständig unstrukturiert",
+                    "correct": false
+                },
+                {
+                    "text": "Er ist ein strukturierter, aber flexibler Rahmen",
+                    "correct": true
+                },
+                {
+                    "text": "Er ist ausschließlich starr und unveränderlich",
+                    "correct": false
+                },
+                {
+                    "text": "Er ist nur für dynamische Tests gedacht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wofür bietet der generische Reviewprozess die Grundlage?",
+            "explanation": "Er dient als Grundlage, um einen spezifischen Reviewprozess auf eine bestimmte Situation zuzuschneiden. (Originalsatz: '... auf dessen Grundlage ein spezifischer Reviewprozess auf eine bestimmte Situation zugeschnitten werden kann.')",
+            "options": [
+                {
+                    "text": "Für zufällige und unstrukturierte Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Für das Zuschneiden auf spezifische Situationen",
+                    "correct": false
+                },
+                {
+                    "text": "Für die Automatisierung von dynamischen Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Für die Durchführung von Unit-Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann werden mehr der beschriebenen Aufgaben benötigt?",
+            "explanation": "Wenn das Review formaler ist, werden mehr Aufgaben benötigt. (Originalsatz: 'Wenn das geforderte Review eher formal ist, werden mehr ... Aufgaben ... benötigt.')",
+            "options": [
+                {
+                    "text": "Wenn das Review informell ist",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn das Review formaler ist",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn es sich um dynamische Tests handelt",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn das Review formaler ist, werden mehr Aufgaben benötigt",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel verfolgt der generische Reviewprozess?",
+            "explanation": "Er soll eine Basis schaffen, um Reviews an spezifische Situationen anzupassen. (Originaltext: '... Grundlage ... auf eine bestimmte Situation zugeschnitten ...')",
+            "options": [
+                {
+                    "text": "Flexibilität bei der Anpassung an Situationen",
+                    "correct": true
+                },
+                {
+                    "text": "Ersetzung aller dynamischen Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Automatisierung von Regressionstests",
+                    "correct": false
+                },
+                {
+                    "text": "Verzicht auf jegliche Dokumentation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterscheidet sich ein formales Review von einem informellen?",
+            "explanation": "Bei einem formalen Review sind mehr Aktivitäten und Aufgaben vorgeschrieben. (Originalsatz: '... wenn das Review eher formal ist, werden mehr ... Aufgaben benötigt.')",
+            "options": [
+                {
+                    "text": "Formale Reviews benötigen mehr Aktivitäten",
+                    "correct": false
+                },
+                {
+                    "text": "Informelle Reviews benötigen mehr Aktivitäten",
+                    "correct": true
+                },
+                {
+                    "text": "Beide benötigen immer dieselben Aktivitäten",
+                    "correct": false
+                },
+                {
+                    "text": "Formale Reviews benötigen keine Dokumentation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Flexibilität bietet ISO/IEC 20246?",
+            "explanation": "Die Norm beschreibt einen Rahmen, der flexibel anwendbar ist. (Originalsatz: '... einen strukturierten, aber flexiblen Rahmen...')",
+            "options": [
+                {
+                    "text": "Er ist völlig starr",
+                    "correct": false
+                },
+                {
+                    "text": "Er erlaubt flexible Anpassungen",
+                    "correct": true
+                },
+                {
+                    "text": "Er wird nur für dynamische Tests genutzt",
+                    "correct": false
+                },
+                {
+                    "text": "Er ist nur für Agile-Reviews gedacht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage trifft auf den generischen Reviewprozess zu?",
+            "explanation": "Er kann auf unterschiedliche Situationen zugeschnitten werden. (Originaltext: '... auf eine bestimmte Situation zugeschnitten ...')",
+            "options": [
+                {
+                    "text": "Er ist universell ohne Anpassung einsetzbar",
+                    "correct": false
+                },
+                {
+                    "text": "Er muss immer gleich angewendet werden",
+                    "correct": false
+                },
+                {
+                    "text": "Er ist auf spezifische Situationen anpassbar",
+                    "correct": true
+                },
+                {
+                    "text": "Er ersetzt alle Reviewarten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Konsequenz hat ein informelles Review im Vergleich zu einem formalen?",
+            "explanation": "Bei informellen Reviews werden weniger Aufgaben aus dem Prozess benötigt. (Ableitung aus: '... wenn ... eher formal ... mehr Aufgaben benötigt.')",
+            "options": [
+                {
+                    "text": "Es werden weniger Aufgaben benötigt",
+                    "correct": true
+                },
+                {
+                    "text": "Es werden mehr Aufgaben benötigt",
+                    "correct": false
+                },
+                {
+                    "text": "Es werden immer exakt die gleichen Aufgaben benötigt",
+                    "correct": false
+                },
+                {
+                    "text": "Es werden gar keine Aufgaben benötigt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Norm legt die Aktivitäten für den Reviewprozess fest?",
+            "explanation": "Die Norm ISO/IEC 20246 definiert den generischen Reviewprozess und dessen Aktivitäten. (Originalsatz: 'Die Norm ISO/IEC 20246 definiert ...')",
+            "options": [
+                {
+                    "text": "IEEE 829",
+                    "correct": false
+                },
+                {
+                    "text": "ISO/IEC 29119",
+                    "correct": false
+                },
+                {
+                    "text": "ISO/IEC 20246",
+                    "correct": false
+                },
+                {
+                    "text": "ISO/IEC 20246",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Warum können viele Arbeitsergebnisse nicht in einem einzigen Review behandelt werden?",
+            "explanation": "Viele Arbeitsergebnisse sind zu umfangreich, um in einem einzigen Review betrachtet zu werden. (Originalsatz: 'Viele Arbeitsergebnisse sind zu umfangreich, als dass sie in einem einzigen Review behandelt werden könnten.')",
+            "options": [
+                {
+                    "text": "Weil sie zu umfangreich sind",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Reviews keine Arbeitsergebnisse prüfen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil nur Code geprüft werden darf",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Reviews nur in agilen Projekten erlaubt sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie kann der Reviewprozess bei sehr großen Arbeitsergebnissen gestaltet werden?",
+            "explanation": "Er kann mehrfach durchgeführt werden, bis das gesamte Arbeitsergebnis geprüft ist. (Originalsatz: 'Der Reviewprozess kann daher mehrfach durchgeführt werden ...')",
+            "options": [
+                {
+                    "text": "Er wird immer in einem Schritt abgeschlossen",
+                    "correct": false
+                },
+                {
+                    "text": "Er wird mehrfach durchgeführt",
+                    "correct": true
+                },
+                {
+                    "text": "Er entfällt bei großen Arbeitsergebnissen",
+                    "correct": false
+                },
+                {
+                    "text": "Er wird ausschließlich automatisiert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel hat die mehrfache Durchführung von Reviews?",
+            "explanation": "Das Ziel ist, das gesamte Arbeitsergebnis vollständig zu überprüfen. (Originalsatz: '... um das Review für das gesamte Arbeitsergebnis zu vervollständigen.')",
+            "options": [
+                {
+                    "text": "Die Abdeckung des gesamten Arbeitsergebnisses",
+                    "correct": false
+                },
+                {
+                    "text": "Die Reduktion der Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Die Prüfung ausschließlich von Teilbereichen",
+                    "correct": true
+                },
+                {
+                    "text": "Die Abschaffung von formalen Reviews",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was passiert, wenn ein Arbeitsergebnis zu groß für ein einzelnes Review ist?",
+            "explanation": "Es wird in mehreren Reviews behandelt, bis alles geprüft wurde. (Originalsatz: '... mehrfach durchgeführt werden, um ... zu vervollständigen.')",
+            "options": [
+                {
+                    "text": "Es wird nie geprüft",
+                    "correct": false
+                },
+                {
+                    "text": "Es wird vollständig automatisch analysiert",
+                    "correct": false
+                },
+                {
+                    "text": "Es wird in Teilabschnitten mehrfach geprüft",
+                    "correct": true
+                },
+                {
+                    "text": "Es wird ausschließlich vom Autor geprüft",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Konsequenz hat die Aufteilung eines Reviews auf mehrere Sitzungen?",
+            "explanation": "Sie ermöglicht eine vollständige Überprüfung sehr umfangreicher Arbeitsergebnisse. (Ableitung aus dem Originalsatz: '... um das Review für das gesamte Arbeitsergebnis zu vervollständigen.')",
+            "options": [
+                {
+                    "text": "Die vollständige Überprüfung umfangreicher Arbeitsergebnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Die Abschaffung von Review-Meetings",
+                    "correct": false
+                },
+                {
+                    "text": "Die Verkürzung aller Projektlaufzeiten",
+                    "correct": false
+                },
+                {
+                    "text": "Die Vermeidung jeglicher Dokumentation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches ist die erste Aktivität im Reviewprozess nach ISO/IEC 20246?",
+            "explanation": "Die erste Aktivität ist die Planung. (Originalsatz: 'Die Aktivitäten des Reviewprozesses sind: • Planung ...')",
+            "options": [
+                {
+                    "text": "Planung",
+                    "correct": true
+                },
+                {
+                    "text": "Vorbereitung",
+                    "correct": false
+                },
+                {
+                    "text": "Review-Meeting",
+                    "correct": false
+                },
+                {
+                    "text": "Nachbereitung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was wird in der Planungsphase des Reviews festgelegt?",
+            "explanation": "In der Planungsphase wird der Umfang des Reviews festgelegt. (Originalsatz: 'In der Planungsphase wird der Umfang des Reviews festgelegt...')",
+            "options": [
+                {
+                    "text": "Die Testdaten für dynamische Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Der Umfang des Reviews",
+                    "correct": true
+                },
+                {
+                    "text": "Das Deployment-Konzept",
+                    "correct": false
+                },
+                {
+                    "text": "Die Benutzerhandbücher",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aspekte gehören zum Umfang des Reviews?",
+            "explanation": "Zum Umfang zählen Zweck, Arbeitsergebnis, Qualitätsmerkmale, Bereiche, Endekriterien, unterstützende Infos, Aufwand und Zeitrahmen. (Originalsatz: '... Zweck, ... Arbeitsergebnis, ... Qualitätsmerkmale ...')",
+            "options": [
+                {
+                    "text": "Nur Zweck und Aufwand",
+                    "correct": false
+                },
+                {
+                    "text": "Zweck, Arbeitsergebnis, Qualitätsmerkmale, Bereiche, Endekriterien, Normen, Aufwand, Zeitrahmen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Teststrategie",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Risiken und Fehlerdichte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Informationen können die Planung des Reviews unterstützen?",
+            "explanation": "Unterstützende Informationen sind z. B. Normen. (Originalsatz: '... unterstützende Informationen wie Normen...')",
+            "options": [
+                {
+                    "text": "Hardware-Spezifikationen",
+                    "correct": false
+                },
+                {
+                    "text": "Benutzerfeedback",
+                    "correct": false
+                },
+                {
+                    "text": "Unterstützende Informationen wie Normen",
+                    "correct": true
+                },
+                {
+                    "text": "Marketingpläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kriterien werden in der Reviewplanung definiert?",
+            "explanation": "In der Planung werden auch die Endekriterien festgelegt. (Originalsatz: '... die Endekriterien ... umfassen.')",
+            "options": [
+                {
+                    "text": "Endekriterien",
+                    "correct": true
+                },
+                {
+                    "text": "Code-Coverage-Ziele",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlernachtest-Strategie",
+                    "correct": false
+                },
+                {
+                    "text": "Systemintegration",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher organisatorische Faktor wird in der Reviewplanung berücksichtigt?",
+            "explanation": "Auch Aufwand und Zeitrahmen gehören zur Planung. (Originalsatz: '... Aufwand und den Zeitrahmen ...')",
+            "options": [
+                {
+                    "text": "Budget für Hardware",
+                    "correct": false
+                },
+                {
+                    "text": "Aufwand und Zeitrahmen",
+                    "correct": true
+                },
+                {
+                    "text": "Release-Plan für das gesamte Projekt",
+                    "correct": false
+                },
+                {
+                    "text": "Schulungskonzept",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Ziel des Reviewbeginns?",
+            "explanation": "Beim Reviewbeginn soll sichergestellt werden, dass alle Beteiligten und alle Voraussetzungen vorhanden sind, um mit dem Review zu starten. (Originalsatz: '... sicherzustellen, dass jeder Beteiligte und alles ... vorbereitet ist ...')",
+            "options": [
+                {
+                    "text": "Alle Beteiligten und Voraussetzungen sind vorbereitet",
+                    "correct": true
+                },
+                {
+                    "text": "Es werden dynamische Tests durchgeführt",
+                    "correct": false
+                },
+                {
+                    "text": "Die Projektdokumentation wird abgeschlossen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Release-Planung wird erstellt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was muss jeder Teilnehmer beim Reviewbeginn haben?",
+            "explanation": "Jeder Teilnehmer benötigt Zugang zu dem zu prüfenden Arbeitsergebnis. (Originalsatz: '... dass jeder Teilnehmer Zugang zu dem zu prüfenden Arbeitsergebnis hat ...')",
+            "options": [
+                {
+                    "text": "Nur persönliche Notizen",
+                    "correct": false
+                },
+                {
+                    "text": "Zugang zum zu prüfenden Arbeitsergebnis",
+                    "correct": true
+                },
+                {
+                    "text": "Ein eigenes Testtool",
+                    "correct": false
+                },
+                {
+                    "text": "Ein aktuelles Release",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was muss jeder Teilnehmer beim Reviewbeginn verstehen?",
+            "explanation": "Jeder Teilnehmer muss seine Rolle und Verantwortlichkeiten verstehen. (Originalsatz: '... seine Rolle und Verantwortlichkeiten versteht ...')",
+            "options": [
+                {
+                    "text": "Nur die Projektstrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Die Definition of Done",
+                    "correct": false
+                },
+                {
+                    "text": "Seine Rolle und Verantwortlichkeiten",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die Projektziele",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was muss zusätzlich jedem Teilnehmer zur Verfügung gestellt werden?",
+            "explanation": "Jeder Teilnehmer erhält alles, was er für die Durchführung des Reviews benötigt. (Originalsatz: '... und alles erhält, was er für die Durchführung ... benötigt.')",
+            "options": [
+                {
+                    "text": "Nichts, außer einer Einladung",
+                    "correct": false
+                },
+                {
+                    "text": "Nur ein Standard-Template",
+                    "correct": false
+                },
+                {
+                    "text": "Alles, was für die Durchführung des Reviews benötigt wird",
+                    "correct": true
+                },
+                {
+                    "text": "Nur ein Handbuch zur Reviewtechnik",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Voraussetzung gehört NICHT zum Reviewbeginn?",
+            "explanation": "Der Reviewbeginn bezieht sich auf Zugang, Rollenverständnis und benötigte Materialien – nicht auf Releaseplanung. (Originalsatz: '... Zugang ... Rolle ... alles ... was benötigt wird.')",
+            "options": [
+                {
+                    "text": "Zugang zum Arbeitsergebnis",
+                    "correct": false
+                },
+                {
+                    "text": "Verständnis der Rolle und Verantwortung",
+                    "correct": false
+                },
+                {
+                    "text": "Bereitstellung aller benötigten Informationen",
+                    "correct": false
+                },
+                {
+                    "text": "Releaseplanung für das gesamte Projekt",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Warum ist der Reviewbeginn wichtig?",
+            "explanation": "Er stellt sicher, dass alle Beteiligten vorbereitet sind und effektiv am Review teilnehmen können. (Zusammenfassung des Originals)",
+            "options": [
+                {
+                    "text": "Weil dadurch alle Beteiligten vorbereitet sind",
+                    "correct": true
+                },
+                {
+                    "text": "Weil dadurch keine weiteren Meetings nötig sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil dadurch die Projektziele überflüssig werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil dadurch keine Dokumentation mehr erforderlich ist",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Ziel eines individuellen Reviews?",
+            "explanation": "Ein Gutachter bewertet die Qualität des Arbeitsergebnisses und identifiziert Anomalien, Empfehlungen und Fragen. (Originalsatz: '... um die Qualität ... zu bewerten und Anomalien, Empfehlungen und Fragen zu identifizieren...')",
+            "options": [
+                {
+                    "text": "Die Qualität des Arbeitsergebnisses bewerten und Anomalien identifizieren",
+                    "correct": true
+                },
+                {
+                    "text": "Die Projektplanung abschließen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Releaseplanung erstellen",
+                    "correct": false
+                },
+                {
+                    "text": "Dynamische Tests durchführen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle übernimmt der Gutachter beim individuellen Review?",
+            "explanation": "Der Gutachter führt das Review durch, bewertet und protokolliert die Befunde. (Originalsatz: 'Die Gutachter protokollieren alle ... identifizierten Anomalien...')",
+            "options": [
+                {
+                    "text": "Er erstellt neue Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Er führt das Review durch und protokolliert Befunde",
+                    "correct": true
+                },
+                {
+                    "text": "Er ersetzt die Stakeholder",
+                    "correct": false
+                },
+                {
+                    "text": "Er führt dynamische Tests aus",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Beispiele für Reviewverfahren nennt der Lehrplan?",
+            "explanation": "Beispiele sind checklistenbasiertes Review und szenariobasiertes Review. (Originalsatz: '... ein oder mehrere Reviewverfahren ... z. B. checklistenbasiertes Review, szenariobasiertes Review.')",
+            "options": [
+                {
+                    "text": "Unit-Tests und Integrationstests",
+                    "correct": false
+                },
+                {
+                    "text": "Checklistenbasiertes Review und szenariobasiertes Review",
+                    "correct": false
+                },
+                {
+                    "text": "Exploratives Testen und White-Box-Analyse",
+                    "correct": true
+                },
+                {
+                    "text": "Statische Analyse und Lasttest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was wird beim individuellen Review identifiziert?",
+            "explanation": "Anomalien, Empfehlungen und Fragen werden durch den Gutachter erfasst. (Originalsatz: '... identifizieren, indem er ein oder mehrere Reviewverfahren anwendet.')",
+            "options": [
+                {
+                    "text": "Neue Releases",
+                    "correct": false
+                },
+                {
+                    "text": "Projektbudgets",
+                    "correct": false
+                },
+                {
+                    "text": "Anomalien, Empfehlungen und Fragen",
+                    "correct": true
+                },
+                {
+                    "text": "Hardware-Defekte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Auf welche Norm verweist der Lehrplan im Zusammenhang mit Reviewverfahren?",
+            "explanation": "Die Norm ISO/IEC 20246 beschreibt die verschiedenen Reviewverfahren. (Originalsatz: 'Die Norm ISO/IEC 20246 geht näher auf die verschiedenen Reviewverfahren ein.')",
+            "options": [
+                {
+                    "text": "ISO/IEC 20246",
+                    "correct": true
+                },
+                {
+                    "text": "IEEE 829",
+                    "correct": false
+                },
+                {
+                    "text": "ISO/IEC 25010",
+                    "correct": false
+                },
+                {
+                    "text": "ISO/IEC 29119",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe hat der Gutachter zusätzlich zur Bewertung der Qualität?",
+            "explanation": "Er protokolliert alle identifizierten Anomalien, Empfehlungen und Fragen. (Originalsatz: 'Die Gutachter protokollieren alle ... identifizierten Anomalien...')",
+            "options": [
+                {
+                    "text": "Er schreibt die Testfälle neu",
+                    "correct": false
+                },
+                {
+                    "text": "Er protokolliert Anomalien, Empfehlungen und Fragen",
+                    "correct": true
+                },
+                {
+                    "text": "Er übernimmt die Releaseplanung",
+                    "correct": false
+                },
+                {
+                    "text": "Er erstellt die Testbasis",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was unterscheidet das individuelle Review von dynamischen Tests?",
+            "explanation": "Beim individuellen Review werden Arbeitsergebnisse mit Reviewverfahren überprüft, nicht durch Ausführung. (Originalsatz: '... ein oder mehrere Reviewverfahren anwendet ...')",
+            "options": [
+                {
+                    "text": "Es basiert auf Reviewverfahren ohne Codeausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Es prüft Laufzeitverhalten",
+                    "correct": false
+                },
+                {
+                    "text": "Es bewertet Arbeitsergebnisse durch Ausführung",
+                    "correct": true
+                },
+                {
+                    "text": "Es ersetzt alle Reviewarten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum müssen während eines Reviews festgestellte Anomalien analysiert werden?",
+            "explanation": "Anomalien sind nicht automatisch Fehlerzustände, daher müssen sie analysiert und diskutiert werden. (Originalsatz: '... da es sich ... nicht unbedingt um Fehlerzustände handelt, müssen alle Anomalien analysiert und diskutiert werden.')",
+            "options": [
+                {
+                    "text": "Weil Anomalien nicht unbedingt Fehlerzustände sind",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Anomalien immer automatisch Fehler sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Anomalien immer ignoriert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Anomalien nur im Code vorkommen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Entscheidungen sollten für jede Anomalie getroffen werden?",
+            "explanation": "Es muss über Status, Verantwortlichkeit und Maßnahmen entschieden werden. (Originalsatz: '... Entscheidung über ihren Status, ihre Verantwortlichkeit und die erforderlichen Maßnahmen ...')",
+            "options": [
+                {
+                    "text": "Nur über die Kosten der Behebung",
+                    "correct": false
+                },
+                {
+                    "text": "Über Status, Verantwortlichkeit und Maßnahmen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur über die Dauer des Projekts",
+                    "correct": false
+                },
+                {
+                    "text": "Nur über die Releaseplanung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wo findet die Analyse und Diskussion der Anomalien in der Regel statt?",
+            "explanation": "Dies geschieht üblicherweise in einer Reviewsitzung. (Originalsatz: 'Dies geschieht in der Regel in einer Reviewsitzung ...')",
+            "options": [
+                {
+                    "text": "In einer Retrospektive",
+                    "correct": false
+                },
+                {
+                    "text": "In einer Reviewsitzung",
+                    "correct": false
+                },
+                {
+                    "text": "Im Rahmen eines Abnahmetests",
+                    "correct": true
+                },
+                {
+                    "text": "Im täglichen Stand-up",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Über welche Aspekte entscheiden die Teilnehmer in einer Reviewsitzung?",
+            "explanation": "Sie entscheiden über die Qualität des geprüften Arbeitsergebnisses und die erforderlichen Folgemaßnahmen. (Originalsatz: '... über die Qualität ... und über die erforderlichen Folgemaßnahmen ...')",
+            "options": [
+                {
+                    "text": "Über die Qualität und die erforderlichen Folgemaßnahmen",
+                    "correct": false
+                },
+                {
+                    "text": "Über die Laufzeitumgebung",
+                    "correct": false
+                },
+                {
+                    "text": "Über die Testabdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Über die Qualität des Arbeitsergebnisses und Folgemaßnahmen",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Wann kann ein Folgereview erforderlich sein?",
+            "explanation": "Nach Abschluss der Maßnahmen kann ein Folgereview notwendig werden. (Originalsatz: 'Nach Abschluss der Maßnahmen kann ein Folgereview erforderlich sein.')",
+            "options": [
+                {
+                    "text": "Nach Abschluss der Maßnahmen",
+                    "correct": true
+                },
+                {
+                    "text": "Vor Beginn der Maßnahmen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur nach Projektende",
+                    "correct": false
+                },
+                {
+                    "text": "Nur während dynamischer Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind Verantwortlichkeiten bei Anomalien wichtig?",
+            "explanation": "Es muss klar sein, wer für die Bearbeitung verantwortlich ist. (Originalsatz: '... Entscheidung über ... ihre Verantwortlichkeit ...')",
+            "options": [
+                {
+                    "text": "Damit keine Dokumentation erstellt werden muss",
+                    "correct": false
+                },
+                {
+                    "text": "Damit Verantwortlichkeiten für Anomalien klar sind",
+                    "correct": true
+                },
+                {
+                    "text": "Damit immer der Moderator alles erledigt",
+                    "correct": false
+                },
+                {
+                    "text": "Damit keine Maßnahmen erforderlich sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt den Unterschied zwischen Anomalien und Fehlerzuständen?",
+            "explanation": "Nicht jede Anomalie ist automatisch ein Fehlerzustand. (Originalsatz: '... da es sich ... nicht unbedingt um Fehlerzustände handelt ...')",
+            "options": [
+                {
+                    "text": "Jede Anomalie ist automatisch ein Fehlerzustand",
+                    "correct": false
+                },
+                {
+                    "text": "Anomalien sind keine Beobachtungen",
+                    "correct": false
+                },
+                {
+                    "text": "Anomalien können, müssen aber keine Fehlerzustände sein",
+                    "correct": true
+                },
+                {
+                    "text": "Anomalien sind nur in Testfällen erlaubt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Themen stehen in der Reviewsitzung im Fokus?",
+            "explanation": "Im Fokus stehen Qualität, identifizierte Anomalien und Folgemaßnahmen. (Originalsatz: '... Qualität ... erforderliche Folgemaßnahmen ...')",
+            "options": [
+                {
+                    "text": "Nur Budget und Ressourcen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Architekturentscheidungen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur das Endekriterium",
+                    "correct": false
+                },
+                {
+                    "text": "Qualität, Anomalien und Folgemaßnahmen",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welches Dokument sollte für jeden identifizierten Fehlerzustand erstellt werden?",
+            "explanation": "Für jeden Fehlerzustand wird ein Fehlerbericht erstellt. (Originalsatz: 'Für jeden Fehlerzustand sollte ein Fehlerbericht erstellt werden...')",
+            "options": [
+                {
+                    "text": "Ein Fehlerbericht",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Testkonzept",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Projektdokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Architekturdiagramm",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum wird für jeden Fehlerzustand ein Fehlerbericht erstellt?",
+            "explanation": "Damit die Korrekturmaßnahmen nachverfolgt werden können. (Originalsatz: '... damit die Korrekturmaßnahmen nachverfolgt werden können.')",
+            "options": [
+                {
+                    "text": "Damit neue Anforderungen entstehen",
+                    "correct": false
+                },
+                {
+                    "text": "Damit Korrekturmaßnahmen nachverfolgt werden können",
+                    "correct": true
+                },
+                {
+                    "text": "Damit die Testumgebung dokumentiert wird",
+                    "correct": false
+                },
+                {
+                    "text": "Damit die Projektlaufzeit verkürzt wird",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann gilt ein Arbeitsergebnis nach einem Review als abgeschlossen?",
+            "explanation": "Wenn die Endekriterien erreicht sind, kann das Arbeitsergebnis abgeschlossen werden. (Originalsatz: 'Wenn die Endekriterien erreicht sind, kann das Arbeitsergebnis ...')",
+            "options": [
+                {
+                    "text": "Wenn alle Review-Teilnehmer zustimmen",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn die Endekriterien erreicht sind",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn alle Fehlerberichte geschlossen sind",
+                    "correct": true
+                },
+                {
+                    "text": "Wenn das Management es freigibt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Zweck eines Fehlerberichts im Reviewprozess?",
+            "explanation": "Ein Fehlerbericht dient dazu, die Korrekturmaßnahmen nachvollziehbar zu dokumentieren. (Originalsatz: '... damit die Korrekturmaßnahmen nachverfolgt werden können.')",
+            "options": [
+                {
+                    "text": "Er dokumentiert die Korrekturmaßnahmen nachvollziehbar",
+                    "correct": false
+                },
+                {
+                    "text": "Er ersetzt die gesamte Review-Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Er dient als Planung für zukünftige Projekte",
+                    "correct": false
+                },
+                {
+                    "text": "Er dokumentiert die Korrekturmaßnahmen zur Nachverfolgbarkeit",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Bedingung muss erfüllt sein, bevor ein Arbeitsergebnis abgeschlossen wird?",
+            "explanation": "Die Endekriterien müssen erfüllt sein. (Originalsatz: 'Wenn die Endekriterien erreicht sind ...')",
+            "options": [
+                {
+                    "text": "Die Endekriterien müssen erfüllt sein",
+                    "correct": true
+                },
+                {
+                    "text": "Alle Stakeholder müssen zustimmen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Projektlaufzeit muss beendet sein",
+                    "correct": false
+                },
+                {
+                    "text": "Alle dynamischen Tests müssen durchgeführt sein",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was passiert mit Fehlerzuständen ohne Fehlerbericht?",
+            "explanation": "Ohne Fehlerbericht fehlt die Nachverfolgbarkeit der Korrekturmaßnahmen – der Kernnutzen geht verloren.",
+            "options": [
+                {
+                    "text": "Sie können nicht nachverfolgt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Sie verschwinden automatisch",
+                    "correct": false
+                },
+                {
+                    "text": "Sie werden sofort behoben",
+                    "correct": false
+                },
+                {
+                    "text": "Sie gelten als nicht existent",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

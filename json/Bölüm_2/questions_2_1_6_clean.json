@@ -1,1 +1,448 @@
-[]
+{
+    "chapter": "2",
+    "subChapter": "2-1-6",
+    "subChapterTitle": "2.1.6 Retrospektiven und Prozessverbesserung",
+    "questions": [
+        {
+            "question": "Wann finden Retrospektiven typischerweise statt?",
+            "explanation": "Retrospektiven werden häufig am Ende eines Projekts oder einer Iteration, bei einem Releasemeilenstein oder bei Bedarf abgehalten. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Nur am Projektanfang",
+                    "correct": false
+                },
+                {
+                    "text": "Am Ende eines Projekts, einer Iteration, bei einem Releasemeilenstein oder bei Bedarf",
+                    "correct": true
+                },
+                {
+                    "text": "Nur nach dem Testabschluss",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf Anforderung des Managements",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Von welchen Faktoren hängt Zeitpunkt und Organisation von Retrospektiven ab?",
+            "explanation": "Zeitpunkt und Organisation der Retrospektiven hängen von dem jeweiligen SDLC-Modell ab. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Vom gewählten SDLC-Modell",
+                    "correct": true
+                },
+                {
+                    "text": "Von der Anzahl der Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Von der Wahl des Testwerkzeugs",
+                    "correct": false
+                },
+                {
+                    "text": "Von der Höhe des Budgets",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Teilnehmer nehmen typischerweise an Retrospektiven teil?",
+            "explanation": "In diesen Sitzungen diskutieren die Teilnehmer (nicht nur Tester, sondern z. B. auch Entwickler, Architekten, Product Owner, Businessanalysten). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Nur Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Tester, Entwickler, Architekten, Product Owner und Businessanalysten",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Manager und Auditoren",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Entwickler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Aspekt wird in einer Retrospektive thematisiert?",
+            "explanation": "Was war erfolgreich und sollte beibehalten werden? (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Welche Punkte erfolgreich waren und beibehalten werden sollten",
+                    "correct": true
+                },
+                {
+                    "text": "Neue Marktanalysen",
+                    "correct": false
+                },
+                {
+                    "text": "Budgetfreigabe",
+                    "correct": false
+                },
+                {
+                    "text": "Testwerkzeugauswahl",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein zentrales Ziel von Retrospektiven?",
+            "explanation": "Was war nicht erfolgreich und könnte verbessert werden? (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Neue Features definieren",
+                    "correct": false
+                },
+                {
+                    "text": "Verbesserungsbedarf erkennen",
+                    "correct": true
+                },
+                {
+                    "text": "Projektpläne genehmigen",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle priorisieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Frage wird in Retrospektiven zur Sicherung künftiger Qualität gestellt?",
+            "explanation": "Wie können die Verbesserungen eingearbeitet und die Erfolge in Zukunft beibehalten werden? (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Wie können die Erfolge in Zukunft beibehalten werden?",
+                    "correct": true
+                },
+                {
+                    "text": "Welche Anforderungen fehlen?",
+                    "correct": false
+                },
+                {
+                    "text": "Welche Codezeilen sind ungetestet?",
+                    "correct": false
+                },
+                {
+                    "text": "Welche Tests wurden automatisiert?",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind in Retrospektiven unterschiedliche Rollen wichtig?",
+            "explanation": "In diesen Sitzungen diskutieren die Teilnehmer (nicht nur Tester, sondern z. B. auch Entwickler, Architekten, Product Owner, Businessanalysten). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Um verschiedene Perspektiven und Erfahrungen einzubringen",
+                    "correct": true
+                },
+                {
+                    "text": "Um Regressionstests zu minimieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um Testergebnisse schneller zu dokumentieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um Testwerkzeuge zu vergleichen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität gehört NICHT zu Retrospektiven?",
+            "explanation": "Abschnitt 2.1.6 behandelt Reflexion (Erfolge, Verbesserungen, Beibehaltung) – nicht technische Technologieentscheidungen.",
+            "options": [
+                {
+                    "text": "Erfolgreiche Praktiken identifizieren",
+                    "correct": false
+                },
+                {
+                    "text": "Verbesserungen erarbeiten",
+                    "correct": false
+                },
+                {
+                    "text": "Neue Programmiersprachen auswählen",
+                    "correct": true
+                },
+                {
+                    "text": "Erfolge für die Zukunft sichern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was unterscheidet Retrospektiven von reinen Testabschluss-Meetings?",
+            "explanation": "In diesen Sitzungen diskutieren die Teilnehmer (nicht nur Tester, sondern …). Retrospektiven sind teamübergreifend. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Sie berücksichtigen ausschließlich Testergebnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Sie beziehen das gesamte Team und Prozesse ein",
+                    "correct": true
+                },
+                {
+                    "text": "Sie dienen nur der Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Sie finden nur einmal pro Projekt statt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Thema ist KEIN Bestandteil einer Retrospektive?",
+            "explanation": "Abschnitt 2.1.6 listet Reflexionsfragen, nicht aber operative Release-Planung.",
+            "options": [
+                {
+                    "text": "Was war erfolgreich?",
+                    "correct": false
+                },
+                {
+                    "text": "Was könnte verbessert werden?",
+                    "correct": false
+                },
+                {
+                    "text": "Wie Erfolge beibehalten werden können?",
+                    "correct": false
+                },
+                {
+                    "text": "Detaillierte Release-Planung",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Wo werden die Ergebnisse von Retrospektiven üblicherweise dokumentiert?",
+            "explanation": "Die Ergebnisse sollten festgehalten werden und sind normalerweise Teil des Testabschlussberichts. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Im Testabschlussbericht",
+                    "correct": true
+                },
+                {
+                    "text": "Nur in privaten Notizen der Tester",
+                    "correct": false
+                },
+                {
+                    "text": "In den Release-Notes",
+                    "correct": false
+                },
+                {
+                    "text": "Gar nicht, Retrospektiven werden nicht dokumentiert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind Retrospektiven entscheidend?",
+            "explanation": "Retrospektiven sind entscheidend für die erfolgreiche Umsetzung der kontinuierlichen Verbesserung. (Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Weil sie Testautomatisierung ersetzen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie kontinuierliche Verbesserung ermöglichen",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie Regressionstests reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie Budgetplanungen vereinfachen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist wichtig im Umgang mit empfohlenen Verbesserungen aus Retrospektiven?",
+            "explanation": "Es ist wichtig, dass die empfohlenen Verbesserungen weiterverfolgt werden. (Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Sie sollten ignoriert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sollten dokumentiert, aber nicht verfolgt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sollten konsequent weiterverfolgt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Sie sollten nur vom Management überprüft werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil betrifft direkt die Effizienz des Testens?",
+            "explanation": "Erhöhte Effektivität/Effizienz des Testens, z. B. durch die Umsetzung von Vorschlägen zur Prozessverbesserung. (Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Teamzusammenhalt",
+                    "correct": false
+                },
+                {
+                    "text": "Erhöhte Effizienz durch Prozessverbesserungen",
+                    "correct": true
+                },
+                {
+                    "text": "Bessere Zusammenarbeit zwischen Entwicklung und Test",
+                    "correct": false
+                },
+                {
+                    "text": "Höhere Qualität der Testbasis",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil bezieht sich auf die Qualität der Testmittel?",
+            "explanation": "Höhere Qualität der Testmittel, z. B. durch gemeinsames Review der Testprozesse. (Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Erhöhte Effizienz",
+                    "correct": false
+                },
+                {
+                    "text": "Verbesserte Qualität der Testbasis",
+                    "correct": false
+                },
+                {
+                    "text": "Höhere Qualität der Testmittel",
+                    "correct": true
+                },
+                {
+                    "text": "Teamzusammenhalt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil betrifft den Teamzusammenhalt?",
+            "explanation": "Teamzusammenhalt und Lernen, z. B. durch die Möglichkeit, Probleme anzusprechen und Verbesserungspunkte vorzuschlagen. (Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Höhere Qualität der Testmittel",
+                    "correct": false
+                },
+                {
+                    "text": "Teamzusammenhalt und Lernen",
+                    "correct": true
+                },
+                {
+                    "text": "Erhöhte Effizienz",
+                    "correct": false
+                },
+                {
+                    "text": "Verbesserte Qualität der Testbasis",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil bezieht sich auf die Testbasis?",
+            "explanation": "Verbesserte Qualität der Testbasis, z. B. weil Mängel im Umfang und in der Qualität der Anforderungen angesprochen und behoben werden konnten. (Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Verbesserte Qualität der Testbasis",
+                    "correct": true
+                },
+                {
+                    "text": "Höhere Qualität der Testmittel",
+                    "correct": false
+                },
+                {
+                    "text": "Erhöhte Effizienz",
+                    "correct": false
+                },
+                {
+                    "text": "Teamzusammenhalt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil betrifft die Zusammenarbeit zwischen Entwicklung und Test?",
+            "explanation": "Bessere Zusammenarbeit zwischen Entwicklung und Test, z. B. weil die Zusammenarbeit regelmäßig überprüft und optimiert wird. (Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Verbesserte Qualität der Testbasis",
+                    "correct": false
+                },
+                {
+                    "text": "Höhere Qualität der Testmittel",
+                    "correct": false
+                },
+                {
+                    "text": "Bessere Zusammenarbeit zwischen Entwicklung und Test",
+                    "correct": true
+                },
+                {
+                    "text": "Erhöhte Effizienz",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Dokument enthält die Ergebnisse der Retrospektiven meist?",
+            "explanation": "Die Ergebnisse sollten festgehalten werden und sind normalerweise Teil des Testabschlussberichts. (Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Testabschlussbericht",
+                    "correct": true
+                },
+                {
+                    "text": "Risikoregister",
+                    "correct": false
+                },
+                {
+                    "text": "User-Story-Backlog",
+                    "correct": false
+                },
+                {
+                    "text": "Release-Notes",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was unterstützt Retrospektiven als kontinuierliche Praxis am meisten?",
+            "explanation": "Retrospektiven sind entscheidend für die erfolgreiche Umsetzung der kontinuierlichen Verbesserung. (Abschnitt 2.1.6)",
+            "options": [
+                {
+                    "text": "Kontinuierliche Verbesserung",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlernachtests",
+                    "correct": false
+                },
+                {
+                    "text": "Releaseplanung",
+                    "correct": false
+                },
+                {
+                    "text": "Testautomatisierung",
+                    "correct": false
+                }
+                ]
+            }
+        ]
+    }
+    

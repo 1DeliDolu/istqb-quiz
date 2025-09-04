@@ -43,8 +43,7 @@ export const istqbChapters = {
     ],
   },
   "2": {
-    title:
-      "2. Testen während des Softwareentwicklungslebenszyklus",
+    title: "2. Testen während des Softwareentwicklungslebenszyklus",
     description:
       "Testen im Kontext eines SDLC, Teststufen, Testarten und Wartungstests.",
     subChapters: [
@@ -71,12 +70,13 @@ export const istqbChapters = {
       "3.1.1 Arbeitsergebnisse, die durch statische Tests untersucht werden können",
       "3.1.2 Wert des statischen Tests",
       "3.1.3 Unterschiede zwischen statischem Test und dynamischem Test",
-      "3.2 Feedback- und Reviewprozess",
+      "3.2 Review-Prozess",
       "3.2.1 Vorteile eines frühzeitigen und häufigen Stakeholder-Feedbacks",
       "3.2.2 Aktivitäten des Reviewprozesses",
-      "3.2.3 Rollen und Verantwortlichkeiten bei Reviews",
+      "3.2.3 Rollen und Verantwortlichkeiten bei Reviews – Manager",
       "3.2.4 Arten von Reviews",
       "3.2.5 Erfolgsfaktoren für Reviews",
+      "3.3 Statische Analyse",
     ],
   },
   "4": {

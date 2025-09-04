@@ -1,0 +1,227 @@
+{
+    "chapter": "2",
+    "subChapter": "2-2",
+    "subChapterTitle": "2.2 Teststufen und Testarten",
+    "questions": [
+        {
+            "question": "Was sind Teststufen im Wesentlichen?",
+            "explanation": "Teststufen sind Gruppen von Testaktivitäten, die gemeinsam organisiert und verwaltet werden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2)",
+            "options": [
+                {
+                    "text": "Einzelne Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Gruppen von Testaktivitäten",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Unit-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Release-Planungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was charakterisiert jede Teststufe?",
+            "explanation": "Jede Teststufe ist eine Instanz des Testprozesses, die in Bezug auf Software in einer bestimmten Entwicklungsphase durchgeführt wird. (Abschnitt 2.2)",
+            "options": [
+                {
+                    "text": "Sie ist eine Instanz des Testprozesses",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ist nur eine Überprüfung von Dokumenten",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ist ausschließlich eine statische Analyse",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ist eine isolierte Einzelaktivität",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Bandbreite decken Teststufen ab?",
+            "explanation": "Von einzelnen Komponenten bis hin zu kompletten Systemen oder gegebenenfalls Systemen von Systemen. (Abschnitt 2.2)",
+            "options": [
+                {
+                    "text": "Nur Komponenten",
+                    "correct": false
+                },
+                {
+                    "text": "Nur komplette Systeme",
+                    "correct": false
+                },
+                {
+                    "text": "Von Komponenten bis zu Systemen von Systemen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Integrationstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie stehen Teststufen im SDLC in Beziehung?",
+            "explanation": "Teststufen stehen in Beziehung zu anderen Aktivitäten innerhalb des SDLC. (Abschnitt 2.2)",
+            "options": [
+                {
+                    "text": "Sie stehen in Beziehung zu anderen Aktivitäten im SDLC",
+                    "correct": true
+                },
+                {
+                    "text": "Sie sind unabhängig vom SDLC",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzen Entwicklungsaktivitäten",
+                    "correct": false
+                },
+                {
+                    "text": "Sie finden nur nach der Entwicklung statt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie werden Teststufen in sequenziellen SDLC-Modellen oft definiert?",
+            "explanation": "In sequenziellen SDLC-Modellen sind die Teststufen oft so definiert, dass die Endekriterien einer Stufe Teil der Eingangskriterien für die nächste Stufe sind. (Abschnitt 2.2)",
+            "options": [
+                {
+                    "text": "Endekriterien einer Stufe sind Teil der Eingangskriterien der nächsten Stufe",
+                    "correct": true
+                },
+                {
+                    "text": "Jede Stufe ist völlig unabhängig",
+                    "correct": false
+                },
+                {
+                    "text": "Es gibt keine Endekriterien",
+                    "correct": false
+                },
+                {
+                    "text": "Eingangskriterien gelten nur für die erste Stufe",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Trifft die Abhängigkeit der End- und Eingangskriterien auch in iterativen Modellen zu?",
+            "explanation": "In einigen iterativen Modellen trifft dies nicht zu. (Abschnitt 2.2)",
+            "options": [
+                {
+                    "text": "Ja, immer",
+                    "correct": false
+                },
+                {
+                    "text": "Nein, in einigen iterativen Modellen nicht",
+                    "correct": true
+                },
+                {
+                    "text": "Nur bei großen Projekten",
+                    "correct": false
+                },
+                {
+                    "text": "Nur bei Systemtests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie verhalten sich Entwicklungsaktivitäten zu Teststufen?",
+            "explanation": "Entwicklungsaktivitäten können sich über mehrere Teststufen erstrecken. (Abschnitt 2.2)",
+            "options": [
+                {
+                    "text": "Sie sind strikt getrennt",
+                    "correct": false
+                },
+                {
+                    "text": "Sie können sich über mehrere Teststufen erstrecken",
+                    "correct": true
+                },
+                {
+                    "text": "Sie finden nur nach dem Test statt",
+                    "correct": false
+                },
+                {
+                    "text": "Sie gelten nur für die erste Stufe",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Können sich Teststufen zeitlich überschneiden?",
+            "explanation": "Teststufen können sich zeitlich überschneiden. (Abschnitt 2.2)",
+            "options": [
+                {
+                    "text": "Ja, sie können sich überschneiden",
+                    "correct": true
+                },
+                {
+                    "text": "Nein, sie sind immer strikt nacheinander",
+                    "correct": false
+                },
+                {
+                    "text": "Nur in sequentiellen Modellen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur bei Systemtests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sind Testarten?",
+            "explanation": "Testarten sind Gruppen von Testaktivitäten, die sich auf bestimmte Qualitätsmerkmale beziehen. (Abschnitt 2.2)",
+            "options": [
+                {
+                    "text": "Gruppen von Testaktivitäten zu Qualitätsmerkmalen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur statische Prüfungen",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle auf Unit-Test-Ebene",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Dokumentation von Testplänen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Können Testarten in jeder Teststufe durchgeführt werden?",
+            "explanation": "Die meisten dieser Testaktivitäten können in jeder Teststufe durchgeführt werden. (Abschnitt 2.2)",
+            "options": [
+                {
+                    "text": "Ja, die meisten können in jeder Stufe durchgeführt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Nein, sie sind auf Unit-Tests beschränkt",
+                    "correct": false
+                },
+                {
+                    "text": "Nur bei Systemtests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur im Abnahmetest",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}
