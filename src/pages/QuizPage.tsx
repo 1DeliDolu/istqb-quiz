@@ -51,6 +51,8 @@ const QuizPage: React.FC = () => {
         const fetchQuestions = async () => {
             if (!chapterId) return;
 
+            console.log(`🔍 QuizPage Debug - Chapter: ${chapterId}, SubIndex: ${subChapterIndex}, SubTitle: ${subChapterTitle}`);
+
             try {
                 // İlk önce JSON dosyasındaki mevcut verileri import et (ISTQB için)
                 if (!chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
@@ -59,7 +61,17 @@ const QuizPage: React.FC = () => {
 
                 // DataService'den soruları al (backend'den veya localStorage'dan)
                 // SubChapter filtresi ekle
+                console.log(`🔍 DataService.getQuestions çağrısı: chapter="${chapterId}", subChapter="${subChapterTitle}"`);
                 let allQuestions = await DataService.getQuestions(chapterId, subChapterTitle || undefined);
+                console.log(`📊 DataService'den dönen soru sayısı: ${allQuestions.length}`);
+                console.log(`📋 İlk 2 soru:`, allQuestions.slice(0, 2));
+                // Backend'den gelen soruların yapısını kontrol et
+                if (allQuestions.length > 0) {
+                    console.log(`🔍 İlk sorunun yapısı:`, {
+                        subChapter: allQuestions[0].subChapter,
+                        keys: Object.keys(allQuestions[0])
+                    });
+                }
 
                 // Eğer hiç soru yoksa ve ISTQB bölümüyse, JSON dosyasından yüklemeyi dene
                 if (allQuestions.length === 0 && !chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
@@ -71,13 +83,24 @@ const QuizPage: React.FC = () => {
                     }
                 }
 
-                // Eğer backend'den gelen veriler yoksa ve localStorage'da subChapter filtresi gerekiyorsa
-                if (subChapterTitle && allQuestions.length > 0) {
-                    allQuestions = allQuestions.filter((q: Question) =>
-                        q.subChapter === subChapterTitle
-                    );
+                // Backend zaten doğru filtrelemeyi yapıyor, local filtrelemeyi atla
+                // Sadece localStorage veya JSON dosyasından gelenleri filtrele
+                const isFromBackend = allQuestions.length > 0 && allQuestions[0].id && typeof allQuestions[0].id === 'number';
+
+                if (subChapterTitle && allQuestions.length > 0 && !isFromBackend) {
+                    console.log(`🔍 Local filtreleme: ${allQuestions.length} soru içinden "${subChapterTitle}" alt bölümü aranıyor`);
+                    console.log(`🔍 Filtreleme kriteri: subChapter === "${subChapterTitle}"`);
+                    const beforeFilter = allQuestions.length;
+                    allQuestions = allQuestions.filter((q: Question) => {
+                        console.log(`🔍 Soru subChapter: "${q.subChapter}", aranan: "${subChapterTitle}", eşit mi: ${q.subChapter === subChapterTitle}`);
+                        return q.subChapter === subChapterTitle;
+                    });
+                    console.log(`📊 Filtreleme sonrası: ${beforeFilter} → ${allQuestions.length} soru kaldı`);
+                } else if (isFromBackend) {
+                    console.log(`✅ Backend'den veri geldi, filtreleme atlanıyor`);
                 }
 
+                console.log(`📝 setQuestions çağrılıyor: ${allQuestions.length} soru`);
                 setQuestions(allQuestions);
                 console.log(`📚 Loaded ${allQuestions.length} questions for chapter ${chapterId}${subChapterTitle ? ` (${subChapterTitle})` : ''}`);
             } catch (error) {
