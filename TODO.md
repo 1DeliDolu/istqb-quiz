@@ -1,61 +1,61 @@
-# ISTQB Quiz - TODO List
+# ISTQB Quiz - Aufgabenliste
 
-## 🔥 Öncelikli Özellikler
+## 🔥 Priorisierte Funktionen
 
-### 📚 Dokümantasyon Sistemi
+### 📚 Dokumentationssystem
 
-- [ ] **Dokümantasyon modülü oluştur**
-  - [ ] Her ISTQB bölümü için ayrı dokümantasyon sayfaları
-  - [ ] Markdown formatında içerik desteği
-  - [ ] Arama ve filtreleme özellikleri
-  - [ ] Navigasyon menüsüne "Dokümantasyon" sekmesi ekle
+- [ ] **Dokumentationsmodul erstellen**
+  - [ ] Separate Dokumentationsseiten für jedes ISTQB-Kapitel
+  - [ ] Unterstützung für Inhalte im Markdown-Format
+  - [ ] Such- und Filterfunktionen
+  - [ ] "Dokumentation"-Reiter zum Navigationsmenü hinzufügen
 
-### 🎯 Akıllı Öneri Sistemi
+### 🎯 Intelligentes Empfehlungssystem
 
-- [ ] **Yanlış cevap analizi**
-  - [ ] Kullanıcının yanlış cevapladığı soruları takip et
-  - [ ] Yanlış cevaplanan soruların ait olduğu bölümü tespit et
-  - [ ] İlgili ISTQB bölümü dokümantasyonunu öner
-  - [ ] "Bu konuyu çalışmak ister misiniz?" popup'ı ekle
+- [ ] **Analyse falscher Antworten**
+  - [ ] Verfolge die vom Benutzer falsch beantworteten Fragen
+  - [ ] Bestimme das zugehörige Kapitel für jede falsche Antwort
+  - [ ] Empfehle die relevante ISTQB-Dokumentation
+  - [ ] Popup "Möchten Sie dieses Thema lernen?" hinzufügen
 
-### 📖 Dokümantasyon İçeriği
+### 📖 Dokumentationsinhalte
 
-- [ ] **ISTQB Foundation Level konuları**
-  - [ ] Chapter 1: Fundamentals of Testing
-  - [ ] Chapter 2: Testing Throughout the SDLC
-  - [ ] Chapter 3: Static Testing
-  - [ ] Chapter 4: Test Analysis and Design
-  - [ ] Chapter 5: Managing Test Activities
-  - [ ] Chapter 6: Test Tools
+- [ ] **ISTQB Foundation Level Themen**
+  - [ ] Kapitel 1: Grundlagen des Testens
+  - [ ] Kapitel 2: Testen im SDLC
+  - [ ] Kapitel 3: Statisches Testen
+  - [ ] Kapitel 4: Testanalyse und -design
+  - [ ] Kapitel 5: Testmanagement
+  - [ ] Kapitel 6: Testwerkzeuge
 
-### 🔗 Entegrasyon
+### 🔗 Integration
 
-- [ ] **Quiz-Dokümantasyon bağlantısı**
-  - [ ] Quiz sonuç sayfasında ilgili bölüm önerileri
-  - [ ] Dokümantasyondan ilgili quiz'lere hızlı erişim
-  - [ ] Bookmark sistemi (favori konular)
-  - [ ] Okuma ilerlemesi takibi
+- [ ] **Verbindung zwischen Quiz und Dokumentation**
+  - [ ] Kapitelvorschläge auf der Quiz-Ergebnisseite
+  - [ ] Schneller Zugriff auf relevante Quizze aus der Dokumentation
+  - [ ] Lesezeichen-System (Lieblingsthemen)
+  - [ ] Lesefortschritt verfolgen
 
-### 🎨 UI/UX İyileştirmeleri
+### 🎨 UI/UX-Verbesserungen
 
-- [ ] **Dokümantasyon sayfası tasarımı**
-  - [ ] Responsive dokümantasyon layout'u
-  - [ ] Dark/Light mode desteği
-  - [ ] İçindekiler tablosu (TOC)
-  - [ ] Syntax highlighting (kod örnekleri için)
-  - [ ] Print-friendly format
+- [ ] **Design der Dokumentationsseite**
+  - [ ] Responsives Dokumentationslayout
+  - [ ] Unterstützung für Dark-/Light-Mode
+  - [ ] Inhaltsverzeichnis (TOC)
+  - [ ] Syntax-Highlighting (für Codebeispiele)
+  - [ ] Druckfreundliches Format
 
-### 📊 İstatistikler
+### 📊 Statistiken
 
-- [ ] **Öğrenme analizi**
-  - [ ] Hangi konularda zayıf olduğunu göster
-  - [ ] Dokümantasyon okuma süreleri
-  - [ ] Konulara göre quiz başarı oranları
-  - [ ] Önerilen çalışma planı
+- [ ] **Lernanalyse**
+  - [ ] Zeige Schwächen in bestimmten Themenbereichen
+  - [ ] Lesezeiten der Dokumentation
+  - [ ] Erfolgsquoten pro Thema im Quiz
+  - [ ] Empfohlener Lernplan
 
-## 🔧 Teknik Detaylar
+## 🔧 Technische Details
 
-### Dokümantasyon Yapısı
+### Dokumentationsstruktur
 
 ```
 src/
@@ -76,19 +76,19 @@ src/
     └── recommendationService.ts
 ```
 
-### Öneri Algoritması
+### Empfehlungsalgorithmus
 
-1. Quiz bitiminde yanlış cevapları analiz et
-2. Her yanlış cevabın ait olduğu ISTQB bölümünü belirle
-3. En çok hata yapılan 3 bölümü öner
-4. Kullanıcıya direkt dokümantasyon linkini sun
+1. Analysiere die falschen Antworten nach Abschluss des Quiz
+2. Bestimme das ISTQB-Kapitel für jede falsche Antwort
+3. Empfehle die drei Kapitel mit den meisten Fehlern
+4. Biete dem Benutzer einen direkten Link zur Dokumentation an
 
-## ✅ Tamamlanan Özellikler
+## ✅ Abgeschlossene Funktionen
 
-- [x] Pagination navigation sistemi
-- [x] Beige button teması (tüm proje)
-- [x] Hover dropdown navigation
-- [x] Two-column layout navigation
-- [x] Quiz sistemi (ISTQB, Udemy, Fragen)
-- [x] Kullanıcı istatistikleri
-- [x] Responsive tasarım
+- [x] Pagination-Navigationssystem
+- [x] Beiges Button-Theme (gesamtes Projekt)
+- [x] Hover-Dropdown-Navigation
+- [x] Zwei-Spalten-Navigation
+- [x] Quizsystem (ISTQB, Udemy, Fragen)
+- [x] Benutzerstatistiken
+- [x] Responsives Design
