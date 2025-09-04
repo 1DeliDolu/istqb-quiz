@@ -1,0 +1,447 @@
+{
+    "chapter": "2",
+    "subChapter": "2-1-2",
+    "subChapterTitle": "2.1.2 Softwareentwicklungslebenszyklus und gute Praktiken für das Testen",
+    "questions": [
+        {
+            "question": "Für jede Softwareentwicklungsaktivität gibt es eine entsprechende Testaktivität. Was ist das Ziel dieser Praxis?",
+            "explanation": "Jede Entwicklungsaktivität sollte durch eine passende Testaktivität begleitet werden, damit Qualität abgesichert ist. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Testaktivitäten finden unabhängig von Entwicklungsaktivitäten statt.",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Entwicklungsaktivitäten werden durch eine entsprechende Testaktivität begleitet.",
+                    "correct": true
+                },
+                {
+                    "text": "Testen beginnt erst nach Abschluss der Entwicklung.",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Teststufen haben identische Ziele.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum haben unterschiedliche Teststufen spezifische Testziele?",
+            "explanation": "Jede Stufe prüft andere Aspekte, so werden Redundanzen vermieden und Ziele klar getrennt. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Um den Test zu beschleunigen.",
+                    "correct": false
+                },
+                {
+                    "text": "Damit jeder Test angemessen, umfassend und ohne Redundanz durchgeführt wird.",
+                    "correct": true
+                },
+                {
+                    "text": "Damit nur eine Teststufe notwendig ist.",
+                    "correct": false
+                },
+                {
+                    "text": "Damit die Tester weniger Arbeit haben.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann beginnt die Testanalyse und der Testentwurf für eine Teststufe?",
+            "explanation": "Um frühes Testen umzusetzen, beginnt die Testanalyse bereits in der passenden Entwicklungsphase. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Erst nach Abschluss der vorherigen Teststufe.",
+                    "correct": false
+                },
+                {
+                    "text": "Sobald die Entwicklungsphase für diese Teststufe startet.",
+                    "correct": true
+                },
+                {
+                    "text": "Erst am Ende des Projekts.",
+                    "correct": false
+                },
+                {
+                    "text": "Sobald Regressionstests ausgeführt werden.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Praxis unterstützt den Grundsatz des frühen Testens besonders?",
+            "explanation": "Frühzeitige Analyse und Entwurfsaktivitäten ermöglichen frühes Finden von Fehlern. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Testen nur in der letzten Phase.",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyse und Testentwurf bereits während der entsprechenden Entwicklungsphase.",
+                    "correct": true
+                },
+                {
+                    "text": "Vollständiger Verzicht auf Dokumentation.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur dynamisches Testen am Ende.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle haben Tester in Reviews?",
+            "explanation": "Durch die Einbeziehung von Testern in Reviews wird Shift-Left unterstützt und Fehler früh gefunden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Tester werden erst nach der Codierung hinzugezogen.",
+                    "correct": false
+                },
+                {
+                    "text": "Tester nehmen an Reviews teil, sobald Entwürfe verfügbar sind.",
+                    "correct": true
+                },
+                {
+                    "text": "Tester führen keine Reviews durch.",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews sind nur Aufgabe der Entwickler.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Ziel, wenn jede Entwicklungsaktivität eine Testaktivität hat?",
+            "explanation": "So wird Qualität durchgängig überwacht und gesteuert. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Den Testumfang reduzieren.",
+                    "correct": false
+                },
+                {
+                    "text": "Qualitätssteuerung in allen Phasen sicherstellen.",
+                    "correct": true
+                },
+                {
+                    "text": "Tester vom Projekt entlasten.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen auf die Endphase beschränken.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Praxis unterstützt „Shift-Left“?",
+            "explanation": "Frühe Einbindung der Tester in Reviews ermöglicht frühzeitige Fehlerentdeckung (Shift-Left). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Tester erst am Ende des Projekts einsetzen.",
+                    "correct": false
+                },
+                {
+                    "text": "Tester frühzeitig in Reviews einbeziehen.",
+                    "correct": true
+                },
+                {
+                    "text": "Testziele zwischen Teststufen identisch halten.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur dynamisches Testen nutzen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sollten Teststufen unterschiedliche Ziele haben?",
+            "explanation": "Jede Teststufe ist auf bestimmte Fehlerarten ausgerichtet, um Redundanzen zu vermeiden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Damit sie unabhängig voneinander arbeiten.",
+                    "correct": false
+                },
+                {
+                    "text": "Damit Überlappungen vermieden und spezifische Aspekte abgedeckt werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Damit die Testautomatisierung entfällt.",
+                    "correct": false
+                },
+                {
+                    "text": "Damit nur dynamische Tests notwendig sind.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterstützt frühes Testen die Qualität?",
+            "explanation": "Frühes Testen reduziert Kosten und Aufwand, da Fehler zeitnah erkannt werden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Indem Fehler möglichst spät im Projekt entdeckt werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Indem Fehler frühzeitig in der passenden Entwicklungsphase aufgedeckt werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Indem Dokumentation vollständig entfällt.",
+                    "correct": false
+                },
+                {
+                    "text": "Indem ausschließlich Systemtests durchgeführt werden.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was passiert, wenn Testziele nicht zwischen Stufen differenziert werden?",
+            "explanation": "Ohne differenzierte Ziele würden mehrere Teststufen dieselben Aspekte prüfen, was ineffizient ist. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Testen wird effizienter.",
+                    "correct": false
+                },
+                {
+                    "text": "Es entstehen Redundanzen und unnötige Doppelarbeit.",
+                    "correct": true
+                },
+                {
+                    "text": "Fehler werden früher erkannt.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen entfällt komplett.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität ist Teil guter Testpraktiken?",
+            "explanation": "Testanalyse und -entwurf starten früh, um Fehler rechtzeitig zu finden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Testentwurf erst nach der Systemabnahme.",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyse bereits in der Entwicklungsphase starten.",
+                    "correct": true
+                },
+                {
+                    "text": "Tester nur in der Testphase einsetzen.",
+                    "correct": false
+                },
+                {
+                    "text": "Tester nur für Automatisierung einsetzen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle haben Tester bei Arbeitsergebnissen im Review-Prozess?",
+            "explanation": "Tester sind von Beginn an in Reviews eingebunden, um Shift-Left zu ermöglichen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Sie prüfen diese nur am Projektende.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie prüfen, sobald Entwürfe verfügbar sind.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie sind nicht beteiligt.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie prüfen ausschließlich Code.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Grundsatz wird durch frühe Testanalyse umgesetzt?",
+            "explanation": "Testanalyse/Entwurf während Entwicklungsphasen = frühes Testen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Grundsatz des frühen Testens.",
+                    "correct": true
+                },
+                {
+                    "text": "Grundsatz „Fehlerfreiheit ist erreichbar“.",
+                    "correct": false
+                },
+                {
+                    "text": "Grundsatz „Wiederholung macht sicher“.",
+                    "correct": false
+                },
+                {
+                    "text": "Grundsatz „Testen kann alles abdecken“.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Praxis verhindert redundante Testaktivitäten?",
+            "explanation": "Unterschiedliche Ziele machen jede Teststufe spezifisch und vermeiden Doppelarbeit. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Gleiche Ziele für alle Teststufen.",
+                    "correct": false
+                },
+                {
+                    "text": "Unterschiedliche Ziele für jede Teststufe.",
+                    "correct": true
+                },
+                {
+                    "text": "Keine Zieldefinition.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Regressionstests.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Einbeziehung der Tester in Reviews wertvoll?",
+            "explanation": "Tester bringen eine andere Perspektive ein und finden Fehler, bevor dynamisches Testen möglich ist. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Weil sie zusätzliche Fehler früh entdecken können.",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie die Entwicklung verlangsamt.",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie die Dokumentation ersetzt.",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Tester keine anderen Aufgaben haben.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist eine Folge, wenn Testanalyse und -entwurf spät starten?",
+            "explanation": "Spätes Testen führt zu höherem Aufwand und Kosten bei Fehlerkorrekturen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Fehler werden teurer zu beheben.",
+                    "correct": true
+                },
+                {
+                    "text": "Fehler werden früh entdeckt.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Testeffizienz steigt.",
+                    "correct": false
+                },
+                {
+                    "text": "Tester werden weniger benötigt.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Verbindung besteht zwischen Entwicklungs- und Testaktivitäten?",
+            "explanation": "So wird jede Entwicklungsaktivität von Qualitätssicherung begleitet. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Es gibt keine direkte Verbindung.",
+                    "correct": false
+                },
+                {
+                    "text": "Jede Entwicklungsaktivität sollte eine passende Testaktivität haben.",
+                    "correct": true
+                },
+                {
+                    "text": "Testaktivitäten beginnen immer erst nach allen Entwicklungsaktivitäten.",
+                    "correct": false
+                },
+                {
+                    "text": "Testaktivitäten sind optional.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kombination entspricht guten Testpraktiken?",
+            "explanation": "Gute Praktiken = frühes Testen, differenzierte Testziele, Tester in Reviews. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Frühes Testen, spezifische Testziele, Einbindung in Reviews.",
+                    "correct": true
+                },
+                {
+                    "text": "Testen nur am Ende, gleiche Ziele für alle Teststufen.",
+                    "correct": false
+                },
+                {
+                    "text": "Keine Dokumentation, keine Analyse.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur dynamisches Testen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil entsteht durch unterschiedliche Teststufen mit spezifischen Zielen?",
+            "explanation": "Unterschiedliche Ziele verhindern Doppelarbeit und decken verschiedene Ebenen ab. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Bessere Abdeckung bei weniger Redundanz.",
+                    "correct": true
+                },
+                {
+                    "text": "Weniger Tests notwendig.",
+                    "correct": false
+                },
+                {
+                    "text": "Tests können komplett entfallen.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Systemtests reichen aus.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage entspricht dem Prinzip „Shift-Left“?",
+            "explanation": "Tester werden in Reviews bereits eingebunden, sobald Entwürfe existieren → frühe Fehlerentdeckung (Shift-Left). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.2)",
+            "options": [
+                {
+                    "text": "Testen wird so spät wie möglich eingeplant.",
+                    "correct": false
+                },
+                {
+                    "text": "Tester prüfen Entwürfe und Arbeitsergebnisse so früh wie möglich.",
+                    "correct": true
+                },
+                {
+                    "text": "Tester arbeiten nur nach Fertigstellung des Codes.",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews entfallen, wenn Automatisierung vorhanden ist.",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,447 @@
+{
+    "chapter": "2",
+    "subChapter": "2-1-1",
+    "subChapterTitle": "2.1.1 Auswirkungen des Softwareentwicklungslebenszyklus auf das Testen",
+    "questions": [
+        {
+            "question": "Welche Rolle haben Tester in frühen Phasen eines sequenziellen Entwicklungsmodells?",
+            "explanation": "In sequenziellen Modellen entsteht Code erst später, daher sind Tester in frühen Phasen bei Reviews, Analyse und Entwurf aktiv. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Sie führen sofort dynamische Tests auf dem Code durch.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind hauptsächlich an Reviews, Testanalyse und Testentwurf beteiligt.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie automatisieren alle Regressionstests.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie haben in frühen Phasen keine Aufgaben.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage über Regressionstests in iterativen oder inkrementellen Modellen ist korrekt?",
+            "explanation": "Iterative/incrementelle Modelle liefern pro Iteration neue Inkremente, weshalb Regressionstests unverzichtbar sind. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Sie sind überflüssig, da neue Features isoliert getestet werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind besonders wichtig, da häufige Änderungen bestehende Funktionalität beeinflussen können.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie werden nur einmal am Ende des Projekts ausgeführt.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind durch statische Tests vollständig ersetzbar.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wirkt sich agile Softwareentwicklung auf Testdokumentation aus?",
+            "explanation": "Agile Methoden gehen von häufigen Änderungen aus und setzen auf schlanke Dokumentation und umfangreiche Automatisierung. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Sie erfordert besonders umfangreiche formale Testdokumentation.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie bevorzugt eine schlanke Dokumentation und setzt stärker auf Automatisierung.",
+                    "correct": true
+                },
+                {
+                    "text": "Dokumentation entfällt vollständig.",
+                    "correct": false
+                },
+                {
+                    "text": "Dokumentation ist nur für Entwickler relevant, nicht für Tester.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aspekte wird NICHT durch die Wahl des SDLC beeinflusst?",
+            "explanation": "Umfang, Zeitpunkt, Verfahren, Automatisierung und Rollen hängen vom SDLC ab – äußere Faktoren wie Wetter jedoch nicht. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Umfang und Zeitpunkt der Testaktivitäten.",
+                    "correct": false
+                },
+                {
+                    "text": "Rolle und Aufgaben der Tester.",
+                    "correct": false
+                },
+                {
+                    "text": "Wahl der Testverfahren.",
+                    "correct": false
+                },
+                {
+                    "text": "Wetterbedingungen während der Testdurchführung.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt agile Testpraxis am besten?",
+            "explanation": "In agilen Projekten werden viele manuelle Tests erfahrungsbasiert durchgeführt, unterstützt durch starke Testautomatisierung. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Hauptsächlich erfahrungsbasierte Testverfahren kombiniert mit umfassender Automatisierung.",
+                    "correct": true
+                },
+                {
+                    "text": "Vollständiger Verzicht auf manuelle Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur statische Tests werden ausgeführt.",
+                    "correct": false
+                },
+                {
+                    "text": "Tests finden ausschließlich am Projektende statt.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testaktivitäten sind in frühen Phasen sequenzieller Modelle möglich?",
+            "explanation": "Da Code erst spät entsteht, sind in frühen Phasen nur statische Testaktivitäten wie Reviews möglich. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Ausführliche dynamische Tests auf lauffähigem Code.",
+                    "correct": false
+                },
+                {
+                    "text": "Reviews von Anforderungen und Entwürfen.",
+                    "correct": true
+                },
+                {
+                    "text": "Regressionstests mit automatisierten Tools.",
+                    "correct": false
+                },
+                {
+                    "text": "Exploratives Testen der fertigen Software.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil von iterativen Entwicklungsmodellen im Hinblick auf das Testen?",
+            "explanation": "Jede Iteration liefert ein testbares Produktinkrement, das sofort statisch und dynamisch geprüft werden kann. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Tester müssen erst am Ende des Projekts tätig werden.",
+                    "correct": false
+                },
+                {
+                    "text": "In jeder Iteration ist ein Prototyp oder Inkrement testbar.",
+                    "correct": true
+                },
+                {
+                    "text": "Es gibt keine Notwendigkeit für Regressionstests.",
+                    "correct": false
+                },
+                {
+                    "text": "Dokumentation entfällt vollständig.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage trifft auf die Rolle der Testautomatisierung in agilen Projekten zu?",
+            "explanation": "Agile Projekte setzen auf starke Automatisierung, insbesondere für Regressionstests, um schnelle Rückmeldungen sicherzustellen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Sie ist weniger wichtig als in sequenziellen Modellen.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie wird bevorzugt, um schnelle Rückmeldungen zu ermöglichen.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ersetzt vollständig alle manuelle Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie wird nur am Projektende eingesetzt.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Tests können in agilen Projekten besonders gut durch erfahrungsbasierte Verfahren unterstützt werden?",
+            "explanation": "Agile Teams führen viele manuelle Tests erfahrungsbasiert (z. B. explorativ) durch, um flexibel auf Änderungen zu reagieren. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Komplexe formale Überdeckungsanalysen.",
+                    "correct": false
+                },
+                {
+                    "text": "Umfangreiche statische Analysen.",
+                    "correct": false
+                },
+                {
+                    "text": "Explorative Tests zur schnellen Fehlerfindung.",
+                    "correct": true
+                },
+                {
+                    "text": "Vollständige automatisierte Systemtests.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Auswirkung hat ein sequenzielles Modell auf den Zeitpunkt dynamischer Tests?",
+            "explanation": "Dynamische Tests sind erst möglich, wenn lauffähiger Code vorliegt, was in sequenziellen Modellen spät der Fall ist. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Sie können sofort zu Beginn des Projekts gestartet werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie beginnen erst, wenn ausführbarer Code vorhanden ist.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie sind während des gesamten Projekts nicht erlaubt.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie werden durch Reviews ersetzt.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Zusammenhang besteht zwischen SDLC und Testverfahren?",
+            "explanation": "In iterativen/incrementellen Modellen kommen in jeder Iteration statische und dynamische Verfahren zum Einsatz. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Der gewählte SDLC hat keinen Einfluss auf die Wahl der Testverfahren.",
+                    "correct": false
+                },
+                {
+                    "text": "Iterative Modelle erfordern in jeder Iteration Testverfahren für statische und dynamische Tests.",
+                    "correct": true
+                },
+                {
+                    "text": "Agile Projekte verzichten auf alle Testverfahren.",
+                    "correct": false
+                },
+                {
+                    "text": "In sequenziellen Modellen dürfen nur Black-Box-Tests verwendet werden.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt die Testautomatisierung in sequenziellen Modellen?",
+            "explanation": "Da Code spät entsteht und weniger Inkremente geliefert werden, ist Automatisierung weniger entscheidend als in agilen Modellen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Sie ist kaum notwendig, da nur wenige Regressionstests stattfinden.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ist unverzichtbar in frühen Phasen.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzt statische Reviews vollständig.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie wird ausschließlich für explorative Tests verwendet.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testart ist in agilen Projekten besonders verbreitet?",
+            "explanation": "Agile Teams nutzen häufig erfahrungsbasierte Verfahren wie exploratives Testen, um schnell Feedback zu erhalten. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Formale, dokumentationsintensive Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Exploratives Testen.",
+                    "correct": true
+                },
+                {
+                    "text": "Nur White-Box-Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Lasttests.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt die Anpassung von Testaktivitäten an den SDLC am besten?",
+            "explanation": "Erfolgreiches Testen setzt voraus, dass es an den gewählten Lebenszyklus angepasst wird. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Testaktivitäten sind in jedem SDLC identisch.",
+                    "correct": false
+                },
+                {
+                    "text": "Testaktivitäten müssen an den jeweiligen SDLC angepasst werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Testaktivitäten hängen nur von den Entwicklern ab.",
+                    "correct": false
+                },
+                {
+                    "text": "Testaktivitäten sind nur in agilen Projekten erforderlich.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist schnelle Rückmeldung in iterativen und agilen Modellen besonders wichtig?",
+            "explanation": "Iterative und agile Modelle liefern häufig neue Inkremente, wodurch schnelles Feedback für Qualität und Risiko wichtig ist. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Weil Änderungen häufig auftreten und Auswirkungen früh erkannt werden müssen.",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Entwickler keine Dokumentation erstellen.",
+                    "correct": false
+                },
+                {
+                    "text": "Weil dynamische Tests erst am Ende erlaubt sind.",
+                    "correct": false
+                },
+                {
+                    "text": "Weil nur statische Tests relevant sind.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe übernimmt der Tester in agilen Teams zusätzlich?",
+            "explanation": "In agilen Projekten arbeiten Tester eng mit Entwicklern und Product Ownern zusammen, um frühzeitig Qualität zu sichern. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Nur das Schreiben von Testdokumenten.",
+                    "correct": false
+                },
+                {
+                    "text": "Unterstützung der Entwickler durch enge Zusammenarbeit und Feedback.",
+                    "correct": true
+                },
+                {
+                    "text": "Keine Beteiligung an frühen Phasen.",
+                    "correct": false
+                },
+                {
+                    "text": "Ausschließlich Regressionstests am Ende.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kombination trifft auf agile Testpraktiken zu?",
+            "explanation": "Agile kombiniert schlanke Dokumentation, manuelle erfahrungsbasierte Verfahren und umfassende Testautomatisierung. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Schlanke Dokumentation, erfahrungsbasierte Tests, umfangreiche Automatisierung.",
+                    "correct": true
+                },
+                {
+                    "text": "Umfangreiche Dokumentation, keine Automatisierung, nur Systemtests.",
+                    "correct": false
+                },
+                {
+                    "text": "Keine Tests, nur Reviews.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Last- und Performanztests.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann sind dynamische Tests in sequenziellen Modellen möglich?",
+            "explanation": "Dynamische Tests erfordern ausführbaren Code, der in sequenziellen Modellen erst spät verfügbar ist. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Sobald Anforderungen dokumentiert sind.",
+                    "correct": false
+                },
+                {
+                    "text": "Sobald lauffähiger Code vorhanden ist.",
+                    "correct": true
+                },
+                {
+                    "text": "Bereits während der Testanalyse.",
+                    "correct": false
+                },
+                {
+                    "text": "Während der Anforderungsreviews.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Auswirkung hat häufige Lieferung von Inkrementen auf das Testen?",
+            "explanation": "Häufige Lieferungen bedeuten, dass bestehende Funktionalität oft erneut getestet werden muss. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Sie macht Regressionstests überflüssig.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erfordert schnelle Rückmeldung und viele Regressionstests.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie verhindert statische Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie reduziert die Testaktivitäten auf das Minimum.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage gilt für Testaktivitäten in allen SDLC-Modellen?",
+            "explanation": "Unabhängig vom Modell ist Testen erfolgreich, wenn es an den Lebenszyklus angepasst wird. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1.1)",
+            "options": [
+                {
+                    "text": "Sie erfolgen ausschließlich am Ende.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie müssen an den jeweiligen SDLC angepasst werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie betreffen nur dynamische Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie entfallen bei agilen Methoden vollständig.",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}
