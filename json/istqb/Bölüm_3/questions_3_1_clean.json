@@ -1,7 +1,7 @@
 {
     "chapter": "3",
     "subChapter": "3-1",
-    "subChapterTitle": "Grundlagen des statischen Tests",
+    "subChapterTitle": "3.1 Grundlagen des statischen Tests",
     "questions": [
         {
             "question": "Was unterscheidet den statischen Test vom dynamischen Test?",

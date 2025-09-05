@@ -1,6 +1,337 @@
 {
     "chapter": "5",
     "subChapter": "5-2-2",
-    "subChapterTitle": "5.2.2 Projektrisiken und Produktrisiken",
-    "questions": []
+    "subChapterTitle": "5.2.2. Projektrisiken und Produktrisiken",
+    "questions": [
+        {
+            "question": "Welche beiden Arten von Risiken werden im Softwaretesten unterschieden?",
+            "explanation": "Im Softwaretesten unterscheidet man zwischen Projektrisiken und Produktrisiken. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Projektrisiken und Produktrisiken",
+                    "correct": true
+                },
+                {
+                    "text": "Technische Risiken und Kundenrisiken",
+                    "correct": false
+                },
+                {
+                    "text": "Lieferantenrisiken und Wartungsrisiken",
+                    "correct": false
+                },
+                {
+                    "text": "Managementrisiken und Sicherheitsrisiken",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt Projektrisiken am BESTEN?",
+            "explanation": "Projektrisiken beziehen sich auf Management und Steuerung des Projekts. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Risiken, die die Qualität der Software beeinflussen",
+                    "correct": false
+                },
+                {
+                    "text": "Risiken im Zusammenhang mit Projektmanagement und -steuerung",
+                    "correct": true
+                },
+                {
+                    "text": "Risiken, die durch Benutzeraktionen entstehen",
+                    "correct": false
+                },
+                {
+                    "text": "Risiken durch Hardwarefehler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt Produktrisiken am BESTEN?",
+            "explanation": "Produktrisiken stehen im Zusammenhang mit den Qualitätsmerkmalen der Software, z. B. Funktionalität, Leistung, Sicherheit. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Risiken durch organisatorische Probleme",
+                    "correct": false
+                },
+                {
+                    "text": "Risiken durch Lieferantenausfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Risiken im Zusammenhang mit den Qualitätsmerkmalen des Produkts",
+                    "correct": true
+                },
+                {
+                    "text": "Risiken durch unklare Projektziele",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel ist ein Projektrisiko?",
+            "explanation": "Beispiele: Verzögerungen bei Arbeitsergebnissen, ungenaue Schätzungen, Kostenkürzungen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Verzögerungen bei der Lieferung von Arbeitsergebnissen",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlende Funktionalität",
+                    "correct": false
+                },
+                {
+                    "text": "Laufzeitfehler",
+                    "correct": false
+                },
+                {
+                    "text": "Sicherheitslücken",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel ist ein Produktrisiko?",
+            "explanation": "Beispiele: fehlende Funktionalität, falsche Berechnungen, ineffiziente Algorithmen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Ungelöste Teamkonflikte",
+                    "correct": false
+                },
+                {
+                    "text": "Falsche Berechnungen",
+                    "correct": true
+                },
+                {
+                    "text": "Konkurs eines Zulieferers",
+                    "correct": false
+                },
+                {
+                    "text": "Ungenaue Aufwandsschätzungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Auswirkung können eingetretene Projektrisiken haben?",
+            "explanation": "Sie können Auswirkungen auf Zeitplan, Budget und Umfang haben. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Sie führen zu schlechter Benutzererfahrung",
+                    "correct": false
+                },
+                {
+                    "text": "Sie beeinflussen Zeitplan, Budget oder Umfang",
+                    "correct": true
+                },
+                {
+                    "text": "Sie verursachen Sicherheitslücken im Produkt",
+                    "correct": false
+                },
+                {
+                    "text": "Sie führen zu falschen Berechnungen im Code",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Auswirkung können eingetretene Produktrisiken haben?",
+            "explanation": "Produktrisiken können Unzufriedenheit, Einnahmeverluste, Schäden und sogar Verletzungen verursachen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Fehlerhafte Projektpläne",
+                    "correct": false
+                },
+                {
+                    "text": "Verlust von Einnahmen, Vertrauen und Ansehen",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlende Ressourcen im Projekt",
+                    "correct": false
+                },
+                {
+                    "text": "Falsche Aufwandsschätzungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel ist KEIN Projektrisiko?",
+            "explanation": "Produktrisiken sind z. B. Laufzeitfehler oder Sicherheitslücken. Projektrisiken betreffen Projektmanagement, Ressourcen und Organisation. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Verzögerungen bei Arbeitsergebnissen",
+                    "correct": false
+                },
+                {
+                    "text": "Laufzeitfehler im Produkt",
+                    "correct": true
+                },
+                {
+                    "text": "Ungenaue Schätzungen",
+                    "correct": false
+                },
+                {
+                    "text": "Personalmangel",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel ist KEIN Produktrisiko?",
+            "explanation": "Projektrisiken sind z. B. unzureichende Fähigkeiten, Kommunikationsprobleme, Lieferantenausfälle. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Sicherheitslücke im System",
+                    "correct": false
+                },
+                {
+                    "text": "Unzureichende Reaktionszeit",
+                    "correct": false
+                },
+                {
+                    "text": "Kommunikationsprobleme im Team",
+                    "correct": true
+                },
+                {
+                    "text": "Falsche Berechnungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel gehört zu technischen Projektrisiken?",
+            "explanation": "Beispiele: scope creep, unzureichende Werkzeugunterstützung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Schleichende Ausweitung des Projektumfangs (scope creep)",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlende Funktionalität",
+                    "correct": false
+                },
+                {
+                    "text": "Unzufriedenheit der Benutzer",
+                    "correct": false
+                },
+                {
+                    "text": "Verlust von Einnahmen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel gehört zu personellen Projektrisiken?",
+            "explanation": "Beispiele: unzureichende Fähigkeiten, Konflikte, Kommunikationsprobleme, Personalmangel. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Unzureichende Fähigkeiten im Team",
+                    "correct": true
+                },
+                {
+                    "text": "Ineffiziente Algorithmen",
+                    "correct": false
+                },
+                {
+                    "text": "Schlechte Benutzererfahrung",
+                    "correct": false
+                },
+                {
+                    "text": "Sicherheitslücken",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel gehört zu Lieferantenrisiken?",
+            "explanation": "Beispiele: Lieferausfall von Drittanbietern, Konkurs des unterstützenden Unternehmens. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Lieferausfall von Drittanbietern",
+                    "correct": true
+                },
+                {
+                    "text": "Ungenaue Aufwandsschätzungen",
+                    "correct": false
+                },
+                {
+                    "text": "Falsche Berechnungen",
+                    "correct": false
+                },
+                {
+                    "text": "Unzureichende Reaktionszeit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel gehört zu Produktrisiken im Bereich Qualität?",
+            "explanation": "Beispiele: falsche Funktionalität, ineffiziente Algorithmen, schlechte Benutzererfahrung, Sicherheitslücken. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Falsche Funktionalität",
+                    "correct": true
+                },
+                {
+                    "text": "Kostenkürzungen im Projekt",
+                    "correct": false
+                },
+                {
+                    "text": "Lieferausfall von Zulieferern",
+                    "correct": false
+                },
+                {
+                    "text": "Teamkonflikte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche gravierenden Folgen können Produktrisiken im Extremfall haben?",
+            "explanation": "Im Extremfall können körperliche Schäden, Verletzungen oder sogar Tod auftreten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Verzögerte Projektabnahme",
+                    "correct": false
+                },
+                {
+                    "text": "Hohe Wartungskosten",
+                    "correct": false
+                },
+                {
+                    "text": "Körperliche Schäden oder Tod",
+                    "correct": true
+                },
+                {
+                    "text": "Konkurs von Lieferanten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Auswirkung haben Produktrisiken auf den Helpdesk?",
+            "explanation": "Produktrisiken können zu einer Überlastung des Helpdesks führen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.2)",
+            "options": [
+                {
+                    "text": "Der Helpdesk wird abgeschafft",
+                    "correct": false
+                },
+                {
+                    "text": "Der Helpdesk wird überlastet",
+                    "correct": true
+                },
+                {
+                    "text": "Der Helpdesk erhält weniger Anfragen",
+                    "correct": false
+                },
+                {
+                    "text": "Der Helpdesk übernimmt Projektmanagement",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

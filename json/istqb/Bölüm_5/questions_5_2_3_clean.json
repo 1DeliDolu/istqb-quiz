@@ -1,6 +1,315 @@
 {
     "chapter": "5",
     "subChapter": "5-2-3",
-    "subChapterTitle": "5.2.3 Produktrisikoanalyse",
-    "questions": []
+    "subChapterTitle": "5.2.3. Produktrisikoanalyse",
+    "questions": [
+        {
+            "question": "Was ist das Ziel der Produktrisikoanalyse aus Sicht des Testens?",
+            "explanation": "Das Ziel ist, den Testaufwand so zu fokussieren, dass die verbleibende Risikostufe des Produkts minimiert wird. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Minimierung der verbleibenden Risikostufe des Produkts",
+                    "correct": true
+                },
+                {
+                    "text": "Verkürzung aller Entwicklungsphasen",
+                    "correct": false
+                },
+                {
+                    "text": "Abschaffung der manuellen Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Reduzierung der Anzahl der Stakeholder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann sollte die Produktrisikoanalyse im Idealfall beginnen?",
+            "explanation": "Sie sollte bereits in einem frühen Stadium des SDLC beginnen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Im frühen Stadium des SDLC",
+                    "correct": true
+                },
+                {
+                    "text": "Erst nach Abschluss aller Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Erst nach dem Go-Live",
+                    "correct": false
+                },
+                {
+                    "text": "Nur nach Abschluss der Abnahmetests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Aus welchen zwei Schritten besteht die Produktrisikoanalyse?",
+            "explanation": "Sie besteht aus Risikoidentifizierung und Risikobewertung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Risikoidentifizierung und Risikobewertung",
+                    "correct": true
+                },
+                {
+                    "text": "Risikominderung und Risikoüberwachung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehleranalyse und Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Testplanung und Testabschluss",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Methoden können Stakeholder zur Risikoidentifizierung einsetzen?",
+            "explanation": "Beispiele sind Brainstorming, Workshops, Interviews oder Ursache-Wirkungs-Diagramme. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Brainstorming, Workshops, Interviews",
+                    "correct": true
+                },
+                {
+                    "text": "Regressionstests und Exploratives Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Benchmarking und Marktanalysen",
+                    "correct": false
+                },
+                {
+                    "text": "Automatisierungsskripte und Logfiles",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was umfasst die Risikobewertung?",
+            "explanation": "Sie umfasst Kategorisierung, Eintrittswahrscheinlichkeit, Schadensausmaß, Risikostufe, Priorisierung und Vorschläge zum Umgang. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Kategorisierung, Eintrittswahrscheinlichkeit, Schadensausmaß, Priorisierung",
+                    "correct": true
+                },
+                {
+                    "text": "Budgetplanung, Zeitplanung und Kommunikation",
+                    "correct": false
+                },
+                {
+                    "text": "Teamkonflikte, Ressourcenmangel und Lieferantenanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Überwachung von bekannten Risiken",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welchen Vorteil bringt die Kategorisierung von Risiken?",
+            "explanation": "Risiken derselben Kategorie können mit einem ähnlichen Ansatz gemindert werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Sie ermöglicht eine vereinfachte Risikominderung",
+                    "correct": true
+                },
+                {
+                    "text": "Sie reduziert automatisch die Eintrittswahrscheinlichkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Sie beseitigt Risiken ohne Maßnahmen",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzt die Risikoüberwachung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird die Risikostufe im quantitativen Ansatz berechnet?",
+            "explanation": "Die Risikostufe = Eintrittswahrscheinlichkeit × Schadensausmaß. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Eintrittswahrscheinlichkeit × Schadensausmaß",
+                    "correct": true
+                },
+                {
+                    "text": "Eintrittswahrscheinlichkeit + Schadensausmaß",
+                    "correct": false
+                },
+                {
+                    "text": "Eintrittswahrscheinlichkeit – Schadensausmaß",
+                    "correct": false
+                },
+                {
+                    "text": "Eintrittswahrscheinlichkeit / Schadensausmaß",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird die Risikostufe im qualitativen Ansatz bestimmt?",
+            "explanation": "Sie kann anhand einer Risikomatrix bestimmt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Durch eine Risikomatrix",
+                    "correct": true
+                },
+                {
+                    "text": "Durch eine Kosten-Nutzen-Analyse",
+                    "correct": false
+                },
+                {
+                    "text": "Durch eine Aufwandsschätzung",
+                    "correct": false
+                },
+                {
+                    "text": "Durch eine Testabdeckungstabelle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen beschreibt eine Folge der Produktrisikoanalyse?",
+            "explanation": "Ihre Ergebnisse beeinflussen Gründlichkeit und Testumfang. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Sie beeinflusst Gründlichkeit und Testumfang",
+                    "correct": true
+                },
+                {
+                    "text": "Sie reduziert automatisch die Projektkosten",
+                    "correct": false
+                },
+                {
+                    "text": "Sie beendet alle Testaktivitäten",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzt die Teststrategie",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie kann die Produktrisikoanalyse den Testumfang beeinflussen?",
+            "explanation": "Sie bestimmt, welche Teststufen, Testarten, Verfahren und Überdeckung erforderlich sind. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Sie legt Teststufen, Testarten, Verfahren und Überdeckung fest",
+                    "correct": true
+                },
+                {
+                    "text": "Sie reduziert die Anzahl der Stakeholder",
+                    "correct": false
+                },
+                {
+                    "text": "Sie beschränkt sich auf Testabschlussberichte",
+                    "correct": false
+                },
+                {
+                    "text": "Sie beeinflusst nur Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie kann die Produktrisikoanalyse zur Testaufwandschätzung beitragen?",
+            "explanation": "Sie liefert Informationen, um den Testaufwand für einzelne Aufgaben abzuschätzen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Sie hilft bei der Schätzung des Testaufwands für Aufgaben",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ersetzt die Kostenplanung des Projekts",
+                    "correct": false
+                },
+                {
+                    "text": "Sie eliminiert automatisch Schätzfehler",
+                    "correct": false
+                },
+                {
+                    "text": "Sie beschränkt sich auf Exploratives Testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterstützt die Produktrisikoanalyse die Testpriorisierung?",
+            "explanation": "Sie sorgt dafür, dass kritische Fehlerzustände früh gefunden werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Sie stellt sicher, dass kritische Fehler früh gefunden werden",
+                    "correct": true
+                },
+                {
+                    "text": "Sie verhindert, dass Fehlerberichte geschrieben werden",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erlaubt nur manuelle Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzt das gesamte Risikomanagement",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche weiteren Maßnahmen können neben Testen zur Risikoreduktion beitragen?",
+            "explanation": "Die Risikoanalyse kann aufzeigen, ob neben Testen weitere Aktivitäten zur Verringerung des Risikos sinnvoll sind. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Zusätzliche Aktivitäten zur Risikominderung",
+                    "correct": true
+                },
+                {
+                    "text": "Alle Testfälle löschen",
+                    "correct": false
+                },
+                {
+                    "text": "Testteam verkleinern",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder entfernen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Methode kombiniert quantitative und qualitative Ansätze?",
+            "explanation": "Es kann auch eine Mischform beider Ansätze angewendet werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.3)",
+            "options": [
+                {
+                    "text": "Eine Mischung aus quantitativen und qualitativen Ansätzen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur eine qualitative Risikomatrix",
+                    "correct": false
+                },
+                {
+                    "text": "Nur eine mathematische Multiplikation",
+                    "correct": false
+                },
+                {
+                    "text": "Nur eine Kostenberechnung",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

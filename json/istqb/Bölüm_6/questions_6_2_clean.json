@@ -1,6 +1,403 @@
 {
     "chapter": "6",
     "subChapter": "6-2",
-    "subChapterTitle": "6.2 Nutzen und Risiken von Testautomatisierung",
-    "questions": []
+    "subChapterTitle": "6.2. Nutzen und Risiken von Testautomatisierung",
+    "questions": [
+        {
+            "question": "Warum garantiert die Anschaffung eines Testwerkzeugs allein keinen Erfolg?",
+            "explanation": "Ein Werkzeug erfordert Einführung, Wartung und Schulung, um echten Nutzen zu bringen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Weil Einführung, Wartung und Schulung notwendig sind",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Werkzeuge keine Software testen können",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Werkzeuge immer fehlerhaft sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Werkzeuge zu teuer sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Nutzen ergibt sich aus Testautomatisierung bei Regressionstests?",
+            "explanation": "Automatisierung spart Zeit durch Wiederholung gleichartiger manueller Arbeiten wie Regressionstests. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Zeitersparnis durch reduzierte manuelle Arbeiten",
+                    "correct": true
+                },
+                {
+                    "text": "Weniger notwendige Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Kürzere Projektlaufzeiten",
+                    "correct": false
+                },
+                {
+                    "text": "Keine Notwendigkeit von Testern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterstützt Testautomatisierung die Vermeidung menschlicher Fehlhandlungen?",
+            "explanation": "Automatisierung erhöht Konsistenz und Wiederholbarkeit. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Durch Konsistenz und Wiederholbarkeit",
+                    "correct": true
+                },
+                {
+                    "text": "Durch manuelle Nachkontrolle",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Anpassung der Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Delegation an Stakeholder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Messungen können durch Automatisierung objektiver bereitgestellt werden?",
+            "explanation": "Beispiel: Überdeckung und komplexe Metriken, die manuell schwer zu ermitteln sind. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Überdeckung und komplexe Metriken",
+                    "correct": true
+                },
+                {
+                    "text": "Projektbudgets",
+                    "correct": false
+                },
+                {
+                    "text": "Teamkonflikte",
+                    "correct": false
+                },
+                {
+                    "text": "Lieferantenbeziehungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie erleichtert Testautomatisierung die Berichterstattung?",
+            "explanation": "Automatisierung ermöglicht Statistiken, Diagramme und aggregierte Daten über Testfortschritt und Fehler. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Durch Bereitstellung von Statistiken und Diagrammen",
+                    "correct": true
+                },
+                {
+                    "text": "Durch Erstellung neuer Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Schulung des Managements",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Abschaffung der Dokumentation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wirkt sich Testautomatisierung auf die Testdurchführungszeit aus?",
+            "explanation": "Sie verkürzt die Durchführungszeit, ermöglicht frühere Fehlererkennung und schnellere Rückmeldungen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Sie verkürzt die Testdurchführungszeit",
+                    "correct": true
+                },
+                {
+                    "text": "Sie verlängert die Durchführungszeit",
+                    "correct": false
+                },
+                {
+                    "text": "Sie macht Tests überflüssig",
+                    "correct": false
+                },
+                {
+                    "text": "Sie verhindert Rückmeldungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterstützt Automatisierung die Arbeit der Tester?",
+            "explanation": "Tester haben mehr Zeit, um intensivere und effektivere Tests zu entwerfen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Mehr Zeit für effektivere Testentwürfe",
+                    "correct": true
+                },
+                {
+                    "text": "Keine Notwendigkeit für Testentwürfe",
+                    "correct": false
+                },
+                {
+                    "text": "Automatische Erstellung aller Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Tester werden durch Tools ersetzt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko besteht durch unrealistische Erwartungen?",
+            "explanation": "Zu hohe Erwartungen an Funktionalität oder einfache Handhabung führen zu Enttäuschungen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Enttäuschungen durch falsche Erwartungen an das Werkzeug",
+                    "correct": true
+                },
+                {
+                    "text": "Verringerung der Testabdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Erhöhte Schulungskosten",
+                    "correct": false
+                },
+                {
+                    "text": "Verlust von Stakeholdern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko besteht bei ungenauen Schätzungen für Werkzeuge?",
+            "explanation": "Ungenaue Schätzungen für Einführung, Pflege und Skriptanpassungen können Probleme verursachen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Falsche Schätzungen von Zeit, Kosten und Aufwand",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlende Risikoanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Veraltete Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Zu viele manuelle Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko besteht bei falscher Werkzeugverwendung?",
+            "explanation": "Ein Werkzeug kann ineffizient sein, wenn manuelles Testen besser geeignet wäre. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Werkzeug wird verwendet, obwohl manuelles Testen besser wäre",
+                    "correct": true
+                },
+                {
+                    "text": "Werkzeug wird nur von Entwicklern genutzt",
+                    "correct": false
+                },
+                {
+                    "text": "Werkzeug wird nicht dokumentiert",
+                    "correct": false
+                },
+                {
+                    "text": "Werkzeug ist zu teuer",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko besteht bei zu starkem Vertrauen in ein Werkzeug?",
+            "explanation": "Es besteht die Gefahr, dass kritisches menschliches Denken vernachlässigt wird. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Vernachlässigung des menschlichen kritischen Denkens",
+                    "correct": true
+                },
+                {
+                    "text": "Übermäßige Schulungskosten",
+                    "correct": false
+                },
+                {
+                    "text": "Verlust der Projektpläne",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlende Kommunikation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko besteht durch Abhängigkeit vom Werkzeuganbieter?",
+            "explanation": "Der Anbieter könnte seine Geschäftstätigkeit einstellen, Support einschränken oder das Werkzeug einstellen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Abhängigkeit von Anbieter und Supportproblemen",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlende Überdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Erhöhte Fehlerraten",
+                    "correct": false
+                },
+                {
+                    "text": "Komplexere Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko kann bei Open-Source-Software auftreten?",
+            "explanation": "Sie könnte nicht mehr weiterentwickelt werden oder erfordert häufige Anpassungen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Keine Updates oder häufige Anpassungen nötig",
+                    "correct": true
+                },
+                {
+                    "text": "Automatische Anpassung an neue Technologien",
+                    "correct": false
+                },
+                {
+                    "text": "Immer stabile Unterstützung",
+                    "correct": false
+                },
+                {
+                    "text": "Hohe Lizenzkosten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko besteht, wenn das Werkzeug nicht kompatibel ist?",
+            "explanation": "Ein Automatisierungswerkzeug, das nicht zur Plattform passt, ist unbrauchbar. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Inkompatibilität mit der Entwicklungsplattform",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerhafte Kommunikation",
+                    "correct": false
+                },
+                {
+                    "text": "Mangelnde Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Überhöhte Überdeckung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko besteht bei ungeeigneten Werkzeugen?",
+            "explanation": "Ein Werkzeug, das nicht den regulatorischen Anforderungen entspricht, kann ungeeignet sein. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Nichtkonformität mit regulatorischen Anforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Zu viele Regressionstests",
+                    "correct": false
+                },
+                {
+                    "text": "Übermäßige Abdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlende Kommunikation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Nutzen entsteht durch konsistente Testausführung mit Werkzeugen?",
+            "explanation": "Werkzeuge führen Tests konsistent aus, wodurch menschliche Fehler reduziert werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Reduzierung menschlicher Fehler",
+                    "correct": true
+                },
+                {
+                    "text": "Erhöhung der Projektkosten",
+                    "correct": false
+                },
+                {
+                    "text": "Verkürzung der Schulungszeiten",
+                    "correct": false
+                },
+                {
+                    "text": "Abschaffung der Teststrategie",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie können Werkzeuge das Testmanagement unterstützen?",
+            "explanation": "Werkzeuge erleichtern den Zugang zu Informationen, z. B. durch Statistiken und Diagramme. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Leichter Zugang zu Testinformationen",
+                    "correct": true
+                },
+                {
+                    "text": "Automatische Erstellung von Releases",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung neuer Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Planung von Gehaltsstrukturen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Auswirkung hat die Automatisierung auf Produkteinführungszeiten?",
+            "explanation": "Durch schnellere Tests können Produkte früher eingeführt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.2)",
+            "options": [
+                {
+                    "text": "Kürzere Produkteinführungszeiten",
+                    "correct": true
+                },
+                {
+                    "text": "Verzögerte Produkteinführungen",
+                    "correct": false
+                },
+                {
+                    "text": "Keine Auswirkung",
+                    "correct": false
+                },
+                {
+                    "text": "Längere Produkteinführungszeiten",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

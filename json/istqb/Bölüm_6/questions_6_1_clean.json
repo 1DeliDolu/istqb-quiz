@@ -1,6 +1,425 @@
 {
     "chapter": "6",
     "subChapter": "6-1",
-    "subChapterTitle": "6.1 Werkzeugunterstützung für das Testen",
-    "questions": []
+    "subChapterTitle": "6.1. Werkzeugunterstützung für das Testen",
+    "questions": [
+        {
+            "question": "Welchen Zweck erfüllen Testmanagementwerkzeuge?",
+            "explanation": "Sie erhöhen die Effizienz des Testprozesses durch Unterstützung bei Anforderungen, Tests, Fehlerzuständen und Konfiguration. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Effizienzsteigerung durch Unterstützung von Anforderungen, Tests und Fehlern",
+                    "correct": true
+                },
+                {
+                    "text": "Automatisierung aller nicht-funktionalen Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Visualisierung von Burn-down-Charts",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung von Benutzerhandbüchern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Werkzeuge unterstützen Reviews und statische Analysen?",
+            "explanation": "Werkzeuge für statische Tests helfen bei Reviews und statischen Analysen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Werkzeuge für statische Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Werkzeuge für nicht-funktionale Tests",
+                    "correct": false
+                },
+                {
+                    "text": "DevOps-Werkzeuge",
+                    "correct": false
+                },
+                {
+                    "text": "Werkzeuge für Zusammenarbeit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Werkzeuge helfen bei der Erstellung von Testfällen und Testdaten?",
+            "explanation": "Werkzeuge für Testentwurf und Testrealisierung erleichtern die Erstellung von Testfällen, Testdaten und Testabläufen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Werkzeuge für Testentwurf und Testrealisierung",
+                    "correct": true
+                },
+                {
+                    "text": "Werkzeuge für Testmanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Werkzeuge für Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "DevOps-Werkzeuge",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Funktion haben Werkzeuge zur Testdurchführung und Testüberdeckung?",
+            "explanation": "Sie unterstützen die automatisierte Testdurchführung und die Messung der Überdeckung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Automatisierte Testdurchführung und Messung der Überdeckung",
+                    "correct": true
+                },
+                {
+                    "text": "Definition von Benutzeranforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Bereitstellung von DevOps-Pipelines",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung von Testberichten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Tests werden durch spezielle Werkzeuge erleichtert, da sie manuell schwer durchführbar sind?",
+            "explanation": "Werkzeuge für nicht-funktionale Tests ermöglichen Tests, die manuell kaum möglich wären. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Nicht-funktionale Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Komponententests",
+                    "correct": false
+                },
+                {
+                    "text": "Unit-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Werkzeuge unterstützen die DevOps-Auslieferungskette?",
+            "explanation": "DevOps-Werkzeuge helfen bei Workflows, CI/CD und Build-Prozessen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "DevOps-Werkzeuge",
+                    "correct": true
+                },
+                {
+                    "text": "Werkzeuge für Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "Werkzeuge für statische Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Kollaborationstools",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Werkzeuge verbessern die Kommunikation im Testteam?",
+            "explanation": "Werkzeuge für Zusammenarbeit erleichtern die Kommunikation zwischen Teammitgliedern. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Werkzeuge für Zusammenarbeit",
+                    "correct": true
+                },
+                {
+                    "text": "Testmanagementwerkzeuge",
+                    "correct": false
+                },
+                {
+                    "text": "Nicht-funktionale Testwerkzeuge",
+                    "correct": false
+                },
+                {
+                    "text": "Testausführungswerkzeuge",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Werkzeuge unterstützen Skalierbarkeit und Standardisierung der Bereitstellung?",
+            "explanation": "Beispiele sind virtuelle Maschinen oder Container-Tools. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Virtuelle Maschinen und Container-Tools",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlermanagementtools",
+                    "correct": false
+                },
+                {
+                    "text": "Dashboards",
+                    "correct": false
+                },
+                {
+                    "text": "Checklisten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Tools zählen im Kontext des Testens ebenfalls als Testwerkzeuge?",
+            "explanation": "Auch einfache Tools wie Tabellenkalkulationen können Testwerkzeuge sein. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Tabellenkalkulationsprogramme",
+                    "correct": true
+                },
+                {
+                    "text": "Projektbudgets",
+                    "correct": false
+                },
+                {
+                    "text": "Organigramme",
+                    "correct": false
+                },
+                {
+                    "text": "Reisekostenabrechnungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe haben Testmanagementwerkzeuge in Bezug auf Fehlerzustände?",
+            "explanation": "Sie erleichtern das Management von Fehlerzuständen und deren Nachverfolgung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Verwaltung und Nachverfolgung von Fehlerzuständen",
+                    "correct": true
+                },
+                {
+                    "text": "Automatisierte Generierung von Projektbudgets",
+                    "correct": false
+                },
+                {
+                    "text": "Schulung von Teammitgliedern",
+                    "correct": false
+                },
+                {
+                    "text": "Anfertigung von Verträgen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe übernehmen Werkzeuge für statische Tests zusätzlich zu Analysen?",
+            "explanation": "Sie unterstützen den Tester auch bei Reviews. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Unterstützung bei Reviews",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung von Testmetriken",
+                    "correct": false
+                },
+                {
+                    "text": "Generierung von Testberichten",
+                    "correct": false
+                },
+                {
+                    "text": "CI/CD-Prozesse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Vorteile bieten Werkzeuge für Testentwurf?",
+            "explanation": "Sie vereinfachen die Erstellung von Testfällen, Daten und Abläufen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Erleichterung der Erstellung von Testfällen und -daten",
+                    "correct": true
+                },
+                {
+                    "text": "Verkürzung der Projektplanung",
+                    "correct": false
+                },
+                {
+                    "text": "Automatisierung von Deployments",
+                    "correct": false
+                },
+                {
+                    "text": "Überwachung der Ressourcen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Funktion erfüllen Werkzeuge für Testdurchführung?",
+            "explanation": "Sie erleichtern die automatisierte Testausführung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Automatisierte Testausführung",
+                    "correct": true
+                },
+                {
+                    "text": "Anforderungsmanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholderkommunikation",
+                    "correct": false
+                },
+                {
+                    "text": "Testplanung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Werkzeuge ermöglichen die Messung der Überdeckung?",
+            "explanation": "Werkzeuge für Testdurchführung und Überdeckung messen den Abdeckungsgrad. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Werkzeuge für Testdurchführung und Überdeckung",
+                    "correct": true
+                },
+                {
+                    "text": "Werkzeuge für Zusammenarbeit",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Analysetools",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlermanagementtools",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle haben Werkzeuge für nicht-funktionale Tests?",
+            "explanation": "Sie ermöglichen Tests wie Performance- oder Sicherheitstests, die manuell schwer möglich sind. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Unterstützung nicht-funktionaler Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Organisation von Meetings",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung von Benutzerhandbüchern",
+                    "correct": false
+                },
+                {
+                    "text": "Risikomanagement",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe übernehmen DevOps-Werkzeuge in CI/CD?",
+            "explanation": "Sie unterstützen den automatisierten Build-Prozess und die Auslieferungskette. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Automatisierung von Builds und Auslieferung",
+                    "correct": true
+                },
+                {
+                    "text": "Berechnung der Testkosten",
+                    "correct": false
+                },
+                {
+                    "text": "Fehleranalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder-Workshops",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Tools gehören zu den Kollaborationswerkzeugen?",
+            "explanation": "Beispiele: Chat, Videokonferenzen, gemeinsame Arbeitsplattformen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Chat- und Kollaborationsplattformen",
+                    "correct": true
+                },
+                {
+                    "text": "Lasttest-Tools",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlermanagement-Tools",
+                    "correct": false
+                },
+                {
+                    "text": "Code-Coverage-Tools",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches einfache Tool kann im Kontext des Testens als Testwerkzeug gelten?",
+            "explanation": "Ein Tabellenkalkulationsprogramm kann im Testen als Werkzeug dienen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Ein Tabellenkalkulationsprogramm",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Telefonbuch",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Organigramm",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Reisekostenliste",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe erfüllt automatisiertes KM im DevOps-Kontext?",
+            "explanation": "Es unterstützt CI/CD, indem es Versionen und Bereitstellungen kontrolliert. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 6.1)",
+            "options": [
+                {
+                    "text": "Kontrolle von Versionen und Bereitstellungen",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung neuer Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Reduzierung der Testmetriken",
+                    "correct": false
+                },
+                {
+                    "text": "Kürzung der Dokumentation",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

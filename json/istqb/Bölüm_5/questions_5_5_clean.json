@@ -1,6 +1,381 @@
 {
     "chapter": "5",
     "subChapter": "5-5",
-    "subChapterTitle": "5.5 Fehlermanagement",
-    "questions": []
+    "subChapterTitle": "5.5. Fehlermanagement",
+    "questions": [
+        {
+            "question": "Warum ist ein Fehlermanagementprozess im Testen unerlässlich?",
+            "explanation": "Ein Ziel des Testens ist es, Fehlerzustände zu finden. Dazu braucht es einen etablierten Fehlermanagementprozess. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Weil Fehlerzustände systematisch gefunden und bearbeitet werden müssen",
+                    "correct": true
+                },
+                {
+                    "text": "Weil alle Tests dadurch kürzer werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Projektbudgets so einfacher freigegeben werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil dadurch alle Anforderungen automatisch erfüllt sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was können gemeldete Anomalien im Fehlermanagementprozess sein?",
+            "explanation": "Anomalien können tatsächliche Fehlerzustände, falsch positive Ergebnisse oder Änderungsanforderungen sein. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Fehlerzustände, falsch positive Ergebnisse oder Änderungsanforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur fehlende Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur falsch dokumentierte Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Nur neue Features",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In welcher Phase des SDLC können Anomalien gemeldet werden?",
+            "explanation": "Anomalien können in jeder Phase des SDLC gemeldet werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "In jeder Phase des SDLC",
+                    "correct": true
+                },
+                {
+                    "text": "Nur während der Abnahmetests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur während der Entwicklung",
+                    "correct": false
+                },
+                {
+                    "text": "Nur in der Wartungsphase",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivitäten umfasst der Workflow des Fehlermanagements?",
+            "explanation": "Protokollierung, Analyse, Klassifizierung, Entscheidung über Reaktion und Schließung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Protokollierung, Analyse, Klassifizierung, Reaktion, Schließung",
+                    "correct": true
+                },
+                {
+                    "text": "Budgetplanung, Ressourcenverteilung, Schulung",
+                    "correct": false
+                },
+                {
+                    "text": "Coding, Debugging, Deployment",
+                    "correct": false
+                },
+                {
+                    "text": "Planung, Design, Release",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Ziele haben typische Fehlerberichte?",
+            "explanation": "Ziele: Unterstützung bei der Behebung, Verfolgung der Qualität, Prozessverbesserung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Information für Behebung, Qualitätsverfolgung, Prozessverbesserung",
+                    "correct": true
+                },
+                {
+                    "text": "Projektbudget erhöhen",
+                    "correct": false
+                },
+                {
+                    "text": "Neue Anforderungen generieren",
+                    "correct": false
+                },
+                {
+                    "text": "Teamgröße dokumentieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Angabe ist in einem Fehlerbericht üblich?",
+            "explanation": "Ein Fehlerbericht enthält eine eindeutige Kennung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Eindeutige Kennung",
+                    "correct": true
+                },
+                {
+                    "text": "Jahresbudget",
+                    "correct": false
+                },
+                {
+                    "text": "Reisekosten",
+                    "correct": false
+                },
+                {
+                    "text": "Gehälter des Teams",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Information beschreibt den Kontext des Fehlerzustands?",
+            "explanation": "Beispiele: laufender Testfall, SDLC-Phase, Testdaten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Laufender Testfall, SDLC-Phase, Testdaten",
+                    "correct": true
+                },
+                {
+                    "text": "Projektbudget und Lieferanten",
+                    "correct": false
+                },
+                {
+                    "text": "Gehaltslisten und Urlaubstage",
+                    "correct": false
+                },
+                {
+                    "text": "Architekturpläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Angaben erleichtern die Reproduktion eines Fehlers?",
+            "explanation": "Beschreibung der Fehlerwirkung, Testschritte, Protokolle, Screenshots. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Testschritte, Protokolle, Screenshots",
+                    "correct": true
+                },
+                {
+                    "text": "Teamrollen und Gehälter",
+                    "correct": false
+                },
+                {
+                    "text": "Projektziele und Lieferanten",
+                    "correct": false
+                },
+                {
+                    "text": "Testbudgets",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche zwei Ergebnisarten werden in Fehlerberichten gegenübergestellt?",
+            "explanation": "Erwartetes Ergebnis und tatsächliches Ergebnis werden dokumentiert. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Erwartetes Ergebnis und tatsächliches Ergebnis",
+                    "correct": true
+                },
+                {
+                    "text": "Projektstart und Projektende",
+                    "correct": false
+                },
+                {
+                    "text": "Testplan und Teststrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder und Projektziele",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was beschreibt der Fehlerschweregrad?",
+            "explanation": "Der Schweregrad beschreibt die Auswirkungen auf Stakeholder oder Anforderungen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Auswirkungen auf Stakeholder oder Anforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Zeitpunkt der Fehlerbehebung",
+                    "correct": false
+                },
+                {
+                    "text": "Verantwortlicher Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Budgetabweichung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bedeutet die Priorität eines Fehlers?",
+            "explanation": "Die Priorität beschreibt, wie dringend ein Fehler behoben werden soll. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Dringlichkeit der Fehlerbehebung",
+                    "correct": true
+                },
+                {
+                    "text": "Kosten der Fehlerbehebung",
+                    "correct": false
+                },
+                {
+                    "text": "Verantwortlichkeit für den Fehler",
+                    "correct": false
+                },
+                {
+                    "text": "Ursache des Fehlers",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Statuswerte können Fehlerberichte haben?",
+            "explanation": "Beispiele: offen, zurückgestellt, doppelt, auf Behebung wartend, geschlossen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Offen, geschlossen, zurückgestellt, doppelt",
+                    "correct": true
+                },
+                {
+                    "text": "Neu, budgetiert, genehmigt",
+                    "correct": false
+                },
+                {
+                    "text": "Geplant, ausgeführt, getestet",
+                    "correct": false
+                },
+                {
+                    "text": "Entwickelt, dokumentiert, veröffentlicht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Information kann ein Fehlermanagementtool automatisch einfügen?",
+            "explanation": "Beispiele: Kennung, Datum, Autor, Anfangsstatus. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Kennung, Datum, Autor, Anfangsstatus",
+                    "correct": true
+                },
+                {
+                    "text": "Projektbudget",
+                    "correct": false
+                },
+                {
+                    "text": "Teststrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Gehaltsdaten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie sollten Fehlerzustände aus statischen Tests behandelt werden?",
+            "explanation": "Fehlerzustände aus statischen Tests sollten ähnlich wie dynamische behandelt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Auf ähnliche Weise wie dynamische Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Sie werden ignoriert",
+                    "correct": false
+                },
+                {
+                    "text": "Nur dokumentiert, aber nicht bearbeitet",
+                    "correct": false
+                },
+                {
+                    "text": "Nur für Reviews relevant",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel hat die Verfolgung von Fehlern?",
+            "explanation": "Sie dient der Qualitätsüberwachung und liefert Ideen zur Prozessverbesserung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Qualitätsüberwachung und Prozessverbesserung",
+                    "correct": true
+                },
+                {
+                    "text": "Budgeterhöhung",
+                    "correct": false
+                },
+                {
+                    "text": "Teamvergrößerung",
+                    "correct": false
+                },
+                {
+                    "text": "Releasefreigabe",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche internationale Norm enthält Vorlagen für Fehlerberichte?",
+            "explanation": "ISO/IEC/IEEE 29119-3 enthält Vorlagen und Beispiele für Fehlerberichte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "ISO/IEC/IEEE 29119-3",
+                    "correct": true
+                },
+                {
+                    "text": "ISO 25010",
+                    "correct": false
+                },
+                {
+                    "text": "ISO 31000",
+                    "correct": false
+                },
+                {
+                    "text": "ISO 9001",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie werden Fehlerberichte in der Norm ISO/IEC/IEEE 29119-3 bezeichnet?",
+            "explanation": "In der Norm heißen sie Abweichungsberichte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "options": [
+                {
+                    "text": "Abweichungsberichte",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerprotokolle",
+                    "correct": false
+                },
+                {
+                    "text": "Defektnachweise",
+                    "correct": false
+                },
+                {
+                    "text": "Qualitätsberichte",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

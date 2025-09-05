@@ -1,6 +1,337 @@
 {
     "chapter": "5",
     "subChapter": "5-4",
-    "subChapterTitle": "5.4 Konfigurationsmanagement",
-    "questions": []
+    "subChapterTitle": "5.4. Konfigurationsmanagement",
+    "questions": [
+        {
+            "question": "Was ist das Ziel des Konfigurationsmanagements im Testen?",
+            "explanation": "Das KM identifiziert, steuert und verfolgt Arbeitsergebnisse wie Testfälle, Testergebnisse und Berichte als Konfigurationselemente. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Identifizierung, Steuerung und Verfolgung von Arbeitsergebnissen",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung neuer Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Verkürzung der Testzyklen",
+                    "correct": false
+                },
+                {
+                    "text": "Planung der Projektfinanzierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was gilt als Konfigurationselement im Testen?",
+            "explanation": "Beispiele: Testkonzepte, Teststrategien, Testfälle, Skripte, Ergebnisse, Berichte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Testfälle und Testergebnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Reisekostenabrechnungen",
+                    "correct": false
+                },
+                {
+                    "text": "Gehaltstabellen",
+                    "correct": false
+                },
+                {
+                    "text": "Teamverträge",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe hat das KM bei komplexen Konfigurationselementen?",
+            "explanation": "Es zeichnet die Elemente, ihre Beziehungen und Versionen auf. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Aufzeichnung der Elemente, Beziehungen und Versionen",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung neuer Projektziele",
+                    "correct": false
+                },
+                {
+                    "text": "Verkürzung von Testzyklen",
+                    "correct": false
+                },
+                {
+                    "text": "Budgetfreigabe",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann wird ein Konfigurationselement zur Baseline?",
+            "explanation": "Wenn es zum Testen freigegeben wird, wird es zur Baseline. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Wenn es zum Testen freigegeben wird",
+                    "correct": true
+                },
+                {
+                    "text": "Wenn es von Stakeholdern genehmigt wird",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn es im Budgetplan steht",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn es im Release freigegeben wird",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie kann eine Baseline verändert werden?",
+            "explanation": "Nur durch einen formalen Änderungskontrollprozess kann eine Baseline geändert werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Durch einen formalen Änderungskontrollprozess",
+                    "correct": true
+                },
+                {
+                    "text": "Durch spontane Entwicklerentscheidungen",
+                    "correct": false
+                },
+                {
+                    "text": "Durch informelle Teamgespräche",
+                    "correct": false
+                },
+                {
+                    "text": "Durch automatische Budgetanpassungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Möglichkeit bietet KM bei Baselines?",
+            "explanation": "Es ist möglich, zu einer früheren Baseline zurückzukehren, um Ergebnisse zu reproduzieren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Zurückkehren zu früheren Baselines zur Reproduktion",
+                    "correct": true
+                },
+                {
+                    "text": "Löschen aller alten Versionen",
+                    "correct": false
+                },
+                {
+                    "text": "Ignorieren alter Testergebnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Ersatz durch Budgetdokumente",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Bedingung stellt das KM für Testelemente sicher?",
+            "explanation": "Alle Testelemente werden eindeutig identifiziert, versionskontrolliert und verfolgt. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Eindeutige Identifizierung und Versionskontrolle",
+                    "correct": true
+                },
+                {
+                    "text": "Freie Bearbeitung durch alle Stakeholder",
+                    "correct": false
+                },
+                {
+                    "text": "Automatische Löschung nach Projektende",
+                    "correct": false
+                },
+                {
+                    "text": "Manuelle Speicherung ohne Kontrolle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Verfolgbarkeit ein wichtiges Ziel des KM?",
+            "explanation": "Die Verfolgbarkeit wird über alle Testprozesse hinweg aufrechterhalten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Weil sie die Nachvollziehbarkeit während des gesamten Testprozesses sicherstellt",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie neue Anforderungen definiert",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie Projektpläne erstellt",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie Ressourcen automatisch verteilt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Dokumente werden als Testmittel eindeutig referenziert?",
+            "explanation": "Alle identifizierten Dokumentations- und Softwareelemente werden eindeutig referenziert. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Dokumentation und Softwareelemente",
+                    "correct": true
+                },
+                {
+                    "text": "Gehaltslisten",
+                    "correct": false
+                },
+                {
+                    "text": "Reisekostenabrechnungen",
+                    "correct": false
+                },
+                {
+                    "text": "Projektpläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterstützt KM die Reproduzierbarkeit von Tests?",
+            "explanation": "Durch Versionierung und Rückkehr zu früheren Baselines lassen sich frühere Testergebnisse reproduzieren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Durch Rückkehr zu früheren Baselines",
+                    "correct": true
+                },
+                {
+                    "text": "Durch Weglassen von Testprotokollen",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Abbruch der Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Kürzung der Testpläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird KM typischerweise in modernen DevOps-Prozessen umgesetzt?",
+            "explanation": "In DevOps ist KM oft automatisiert und Teil der Auslieferungskette. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Als automatisierter Teil der DevOps-Auslieferungskette",
+                    "correct": true
+                },
+                {
+                    "text": "Nur manuell durch Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Nur durch Projektmanager",
+                    "correct": false
+                },
+                {
+                    "text": "Gar nicht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arbeitsergebnisse gehören zu den KM-relevanten Konfigurationselementen?",
+            "explanation": "Beispiele: Testkonzepte, Strategien, Testfälle, Skripte, Protokolle. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Testkonzepte, Strategien, Testfälle, Testergebnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Marketingpläne",
+                    "correct": false
+                },
+                {
+                    "text": "Gehaltslisten",
+                    "correct": false
+                },
+                {
+                    "text": "Reisekostenberichte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was passiert, wenn ein Konfigurationselement freigegeben wurde?",
+            "explanation": "Es wird zur Baseline und darf nur über Änderungskontrolle verändert werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Es wird zur Baseline",
+                    "correct": true
+                },
+                {
+                    "text": "Es wird gelöscht",
+                    "correct": false
+                },
+                {
+                    "text": "Es wird automatisch versioniert",
+                    "correct": false
+                },
+                {
+                    "text": "Es wird von Stakeholdern ignoriert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt die Versionskontrolle im KM?",
+            "explanation": "Alle Konfigurationselemente werden versionskontrolliert, um Änderungen nachzuvollziehen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Nachvollziehbarkeit durch Versionskontrolle",
+                    "correct": true
+                },
+                {
+                    "text": "Kostenkontrolle durch Budgets",
+                    "correct": false
+                },
+                {
+                    "text": "Organisation von Meetings",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung neuer Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe erfüllt KM bei Testelementen?",
+            "explanation": "Es stellt sicher, dass Testelemente eindeutig identifiziert und verfolgt werden können. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "options": [
+                {
+                    "text": "Eindeutige Identifizierung und Nachverfolgbarkeit",
+                    "correct": true
+                },
+                {
+                    "text": "Zufällige Speicherung",
+                    "correct": false
+                },
+                {
+                    "text": "Einmalige Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Löschung nach Nutzung",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

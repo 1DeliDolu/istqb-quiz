@@ -1,6 +1,315 @@
 {
     "chapter": "5",
     "subChapter": "5-3",
-    "subChapterTitle": "5.3 Testüberwachung, Teststeuerung und Testabschluss",
-    "questions": []
+    "subChapterTitle": "5.3. Testüberwachung, Teststeuerung und Testabschluss",
+    "questions": [
+        {
+            "question": "Was ist das Hauptziel der Testüberwachung?",
+            "explanation": "Die Testüberwachung sammelt Informationen über das Testen, um den Testfortschritt zu bewerten und zu messen, ob Endekriterien erfüllt sind. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Bewertung des Testfortschritts und Erfüllung der Endekriterien",
+                    "correct": true
+                },
+                {
+                    "text": "Abnahme des Testbudgets",
+                    "correct": false
+                },
+                {
+                    "text": "Organisation von Team-Events",
+                    "correct": false
+                },
+                {
+                    "text": "Planung der Releasezyklen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kriterien können bei der Testüberwachung geprüft werden?",
+            "explanation": "Beispiele: Überdeckung von Produktrisiken, Anforderungen oder Akzeptanzkriterien. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Überdeckung von Produktrisiken und Anforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Gehaltsstruktur der Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Architekturentscheidungen",
+                    "correct": false
+                },
+                {
+                    "text": "Projektmarketingaktivitäten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wofür werden die Informationen aus der Testüberwachung genutzt?",
+            "explanation": "Sie werden zur Teststeuerung verwendet, um Korrekturmaßnahmen einzuleiten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Zur Teststeuerung und Einleitung von Maßnahmen",
+                    "correct": true
+                },
+                {
+                    "text": "Zur Erstellung von Benutzerhandbüchern",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Anpassung der Projektarchitektur",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Stakeholder-Entscheidung über Gehälter",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Maßnahme ist ein Beispiel für Teststeuerung?",
+            "explanation": "Beispiel: Neupriorisierung von Tests, wenn ein Risiko zu einem Problem wird. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Neupriorisierung von Tests bei geänderten Risiken",
+                    "correct": true
+                },
+                {
+                    "text": "Durchführung von Schulungen",
+                    "correct": false
+                },
+                {
+                    "text": "Anpassung von Marketingkampagnen",
+                    "correct": false
+                },
+                {
+                    "text": "Installation neuer Hardware",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche weitere Maßnahme gehört zur Teststeuerung?",
+            "explanation": "Beispiel: Neubewertung, ob ein Testelement die Kriterien nach einer Überarbeitung erfüllt. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Neubewertung von Eingangskriterien oder Endekriterien",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung neuer Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Kündigung von Projektverträgen",
+                    "correct": false
+                },
+                {
+                    "text": "Durchführung von Usability-Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie kann die Teststeuerung auf Verzögerungen reagieren?",
+            "explanation": "Beispiel: Anpassung des Testzeitplans, um Verzögerungen auszugleichen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Anpassung des Testzeitplans",
+                    "correct": true
+                },
+                {
+                    "text": "Einstellung aller Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Kürzung der Projektlaufzeit",
+                    "correct": false
+                },
+                {
+                    "text": "Verzicht auf Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Ressource kann laut Teststeuerung bei Bedarf hinzugefügt werden?",
+            "explanation": "Beispiel: Hinzufügen neuer Ressourcen, wenn erforderlich. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Neue Ressourcen (z. B. Tester oder Tools)",
+                    "correct": true
+                },
+                {
+                    "text": "Neue Produktanforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Neue Architekturrichtlinien",
+                    "correct": false
+                },
+                {
+                    "text": "Neue Stakeholder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann finden Testabschlussaktivitäten typischerweise statt?",
+            "explanation": "An Projektmeilensteinen, z. B. nach einer Teststufe, Iteration oder Systemfreigabe. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "An Projektmeilensteinen wie Teststufen oder Releases",
+                    "correct": true
+                },
+                {
+                    "text": "Nur nach jedem Daily Scrum",
+                    "correct": false
+                },
+                {
+                    "text": "Nur nach dem Go-Live",
+                    "correct": false
+                },
+                {
+                    "text": "Nur nach der Budgetfreigabe",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel hat der Testabschluss?",
+            "explanation": "Beim Testabschluss werden Erfahrungen, Testmittel und relevante Informationen konsolidiert. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Konsolidierung von Erfahrungen und Testmitteln",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung neuer Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Bereitstellung neuer Testumgebungen",
+                    "correct": false
+                },
+                {
+                    "text": "Planung neuer Marketingaktionen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aktivitäten gehört zum Testabschluss?",
+            "explanation": "Dazu gehören z. B. Sammlung von Daten und Dokumentation von Ergebnissen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Sammlung von Daten aus abgeschlossenen Testaktivitäten",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung des Projektbudgets",
+                    "correct": false
+                },
+                {
+                    "text": "Einstellung aller Testressourcen",
+                    "correct": false
+                },
+                {
+                    "text": "Anpassung der Architekturpläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Tests können durch die Testüberwachung auf Zielerfüllung geprüft werden?",
+            "explanation": "Es wird geprüft, ob Ziele für Überdeckung von Produktrisiken, Anforderungen oder Akzeptanzkriterien erfüllt sind. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Ziele für Produktrisiken und Anforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Ziele für Marketing und Werbung",
+                    "correct": false
+                },
+                {
+                    "text": "Ziele für Personalentwicklung",
+                    "correct": false
+                },
+                {
+                    "text": "Ziele für IT-Infrastruktur",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Steuerungsmaßnahme bezieht sich auf Änderungen an Testelementen?",
+            "explanation": "Die Neubewertung, ob Testelemente nach einer Überarbeitung Kriterien erfüllen, ist eine Steuerungsmaßnahme. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Neubewertung von Testelementen nach Überarbeitung",
+                    "correct": true
+                },
+                {
+                    "text": "Einführung neuer Testwerkzeuge",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung von Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Erhöhung der Testabdeckung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche typische Situation löst eine Anpassung des Testzeitplans aus?",
+            "explanation": "Zum Beispiel eine Verzögerung bei der Bereitstellung der Testumgebung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Verzögerung bei der Bereitstellung der Testumgebung",
+                    "correct": true
+                },
+                {
+                    "text": "Änderung der Marketingstrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Erhöhung der Gehälter",
+                    "correct": false
+                },
+                {
+                    "text": "Reduzierung der Architekturkomplexität",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielen die gesammelten Daten im Testabschluss?",
+            "explanation": "Sie dienen dazu, relevante Informationen zu konsolidieren und für zukünftige Projekte zu nutzen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "options": [
+                {
+                    "text": "Sie konsolidieren Informationen für zukünftige Projekte",
+                    "correct": true
+                },
+                {
+                    "text": "Sie werden nach Projektende gelöscht",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzen die Teststrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Sie werden ausschließlich für Budgetplanung genutzt",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

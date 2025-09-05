@@ -1,6 +1,425 @@
 {
     "chapter": "5",
     "subChapter": "5-3-2",
-    "subChapterTitle": "5.3.2 Zweck, Inhalt und Zielgruppen für Testberichte",
-    "questions": []
+    "subChapterTitle": "5.3.2. Zweck, Inhalt und Zielgruppen für Testberichte",
+    "questions": [
+        {
+            "question": "Was ist der Hauptzweck eines Testberichts?",
+            "explanation": "Ein Testbericht fasst Informationen über Testaktivitäten zusammen und kommuniziert diese. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Zusammenfassung und Kommunikation von Testaktivitäten",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung neuer Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Verkürzung des Testzeitraums",
+                    "correct": false
+                },
+                {
+                    "text": "Reduzierung der Projektkosten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wozu dienen Testfortschrittsberichte?",
+            "explanation": "Sie unterstützen die laufende Teststeuerung und helfen, Anpassungen vorzunehmen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Unterstützung der laufenden Teststeuerung",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung von Benutzerhandbüchern",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahme von Systemanforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Reduzierung der Testumgebungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann werden Testfortschrittsberichte typischerweise erstellt?",
+            "explanation": "Sie werden regelmäßig, z. B. täglich oder wöchentlich, erstellt. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Täglich oder wöchentlich",
+                    "correct": true
+                },
+                {
+                    "text": "Nur einmal am Projektende",
+                    "correct": false
+                },
+                {
+                    "text": "Nur bei Fehlern",
+                    "correct": false
+                },
+                {
+                    "text": "Einmal pro Release",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann wird ein Testabschlussbericht erstellt?",
+            "explanation": "Ein Testabschlussbericht wird erstellt, wenn eine Testaktivität, eine Teststufe oder ein Projekt abgeschlossen ist. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Wenn eine Teststufe oder ein Projekt abgeschlossen ist",
+                    "correct": true
+                },
+                {
+                    "text": "Nach jedem Daily Scrum",
+                    "correct": false
+                },
+                {
+                    "text": "Bei jeder Risikoanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Nur nach Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Information enthält ein Testfortschrittsbericht typischerweise?",
+            "explanation": "Er enthält z. B. Testzeitraum, Fortschritt, Hindernisse, Metriken, Risiken, geplante Tests. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Testzeitraum und Hindernisse",
+                    "correct": true
+                },
+                {
+                    "text": "Gehaltsübersichten der Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Architekturentscheidungen",
+                    "correct": false
+                },
+                {
+                    "text": "Hardwarekosten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Information enthält ein Testabschlussbericht typischerweise?",
+            "explanation": "Er enthält u. a. Zusammenfassung der Tests, Bewertung der Qualität, Abweichungen, Restrisiken. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Bewertung der Qualität und Restrisiken",
+                    "correct": true
+                },
+                {
+                    "text": "Liste aller Projektbeteiligten",
+                    "correct": false
+                },
+                {
+                    "text": "Neue Projektbudgets",
+                    "correct": false
+                },
+                {
+                    "text": "Liste aller Supporttickets",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Zielgruppen beeinflussen den Grad der Formalität von Testberichten?",
+            "explanation": "Unterschiedliche Zielgruppen erfordern unterschiedliche Informationen und Formalität. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Die Stakeholder und das Projektteam",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Endbenutzer",
+                    "correct": false
+                },
+                {
+                    "text": "Nur das Management",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterscheidet sich die Berichterstattung über den Testfortschritt im Team?",
+            "explanation": "Innerhalb des Teams geschieht sie häufig und informell. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Sie ist häufig und informell",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ist selten und formell",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ist nur am Projektende nötig",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erfolgt ausschließlich schriftlich",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterscheidet sich die Berichterstattung über den Testabschluss?",
+            "explanation": "Die Testabschlussberichte folgen festgelegten Vorlagen und werden nur einmal erstellt. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Sie folgt einer Vorlage und wird nur einmal erstellt",
+                    "correct": true
+                },
+                {
+                    "text": "Sie erfolgt täglich",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erfolgt nur informell",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erfolgt ohne Bezug auf Testkonzept",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Norm enthält Vorlagen für Testberichte?",
+            "explanation": "ISO/IEC/IEEE 29119-3 enthält Vorlagen und Beispiele. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "ISO/IEC/IEEE 29119-3",
+                    "correct": true
+                },
+                {
+                    "text": "ISO 31000",
+                    "correct": false
+                },
+                {
+                    "text": "ISO 25010",
+                    "correct": false
+                },
+                {
+                    "text": "ISO 9001",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Information zu Abweichungen kann im Testabschlussbericht enthalten sein?",
+            "explanation": "Abweichungen vom Testkonzept wie geänderter Zeitplan, Dauer oder Aufwand werden dokumentiert. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Abweichungen vom Testkonzept",
+                    "correct": true
+                },
+                {
+                    "text": "Abweichungen von der Teamgröße",
+                    "correct": false
+                },
+                {
+                    "text": "Abweichungen von der Architektur",
+                    "correct": false
+                },
+                {
+                    "text": "Abweichungen von den Kostenstellen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielen Testmetriken in Testberichten?",
+            "explanation": "Testmetriken aus Fortschrittsberichten dienen als Basis für Testabschlussberichte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Sie dienen als Grundlage für Abschlussberichte",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ersetzen die Risikoanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Sie bestimmen das Projektbudget",
+                    "correct": false
+                },
+                {
+                    "text": "Sie dienen nur zur Testautomatisierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Information zu Risiken enthält ein Testfortschrittsbericht?",
+            "explanation": "Neue und veränderte Risiken innerhalb des Testzeitraumes werden berichtet. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Neue und veränderte Risiken",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Kostenübersichten",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Hardwaredefekte",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Schulungspläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Information können Lessons Learned im Testabschlussbericht enthalten?",
+            "explanation": "Lessons Learned beziehen sich auf relevante Erfahrungen aus den Testaktivitäten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Relevante Erfahrungen aus den Testaktivitäten",
+                    "correct": true
+                },
+                {
+                    "text": "Neue Marketingideen",
+                    "correct": false
+                },
+                {
+                    "text": "Liste der Schulungsteilnehmer",
+                    "correct": false
+                },
+                {
+                    "text": "Technische Wartungspläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Information enthalten Testfortschrittsberichte über Hindernisse?",
+            "explanation": "Sie beschreiben Hindernisse und deren Umgehungsmöglichkeiten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Hindernisse und deren Umgehungsmöglichkeiten",
+                    "correct": true
+                },
+                {
+                    "text": "Geplante Architekturanpassungen",
+                    "correct": false
+                },
+                {
+                    "text": "Kostenstellenzuordnung",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholderentscheidungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Information zum Testfortschritt kann berichtet werden?",
+            "explanation": "Zum Beispiel Fortschritt vor oder hinter dem Zeitplan und Abweichungen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Fortschritt vor oder hinter dem Zeitplan",
+                    "correct": true
+                },
+                {
+                    "text": "Fortschritt bei Budgeterhöhungen",
+                    "correct": false
+                },
+                {
+                    "text": "Fortschritt bei Mitarbeitergesprächen",
+                    "correct": false
+                },
+                {
+                    "text": "Fortschritt bei Lieferantenverträgen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt der Testzeitraum im Testfortschrittsbericht?",
+            "explanation": "Er beschreibt den Zeitraum, den der Bericht abdeckt. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Er beschreibt den abgedeckten Testzeitraum",
+                    "correct": true
+                },
+                {
+                    "text": "Er beschreibt die Unternehmensstrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Er beschreibt die Abnahmekriterien",
+                    "correct": false
+                },
+                {
+                    "text": "Er beschreibt die Gehaltsentwicklung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Stakeholder profitieren von Testfortschrittsberichten?",
+            "explanation": "Sie halten Stakeholder über Testfortschritt und Hindernisse informiert. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Stakeholder, die regelmäßig informiert werden",
+                    "correct": true
+                },
+                {
+                    "text": "Nur das Entwicklungsteam",
+                    "correct": false
+                },
+                {
+                    "text": "Nur externe Kunden",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Testmanager",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Dokumentation bildet die Grundlage für den Testabschlussbericht?",
+            "explanation": "Er basiert auf Testfortschrittsberichten und weiteren Daten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.2)",
+            "options": [
+                {
+                    "text": "Testfortschrittsberichte und weitere Daten",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Projektpläne",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Risikoanalysen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Architekturpläne",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

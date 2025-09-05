@@ -1,6 +1,315 @@
 {
     "chapter": "5",
     "subChapter": "5-2-4",
-    "subChapterTitle": "5.2.4 Produktrisikosteuerung",
-    "questions": []
+    "subChapterTitle": "5.2.4. Produktrisikosteuerung",
+    "questions": [
+        {
+            "question": "Welche beiden Hauptaktivitäten umfasst die Produktrisikosteuerung?",
+            "explanation": "Sie besteht aus Risikominderung und Risikoüberwachung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Risikominderung und Risikoüberwachung",
+                    "correct": true
+                },
+                {
+                    "text": "Risikoidentifizierung und Risikobewertung",
+                    "correct": false
+                },
+                {
+                    "text": "Testplanung und Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlermanagement und Reporting",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Ziel der Risikominderung?",
+            "explanation": "Risikominderung setzt Maßnahmen um, um die Risikostufe zu verringern. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Risiken bewusst ignorieren",
+                    "correct": false
+                },
+                {
+                    "text": "Die Risikostufe verringern",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die Kosten reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Tests abschaffen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Ziel der Risikoüberwachung?",
+            "explanation": "Sie soll die Wirksamkeit der Maßnahmen sicherstellen, Informationen zur Verbesserung liefern und neue Risiken erkennen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Die Effektivität der Maßnahmen überwachen und neue Risiken erkennen",
+                    "correct": true
+                },
+                {
+                    "text": "Risiken nur dokumentieren",
+                    "correct": false
+                },
+                {
+                    "text": "Risiken vollständig eliminieren",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Stakeholder ersetzen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Reaktionsmöglichkeit auf Risiken gehört NICHT zur Risikosteuerung?",
+            "explanation": "Zur Risikosteuerung gehören Risikominderung, Risikoakzeptanz, Risikotransfer und Notfallpläne. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Risikoakzeptanz",
+                    "correct": false
+                },
+                {
+                    "text": "Risikotransfer",
+                    "correct": false
+                },
+                {
+                    "text": "Notfallplan",
+                    "correct": false
+                },
+                {
+                    "text": "Ignorieren aller Risiken",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Maßnahme dient der Risikominderung durch Testen?",
+            "explanation": "Beispiel: Auswahl geeigneter Testverfahren und Überdeckungsgrade. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Anwendung geeigneter Testverfahren und Überdeckungsgrade",
+                    "correct": true
+                },
+                {
+                    "text": "Reduzierung der Anzahl der Testumgebungen",
+                    "correct": false
+                },
+                {
+                    "text": "Verzicht auf Testautomatisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Ausschluss der Stakeholder aus Reviews",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt die Erfahrung der Tester bei der Risikominderung?",
+            "explanation": "Die Auswahl erfahrener Tester trägt zur Verringerung von Produktrisiken bei. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Erfahrene Tester können Risiken effektiver mindern",
+                    "correct": true
+                },
+                {
+                    "text": "Testerfahrung ist irrelevant für die Risikominderung",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Entwicklererfahrung zählt",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Projektmanager übernehmen Risikominderung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist Unabhängigkeit beim Testen eine Maßnahme zur Risikominderung?",
+            "explanation": "Unabhängiges Testen reduziert das Risiko übersehener Fehler. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Weil unabhängige Tester weniger Kosten verursachen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil unabhängige Tester weniger Erfahrung brauchen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil unabhängige Tester Fehler eher finden",
+                    "correct": true
+                },
+                {
+                    "text": "Weil unabhängige Tester keine Tests dokumentieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche statische Maßnahme unterstützt die Risikominderung?",
+            "explanation": "Reviews und statische Analysen sind typische Maßnahmen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Durchführung von Reviews und statischen Analysen",
+                    "correct": true
+                },
+                {
+                    "text": "Durchführung ausschließlich dynamischer Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Verzicht auf Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Fokus nur auf Abnahmetests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testarten können zur Minderung produktspezifischer Risiken eingesetzt werden?",
+            "explanation": "Geeignete Testarten sollten für die betroffenen Qualitätsmerkmale angewandt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Geeignete Testarten für relevante Qualitätsmerkmale",
+                    "correct": true
+                },
+                {
+                    "text": "Nur explorative Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Komponententests",
+                    "correct": false
+                },
+                {
+                    "text": "Nur UI-Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche dynamische Maßnahme gehört zur Risikominderung?",
+            "explanation": "Dynamische Tests, einschließlich Regressionstests, sind Maßnahmen zur Risikominderung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Durchführung dynamischer Tests inkl. Regressionstests",
+                    "correct": true
+                },
+                {
+                    "text": "Reduktion der Testdatenmenge",
+                    "correct": false
+                },
+                {
+                    "text": "Ausschließlich formale Reviews",
+                    "correct": false
+                },
+                {
+                    "text": "Nur manuelle Ad-hoc-Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt Risikoakzeptanz?",
+            "explanation": "Bei der Risikoakzeptanz entscheidet man, ein Risiko bewusst in Kauf zu nehmen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Das Risiko wird bewusst akzeptiert",
+                    "correct": true
+                },
+                {
+                    "text": "Das Risiko wird vollständig eliminiert",
+                    "correct": false
+                },
+                {
+                    "text": "Das Risiko wird ignoriert",
+                    "correct": false
+                },
+                {
+                    "text": "Das Risiko wird automatisch gemindert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bedeutet Risikotransfer?",
+            "explanation": "Risikotransfer beschreibt das Übertragen eines Risikos auf Dritte, z. B. durch Versicherungen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Das Risiko wird an Dritte übertragen",
+                    "correct": true
+                },
+                {
+                    "text": "Das Risiko wird vollständig beseitigt",
+                    "correct": false
+                },
+                {
+                    "text": "Das Risiko wird akzeptiert",
+                    "correct": false
+                },
+                {
+                    "text": "Das Risiko wird ignoriert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Funktion hat ein Notfallplan im Risikomanagement?",
+            "explanation": "Ein Notfallplan dient dazu, im Ernstfall den Schaden zu begrenzen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Er soll im Ernstfall den Schaden begrenzen",
+                    "correct": true
+                },
+                {
+                    "text": "Er ersetzt die Risikoanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Er dient nur der Kostensenkung",
+                    "correct": false
+                },
+                {
+                    "text": "Er ersetzt die Risikobewertung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt am BESTEN das Zusammenspiel von Risikominderung und Risikoüberwachung?",
+            "explanation": "Risikominderung setzt Maßnahmen um, Risikoüberwachung kontrolliert deren Effektivität und erkennt neue Risiken. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Maßnahmen umsetzen und deren Effektivität überwachen",
+                    "correct": true
+                },
+                {
+                    "text": "Risiken identifizieren und ignorieren",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder ersetzen und Ressourcen sparen",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerberichte reduzieren",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }
