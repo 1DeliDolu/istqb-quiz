@@ -104,3 +104,5 @@ src/
 
 
 cd /d/istqb-quiz/server && node simple_import.cjs
+
+### node check_udemy_db.cjs
