@@ -1,0 +1,293 @@
+{
+    "chapter": "4",
+    "subChapter": "4-2-1",
+    "subChapterTitle": "4.2.1 Äquivalenzklassenbildung",
+    "questions": [
+        {
+            "question": "Was ist die Grundidee der Äquivalenzklassenbildung?",
+            "explanation": "Alle Werte einer Äquivalenzklasse werden vom Testobjekt gleich behandelt, daher genügt ein Testfall pro Klasse. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Ein Testfall pro Klasse ist ausreichend",
+                    "correct": true
+                },
+                {
+                    "text": "Jeder mögliche Wert muss getestet werden",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Ausgabewerte werden berücksichtigt",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle müssen zufällig aus allen Daten generiert werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arten von Datenelementen können Äquivalenzklassen bilden?",
+            "explanation": "Eingaben, Ausgaben, Konfigurationselemente, interne Werte, zeitbezogene Werte und Schnittstellenparameter können Klassen bilden. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Nur Eingaben und Ausgaben",
+                    "correct": false
+                },
+                {
+                    "text": "Eingaben, Ausgaben, Konfiguration, interne Werte, zeitbezogene Werte, Schnittstellenparameter",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Konfigurations- und Zeitwerte",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Schnittstellenparameter",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Eigenschaft müssen Äquivalenzklassen haben?",
+            "explanation": "Äquivalenzklassen dürfen sich nicht überschneiden und müssen nicht-leer sein. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Nicht-leer und dürfen sich nicht überschneiden",
+                    "correct": false
+                },
+                {
+                    "text": "Sie müssen unendlich groß sein",
+                    "correct": false
+                },
+                {
+                    "text": "Sie müssen immer geordnet sein",
+                    "correct": true
+                },
+                {
+                    "text": "Sie dürfen keine internen Werte enthalten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie können Äquivalenzklassen vorliegen?",
+            "explanation": "Sie können zusammenhängend oder einzeln, geordnet oder ungeordnet, endlich oder unendlich sein. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Zusammenhängend/Einzeln, geordnet/ungeordnet, endlich/unendlich",
+                    "correct": false
+                },
+                {
+                    "text": "Nur zusammenhängend und geordnet",
+                    "correct": false
+                },
+                {
+                    "text": "Immer unendlich und ungeordnet",
+                    "correct": false
+                },
+                {
+                    "text": "Nur endlich und geordnet",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Warum sollte die Äquivalenzklassenbildung mit Sorgfalt vorgenommen werden?",
+            "explanation": "In der Praxis ist es oft komplex zu verstehen, wie das Testobjekt verschiedene Werte verarbeitet. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Weil die Verarbeitung von Werten durch das Testobjekt komplex sein kann",
+                    "correct": true
+                },
+                {
+                    "text": "Weil nur einfache Testelemente getestet werden dürfen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil alle Werte manuell gezählt werden müssen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Klassenbildung immer automatisch erfolgt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird eine Klasse bezeichnet, die gültige Werte enthält?",
+            "explanation": "Eine solche Klasse wird als gültige Klasse bezeichnet. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Gültige Klasse",
+                    "correct": false
+                },
+                {
+                    "text": "Positive Klasse",
+                    "correct": true
+                },
+                {
+                    "text": "Verarbeitete Klasse",
+                    "correct": false
+                },
+                {
+                    "text": "Relevante Klasse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was versteht man unter einer ungültigen Klasse?",
+            "explanation": "Eine Klasse mit ungültigen Werten, die vom Testobjekt ignoriert, zurückgewiesen oder nicht spezifiziert verarbeitet werden. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Eine Klasse mit ungültigen Werten",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Klasse mit beliebigen Zufallswerten",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Klasse mit doppelten gültigen Werten",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Klasse mit allen möglichen Werten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie können gültige Werte in einer Spezifikation interpretiert werden?",
+            "explanation": "Entweder als Werte, die verarbeitet werden sollten, oder als Werte, für die die Spezifikation eine Verarbeitung definiert. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Als Werte, die verarbeitet werden sollten oder laut Spezifikation definiert sind",
+                    "correct": false
+                },
+                {
+                    "text": "Als Werte, die zufällig generiert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Als Werte, die nur vom Entwickler bestimmt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Als Werte, die keine Spezifikation besitzen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sind die Überdeckungselemente bei der Äquivalenzklassenbildung?",
+            "explanation": "Die Äquivalenzklassen selbst sind die Überdeckungselemente. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Die Äquivalenzklassen",
+                    "correct": true
+                },
+                {
+                    "text": "Die einzelnen Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Die Schnittstellenparameter",
+                    "correct": false
+                },
+                {
+                    "text": "Die Ausgabewerte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist erforderlich, um mit Äquivalenzklassenbildung 100% Überdeckung zu erreichen?",
+            "explanation": "Alle identifizierten Klassen (einschließlich ungültiger) müssen mindestens einmal durch Testfälle abgedeckt werden. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Alle identifizierten Klassen mindestens einmal testen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur gültige Klassen abdecken",
+                    "correct": true
+                },
+                {
+                    "text": "Jede mögliche Eingabe erschöpfend testen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die kritischen Klassen testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was beschreibt die Each-Choice-Überdeckung?",
+            "explanation": "Each-Choice bedeutet: jede Klasse aus jeder Gruppe wird mindestens einmal getestet, ohne gezielte Kombinationen. (Kap. 4.2.1, Ammann 2016)",
+            "options": [
+                {
+                    "text": "Jede Klasse aus jeder Gruppe wird mindestens einmal getestet",
+                    "correct": false
+                },
+                {
+                    "text": "Alle möglichen Kombinationen von Klassen werden getestet",
+                    "correct": false
+                },
+                {
+                    "text": "Nur eine zufällige Klasse pro Gruppe wird getestet",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die ungültigen Klassen werden getestet",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sollten ungültige Äquivalenzklassen nicht gemeinsam in einem Testfall geprüft werden?",
+            "explanation": "Um Fehlermaskierung zu vermeiden, d.h. dass ein Fehlerzustand die Entdeckung eines anderen verhindert. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Weil sonst Fehlermaskierung auftreten kann",
+                    "correct": false
+                },
+                {
+                    "text": "Weil ungültige Klassen keinen Testwert liefern",
+                    "correct": false
+                },
+                {
+                    "text": "Weil nur gültige Klassen getestet werden dürfen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil die Testumgebung sonst nicht stabil ist",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Wie wird die Überdeckung bei der Äquivalenzklassenbildung gemessen?",
+            "explanation": "Anzahl der getesteten Klassen geteilt durch die Gesamtzahl der identifizierten Klassen, ausgedrückt in Prozent. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Getestete Klassen / identifizierte Klassen × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle / identifizierte Klassen × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerzustände / getestete Klassen × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Gültige Klassen / ungültige Klassen × 100%",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

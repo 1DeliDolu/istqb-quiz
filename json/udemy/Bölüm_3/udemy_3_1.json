@@ -1,0 +1,491 @@
+{
+    "chapter": "udemy_3",
+    "subChapter": "udemy_3_1",
+    "subChapterTitle": "3.1 Quiz 4 - SDLC Grundlagen",
+    "questions": [
+        {
+            "question": "Was ist der Zweck von Abnahmekriterien im Testplan?",
+            "explanation": "Abnahmekriterien legen fest, wann eine Testaktivität oder ein Testabschluss erreicht ist. (Standardglossar, Abnahmekriterien)",
+            "options": [
+                {
+                    "text": "Testaktivitäten starten",
+                    "correct": false
+                },
+                {
+                    "text": "Entscheiden, wann das Testen beendet werden kann",
+                    "correct": true
+                },
+                {
+                    "text": "Testeigaben definieren",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungen validieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielen Akzeptanzkriterien in User Stories?",
+            "explanation": "Akzeptanzkriterien definieren die Bedingungen, die erfüllt sein müssen, damit eine User Story akzeptiert wird. Sie dienen als Basis für Abnahmetests. (ISTQB Lehrplan 2025, 4.5.2)",
+            "options": [
+                {
+                    "text": "Sie legen die Teststrategie fest",
+                    "correct": false
+                },
+                {
+                    "text": "Sie definieren Bedingungen und dienen als Basis für Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Sie beschreiben die Architektur",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzen Endekriterien",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was beschreiben Eingangskriterien im Testprozess?",
+            "explanation": "Eingangskriterien legen die Vorbedingungen für den Start einer Aktivität fest. (Standardglossar, Eingangskriterien)",
+            "options": [
+                {
+                    "text": "Vorbedingungen für eine Aktivität",
+                    "correct": true
+                },
+                {
+                    "text": "Messgrößen zur Abdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Akzeptanzkriterien für User Stories",
+                    "correct": false
+                },
+                {
+                    "text": "Testarten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Bedeutung von Endekriterien?",
+            "explanation": "Endekriterien legen fest, was erreicht sein muss, um eine Aktivität als abgeschlossen zu erklären. (Standardglossar, Endekriterien)",
+            "options": [
+                {
+                    "text": "Sie definieren Vorbedingungen",
+                    "correct": false
+                },
+                {
+                    "text": "Sie legen fest, wann eine Aktivität abgeschlossen ist",
+                    "correct": true
+                },
+                {
+                    "text": "Sie beschreiben Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzen Testziele",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Zweck der Testbasis?",
+            "explanation": "Die Testbasis umfasst alle Informationen, die als Grundlage für Testanalyse und Testentwurf dienen. (Standardglossar, Testbasis)",
+            "options": [
+                {
+                    "text": "Sie beschreibt die Rollen der Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Sie dient als Grundlage für Testanalyse und -entwurf",
+                    "correct": true
+                },
+                {
+                    "text": "Sie enthält alle Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Sie legt die Testumgebung fest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Testziel?",
+            "explanation": "Das Testziel beschreibt den Zweck des Testens, z. B. Fehler finden, Vertrauen schaffen oder Anforderungen validieren. (Standardglossar, Testziel)",
+            "options": [
+                {
+                    "text": "Es beschreibt die zu nutzenden Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Es gibt den Zweck des Testens an",
+                    "correct": true
+                },
+                {
+                    "text": "Es legt die Abnahmekriterien fest",
+                    "correct": false
+                },
+                {
+                    "text": "Es ersetzt die Teststrategie",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches SDLC-Modell legt besonderen Fokus auf Verifikation und Validierung?",
+            "explanation": "Das V-Modell koppelt jede Entwicklungsphase mit einer zugehörigen Testphase. (ISTQB Lehrplan 2025, 2.1.3)",
+            "options": [
+                {
+                    "text": "Wasserfallmodell",
+                    "correct": false
+                },
+                {
+                    "text": "V-Modell",
+                    "correct": true
+                },
+                {
+                    "text": "Prototyping",
+                    "correct": false
+                },
+                {
+                    "text": "Inkrementelles Modell",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann sollten Testaktivitäten im SDLC idealerweise beginnen?",
+            "explanation": "Frühes Testen spart Zeit und Geld – Testen beginnt bereits in der Anforderungsphase. (ISTQB Lehrplan 2025, 1.3.2)",
+            "options": [
+                {
+                    "text": "Während der Anforderungsphase",
+                    "correct": true
+                },
+                {
+                    "text": "Erst nach der Implementierung",
+                    "correct": false
+                },
+                {
+                    "text": "Während des Betriebs",
+                    "correct": false
+                },
+                {
+                    "text": "Nach dem Integrationstest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist eine häufige Herausforderung beim Testen in Agile?",
+            "explanation": "Kurze Entwicklungszyklen erfordern schnelle Testaktivitäten und Automatisierung. (ISTQB Lehrplan 2025, 4.1.2)",
+            "options": [
+                {
+                    "text": "Lange Testzyklen",
+                    "correct": false
+                },
+                {
+                    "text": "Kurze Entwicklungszyklen",
+                    "correct": true
+                },
+                {
+                    "text": "Keine Zusammenarbeit mit Entwicklern",
+                    "correct": false
+                },
+                {
+                    "text": "Keine Abnahmekriterien",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Artefakt dient typischerweise als Testbasis für den Systemtest?",
+            "explanation": "Funktionsspezifikationen sind die Testbasis für Systemtests. (ISTQB Lehrplan 2025, 3.2.3)",
+            "options": [
+                {
+                    "text": "Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Funktionsspezifikation",
+                    "correct": true
+                },
+                {
+                    "text": "Testprotokoll",
+                    "correct": false
+                },
+                {
+                    "text": "Reviewbericht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Teststufe prüft den Datenfluss zwischen Modulen?",
+            "explanation": "Der Integrationstest überprüft die Kommunikation und Schnittstellen zwischen Modulen. (Standardglossar, Integrationstest)",
+            "options": [
+                {
+                    "text": "Komponententest",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstest",
+                    "correct": true
+                },
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Dokument dient in der Anforderungsphase häufig als Testgrundlage?",
+            "explanation": "Anforderungsspezifikationen sind die Testbasis in der Anforderungsphase. (ISTQB Lehrplan 2025, 3.2.1)",
+            "options": [
+                {
+                    "text": "Testprotokolle",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungsspezifikation",
+                    "correct": true
+                },
+                {
+                    "text": "Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Reviewbericht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Nachteil von spätem Testen im SDLC?",
+            "explanation": "Fehler sind teurer zu beheben, wenn sie spät gefunden werden. (ISTQB Lehrplan 2025, 1.3.2)",
+            "options": [
+                {
+                    "text": "Fehler sind leichter zu beheben",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler sind teurer zu beheben",
+                    "correct": true
+                },
+                {
+                    "text": "Es gibt weniger Fehler",
+                    "correct": false
+                },
+                {
+                    "text": "Es braucht weniger Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Lebenszyklusmodell eignet sich am besten für sicherheitskritische Systeme?",
+            "explanation": "Das V-Modell legt starken Fokus auf Verifikation und Validierung und ist für sicherheitskritische Systeme geeignet. (ISTQB Lehrplan 2025, 2.1.3)",
+            "options": [
+                {
+                    "text": "Iteratives Modell",
+                    "correct": false
+                },
+                {
+                    "text": "Prototyping",
+                    "correct": false
+                },
+                {
+                    "text": "V-Modell",
+                    "correct": true
+                },
+                {
+                    "text": "Wasserfallmodell",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Teststufe validiert, ob das System die Geschäftsanforderungen erfüllt?",
+            "explanation": "Der Abnahmetest prüft die Einsatzfähigkeit und erfüllt die Geschäftsanforderungen. (Standardglossar, Abnahmetest)",
+            "options": [
+                {
+                    "text": "Komponententest",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstest",
+                    "correct": false
+                },
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Hauptziel des Testens?",
+            "explanation": "Testen validiert, dass die Anforderungen erfüllt sind. (ISTQB Lehrplan 2025, 1.1.1)",
+            "options": [
+                {
+                    "text": "Das Finden aller Fehler",
+                    "correct": false
+                },
+                {
+                    "text": "Validieren, dass Anforderungen erfüllt sind",
+                    "correct": true
+                },
+                {
+                    "text": "Die Architektur prüfen",
+                    "correct": false
+                },
+                {
+                    "text": "Codeabdeckung messen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was hilft frühes Testen zu verhindern?",
+            "explanation": "Frühes Testen verhindert Fehler in späteren Phasen. (ISTQB Lehrplan 2025, 1.3.2)",
+            "options": [
+                {
+                    "text": "Fehler in späteren Phasen",
+                    "correct": true
+                },
+                {
+                    "text": "Mehr Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Zusätzliche Rollen",
+                    "correct": false
+                },
+                {
+                    "text": "Höhere Codeabdeckung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Technik ist nützlich zur Verifizierung von User Stories?",
+            "explanation": "Abnahmetests prüfen, ob die in den User Stories beschriebenen Anforderungen umgesetzt wurden. (ISTQB Lehrplan 2025, 4.5.2)",
+            "options": [
+                {
+                    "text": "Statische Analyse",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetests",
+                    "correct": true
+                },
+                {
+                    "text": "Grenzwertanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Äquivalenzklassenbildung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle ist typischerweise für die Definition der Abnahmekriterien verantwortlich?",
+            "explanation": "Der Product Owner definiert Abnahmekriterien in User Stories. (ISTQB Lehrplan 2025, 4.5.2)",
+            "options": [
+                {
+                    "text": "Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "text": "Product Owner",
+                    "correct": true
+                },
+                {
+                    "text": "Entwickler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle arbeitet in Agile besonders eng mit Testern zusammen?",
+            "explanation": "Entwickler arbeiten eng mit Testern zusammen im Whole-Team-Ansatz. (ISTQB Lehrplan 2025, 4.1.3)",
+            "options": [
+                {
+                    "text": "Projekt-Sponsor",
+                    "correct": false
+                },
+                {
+                    "text": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "text": "Entwickler",
+                    "correct": true
+                },
+                {
+                    "text": "Product Owner",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Lebenszyklusmodell erlaubt überlappende Phasen und Iterationen?",
+            "explanation": "Iterative Modelle erlauben Rückmeldungen, Anpassungen und überlappende Phasen. (Standardglossar, iteratives Entwicklungsmodell)",
+            "options": [
+                {
+                    "text": "Wasserfallmodell",
+                    "correct": false
+                },
+                {
+                    "text": "Iteratives Modell",
+                    "correct": true
+                },
+                {
+                    "text": "V-Modell",
+                    "correct": false
+                },
+                {
+                    "text": "Inkrementelles Modell",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität stellt sicher, dass die Testbasis korrekt und vollständig ist?",
+            "explanation": "Statisches Testen prüft Arbeitsergebnisse ohne Codeausführung. (ISTQB Lehrplan 2025, 3.1.1)",
+            "options": [
+                {
+                    "text": "Testabschluss",
+                    "correct": false
+                },
+                {
+                    "text": "Rückverfolgbarkeitsanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Testfall-Review",
+                    "correct": false
+                },
+                {
+                    "text": "Statisches Testen",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,337 @@
+{
+    "chapter": "4",
+    "subChapter": "4-2-3",
+    "subChapterTitle": "4.2.3 Entscheidungstabellentest",
+    "questions": [
+        {
+            "question": "Wofür werden Entscheidungstabellen im Testen eingesetzt?",
+            "explanation": "Sie werden genutzt, um die Umsetzung von Anforderungen zu prüfen, die verschiedene Kombinationen von Bedingungen und Ergebnissen beschreiben. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Zur Messung der Codeüberdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Zum Testen der Umsetzung von Anforderungen mit verschiedenen Bedingungskombinationen",
+                    "correct": true
+                },
+                {
+                    "text": "Zur Generierung zufälliger Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Verwaltung von Testumgebungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind Entscheidungstabellen ein effektives Mittel?",
+            "explanation": "Sie helfen, komplexe Logik wie Geschäftsregeln übersichtlich darzustellen und zu testen. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Weil sie den Testaufwand automatisch reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie komplexe Logik wie Geschäftsregeln erfassen können",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie ausschließlich für nicht-funktionale Anforderungen gedacht sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie Testdaten automatisch generieren",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Wie sind Bedingungen und Aktionen in einer Entscheidungstabelle angeordnet?",
+            "explanation": "Bedingungen und Aktionen bilden die Zeilen der Tabelle. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Sie bilden die Zeilen der Tabelle",
+                    "correct": true
+                },
+                {
+                    "text": "Sie bilden die Spalten der Tabelle",
+                    "correct": false
+                },
+                {
+                    "text": "Sie werden ausschließlich grafisch dargestellt",
+                    "correct": false
+                },
+                {
+                    "text": "Sie werden in einer UML-Sequenz abgebildet",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was stellt eine Spalte in einer Entscheidungstabelle dar?",
+            "explanation": "Jede Spalte entspricht einer Entscheidungsregel, also einer Kombination von Bedingungen und zugehörigen Aktionen. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Eine zufällige Eingabe",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Entscheidungsregel mit Bedingungskombination und Aktionen",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Reihe von irrelevanten Werten",
+                    "correct": false
+                },
+                {
+                    "text": "Einen Testabschlussbericht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterscheiden sich eingeschränkte und erweiterte Eingaben in Entscheidungstabellen?",
+            "explanation": "Eingeschränkte Eingabe: boolesche Werte (wahr/falsch). Erweiterte Eingabe: Bedingungen/Aktionen können mehrere Werte annehmen. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Eingeschränkt = boolesch, erweitert = mehrere Werte möglich",
+                    "correct": false
+                },
+                {
+                    "text": "Eingeschränkt = zufällig, erweitert = systematisch",
+                    "correct": false
+                },
+                {
+                    "text": "Eingeschränkt = numerisch, erweitert = nur boolesch",
+                    "correct": true
+                },
+                {
+                    "text": "Eingeschränkt = automatisch, erweitert = manuell",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Bedeutung hat die Notation \"J\" in einer Entscheidungstabelle?",
+            "explanation": "\"J\" bedeutet, dass die Bedingung erfüllt ist. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "\"J\" bedeutet, dass die Bedingung erfüllt ist",
+                    "correct": true
+                },
+                {
+                    "text": "\"J\" bedeutet, dass die Bedingung irrelevant ist",
+                    "correct": false
+                },
+                {
+                    "text": "\"J\" bedeutet, dass die Aktion ausgeführt wird",
+                    "correct": false
+                },
+                {
+                    "text": "\"J\" bedeutet, dass die Bedingung nicht erfüllt ist",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bedeutet das Symbol \"-\" in einer Entscheidungstabelle?",
+            "explanation": "\"-\" bedeutet, dass der Wert der Bedingung für das Ergebnis irrelevant ist. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "\"-\" bedeutet, dass die Bedingung erfüllt ist",
+                    "correct": false
+                },
+                {
+                    "text": "\"-\" bedeutet, dass die Bedingung irrelevant ist",
+                    "correct": true
+                },
+                {
+                    "text": "\"-\" bedeutet, dass die Bedingung nicht durchführbar ist",
+                    "correct": false
+                },
+                {
+                    "text": "\"-\" bedeutet, dass die Aktion stattfinden sollte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Notation wird für Aktionen verwendet, die ausgeführt werden sollen?",
+            "explanation": "\"X\" steht in Entscheidungstabellen für Aktionen, die stattfinden sollen. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Ein leeres Feld",
+                    "correct": false
+                },
+                {
+                    "text": "\"N/A\"",
+                    "correct": false
+                },
+                {
+                    "text": "\"X\"",
+                    "correct": true
+                },
+                {
+                    "text": "\"J\"",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann gilt eine Entscheidungstabelle als vollständig?",
+            "explanation": "Eine Tabelle ist vollständig, wenn genügend Spalten vorhanden sind, um jede Kombination von Bedingungen abzudecken. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Wenn jede Kombination von Bedingungen abgedeckt ist",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn mindestens eine Spalte pro Bedingung existiert",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn nur relevante Bedingungen aufgenommen werden",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn die Testfälle automatisch generiert werden",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Wie kann eine Entscheidungstabelle minimiert werden?",
+            "explanation": "Spalten, in denen bestimmte Bedingungen keinen Einfluss haben, können zusammengefasst werden. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Indem irrelevante Bedingungen ignoriert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Indem Spalten mit Bedingungen ohne Einfluss zusammengefasst werden",
+                    "correct": true
+                },
+                {
+                    "text": "Indem alle Spalten dupliziert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Indem nur Aktionen ohne Bedingung berücksichtigt werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sind die Überdeckungselemente beim Entscheidungstabellentest?",
+            "explanation": "Die Spalten mit ausführbaren Kombinationen von Bedingungen sind die Überdeckungselemente. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Die Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Die Spalten mit ausführbaren Kombinationen von Bedingungen",
+                    "correct": true
+                },
+                {
+                    "text": "Die einzelnen Bedingungen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktionen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann ist beim Entscheidungstabellentest eine 100%ige Überdeckung erreicht?",
+            "explanation": "Wenn Testfälle alle ausführbaren Spalten der Entscheidungstabelle ausführen. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Wenn alle Bedingungswerte abgedeckt sind",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn jede Spalte mit ausführbarer Kombination getestet wurde",
+                    "correct": true
+                },
+                {
+                    "text": "Wenn jede Aktion mindestens einmal ausgeführt wurde",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn die Testumgebung vollständig simuliert ist",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Stärke hat der Entscheidungstabellentest?",
+            "explanation": "Er bietet einen systematischen Ansatz, um alle Kombinationen von Bedingungen zu identifizieren und deckt auch übersehene Fälle auf. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Er identifiziert automatisch die Grenzwerte",
+                    "correct": false
+                },
+                {
+                    "text": "Er hilft, alle Bedingungskombinationen systematisch zu identifizieren",
+                    "correct": false
+                },
+                {
+                    "text": "Er ist ausschließlich für nicht-funktionale Anforderungen gedacht",
+                    "correct": false
+                },
+                {
+                    "text": "Er ersetzt alle anderen Testverfahren",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche weitere Stärke hat der Entscheidungstabellentest neben der Identifizierung von Kombinationen?",
+            "explanation": "Er hilft, Lücken oder Widersprüche in den Anforderungen zu finden. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Er reduziert die Anzahl der Testfälle automatisch",
+                    "correct": false
+                },
+                {
+                    "text": "Er erkennt Lücken oder Widersprüche in den Anforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Er misst die Testüberdeckung im Code",
+                    "correct": false
+                },
+                {
+                    "text": "Er erstellt automatisch die Testberichte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum kann die Anwendung des Entscheidungstabellentests zeitaufwendig sein?",
+            "explanation": "Die Anzahl der Entscheidungsregeln wächst exponentiell mit der Anzahl der Bedingungen. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Weil jede Bedingung nur manuell getestet werden kann",
+                    "correct": false
+                },
+                {
+                    "text": "Weil die Anzahl der Regeln exponentiell mit den Bedingungen wächst",
+                    "correct": false
+                },
+                {
+                    "text": "Weil die Testumgebung komplex aufgebaut ist",
+                    "correct": false
+                },
+                {
+                    "text": "Weil alle Testfälle wiederholt werden müssen",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

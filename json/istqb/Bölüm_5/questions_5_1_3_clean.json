@@ -1,0 +1,271 @@
+{
+    "chapter": "5",
+    "subChapter": "5-1-3",
+    "subChapterTitle": "5.1.3. Eingangskriterien und Endekriterien",
+    "questions": [
+        {
+            "question": "Was definieren Eingangskriterien im Testprozess?",
+            "explanation": "Eingangskriterien definieren die Vorbedingungen für die Durchführung einer bestimmten Aktivität. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Vorbedingungen für die Durchführung einer Aktivität",
+                    "correct": true
+                },
+                {
+                    "text": "Die Rollen und Verantwortlichkeiten der Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Die Gehaltsstruktur im Testteam",
+                    "correct": false
+                },
+                {
+                    "text": "Die Architekturentscheidungen des Projekts",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was legen Endekriterien fest?",
+            "explanation": "Endekriterien legen fest, was erreicht werden muss, um eine Aktivität für abgeschlossen zu erklären. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Die Vorbedingungen für die Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Die erforderlichen Maßnahmen zur Fehleranalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Die Bedingungen, die erfüllt sein müssen, um eine Aktivität abzuschließen",
+                    "correct": true
+                },
+                {
+                    "text": "Die Zuständigkeit der Stakeholder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein typisches Eingangskriterium?",
+            "explanation": "Typische Eingangskriterien sind Verfügbarkeit von Ressourcen, Testmitteln und die anfängliche Qualität eines Testobjekts. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Verfügbarkeit von Testdaten",
+                    "correct": true
+                },
+                {
+                    "text": "Anzahl der ungelösten Fehlerzustände",
+                    "correct": false
+                },
+                {
+                    "text": "Alle geplanten Tests wurden ausgeführt",
+                    "correct": false
+                },
+                {
+                    "text": "Definition-of-Done ist erreicht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches ist ein typisches Endekriterium?",
+            "explanation": "Endekriterien umfassen Messungen wie erreichten Überdeckungsgrad, Fehlerdichte oder Anzahl fehlgeschlagener Testfälle. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Die Bereitstellung der Testumgebung",
+                    "correct": false
+                },
+                {
+                    "text": "Die Durchführung von Projektplanungsmeetings",
+                    "correct": false
+                },
+                {
+                    "text": "Erreichter Überdeckungsgrad oder Fehlerdichte",
+                    "correct": true
+                },
+                {
+                    "text": "Vorbereitung der Schulungsunterlagen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was passiert, wenn Eingangskriterien nicht erfüllt sind?",
+            "explanation": "Wenn Eingangskriterien nicht erfüllt sind, wird die Aktivität schwieriger, zeitaufwendiger, kostspieliger und risikoreicher. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Die Aktivität wird einfacher und schneller",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität wird schwieriger und risikoreicher",
+                    "correct": true
+                },
+                {
+                    "text": "Das Testteam wird automatisch ersetzt",
+                    "correct": false
+                },
+                {
+                    "text": "Die gesamte Planung entfällt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen zu Eingangskriterien ist KORREKT?",
+            "explanation": "Eingangskriterien sollten für jede Teststufe definiert werden und unterscheiden sich je nach Testzielen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Sie sollten für jede Teststufe definiert werden",
+                    "correct": true
+                },
+                {
+                    "text": "Sie werden nur für Systemtests definiert",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind in agilen Projekten überflüssig",
+                    "correct": false
+                },
+                {
+                    "text": "Sie werden nur vom Management verwendet",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche binären Endekriterien sind möglich?",
+            "explanation": "Beispiele: geplante Tests wurden ausgeführt, statische Tests wurden durchgeführt, alle Fehlerzustände sind berichtet. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Geplante Tests wurden ausgeführt",
+                    "correct": true
+                },
+                {
+                    "text": "Neue User-Storys wurden definiert",
+                    "correct": false
+                },
+                {
+                    "text": "Budget wurde geplant",
+                    "correct": false
+                },
+                {
+                    "text": "Die Entwickler haben Code Reviews abgeschlossen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie werden Endekriterien in agilen Projekten oft bezeichnet?",
+            "explanation": "In der agilen Softwareentwicklung werden Endekriterien oft als Definition-of-Done bezeichnet. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Definition-of-Ready",
+                    "correct": false
+                },
+                {
+                    "text": "Definition-of-Done",
+                    "correct": true
+                },
+                {
+                    "text": "Definition-of-Test",
+                    "correct": false
+                },
+                {
+                    "text": "Definition-of-Success",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Eingangskriterien gelten für eine User-Story, bevor sie getestet werden kann?",
+            "explanation": "Eingangskriterien für User-Storys heißen Definition-of-Ready. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Definition-of-Done",
+                    "correct": false
+                },
+                {
+                    "text": "Definition-of-Ready",
+                    "correct": true
+                },
+                {
+                    "text": "Definition-of-Test",
+                    "correct": false
+                },
+                {
+                    "text": "Definition-of-Complete",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Metriken können als Endekriterien verwendet werden?",
+            "explanation": "Mögliche Metriken sind z. B. Anzahl der ungelösten Fehlerzustände, Fehlerdichte, Überdeckungsgrad. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Anzahl der verfügbaren Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Anzahl der ungelösten Fehlerzustände",
+                    "correct": true
+                },
+                {
+                    "text": "Budgethöhe im Projekt",
+                    "correct": false
+                },
+                {
+                    "text": "Anzahl der Meetings",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann kann es akzeptabel sein, das Testen zu beenden, auch wenn andere Endekriterien nicht erfüllt sind?",
+            "explanation": "Wenn Zeit oder Budget erschöpft sind und Stakeholder das Risiko akzeptieren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Wenn das gesamte Team in Urlaub ist",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn Zeit oder Budget erschöpft sind und das Risiko akzeptiert wird",
+                    "correct": true
+                },
+                {
+                    "text": "Wenn alle Entwickler neue Aufgaben übernehmen",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn die Testwerkzeuge ausgetauscht werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche typischen Ressourcen gehören zu den Eingangskriterien?",
+            "explanation": "Zu den Ressourcen zählen Menschen, Werkzeuge, Umgebungen, Testdaten, Budget und Zeit. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.3)",
+            "options": [
+                {
+                    "text": "Menschen, Werkzeuge, Testdaten",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Benutzerhandbücher",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Geschäftsprozesse",
+                    "correct": false
+                },
+                {
+                    "text": "Nur gesetzliche Anforderungen",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

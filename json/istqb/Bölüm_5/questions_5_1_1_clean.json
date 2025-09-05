@@ -1,0 +1,271 @@
+{
+    "chapter": "5",
+    "subChapter": "5-1-1",
+    "subChapterTitle": "5.1.1 Zweck und Inhalt eines Testkonzepts",
+    "questions": [
+        {
+            "question": "Welches der folgenden Elemente beschreibt am BESTEN den Zweck eines Testkonzepts?",
+            "explanation": "Ein Testkonzept dokumentiert die Testziele, Ressourcen und Prozesse für ein Testprojekt. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Dokumentation von Testzielen, Ressourcen und Prozessen",
+                    "correct": true
+                },
+                {
+                    "text": "Bereitstellung des vollständigen Quellcodes",
+                    "correct": false
+                },
+                {
+                    "text": "Festlegung von Systemarchitekturen",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung der Produktstrategie",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher der folgenden Inhalte ist TYPISCHER Bestandteil eines Testkonzepts?",
+            "explanation": "Typische Inhalte: Testkontext, Annahmen, Stakeholder, Kommunikation, Risiken, Testansatz, Budget und Zeitplan. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Marketing-Strategie des Unternehmens",
+                    "correct": false
+                },
+                {
+                    "text": "Testkontext, Annahmen und Einschränkungen",
+                    "correct": true
+                },
+                {
+                    "text": "Detailierter Netzwerktopologieplan",
+                    "correct": false
+                },
+                {
+                    "text": "Reine Benutzerhandbuch-Erstellung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kommunikationsfunktion erfüllt ein Testkonzept?",
+            "explanation": "Es dient als Kommunikationsmittel mit Teammitgliedern und anderen Stakeholdern. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Es wird nur vom Testmanager genutzt",
+                    "correct": false
+                },
+                {
+                    "text": "Es ersetzt das Projektmanagement-Handbuch",
+                    "correct": false
+                },
+                {
+                    "text": "Es dient als Kommunikationsmittel für Stakeholder",
+                    "correct": true
+                },
+                {
+                    "text": "Es legt die Gehaltsstruktur der Tester fest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie stellt ein Testkonzept die Verbindung zu Testrichtlinie und Teststrategie her?",
+            "explanation": "Es zeigt, dass sich das Testen an die Richtlinie/Strategie hält oder erklärt Abweichungen davon. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Indem es Richtlinien ignoriert",
+                    "correct": false
+                },
+                {
+                    "text": "Indem es ausschließlich neue Richtlinien definiert",
+                    "correct": false
+                },
+                {
+                    "text": "Indem es die Einhaltung zeigt oder Abweichungen erklärt",
+                    "correct": true
+                },
+                {
+                    "text": "Indem es Unternehmensrichtlinien ersetzt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen beschreibt eine Aufgabe der Testplanung?",
+            "explanation": "Die Testplanung zwingt Tester, sich mit Risiken, Zeitplänen, Mitarbeitern, Werkzeugen, Kosten und Aufwand auseinanderzusetzen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Erstellung von Benutzerhandbüchern",
+                    "correct": false
+                },
+                {
+                    "text": "Definition von Testzielen und Auswahl der Vorgehensweise",
+                    "correct": true
+                },
+                {
+                    "text": "Programmierung von Unit-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Genehmigung von Projektbudgets",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche typische Annahme könnte im Testkonzept dokumentiert werden?",
+            "explanation": "Ein Testkonzept enthält Annahmen und Einschränkungen des Testprojekts. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Die Testumgebung wird bis zum geplanten Start verfügbar sein",
+                    "correct": true
+                },
+                {
+                    "text": "Die Organisation ändert ihre gesamte IT-Strategie",
+                    "correct": false
+                },
+                {
+                    "text": "Die Kundenanforderungen werden vollständig entfallen",
+                    "correct": false
+                },
+                {
+                    "text": "Das Projekt benötigt keine Budgetplanung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt das Risikoverzeichnis im Testkonzept?",
+            "explanation": "Das Risikoverzeichnis enthält Produktrisiken, Projektrisiken und Informationen zur Risikominderung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Es listet ausschließlich Budgetpositionen auf",
+                    "correct": false
+                },
+                {
+                    "text": "Es definiert nur Personalrollen",
+                    "correct": false
+                },
+                {
+                    "text": "Es dokumentiert Produktrisiken, Projektrisiken und Minderung",
+                    "correct": true
+                },
+                {
+                    "text": "Es beschreibt ausschließlich Testdatenformate",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt am BESTEN den Testansatz in einem Testkonzept?",
+            "explanation": "Der Testansatz beschreibt Teststufen, Testarten, Verfahren, Eingangskriterien, Endekriterien, Metriken usw. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Er beschreibt ausschließlich die Hardware-Konfiguration",
+                    "correct": false
+                },
+                {
+                    "text": "Er umfasst Teststufen, Testarten, Verfahren und Kriterien",
+                    "correct": true
+                },
+                {
+                    "text": "Er ersetzt das gesamte Risikomanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Er ist nur für die Budgetierung relevant",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Erstellung eines Testkonzepts eine nützliche Vorgehensweise?",
+            "explanation": "Der Prozess der Erstellung hilft, Maßnahmen zu überdenken, die zum Erreichen der Testziele erforderlich sind. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Weil dadurch der Quellcode automatisch generiert wird",
+                    "correct": false
+                },
+                {
+                    "text": "Weil dadurch das Testteam keine Planung mehr benötigt",
+                    "correct": false
+                },
+                {
+                    "text": "Weil dadurch die Maßnahmen zum Erreichen der Testziele reflektiert werden",
+                    "correct": true
+                },
+                {
+                    "text": "Weil dadurch das Projekt ohne Risiken durchgeführt wird",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Aspekt der Stakeholder wird im Testkonzept dokumentiert?",
+            "explanation": "Das Testkonzept enthält Stakeholder-Informationen: Rollen, Verantwortlichkeiten, Einstellung und Schulungsbedarf. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Privates Freizeitverhalten der Stakeholder",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholderrollen, Verantwortlichkeiten und Schulungsbedarf",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die Gehaltsinformationen der Stakeholder",
+                    "correct": false
+                },
+                {
+                    "text": "Alle individuellen Programmierkenntnisse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Aspekt der Kommunikation wird im Testkonzept beschrieben?",
+            "explanation": "Das Testkonzept legt Kommunikationsformen und -häufigkeit sowie Dokumentationsvorlagen fest. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Es beschreibt die Kommunikationsformen und Häufigkeit",
+                    "correct": true
+                },
+                {
+                    "text": "Es ersetzt das gesamte Projektkommunikationskonzept",
+                    "correct": false
+                },
+                {
+                    "text": "Es beschränkt sich auf die Kommunikation mit Kunden",
+                    "correct": false
+                },
+                {
+                    "text": "Es beschreibt nur interne Budget-Meetings",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Punkt gehört ebenfalls zu den typischen Inhalten eines Testkonzepts?",
+            "explanation": "Budget und Zeitplan sind typische Inhalte eines Testkonzepts. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.1)",
+            "options": [
+                {
+                    "text": "Eine Übersicht der Team-Urlaubspläne",
+                    "correct": false
+                },
+                {
+                    "text": "Budget und Zeitplan",
+                    "correct": true
+                },
+                {
+                    "text": "Liste aller Hardwarekomponenten im Unternehmen",
+                    "correct": false
+                },
+                {
+                    "text": "Zertifizierungen der Projektleiter",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "chapter": "4",
+    "subChapter": "4-4",
+    "subChapterTitle": "4.4 Erfahrungsbasierte Testverfahren",
+    "questions": [
+        {
+            "question": "Welche Hauptkategorie von Testverfahren wird in Abschnitt 4.4 behandelt?",
+            "explanation": "Abschnitt 4.4 behandelt erfahrungsbasierte Testverfahren. (Kap. 4.4)",
+            "options": [
+                {
+                    "text": "Black-Box-Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "White-Box-Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Erfahrungsbasierte Testverfahren",
+                    "correct": true
+                },
+                {
+                    "text": "Statische Testverfahren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche drei erfahrungsbasierten Testverfahren werden im Lehrplan hervorgehoben?",
+            "explanation": "Die drei Verfahren sind: intuitive Testfallermittlung, explorativer Test und checklistenbasierter Test. (Kap. 4.4)",
+            "options": [
+                {
+                    "text": "Äquivalenzklassenbildung, Grenzwertanalyse, Entscheidungstabellentest",
+                    "correct": false
+                },
+                {
+                    "text": "Intuitive Testfallermittlung, explorativer Test, checklistenbasierter Test",
+                    "correct": true
+                },
+                {
+                    "text": "Anweisungstest, Zweigtest, Pfadtest",
+                    "correct": false
+                },
+                {
+                    "text": "Use-Case-Test, Fehlerangriff, Regressionstest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wodurch zeichnen sich erfahrungsbasierte Testverfahren grundsätzlich aus?",
+            "explanation": "Sie nutzen Wissen, Erfahrung und Intuition der Tester, um Testfälle zu entwerfen und durchzuführen. (Kap. 4.4)",
+            "options": [
+                {
+                    "text": "Durch die Analyse der Code-Struktur",
+                    "correct": false
+                },
+                {
+                    "text": "Durch den Einsatz von Testdatenbanken",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Wissen, Erfahrung und Intuition der Tester",
+                    "correct": true
+                },
+                {
+                    "text": "Durch die Messung der Codeüberdeckung",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

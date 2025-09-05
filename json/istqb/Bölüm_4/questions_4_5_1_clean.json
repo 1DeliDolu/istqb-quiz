@@ -1,0 +1,139 @@
+{
+    "chapter": "4",
+    "subChapter": "4-5-1",
+    "subChapterTitle": "4.5.1 Gemeinsames Schreiben von User-Storys",
+    "questions": [
+        {
+            "question": "Welche drei kritischen Aspekte einer User-Story werden auch als '3 Cs' bezeichnet?",
+            "explanation": "Die 3 Cs sind: Card (Karte), Conversation (Konversation), Confirmation (Bestätigung). (Kap. 4.5.1)",
+            "options": [
+                {
+                    "text": "Card, Conversation, Confirmation",
+                    "correct": true
+                },
+                {
+                    "text": "Code, Condition, Coverage",
+                    "correct": false
+                },
+                {
+                    "text": "Concept, Control, Confirmation",
+                    "correct": false
+                },
+                {
+                    "text": "Card, Case, Completion",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches ist das gängigste Format für eine User-Story?",
+            "explanation": "Das Standardformat lautet: Als [Rolle] möchte ich [Ziel], so dass ich [Nutzen]. (Kap. 4.5.1)",
+            "options": [
+                {
+                    "text": "Wenn [Bedingung], dann [Aktion]",
+                    "correct": false
+                },
+                {
+                    "text": "Als [Rolle] möchte ich [Ziel], so dass ich [Nutzen]",
+                    "correct": true
+                },
+                {
+                    "text": "Gegeben [Ausgangszustand], wenn [Ereignis], dann [Ergebnis]",
+                    "correct": false
+                },
+                {
+                    "text": "Für [Modul] wird [Funktion] implementiert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Methoden können Teams beim gemeinsamen Schreiben von User-Storys unterstützen?",
+            "explanation": "Methoden wie Brainstorming und Mind-Mapping helfen bei der gemeinsamen Erstellung. (Kap. 4.5.1)",
+            "options": [
+                {
+                    "text": "Statische Analyse und Debugging",
+                    "correct": false
+                },
+                {
+                    "text": "Brainstorming und Mind-Mapping",
+                    "correct": true
+                },
+                {
+                    "text": "Anweisungstest und Zweigtest",
+                    "correct": false
+                },
+                {
+                    "text": "Exploratives Testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche drei Perspektiven sollten beim Schreiben von User-Storys berücksichtigt werden?",
+            "explanation": "Die Perspektiven Fachlichkeit, Entwicklung und Testen tragen zu einer gemeinsamen Vision bei. (Kap. 4.5.1)",
+            "options": [
+                {
+                    "text": "Fachlichkeit, Entwicklung, Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Management, Marketing, Vertrieb",
+                    "correct": false
+                },
+                {
+                    "text": "Benutzer, Entwickler, Auditor",
+                    "correct": true
+                },
+                {
+                    "text": "Sicherheit, Architektur, Betrieb",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wofür steht das INVEST-Prinzip bei User-Storys?",
+            "explanation": "INVEST: Independent, Negotiable, Valuable, Estimable, Small, Testable. (Kap. 4.5.1)",
+            "options": [
+                {
+                    "text": "Independent, Negotiable, Valuable, Estimable, Small, Testable",
+                    "correct": true
+                },
+                {
+                    "text": "Innovative, Neutral, Valid, Easy, Stable, Traceable",
+                    "correct": false
+                },
+                {
+                    "text": "Independent, Navigable, Verified, Estimable, Strong, Traceable",
+                    "correct": false
+                },
+                {
+                    "text": "International, Negotiable, Valuable, Elastic, Secure, Tested",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was kann es bedeuten, wenn ein Stakeholder nicht weiß, wie eine User-Story zu testen ist?",
+            "explanation": "Möglicherweise ist die User-Story unklar, bietet keinen Mehrwert oder der Stakeholder benötigt Hilfe beim Testen. (Kap. 4.5.1)",
+            "options": [
+                {
+                    "text": "Die User-Story ist zu groß für das Projekt",
+                    "correct": false
+                },
+                {
+                    "text": "Die User-Story ist unklar, nicht wertvoll oder erfordert Unterstützung beim Testen",
+                    "correct": true
+                },
+                {
+                    "text": "Die User-Story wurde zu detailliert beschrieben",
+                    "correct": false
+                },
+                {
+                    "text": "Die User-Story erfüllt keine regulatorischen Anforderungen",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

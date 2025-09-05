@@ -1,0 +1,161 @@
+{
+    "chapter": "4",
+    "subChapter": "4-5-3",
+    "subChapterTitle": "4.5.3 Abnahmetestgetriebene Entwicklung (ATDD)",
+    "questions": [
+        {
+            "question": "Was ist ATDD im Kontext des Testens?",
+            "explanation": "ATDD ist ein Test-First-Ansatz, bei dem Testfälle vor der Implementierung der User-Story erstellt werden. (Kap. 4.5.3)",
+            "options": [
+                {
+                    "text": "Ein exploratives Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Test-First-Ansatz, bei dem Tests vor der Implementierung erstellt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Variante des White-Box-Testens",
+                    "correct": false
+                },
+                {
+                    "text": "Ein reines Lasttestverfahren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wer erstellt die Testfälle im Rahmen von ATDD?",
+            "explanation": "Die Testfälle werden von Teammitgliedern mit unterschiedlichen Perspektiven erstellt, z. B. Kunden, Entwicklern und Testern. (Kap. 4.5.3)",
+            "options": [
+                {
+                    "text": "Nur das Testteam",
+                    "correct": false
+                },
+                {
+                    "text": "Kunden, Entwickler und Tester gemeinsam",
+                    "correct": true
+                },
+                {
+                    "text": "Nur der Projektmanager",
+                    "correct": false
+                },
+                {
+                    "text": "Externe Prüfer",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher erste Schritt ist typisch im ATDD-Prozess?",
+            "explanation": "Ein Spezifikationsworkshop, in dem User-Story und Akzeptanzkriterien analysiert und präzisiert werden. (Kap. 4.5.3)",
+            "options": [
+                {
+                    "text": "Die Implementierung des Features",
+                    "correct": false
+                },
+                {
+                    "text": "Der Spezifikationsworkshop",
+                    "correct": true
+                },
+                {
+                    "text": "Die Automatisierung der Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Die Durchführung von Negativtests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arten von Testfällen werden typischerweise zuerst im ATDD erstellt?",
+            "explanation": "Die ersten Testfälle sind meist positive Tests, die den korrekten Ablauf ohne Fehler bestätigen. (Kap. 4.5.3)",
+            "options": [
+                {
+                    "text": "Negativtests mit ungültigen Eingaben",
+                    "correct": false
+                },
+                {
+                    "text": "Tests für nicht-funktionale Qualitätsmerkmale",
+                    "correct": false
+                },
+                {
+                    "text": "Positive Tests, die den korrekten Ablauf bestätigen",
+                    "correct": true
+                },
+                {
+                    "text": "Explorative Testszenarien",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was folgt nach der Erstellung positiver Testfälle im ATDD?",
+            "explanation": "Nach den positiven Tests sollte das Team Negativtests und Tests für nicht-funktionale Merkmale durchführen. (Kap. 4.5.3)",
+            "options": [
+                {
+                    "text": "Automatisierung der Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Negativtests und Tests nicht-funktionaler Merkmale",
+                    "correct": true
+                },
+                {
+                    "text": "Überarbeitung der User-Story",
+                    "correct": false
+                },
+                {
+                    "text": "Definition der Endekriterien",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Anforderung gilt für die Testfälle im ATDD?",
+            "explanation": "Sie müssen alle Merkmale der User-Story abdecken, dürfen aber nicht darüber hinausgehen, und keine zwei Testfälle dürfen dasselbe Merkmal beschreiben. (Kap. 4.5.3)",
+            "options": [
+                {
+                    "text": "Sie müssen zusätzliche Features enthalten",
+                    "correct": false
+                },
+                {
+                    "text": "Sie dürfen sich teilweise überlappen",
+                    "correct": false
+                },
+                {
+                    "text": "Sie müssen alle Merkmale abdecken, ohne Überschneidungen",
+                    "correct": true
+                },
+                {
+                    "text": "Sie müssen nur die wichtigsten Merkmale abdecken",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie werden Abnahmetests im ATDD zu ausführbaren Anforderungen?",
+            "explanation": "Wenn die Testfälle in einem von Testautomatisierungsframeworks unterstützten Format vorliegen, können Entwickler sie automatisieren. (Kap. 4.5.3)",
+            "options": [
+                {
+                    "text": "Indem sie als User-Stories ins Backlog geschrieben werden",
+                    "correct": false
+                },
+                {
+                    "text": "Indem sie durch Reviews bestätigt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Indem sie automatisch in Code übersetzt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Indem sie in ein unterstütztes Format gebracht und automatisiert werden",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

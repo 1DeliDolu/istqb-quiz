@@ -1,0 +1,95 @@
+{
+    "chapter": "4",
+    "subChapter": "4-3",
+    "subChapterTitle": "4.3 White-Box-Testverfahren",
+    "questions": [
+        {
+            "question": "Auf welche beiden White-Box-Testverfahren konzentriert sich der Lehrplan besonders?",
+            "explanation": "Aufgrund ihrer Einfachheit und Verbreitung behandelt der Lehrplan vor allem Anweisungstest und Zweigtest. (Kap. 4.3)",
+            "options": [
+                {
+                    "text": "Pfadüberdeckung und Mutationsanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Anweisungstest und Zweigtest",
+                    "correct": true
+                },
+                {
+                    "text": "API-Test und Integrationstest",
+                    "correct": false
+                },
+                {
+                    "text": "Explorativer Test und Checklisten-Test",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum konzentriert sich der Lehrplan auf Anweisungs- und Zweigtests?",
+            "explanation": "Weil sie weit verbreitet und einfach anzuwenden sind. (Kap. 4.3)",
+            "options": [
+                {
+                    "text": "Weil sie die höchste Abdeckung garantieren",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie nur für sicherheitskritische Systeme gedacht sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie weit verbreitet und einfach sind",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie die einzige Art von White-Box-Verfahren darstellen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche weiteren White-Box-Testverfahren existieren außerhalb von Anweisungs- und Zweigtests?",
+            "explanation": "Es gibt gründlichere Verfahren für sicherheitskritische/unternehmenskritische Umgebungen sowie Verfahren für höhere Teststufen oder nicht codebasierte Überdeckungen. (Kap. 4.3)",
+            "options": [
+                {
+                    "text": "Nur Äquivalenzklassenbildung",
+                    "correct": false
+                },
+                {
+                    "text": "Gründlichere Verfahren für sicherheitskritische Umgebungen und nicht codebezogene Überdeckungen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur dynamische Black-Box-Verfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Nur explorative Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche White-Box-Überdeckung wird im Lehrplan explizit nicht behandelt?",
+            "explanation": "Beispielsweise die Neuronenüberdeckung beim Testen neuronaler Netze wird nicht behandelt. (Kap. 4.3)",
+            "options": [
+                {
+                    "text": "Anweisungsüberdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Zweigüberdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Neuronenüberdeckung",
+                    "correct": true
+                },
+                {
+                    "text": "Entscheidungstabellenüberdeckung",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

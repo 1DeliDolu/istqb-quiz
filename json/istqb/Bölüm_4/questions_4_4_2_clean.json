@@ -1,0 +1,139 @@
+{
+    "chapter": "4",
+    "subChapter": "4-4-2",
+    "subChapterTitle": "4.4.2 Explorativer Test",
+    "questions": [
+        {
+            "question": "Wie werden Tests im explorativen Testen typischerweise durchgeführt?",
+            "explanation": "Tests werden gleichzeitig entworfen, ausgeführt und bewertet, während der Tester das Testobjekt besser kennenlernt. (Kap. 4.4.2)",
+            "options": [
+                {
+                    "text": "Tests werden gleichzeitig entworfen, ausgeführt und bewertet",
+                    "correct": true
+                },
+                {
+                    "text": "Tests werden vollständig im Voraus spezifiziert",
+                    "correct": false
+                },
+                {
+                    "text": "Tests werden ausschließlich automatisch generiert",
+                    "correct": false
+                },
+                {
+                    "text": "Tests werden nur nach dem Testabschluss bewertet",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Merkmal des sitzungsbasierten Testens?",
+            "explanation": "Exploratives Testen wird in einem festen Zeitrahmen durchgeführt, gesteuert durch eine Test-Charta. (Kap. 4.4.2)",
+            "options": [
+                {
+                    "text": "Es wird ausschließlich mit automatisierten Tools durchgeführt",
+                    "correct": false
+                },
+                {
+                    "text": "Es erfolgt in einem definierten Zeitrahmen mit Test-Charta",
+                    "correct": true
+                },
+                {
+                    "text": "Es ersetzt immer Black-Box-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Es enthält keine Nachbesprechung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt die Test-Charta beim explorativen Test?",
+            "explanation": "Sie enthält die Testziele und dient als Steuerung für die Testsitzung. (Kap. 4.4.2)",
+            "options": [
+                {
+                    "text": "Sie dokumentiert die gefundenen Fehlerzustände",
+                    "correct": false
+                },
+                {
+                    "text": "Sie definiert die Testziele und steuert die Testsitzung",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ersetzt die Testprotokolle",
+                    "correct": false
+                },
+                {
+                    "text": "Sie legt die Codeüberdeckung fest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann sind explorative Tests besonders sinnvoll?",
+            "explanation": "Exploratives Testen eignet sich bei fehlenden oder unzureichenden Spezifikationen oder hohem Zeitdruck. (Kap. 4.4.2)",
+            "options": [
+                {
+                    "text": "Wenn Spezifikationen fehlen oder der Zeitdruck hoch ist",
+                    "correct": true
+                },
+                {
+                    "text": "Wenn alle Spezifikationen vollständig und präzise vorliegen",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn ausschließlich White-Box-Tests erforderlich sind",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn ausschließlich Regressionstests geplant sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Eigenschaften sollten Tester für exploratives Testen mitbringen?",
+            "explanation": "Analytische Fähigkeiten, Neugier, Kreativität und Fachkenntnisse erhöhen die Effektivität. (Kap. 4.4.2)",
+            "options": [
+                {
+                    "text": "Nur Programmierkenntnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Kenntnisse in Testautomatisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Analytische Fähigkeiten, Neugier und Kreativität",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Erfahrung mit Lasttests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie können andere Testverfahren in exploratives Testen integriert werden?",
+            "explanation": "Auch andere Verfahren wie z. B. Äquivalenzklassenbildung können während explorativen Testens eingesetzt werden. (Kap. 4.4.2)",
+            "options": [
+                {
+                    "text": "Andere Verfahren können nicht kombiniert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Nur White-Box-Verfahren können integriert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Auch andere Verfahren wie Äquivalenzklassenbildung können genutzt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Checklistenverfahren dürfen kombiniert werden",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

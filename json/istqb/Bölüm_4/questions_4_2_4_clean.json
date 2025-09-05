@@ -1,0 +1,425 @@
+{
+    "chapter": "4",
+    "subChapter": "4-2-4",
+    "subChapterTitle": "4.2.4 Zustandsübergangstest",
+    "questions": [
+        {
+            "question": "Was modelliert ein Zustandsdiagramm?",
+            "explanation": "Es zeigt die möglichen Zustände eines Systems und die gültigen Übergänge zwischen ihnen. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Die Hierarchie der Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Die möglichen Zustände und gültigen Übergänge eines Systems",
+                    "correct": true
+                },
+                {
+                    "text": "Die Rollen im Testmanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Die Abfolge der Testausführungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird ein Übergang im Zustandsdiagramm typischerweise ausgelöst?",
+            "explanation": "Ein Übergang wird durch ein Ereignis ausgelöst, das optional durch eine Wächterbedingung qualifiziert sein kann. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Durch das Erreichen des Endzustands",
+                    "correct": false
+                },
+                {
+                    "text": "Durch ein Ereignis, ggf. mit Wächterbedingung",
+                    "correct": true
+                },
+                {
+                    "text": "Nur durch einen Benutzerfehler",
+                    "correct": false
+                },
+                {
+                    "text": "Durch die Wiederholung einer Aktion",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie lautet die übliche Syntax zur Kennzeichnung eines Übergangs?",
+            "explanation": "Übergänge werden mit Ereignis [Wächterbedingung] / Aktion dargestellt. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Aktion / Bedingung / Ereignis",
+                    "correct": false
+                },
+                {
+                    "text": "Ereignis [Wächterbedingung] / Aktion",
+                    "correct": false
+                },
+                {
+                    "text": "Wächterbedingung / Ereignis / Aktion",
+                    "correct": true
+                },
+                {
+                    "text": "Ereignis / Aktion / Wächterbedingung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Gemeinsamkeit haben Zustandsdiagramm und Zustandstabelle?",
+            "explanation": "Beide modellieren das Verhalten eines Systems durch Zustände und Übergänge. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Beide zeigen ausschließlich gültige Übergänge",
+                    "correct": false
+                },
+                {
+                    "text": "Beide modellieren Zustände und Übergänge eines Systems",
+                    "correct": true
+                },
+                {
+                    "text": "Beide beschreiben nur Eingaben und Ausgaben",
+                    "correct": false
+                },
+                {
+                    "text": "Beide ersetzen White-Box-Testverfahren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welchen Unterschied hat eine Zustandstabelle gegenüber einem Zustandsdiagramm?",
+            "explanation": "Eine Zustandstabelle zeigt auch ungültige Übergänge, die durch leere Zellen dargestellt werden. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Sie stellt ungültige Übergänge explizit durch leere Zellen dar",
+                    "correct": true
+                },
+                {
+                    "text": "Sie zeigt keine Wächterbedingungen",
+                    "correct": false
+                },
+                {
+                    "text": "Sie enthält nur Start- und Endzustände",
+                    "correct": false
+                },
+                {
+                    "text": "Sie zeigt ausschließlich Aktionen ohne Zustände",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird ein Testfall im Zustandsübergangstest typischerweise dargestellt?",
+            "explanation": "Ein Testfall besteht aus einer Folge von Ereignissen, die zu Zustandsänderungen und ggf. Aktionen führen. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Als eine Abfolge von Ereignissen mit Zustandsänderungen und ggf. Aktionen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur als eine einzelne Bedingung",
+                    "correct": false
+                },
+                {
+                    "text": "Als zufällige Eingabewerte ohne Zustände",
+                    "correct": false
+                },
+                {
+                    "text": "Als eine feste Aktion ohne Übergänge",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie viele Übergänge deckt ein Testfall im Zustandsübergangstest in der Regel ab?",
+            "explanation": "Ein Testfall deckt üblicherweise mehrere Übergänge zwischen Zuständen ab. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Immer nur genau einen Übergang",
+                    "correct": false
+                },
+                {
+                    "text": "Mehrere Übergänge zwischen Zuständen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die Start- und Endzustände",
+                    "correct": false
+                },
+                {
+                    "text": "Keine Zustandsänderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage trifft auf Überdeckungskriterien im Zustandsübergangstest zu?",
+            "explanation": "Es existieren viele Kriterien, von denen im Lehrplan drei behandelt werden. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Es gibt viele Überdeckungskriterien, drei davon werden im Lehrplan behandelt",
+                    "correct": false
+                },
+                {
+                    "text": "Es existieren nur drei mögliche Überdeckungskriterien",
+                    "correct": true
+                },
+                {
+                    "text": "Überdeckungskriterien sind für Zustandsübergangstests nicht relevant",
+                    "correct": false
+                },
+                {
+                    "text": "Überdeckungskriterien werden ausschließlich in White-Box-Tests verwendet",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sind die Überdeckungselemente bei der Überdeckung aller Zustände?",
+            "explanation": "Bei der Zustandsüberdeckung sind die Zustände selbst die Überdeckungselemente. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Die Übergänge",
+                    "correct": false
+                },
+                {
+                    "text": "Die Zustände",
+                    "correct": true
+                },
+                {
+                    "text": "Die Ereignisse",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktionen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann ist eine 100%ige Zustandsüberdeckung erreicht?",
+            "explanation": "Wenn die Testfälle sicherstellen, dass alle Zustände mindestens einmal ausgeführt werden. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Wenn alle Übergänge mindestens einmal durchlaufen wurden",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn jeder Zustand mindestens einmal ausgeführt wurde",
+                    "correct": true
+                },
+                {
+                    "text": "Wenn jede Wächterbedingung geprüft wurde",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn jede Aktion mindestens einmal ausgelöst wurde",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird die Zustandsüberdeckung gemessen?",
+            "explanation": "Als Anzahl der ausgeführten Zustände geteilt durch die Gesamtzahl der Zustände in Prozent. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Ausgeführte Zustände / Gesamtzahl der Zustände × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle / Zustände × 100%",
+                    "correct": true
+                },
+                {
+                    "text": "Übergänge / Zustände × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Ereignisse / Aktionen × 100%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sind die Überdeckungselemente bei der Überdeckung der gültigen Übergänge?",
+            "explanation": "Bei der 0-Switch-Überdeckung sind die gültigen Übergänge die Überdeckungselemente. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Die Zustände",
+                    "correct": false
+                },
+                {
+                    "text": "Die gültigen Übergänge",
+                    "correct": true
+                },
+                {
+                    "text": "Die Ereignisse",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktionen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann ist eine 100%ige Überdeckung der gültigen Übergänge erreicht?",
+            "explanation": "Wenn alle gültigen Übergänge mindestens einmal ausgeführt wurden. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Wenn alle Zustände mindestens einmal ausgeführt wurden",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn alle gültigen Übergänge mindestens einmal ausgeführt wurden",
+                    "correct": true
+                },
+                {
+                    "text": "Wenn jede Wächterbedingung getestet wurde",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn jede Aktion mindestens einmal ausgelöst wurde",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was unterscheidet die Überdeckung aller Übergänge von der Überdeckung nur gültiger Übergänge?",
+            "explanation": "Bei der Überdeckung aller Übergänge werden auch ungültige Übergänge getestet bzw. versucht auszuführen. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Es werden nur Start- und Endzustände betrachtet",
+                    "correct": false
+                },
+                {
+                    "text": "Es werden auch ungültige Übergänge getestet",
+                    "correct": true
+                },
+                {
+                    "text": "Es werden nur Aktionen berücksichtigt",
+                    "correct": false
+                },
+                {
+                    "text": "Es werden weniger Übergänge abgedeckt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sollte beim Testen ungültiger Übergänge nur ein einziger Testfall genutzt werden?",
+            "explanation": "Um Fehlermaskierung zu vermeiden, d. h. dass ein Fehlerzustand die Entdeckung eines anderen verhindert. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Weil ungültige Übergänge nicht relevant sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil es zu viele Testfälle erzeugen würde",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Fehlermaskierung dadurch vermieden wird",
+                    "correct": true
+                },
+                {
+                    "text": "Weil nur gültige Übergänge in der Praxis wichtig sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum gilt die Überdeckung aller Zustände als schwächer als die Überdeckung aller gültigen Übergänge?",
+            "explanation": "Weil Zustandsüberdeckung erreicht werden kann, ohne alle Übergänge auszuführen. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Weil sie keine Ereignisse berücksichtigt",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie erreicht werden kann, ohne alle Übergänge auszuführen",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie mehr Testfälle benötigt",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie nur ungültige Übergänge testet",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Überdeckungskriterium wird am häufigsten in der Praxis verwendet?",
+            "explanation": "Die Überdeckung der gültigen Übergänge (0-Switch) ist das am häufigsten verwendete Kriterium. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Die Überdeckung aller Zustände",
+                    "correct": false
+                },
+                {
+                    "text": "Die Überdeckung der gültigen Übergänge",
+                    "correct": true
+                },
+                {
+                    "text": "Die Überdeckung aller Übergänge",
+                    "correct": false
+                },
+                {
+                    "text": "Die Überdeckung aller Aktionen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Beziehung besteht zwischen vollständiger Überdeckung aller gültigen Übergänge und der Zustandsüberdeckung?",
+            "explanation": "Eine vollständige Überdeckung aller gültigen Übergänge garantiert auch eine vollständige Zustandsüberdeckung. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Zustandsüberdeckung ist stärker",
+                    "correct": false
+                },
+                {
+                    "text": "Überdeckung gültiger Übergänge garantiert Zustandsüberdeckung",
+                    "correct": true
+                },
+                {
+                    "text": "Beide sind unabhängig voneinander",
+                    "correct": false
+                },
+                {
+                    "text": "Zustandsüberdeckung garantiert Überdeckung gültiger Übergänge",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sollte die Überdeckung aller Übergänge bei sicherheitskritischer Software gefordert werden?",
+            "explanation": "Sie garantiert sowohl die vollständige Zustands- als auch die vollständige Übergangsüberdeckung und ist daher Mindestanforderung. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Weil sie die Testfallanzahl reduziert",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie nur die gültigen Übergänge prüft",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie die Zustandsüberdeckung überflüssig macht",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie sowohl Zustands- als auch Übergangsüberdeckung garantiert",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

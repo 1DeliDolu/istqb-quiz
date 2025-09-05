@@ -1,0 +1,271 @@
+{
+    "chapter": "4",
+    "subChapter": "4-2",
+    "subChapterTitle": "4.2 Black-Box-Testverfahren",
+    "questions": [
+        {
+            "question": "Was ist das Ziel der Äquivalenzklassenbildung?",
+            "explanation": "Mit Äquivalenzklassenbildung wird der Eingabebereich in Klassen eingeteilt, sodass ein Testfall je Klasse genügt. (Kap. 4.2.1, Glossar Äquivalenzklasse/ÄKB)",
+            "options": [
+                {
+                    "text": "Reduktion der Testfälle durch Repräsentanten je Klasse",
+                    "correct": true
+                },
+                {
+                    "text": "Test aller möglichen Eingaben ohne Einschränkung",
+                    "correct": false
+                },
+                {
+                    "text": "Messung der Codeüberdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Sicherstellung der Testumgebung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Klassenarten gibt es bei der Äquivalenzklassenbildung?",
+            "explanation": "Man unterscheidet gültige und ungültige Äquivalenzklassen. (Kap. 4.2.1)",
+            "options": [
+                {
+                    "text": "Gültige und ungültige Klassen",
+                    "correct": true
+                },
+                {
+                    "text": "Interne und externe Klassen",
+                    "correct": false
+                },
+                {
+                    "text": "Positive und negative Klassen",
+                    "correct": false
+                },
+                {
+                    "text": "Explorative und strukturierte Klassen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was wird bei der Grenzwertanalyse getestet?",
+            "explanation": "Die Grenzwerte geordneter Äquivalenzklassen, da dort Fehler am wahrscheinlichsten sind. (Kap. 4.2.2, Glossar Grenzwertanalyse)",
+            "options": [
+                {
+                    "text": "Die Minimal- und Maximalwerte von Klassen",
+                    "correct": true
+                },
+                {
+                    "text": "Die durchschnittlichen Eingabewerte",
+                    "correct": false
+                },
+                {
+                    "text": "Nur zufällige Werte aus jeder Klasse",
+                    "correct": false
+                },
+                {
+                    "text": "Alle möglichen Eingaben bis zur Erschöpfung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Unterschied zwischen 2-Wert- und 3-Wert-Grenzwertanalyse?",
+            "explanation": "2-Wert prüft Grenzwert + Nachbar, 3-Wert prüft zusätzlich den anderen Nachbarn. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "3-Wert testet zusätzlich beide Nachbarwerte des Grenzwerts",
+                    "correct": true
+                },
+                {
+                    "text": "2-Wert prüft nur gültige Werte, 3-Wert auch ungültige",
+                    "correct": false
+                },
+                {
+                    "text": "3-Wert wird nur in explorativen Tests angewandt",
+                    "correct": false
+                },
+                {
+                    "text": "2-Wert prüft nur nicht-funktionale Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wofür eignen sich Entscheidungstabellen besonders?",
+            "explanation": "Sie sind hilfreich bei der Darstellung und dem Testen komplexer Geschäftsregeln mit vielen Bedingungen. (Kap. 4.2.3, Glossar Entscheidungstabellentest)",
+            "options": [
+                {
+                    "text": "Zur Erfassung und Prüfung komplexer Geschäftsregeln",
+                    "correct": true
+                },
+                {
+                    "text": "Zur Messung von Zweigüberdeckung im Code",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Testdaten-Generierung durch Zufall",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Bewertung der Testabschlussberichte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie werden Bedingungen in einer Entscheidungstabelle typischerweise dargestellt?",
+            "explanation": "Meist als boolesche Werte: J (wahr), N (falsch), - (irrelevant). (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Als J (wahr), N (falsch), - (irrelevant)",
+                    "correct": true
+                },
+                {
+                    "text": "Nur als Zahlenwerte zwischen 0 und 9",
+                    "correct": false
+                },
+                {
+                    "text": "Als Farben (rot/grün)",
+                    "correct": false
+                },
+                {
+                    "text": "Nur als UML-Symbole",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Überdeckung wird beim Entscheidungstabellentest angestrebt?",
+            "explanation": "100% bedeutet, dass jede ausführbare Spalte (Entscheidungsregel) mindestens einmal getestet wird. (Kap. 4.2.3)",
+            "options": [
+                {
+                    "text": "Alle Spalten mit ausführbaren Regeln müssen getestet werden",
+                    "correct": true
+                },
+                {
+                    "text": "Nur eine zufällige Auswahl der Spalten",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die erste und letzte Spalte",
+                    "correct": false
+                },
+                {
+                    "text": "Spalten mit irrelevanten Bedingungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was modelliert ein Zustandsdiagramm?",
+            "explanation": "Es zeigt mögliche Zustände eines Systems und die Übergänge dazwischen. (Kap. 4.2.4, Glossar Zustandsübergangstest)",
+            "options": [
+                {
+                    "text": "Die möglichen Zustände und gültigen Übergänge eines Systems",
+                    "correct": true
+                },
+                {
+                    "text": "Die Hierarchie von Testfällen im Testplan",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Benutzeroberfläche",
+                    "correct": false
+                },
+                {
+                    "text": "Die Teamrollen im Testmanagement",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was zeigt eine Zustandstabelle zusätzlich im Vergleich zum Zustandsdiagramm?",
+            "explanation": "Sie enthält auch ungültige Übergänge, die durch leere Zellen dargestellt werden. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Ungültige Übergänge durch leere Zellen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die funktionalen Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Benutzerakzeptanz",
+                    "correct": false
+                },
+                {
+                    "text": "Die Codezeilen, die ausgeführt werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bedeutet Überdeckung aller Zustände beim Zustandsübergangstest?",
+            "explanation": "Jeder Zustand des Modells muss mindestens einmal ausgeführt werden. (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Jeder Zustand wird mindestens einmal durchlaufen",
+                    "correct": true
+                },
+                {
+                    "text": "Jeder mögliche Eingabewert wird getestet",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Start- und Endzustände werden betrachtet",
+                    "correct": false
+                },
+                {
+                    "text": "Jede Entscheidung im Code wird getestet",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Überdeckungskriterien gelten beim Zustandsübergangstest?",
+            "explanation": "Es gibt u.a. Zustandsüberdeckung, Übergangsüberdeckung und Überdeckung aller Übergänge (inkl. ungültiger). (Kap. 4.2.4)",
+            "options": [
+                {
+                    "text": "Zustands-, Übergangs- und alle Übergänge (inkl. ungültige)",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Anweisungs- und Zweigüberdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Nur funktionale und nicht-funktionale Überdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Nur 2-Wert- und 3-Wert-Überdeckung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testverfahren gehören zu den Black-Box-Verfahren?",
+            "explanation": "Die vier im Lehrplan sind: Äquivalenzklassenbildung, Grenzwertanalyse, Entscheidungstabellentest, Zustandsübergangstest. (Kap. 4.2)",
+            "options": [
+                {
+                    "text": "Äquivalenzklassenbildung, Grenzwertanalyse, Entscheidungstabellentest, Zustandsübergangstest",
+                    "correct": true
+                },
+                {
+                    "text": "Explorativer Test, Checklisten-Test, Fehlerangriff, Use-Case-Test",
+                    "correct": false
+                },
+                {
+                    "text": "Anweisungsüberdeckung, Zweigüberdeckung, Pfadüberdeckung, Mutationsanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Unit-Test, Integrationstest, Systemtest, Abnahmetest",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

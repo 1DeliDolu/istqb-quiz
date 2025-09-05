@@ -1,0 +1,469 @@
+{
+    "chapter": "udemy_3",
+    "subChapter": "udemy_3_2",
+    "subChapterTitle": "3.2 Quiz 5 - Teststufen",
+    "questions": [
+        {
+            "question": "Was ist eine zentrale Aktivität während der Testimplementierung?",
+            "explanation": "Korrekt: Konfiguration der Testumgebung ist Teil der Testrealisierung/-implementierung (Vorbereitung der Testumgebung). Quelle: 📘 ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschn. 1.4.1 (Testrealisierung).",
+            "options": [
+                {
+                    "text": "Anforderungsanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Konfiguration der Testumgebung",
+                    "correct": true
+                },
+                {
+                    "text": "Benutzerschulung",
+                    "correct": false
+                },
+                {
+                    "text": "Priorisierung von Fehlern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Hauptrisiko bei zu spätem Testbeginn?",
+            "explanation": "Korrekt: Später Testbeginn führt zu höheren Kosten für die Fehlerbehebung. Quelle: 📘 Lehrplan, Abschn. 1.3 (Grundsatz 3: Frühes Testen spart Zeit und Kosten).",
+            "options": [
+                {
+                    "text": "Bessere Priorisierung von Fehlern",
+                    "correct": false
+                },
+                {
+                    "text": "Früheres Feedback von Nutzern",
+                    "correct": false
+                },
+                {
+                    "text": "Höhere Kosten zur Fehlerbehebung",
+                    "correct": true
+                },
+                {
+                    "text": "Bessere Automatisierungsmöglichkeiten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle erstellt hauptsächlich Testfälle für den Systemtest?",
+            "explanation": "Korrekt: Systemtestfälle werden typischerweise von Testanalysten entworfen. Quelle: 📘 Lehrplan, Kap. 5.2 (Rollen im Testprozess).",
+            "options": [
+                {
+                    "text": "Business Analyst",
+                    "correct": false
+                },
+                {
+                    "text": "Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyst",
+                    "correct": true
+                },
+                {
+                    "text": "Scrum Master",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Lebenszyklusmodell unterstützt keine häufigen Releases?",
+            "explanation": "Korrekt: Wasserfall liefert typischerweise erst am Ende ein Release (sequenziell). Quelle: 📘 Lehrplan, Abschn. 2.1.1 (Sequenzielle Modelle).",
+            "options": [
+                {
+                    "text": "Wasserfall",
+                    "correct": true
+                },
+                {
+                    "text": "Agile",
+                    "correct": false
+                },
+                {
+                    "text": "Inkrementell",
+                    "correct": false
+                },
+                {
+                    "text": "DevOps",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wer genehmigt die finalen Abnahmetests?",
+            "explanation": "Korrekt: Kunde oder Endbenutzer nimmt ab. Quelle: 📘 Lehrplan, Abschn. 2.2.4 (Abnahmetest).",
+            "options": [
+                {
+                    "text": "Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Testleiter",
+                    "correct": false
+                },
+                {
+                    "text": "Kunde oder Endbenutzer",
+                    "correct": true
+                },
+                {
+                    "text": "Scrum Master",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Teststufe basiert am stärksten auf Benutzereingaben?",
+            "explanation": "Korrekt: Abnahmetest prüft gegen Benutzer- und Geschäftsanforderungen. Quelle: 📘 Lehrplan, Abschn. 2.2.4.",
+            "options": [
+                {
+                    "text": "Komponententest",
+                    "correct": false
+                },
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstest",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Technik wird typischerweise im Systemtest verwendet?",
+            "explanation": "Korrekt: Äquivalenzklassenbildung ist eine Black-Box-Technik, häufig im Systemtest. Quellen: 📘 Lehrplan, Abschn. 4.2.2.1; 📗 Standardglossar, Eintrag „Äquivalenzklassenbildung“.",
+            "options": [
+                {
+                    "text": "Anweisungsüberdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Code-Walkthrough",
+                    "correct": false
+                },
+                {
+                    "text": "Äquivalenzklassenbildung",
+                    "correct": true
+                },
+                {
+                    "text": "Peer Review",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was stellt in Agile sicher, dass alle Stories getestet werden?",
+            "explanation": "Korrekt: Abnahmekriterien ‘Definition of Done’ legen fest, wann eine Story inkl. Tests abgeschlossen ist. Quellen: 📘 Lehrplan, Abschn. 2.3.1; 📗 Standardglossar, Eintrag „Akzeptanzkriterien/Abnahmekriterien“.",
+            "options": [
+                {
+                    "text": "Code-Reviews",
+                    "correct": false
+                },
+                {
+                    "text": "Sprint-Planung",
+                    "correct": false
+                },
+                {
+                    "text": "Test-Charta",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmekriterien",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welches SDLC-Modell fördert intensive Nutzerbeteiligung während der Entwicklung?",
+            "explanation": "Korrekt: Agile fördert kontinuierliches Nutzerfeedback und Zusammenarbeit. Quelle: 📘 Lehrplan, Abschn. 2.1.3.",
+            "options": [
+                {
+                    "text": "Wasserfall",
+                    "correct": false
+                },
+                {
+                    "text": "V-Modell",
+                    "correct": false
+                },
+                {
+                    "text": "Agile",
+                    "correct": true
+                },
+                {
+                    "text": "Spiralmodell",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Teststufe wird typischerweise als erste im SDLC durchgeführt?",
+            "explanation": "Korrekt: Komponententest (Unit Test) ist die erste Teststufe. Quelle: 📘 Lehrplan, Abschn. 2.2.1.",
+            "options": [
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstest",
+                    "correct": false
+                },
+                {
+                    "text": "Komponententest",
+                    "correct": true
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wer führt in der Regel den Komponententest durch?",
+            "explanation": "Korrekt: Entwickler testen ihre Module mit Unit-Tests. Quelle: 📘 Lehrplan, Abschn. 2.2.1.",
+            "options": [
+                {
+                    "text": "Product Owner",
+                    "correct": false
+                },
+                {
+                    "text": "Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Entwickler",
+                    "correct": true
+                },
+                {
+                    "text": "Scrum Master",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Dokument enthält Informationen zu Testzielen und Testumgebung?",
+            "explanation": "Korrekt: Der Testplan beschreibt Ziele, Umfang, Ressourcen und Umgebung. Quellen: 📘 Lehrplan, Abschn. 5.2.3 (Testplanung); 📗 Standardglossar, Eintrag „Testplan“.",
+            "options": [
+                {
+                    "text": "Releasenote",
+                    "correct": false
+                },
+                {
+                    "text": "Testplan",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Traceability-Matrix",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist typisch für iteratives Entwickeln?",
+            "explanation": "Korrekt: Fortschreitende Verfeinerung über mehrere Zyklen. Quelle: 📘 Lehrplan, Abschn. 2.1.2 (Iterative Modelle).",
+            "options": [
+                {
+                    "text": "Spätes Feedback",
+                    "correct": false
+                },
+                {
+                    "text": "Sequentielle Teststufen",
+                    "correct": false
+                },
+                {
+                    "text": "Fortschreitende Verfeinerung",
+                    "correct": true
+                },
+                {
+                    "text": "Einmalige Planung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Merkmal des V-Modells?",
+            "explanation": "Korrekt: Test- und Entwicklungsphasen werden parallel geplant (V-Abbildung). Quelle: 📘 Lehrplan, Abschn. 2.1.1 (V-Modell).",
+            "options": [
+                {
+                    "text": "Kein Support für frühes Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Testen und Entwicklung laufen parallel",
+                    "correct": true
+                },
+                {
+                    "text": "Feedback erfolgt erst nach dem Release",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungen ändern sich kontinuierlich",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was unterscheidet den Systemtest vom Integrationstest?",
+            "explanation": "Korrekt: Systemtest validiert das vollständig integrierte Gesamtsystem gegen die Spezifikation. Quellen: 📘 Lehrplan, Abschn. 2.2.3 (Systemtest) vs. 2.2.2 (Integrationstest).",
+            "options": [
+                {
+                    "text": "Systemtest prüft einzelne Komponenten",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstest prüft Benutzerworkflows",
+                    "correct": false
+                },
+                {
+                    "text": "Systemtest validiert das gesamte System",
+                    "correct": true
+                },
+                {
+                    "text": "Integrationstest basiert auf funktionalen Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Teststufe konzentriert sich am meisten auf die Überprüfung von Workflows?",
+            "explanation": "Korrekt: Abnahmetest prüft End-to-End-Workflows gegen Geschäftsanforderungen. Quelle: 📘 Lehrplan, Abschn. 2.2.4.",
+            "options": [
+                {
+                    "text": "Unittest",
+                    "correct": false
+                },
+                {
+                    "text": "Struktureller Test",
+                    "correct": false
+                },
+                {
+                    "text": "Komponententest",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Testart basiert auf Geschäftsprozessen?",
+            "explanation": "Korrekt: Abnahmetest basiert auf Benutzer- und Geschäftsanforderungen/-prozessen. Quelle: 📘 Lehrplan, Abschn. 2.2.4.",
+            "options": [
+                {
+                    "text": "Integrationstest",
+                    "correct": false
+                },
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": true
+                },
+                {
+                    "text": "Struktureller Test",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Artefakt dient beim Integrationstest häufig als Testgrundlage?",
+            "explanation": "Korrekt: Schnittstellenspezifikationen beschreiben Interaktionen zwischen Modulen/Systemen und sind zentrale Testbasis für Integrationstests. Quelle: 📘 Lehrplan, Abschn. 2.2.2.",
+            "options": [
+                {
+                    "text": "User Stories",
+                    "correct": false
+                },
+                {
+                    "text": "Schnittstellenspezifikationen",
+                    "correct": true
+                },
+                {
+                    "text": "Deployment Guide",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerberichte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Modell unterstützt am besten sich ändernde Anforderungen?",
+            "explanation": "Korrekt: Agile ist auf wechselnde Anforderungen ausgelegt (kurze Iterationen, regelmäßiges Re-Priorisieren). Quelle: 📘 Lehrplan, Abschn. 2.1.3.",
+            "options": [
+                {
+                    "text": "Wasserfall",
+                    "correct": false
+                },
+                {
+                    "text": "V-Modell",
+                    "correct": false
+                },
+                {
+                    "text": "Agile",
+                    "correct": true
+                },
+                {
+                    "text": "Spiralmodell",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Ziel des Systemtests?",
+            "explanation": "Korrekt: Bewertung des vollständig integrierten Gesamtsystems auf Übereinstimmung mit funktionalen und nicht-funktionalen Anforderungen. Quelle: 📘 Lehrplan, Abschn. 2.2.3.",
+            "options": [
+                {
+                    "text": "Die Logik des Codes testen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Integration der Module testen",
+                    "correct": false
+                },
+                {
+                    "text": "Das vollständige System testen",
+                    "correct": true
+                },
+                {
+                    "text": "Die Rückverfolgbarkeit der Anforderungen testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen beschreibt ein erreichbares Testziel?",
+            "explanation": "Korrekt: Testen kann Risiken senken und Vertrauen in die Qualität aufbauen; es kann jedoch nicht die Abwesenheit von Fehlern beweisen. Quellen: 📘 Lehrplan, Abschn. 1.1.1 (typische Testziele) und 1.3 (Grundsatz 1); 📗 Standardglossar, Einträge „Testziel“, „Risiko“.",
+            "options": [
+                {
+                    "text": "Es lässt sich nachweisen, dass das zu prüfende System keine Fehlerzustände mehr hat.",
+                    "correct": false
+                },
+                {
+                    "text": "Es lässt sich nachweisen, dass es nach der produktiven Inbetriebnahme des Systems keine Fehlerwirkungen geben wird.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Risikostufe des Testobjekts ist verringert und Vertrauen in das Qualitätsniveau ist aufgebaut.",
+                    "correct": true
+                },
+                {
+                    "text": "Durch eine Überprüfung lässt sich feststellen, dass alle Kombinationen von Eingabewerten getestet wurden.",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

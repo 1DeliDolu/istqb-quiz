@@ -1,0 +1,337 @@
+{
+    "chapter": "5",
+    "subChapter": "5-1-6",
+    "subChapterTitle": "5.1.6. Testpyramide",
+    "questions": [
+        {
+            "question": "Was veranschaulicht das Modell der Testpyramide?",
+            "explanation": "Die Testpyramide zeigt, dass verschiedene Tests eine unterschiedliche Granularität haben und unterstützt die Verteilung des Testaufwands. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Die unterschiedlichen Granularitäten und Ebenen von Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Die Reihenfolge aller Releasezyklen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Abhängigkeiten zwischen Stakeholdern",
+                    "correct": false
+                },
+                {
+                    "text": "Die Verteilung der Projektkosten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel unterstützt die Testpyramide im Team?",
+            "explanation": "Sie unterstützt das Team bei der Testautomatisierung und bei der Verteilung des Testaufwands. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Sie ersetzt die gesamte Projektplanung",
+                    "correct": false
+                },
+                {
+                    "text": "Sie unterstützt Testautomatisierung und Aufwandsverteilung",
+                    "correct": true
+                },
+                {
+                    "text": "Sie dokumentiert alle Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Sie definiert die Architekturentscheidungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie verändert sich die Granularität von Tests entlang der Testpyramide?",
+            "explanation": "Je höher die Ebene, desto geringer die Granularität der Tests. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Die Granularität nimmt nach oben hin ab",
+                    "correct": true
+                },
+                {
+                    "text": "Die Granularität bleibt gleich",
+                    "correct": false
+                },
+                {
+                    "text": "Die Granularität nimmt nach oben hin zu",
+                    "correct": false
+                },
+                {
+                    "text": "Die Granularität spielt keine Rolle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie verändert sich die Isolation von Tests in der Testpyramide?",
+            "explanation": "Je höher die Ebene, desto niedriger ist die Testisolation. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Sie nimmt in höheren Ebenen ab",
+                    "correct": true
+                },
+                {
+                    "text": "Sie nimmt in höheren Ebenen zu",
+                    "correct": false
+                },
+                {
+                    "text": "Sie bleibt auf allen Ebenen gleich",
+                    "correct": false
+                },
+                {
+                    "text": "Sie wird nur durch Ressourcen bestimmt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie verändert sich die Testdurchführungszeit in der Testpyramide?",
+            "explanation": "Je höher die Ebene, desto länger ist die Testdurchführungszeit. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Sie wird in höheren Ebenen kürzer",
+                    "correct": false
+                },
+                {
+                    "text": "Sie wird in höheren Ebenen länger",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ist unabhängig von der Ebene",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ist auf allen Ebenen identisch",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Tests gehören typischerweise zur untersten Schicht der Testpyramide?",
+            "explanation": "Die unterste Schicht umfasst kleine, isolierte und schnelle Tests, z. B. Unit- oder Komponententests. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Unit-Tests (Komponententests)",
+                    "correct": true
+                },
+                {
+                    "text": "End-to-End-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Systemtests",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Eigenschaften haben Tests der untersten Pyramidenebene?",
+            "explanation": "Sie sind klein, isoliert, schnell und prüfen einen kleinen Teil der Funktionalität. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Sie sind groß, langsam und abhängig",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind klein, isoliert und schnell",
+                    "correct": true
+                },
+                {
+                    "text": "Sie sind komplex und schwer automatisierbar",
+                    "correct": false
+                },
+                {
+                    "text": "Sie prüfen das Gesamtsystem",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum gibt es viele Tests in der unteren Schicht der Testpyramide?",
+            "explanation": "Weil kleine Tests nur einen kleinen Teil der Funktionalität prüfen, sodass viele notwendig sind, um eine angemessene Überdeckung zu erreichen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Weil kleine Tests selten automatisiert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil kleine Tests viele Ressourcen verbrauchen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil kleine Tests nur kleine Funktionsteile prüfen",
+                    "correct": true
+                },
+                {
+                    "text": "Weil kleine Tests immer länger dauern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Tests stehen typischerweise an der Spitze der Testpyramide?",
+            "explanation": "Die oberste Schicht repräsentiert komplexe High-Level-End-to-End-Tests. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Unit-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Service-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "End-to-End-Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Komponententests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Eigenschaft haben High-Level-Tests in der Testpyramide?",
+            "explanation": "High-Level-Tests sind komplex, langsamer und prüfen große Teile der Funktionalität. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Sie sind schneller als Unit-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind auf kleine Funktionsteile beschränkt",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind komplex und langsamer",
+                    "correct": true
+                },
+                {
+                    "text": "Sie sind immer automatisiert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum werden in der obersten Ebene der Testpyramide nur wenige Tests benötigt?",
+            "explanation": "Weil sie große Teile der Funktionalität prüfen und daher schon mit wenigen Tests eine angemessene Überdeckung erreicht wird. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Weil sie zu teuer sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie die kleinste Granularität haben",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie große Funktionalitätsbereiche abdecken",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie keine Abhängigkeiten haben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie viele Schichten definiert das ursprüngliche Testpyramiden-Modell nach Cohn?",
+            "explanation": "Das ursprüngliche Modell definiert drei Schichten: Unit-Tests, Service-Tests und UI-Tests. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Zwei",
+                    "correct": false
+                },
+                {
+                    "text": "Drei",
+                    "correct": true
+                },
+                {
+                    "text": "Vier",
+                    "correct": false
+                },
+                {
+                    "text": "Fünf",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Schichten nennt das Modell nach Cohn (2009)?",
+            "explanation": "Cohns Modell unterscheidet Unit-Tests, Service-Tests und UI-Tests. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Unit-Tests, Service-Tests, UI-Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Komponententests, Integrationstests, Systemtests",
+                    "correct": false
+                },
+                {
+                    "text": "UI-Tests, Abnahmetests, Performanztests",
+                    "correct": false
+                },
+                {
+                    "text": "Unit-Tests, API-Tests, Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Schichten nennt ein anderes verbreitetes Modell der Testpyramide?",
+            "explanation": "Ein anderes Modell definiert Unittests (Komponententests), Integrationstests (Komponentenintegrationstests) und End-to-End-Tests. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Komponententests, Integrationstests, End-to-End-Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Unit-Tests, UI-Tests, Regressionstests",
+                    "correct": false
+                },
+                {
+                    "text": "Systemtests, Abnahmetests, Performanztests",
+                    "correct": false
+                },
+                {
+                    "text": "Komponententests, API-Tests, Lasttests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum eignet sich das Testpyramiden-Modell für die Testautomatisierung?",
+            "explanation": "Es unterstützt die sinnvolle Verteilung von automatisierten Tests auf verschiedenen Ebenen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.6)",
+            "options": [
+                {
+                    "text": "Weil es keine manuelle Tests erlaubt",
+                    "correct": false
+                },
+                {
+                    "text": "Weil es alle Tests in einer Ebene konzentriert",
+                    "correct": false
+                },
+                {
+                    "text": "Weil es eine ausgewogene Automatisierung auf verschiedenen Ebenen unterstützt",
+                    "correct": true
+                },
+                {
+                    "text": "Weil es nur UI-Tests vorsieht",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

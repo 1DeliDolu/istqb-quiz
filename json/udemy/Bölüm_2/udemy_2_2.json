@@ -1,0 +1,513 @@
+{
+    "chapter": "udemy_2",
+    "subChapter": "udemy_2_2",
+    "subChapterTitle": "2.2 Quiz 2 - Grundlagen",
+    "questions": [
+        {
+            "question": "Was ist das Hauptziel des Softwaretestens?",
+            "explanation": "Das Hauptziel des Testens ist die Bewertung der Qualität und die Reduzierung von Risiken. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.1.1)",
+            "options": [
+                {
+                    "text": "Die Schulungszeit für Benutzer reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Sicherstellen, dass die Software auf allen Geräten läuft",
+                    "correct": false
+                },
+                {
+                    "text": "Die Qualität der Software bewerten und Risiken reduzieren",
+                    "correct": true
+                },
+                {
+                    "text": "Die Entwicklungsgeschwindigkeit erhöhen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Grundsatz besagt, dass Testen nicht das Fehlen von Fehlern beweisen kann?",
+            "explanation": "Testen kann zeigen, dass Fehler vorhanden sind, aber nicht, dass keine existieren. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.3.1)",
+            "options": [
+                {
+                    "text": "Irrtum der Fehlerfreiheit",
+                    "correct": false
+                },
+                {
+                    "text": "Testen zeigt das Vorhandensein von Fehlern",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerhäufung",
+                    "correct": false
+                },
+                {
+                    "text": "Vollständiges Testen ist möglich",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Ziel der Validierung?",
+            "explanation": "Die Validierung prüft, ob das Produkt den Benutzeranforderungen entspricht. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.1.2)",
+            "options": [
+                {
+                    "text": "Die Codequalität bewerten",
+                    "correct": false
+                },
+                {
+                    "text": "Die Systemleistung überprüfen",
+                    "correct": false
+                },
+                {
+                    "text": "Sicherstellen, dass das System den Benutzeranforderungen entspricht",
+                    "correct": true
+                },
+                {
+                    "text": "Die Datenkorrektheit verifizieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches ist KEIN typisches Ziel des Testens?",
+            "explanation": "Testen hat viele Ziele wie Fehler finden oder Informationen für Stakeholder bereitstellen. Die Optimierung des UI-Designs gehört jedoch nicht dazu. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.1.1)",
+            "options": [
+                {
+                    "text": "Fehler finden",
+                    "correct": false
+                },
+                {
+                    "text": "Informationen für Stakeholder bereitstellen",
+                    "correct": false
+                },
+                {
+                    "text": "Gesetzliche Anforderungen sicherstellen",
+                    "correct": false
+                },
+                {
+                    "text": "Optimierung des UI-Designs",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Tätigkeit gehört zur Testimplementierung?",
+            "explanation": "Zur Testimplementierung gehört die Erstellung von Testdaten, Skripten und Testsuiten. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.4.3)",
+            "options": [
+                {
+                    "text": "Testfälle entwerfen",
+                    "correct": false
+                },
+                {
+                    "text": "Testdaten und Skripte erstellen",
+                    "correct": true
+                },
+                {
+                    "text": "Benutzerdokumentation schreiben",
+                    "correct": false
+                },
+                {
+                    "text": "Tests ausführen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Begriff bezeichnet eine Abweichung vom erwarteten Ergebnis?",
+            "explanation": "Eine beobachtbare Abweichung vom erwarteten Verhalten wird als Fehler (Failure) bezeichnet. (Standardglossar, Fehlerwirkung/Failure)",
+            "options": [
+                {
+                    "text": "Defekt",
+                    "correct": false
+                },
+                {
+                    "text": "Irrtum (Error)",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler (Failure)",
+                    "correct": true
+                },
+                {
+                    "text": "Ursachenanalyse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was unterscheidet Testen vom Debuggen?",
+            "explanation": "Testen deckt Fehler auf, Debuggen sucht die Ursache und behebt sie. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.1.1)",
+            "options": [
+                {
+                    "text": "Testen ändert den Code",
+                    "correct": false
+                },
+                {
+                    "text": "Testen erkennt Fehler, Debugging behebt sie",
+                    "correct": true
+                },
+                {
+                    "text": "Es gibt keinen Unterschied",
+                    "correct": false
+                },
+                {
+                    "text": "Testen findet die Ursachen von Fehlern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Grundsatz rät davon ab, alles testen zu wollen?",
+            "explanation": "Vollständiges Testen ist unmöglich, daher sind Priorisierung und Risikoorientierung nötig. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.3.2)",
+            "options": [
+                {
+                    "text": "Frühes Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ist kontextabhängig",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerhäufung",
+                    "correct": false
+                },
+                {
+                    "text": "Vollständiges Testen ist unmöglich",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Auf welcher Teststufe liegt der Fokus auf der Interaktion zwischen Komponenten?",
+            "explanation": "Der Integrationstest prüft Schnittstellen und Kommunikation zwischen Komponenten. (Standardglossar, Integrationstest)",
+            "options": [
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstest",
+                    "correct": true
+                },
+                {
+                    "text": "Komponententest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor beeinflusst den Grad der Testunabhängigkeit?",
+            "explanation": "Je kritischer ein System, desto höher die notwendige Unabhängigkeit der Tester. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.5.1)",
+            "options": [
+                {
+                    "text": "Verwendete Programmiersprache",
+                    "correct": false
+                },
+                {
+                    "text": "Teamgröße",
+                    "correct": false
+                },
+                {
+                    "text": "Kritikalität des Systems",
+                    "correct": true
+                },
+                {
+                    "text": "Gehälter der Entwickler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testart bewertet Benutzbarkeit, Wartbarkeit und Leistung?",
+            "explanation": "Nicht-funktionale Tests prüfen Qualitätsmerkmale wie Usability, Performance und Wartbarkeit. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.2.2)",
+            "options": [
+                {
+                    "text": "Funktionaler Test",
+                    "correct": false
+                },
+                {
+                    "text": "Struktureller Test",
+                    "correct": false
+                },
+                {
+                    "text": "Nicht-funktionaler Test",
+                    "correct": true
+                },
+                {
+                    "text": "Regressionstest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Dokument beschreibt Testobjekte, zu testende Merkmale und Testaktivitäten?",
+            "explanation": "Der Testplan beschreibt Testobjekte, Merkmale, Methoden und Verantwortlichkeiten. (Standardglossar, Testplan)",
+            "options": [
+                {
+                    "text": "Testsummierungsbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Testplan",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Testspezifikation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Technik gehört zum dynamischen Testen?",
+            "explanation": "Dynamische Tests erfordern die Programmausführung. Die Äquivalenzklassenbildung ist eine Black-Box-Technik dafür. (Standardglossar, Äquivalenzklassenbildung)",
+            "options": [
+                {
+                    "text": "Walkthrough",
+                    "correct": false
+                },
+                {
+                    "text": "Code-Review",
+                    "correct": false
+                },
+                {
+                    "text": "Äquivalenzklassenbildung",
+                    "correct": true
+                },
+                {
+                    "text": "Inspektion",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Begriff beschreibt das erneute Ausführen von Tests nach einer Fehlerbehebung?",
+            "explanation": "Bestätigungstests (Confirmation Testing) prüfen, ob ein bestimmter Fehler tatsächlich behoben wurde. (Standardglossar, Fehlernachtest/Bestätigungstest)",
+            "options": [
+                {
+                    "text": "Regressionstest",
+                    "correct": false
+                },
+                {
+                    "text": "Wiederholungstest (Retesting)",
+                    "correct": false
+                },
+                {
+                    "text": "Bestätigungstest (Confirmation Testing)",
+                    "correct": true
+                },
+                {
+                    "text": "Smoke-Test",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe hat ein Tester typischerweise bei der Testplanung?",
+            "explanation": "Tester wirken bei der Überprüfung und Erstellung von Testplänen mit. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.4.2)",
+            "options": [
+                {
+                    "text": "Fehlern Schweregrade zuweisen",
+                    "correct": false
+                },
+                {
+                    "text": "Code für neue Funktionen schreiben",
+                    "correct": false
+                },
+                {
+                    "text": "Testpläne überprüfen und mitgestalten",
+                    "correct": true
+                },
+                {
+                    "text": "Anwendungsleistung optimieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil ergibt sich aus frühem Testen?",
+            "explanation": "Frühes Testen senkt die Kosten, da Fehler in frühen Phasen günstiger zu beheben sind. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.3.3)",
+            "options": [
+                {
+                    "text": "Verbesserte Systemsicherheit",
+                    "correct": false
+                },
+                {
+                    "text": "Schnellere Codeausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Geringere Kosten zur Fehlerbehebung",
+                    "correct": true
+                },
+                {
+                    "text": "Einfachere Installation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Hauptfokus beim Wartungstest (Maintenance Testing)?",
+            "explanation": "Wartungstests prüfen Änderungen oder Korrekturen und stellen sicher, dass keine neuen Fehler entstehen. (Standardglossar, Wartungstest)",
+            "options": [
+                {
+                    "text": "Verifikation der ursprünglichen Entwurfsanforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Test bei Systemaktualisierungen oder -korrekturen",
+                    "correct": true
+                },
+                {
+                    "text": "Einhaltung von Codierstandards überprüfen",
+                    "correct": false
+                },
+                {
+                    "text": "Konsistenz des Benutzerinterfaces validieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wer führt typischerweise einen Abnahmetest durch?",
+            "explanation": "Abnahmetests werden meist von Endbenutzern oder Kunden durchgeführt. (Standardglossar, Abnahmetest)",
+            "options": [
+                {
+                    "text": "Testmanager",
+                    "correct": false
+                },
+                {
+                    "text": "Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Endbenutzer oder Kunden",
+                    "correct": true
+                },
+                {
+                    "text": "Projektleiter",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testtechnik basiert auf der internen Struktur der Software?",
+            "explanation": "White-Box-Tests nutzen die Analyse der internen Struktur oder des Codes. (Standardglossar, White-Box-Test)",
+            "options": [
+                {
+                    "text": "Black-Box-Testing",
+                    "correct": false
+                },
+                {
+                    "text": "White-Box-Testing",
+                    "correct": true
+                },
+                {
+                    "text": "Exploratives Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was enthält ein Testfall?",
+            "explanation": "Ein Testfall enthält Eingaben, erwartete Ergebnisse sowie Vor- und Nachbedingungen. (Standardglossar, Testfall)",
+            "options": [
+                {
+                    "text": "Eine Gruppe von Testaktivitäten",
+                    "correct": false
+                },
+                {
+                    "text": "Die Reihenfolge der Testausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Eingaben, erwartete Ergebnisse und Bedingungen",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerverfolgungsmetriken",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil des unabhängigen Testens?",
+            "explanation": "Unabhängige Tester bewerten die Software objektiver und unvoreingenommener. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.5.1)",
+            "options": [
+                {
+                    "text": "Schnellere Testausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Unvoreingenommene Bewertung des Systems",
+                    "correct": true
+                },
+                {
+                    "text": "Besseres Verständnis des Codes",
+                    "correct": false
+                },
+                {
+                    "text": "Geringerer Dokumentationsaufwand",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In welchem Entwicklungsmodell findet Testen typischerweise nach dem Codieren statt?",
+            "explanation": "Im Wasserfallmodell erfolgt das Testen meist erst nach der vollständigen Codierung. (Standardglossar, sequenzielles Entwicklungsmodell)",
+            "options": [
+                {
+                    "text": "Agiles Modell",
+                    "correct": false
+                },
+                {
+                    "text": "V-Modell",
+                    "correct": false
+                },
+                {
+                    "text": "Wasserfallmodell",
+                    "correct": true
+                },
+                {
+                    "text": "Inkrementelles Modell",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Zweck von Abnahmekriterien im Testplan?",
+            "explanation": "Abnahmekriterien legen fest, wann eine Testaktivität oder ein Testabschluss erreicht ist. (Standardglossar, Abnahmekriterien)",
+            "options": [
+                {
+                    "text": "Testaktivitäten starten",
+                    "correct": false
+                },
+                {
+                    "text": "Entscheiden, wann das Testen beendet werden kann",
+                    "correct": true
+                },
+                {
+                    "text": "Testeigaben definieren",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungen validieren",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

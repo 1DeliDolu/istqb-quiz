@@ -1,0 +1,271 @@
+{
+    "chapter": "5",
+    "subChapter": "5-1-4",
+    "subChapterTitle": "5.1.4. Schätzverfahren",
+    "questions": [
+        {
+            "question": "Was ist das Ziel einer Testaufwandschätzung?",
+            "explanation": "Bei der Schätzung geht es um die Vorhersage des Umfangs der testbezogenen Arbeit, die erforderlich ist, um die Testziele zu erreichen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "Vorhersage des Umfangs der testbezogenen Arbeit",
+                    "correct": true
+                },
+                {
+                    "text": "Erstellung der vollständigen Systemarchitektur",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahme des Projektbudgets",
+                    "correct": false
+                },
+                {
+                    "text": "Planung der gesamten Releasezyklen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist es wichtig, Stakeholdern die Unsicherheit von Schätzungen zu verdeutlichen?",
+            "explanation": "Jede Schätzung beruht auf Annahmen und ist mit Schätzfehlern behaftet. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "Weil Schätzungen immer exakte Ergebnisse liefern",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Schätzungen stets Annahmen enthalten und fehlerbehaftet sind",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Schätzungen nur für Hardware relevant sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Schätzungen in agilen Projekten nicht nötig sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind Schätzungen für kleine Aufgaben in der Regel genauer?",
+            "explanation": "Je kleiner die Aufgabe, desto geringer die Unsicherheit, daher sind die Schätzungen präziser. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "Weil kleine Aufgaben leichter zu überschätzen sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil kleine Aufgaben einfacher und präziser zu bewerten sind",
+                    "correct": true
+                },
+                {
+                    "text": "Weil kleine Aufgaben keine Ressourcen benötigen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil kleine Aufgaben immer automatisiert werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie kann die Genauigkeit der Schätzung großer Aufgaben verbessert werden?",
+            "explanation": "Große Aufgaben können in kleinere Teilaufgaben zerlegt werden, die jeweils geschätzt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "Durch Ignorieren aller Risiken",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Zerlegung in kleinere Aufgaben",
+                    "correct": true
+                },
+                {
+                    "text": "Durch Schätzung ohne Annahmen",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Verwendung fester Standardwerte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie funktioniert die Schätzung basierend auf Verhältniszahlen?",
+            "explanation": "Es werden Kennzahlen aus früheren Projekten verwendet, um Verhältniszahlen für ähnliche Projekte abzuleiten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "Durch rein subjektive Schätzungen",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Nutzung historischer Kennzahlen aus früheren Projekten",
+                    "correct": true
+                },
+                {
+                    "text": "Durch Anwendung der Delphi-Methode",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Simulation aller Testfälle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Ein früheres Projekt hatte ein Verhältnis von Entwicklung zu Testaufwand 3:2. Bei 600 Personentagen Entwicklung – wie hoch ist der Testaufwand?",
+            "explanation": "600 * (2/3) = 400 Personentage. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "400 Personentage",
+                    "correct": true
+                },
+                {
+                    "text": "300 Personentage",
+                    "correct": false
+                },
+                {
+                    "text": "200 Personentage",
+                    "correct": false
+                },
+                {
+                    "text": "600 Personentage",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie funktioniert die Extrapolation als Schätzverfahren?",
+            "explanation": "Es werden Messungen so früh wie möglich im laufenden Projekt gesammelt und mittels mathematischer Modelle fortgeschrieben. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "Durch Ableitung aus historischen Projektdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Durch fortlaufende Messungen und mathematische Modelle",
+                    "correct": true
+                },
+                {
+                    "text": "Durch Befragung aller Stakeholder",
+                    "correct": false
+                },
+                {
+                    "text": "Durch Schätzung fester Standardwerte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum eignet sich Extrapolation besonders für iterative SDLCs?",
+            "explanation": "Weil vergangene Iterationen Messwerte liefern, die zur Schätzung kommender Iterationen herangezogen werden können. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "Weil Iterationen immer dieselbe Länge haben",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Iterationen Erfahrungswerte liefern, die extrapoliert werden können",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Iterationen keine Schätzungen erfordern",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Iterationen nur für Entwicklung gelten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie funktioniert das Breitband-Delphi-Verfahren?",
+            "explanation": "Experten schätzen zunächst individuell, vergleichen und diskutieren Abweichungen und wiederholen den Prozess bis Konsens erreicht ist. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "Durch rein zufällige Auswahl von Schätzwerten",
+                    "correct": false
+                },
+                {
+                    "text": "Durch mathematische Extrapolation von Metriken",
+                    "correct": false
+                },
+                {
+                    "text": "Durch iterative Experteneinschätzungen mit Diskussion bis zum Konsens",
+                    "correct": true
+                },
+                {
+                    "text": "Durch Nutzung von Standard-Verhältniszahlen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist Planungspoker im Zusammenhang mit Schätzverfahren?",
+            "explanation": "Planungspoker ist eine Variante von Breitband-Delphi, bei der Schätzungen mit Karten durchgeführt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "Eine Methode zur Fehleranalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Variante von Breitband-Delphi mit Karteneinsatz",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Technik zur Testautomatisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Methode zur Codeoptimierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird bei der Drei-Punkt-Schätzung die finale Schätzung berechnet?",
+            "explanation": "Die Schätzung berechnet sich als gewichtetes Mittel: E = (a + 4*m + b) / 6. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "E = (a + m + b) / 3",
+                    "correct": false
+                },
+                {
+                    "text": "E = (a + 4*m + b) / 6",
+                    "correct": true
+                },
+                {
+                    "text": "E = (a + 2*m + b) / 4",
+                    "correct": false
+                },
+                {
+                    "text": "E = (m + b) / 2",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Ein Team schätzt mit a=6, m=9 und b=18 Stunden. Wie lautet die Drei-Punkt-Schätzung (E) und Standardabweichung (SD)?",
+            "explanation": "E = (6 + 4*9 + 18) / 6 = 10; SD = (18 - 6) / 6 = 2. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.4)",
+            "options": [
+                {
+                    "text": "E = 12, SD = 4",
+                    "correct": false
+                },
+                {
+                    "text": "E = 10, SD = 2",
+                    "correct": true
+                },
+                {
+                    "text": "E = 9, SD = 3",
+                    "correct": false
+                },
+                {
+                    "text": "E = 8, SD = 2",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

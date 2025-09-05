@@ -1,0 +1,73 @@
+{
+    "chapter": "4",
+    "subChapter": "4-5",
+    "subChapterTitle": "4.5 Auf Zusammenarbeit basierende Testansätze",
+    "questions": [
+        {
+            "question": "Worauf konzentrieren sich auf Zusammenarbeit basierende Testansätze im Unterschied zu den in 4.2–4.4 beschriebenen Verfahren?",
+            "explanation": "Während andere Verfahren primär Fehlerzustände aufdecken, zielen kollaborative Ansätze auch auf die Vermeidung von Fehlerzuständen. (Kap. 4.5)",
+            "options": [
+                {
+                    "text": "Auf die Reduktion von Testaufwand",
+                    "correct": false
+                },
+                {
+                    "text": "Auf die Vermeidung von Fehlerzuständen durch Zusammenarbeit",
+                    "correct": true
+                },
+                {
+                    "text": "Auf die Erhöhung der Testautomatisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Auf die exklusive Durchführung von White-Box-Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches gemeinsame Ziel haben die in den Abschnitten 4.2 bis 4.4 vorgestellten Testverfahren?",
+            "explanation": "Sie konzentrieren sich auf die Erkennung von Fehlerzuständen. (Kap. 4.5)",
+            "options": [
+                {
+                    "text": "Erhöhung der Automatisierungsrate",
+                    "correct": false
+                },
+                {
+                    "text": "Erkennung von Fehlerzuständen",
+                    "correct": true
+                },
+                {
+                    "text": "Minimierung der Testzeit",
+                    "correct": false
+                },
+                {
+                    "text": "Ersatz für Reviews",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher zusätzliche Schwerpunkt kommt bei auf Zusammenarbeit basierenden Testansätzen hinzu?",
+            "explanation": "Zusätzlich zur Fehlererkennung steht die Fehlervermeidung durch Zusammenarbeit und Kommunikation im Vordergrund. (Kap. 4.5)",
+            "options": [
+                {
+                    "text": "Fehlererkennung durch zufällige Eingaben",
+                    "correct": false
+                },
+                {
+                    "text": "Vermeidung von Fehlerzuständen durch Kommunikation",
+                    "correct": false
+                },
+                {
+                    "text": "Steigerung der Testfallabdeckung durch Simulation",
+                    "correct": false
+                },
+                {
+                    "text": "Vermeidung von Fehlerzuständen durch Zusammenarbeit und Kommunikation",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

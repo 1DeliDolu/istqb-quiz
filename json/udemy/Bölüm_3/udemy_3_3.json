@@ -1,0 +1,227 @@
+{
+    "chapter": "udemy_3",
+    "subChapter": "udemy_3_3",
+    "subChapterTitle": "3.3 Quiz 6 - Testarten",
+    "questions": [
+        {
+            "question": "Was ist ein wichtiger Grund, statisches Testen früh im Lebenszyklus durchzuführen?",
+            "explanation": "Korrekt: Statisches Testen erkennt Fehler frühzeitig, bevor der Code ausgeführt wird. 📘 Lehrplan, Kap. 3.2.1",
+            "options": [
+                {
+                    "text": "Es stellt sicher, dass der Code funktioniert",
+                    "correct": false
+                },
+                {
+                    "text": "Es reduziert den Bedarf an dynamischem Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Es erkennt Fehler vor der Ausführung",
+                    "correct": true
+                },
+                {
+                    "text": "Es automatisiert die Erstellung von Testfällen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität stellt sicher, dass Tests mit Geschäftszielen übereinstimmen?",
+            "explanation": "Korrekt: Rückverfolgbarkeitsanalyse verknüpft Tests mit Anforderungen und Zielen. 📘 Lehrplan, Kap. 1.4.4",
+            "options": [
+                {
+                    "text": "Fehlertriage",
+                    "correct": false
+                },
+                {
+                    "text": "Rückverfolgbarkeitsanalyse",
+                    "correct": true
+                },
+                {
+                    "text": "Code-Review",
+                    "correct": false
+                },
+                {
+                    "text": "Performance-Optimierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testart nutzt am wahrscheinlichsten Service-Level-Agreements (SLAs)?",
+            "explanation": "Korrekt: Performancetests prüfen z. B. Antwortzeiten gegen SLA-Vorgaben. 📘 Lehrplan, Kap. 2.3.2",
+            "options": [
+                {
+                    "text": "Komponententest",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstest",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": false
+                },
+                {
+                    "text": "Performancetest",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welches Ergebnis wird typischerweise beim Systemtest geliefert?",
+            "explanation": "Korrekt: Ein Testzusammenfassungsbericht dokumentiert die Ergebnisse des Testprozesses. 📘 Lehrplan, Kap. 5.3.4",
+            "options": [
+                {
+                    "text": "Bereitstellungsscheckliste",
+                    "correct": false
+                },
+                {
+                    "text": "Testzusammenfassungsbericht",
+                    "correct": true
+                },
+                {
+                    "text": "Benutzerhandbuch",
+                    "correct": false
+                },
+                {
+                    "text": "Risikoanalyse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist typisch für inkrementelle Lebenszyklusmodelle?",
+            "explanation": "Korrekt: Features werden schrittweise in Iterationen geliefert. 📘 Lehrplan, Kap. 2.1.2",
+            "options": [
+                {
+                    "text": "Späte Einbindung der Nutzer",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Funktionen auf einmal liefern",
+                    "correct": false
+                },
+                {
+                    "text": "Schrittweise Teilimplementierungen",
+                    "correct": true
+                },
+                {
+                    "text": "Kein Regressions-Test erforderlich",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist eine typische Herausforderung bei spätem Testen?",
+            "explanation": "Korrekt: Spätes Testen führt zu verzögerter Fehlererkennung. 📘 Lehrplan, Kap. 1.3 (Grundsatz 3: Frühes Testen)",
+            "options": [
+                {
+                    "text": "Zu viele Tools",
+                    "correct": false
+                },
+                {
+                    "text": "Erhöhte Qualität",
+                    "correct": false
+                },
+                {
+                    "text": "Verzögerte Fehlererkennung",
+                    "correct": true
+                },
+                {
+                    "text": "Hohe Testabdeckung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Teststufe stellt sicher, dass alle Module wie erwartet zusammenarbeiten?",
+            "explanation": "Korrekt: Der Integrationstest prüft das Zusammenspiel von Komponenten. 📘 Lehrplan, Kap. 2.2.2",
+            "options": [
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Komponententest",
+                    "correct": false
+                },
+                {
+                    "text": "Abnahmetest",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstest",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Wer schreibt normalerweise die Abnahmekriterien für eine User Story?",
+            "explanation": "Korrekt: Der Product Owner definiert die Abnahmekriterien. 📘 Lehrplan, Kap. 2.5",
+            "options": [
+                {
+                    "text": "Testmanager",
+                    "correct": false
+                },
+                {
+                    "text": "Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "text": "Product Owner",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Vorteil von frühem Feedback in iterativen Modellen?",
+            "explanation": "Korrekt: Frühes Feedback ermöglicht die frühzeitige Fehlererkennung. 📘 Lehrplan, Kap. 2.1.2 & Kap. 1.3",
+            "options": [
+                {
+                    "text": "Erhöhte Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Geringere Testabdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Frühzeitige Fehlererkennung",
+                    "correct": true
+                },
+                {
+                    "text": "Längere Entwicklungszeit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Modell geht davon aus, dass Anforderungen zu Beginn feststehen?",
+            "explanation": "Korrekt: Im Wasserfallmodell werden Anforderungen früh und vollständig definiert. 📘 Lehrplan, Kap. 2.1.1",
+            "options": [
+                {
+                    "text": "V-Modell",
+                    "correct": false
+                },
+                {
+                    "text": "Agile",
+                    "correct": false
+                },
+                {
+                    "text": "Iterativ",
+                    "correct": false
+                },
+                {
+                    "text": "Wasserfall",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

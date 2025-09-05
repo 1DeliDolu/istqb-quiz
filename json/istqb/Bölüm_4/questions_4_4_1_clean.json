@@ -1,0 +1,205 @@
+{
+    "chapter": "4",
+    "subChapter": "4-4-1",
+    "subChapterTitle": "4.4.1 Intuitive Testfallermittlung",
+    "questions": [
+        {
+            "question": "Worauf basiert die intuitive Testfallermittlung?",
+            "explanation": "Sie basiert auf dem Wissen und der Erfahrung des Testers über typische Fehlerquellen. (Kap. 4.4.1)",
+            "options": [
+                {
+                    "text": "Auf automatisierten Testtools",
+                    "correct": false
+                },
+                {
+                    "text": "Auf dem Wissen des Testers über frühere Erfahrungen und typische Fehler",
+                    "correct": true
+                },
+                {
+                    "text": "Auf der vollständigen Spezifikation der Software",
+                    "correct": false
+                },
+                {
+                    "text": "Auf der Analyse des Kontrollflussgraphen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kenntnisse fließen typischerweise in die intuitive Testfallermittlung ein?",
+            "explanation": "Z. B. frühere Funktionsweise der Anwendung, typische Fehlhandlungen von Entwicklern oder Fehlerwirkungen in ähnlichen Systemen. (Kap. 4.4.1)",
+            "options": [
+                {
+                    "text": "Kenntnisse über Tools und Frameworks",
+                    "correct": false
+                },
+                {
+                    "text": "Kenntnisse über frühere Funktionsweise, typische Entwicklerfehler und ähnliche Systeme",
+                    "correct": true
+                },
+                {
+                    "text": "Kenntnisse über agile Methoden",
+                    "correct": false
+                },
+                {
+                    "text": "Kenntnisse über regulatorische Vorschriften",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arten von Problemen können durch intuitive Testfallermittlung vorhergesagt werden?",
+            "explanation": "Sie zielt auf Fehlhandlungen, Fehlerzustände und Fehlerwirkungen ab. (Kap. 4.4.1)",
+            "options": [
+                {
+                    "text": "Nur falsche Eingabedaten",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Code-Überdeckungen",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlhandlungen, Fehlerzustände und Fehlerwirkungen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur unklare Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Auf welche Bereiche können sich Fehlhandlungen, Fehlerzustände und Fehlerwirkungen beziehen?",
+            "explanation": "Sie können Eingaben, Ausgaben, Logik, Berechnungen, Schnittstellen oder Daten betreffen. (Kap. 4.4.1)",
+            "options": [
+                {
+                    "text": "Nur Eingaben und Ausgaben",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Datenbanken und Schnittstellen",
+                    "correct": false
+                },
+                {
+                    "text": "Eingabe, Ausgabe, Logik, Berechnungen, Schnittstellen, Daten",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Logik und Berechnungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel gehört zu einem Fehlerzustand im Bereich Logik?",
+            "explanation": "Ein Beispiel ist ein fehlender Fall oder ein falscher Operator in einer logischen Entscheidung. (Kap. 4.4.1)",
+            "options": [
+                {
+                    "text": "Ein falsches Ergebnisformat",
+                    "correct": false
+                },
+                {
+                    "text": "Ein fehlender Fall oder ein falscher Operator",
+                    "correct": true
+                },
+                {
+                    "text": "Ein falscher Datentyp bei Schnittstellen",
+                    "correct": false
+                },
+                {
+                    "text": "Eine falsche Initialisierung von Variablen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sind Fehlerangriffe im Kontext der intuitiven Testfallermittlung?",
+            "explanation": "Fehlerangriffe sind eine Technik, bei der Tester gezielt Fehlhandlungen, Fehlerzustände und Fehlerwirkungen annehmen und entsprechende Tests entwerfen. (Kap. 4.4.1)",
+            "options": [
+                {
+                    "text": "Eine spezielle Form von White-Box-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Möglichkeit der intuitiven Testfallermittlung",
+                    "correct": true
+                },
+                {
+                    "text": "Ein automatisiertes Testtool",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Art von Black-Box-Testverfahren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe hat der Tester bei einem Fehlerangriff?",
+            "explanation": "Der Tester muss eine Liste möglicher Fehlhandlungen, Fehlerzustände und Fehlerwirkungen erstellen oder übernehmen. (Kap. 4.4.1)",
+            "options": [
+                {
+                    "text": "Er muss nur zufällige Testdaten generieren",
+                    "correct": false
+                },
+                {
+                    "text": "Er muss eine Liste möglicher Fehlhandlungen, Fehlerzustände und Fehlerwirkungen erstellen oder übernehmen",
+                    "correct": true
+                },
+                {
+                    "text": "Er muss alle Codezeilen manuell überprüfen",
+                    "correct": false
+                },
+                {
+                    "text": "Er muss ausschließlich ungültige Eingaben testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Auf welcher Basis können Listen für Fehlerangriffe erstellt werden?",
+            "explanation": "Sie können auf Erfahrungswerten, Daten über Fehlerzustände und Fehlerwirkungen oder allgemeinem Wissen über Softwarefehler beruhen. (Kap. 4.4.1)",
+            "options": [
+                {
+                    "text": "Auf Erfahrungswerten, Fehlerdaten oder allgemeinem Wissen über Fehlerursachen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur auf formalen Spezifikationen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf automatischer Testfallerzeugung",
+                    "correct": false
+                },
+                {
+                    "text": "Nur auf regulatorischen Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel verfolgen Tests im Rahmen von Fehlerangriffen?",
+            "explanation": "Sie sollen die durch Fehlhandlungen entstehenden Fehlerzustände oder Fehlerwirkungen identifizieren und sichtbar machen. (Kap. 4.4.1)",
+            "options": [
+                {
+                    "text": "Die Anzahl der Testfälle zu minimieren",
+                    "correct": false
+                },
+                {
+                    "text": "Die mit Fehlhandlungen verbundenen Fehlerzustände oder Fehlerwirkungen aufzudecken",
+                    "correct": true
+                },
+                {
+                    "text": "Die Codeüberdeckung automatisch zu erhöhen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Testausführung zu beschleunigen",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

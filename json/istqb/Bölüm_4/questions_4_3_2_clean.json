@@ -1,0 +1,139 @@
+{
+    "chapter": "4",
+    "subChapter": "4-3-2",
+    "subChapterTitle": "4.3.2 Zweigtest und Zweigüberdeckung",
+    "questions": [
+        {
+            "question": "Was ist ein Zweig im Kontext des Zweigtests?",
+            "explanation": "Ein Zweig ist ein Kontrollübergang zwischen zwei Knoten im Kontrollflussgraph. (Kap. 4.3.2)",
+            "options": [
+                {
+                    "text": "Ein Datenfluss zwischen zwei Modulen",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Kontrollübergang zwischen zwei Knoten im Kontrollflussgraph",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Anweisung innerhalb einer Klasse",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Schnittstelle zwischen zwei Systemen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sind die Überdeckungselemente beim Zweigtest?",
+            "explanation": "Beim Zweigtest sind die Zweige selbst die Überdeckungselemente. (Kap. 4.3.2)",
+            "options": [
+                {
+                    "text": "Die Anweisungen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Eingabewerte",
+                    "correct": false
+                },
+                {
+                    "text": "Die Zweige",
+                    "correct": true
+                },
+                {
+                    "text": "Die Aktionen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird die Zweigüberdeckung gemessen?",
+            "explanation": "Anzahl der durch Testfälle ausgeführten Zweige geteilt durch die Gesamtzahl der Zweige × 100%. (Kap. 4.3.2)",
+            "options": [
+                {
+                    "text": "Ausgeführte Zweige / Gesamtzahl der Zweige × 100%",
+                    "correct": true
+                },
+                {
+                    "text": "Testfälle / Zweige × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerzustände / Zweige × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Zustände / Übergänge × 100%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bedeutet eine 100%ige Zweigüberdeckung?",
+            "explanation": "Alle unbedingten und bedingten Zweige des Codes werden durch Testfälle ausgeführt. (Kap. 4.3.2)",
+            "options": [
+                {
+                    "text": "Alle Anweisungen wurden mindestens einmal ausgeführt",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Zweige, unbedingte und bedingte, wurden ausgeführt",
+                    "correct": true
+                },
+                {
+                    "text": "Alle Eingaben wurden erschöpfend getestet",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Testfälle haben Fehlerzustände gefunden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum deckt die Ausführung eines Zweigs mit einem Testfall nicht unbedingt alle Fehlerzustände auf?",
+            "explanation": "Einige Fehler treten nur auf, wenn ein bestimmter Pfad durchlaufen wird, nicht bei jedem Zweig. (Kap. 4.3.2)",
+            "options": [
+                {
+                    "text": "Weil Zweige keine Fehlerzustände enthalten können",
+                    "correct": false
+                },
+                {
+                    "text": "Weil datenabhängige Fehler nicht auftreten",
+                    "correct": false
+                },
+                {
+                    "text": "Weil bestimmte Fehler nur auf spezifischen Pfaden auftreten",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Schleifen nicht getestet werden können",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Beziehung besteht zwischen Anweisungs- und Zweigüberdeckung?",
+            "explanation": "100% Zweigüberdeckung impliziert auch 100% Anweisungsüberdeckung, aber nicht umgekehrt. (Kap. 4.3.2)",
+            "options": [
+                {
+                    "text": "100% Anweisungsüberdeckung garantiert 100% Zweigüberdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "100% Zweigüberdeckung garantiert auch 100% Anweisungsüberdeckung",
+                    "correct": true
+                },
+                {
+                    "text": "Beide Überdeckungen sind identisch",
+                    "correct": false
+                },
+                {
+                    "text": "Beide sind voneinander völlig unabhängig",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

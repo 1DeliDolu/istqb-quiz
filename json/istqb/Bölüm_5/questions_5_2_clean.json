@@ -1,0 +1,337 @@
+{
+    "chapter": "5",
+    "subChapter": "5-2",
+    "subChapterTitle": "5.2. Risikomanagement",
+    "questions": [
+        {
+            "question": "Was ist das Hauptziel von Risikomanagement?",
+            "explanation": "Risikomanagement erhöht die Wahrscheinlichkeit der Zielerreichung, verbessert die Qualität und stärkt das Vertrauen der Stakeholder. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Erhöhung der Wahrscheinlichkeit der Zielerreichung",
+                    "correct": true
+                },
+                {
+                    "text": "Reduzierung der Anzahl der Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung von Projektplänen",
+                    "correct": false
+                },
+                {
+                    "text": "Verkürzung aller Testzyklen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Norm definiert Risikomanagement als Umgang mit Unsicherheiten?",
+            "explanation": "ISO 31000 beschreibt Risikomanagement als Umgang mit internen und externen Faktoren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "ISO 25010",
+                    "correct": false
+                },
+                {
+                    "text": "ISO 31000",
+                    "correct": true
+                },
+                {
+                    "text": "ISO 29119",
+                    "correct": false
+                },
+                {
+                    "text": "ISO 20246",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche zwei Hauptaktivitäten umfasst die Risikoanalyse?",
+            "explanation": "Die Risikoanalyse besteht aus Risikoidentifizierung und Risikobewertung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Risikoidentifizierung und Risikobewertung",
+                    "correct": true
+                },
+                {
+                    "text": "Risikominderung und Risikoüberwachung",
+                    "correct": false
+                },
+                {
+                    "text": "Risikoplanung und Risikoberichte",
+                    "correct": false
+                },
+                {
+                    "text": "Qualitätssicherung und Prozessverbesserung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche zwei Hauptaktivitäten umfasst die Risikosteuerung?",
+            "explanation": "Die Risikosteuerung besteht aus Risikominderung und Risikoüberwachung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Risikoidentifizierung und Risikobewertung",
+                    "correct": false
+                },
+                {
+                    "text": "Risikominderung und Risikoüberwachung",
+                    "correct": true
+                },
+                {
+                    "text": "Testplanung und Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlermanagement und Reporting",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wirkt sich Risikomanagement auf die Stakeholder aus?",
+            "explanation": "Es stärkt das Vertrauen der Stakeholder in die Zielerreichung und Produktqualität. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Stakeholder verlieren Vertrauen in die Prozesse",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholdervertrauen wird gestärkt",
+                    "correct": true
+                },
+                {
+                    "text": "Stakeholder werden aus dem Prozess ausgeschlossen",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder erhalten weniger Informationen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was beschreibt ein risikobasierter Test?",
+            "explanation": "Ein Testansatz, bei dem Testaktivitäten auf Basis von Risikoanalyse und Risikosteuerung ausgewählt und priorisiert werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Ein Testansatz ohne Berücksichtigung von Risiken",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testansatz basierend auf Risikoanalyse und Risikosteuerung",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Testansatz ausschließlich für Regressionstests",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testansatz nur für Sicherheitstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Faktoren machen Organisationen unsicher bei der Zielerreichung?",
+            "explanation": "Interne und externe Faktoren können die Zielerreichung unsicher machen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Interne und externe Faktoren",
+                    "correct": true
+                },
+                {
+                    "text": "Nur interne Faktoren",
+                    "correct": false
+                },
+                {
+                    "text": "Nur externe Faktoren",
+                    "correct": false
+                },
+                {
+                    "text": "Ausschließlich Budgetrestriktionen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität gehört NICHT zum Risikomanagement?",
+            "explanation": "Testdurchführung gehört nicht zu den Kernaktivitäten des Risikomanagements. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Risikoanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Risikosteuerung",
+                    "correct": false
+                },
+                {
+                    "text": "Testdurchführung",
+                    "correct": true
+                },
+                {
+                    "text": "Risikominderung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität ist Teil der Risikosteuerung?",
+            "explanation": "Risikominderung gehört zur Risikosteuerung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Risikominderung",
+                    "correct": true
+                },
+                {
+                    "text": "Risikoidentifizierung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehleranalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholderanalyse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Nutzen entsteht durch Risikoanalyse im Testprozess?",
+            "explanation": "Sie hilft, Risiken zu identifizieren und zu bewerten, um Testaktivitäten zu priorisieren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Risiken werden identifiziert und bewertet",
+                    "correct": true
+                },
+                {
+                    "text": "Alle Tests werden automatisiert",
+                    "correct": false
+                },
+                {
+                    "text": "Der Projektplan wird vereinfacht",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Testfälle werden entfernt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bedeutet Risikominderung?",
+            "explanation": "Risikominderung beschreibt Maßnahmen, um Risiken zu reduzieren oder auf einem akzeptablen Niveau zu halten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Risiken bewusst ignorieren",
+                    "correct": false
+                },
+                {
+                    "text": "Risiken erhöhen",
+                    "correct": false
+                },
+                {
+                    "text": "Risiken reduzieren oder kontrollieren",
+                    "correct": true
+                },
+                {
+                    "text": "Risiken nur dokumentieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bedeutet Risikoüberwachung?",
+            "explanation": "Risikoüberwachung beschreibt die laufende Kontrolle des Status bekannter Risiken und deren Kommunikation. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "options": [
+                {
+                    "text": "Neue Risiken erfinden",
+                    "correct": false
+                },
+                {
+                    "text": "Risiken ignorieren",
+                    "correct": false
+                },
+                {
+                    "text": "Status bekannter Risiken überprüfen und berichten",
+                    "correct": true
+                },
+                {
+                    "text": "Risiken nur am Projektende prüfen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterstützt ein risikobasierter Test die Testpriorisierung?",
+            "explanation": "Er sorgt dafür, dass Testaktivitäten mit Bezug auf die wichtigsten Risiken zuerst durchgeführt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Testaktivitäten werden zufällig ausgeführt",
+                    "correct": false
+                },
+                {
+                    "text": "Testaktivitäten orientieren sich an den wichtigsten Risiken",
+                    "correct": true
+                },
+                {
+                    "text": "Testaktivitäten orientieren sich nur am Budget",
+                    "correct": false
+                },
+                {
+                    "text": "Testaktivitäten werden ausschließlich manuell durchgeführt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Zusammenhang besteht zwischen Risikomanagement und Produktqualität?",
+            "explanation": "Durch Risikomanagement können Organisationen die Qualität ihrer Produkte verbessern. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Es senkt die Produktqualität",
+                    "correct": false
+                },
+                {
+                    "text": "Es hat keinen Einfluss auf die Qualität",
+                    "correct": false
+                },
+                {
+                    "text": "Es verbessert die Produktqualität",
+                    "correct": true
+                },
+                {
+                    "text": "Es beschränkt die Produktqualität",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie beeinflusst Risikomanagement die Wahrscheinlichkeit der Zielerreichung?",
+            "explanation": "Risikomanagement erhöht die Wahrscheinlichkeit, dass Organisationsziele erreicht werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "options": [
+                {
+                    "text": "Es verringert die Zielerreichung",
+                    "correct": false
+                },
+                {
+                    "text": "Es verhindert die Zielerreichung",
+                    "correct": false
+                },
+                {
+                    "text": "Es erhöht die Wahrscheinlichkeit der Zielerreichung",
+                    "correct": true
+                },
+                {
+                    "text": "Es ignoriert die Zielerreichung",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

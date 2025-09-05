@@ -1,0 +1,117 @@
+{
+    "chapter": "4",
+    "subChapter": "4-3-1",
+    "subChapterTitle": "4.3.1 Anweisungstest und Anweisungsüberdeckung",
+    "questions": [
+        {
+            "question": "Was sind die Überdeckungselemente beim Anweisungstest?",
+            "explanation": "Beim Anweisungstest sind die ausführbaren Anweisungen die Überdeckungselemente. (Kap. 4.3.1)",
+            "options": [
+                {
+                    "text": "Die Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Die ausführbaren Anweisungen",
+                    "correct": true
+                },
+                {
+                    "text": "Die Eingabeparameter",
+                    "correct": false
+                },
+                {
+                    "text": "Die Schnittstellen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird die Anweisungsüberdeckung gemessen?",
+            "explanation": "Anzahl der ausgeführten Anweisungen geteilt durch die Gesamtzahl der ausführbaren Anweisungen × 100%. (Kap. 4.3.1)",
+            "options": [
+                {
+                    "text": "Ausgeführte Anweisungen / Gesamtzahl ausführbarer Anweisungen × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerzustände / Testfälle × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle / Anweisungen × 100%",
+                    "correct": true
+                },
+                {
+                    "text": "Überdeckte Verzweigungen / Gesamtzahl der Verzweigungen × 100%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was bedeutet eine 100%ige Anweisungsüberdeckung?",
+            "explanation": "Alle ausführbaren Anweisungen wurden mindestens einmal ausgeführt. (Kap. 4.3.1)",
+            "options": [
+                {
+                    "text": "Alle Testfälle wurden ausgeführt",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Anweisungen wurden mindestens einmal ausgeführt",
+                    "correct": true
+                },
+                {
+                    "text": "Alle Verzweigungen im Code wurden getestet",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Eingaben wurden erschöpfend getestet",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum deckt eine 100%ige Anweisungsüberdeckung nicht alle Fehlerzustände auf?",
+            "explanation": "Einige Fehlerzustände sind datenabhängig (z. B. Division durch null) und treten nicht bei jeder Ausführung auf. (Kap. 4.3.1)",
+            "options": [
+                {
+                    "text": "Weil nicht alle Anweisungen ausgeführt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil datenabhängige Fehlerzustände nicht unbedingt auftreten",
+                    "correct": true
+                },
+                {
+                    "text": "Weil die Testumgebung zu komplex ist",
+                    "correct": false
+                },
+                {
+                    "text": "Weil nur ungültige Eingaben getestet werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum stellt 100% Anweisungsüberdeckung nicht sicher, dass die gesamte Entscheidungslogik getestet wurde?",
+            "explanation": "Anweisungsüberdeckung garantiert nicht, dass alle Verzweigungen im Code ausgeführt wurden. (Kap. 4.3.1)",
+            "options": [
+                {
+                    "text": "Weil nur die Kommentare im Code überdeckt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Verzweigungen unter Umständen nicht ausgeführt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Weil die Testfälle nicht dokumentiert sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Eingaben nicht berücksichtigt werden",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

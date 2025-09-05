@@ -1,0 +1,139 @@
+{
+    "chapter": "4",
+    "subChapter": "4-5-2",
+    "subChapterTitle": "4.5.2 Akzeptanzkriterien",
+    "questions": [
+        {
+            "question": "Was sind Akzeptanzkriterien für eine User-Story?",
+            "explanation": "Es sind die Bedingungen, die erfüllt sein müssen, damit die User-Story von Stakeholdern akzeptiert wird. (Kap. 4.5.2)",
+            "options": [
+                {
+                    "text": "Die vom Projektmanager genehmigten Meilensteine",
+                    "correct": false
+                },
+                {
+                    "text": "Die Bedingungen, die eine User-Story erfüllen muss, um akzeptiert zu werden",
+                    "correct": true
+                },
+                {
+                    "text": "Die Schätzungen für den Entwicklungsaufwand",
+                    "correct": false
+                },
+                {
+                    "text": "Die Dokumentationsstandards",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielen Akzeptanzkriterien aus Testperspektive?",
+            "explanation": "Sie können als Testbedingungen betrachtet werden, die durch Tests ausgeführt werden sollen. (Kap. 4.5.2)",
+            "options": [
+                {
+                    "text": "Sie definieren die Testumgebung",
+                    "correct": false
+                },
+                {
+                    "text": "Sie dienen als Testbedingungen für die Ausführung",
+                    "correct": true
+                },
+                {
+                    "text": "Sie legen die Teamrollen fest",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzen das Testkonzept",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Nutzen bieten Akzeptanzkriterien für das Projektteam?",
+            "explanation": "Sie definieren Umfang, schaffen Konsens, beschreiben Szenarien, dienen als Basis für Abnahmetests und ermöglichen Planung/Schätzung. (Kap. 4.5.2)",
+            "options": [
+                {
+                    "text": "Nur die Erstellung von Testberichten",
+                    "correct": false
+                },
+                {
+                    "text": "Definition von Umfang, Konsens, Szenarien, Basis für Abnahmetests, Planung/Schätzung",
+                    "correct": true
+                },
+                {
+                    "text": "Nur die Erhöhung der Testautomatisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Sicherstellung regulatorischer Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche zwei gängigen Formate für Akzeptanzkriterien nennt der Lehrplan?",
+            "explanation": "Szenarioorientiert (Given/When/Then, BDD) und regelorientiert (z. B. Verifizierungsliste, tabellarische Input-Output-Zuordnung). (Kap. 4.5.2)",
+            "options": [
+                {
+                    "text": "Explorativ und intuitiv",
+                    "correct": false
+                },
+                {
+                    "text": "Szenarioorientiert und regelorientiert",
+                    "correct": true
+                },
+                {
+                    "text": "Automatisiert und manuell",
+                    "correct": false
+                },
+                {
+                    "text": "Black-Box und White-Box",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Format für Akzeptanzkriterien wird typischerweise in der BDD genutzt?",
+            "explanation": "In der verhaltensgetriebenen Entwicklung (BDD) wird das Gegeben/Wenn/Dann-Format verwendet. (Kap. 4.5.2)",
+            "options": [
+                {
+                    "text": "Das INVEST-Format",
+                    "correct": false
+                },
+                {
+                    "text": "Das Gegeben/Wenn/Dann-Format",
+                    "correct": true
+                },
+                {
+                    "text": "Das Card/Conversation/Confirmation-Format",
+                    "correct": false
+                },
+                {
+                    "text": "Das N/V-Format (Necessary/Valuable)",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Anforderung gilt unabhängig vom gewählten Format für Akzeptanzkriterien?",
+            "explanation": "Sie müssen klar definiert und eindeutig sein, unabhängig vom Format. (Kap. 4.5.2)",
+            "options": [
+                {
+                    "text": "Sie müssen automatisiert sein",
+                    "correct": false
+                },
+                {
+                    "text": "Sie müssen regulatorische Standards erfüllen",
+                    "correct": false
+                },
+                {
+                    "text": "Sie müssen klar definiert und eindeutig sein",
+                    "correct": true
+                },
+                {
+                    "text": "Sie müssen in Tabellenform vorliegen",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

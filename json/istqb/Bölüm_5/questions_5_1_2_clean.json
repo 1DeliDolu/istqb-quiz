@@ -1,0 +1,271 @@
+{
+    "chapter": "5",
+    "subChapter": "5-1-2",
+    "subChapterTitle": "5.1.2. Der Beitrag des Testers zur Iterations- und Releaseplanung",
+    "questions": [
+        {
+            "question": "Welche Hauptaufgabe haben Tester bei der Releaseplanung?",
+            "explanation": "Tester wirken an der Erstellung testbarer User-Storys und Akzeptanzkriterien mit, nehmen an Risikoanalysen teil und schätzen den Testaufwand. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Erstellung testbarer User-Storys und Akzeptanzkriterien",
+                    "correct": true
+                },
+                {
+                    "text": "Festlegung der Hardware-Architektur",
+                    "correct": false
+                },
+                {
+                    "text": "Genehmigung von Budget und Verträgen",
+                    "correct": false
+                },
+                {
+                    "text": "Schulung der Endanwender",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wofür dient die Releaseplanung in iterativen SDLCs?",
+            "explanation": "Sie sieht die Bereitstellung eines Produkts vor, definiert bzw. verfeinert das Produkt-Backlog und dient als Grundlage für Testansatz und Testkonzept. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Zur Organisation von Team-Events",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Definition und Anpassung des Produkt-Backlogs",
+                    "correct": true
+                },
+                {
+                    "text": "Zur Dokumentation der Benutzerhandbücher",
+                    "correct": false
+                },
+                {
+                    "text": "Zur endgültigen Stilllegung des Systems",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle übernehmen Tester in der Iterationsplanung?",
+            "explanation": "Tester bestimmen die Testbarkeit von User-Storys, zerlegen sie in Testaufgaben, schätzen den Testaufwand und identifizieren funktionale und nicht-funktionale Aspekte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Sie entwickeln ausschließlich Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Sie bestimmen die Testbarkeit und zerlegen User-Storys in Testaufgaben",
+                    "correct": true
+                },
+                {
+                    "text": "Sie pflegen die gesamte IT-Infrastruktur",
+                    "correct": false
+                },
+                {
+                    "text": "Sie übernehmen das Vertragsmanagement",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel verfolgt die Iterationsplanung?",
+            "explanation": "Sie plant das Ende einer Iteration und befasst sich mit dem Iterations-Backlog. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Festlegung des Iterations-Backlogs und Planung der Iteration",
+                    "correct": true
+                },
+                {
+                    "text": "Festlegung der Unternehmensstrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Auswahl der Lieferanten",
+                    "correct": false
+                },
+                {
+                    "text": "Planung von Marketingaktivitäten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aufgabe haben Tester bei der Risikoanalyse in der Releaseplanung?",
+            "explanation": "Tester nehmen an Projekt- und Qualitätsrisikoanalysen teil. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Erstellung der technischen Architektur",
+                    "correct": false
+                },
+                {
+                    "text": "Teilnahme an Projekt- und Qualitätsrisikoanalysen",
+                    "correct": true
+                },
+                {
+                    "text": "Durchführung von Marktstudien",
+                    "correct": false
+                },
+                {
+                    "text": "Entwicklung von Deployment-Skripten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie tragen Tester in der Iterationsplanung zur Schätzung bei?",
+            "explanation": "Tester schätzen den Testaufwand für alle Testaufgaben der User-Storys. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Sie schätzen den Testaufwand für Testaufgaben",
+                    "correct": true
+                },
+                {
+                    "text": "Sie schätzen ausschließlich die Hardwarekosten",
+                    "correct": false
+                },
+                {
+                    "text": "Sie schätzen die Anzahl der Entwickler im Team",
+                    "correct": false
+                },
+                {
+                    "text": "Sie schätzen die Kundenzufriedenheit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie unterstützen Tester die Erstellung des Testkonzepts?",
+            "explanation": "Die Releaseplanung dient als Grundlage für Testansatz und Testkonzept, an dem Tester aktiv mitwirken. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Indem sie die Datenbankmigration programmieren",
+                    "correct": false
+                },
+                {
+                    "text": "Indem sie Testansatz und Testkonzept auf Basis der Releaseplanung mitgestalten",
+                    "correct": true
+                },
+                {
+                    "text": "Indem sie ausschließlich Präsentationen für Stakeholder erstellen",
+                    "correct": false
+                },
+                {
+                    "text": "Indem sie alle Deployments selbst durchführen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche typischen Aufgaben übernehmen Tester in Bezug auf User-Storys während der Iterationsplanung?",
+            "explanation": "Tester prüfen die Testbarkeit von User-Storys, zerlegen diese in Aufgaben und verfeinern funktionale und nicht-funktionale Aspekte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Sie definieren ausschließlich neue Release-Termine",
+                    "correct": false
+                },
+                {
+                    "text": "Sie prüfen die Testbarkeit und verfeinern funktionale und nicht-funktionale Aspekte",
+                    "correct": true
+                },
+                {
+                    "text": "Sie genehmigen das Projektbudget",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erstellen alle rechtlichen Verträge",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worin liegt der Unterschied zwischen Release- und Iterationsplanung?",
+            "explanation": "Releaseplanung bezieht sich auf das gesamte Produkt und Backlog, Iterationsplanung auf eine einzelne Iteration und deren Backlog. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Releaseplanung = gesamtes Produkt; Iterationsplanung = einzelne Iteration",
+                    "correct": true
+                },
+                {
+                    "text": "Releaseplanung = nur Budget; Iterationsplanung = nur Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Releaseplanung = nur Entwickler; Iterationsplanung = nur Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Releaseplanung = nur Dokumentation; Iterationsplanung = nur Schulung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche konkrete Tätigkeit gehört zur Releaseplanung von Testern?",
+            "explanation": "Tester beteiligen sich an der Erstellung testbarer Akzeptanzkriterien. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Definition der Gehaltsstruktur",
+                    "correct": false
+                },
+                {
+                    "text": "Beteiligung an der Erstellung von Akzeptanzkriterien",
+                    "correct": true
+                },
+                {
+                    "text": "Abschluss von Wartungsverträgen",
+                    "correct": false
+                },
+                {
+                    "text": "Gestaltung der Büroräume",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität erfolgt typischerweise im Rahmen der Iterationsplanung durch Tester?",
+            "explanation": "Tester zerlegen User-Storys in Testaufgaben und identifizieren Testaspekte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Zerlegung von User-Storys in Testaufgaben",
+                    "correct": true
+                },
+                {
+                    "text": "Festlegung der gesamten IT-Strategie",
+                    "correct": false
+                },
+                {
+                    "text": "Entwicklung von Produkt-Backlogs",
+                    "correct": false
+                },
+                {
+                    "text": "Durchführung von Marktanalysen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Beteiligung der Tester an der Releaseplanung wichtig?",
+            "explanation": "Tester tragen dazu bei, dass User-Storys testbar sind und die Testaktivitäten frühzeitig berücksichtigt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.2)",
+            "options": [
+                {
+                    "text": "Weil Tester die gesamte Produktstrategie festlegen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Tester die Teamstruktur genehmigen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Tester sicherstellen, dass User-Storys testbar sind und Testaktivitäten berücksichtigt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Tester ausschließlich das Budget freigeben",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

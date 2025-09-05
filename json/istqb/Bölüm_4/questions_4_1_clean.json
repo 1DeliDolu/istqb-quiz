@@ -1,0 +1,271 @@
+{
+    "chapter": "4",
+    "subChapter": "4-1",
+    "subChapterTitle": "4.1 Testverfahren im Überblick",
+    "questions": [
+        {
+            "question": "Welche drei Hauptkategorien von Testverfahren werden im Lehrplan unterschieden?",
+            "explanation": "Der Lehrplan nennt Black-Box-, White-Box- und erfahrungsbasierte Testverfahren. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Black-Box, White-Box und erfahrungsbasiert",
+                    "correct": true
+                },
+                {
+                    "text": "Manuell, automatisiert und halbautomatisiert",
+                    "correct": false
+                },
+                {
+                    "text": "Statisch, dynamisch und explorativ",
+                    "correct": false
+                },
+                {
+                    "text": "Validierend, verifizierend und prüfend",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel verfolgen Testverfahren allgemein?",
+            "explanation": "Testverfahren helfen, eine ausreichende Menge systematischer Testfälle zu entwickeln. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Systematische Entwicklung einer ausreichenden Menge von Testfällen",
+                    "correct": true
+                },
+                {
+                    "text": "Automatische Korrektur von Fehlerzuständen",
+                    "correct": false
+                },
+                {
+                    "text": "Schnellere Softwareauslieferung ohne Testaufwand",
+                    "correct": false
+                },
+                {
+                    "text": "Ersatz für Reviews und Debugging",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Eigenschaft kennzeichnet Black-Box-Testverfahren?",
+            "explanation": "Black-Box-Verfahren basieren auf Spezifikationen ohne Kenntnis der internen Struktur. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Sie benötigen keine Kenntnis der internen Struktur",
+                    "correct": true
+                },
+                {
+                    "text": "Sie erfordern Code-Überdeckungsmessungen",
+                    "correct": false
+                },
+                {
+                    "text": "Sie werden ausschließlich explorativ eingesetzt",
+                    "correct": false
+                },
+                {
+                    "text": "Sie können nur nach Implementierung genutzt werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum bleiben Black-Box-Testfälle auch nach einer Codeänderung oft nützlich?",
+            "explanation": "Sie basieren auf dem spezifizierten Verhalten, nicht auf der Implementierung. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Weil sie auf Spezifikationen statt Implementierung beruhen",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie automatisch neue Anforderungen generieren",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie ausschließlich für explorative Tests gedacht sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie von Entwicklern ohne Testbasis erstellt werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann können White-Box-Testfälle erstellt werden?",
+            "explanation": "Da sie die interne Struktur analysieren, sind sie erst nach Entwurf/Implementierung möglich. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Erst nach Entwurf oder Implementierung des Testobjekts",
+                    "correct": true
+                },
+                {
+                    "text": "Bereits bei der Erstellung der Business-Case-Dokumente",
+                    "correct": false
+                },
+                {
+                    "text": "Nur während der Abnahmetests",
+                    "correct": false
+                },
+                {
+                    "text": "Erst nach der Testabschlussphase",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wodurch zeichnen sich White-Box-Verfahren aus?",
+            "explanation": "Sie basieren auf Analyse der internen Struktur und Verarbeitung. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Analyse der internen Struktur und Verarbeitung des Testobjekts",
+                    "correct": true
+                },
+                {
+                    "text": "Bewertung der Benutzerfreundlichkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Schwerpunkt auf explorativen Testsitzungen",
+                    "correct": false
+                },
+                {
+                    "text": "Ermittlung von Akzeptanzkriterien",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testverfahren hängen stark von Wissen und Erfahrung des Testers ab?",
+            "explanation": "Erfahrungsbasierte Verfahren nutzen Wissen und Intuition der Tester. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Erfahrungsbasierte Testverfahren",
+                    "correct": true
+                },
+                {
+                    "text": "White-Box-Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Black-Box-Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Automatisierte Testverfahren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Stärke haben erfahrungsbasierte Testverfahren?",
+            "explanation": "Sie können Fehler aufdecken, die bei Black-Box- oder White-Box-Verfahren übersehen werden. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Aufdecken zusätzlicher Fehlerzustände durch Intuition und Wissen",
+                    "correct": true
+                },
+                {
+                    "text": "Ermittlung der Systemarchitektur",
+                    "correct": false
+                },
+                {
+                    "text": "Messung der Codeüberdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung automatischer Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie ergänzen sich erfahrungsbasierte Verfahren mit anderen Verfahren?",
+            "explanation": "Sie decken Fehlerzustände ab, die andere Verfahren evtl. übersehen. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Sie ergänzen Black-Box- und White-Box-Verfahren",
+                    "correct": true
+                },
+                {
+                    "text": "Sie ersetzen vollständig Black-Box-Verfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind nur für nicht-funktionale Tests geeignet",
+                    "correct": false
+                },
+                {
+                    "text": "Sie schließen White-Box-Verfahren aus",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielen Testverfahren in der Testanalyse?",
+            "explanation": "Sie helfen bei Definition von Testbedingungen, Überdeckungselementen und Testdaten. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Sie definieren Testbedingungen, Überdeckungselemente und Testdaten",
+                    "correct": true
+                },
+                {
+                    "text": "Sie planen die Projektmeilensteine",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzen Retrospektiven",
+                    "correct": false
+                },
+                {
+                    "text": "Sie legen die Teststrategie für das Management fest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist der Einsatz von Testverfahren sinnvoll?",
+            "explanation": "Sie unterstützen systematische und effiziente Testfallerstellung. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Zur systematischen und effizienten Ableitung von Testfällen",
+                    "correct": true
+                },
+                {
+                    "text": "Zur automatischen Fehlerbehebung",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Vermeidung aller manuellen Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Erstellung von Testabschlussberichten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testverfahren können unabhängig von der Implementierung erstellt werden?",
+            "explanation": "Black-Box-Verfahren basieren auf Spezifikation und nicht auf Implementierung. (Kap. 4.1)",
+            "options": [
+                {
+                    "text": "Black-Box-Testverfahren",
+                    "correct": true
+                },
+                {
+                    "text": "White-Box-Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Erfahrungsbasierte Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Testverfahren gleichermaßen",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

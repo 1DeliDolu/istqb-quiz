@@ -1,0 +1,381 @@
+{
+    "chapter": "4",
+    "subChapter": "4-2-2",
+    "subChapterTitle": "4.2.2 Grenzwertanalyse",
+    "questions": [
+        {
+            "question": "Worauf basiert die Grenzwertanalyse?",
+            "explanation": "Die Grenzwertanalyse überprüft die Grenzen von Äquivalenzklassen. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Auf der Überprüfung der Grenzen von Äquivalenzklassen",
+                    "correct": true
+                },
+                {
+                    "text": "Auf zufälligen Werten innerhalb einer Klasse",
+                    "correct": false
+                },
+                {
+                    "text": "Auf der internen Struktur des Codes",
+                    "correct": false
+                },
+                {
+                    "text": "Auf Erfahrungswerten der Tester",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Für welche Art von Klassen ist die Grenzwertanalyse geeignet?",
+            "explanation": "Sie kann nur bei geordneten Klassen angewendet werden. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Für ungeordnete Klassen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur für geordnete Klassen",
+                    "correct": true
+                },
+                {
+                    "text": "Für unendliche Klassen",
+                    "correct": false
+                },
+                {
+                    "text": "Für Klassen ohne Schnittstellenparameter",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Werte einer Klasse gelten als Grenzwerte?",
+            "explanation": "Die Minimum- und Maximumwerte einer Klasse sind die Grenzwerte. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Alle zufälligen Werte innerhalb der Klasse",
+                    "correct": false
+                },
+                {
+                    "text": "Die Werte mit der höchsten Priorität",
+                    "correct": false
+                },
+                {
+                    "text": "Die Minimum- und Maximumwerte",
+                    "correct": true
+                },
+                {
+                    "text": "Die Werte, die am häufigsten vorkommen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum konzentriert sich die Grenzwertanalyse auf die Klassengrenzen?",
+            "explanation": "Weil Entwicklern an den Grenzwerten eher Fehlhandlungen unterlaufen. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Weil dort die meisten zufälligen Eingaben auftreten",
+                    "correct": false
+                },
+                {
+                    "text": "Weil an den Grenzwerten häufiger Fehler passieren",
+                    "correct": true
+                },
+                {
+                    "text": "Weil die Testumgebung dort stabiler ist",
+                    "correct": false
+                },
+                {
+                    "text": "Weil die Benutzer dort am meisten testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche typischen Fehlerzustände deckt die Grenzwertanalyse auf?",
+            "explanation": "Grenzen werden oft oberhalb/unterhalb der beabsichtigten Position implementiert oder ganz ausgelassen. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Fehler durch doppelte Eingaben",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler durch falsche Berechnung der Mittelwerte",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler durch verschobene oder ausgelassene Grenzen",
+                    "correct": true
+                },
+                {
+                    "text": "Fehler durch unzureichende Testdatenmenge",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche zwei Versionen der Grenzwertanalyse behandelt der Lehrplan?",
+            "explanation": "Es werden die 2-Wert-Grenzwertanalyse und die 3-Wert-Grenzwertanalyse unterschieden. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Nur die Mittelwertanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "2-Wert- und 3-Wert-Grenzwertanalyse",
+                    "correct": true
+                },
+                {
+                    "text": "1-Wert- und 4-Wert-Grenzwertanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Explorative und strukturelle Grenzwertanalyse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worin unterscheiden sich die 2-Wert- und die 3-Wert-Grenzwertanalyse?",
+            "explanation": "Sie unterscheiden sich in der Anzahl der Überdeckungselemente pro Grenzwert, die für 100% Überdeckung getestet werden müssen. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "In der Art der Testdatenquelle",
+                    "correct": false
+                },
+                {
+                    "text": "In der Anzahl der Überdeckungselemente pro Grenzwert",
+                    "correct": true
+                },
+                {
+                    "text": "In der Reihenfolge der Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "In der Zuordnung zu funktionalen oder nicht-funktionalen Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Ziel der 2-Wert- und 3-Wert-Grenzwertanalyse?",
+            "explanation": "Mit beiden Varianten soll eine 100%ige Überdeckung der definierten Überdeckungselemente erreicht werden. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Automatische Fehlerbehebung",
+                    "correct": false
+                },
+                {
+                    "text": "Eine 100%ige Überdeckung erreichen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Testumgebung vollständig simulieren",
+                    "correct": true
+                },
+                {
+                    "text": "Die Dokumentation der Anforderungen vereinfachen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Überdeckungselemente gibt es bei der 2-Wert-Grenzwertanalyse?",
+            "explanation": "Für jeden Grenzwert werden zwei Elemente getestet: der Grenzwert selbst und sein engster Nachbar aus der angrenzenden Klasse. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Nur der Grenzwert",
+                    "correct": false
+                },
+                {
+                    "text": "Der Grenzwert und sein engster Nachbar",
+                    "correct": true
+                },
+                {
+                    "text": "Nur zufällige Werte nahe am Grenzwert",
+                    "correct": false
+                },
+                {
+                    "text": "Drei Nachbarn plus Grenzwert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann wird bei der 2-Wert-Grenzwertanalyse eine 100%ige Überdeckung erreicht?",
+            "explanation": "Wenn alle identifizierten Grenzwerte durch Testfälle ausgeführt wurden. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Wenn alle identifizierten Grenzwerte ausgeführt wurden",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn nur die Minimum- und Maximumwerte getestet wurden",
+                    "correct": true
+                },
+                {
+                    "text": "Wenn zufällige Eingaben im Test vorkommen",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn die gültigen Klassenwerte doppelt getestet wurden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird die Überdeckung in der 2-Wert-Grenzwertanalyse gemessen?",
+            "explanation": "Anzahl der ausgeführten Grenzwerte geteilt durch die Gesamtzahl der identifizierten Grenzwerte × 100%. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Ausgeführte Grenzwerte / identifizierte Grenzwerte × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerzustände / getestete Klassen × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle / Gesamtzahl aller Testdaten × 100%",
+                    "correct": true
+                },
+                {
+                    "text": "Getestete Klassen / identifizierte Klassen × 100%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil ergibt sich durch die 2-Wert-Grenzwertanalyse?",
+            "explanation": "Sie konzentriert sich auf die fehleranfälligen Grenzbereiche und reduziert die Anzahl der Testfälle im Vergleich zu erschöpfendem Testen. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Alle Eingaben werden vollständig getestet",
+                    "correct": false
+                },
+                {
+                    "text": "Die Anzahl der Testfälle wird reduziert, Fokus liegt auf Grenzwerten",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die gültigen Klassen werden getestet",
+                    "correct": false
+                },
+                {
+                    "text": "Fehleranfällige Grenzbereiche werden effektiv geprüft",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Überdeckungselemente gibt es bei der 3-Wert-Grenzwertanalyse?",
+            "explanation": "Für jeden Grenzwert werden drei Elemente getestet: der Grenzwert selbst und seine beiden Nachbarn. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Nur der Grenzwert selbst",
+                    "correct": false
+                },
+                {
+                    "text": "Der Grenzwert und seine beiden Nachbarn",
+                    "correct": true
+                },
+                {
+                    "text": "Zufällige Werte aus jeder Klasse",
+                    "correct": false
+                },
+                {
+                    "text": "Drei beliebige Testdaten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum können bei der 3-Wert-Grenzwertanalyse einige Überdeckungselemente keine Grenzwerte sein?",
+            "explanation": "Weil auch die beiden Nachbarn des Grenzwerts getestet werden, die keine Grenzwerte sind. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Weil Nachbarn des Grenzwerts getestet werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil nur Ausgabewerte betrachtet werden",
+                    "correct": true
+                },
+                {
+                    "text": "Weil ungültige Klassen ignoriert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil nur zufällige Eingaben getestet werden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird die Überdeckung in der 3-Wert-Grenzwertanalyse gemessen?",
+            "explanation": "Anzahl der getesteten Grenzwerte und ihrer Nachbarn geteilt durch die Gesamtzahl der identifizierten Grenzwerte und ihrer Nachbarn. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Testfälle / Gesamtzahl der Testdaten × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Getestete Klassen / identifizierte Klassen × 100%",
+                    "correct": false
+                },
+                {
+                    "text": "Ausgeführte Grenzwerte und Nachbarn / alle identifizierten Grenzwerte und Nachbarn × 100%",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerzustände / getestete Grenzwerte × 100%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die 3-Wert-Grenzwertanalyse strenger als die 2-Wert-Grenzwertanalyse?",
+            "explanation": "Sie kann Fehlerzustände aufdecken, die in der 2-Wert-Grenzwertanalyse übersehen werden. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Weil sie zufällige Eingaben wählt",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie mehr Überdeckungselemente testet",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie systematische Fehler im Code zuverlässiger findet",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie nur funktionale Anforderungen prüft",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Beispiel zeigt einen Vorteil der 3-Wert-Grenzwertanalyse gegenüber der 2-Wert-Grenzwertanalyse?",
+            "explanation": "Ein Fehler in der Bedingung (x ≤ 10) wird von 2-Wert-Testdaten (10, 11) nicht erkannt, aber durch 3-Wert-Testdaten (9, 10, 11) aufgedeckt. (Kap. 4.2.2)",
+            "options": [
+                {
+                    "text": "Testfallmenge wird kleiner",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerhafte Bedingung (x ≤ 10) vs. (x = 10) kann mit x = 9 erkannt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Es werden keine ungültigen Klassen betrachtet",
+                    "correct": false
+                },
+                {
+                    "text": "Die Testdaten sind immer automatisch generiert",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}
