@@ -2,5 +2,15 @@
     "chapter": "fragen_genel",
     "subChapter": "genel_1",
     "subChapterTitle": "Genel.1 Temel Kavramlar",
-    "questions": []
+    "questions": [
+      {
+        "question": "Temel kavramlar nelerdir?",
+        "explanation": "Temel kavramlar, bir disiplinin veya alanın temelini oluşturan kavramlardır.",
+        "options": [
+          { "text": "Kavram 1", "correct": true },
+          { "text": "Kavram 2", "correct": false },
+          { "text": "Kavram 3", "correct": false }
+        ]
+      }
+    ]
 }
