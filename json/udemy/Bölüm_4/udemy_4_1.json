@@ -2,5 +2,409 @@
     "chapter": "udemy_4",
     "subChapter": "udemy_4_1",
     "subChapterTitle": "4.1 Quiz 7 - Statische Analyse",
-    "questions": []
+    "questions": [{
+            "chapter": "reviews_static_testing",
+            "questions": [
+                {
+                    "question": "Welche Review-Art zielt darauf ab, ein Arbeitsergebnis durch Teamdiskussion zu verbessern?",
+                    "options": [
+                        {
+                            "text": "Inspektion",
+                            "correct": false
+                        },
+                        {
+                            "text": "Walkthrough",
+                            "correct": true
+                        },
+                        {
+                            "text": "Technisches Review",
+                            "correct": false
+                        },
+                        {
+                            "text": "Peer-Testing",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Welche Aufgabe hat der Protokollführer (Scribe) bei einer Inspektion?",
+                    "options": [
+                        {
+                            "text": "Entwurfsdokumente überprüfen",
+                            "correct": false
+                        },
+                        {
+                            "text": "Gefundene Fehler dokumentieren",
+                            "correct": true
+                        },
+                        {
+                            "text": "Die Review leiten",
+                            "correct": false
+                        },
+                        {
+                            "text": "Testfälle ausführen",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Welche der folgenden Techniken gehört nicht zum statischen Testen?",
+                    "options": [
+                        {
+                            "text": "Inspektion",
+                            "correct": false
+                        },
+                        {
+                            "text": "Walkthrough",
+                            "correct": false
+                        },
+                        {
+                            "text": "Äquivalenzklassenanalyse",
+                            "correct": true
+                        },
+                        {
+                            "text": "Technisches Review",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Was ist ein Ziel des statischen Testens?",
+                    "options": [
+                        {
+                            "text": "Überprüfung der Laufzeitspeichernutzung",
+                            "correct": false
+                        },
+                        {
+                            "text": "Verbesserung der Code-Ausführungsgeschwindigkeit",
+                            "correct": false
+                        },
+                        {
+                            "text": "Frühe Fehlererkennung",
+                            "correct": true
+                        },
+                        {
+                            "text": "Simulation von Benutzerinteraktionen",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Was unterscheidet eine Inspektion von anderen Reviews?",
+                    "options": [
+                        {
+                            "text": "Sie ist immer informell",
+                            "correct": false
+                        },
+                        {
+                            "text": "Sie konzentriert sich nur auf Benutzerdokumentation",
+                            "correct": false
+                        },
+                        {
+                            "text": "Sie folgt einem definierten Prozess mit klaren Rollen",
+                            "correct": true
+                        },
+                        {
+                            "text": "Sie wird nur von Entwicklern durchgeführt",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Welche Aktivität erfolgt nach einer Review-Sitzung?",
+                    "options": [
+                        {
+                            "text": "Planung",
+                            "correct": false
+                        },
+                        {
+                            "text": "Durchführung",
+                            "correct": false
+                        },
+                        {
+                            "text": "Nacharbeit (Rework)",
+                            "correct": true
+                        },
+                        {
+                            "text": "Walkthrough",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Wer übernimmt typischerweise die Moderation einer Inspektion?",
+                    "options": [
+                        {
+                            "text": "Entwickler",
+                            "correct": false
+                        },
+                        {
+                            "text": "Tester",
+                            "correct": false
+                        },
+                        {
+                            "text": "Moderator",
+                            "correct": true
+                        },
+                        {
+                            "text": "Business Analyst",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Welche Review-Art ist am wenigsten formell?",
+                    "options": [
+                        {
+                            "text": "Inspektion",
+                            "correct": false
+                        },
+                        {
+                            "text": "Walkthrough",
+                            "correct": false
+                        },
+                        {
+                            "text": "Technisches Review",
+                            "correct": false
+                        },
+                        {
+                            "text": "Informelles Review",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Was kann durch statisches Testen erkannt werden?",
+                    "options": [
+                        {
+                            "text": "Fehlerhafte Berechnungslogik",
+                            "correct": false
+                        },
+                        {
+                            "text": "Performanceprobleme",
+                            "correct": false
+                        },
+                        {
+                            "text": "Falsche Syntax",
+                            "correct": true
+                        },
+                        {
+                            "text": "Defekte Datenbankverknüpfungen",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Welche der folgenden Methoden ist eine statische Testtechnik?",
+                    "options": [
+                        {
+                            "text": "Exploratives Testen",
+                            "correct": false
+                        },
+                        {
+                            "text": "Grenzwertanalyse",
+                            "correct": false
+                        },
+                        {
+                            "text": "Code-Walkthrough",
+                            "correct": true
+                        },
+                        {
+                            "text": "Regressions-Test",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Was ist typischerweise das Ergebnis eines Review-Prozesses?",
+                    "options": [
+                        {
+                            "text": "Testfälle",
+                            "correct": false
+                        },
+                        {
+                            "text": "Fehlerberichte",
+                            "correct": true
+                        },
+                        {
+                            "text": "Rückverfolgbarkeitsmatrix",
+                            "correct": false
+                        },
+                        {
+                            "text": "Ausführbare Skripte",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Welches Artefakt wird typischerweise beim statischen Test überprüft?",
+                    "options": [
+                        {
+                            "text": "Protokolldateien",
+                            "correct": false
+                        },
+                        {
+                            "text": "Testausführungsberichte",
+                            "correct": false
+                        },
+                        {
+                            "text": "Anforderungsspezifikation",
+                            "correct": true
+                        },
+                        {
+                            "text": "Performance-Benchmarks",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Was ist das Ziel der Vorbereitungsphase bei einem formellen Review?",
+                    "options": [
+                        {
+                            "text": "Entdeckte Fehler beheben",
+                            "correct": false
+                        },
+                        {
+                            "text": "Sich auf Testwerkzeuge einigen",
+                            "correct": false
+                        },
+                        {
+                            "text": "Materialien individuell prüfen",
+                            "correct": true
+                        },
+                        {
+                            "text": "Endgültige Freigaben dokumentieren",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Welche Review-Technik fördert das Lernen durch Teamdiskussion?",
+                    "options": [
+                        {
+                            "text": "Inspektion",
+                            "correct": false
+                        },
+                        {
+                            "text": "Walkthrough",
+                            "correct": true
+                        },
+                        {
+                            "text": "Technisches Review",
+                            "correct": false
+                        },
+                        {
+                            "text": "Audit",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Welche Rolle ist verantwortlich für die Behebung der beim Review gefundenen Fehler?",
+                    "options": [
+                        {
+                            "text": "Moderator",
+                            "correct": false
+                        },
+                        {
+                            "text": "Autor",
+                            "correct": true
+                        },
+                        {
+                            "text": "Tester",
+                            "correct": false
+                        },
+                        {
+                            "text": "Protokollführer",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Welche Review-Art beinhaltet einen Review-Leiter und formale Dokumentation?",
+                    "options": [
+                        {
+                            "text": "Informelles Review",
+                            "correct": false
+                        },
+                        {
+                            "text": "Walkthrough",
+                            "correct": false
+                        },
+                        {
+                            "text": "Inspektion",
+                            "correct": true
+                        },
+                        {
+                            "text": "Pair Testing",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Was ist ein Vorteil von statischen Analysetools?",
+                    "options": [
+                        {
+                            "text": "Sie führen Testskripte aus",
+                            "correct": false
+                        },
+                        {
+                            "text": "Sie finden Fehler zur Laufzeit",
+                            "correct": false
+                        },
+                        {
+                            "text": "Sie beheben Fehler automatisch",
+                            "correct": false
+                        },
+                        {
+                            "text": "Sie erkennen Codeprobleme ohne Ausführung",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Was ist der Hauptvorteil des statischen Testens?",
+                    "options": [
+                        {
+                            "text": "Es macht Reviews überflüssig",
+                            "correct": false
+                        },
+                        {
+                            "text": "Es findet Fehler frühzeitig ohne Codeausführung",
+                            "correct": true
+                        },
+                        {
+                            "text": "Es ersetzt dynamisches Testen",
+                            "correct": false
+                        },
+                        {
+                            "text": "Es überprüft die Systemintegration",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Welche Phase des Review-Prozesses beinhaltet das Verteilen der Dokumente?",
+                    "options": [
+                        {
+                            "text": "Planung",
+                            "correct": true
+                        },
+                        {
+                            "text": "Vorbereitung",
+                            "correct": false
+                        },
+                        {
+                            "text": "Review-Meeting",
+                            "correct": false
+                        },
+                        {
+                            "text": "Nacharbeit",
+                            "correct": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

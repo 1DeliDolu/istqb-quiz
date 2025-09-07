@@ -11,6 +11,7 @@ import {
     PaginationLink,
     PaginationNext,
     PaginationPrevious,
+    PaginationEllipsis,
 } from "@/components/ui/pagination";
 
 const QuizPage: React.FC = () => {
@@ -289,6 +290,48 @@ const QuizPage: React.FC = () => {
         return "border-gray-300 opacity-60";
     };
 
+    // Modern pagination logic with ellipsis
+    const getPaginationItems = () => {
+        const totalPages = questions.length;
+        const currentPage = currentQuestionIndex + 1;
+        const delta = 2; // Number of pages to show on each side of current page
+
+        const items = [];
+
+        // Always show first page
+        if (totalPages > 0) {
+            items.push(1);
+        }
+
+        // Calculate start and end of visible range
+        let start = Math.max(2, currentPage - delta);
+        let end = Math.min(totalPages - 1, currentPage + delta);
+
+        // Add ellipsis after first page if needed
+        if (start > 2) {
+            items.push('ellipsis-start');
+        }
+
+        // Add pages in visible range
+        for (let i = start; i <= end; i++) {
+            if (i !== 1 && i !== totalPages) {
+                items.push(i);
+            }
+        }
+
+        // Add ellipsis before last page if needed
+        if (end < totalPages - 1) {
+            items.push('ellipsis-end');
+        }
+
+        // Always show last page (if different from first)
+        if (totalPages > 1) {
+            items.push(totalPages);
+        }
+
+        return items;
+    };
+
     return (
         <div className="container mx-auto p-8 max-w-4xl">
             {/* Header */}
@@ -357,19 +400,23 @@ const QuizPage: React.FC = () => {
                             </PaginationPrevious>
                         </PaginationItem>
 
-                        {/* Question Number Links */}
-                        {questions.map((_, index) => (
+                        {/* Smart Question Number Links with Ellipsis */}
+                        {getPaginationItems().map((item, index) => (
                             <PaginationItem key={index}>
-                                <PaginationLink
-                                    onClick={() => handleQuestionNavigation(index)}
-                                    isActive={index === currentQuestionIndex}
-                                    className={`cursor-pointer ${answeredQuestions.has(index)
-                                        ? 'bg-green-100 border-green-500 text-green-800 hover:bg-green-200'
-                                        : ''
-                                        }`}
-                                >
-                                    {index + 1}
-                                </PaginationLink>
+                                {item === 'ellipsis-start' || item === 'ellipsis-end' ? (
+                                    <PaginationEllipsis />
+                                ) : (
+                                    <PaginationLink
+                                        onClick={() => handleQuestionNavigation((item as number) - 1)}
+                                        isActive={(item as number) === currentQuestionIndex + 1}
+                                        className={`cursor-pointer ${answeredQuestions.has((item as number) - 1)
+                                            ? 'bg-green-100 border-green-500 text-green-800 hover:bg-green-200'
+                                            : ''
+                                            }`}
+                                    >
+                                        {item}
+                                    </PaginationLink>
+                                )}
                             </PaginationItem>
                         ))}
 

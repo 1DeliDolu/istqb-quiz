@@ -2,5 +2,425 @@
     "chapter": "udemy_4",
     "subChapter": "udemy_4_2",
     "subChapterTitle": "4.2 Quiz 8 - Review-Prozess",
-    "questions": []
+    "questions": [[
+            {
+                "question": "Warum sind Checklisten bei Reviews nützlich?",
+                "explanation": "Checklisten stellen sicher, dass alle wichtigen Punkte geprüft werden. Sie helfen den Reviewern, sich auf relevante Aspekte zu konzentrieren und tragen zur Vollständigkeit des Reviews bei. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Reviewprozess; 📗 Standardglossar: checklistenbasiertes Review)",
+                "options": [
+                    {
+                        "text": "Sie reduzieren den Nacharbeitsaufwand",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sie machen die Vorbereitung überflüssig",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sie leiten Reviewer an, worauf sie achten sollen",
+                        "correct": true
+                    },
+                    {
+                        "text": "Sie ersetzen Testfälle",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Wer ist für die Behebung der bei einem Review gefundenen Probleme verantwortlich?",
+                "explanation": "Der Autor ist verantwortlich für das Überarbeiten seines eigenen Dokuments. Die Rolle des Autors besteht darin, die im Review identifizierten Mängel zu beheben. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Rollen im Reviewprozess; 📗 Standardglossar: Review, Autor)",
+                "options": [
+                    {
+                        "text": "Moderator",
+                        "correct": false
+                    },
+                    {
+                        "text": "Projektmanager",
+                        "correct": false
+                    },
+                    {
+                        "text": "Autor",
+                        "correct": true
+                    },
+                    {
+                        "text": "Protokollführer",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Was beschreibt statische Analyse am besten?",
+                "explanation": "Statische Analyse bewertet ein Testobjekt (z. B. Code, Dokumentation) anhand seiner Form, Struktur oder Inhalte, ohne es auszuführen. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.1.2 Statische Analyse; 📗 Standardglossar: statische Analyse)",
+                "options": [
+                    {
+                        "text": "Code ausführen und Ergebnisse analysieren",
+                        "correct": false
+                    },
+                    {
+                        "text": "Systemprotokolle prüfen",
+                        "correct": false
+                    },
+                    {
+                        "text": "Code-Struktur ohne Ausführung analysieren",
+                        "correct": true
+                    },
+                    {
+                        "text": "Speicherverbrauch zur Laufzeit überwachen",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Was ist typischerweise kein Bestandteil eines Walkthroughs?",
+                "explanation": "Walkthroughs werden üblicherweise vom Autor selbst geleitet. Ein Moderator ist nicht erforderlich, im Gegensatz zu formalen Reviews. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Reviewarten; 📗 Standardglossar: Walkthrough)",
+                "options": [
+                    {
+                        "text": "Moderator",
+                        "correct": true
+                    },
+                    {
+                        "text": "Autor",
+                        "correct": false
+                    },
+                    {
+                        "text": "Präsentation des Dokuments",
+                        "correct": false
+                    },
+                    {
+                        "text": "Informelle Diskussion",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Welcher Vorteil bieten statische Testwerkzeuge?",
+                "explanation": "Statische Testwerkzeuge unterstützen z. B. bei der Erkennung von Code-Duplizaten, zyklomatischer Komplexität oder Verstößen gegen Programmierstandards. Sie helfen, die Codequalität zu verbessern, indem sie Probleme früh aufzeigen. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 6.2.1 Statische Testwerkzeuge; 📗 Standardglossar: statische Analyse, Programmierstandard)",
+                "options": [
+                    {
+                        "text": "Automatisieren exploratives Testen",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reduzieren Dokumentationsaufwand",
+                        "correct": false
+                    },
+                    {
+                        "text": "Beheben Codefehler automatisch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Erkennen Probleme wie Duplikate und Komplexität",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "question": "Wer dokumentiert typischerweise die gefundenen Fehler während eines Reviews?",
+                "explanation": "Der Protokollführer (Scribe) ist dafür zuständig, alle während des Reviews identifizierten Probleme zu notieren. Damit wird sichergestellt, dass die Ergebnisse vollständig und nachvollziehbar festgehalten werden. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Rollen im Reviewprozess; 📗 Standardglossar: Protokollant/Protokollführer)",
+                "options": [
+                    {
+                        "text": "Autor",
+                        "correct": false
+                    },
+                    {
+                        "text": "Moderator",
+                        "correct": false
+                    },
+                    {
+                        "text": "Protokollführer",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tester",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Worin liegt der Fokus eines technischen Reviews?",
+                "explanation": "Technische Reviews werden von Experten durchgeführt und konzentrieren sich auf Aspekte wie Design, Architektur, Codequalität sowie die Einhaltung von Standards und Normen. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Reviewarten; 📗 Standardglossar: Technisches Review)",
+                "options": [
+                    {
+                        "text": "Bewertung der Benutzerfreundlichkeit",
+                        "correct": false
+                    },
+                    {
+                        "text": "Technische Genauigkeit und Normkonformität prüfen",
+                        "correct": true
+                    },
+                    {
+                        "text": "Performance zur Laufzeit testen",
+                        "correct": false
+                    },
+                    {
+                        "text": "Nutzerfeedback analysieren",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Was ist ein Vorteil des statischen Testens in regulierten Branchen?",
+                "explanation": "Statisches Testen ermöglicht eine frühzeitige Fehlererkennung, unterstützt die Nachvollziehbarkeit und erfüllt regulatorische Dokumentationspflichten. Dadurch wird das Risiko in stark regulierten Branchen verringert. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.1.1 Vorteile des statischen Testens; 📗 Standardglossar: statischer Test)",
+                "options": [
+                    {
+                        "text": "Schnellere Testdurchführung",
+                        "correct": false
+                    },
+                    {
+                        "text": "Bessere Tests der Benutzeroberfläche",
+                        "correct": false
+                    },
+                    {
+                        "text": "Frühe Fehlererkennung und Nachverfolgbarkeit",
+                        "correct": true
+                    },
+                    {
+                        "text": "Geringere Lizenzkosten",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Welche Review-Art ist am wenigsten formell und typischerweise ungeplant?",
+                "explanation": "Informelle Reviews sind die am wenigsten formelle Review-Art. Sie entstehen meist spontan, folgen keinem definierten Prozess und liefern in der Regel keine dokumentierten Ergebnisse. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Reviewarten; 📗 Standardglossar: informelles Review)",
+                "options": [
+                    {
+                        "text": "Inspektion",
+                        "correct": false
+                    },
+                    {
+                        "text": "Technisches Review",
+                        "correct": false
+                    },
+                    {
+                        "text": "Walkthrough",
+                        "correct": false
+                    },
+                    {
+                        "text": "Informelles Review",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "question": "Welche Review-Art fördert Teamlernen und Fehlererkennung anhand von Szenarien?",
+                "explanation": "Walkthroughs unterstützen gemeinsames Lernen im Team, Diskussionen und die Identifizierung von Fehlern. Dabei werden häufig Szenarien genutzt, um die Vollständigkeit und Verständlichkeit des Dokuments zu prüfen. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Reviewarten; 📗 Standardglossar: Walkthrough)",
+                "options": [
+                    {
+                        "text": "Use Case Review",
+                        "correct": false
+                    },
+                    {
+                        "text": "Walkthrough",
+                        "correct": true
+                    },
+                    {
+                        "text": "Audit",
+                        "correct": false
+                    },
+                    {
+                        "text": "Exploratives Review",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Was passiert in der Nacharbeitsphase eines Reviews?",
+                "explanation": "In der Nacharbeitsphase behebt der Autor die im Review identifizierten Probleme und überarbeitet sein Arbeitsergebnis. Dies geschieht nach dem Review-Meeting. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Reviewprozess; 📗 Standardglossar: Review, Autor)",
+                "options": [
+                    {
+                        "text": "Review-Dokumente werden verteilt",
+                        "correct": false
+                    },
+                    {
+                        "text": "Der Abschlussbericht wird abgegeben",
+                        "correct": false
+                    },
+                    {
+                        "text": "Teilnehmer werden ausgewählt",
+                        "correct": false
+                    },
+                    {
+                        "text": "Probleme werden vom Autor behoben",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "question": "Was ist der letzte Schritt in einem typischen Review-Prozess?",
+                "explanation": "Der letzte Schritt eines Reviews ist die Nachbereitung (Follow-up). Hier überprüft der Moderator, ob alle vereinbarten Maßnahmen umgesetzt wurden und das Review abgeschlossen werden kann. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Reviewprozess; 📗 Standardglossar: Review, Moderator)",
+                "options": [
+                    {
+                        "text": "Planung",
+                        "correct": false
+                    },
+                    {
+                        "text": "Nachbereitung (Follow-up)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nacharbeit (Rework)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Vorbereitung",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Welche Tool-Kategorie unterstützt die Codeanalyse ohne Ausführung?",
+                "explanation": "Statische Analysetools untersuchen den Quellcode, ohne ihn auszuführen. Beispiele sind Linter oder Tools wie SonarQube. Sie helfen, Verstöße gegen Programmierstandards, Duplikate oder komplexe Strukturen frühzeitig zu erkennen. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 6.2.1 Statische Testwerkzeuge; 📗 Standardglossar: statische Analyse, Programmierstandard)",
+                "options": [
+                    {
+                        "text": "Debugger",
+                        "correct": false
+                    },
+                    {
+                        "text": "Statische Analysetools",
+                        "correct": true
+                    },
+                    {
+                        "text": "Performance-Profiler",
+                        "correct": false
+                    },
+                    {
+                        "text": "Lasttest-Tools",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Welche Rolle ist typischerweise bei einer formellen Inspektion beteiligt?",
+                "explanation": "Bei einer Inspektion übernimmt der Moderator eine zentrale Rolle. Er plant und koordiniert die Sitzung, sorgt für die Einhaltung des Prozesses und unterstützt die effektive Durchführung. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Rollen im Reviewprozess; 📗 Standardglossar: Inspektion, Moderator)",
+                "options": [
+                    {
+                        "text": "Release-Manager",
+                        "correct": false
+                    },
+                    {
+                        "text": "Moderator",
+                        "correct": true
+                    },
+                    {
+                        "text": "UX-Forscher",
+                        "correct": false
+                    },
+                    {
+                        "text": "Testumgebungs-Ingenieur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Was ist das Hauptziel des frühen Einsatzes von statischem Testen?",
+                "explanation": "Das Hauptziel des frühen statischen Testens ist die Erkennung von Fehlern, bevor dynamisches Testen beginnt. Dies reduziert den späteren Testaufwand und unterstützt die Qualitätssicherung schon in frühen Entwicklungsphasen. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.1.1 Vorteile des statischen Testens; 📗 Standardglossar: statischer Test)",
+                "options": [
+                    {
+                        "text": "Das Schreiben von Testfällen vermeiden",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ausführungszeit reduzieren",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fehler vor dynamischem Testen erkennen",
+                        "correct": true
+                    },
+                    {
+                        "text": "Den Testprozess automatisieren",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Was unterscheidet ein formelles Review von einem informellen?",
+                "explanation": "Formelle Reviews folgen einem klar definierten Prozess mit festgelegten Rollen wie Moderator, Autor und Prüfer. Im Gegensatz dazu sind informelle Reviews spontan und weniger strukturiert. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Reviewarten; 📗 Standardglossar: formales Review, informelles Review)",
+                "options": [
+                    {
+                        "text": "Nur informelle Reviews finden Fehler",
+                        "correct": false
+                    },
+                    {
+                        "text": "Formelle Reviews haben definierte Rollen und Abläufe",
+                        "correct": true
+                    },
+                    {
+                        "text": "Formelle Reviews sind unstrukturiert",
+                        "correct": false
+                    },
+                    {
+                        "text": "Informelle Reviews erfordern mehr Vorbereitung",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Was kann mit statischen Analysetools erkannt werden?",
+                "explanation": "Statische Analysetools untersuchen den Quellcode ohne Ausführung und können dabei Sicherheitslücken, Verstöße gegen Programmierstandards oder potenzielle Schwachstellen identifizieren. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 6.2.1 Statische Testwerkzeuge; 📗 Standardglossar: statische Analyse, Programmierstandard)",
+                "options": [
+                    {
+                        "text": "Systemleistungskennzahlen",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sicherheitslücken im Code",
+                        "correct": true
+                    },
+                    {
+                        "text": "Netzwerkgeschwindigkeit",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fehler in der GUI-Darstellung",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Was ist die erste Phase eines formellen Review-Prozesses?",
+                "explanation": "Die erste Phase eines formellen Reviews ist die Planung. In dieser Phase werden Rollen wie Moderator, Autor und Prüfer bestimmt sowie die relevanten Dokumente bereitgestellt. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.2.2 Reviewprozess; 📗 Standardglossar: Review, Moderator)",
+                "options": [
+                    {
+                        "text": "Review-Meeting",
+                        "correct": false
+                    },
+                    {
+                        "text": "Planung",
+                        "correct": true
+                    },
+                    {
+                        "text": "Vorbereitung",
+                        "correct": false
+                    },
+                    {
+                        "text": "Nacharbeit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "question": "Was ist ein Beispiel für ein Arbeitsprodukt, das beim statischen Testen geprüft wird?",
+                "explanation": "Typische Arbeitsprodukte für statisches Testen sind Dokumente wie Anforderungen, Spezifikationen oder Designs. Diese können durch Reviews oder statische Analysen überprüft werden, ohne dass eine Programmausführung nötig ist. (📘 ISTQB CTFL Lehrplan 2025, Abschnitt 3.1.1 Statisches Testen; 📗 Standardglossar: statischer Test, Anforderung)",
+                "options": [
+                    {
+                        "text": "Aktive Datenbankverbindungen",
+                        "correct": false
+                    },
+                    {
+                        "text": "Kompilierte Binärdateien",
+                        "correct": false
+                    },
+                    {
+                        "text": "Anforderungsdokument",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ausführungsprotokolle",
+                        "correct": false
+                    }
+                ]
+            }
+        ]
+    ]
 }

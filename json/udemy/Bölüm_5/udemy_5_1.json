@@ -2,5 +2,446 @@
     "chapter": "udemy_5",
     "subChapter": "udemy_5_1",
     "subChapterTitle": "5.1 Quiz 10 - Black-Box Verfahren",
-    "questions": []
+    "questions": [
+        {
+            "question": "Wozu dient die Rückverfolgbarkeit (Traceability) in der Testanalyse?",
+            "explanation": "Die Rückverfolgbarkeit stellt sicher, dass Testbedingungen mit Anforderungen verknüpft werden, sodass jede Anforderung durch mindestens eine Testbedingung abgedeckt ist. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel Testanalyse; 📗 Standardglossar: Verfolgbarkeit = Fähigkeit, explizite Beziehungen zwischen Arbeitsergebnissen darzustellen.",
+            "options": [
+                {
+                    "text": "Um Leistungsprobleme zu identifizieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um Testbedingungen mit Anforderungen zu verknüpfen",
+                    "correct": true
+                },
+                {
+                    "text": "Um die Fehlerpriorität zu erhöhen",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Testausführung zu beschleunigen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Beziehung zwischen Testbedingungen und Testfällen?",
+            "explanation": "Testfälle werden aus Testbedingungen abgeleitet. Testbedingungen sind testbare Aspekte, die während der Testanalyse identifiziert werden, und aus ihnen werden im Testentwurf konkrete Testfälle erstellt. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel Testanalyse und Testentwurf; 📗 Standardglossar.",
+            "options": [
+                {
+                    "text": "Testfälle identifizieren Testbedingungen",
+                    "correct": false
+                },
+                {
+                    "text": "Testbedingungen sind Ergebnisse ausgeführter Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle werden aus Testbedingungen abgeleitet",
+                    "correct": true
+                },
+                {
+                    "text": "Es besteht kein Zusammenhang",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann sollte mit dem Testentwurf begonnen werden?",
+            "explanation": "Der Testentwurf beginnt, sobald Testbedingungen identifiziert wurden. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel Testanalyse und Testentwurf; 📗 Standardglossar.",
+            "options": [
+                {
+                    "text": "Nach Ausführung aller Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Sobald Testbedingungen identifiziert wurden",
+                    "correct": true
+                },
+                {
+                    "text": "Während der Bereitstellung",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn der Testsummierungsbericht verfügbar ist",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist normalerweise KEIN Ergebnis der Testanalyse und des Entwurfs?",
+            "explanation": "Ergebnisse sind Testbedingungen, Testfälle und Testdaten. Ein Freigabeplan gehört zum Projektmanagement, nicht zum Testentwurf. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar.",
+            "options": [
+                {
+                    "text": "Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Testbedingungen",
+                    "correct": false
+                },
+                {
+                    "text": "Freigabeplan (Release schedule)",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein wichtiger Aspekt beim Entwerfen von Testfällen?",
+            "explanation": "Ein wesentlicher Aspekt ist die Berücksichtigung von Risikoniveau und Abdeckungszielen. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar.",
+            "options": [
+                {
+                    "text": "Testumgebungskonfiguration",
+                    "correct": false
+                },
+                {
+                    "text": "Risikoniveau und Abdeckungsziele",
+                    "correct": true
+                },
+                {
+                    "text": "Systemverfügbarkeitsanforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Verfügbarkeit der Teammitglieder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches der folgenden ist eine typische Eingabe für die Testanalyse?",
+            "explanation": "Typische Eingaben sind Dokumente aus der Testbasis, z. B. Entwurfsdokumente. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Testbasis.",
+            "options": [
+                {
+                    "text": "Fehlerverfolgungsberichte",
+                    "correct": false
+                },
+                {
+                    "text": "Testsummierungsbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Entwurfsdokumente",
+                    "correct": true
+                },
+                {
+                    "text": "Bereitstellungsplan",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle ist häufig an der Überprüfung von Testfällen beteiligt?",
+            "explanation": "Der Testmanager ist verantwortlich für die Qualitätssicherung und Vollständigkeit der Testfälle. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Testmanager.",
+            "options": [
+                {
+                    "text": "Endbenutzer",
+                    "correct": false
+                },
+                {
+                    "text": "Datenbankadministrator",
+                    "correct": false
+                },
+                {
+                    "text": "Testmanager",
+                    "correct": true
+                },
+                {
+                    "text": "Release-Ingenieur",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte bei der Gestaltung von Testdaten berücksichtigt werden?",
+            "explanation": "Testdaten sollten Normalfälle, Randfälle und ungültige Eingaben abdecken. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Testdaten.",
+            "options": [
+                {
+                    "text": "Serverkapazität",
+                    "correct": false
+                },
+                {
+                    "text": "Realistische Eingaben und Grenzwerte",
+                    "correct": true
+                },
+                {
+                    "text": "Netzwerkbandbreite",
+                    "correct": false
+                },
+                {
+                    "text": "Produktionsprotokolle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil der Rückverfolgbarkeit zwischen Anforderungen und Testfällen?",
+            "explanation": "Sie stellt sicher, dass alle Anforderungen durch Tests abgedeckt sind. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Verfolgbarkeit.",
+            "options": [
+                {
+                    "text": "Verbesserte Systemleistung",
+                    "correct": false
+                },
+                {
+                    "text": "Sicherstellung, dass alle Anforderungen getestet werden",
+                    "correct": true
+                },
+                {
+                    "text": "Kürzere Testausführungszeit",
+                    "correct": false
+                },
+                {
+                    "text": "Kein Testplan erforderlich",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein typisches Ergebnis des Testentwurfs?",
+            "explanation": "Ein typisches Ergebnis sind konkrete Testfälle und Testdaten. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar.",
+            "options": [
+                {
+                    "text": "Bereitgestellte Software",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle und Testdaten",
+                    "correct": true
+                },
+                {
+                    "text": "Versionshinweise",
+                    "correct": false
+                },
+                {
+                    "text": "Installationshandbuch",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Ergebnis der Testanalyse-Aktivität?",
+            "explanation": "Das zentrale Ergebnis sind die Testbedingungen. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Testbedingung.",
+            "options": [
+                {
+                    "text": "Testprotokoll",
+                    "correct": false
+                },
+                {
+                    "text": "Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Testbedingungen",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerbericht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wozu dient die Identifikation von Testbedingungen?",
+            "explanation": "Sie dient dazu festzulegen, was getestet werden soll. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar.",
+            "options": [
+                {
+                    "text": "Um die Testumgebung zu definieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um Benutzerschulungen zu planen",
+                    "correct": false
+                },
+                {
+                    "text": "Um festzulegen, was getestet werden soll",
+                    "correct": true
+                },
+                {
+                    "text": "Um Testzusammenfassungen zu schreiben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist eine Testbedingung (test condition)?",
+            "explanation": "Eine Testbedingung ist ein Element oder Ereignis, das durch einen oder mehrere Testfälle überprüft werden kann. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Testbedingung.",
+            "options": [
+                {
+                    "text": "Eine Anforderung, die erfüllt sein muss",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Fehler im System",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Element oder Ereignis, das durch einen oder mehrere Testfälle überprüft werden kann",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Laufzeitfehler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf konzentriert sich der Testentwurf hauptsächlich?",
+            "explanation": "Der Testentwurf konzentriert sich auf die Erstellung von Testfällen auf Basis von Testbedingungen. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Testentwurf.",
+            "options": [
+                {
+                    "text": "Auffinden von Fehlern",
+                    "correct": false
+                },
+                {
+                    "text": "Erstellung von Testfällen auf Basis von Testbedingungen",
+                    "correct": true
+                },
+                {
+                    "text": "Berichterstattung über den Teststatus",
+                    "correct": false
+                },
+                {
+                    "text": "Behebung von Softwarefehlern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Technik hilft, fehlende Anforderungen während der Testanalyse zu erkennen?",
+            "explanation": "Die Anforderungsüberprüfung (Requirements Review) deckt Lücken und Inkonsistenzen in den Anforderungen auf. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Review.",
+            "options": [
+                {
+                    "text": "Statische Analyse",
+                    "correct": false
+                },
+                {
+                    "text": "Codeabdeckungsanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungsüberprüfung (Requirements Review)",
+                    "correct": true
+                },
+                {
+                    "text": "Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil ergibt sich aus einer frühen Testanalyse?",
+            "explanation": "Eine frühe Testanalyse hilft, Unklarheiten und Missverständnisse in den Anforderungen frühzeitig zu erkennen. Quelle: 📘 ISTQB CTFL Lehrplan 2025.",
+            "options": [
+                {
+                    "text": "Dokumentation vermeiden",
+                    "correct": false
+                },
+                {
+                    "text": "Geringere Beteiligung der Benutzer",
+                    "correct": false
+                },
+                {
+                    "text": "Erkennen von Unklarheiten in den Anforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Verzögerung der Entwicklung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Dokument dient häufig als Testbasis während der Testanalyse?",
+            "explanation": "Die Anforderungsspezifikation wird häufig als Testbasis genutzt. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Testbasis.",
+            "options": [
+                {
+                    "text": "Fehlerbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Testprotokoll",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungsspezifikation",
+                    "correct": true
+                },
+                {
+                    "text": "Änderungsantrag",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität definiert Eingabewerte und erwartete Ergebnisse?",
+            "explanation": "Der Testentwurf legt Eingaben, erwartete Ergebnisse und Testlogik fest. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Testentwurf.",
+            "options": [
+                {
+                    "text": "Testüberwachung",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Testentwurf",
+                    "correct": true
+                },
+                {
+                    "text": "Testplanung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Hauptziel der Testanalyse?",
+            "explanation": "Das Hauptziel der Testanalyse ist das Festlegen, was getestet werden soll. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar.",
+            "options": [
+                {
+                    "text": "Fehler beheben",
+                    "correct": false
+                },
+                {
+                    "text": "Festlegen, was getestet werden soll",
+                    "correct": true
+                },
+                {
+                    "text": "Testfälle ausführen",
+                    "correct": false
+                },
+                {
+                    "text": "System bereitstellen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Eigenschaft zeichnet einen guten Testfall aus?",
+            "explanation": "Ein guter Testfall ist wiederholbar, klar beschrieben, nachvollziehbar und auf Anforderungen zurückführbar. Quelle: 📘 ISTQB CTFL Lehrplan 2025; 📗 Standardglossar: Testfall.",
+            "options": [
+                {
+                    "text": "Er ist mehrdeutig und offen formuliert",
+                    "correct": false
+                },
+                {
+                    "text": "Er erfordert ausschließlich exploratives Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Er ist wiederholbar und klar beschrieben",
+                    "correct": true
+                },
+                {
+                    "text": "Er basiert nur auf Implementierungsdetails",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

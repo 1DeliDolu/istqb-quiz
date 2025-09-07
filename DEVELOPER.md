@@ -16,20 +16,20 @@ Welcome to the ISTQB Quiz Application! This platform is designed to help users p
 
 - **Tech Stack:** React, TypeScript, Vite, Tailwind CSS
 - **Structure:**
-    - `components/` – Reusable UI components (Radix UI based)
-    - `pages/` – Route-based page components (Quiz, Stats, Forms)
-    - `services/` – API and data management
-    - `constants/` – Static data and configuration
-    - `types/` – TypeScript type definitions
+  - `components/` – Reusable UI components (Radix UI based)
+  - `pages/` – Route-based page components (Quiz, Stats, Forms)
+  - `services/` – API and data management
+  - `constants/` – Static data and configuration
+  - `types/` – TypeScript type definitions
 
 ### Backend
 
 - **Tech Stack:** Node.js, Express.js, MySQL
 - **Structure:**
-    - `database/` – MySQL schema and connection
-    - `middleware/` – Express middlewares
-    - `routes/` – API endpoints
-    - `server.js` – Main server file
+  - `database/` – MySQL schema and connection
+  - `middleware/` – Express middlewares
+  - `routes/` – API endpoints
+  - `server.js` – Main server file
 
 ## ⚙️ Getting Started
 
@@ -43,35 +43,39 @@ Welcome to the ISTQB Quiz Application! This platform is designed to help users p
 ### Installation
 
 1. **Clone the repository:**
-     ```bash
-     git clone https://github.com/your-repo/istqb-quiz.git
-     cd istqb-quiz
-     ```
+
+   ```bash
+   git clone https://github.com/your-repo/istqb-quiz.git
+   cd istqb-quiz
+   ```
 
 2. **Install dependencies:**
-     ```bash
-     npm install
-     cd server && npm install
-     ```
+
+   ```bash
+   npm install
+   cd server && npm install
+   ```
 
 3. **Set up the database:**
-     ```bash
-     mysql -u root -p < server/database/schema.sql
-     ```
+
+   ```bash
+   mysql -u root -p < server/database/schema.sql
+   ```
 
 4. **Configure environment variables:**
-     Create a `.env` file in `server/`:
-     ```env
-     DB_HOST=localhost
-     DB_USER=root
-     DB_PASSWORD=root
-     DB_NAME=istqb_quiz_app
-     JWT_SECRET=your_secret_key
-     ```
+   Create a `.env` file in `server/`:
+
+   ```env
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=root
+   DB_NAME=istqb_quiz_app
+   JWT_SECRET=your_secret_key
+   ```
 
 5. **Run the application:**
-     - **Frontend:** `npm run dev`
-     - **Backend:** `cd server && npm start`
+   - **Frontend:** `npm run dev`
+   - **Backend:** `cd server && npm start`
 
 ## 🗂️ Project Structure
 
@@ -193,6 +197,87 @@ INSERT INTO user_question_attempts (...)
 - Backend'den gelen chapter bilgileri frontend constants'larla merge
 - Cross-quiz-type performance comparison
 
+### 4. Modern Pagination System
+
+**Design Philosophy:** Smart pagination with ellipsis for better UX when dealing with many questions
+
+**Implementation:**
+
+```typescript
+// Smart pagination logic in QuizPage.tsx
+const getPaginationItems = () => {
+  const totalPages = questions.length;
+  const currentPage = currentQuestionIndex + 1;
+  const delta = 2; // Number of pages to show on each side of current page
+
+  const items = [];
+
+  // Always show first page
+  if (totalPages > 0) {
+    items.push(1);
+  }
+
+  // Calculate start and end of visible range
+  let start = Math.max(2, currentPage - delta);
+  let end = Math.min(totalPages - 1, currentPage + delta);
+
+  // Add ellipsis after first page if needed
+  if (start > 2) {
+    items.push("ellipsis-start");
+  }
+
+  // Add pages in visible range
+  for (let i = start; i <= end; i++) {
+    if (i !== 1 && i !== totalPages) {
+      items.push(i);
+    }
+  }
+
+  // Add ellipsis before last page if needed
+  if (end < totalPages - 1) {
+    items.push("ellipsis-end");
+  }
+
+  // Always show last page (if different from first)
+  if (totalPages > 1) {
+    items.push(totalPages);
+  }
+
+  return items;
+};
+```
+
+**Pagination Behavior Examples:**
+
+```
+# Few questions (≤7): Show all pages
+[← Önceki] [1] [2] [3] [4] [5] [Sonraki →]
+
+# Many questions, current page 1:
+[← Önceki] [1] [2] [3] [...] [30] [Sonraki →]
+
+# Many questions, current page 15:
+[← Önceki] [1] [...] [13] [14] [15] [16] [17] [...] [30] [Sonraki →]
+
+# Many questions, current page 30:
+[← Önceki] [1] [...] [28] [29] [30] [Sonraki →]
+```
+
+**Features:**
+
+- **Delta strategy**: Shows current page ± 2 pages
+- **Always visible**: First and last pages always shown
+- **Ellipsis indication**: `...` shows when pages are hidden
+- **Answered questions**: Green highlighting preserved
+- **Mobile friendly**: Fewer buttons, better responsive design
+
+**Benefits:**
+
+- Cleaner UI with manageable number of page buttons
+- Better performance (fewer DOM elements)
+- Standard UX pattern users expect
+- Scalable for any number of questions
+
 ## 🐛 Critical Bug Fixes
 
 ### 1. Foreign Key Constraint Fix
@@ -212,6 +297,21 @@ INSERT INTO user_question_attempts (...)
 **Files:** `App.tsx`, `NavigationMenuDemo.tsx`
 **Issue:** Udemy ve Fragen quiz sayfaları eksikti
 **Fix:** Unified component approach with props
+
+### 4. Modern Pagination Implementation
+
+**Files:** `QuizPage.tsx`
+**Issue:** Too many page numbers showing for quizzes with many questions
+**Fix:** Smart pagination with ellipsis and limited visible range
+
+**Technical Details:**
+
+- Implemented `getPaginationItems()` function with delta strategy
+- Added `PaginationEllipsis` component import
+- Delta = 2 (shows current ± 2 pages)
+- Always shows first and last pages
+- Automatic ellipsis insertion for gaps
+- Maintains answered question highlighting (green)
 
 ## 📊 Database Schema Evolution
 
@@ -267,6 +367,7 @@ user_question_attempts (id BIGINT, user_id, question_id, chapter_id, sub_chapter
 - [ ] Offline support
 - [ ] Mobile responsive improvements
 - [ ] Accessibility enhancements
+- [x] Modern pagination with ellipsis (completed)
 
 ## 🛠️ Development Environment
 
@@ -294,6 +395,14 @@ npm run type-check
 
 # Build for production
 npm run build
+
+# Database imports and management
+cd server && node fixed_import_clean.cjs     # Import all JSON questions with validation
+cd server && node check_udemy_db.cjs         # Check Udemy database structure
+cd server && node simple_import.cjs          # Simple import without validation
+cd server && node cleanup_udemy_questions.cjs # Clean up misplaced questions
+cd server && node add_missing_udemy_chapters.cjs # Add missing Udemy chapters
+cd server && node fix_udemy_subchapters.cjs  # Fix Udemy sub-chapter structure
 ```
 
 ### Environment Variables:
@@ -349,8 +458,7 @@ JWT_SECRET=your_secret_key
 **Project Status:** Active Development  
 **Maintainer:** [@1DeliDolu](https://github.com/1DeliDolu)
 
-
-## Exampels: 
+## Exampels:
 
 ### Soru Ekranı
 
@@ -368,7 +476,6 @@ JWT_SECRET=your_secret_key
 
 ![İstatistikler](public/img/statistic.png)
 
-
-### question update 
+### question update
 
 ![update](update.png)

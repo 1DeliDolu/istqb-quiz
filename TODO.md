@@ -92,7 +92,42 @@ src/
 - [x] Quizsystem (ISTQB, Udemy, Fragen)
 - [x] Benutzerstatistiken
 - [x] Responsives Design
+- [x] Import-System für JSON-Fragen
+- [x] Database-Validierung und Struktur-Fix
+- [x] Udemy-Kapitel Import-System
 
+## 🔧 Hilfsbefehle für Entwicklung
+
+### Database Import Commands
+
+```bash
+# Hauptimport-Script (empfohlen)
+cd server && node fixed_import_clean.cjs
+
+# Database-Struktur prüfen
+cd server && node check_udemy_db.cjs
+
+# Einfacher Import ohne Validierung
+cd server && node simple_import.cjs
+
+# Cleanup und Reparatur
+cd server && node cleanup_udemy_questions.cjs
+cd server && node add_missing_udemy_chapters.cjs
+cd server && node fix_udemy_subchapters.cjs
+```
+
+### Development Commands
+
+```bash
+# Frontend starten
+npm run dev
+
+# Backend starten
+cd server && npm start
+
+# Database zurücksetzen
+mysql -u root -p < server/database/schema.sql
+```
 
 ![alt text](image.png)
 
@@ -102,6 +137,15 @@ src/
 ![alt text](image-4.png)
 ![alt text](image-5.png)
 
+## 🗄️ Database Import Status
+
+### Letzter Import (Erfolgreich)
+
+- **Datum:** Aktuell
+- **Ergebnis:** 1,091 Fragen importiert
+- **ISTQB Fragen:** 901
+- **Udemy Fragen:** 190 (inkl. 79 neue aus Bölüm_5)
+- **Import Command:** `cd server && node fixed_import_clean.cjs`
 
 cd /d/istqb-quiz/server && node simple_import.cjs
 

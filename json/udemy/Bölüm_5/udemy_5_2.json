@@ -2,5 +2,666 @@
     "chapter": "udemy_5",
     "subChapter": "udemy_5_2",
     "subChapterTitle": "5.2 Quiz 11 - White-Box Verfahren",
-    "questions": []
+    "questions": [
+        {
+            "question": "Welches Element wird typischerweise während des Testentwurfs erstellt?",
+            "explanation": "Während des Testentwurfs werden Testfälle spezifiziert. Diese beinhalten Vorbedingungen, Eingaben, Aktionen und erwartete Ergebnisse und sind ein zentrales Ergebnis dieser Phase. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testentwurf).",
+            "options": [
+                {
+                    "text": "Release-Plan",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerprotokoll",
+                    "correct": false
+                },
+                {
+                    "text": "Testfallspezifikation",
+                    "correct": true
+                },
+                {
+                    "text": "Bericht zur Testumgebung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was wird typischerweise NICHT als Testbasis verwendet?",
+            "explanation": "Eine Testbasis ist die Grundlage, aus der Testbedingungen abgeleitet werden. Typische Testbasen sind z. B. Anforderungen, User Stories oder Entwurfsdokumente. Bereitstellungsskripte (Deployment-Skripte) hingegen dienen der Installation und Konfiguration von Systemen und enthalten in der Regel keine fachlichen oder funktionalen Informationen, aus denen Testbedingungen abgeleitet werden könnten. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testanalyse und Testbasis).",
+            "options": [
+                {
+                    "text": "User Stories",
+                    "correct": false
+                },
+                {
+                    "text": "Systemanforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Bereitstellungsskripte",
+                    "correct": true
+                },
+                {
+                    "text": "Entwurfsdokumente",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil der frühen Ableitung von Testbedingungen?",
+            "explanation": "Die frühe Ableitung von Testbedingungen ermöglicht es, Unklarheiten oder Lücken in den Anforderungen frühzeitig zu erkennen. Dadurch können Missverständnisse und potenzielle Fehlerquellen bereits in einer frühen Projektphase behoben werden, was Kosten und Zeit spart. Frühzeitige Analyse unterstützt zudem die Verbesserung der Anforderungsqualität und reduziert das Risiko späterer Änderungen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 (Testanalyse).",
+            "options": [
+                {
+                    "text": "Testplanung wird überflüssig",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Fehler werden gefunden",
+                    "correct": false
+                },
+                {
+                    "text": "Unklare Anforderungen können erkannt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Release-Zyklen werden verkürzt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Folge eines schlechten Testfalldesigns?",
+            "explanation": "Schlechtes Testfalldesign führt oft zu übersehenen Fehlern und einer geringeren Testabdeckung. Wenn Testfälle unvollständig, unklar oder nicht auf die Anforderungen abgestimmt sind, werden wichtige Szenarien nicht geprüft. Das erhöht das Risiko, dass Defekte erst spät oder gar nicht entdeckt werden, was zu höheren Kosten und Qualitätsproblemen führen kann. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testentwurf und Testfallqualität).",
+            "options": [
+                {
+                    "text": "Höhere Testautomatisierungsrate",
+                    "correct": false
+                },
+                {
+                    "text": "Schnellere Systemleistung",
+                    "correct": false
+                },
+                {
+                    "text": "Übersehene Fehler und geringere Abdeckung",
+                    "correct": true
+                },
+                {
+                    "text": "Weniger Planungsaufwand",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist es wichtig, Testdaten zu dokumentieren?",
+            "explanation": "Dokumentierte Testdaten ermöglichen die Wiederverwendung in zukünftigen Testzyklen und stellen sicher, dass Tests reproduzierbar sind. Dadurch wird eine konsistente Testdurchführung gewährleistet, was die Vergleichbarkeit von Testergebnissen verbessert und die Effizienz steigert. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testdurchführung und Testdaten).",
+            "options": [
+                {
+                    "text": "um gesetzliche Anforderungen zu erfüllen",
+                    "correct": false
+                },
+                {
+                    "text": "Um Daten wiederzuverwenden und Tests reproduzierbar zu machen",
+                    "correct": true
+                },
+                {
+                    "text": "um das Team zu verkleinern",
+                    "correct": false
+                },
+                {
+                    "text": "um Testzyklen zu verkürzen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was hilft am besten zu überprüfen, ob ein Testfall sein Ziel erfüllt?",
+            "explanation": "Das erwartete Ergebnis ist der wichtigste Maßstab, um festzustellen, ob ein Testfall bestanden wurde. Es beschreibt den Soll-Zustand nach der Testausführung und ermöglicht den direkten Vergleich mit dem tatsächlichen Ergebnis. Stimmen beide überein, gilt der Test als erfolgreich. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testdurchführung und Auswertung).",
+            "options": [
+                {
+                    "text": "Code-Coverage-Tool",
+                    "correct": false
+                },
+                {
+                    "text": "Erwartetes Ergebnis",
+                    "correct": true
+                },
+                {
+                    "text": "Benutzerhandbuch",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerbericht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte beim Entwerfen von Testfällen berücksichtigt werden?",
+            "explanation": "Beim Entwerfen von Testfällen sollten die Ausführungspriorität und die Testziele im Vordergrund stehen. Dies umfasst unter anderem die Abdeckung von Risiken, die Erfüllung von Anforderungen und die Optimierung der Testreihenfolge, um kritische Funktionen zuerst zu prüfen. Eine klare Priorisierung stellt sicher, dass die wichtigsten Tests frühzeitig ausgeführt werden und die Testziele effizient erreicht werden. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 (Testentwurf).",
+            "options": [
+                {
+                    "text": "Länge des Benutzerhandbuchs",
+                    "correct": false
+                },
+                {
+                    "text": "Ausführungspriorität und Testziele",
+                    "correct": true
+                },
+                {
+                    "text": "Marketingstrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Testzusammenfassungsbericht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wofür wird die Rückverfolgbarkeit zwischen Testfällen und Anforderungen verwendet?",
+            "explanation": "Die Rückverfolgbarkeit zwischen Testfällen und Anforderungen dient dazu, die Abdeckung der Anforderungen durch Tests zuzuordnen und deren Vollständigkeit zu validieren. So kann sichergestellt werden, dass jede Anforderung mindestens einen zugehörigen Testfall hat und keine wichtigen Aspekte ungetestet bleiben. Dies unterstützt auch die Nachverfolgung von Änderungen und die Bewertung der Auswirkungen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testmanagement und Verfolgbarkeit).",
+            "options": [
+                {
+                    "text": "Reduzierung der Systemlast",
+                    "correct": false
+                },
+                {
+                    "text": "Abdeckung zuordnen und Vollständigkeit validieren",
+                    "correct": true
+                },
+                {
+                    "text": "Erhöhung der Code-Leistung",
+                    "correct": false
+                },
+                {
+                    "text": "Reduzierung der Speichernutzung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität kommt zuerst im Testprozess?",
+            "explanation": "Die Testanalyse ist die erste Aktivität im Testprozess. In dieser Phase werden die zu testenden Bedingungen identifiziert und die Grundlage für die weiteren Testaktivitäten geschaffen. Eine gründliche Testanalyse stellt sicher, dass die Testbasis verstanden wird und die Testbedingungen vollständig und korrekt abgeleitet werden. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4 (Testprozess).",
+            "options": [
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyse",
+                    "correct": true
+                },
+                {
+                    "text": "Testausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerprotokollierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Woraus sollten Testbedingungen abgeleitet werden?",
+            "explanation": "Testbedingungen sollten aus Anforderungen und Entwurfsdokumenten abgeleitet werden, da diese die funktionalen und nicht-funktionalen Erwartungen an das System beschreiben. So wird sichergestellt, dass die Tests auf einer soliden fachlichen Grundlage basieren und alle relevanten Aspekte abgedeckt werden. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testanalyse und Testbasis).",
+            "options": [
+                {
+                    "text": "Nur aus dem Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Testprotokollen",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungen und Entwurfsdokumenten",
+                    "correct": true
+                },
+                {
+                    "text": "Release-Hinweisen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Element wird typischerweise während des Testentwurfs erstellt?",
+            "explanation": "Während des Testentwurfs werden Testfälle spezifiziert. Diese beinhalten Vorbedingungen, Eingaben, Aktionen und erwartete Ergebnisse und sind ein zentrales Ergebnis dieser Phase. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testentwurf).",
+            "options": [
+                {
+                    "text": "Release-Plan",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerprotokoll",
+                    "correct": false
+                },
+                {
+                    "text": "Testfallspezifikation",
+                    "correct": true
+                },
+                {
+                    "text": "Bericht zur Testumgebung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was wird typischerweise NICHT als Testbasis verwendet?",
+            "explanation": "Eine Testbasis ist die Grundlage, aus der Testbedingungen abgeleitet werden. Typische Testbasen sind z. B. Anforderungen, User Stories oder Entwurfsdokumente. Bereitstellungsskripte (Deployment-Skripte) hingegen dienen der Installation und Konfiguration von Systemen und enthalten in der Regel keine fachlichen oder funktionalen Informationen, aus denen Testbedingungen abgeleitet werden könnten. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testanalyse und Testbasis).",
+            "options": [
+                {
+                    "text": "User Stories",
+                    "correct": false
+                },
+                {
+                    "text": "Systemanforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Bereitstellungsskripte",
+                    "correct": true
+                },
+                {
+                    "text": "Entwurfsdokumente",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil der frühen Ableitung von Testbedingungen?",
+            "explanation": "Die frühe Ableitung von Testbedingungen ermöglicht es, Unklarheiten oder Lücken in den Anforderungen frühzeitig zu erkennen. Dadurch können Missverständnisse und potenzielle Fehlerquellen bereits in einer frühen Projektphase behoben werden, was Kosten und Zeit spart. Frühzeitige Analyse unterstützt zudem die Verbesserung der Anforderungsqualität und reduziert das Risiko späterer Änderungen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 (Testanalyse).",
+            "options": [
+                {
+                    "text": "Testplanung wird überflüssig",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Fehler werden gefunden",
+                    "correct": false
+                },
+                {
+                    "text": "Unklare Anforderungen können erkannt werden",
+                    "correct": true
+                },
+                {
+                    "text": "Release-Zyklen werden verkürzt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Folge eines schlechten Testfalldesigns?",
+            "explanation": "Schlechtes Testfalldesign führt oft zu übersehenen Fehlern und einer geringeren Testabdeckung. Wenn Testfälle unvollständig, unklar oder nicht auf die Anforderungen abgestimmt sind, werden wichtige Szenarien nicht geprüft. Das erhöht das Risiko, dass Defekte erst spät oder gar nicht entdeckt werden, was zu höheren Kosten und Qualitätsproblemen führen kann. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testentwurf und Testfallqualität).",
+            "options": [
+                {
+                    "text": "Höhere Testautomatisierungsrate",
+                    "correct": false
+                },
+                {
+                    "text": "Schnellere Systemleistung",
+                    "correct": false
+                },
+                {
+                    "text": "Übersehene Fehler und geringere Abdeckung",
+                    "correct": true
+                },
+                {
+                    "text": "Weniger Planungsaufwand",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist es wichtig, Testdaten zu dokumentieren?",
+            "explanation": "Dokumentierte Testdaten ermöglichen die Wiederverwendung in zukünftigen Testzyklen und stellen sicher, dass Tests reproduzierbar sind. Dadurch wird eine konsistente Testdurchführung gewährleistet, was die Vergleichbarkeit von Testergebnissen verbessert und die Effizienz steigert. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testdurchführung und Testdaten).",
+            "options": [
+                {
+                    "text": "um gesetzliche Anforderungen zu erfüllen",
+                    "correct": false
+                },
+                {
+                    "text": "Um Daten wiederzuverwenden und Tests reproduzierbar zu machen",
+                    "correct": true
+                },
+                {
+                    "text": "um das Team zu verkleinern",
+                    "correct": false
+                },
+                {
+                    "text": "um Testzyklen zu verkürzen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was hilft am besten zu überprüfen, ob ein Testfall sein Ziel erfüllt?",
+            "explanation": "Das erwartete Ergebnis ist der wichtigste Maßstab, um festzustellen, ob ein Testfall bestanden wurde. Es beschreibt den Soll-Zustand nach der Testausführung und ermöglicht den direkten Vergleich mit dem tatsächlichen Ergebnis. Stimmen beide überein, gilt der Test als erfolgreich. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testdurchführung und Auswertung).",
+            "options": [
+                {
+                    "text": "Code-Coverage-Tool",
+                    "correct": false
+                },
+                {
+                    "text": "Erwartetes Ergebnis",
+                    "correct": true
+                },
+                {
+                    "text": "Benutzerhandbuch",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerbericht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte beim Entwerfen von Testfällen berücksichtigt werden?",
+            "explanation": "Beim Entwerfen von Testfällen sollten die Ausführungspriorität und die Testziele im Vordergrund stehen. Dies umfasst unter anderem die Abdeckung von Risiken, die Erfüllung von Anforderungen und die Optimierung der Testreihenfolge, um kritische Funktionen zuerst zu prüfen. Eine klare Priorisierung stellt sicher, dass die wichtigsten Tests frühzeitig ausgeführt werden und die Testziele effizient erreicht werden. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 (Testentwurf).",
+            "options": [
+                {
+                    "text": "Länge des Benutzerhandbuchs",
+                    "correct": false
+                },
+                {
+                    "text": "Ausführungspriorität und Testziele",
+                    "correct": true
+                },
+                {
+                    "text": "Marketingstrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Testzusammenfassungsbericht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wofür wird die Rückverfolgbarkeit zwischen Testfällen und Anforderungen verwendet?",
+            "explanation": "Die Rückverfolgbarkeit zwischen Testfällen und Anforderungen dient dazu, die Abdeckung der Anforderungen durch Tests zuzuordnen und deren Vollständigkeit zu validieren. So kann sichergestellt werden, dass jede Anforderung mindestens einen zugehörigen Testfall hat und keine wichtigen Aspekte ungetestet bleiben. Dies unterstützt auch die Nachverfolgung von Änderungen und die Bewertung der Auswirkungen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testmanagement und Verfolgbarkeit).",
+            "options": [
+                {
+                    "text": "Reduzierung der Systemlast",
+                    "correct": false
+                },
+                {
+                    "text": "Abdeckung zuordnen und Vollständigkeit validieren",
+                    "correct": true
+                },
+                {
+                    "text": "Erhöhung der Code-Leistung",
+                    "correct": false
+                },
+                {
+                    "text": "Reduzierung der Speichernutzung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität kommt zuerst im Testprozess?",
+            "explanation": "Die Testanalyse ist die erste Aktivität im Testprozess. In dieser Phase werden die zu testenden Bedingungen identifiziert und die Grundlage für die weiteren Testaktivitäten geschaffen. Eine gründliche Testanalyse stellt sicher, dass die Testbasis verstanden wird und die Testbedingungen vollständig und korrekt abgeleitet werden. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4 (Testprozess).",
+            "options": [
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyse",
+                    "correct": true
+                },
+                {
+                    "text": "Testausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerprotokollierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Woraus sollten Testbedingungen abgeleitet werden?",
+            "explanation": "Testbedingungen sollten aus Anforderungen und Entwurfsdokumenten abgeleitet werden, da diese die funktionalen und nicht-funktionalen Erwartungen an das System beschreiben. So wird sichergestellt, dass die Tests auf einer soliden fachlichen Grundlage basieren und alle relevanten Aspekte abgedeckt werden. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testanalyse und Testbasis).",
+            "options": [
+                {
+                    "text": "Nur aus dem Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Testprotokollen",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungen und Entwurfsdokumenten",
+                    "correct": true
+                },
+                {
+                    "text": "Release-Hinweisen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen ist KEINE gültige Testbedingung?",
+            "explanation": "Eine gültige Testbedingung beschreibt einen fachlichen oder technischen Aspekt des Systems, der getestet werden soll. Die Syntax eines Testskripts ist jedoch kein Bestandteil der fachlichen Testbasis und stellt daher keine Testbedingung dar. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testanalyse und Testbedingungen).",
+            "options": [
+                {
+                    "text": "Benutzer muss sich anmelden können",
+                    "correct": false
+                },
+                {
+                    "text": "Login-Feld erlaubt bis zu 30 Zeichen",
+                    "correct": false
+                },
+                {
+                    "text": "System speichert Session-Token sicher",
+                    "correct": false
+                },
+                {
+                    "text": "Syntax des Testskripts ist korrekt",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Merkmal einer hochwertigen Testbedingung?",
+            "explanation": "Eine hochwertige Testbedingung ist klar formuliert, eindeutig und auf eine spezifische Anforderung rückführbar. Diese Rückverfolgbarkeit stellt sicher, dass jede Bedingung einen direkten Bezug zu den definierten Anforderungen hat und somit die Abdeckung und Vollständigkeit der Tests überprüft werden kann. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testanalyse, Testbedingungen und Verfolgbarkeit).",
+            "options": [
+                {
+                    "text": "Sie ist vage und breit formuliert",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ist auf eine Anforderung rückführbar",
+                    "correct": true
+                },
+                {
+                    "text": "Sie enthält Ausführungsprotokolle",
+                    "correct": false
+                },
+                {
+                    "text": "Sie basiert auf der finalen Bereitstellung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was stellt sicher, dass jede Anforderung durch mindestens einen Testfall validiert wird?",
+            "explanation": "Eine Rückverfolgbarkeitsmatrix (Traceability Matrix) stellt sicher, dass jede Anforderung mindestens einem Testfall zugeordnet ist. Dadurch wird die vollständige Abdeckung der Anforderungen überprüft und es kann nachvollzogen werden, welche Tests welche Anforderungen validieren. Dies unterstützt auch das Änderungsmanagement und die Qualitätssicherung. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testmanagement und Verfolgbarkeit).",
+            "options": [
+                {
+                    "text": "Code Review",
+                    "correct": false
+                },
+                {
+                    "text": "Rückverfolgbarkeitsmatrix",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerverfolgung",
+                    "correct": false
+                },
+                {
+                    "text": "Build-Skript",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was beschreibt am besten eine Testbasis?",
+            "explanation": "Eine Testbasis ist ein Dokument oder eine Sammlung von Dokumenten, aus denen Testbedingungen abgeleitet werden. Sie bildet die Grundlage für die Testanalyse und stellt sicher, dass die Tests auf relevanten und nachvollziehbaren Informationen basieren. Beispiele für Testbasen sind Anforderungen, Spezifikationen oder Entwurfsdokumente. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testanalyse und Testbasis).",
+            "options": [
+                {
+                    "text": "Die zu testende Software",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Dokument, aus dem Testbedingungen abgeleitet werden",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Zusammenfassung der Testergebnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Repository mit Testfällen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Teststufe profitiert am meisten von einem detaillierten Testdesign?",
+            "explanation": "Beim Abnahmetest ist ein detailliertes Testdesign besonders wichtig, um sicherzustellen, dass alle Anforderungen präzise verifiziert werden. Diese Detailtiefe ermöglicht eine klare Nachvollziehbarkeit, reduziert Interpretationsspielräume und erhöht die Wahrscheinlichkeit, dass das System den Erwartungen des Auftraggebers entspricht. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 2.2 und 1.4.1 (Abnahmetest und Testentwurf).",
+            "options": [
+                {
+                    "text": "Abnahmetests",
+                    "correct": true
+                },
+                {
+                    "text": "Komponententests",
+                    "correct": false
+                },
+                {
+                    "text": "Exploratives Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Debugging",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testdesign-Technik konzentriert sich auf Geschäftsprozessabläufe?",
+            "explanation": "Das Use-Case-Testen konzentriert sich auf die Abbildung und Überprüfung realer Geschäftsprozesse und Benutzerinteraktionen. Es stellt sicher, dass das System die definierten Anwendungsfälle korrekt unterstützt und die funktionalen Anforderungen aus Sicht des Endnutzers erfüllt. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 3.2.4 (Use-Case-Testen).",
+            "options": [
+                {
+                    "text": "Entscheidungsüberdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Use-Case-Testen",
+                    "correct": true
+                },
+                {
+                    "text": "Grenzwertanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Anweisungsüberdeckung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wozu werden Testdaten verwendet?",
+            "explanation": "Testdaten werden benötigt, um Testfälle mit definierten Eingaben auszuführen. Ohne geeignete Testdaten kann kein Testfall sinnvoll und reproduzierbar durchgeführt werden. Sie stellen sicher, dass die Testergebnisse konsistent sind und ermöglichen die Überprüfung, ob das System unter bestimmten Bedingungen korrekt funktioniert. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 und 1.4.3 (Testdurchführung und Testdaten).",
+            "options": [
+                {
+                    "text": "Zur Überwachung des Testfortschritts",
+                    "correct": false
+                },
+                {
+                    "text": "Zum Ausführen von Testfällen mit definierten Eingaben",
+                    "correct": true
+                },
+                {
+                    "text": "Zur Erstellung von Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Schulung von Testanalysten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor beeinflusst die Komplexität des Testfalldesigns am stärksten?",
+            "explanation": "Die verwendete Testdesign-Technik hat den größten Einfluss auf die Komplexität des Testfalldesigns. Ob Äquivalenzklassen, Entscheidungstabellen oder Zustandsübergangsdiagramme – die gewählte Technik bestimmt den Umfang, die Detailtiefe und den Aufwand bei der Erstellung der Testfälle. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 3 (Testentwurfsverfahren).",
+            "options": [
+                {
+                    "text": "Verwendete Programmiersprache",
+                    "correct": false
+                },
+                {
+                    "text": "Anzahl der Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Verwendete Testdesign-Technik",
+                    "correct": true
+                },
+                {
+                    "text": "Größe der Testumgebung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Testorakel?",
+            "explanation": "Ein Testorakel ist ein Mechanismus, der die erwarteten Ergebnisse eines Tests bestimmt. Es liefert die 'richtigen' Ergebnisse, mit denen die tatsächlichen Testergebnisse verglichen werden, um festzustellen, ob ein Test bestanden wurde. Orakel können dokumentierte Anforderungen, spezifizierte Geschäftsregeln oder auch andere Systeme sein, die als Referenz dienen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 (Testdurchführung und Auswertung).",
+            "options": [
+                {
+                    "text": "Ein Tool zur Fehlererfassung",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Person, die Releases freigibt",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Mechanismus zur Bestimmung erwarteter Ergebnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Testumgebungs-Konfiguration",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein wichtiger Faktor bei der Ableitung von Testbedingungen?",
+            "explanation": "Ein wichtiger Faktor bei der Ableitung von Testbedingungen ist die Berücksichtigung der Risikostufe und der Abdeckungsziele. Tests sollten so gestaltet werden, dass sie die kritischsten und risikoreichsten Bereiche des Systems abdecken und gleichzeitig die definierten Testziele erfüllen. Dies stellt sicher, dass die Testressourcen effizient eingesetzt werden und die Qualität des Produkts gezielt abgesichert wird. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 1.4.1 (Testanalyse).",
+            "options": [
+                {
+                    "text": "Anzahl der Benutzer",
+                    "correct": false
+                },
+                {
+                    "text": "Risikostufe und Abdeckungsziele",
+                    "correct": true
+                },
+                {
+                    "text": "Verfügbarkeit des Testmanagers",
+                    "correct": false
+                },
+                {
+                    "text": "Zeitplan für System-Backups",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

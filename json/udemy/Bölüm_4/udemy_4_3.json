@@ -2,5 +2,226 @@
     "chapter": "udemy_4",
     "subChapter": "udemy_4_3",
     "subChapterTitle": "4.3 Quiz 9 - Review-Arten",
-    "questions": []
+    "questions": [
+        {
+            "question": "Welcher Punkt ist KEIN Vorteil von statischem Testen?",
+            "explanation": "Statisches Testen erkennt früh Fehler, reduziert Kosten und verbessert Qualität, hat jedoch keinen direkten Einfluss auf die Laufzeitleistung. (📘 ISTQB Lehrplan 2025, Abschnitt 3.1.2)",
+            "options": [
+                {
+                    "text": "Verbesserte Laufzeitleistung (Improved runtime performance)",
+                    "correct": false
+                },
+                {
+                    "text": "Frühe Fehlererkennung",
+                    "correct": true
+                },
+                {
+                    "text": "Geringere Entwicklungskosten",
+                    "correct": true
+                },
+                {
+                    "text": "Höhere Produktqualität",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Phase einer formellen Überprüfung beinhaltet die Auswertung von Fehlertendenzen?",
+            "explanation": "In der Nachbereitung werden Trends analysiert und Verbesserungen abgeleitet. (📘 ISTQB Lehrplan 2025, Abschnitt 3.2.2)",
+            "options": [
+                {
+                    "text": "Planung",
+                    "correct": false
+                },
+                {
+                    "text": "Nachbereitung (Follow-up)",
+                    "correct": true
+                },
+                {
+                    "text": "Vorbereitung",
+                    "correct": false
+                },
+                {
+                    "text": "Nacharbeit (Rework)",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wer überprüft die behobenen Fehler in der Nachbereitungsphase?",
+            "explanation": "Der Moderator stellt sicher, dass alle im Review identifizierten Fehler korrekt behoben wurden. (📘 ISTQB Lehrplan 2025, Abschnitt 3.2.3)",
+            "options": [
+                {
+                    "text": "Schriftführer (Scribe)",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyst",
+                    "correct": false
+                },
+                {
+                    "text": "Moderator",
+                    "correct": true
+                },
+                {
+                    "text": "Projektsponsor",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Ergebnis des Review-Meetings?",
+            "explanation": "Während des Review-Meetings identifizierte Fehler werden in einem Fehlerprotokoll dokumentiert. (📘 ISTQB Lehrplan 2025, Abschnitt 3.2.2)",
+            "options": [
+                {
+                    "text": "Checkliste für Codierungsstandards",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerprotokoll (Defect log)",
+                    "correct": true
+                },
+                {
+                    "text": "Testumgebungsbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Testskript",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was unterscheidet ein Walkthrough von einem technischen Review?",
+            "explanation": "Walkthroughs werden vom Autor geleitet und sind oft informeller. (📘 ISTQB Lehrplan 2025, Abschnitt 3.2.4; 📗 Standardglossar, Walkthrough)",
+            "options": [
+                {
+                    "text": "Walkthroughs sind formeller",
+                    "correct": false
+                },
+                {
+                    "text": "Walkthroughs werden vom Autor geleitet",
+                    "correct": true
+                },
+                {
+                    "text": "Technische Reviews fokussieren auf Verständnis",
+                    "correct": false
+                },
+                {
+                    "text": "Technische Reviews entdecken nie Fehler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle ist bei einem Walkthrough optional?",
+            "explanation": "Ein Moderator ist bei einem Walkthrough nicht zwingend erforderlich. (📘 ISTQB Lehrplan 2025, Abschnitt 3.2.4; 📗 Standardglossar, Walkthrough)",
+            "options": [
+                {
+                    "text": "Autor",
+                    "correct": false
+                },
+                {
+                    "text": "Prüfer (Reviewer)",
+                    "correct": false
+                },
+                {
+                    "text": "Moderator",
+                    "correct": true
+                },
+                {
+                    "text": "Beobachter (Observer)",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität gehört typischerweise zur Vorbereitungsphase eines formellen Reviews?",
+            "explanation": "Die Prüfer analysieren das Dokument eigenständig vor dem Meeting. (📘 ISTQB Lehrplan 2025, Abschnitt 3.2.2)",
+            "options": [
+                {
+                    "text": "Rollenzuweisung",
+                    "correct": false
+                },
+                {
+                    "text": "Materialverteilung",
+                    "correct": false
+                },
+                {
+                    "text": "Individuelle Analyse des Arbeitsprodukts",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerbehebung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist das Hauptziel von statischen Analysetools?",
+            "explanation": "Statische Tools erkennen Fehler, bevor der Code ausgeführt wird. (📘 ISTQB Lehrplan 2025, Abschnitt 3.1.3; 📗 Standardglossar, statische Analyse)",
+            "options": [
+                {
+                    "text": "Systemlast simulieren",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler vor der Codeausführung erkennen",
+                    "correct": true
+                },
+                {
+                    "text": "Testdaten generieren",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstests durchführen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Arbeitsprodukt wird am WENIGSTEN wahrscheinlich in einem statischen Test überprüft?",
+            "explanation": "Systemleistungsprotokolle stammen aus der Ausführung und gehören zum dynamischen Testen. (📘 ISTQB Lehrplan 2025, Abschnitt 3.1.1)",
+            "options": [
+                {
+                    "text": "Anforderungsspezifikation",
+                    "correct": false
+                },
+                {
+                    "text": "Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Testzusammenfassungsbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Systemleistungsprotokolle",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Fehler wird am besten durch statisches Testen erkannt?",
+            "explanation": "Statisches Testen eignet sich besonders zur Erkennung von Syntax- und Standardverletzungen. (📘 ISTQB Lehrplan 2025, Abschnitt 3.1.2; 📗 Standardglossar, statischer Test)",
+            "options": [
+                {
+                    "text": "Nebenläufigkeitsfehler (Concurrency errors)",
+                    "correct": false
+                },
+                {
+                    "text": "Syntax- und Standardverletzungen",
+                    "correct": true
+                },
+                {
+                    "text": "Speicherlecks",
+                    "correct": false
+                },
+                {
+                    "text": "Timing-Probleme",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

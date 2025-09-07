@@ -2,5 +2,428 @@
     "chapter": "udemy_5",
     "subChapter": "udemy_5_3",
     "subChapterTitle": "5.3 Quiz 12 - Testfallentwurf",
-    "questions": []
+    "questions": [
+        {
+            "question": "Welche Eigenschaft zeichnet einen guten Testfall aus?",
+            "explanation": "Ein guter Testfall ist wiederholbar, klar beschrieben, eindeutig, nachvollziehbar und auf Anforderungen zurückführbar. Damit unterstützt er die Rückverfolgbarkeit und zuverlässige Testergebnisse. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Testfall = Menge von Vorbedingungen, Eingaben, Aktionen und erwarteten Ergebnissen:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Er ist mehrdeutig und offen formuliert",
+                    "correct": false
+                },
+                {
+                    "text": "Er erfordert ausschließlich exploratives Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Er ist wiederholbar und klar beschrieben",
+                    "correct": true
+                },
+                {
+                    "text": "Er basiert nur auf Implementierungsdetails",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was hilft dabei, die Testabdeckung gegenüber definierten Bedingungen zu überprüfen?",
+            "explanation": "Die Rückverfolgbarkeitsmatrix zeigt, ob alle Anforderungen durch Tests abgedeckt sind. Sie hilft dabei, die Testabdeckung gegenüber definierten Bedingungen systematisch zu überprüfen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Rückverfolgbarkeit = Fähigkeit, ein Element eindeutig mit einem anderen zu verbinden:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Code Reviews",
+                    "correct": false
+                },
+                {
+                    "text": "Risikoanalysen",
+                    "correct": false
+                },
+                {
+                    "text": "Rückverfolgbarkeitsmatrix",
+                    "correct": true
+                },
+                {
+                    "text": "Benutzerfeedback",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Welche Technik wird häufig zur Ableitung von Testfällen verwendet?",
+            "explanation": "Entscheidungstabellen eignen sich besonders gut zur Ableitung von Testfällen, da sie komplexe Geschäftsregeln systematisch darstellen und kombinatorische Bedingungen abdecken. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Entscheidungstabelle = Darstellung von Bedingungen und Aktionen in tabellarischer Form zur Ableitung von Testfällen:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Debugging",
+                    "correct": false
+                },
+                {
+                    "text": "Entscheidungstabellen",
+                    "correct": true
+                },
+                {
+                    "text": "Speicherprofiling",
+                    "correct": false
+                },
+                {
+                    "text": "Lasttests",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Warum ist das Entwerfen wiederverwendbarer Testfälle vorteilhaft?",
+            "explanation": "Wiederverwendbare Testfälle sparen Aufwand bei Regressionstests, da sie ohne großen Zusatzaufwand erneut ausgeführt werden können. Sie vereinfachen zukünftige Testzyklen und erhöhen die Effizienz. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Regressionstest = Wiederholung von Tests zur Überprüfung, ob Änderungen keine neuen Fehler verursacht haben:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Es reduziert die Fehlerkritikalität",
+                    "correct": false
+                },
+                {
+                    "text": "Es spart Aufwand bei Regressionstests",
+                    "correct": true
+                },
+                {
+                    "text": "Es verkürzt die Benutzer-schulung",
+                    "correct": false
+                },
+                {
+                    "text": "Es eliminiert alle Risiken",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was ist beim Schreiben von Testdaten entscheidend?",
+            "explanation": "Testdaten sollten sowohl gültige als auch ungültige Eingaben enthalten, um die Robustheit und Fehlerbehandlung eines Systems zu prüfen. Auch Grenzwerte und Sonderfälle müssen berücksichtigt werden. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Testdaten = Daten, die für die Durchführung von Tests verwendet werden, einschließlich gültiger, ungültiger und grenzwertiger Werte:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Sie müssen immer Produktionsdaten entsprechen",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sollten gültige und ungültige Eingaben enthalten",
+                    "correct": true
+                },
+                {
+                    "text": "Sie werden nur für automatisierte Tests benötigt",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sollten Grenzwerte vermeiden",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Welcher Faktor ist für das Testfalldesign am wenigsten relevant?",
+            "explanation": "Marketingziele haben keinen direkten Einfluss auf die Gestaltung technischer Testfälle. Testfalldesign basiert primär auf Anforderungen, Risiken und erwarteten Ergebnissen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Testfalldesign = Prozess zur Ableitung von Testfällen basierend auf Testbasis und Testzielen:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Risikoniveau",
+                    "correct": false
+                },
+                {
+                    "text": "Komplexität der Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Erwartetes Ergebnis",
+                    "correct": false
+                },
+                {
+                    "text": "Marketingziele",
+                    "correct": true
+                }
+            ]
+        },{
+            "question": "Was ist ein Vorteil der Verwendung von Checklisten bei der Testanalyse?",
+            "explanation": "Checklisten sichern eine konsistente Abdeckung, indem sie sicherstellen, dass keine wichtigen Aspekte übersehen werden. Sie unterstützen strukturierte und wiederholbare Testanalysen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Checkliste = Liste von Punkten, die systematisch überprüft werden, um Vollständigkeit sicherzustellen:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Reduziert Rückverfolgbarkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Sichert konsistente Abdeckung",
+                    "correct": true
+                },
+                {
+                    "text": "Automatisiert Fehlerberichte",
+                    "correct": false
+                },
+                {
+                    "text": "Reduziert Anzahl der Testumgebungen",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Wann sollte die Rückverfolgbarkeit zwischen Tests und Anforderungen erstellt werden?",
+            "explanation": "Die Rückverfolgbarkeit sollte während des Testdesigns hergestellt werden, da sie parallel zur Erstellung der Testfälle entsteht. So wird sichergestellt, dass alle Anforderungen durch entsprechende Tests abgedeckt sind. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Rückverfolgbarkeit = Fähigkeit, ein Testelement mit einer Anforderung zu verbinden:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Erst nach der Ausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Während des Testdesigns",
+                    "correct": true
+                },
+                {
+                    "text": "Bei der Bereitstellung",
+                    "correct": false
+                },
+                {
+                    "text": "Beim Melden von Fehlern",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Warum ist Risiko im Testdesign wichtig?",
+            "explanation": "Risiko hilft dabei, den Testaufwand zu priorisieren. Je höher das Risiko eines Fehlers, desto mehr Testressourcen sollten eingesetzt werden, um potenzielle Auswirkungen zu minimieren. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Risiko = Möglichkeit eines Ereignisses mit negativen Auswirkungen auf das Produkt oder Projekt:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Es bestimmt die Architektur der Testumgebung",
+                    "correct": false
+                },
+                {
+                    "text": "Es hilft, den Testaufwand zu priorisieren",
+                    "correct": true
+                },
+                {
+                    "text": "Es schränkt die Wiederverwendbarkeit ein",
+                    "correct": false
+                },
+                {
+                    "text": "Es erhöht automatisch die Codequalität",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Warum ist es wichtig, klare erwartete Ergebnisse in Testfällen zu definieren?",
+            "explanation": "Klare erwartete Ergebnisse ermöglichen eine objektive Bewertung, ob ein Test bestanden wurde. Ohne definierte Erwartungen ist es schwierig zu beurteilen, ob das System korrekt funktioniert. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Erwartetes Ergebnis = vorhergesagtes Ergebnis eines Tests, das mit dem tatsächlichen Ergebnis verglichen wird:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Um Testdaten zu reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Systemleistung zu überprüfen",
+                    "correct": false
+                },
+                {
+                    "text": "Um objektiv zu beurteilen, ob der Test bestanden wurde",
+                    "correct": true
+                },
+                {
+                    "text": "Um Sicherheitslücken zu finden",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was ist ein Merkmal eines guten Testfalls?",
+            "explanation": "Ein guter Testfall ist klar, präzise und wiederholbar. Er soll verständlich und verlässlich sein, damit Testergebnisse konsistent und nachvollziehbar bleiben. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Testfall = Menge von Vorbedingungen, Eingaben, Aktionen und erwarteten Ergebnissen:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Beinhaltet nur negative Szenarien",
+                    "correct": false
+                },
+                {
+                    "text": "Deckt undefiniertes Verhalten ab",
+                    "correct": false
+                },
+                {
+                    "text": "Ist klar, präzise und wiederholbar",
+                    "correct": true
+                },
+                {
+                    "text": "Konzentriert sich auf Layout der Benutzeroberfläche",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was ist der Hauptzweck von Testbedingungen?",
+            "explanation": "Testbedingungen geben an, was getestet werden soll, und helfen dabei, hochrangige Testabdeckungsziele zu definieren. Sie bilden die Grundlage für die Ableitung von Testfällen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Testbedingung = Element, das getestet werden soll, wie z. B. eine Funktion, ein Merkmal oder eine Qualitätsanforderung:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Um Testfälle zu ersetzen",
+                    "correct": false
+                },
+                {
+                    "text": "Um hochrangige Testabdeckungsziele zu liefern",
+                    "correct": true
+                },
+                {
+                    "text": "Um den Testzusammenfassungsbericht zu beschreiben",
+                    "correct": false
+                },
+                {
+                    "text": "Um redundante Daten zu entfernen",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was ist das Ziel von negativem Testen?",
+            "explanation": "Negatives Testen dient dazu, erwartete Fehlerfälle zu validieren und zu prüfen, ob das System mit ungültigen oder unerwarteten Eingaben korrekt umgehen kann. Es hilft, die Robustheit und Fehlertoleranz eines Produkts zu bewerten. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Negatives Testen = Testen mit ungültigen oder unerwarteten Eingaben, um Fehlerverhalten zu prüfen:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Die Abdeckung positiver Szenarien zu reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um erwartete Fehlerfälle zu validieren",
+                    "correct": true
+                },
+                {
+                    "text": "Um Besprechungen mit Stakeholdern zu validieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um GUI-Kompatibilität zu gewährleisten",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was ist die Folge fehlender Rückverfolgbarkeit im Testprozess?",
+            "explanation": "Fehlende Rückverfolgbarkeit kann dazu führen, dass Anforderungen nicht durch Tests abgedeckt werden. Ohne klare Verbindungen zwischen Anforderungen und Testfällen bleibt oft unklar, ob alle relevanten Aspekte geprüft wurden. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Rückverfolgbarkeit = Fähigkeit, ein Testelement mit einer Anforderung zu verbinden:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Mehr explorative Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Doppelte Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Nicht abgedeckte Anforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Schnellere Release-Zyklen",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Welche Eingabe wird zur Identifizierung von Testbedingungen benötigt?",
+            "explanation": "Testbedingungen basieren auf den Geschäfts- und Systemanforderungen. Diese Anforderungen liefern die nötige Grundlage, um zu definieren, was getestet werden soll. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Testbedingung = Element, das getestet werden soll, wie z. B. eine Funktion, ein Merkmal oder eine Qualitätsanforderung:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Testprotokolle",
+                    "correct": false
+                },
+                {
+                    "text": "Code-Kommentare",
+                    "correct": false
+                },
+                {
+                    "text": "Geschäfts- und Systemanforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerberichte",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Welcher Faktor beeinflusst die Anzahl der entworfenen Testfälle am stärksten?",
+            "explanation": "Die Abdeckungsziele der Tests bestimmen maßgeblich, wie viele Testfälle entworfen werden müssen. Je höher das angestrebte Maß an Testabdeckung, desto mehr Testfälle sind erforderlich, um alle Bedingungen, Pfade oder Anforderungen zu prüfen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Testabdeckung = Maß für den Umfang, in dem ein Testobjekt durch eine Testsuite geprüft wird:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Größe des Testteams",
+                    "correct": false
+                },
+                {
+                    "text": "Verwendete Programmiersprache",
+                    "correct": false
+                },
+                {
+                    "text": "Abdeckungsziele der Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Bunu daha detaylı açıkla",
+                    "correct": false
+                }
+            ]
+        }
+        ,{
+            "question": "Welches Artefakt ist am hilfreichsten zur Überprüfung der Geschäftsregelabdeckung?",
+            "explanation": "Entscheidungstabellen sind besonders hilfreich zur Überprüfung der Geschäftsregelabdeckung, da sie Eingabekombinationen systematisch mit erwarteten Ergebnissen verknüpfen. So lassen sich komplexe Regeln effizient testen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Entscheidungstabelle = tabellarische Darstellung von Bedingungen und Aktionen zur Ableitung von Testfällen:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Entscheidungstabelle",
+                    "correct": true
+                },
+                {
+                    "text": "Anweisungsabdeckungsbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerprotokoll",
+                    "correct": false
+                },
+                {
+                    "text": "Komponententestplan",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Welche Aktivität stellt sicher, dass alle funktionalen Anforderungen durch Tests abgedeckt sind?",
+            "explanation": "Die Anforderungsrückverfolgbarkeit stellt sicher, dass jede funktionale Anforderung durch mindestens einen Test abgedeckt ist. Sie schafft eine klare Verbindung zwischen Anforderungen und Testfällen und unterstützt die Vollständigkeit der Testabdeckung. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Rückverfolgbarkeit = Fähigkeit, ein Testelement eindeutig mit einer Anforderung zu verbinden:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Testausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungsrückverfolgbarkeit",
+                    "correct": true
+                },
+                {
+                    "text": "Einrichtung der Testumgebung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerklassifizierung",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was stellt sicher, dass jede Anforderung einen passenden Test hat?",
+            "explanation": "Die Rückverfolgbarkeitsmatrix stellt sicher, dass jede Anforderung durch mindestens einen Test abgedeckt ist. Sie zeigt transparent, welche Anforderungen getestet wurden und unterstützt die Vollständigkeit der Testabdeckung. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Rückverfolgbarkeitsmatrix = Tabelle, die Anforderungen mit den entsprechenden Testfällen verknüpft:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Fehlerbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Use-Case-Test",
+                    "correct": false
+                },
+                {
+                    "text": "Rückverfolgbarkeitsmatrix",
+                    "correct": true
+                },
+                {
+                    "text": "Testzusammenfassungsbericht",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was zeichnet hochwertige Testdaten aus?",
+            "explanation": "Hochwertige Testdaten enthalten vielfältige und Grenzfallszenarien, um sowohl typische als auch außergewöhnliche Systemreaktionen zu prüfen. Sie ermöglichen eine umfassende Bewertung der Funktionalität und Robustheit. Quelle: 📘 ISTQB CTFL Lehrplan 2025, 3.2 Kapitel Testentwurf und Testfallqualität; 📗 Standardglossar: Testdaten = Daten, die für die Durchführung von Tests verwendet werden, einschließlich gültiger, ungültiger und grenzwertiger Werte:contentReference[oaicite:0]{index=0}.",
+            "options": [
+                {
+                    "text": "Basieren auf vagen Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Decken nur positive Abläufe ab",
+                    "correct": false
+                },
+                {
+                    "text": "Enthalten vielfältige und Grenzfallszenarien",
+                    "correct": true
+                },
+                {
+                    "text": "Vermeiden typische Anwendungsfälle",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

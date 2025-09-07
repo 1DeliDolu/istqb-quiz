@@ -2,5 +2,200 @@
     "chapter": "udemy_5",
     "subChapter": "udemy_5_4",
     "subChapterTitle": "5.4 Quiz 13 - Äquivalenzklassen",
-    "questions": []
+    "questions": [
+        {
+            "question": "Was sollte vor der Ausführung eines Testfalls getan werden?",
+            "explanation": "Vor der Ausführung eines Testfalls müssen die Eingabedaten und die Testumgebung überprüft werden. Ohne korrektes Setup sind die Testergebnisse nicht zuverlässig. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 3.2 Testentwurf und Testfallqualität.",
+            "options": [
+                {
+                    "text": "Fehler-Tracker aktualisieren",
+                    "correct": false
+                },
+                {
+                    "text": "Testmetriken zuweisen",
+                    "correct": false
+                },
+                {
+                    "text": "Eingabedaten und Testumgebung prüfen",
+                    "correct": true
+                },
+                {
+                    "text": "System-Lasttests durchführen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Eigenschaft kennzeichnet einen wartbaren Testfall?",
+            "explanation": "Ein wartbarer Testfall verwendet parametrisierte Eingabewerte. Parametrisierung macht Testfälle flexibel und wiederverwendbar, da dieselbe Testlogik mit unterschiedlichen Daten ausgeführt werden kann. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 3.2 Testentwurf und Testfallqualität.",
+            "options": [
+                {
+                    "text": "Erfordert jedes Mal manuelles Setup",
+                    "correct": false
+                },
+                {
+                    "text": "Enthält fest codierte Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Verwendet parametrisierte Eingabewerte",
+                    "correct": true
+                },
+                {
+                    "text": "Nur für exploratives Testen gedacht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was erhöht die Effektivität der Testanalyse?",
+            "explanation": "Die gemeinsame Analyse von Anforderungen und Designs erhöht die Effektivität der Testanalyse. Mehr Perspektiven führen zu besseren Testbedingungen, da potenzielle Fehlerquellen frühzeitig erkannt werden. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 3.1 Testanalyse.",
+            "options": [
+                {
+                    "text": "Anforderungen überspringen",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungen und Designs gemeinsam analysieren",
+                    "correct": true
+                },
+                {
+                    "text": "Nur auf geringes Risiko fokussieren",
+                    "correct": false
+                },
+                {
+                    "text": "Teamkommunikation einschränken",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte beim Entwurf von Testfällen vermieden werden?",
+            "explanation": "Beim Entwurf von Testfällen sollten vage Schritte vermieden werden. Unklare oder unpräzise Testschritte führen zu Missverständnissen, inkonsistenter Ausführung und erschweren die Reproduzierbarkeit. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 3.2 Testentwurf und Testfallqualität.",
+            "options": [
+                {
+                    "text": "Erwartete Ergebnisse einfügen",
+                    "correct": false
+                },
+                {
+                    "text": "Vage Schritte verwenden",
+                    "correct": true
+                },
+                {
+                    "text": "Anforderungen verwenden",
+                    "correct": false
+                },
+                {
+                    "text": "Randwerte verwenden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Tool hilft bei der Verwaltung großer Testfallmengen und Rückverfolgbarkeit?",
+            "explanation": "Ein Testmanagement-Tool unterstützt bei der Organisation großer Testfallmengen und der Rückverfolgbarkeit. Tools wie Jira Xray oder TestRail ermöglichen die strukturierte Verwaltung von Testfällen, die Verknüpfung mit Anforderungen und die Nachverfolgung von Testergebnissen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 6.1 Testmanagement-Werkzeuge.",
+            "options": [
+                {
+                    "text": "Testmanagement-Tool",
+                    "correct": true
+                },
+                {
+                    "text": "Leistungsprofiler",
+                    "correct": false
+                },
+                {
+                    "text": "Syntax-Highlighter",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was macht einen Testfall wiederverwendbar?",
+            "explanation": "Ein Testfall ist wiederverwendbar, wenn er unabhängig von vorherigen Tests ist. Diese Unabhängigkeit ermöglicht es, den Testfall in verschiedenen Szenarien und Releases erneut zu verwenden, ohne dass er durch andere Tests beeinflusst wird. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 3.2 Testentwurf und Testfallqualität.",
+            "options": [
+                {
+                    "text": "Ist an einen bestimmten Release gebunden",
+                    "correct": false
+                },
+                {
+                    "text": "Enthält umgebungsspezifische Werte",
+                    "correct": false
+                },
+                {
+                    "text": "Ist unabhängig von vorherigen Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Testet nur das Layout der Benutzeroberfläche",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Zweck von Testentwurftechniken?",
+            "explanation": "Testentwurftechniken dienen dazu, eine systematische und effiziente Testabdeckung sicherzustellen. Sie helfen dabei, relevante Testbedingungen aus Anforderungen abzuleiten und die Qualität der Tests zu erhöhen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 4.1 Zweck und Nutzen von Testentwurftechniken.",
+            "options": [
+                {
+                    "text": "Größe des Testteams reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Testabdeckung und Effizienz sicherstellen",
+                    "correct": true
+                },
+                {
+                    "text": "Testdaten überflüssig machen",
+                    "correct": false
+                },
+                {
+                    "text": "Benutzer-Onboarding vereinfachen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testart profitiert am meisten von detaillierten erwarteten Ergebnissen?",
+            "explanation": "Automatisiertes Testen profitiert am meisten von detaillierten erwarteten Ergebnissen. Automatisierung erfordert präzise Vergleichswerte, um die tatsächlichen Ergebnisse zuverlässig mit den erwarteten zu vergleichen. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 5.2 Automatisierung im Testprozess.",
+            "options": [
+                {
+                    "text": "Exploratives Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Automatisiertes Testen",
+                    "correct": true
+                },
+                {
+                    "text": "Ad-hoc-Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Betatests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was hilft, sicherzustellen, dass Testfälle mit den Geschäftsanforderungen übereinstimmen?",
+            "explanation": "Die Beteiligung von Stakeholdern an Reviews hilft sicherzustellen, dass Testfälle mit den Geschäftsanforderungen übereinstimmen. Durch die Einbindung von Fachbereichen und Entscheidungsträgern wird gewährleistet, dass die Testabdeckung die tatsächlichen Business-Ziele reflektiert. Quelle: 📘 ISTQB CTFL Lehrplan 2025, Kapitel 3.1 Testanalyse.",
+            "options": [
+                {
+                    "text": "Codeabdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Beteiligung von Stakeholdern an Reviews",
+                    "correct": true
+                },
+                {
+                    "text": "Ausführungsprotokolle",
+                    "correct": false
+                },
+                {
+                    "text": "Systemfehlermeldungen",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }
