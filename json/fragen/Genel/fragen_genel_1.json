@@ -4,13 +4,1077 @@
     "subChapterTitle": "Genel.1 Temel Kavramlar",
     "questions": [
       {
-        "question": "Temel kavramlar nelerdir?",
-        "explanation": "Temel kavramlar, bir disiplinin veya alanın temelini oluşturan kavramlardır.",
+        "question": "Was ist der Zweck eines Fehlernachtests?",
+        "explanation": "Ein Fehlernachtest ist eine Art änderungsbezogenes Testen, das nach der Behebung eines Fehlerzustands durchgeführt wird, um zu bestätigen, dass die ursprüngliche Fehlerwirkung nicht mehr auftritt. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.2.3 Fehlernachtest und Regressionstest; Standardglossar der Begriffe des Softwartestens, Fehlernachtest Version 3)",
         "options": [
-          { "text": "Kavram 1", "correct": true },
-          { "text": "Kavram 2", "correct": false },
-          { "text": "Kavram 3", "correct": false }
+          {
+            "text": "Zu bestätigen, dass ein ursprünglicher Fehlerzustand erfolgreich behoben wurde",
+            "correct": true
+          },
+          {
+            "text": "Zu überprüfen, ob eine Änderung keine nachteiligen Folgen für andere Komponenten hat",
+            "correct": false
+          },
+          {
+            "text": "Alle Tests im gesamten System erneut auszuführen",
+            "correct": false
+          },
+          {
+            "text": "Zu analysieren, welche Teile der Software durch Änderungen betroffen sein könnten",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Fehlerzustand?",
+        "explanation": "Ein Fehlerzustand ist eine Unzulänglichkeit oder ein Mangel in einem Arbeitsergebnis, sodass es seine Anforderungen oder Spezifikationen nicht erfüllt. (Standardglossar_der_Begriffe_des_Softwartestens, Fehlerzustand; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.2.3 Fehlhandlungen, Fehlerzustände, Fehlerwirkungen und Grundursachen)",
+        "options": [
+          {
+            "text": "Eine Art änderungsbezogenes Testen, das nach der Behebung eines Fehlerzustands durchgeführt wird, um zu bestätigen, dass eine Fehlerwirkung nicht mehr auftritt.",
+            "correct": false
+          },
+          {
+            "text": "Der Grad, zu dem ein Arbeitsergebnis die expliziten und impliziten Bedürfnisse seiner Stakeholder erfüllt.",
+            "correct": false
+          },
+          {
+            "text": "Ein formales Review durch technische Experten, die die Qualität eines Arbeitsergebnisses untersuchen und Abweichungen von Spezifikationen und Standards feststellen.",
+            "correct": false
+          },
+          {
+            "text": "Eine Unzulänglichkeit oder ein Mangel in einem Arbeitsergebnis, sodass es seine Anforderungen oder Spezifikationen nicht erfüllt.",
+            "correct": true
+          }
+        ]
+      },{
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Die Menge an Bedingungen für den offiziellen Start einer bestimmten Aufgabe.",
+        "explanation": "Eingangskriterien sind die Menge an Bedingungen für den offiziellen Start einer bestimmten Aufgabe. (Standardglossar_der_Begriffe_des_Softwartestens, Eingangskriterien; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.2.1 Eingangskriterien und Endekriterien)",
+        "options": [
+          {
+            "text": "Verifizierung",
+            "correct": false
+          },
+          {
+            "text": "Validierung",
+            "correct": false
+          },
+          {
+            "text": "Abnahmetest",
+            "correct": false
+          },
+          {
+            "text": "Eingangskriterien",
+            "correct": true
+          }
+        ]
+      },{
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Ereignis in welchem eine Komponente oder ein System eine geforderte Funktion nicht im spezifizierten Rahmen ausführt.",
+        "explanation": "Eine Fehlerwirkung ist ein Ereignis, in welchem eine Komponente oder ein System eine geforderte Funktion nicht im spezifizierten Rahmen ausführt. (Standardglossar_der_Begriffe_des_Softwartestens, Fehlerwirkung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.2.3 Fehlhandlungen, Fehlerzustände, Fehlerwirkungen und Grundursachen)",
+        "options": [
+          {
+            "text": "Fehlerwirkung",
+            "correct": true
+          },
+          {
+            "text": "Grundursache",
+            "correct": false
+          },
+          {
+            "text": "Testfall",
+            "correct": false
+          },
+          {
+            "text": "Qualität",
+            "correct": false
+          }
+        ]
+      },{
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Der Integrationstest von Systemen.",
+        "explanation": "Der Systemintegrationstest ist der Integrationstest von Systemen. (Standardglossar_der_Begriffe_des_Softwartestens, Systemintegrationstest; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.2.2 Teststufen)",
+        "options": [
+          {
+            "text": "Testdurchführung",
+            "correct": false
+          },
+          {
+            "text": "Systemintegrationstest",
+            "correct": true
+          },
+          {
+            "text": "Testrealisierung",
+            "correct": false
+          },
+          {
+            "text": "auf Zusammenarbeit basierender Testansatz",
+            "correct": false
+          }
+        ]
+      },{
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt.",
+        "explanation": "Der Systemtest ist eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt. (Standardglossar_der_Begriffe_des_Softwartestens, Systemtest; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.2.2 Teststufen)",
+        "options": [
+          {
+            "text": "Testprozess",
+            "correct": false
+          },
+          {
+            "text": "Systemtest",
+            "correct": true
+          },
+          {
+            "text": "Testdurchführung",
+            "correct": false
+          },
+          {
+            "text": "Testen",
+            "correct": false
+          }
+        ]
+      },{
+        "question": "Was ist die Definition des Begriffs Technisches Review?",
+        "explanation": "Ein technisches Review ist ein formales Review durch technische Experten, die die Qualität eines Arbeitsergebnisses untersuchen und Abweichungen von Spezifikationen und Standards feststellen. (Standardglossar_der_Begriffe_des_Softwartestens, Technisches Review; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 3.2.1 Arten von Reviews)",
+        "options": [
+          {
+            "text": "Das zu testende Arbeitsergebnis.",
+            "correct": false
+          },
+          {
+            "text": "Eine Unzulänglichkeit oder ein Mangel in einem Arbeitsergebnis, sodass es seine Anforderungen oder Spezifikationen nicht erfüllt.",
+            "correct": false
+          },
+          {
+            "text": "Ein Testverfahren, das auf der Spezifikation einer Komponente oder eines Systems basiert.",
+            "correct": false
+          },
+          {
+            "text": "Ein formales Review durch technische Experten, die die Qualität eines Arbeitsergebnisses untersuchen und Abweichungen von Spezifikationen und Standards feststellen.",
+            "correct": true
+          }
+        ]
+      },{
+        "question": "Was ist die Definition des Begriffs Testansatz?",
+        "explanation": "Ein Testansatz ist die Art und Weise der Umsetzung von Testaufgaben. (Standardglossar_der_Begriffe_des_Softwartestens, Testansatz; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.1.1 Teststrategie und Testansatz)",
+        "options": [
+          {
+            "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+            "correct": false
+          },
+          {
+            "text": "Eine Gruppe von Testaktivitäten basierend auf bestimmten Testzielen mit dem Zweck, eine Komponente oder ein System auf spezifische Merkmale zu prüfen.",
+            "correct": false
+          },
+          {
+            "text": "Eine Beschreibung, wie Testen durchzuführen ist, um Testziele unter den gegebenen Umständen zu erreichen.",
+            "correct": false
+          },
+          {
+            "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+            "correct": true
+          }
+        ]
+      },{
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Alle Informationen, die als Grundlage für die Testanalyse und den Testentwurf verwendet werden können.",
+        "explanation": "Die Testbasis umfasst alle Informationen, die als Grundlage für die Testanalyse und den Testentwurf verwendet werden können. (Standardglossar_der_Begriffe_des_Softwartestens, Testbasis; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.1.1 Testbasis und Testorakel)",
+        "options": [
+          {
+            "text": "Testart",
+            "correct": false
+          },
+          {
+            "text": "Testentwurf",
+            "correct": false
+          },
+          {
+            "text": "Testverfahren",
+            "correct": false
+          },
+          {
+            "text": "Testbasis",
+            "correct": true
+          }
+        ]
+      },{
+        "question": "Was ist die Definition des Begriffs Testergebnis?",
+        "explanation": "Ein Testergebnis ist das Ergebnis und die Konsequenz der Durchführung eines Tests. (Standardglossar_der_Begriffe_des_Softwartestens, Testergebnis; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.2.4 Testergebnisse und Testprotokoll)",
+        "options": [
+          {
+            "text": "Das Ergebnis und die Konsequenz der Durchführung eines Tests.",
+            "correct": true
+          },
+          {
+            "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+            "correct": false
+          },
+          {
+            "text": "Eine spezifische Instanziierung eines Testprozesses.",
+            "correct": false
+          },
+          {
+            "text": "Eine Folge von Testfällen in der Reihenfolge ihrer Durchführung, mit allen erforderlichen Aktionen zur Herstellung der Vorbedingungen und zum Aufräumen nach der Durchführung.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Testergebnis?",
+        "explanation": "Ein Testergebnis ist das Ergebnis und die Konsequenz der Durchführung eines Tests. (Standardglossar_der_Begriffe_des_Softwartestens, Testergebnis; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.2.4 Testergebnisse und Testprotokoll)",
+        "options": [
+          {
+            "text": "Das Ergebnis und die Konsequenz der Durchführung eines Tests.",
+            "correct": true
+          },
+          {
+            "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+            "correct": false
+          },
+          {
+            "text": "Eine spezifische Instanziierung eines Testprozesses.",
+            "correct": false
+          },
+          {
+            "text": "Eine Folge von Testfällen in der Reihenfolge ihrer Durchführung, mit allen erforderlichen Aktionen zur Herstellung der Vorbedingungen und zum Aufräumen nach der Durchführung.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Abnahmetest?",
+        "explanation": "Ein Abnahmetest ist eine Teststufe mit dem Schwerpunkt zu bestimmen, ob ein System abgenommen werden kann. (Standardglossar_der_Begriffe_des_Softwartestens, Abnahmetest; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.2.2 Teststufen)",
+        "options": [
+          {
+            "text": "Eine Teststufe mit dem Schwerpunkt zu bestimmen, ob ein System abgenommen werden kann.",
+            "correct": true
+          },
+          {
+            "text": "Eine Teststufe mit dem Schwerpunkt auf einer einzelnen Hardware- oder Softwarekomponente.",
+            "correct": false
+          },
+          {
+            "text": "Eine Teststufe mit dem Schwerpunkt auf dem Zusammenwirken zwischen Komponenten oder Systemen.",
+            "correct": false
+          },
+          {
+            "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+            "correct": false
+          }
+        ]
+      },{
+        "question": "Was ist die Definition des Begriffs informelles Review?",
+        "explanation": "Ein informelles Review ist ein Review, das keinem definierten Prozess folgt und kein formell dokumentiertes Ergebnis liefert. (Standardglossar_der_Begriffe_des_Softwartestens, informelles Review; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 3.2.1 Arten von Reviews)",
+        "options": [
+          {
+            "text": "Die Aktivität der Ausführung eines Tests für eine Komponente oder ein System, die Istergebnisse erzeugt.",
+            "correct": false
+          },
+          {
+            "text": "Testen, welches durchgeführt wird, um die Erfüllung der nicht-funktionalen Anforderungen durch eine Komponente oder ein System zu bewerten.",
+            "correct": false
+          },
+          {
+            "text": "Ein Review, das keinem definierten Prozess folgt und kein formell dokumentiertes Ergebnis liefert.",
+            "correct": true
+          },
+          {
+            "text": "Eine Reviewart, bei der ein Autor die Reviewteilnehmer durch ein Arbeitsergebnis leitet und die Teilnehmer Fragen stellen und Auffälligkeiten kommentieren.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Die Ermittlung, Erkennung und Beschreibung von Risiken.",
+        "explanation": "Die Risikoidentifizierung ist die Ermittlung, Erkennung und Beschreibung von Risiken. (Standardglossar_der_Begriffe_des_Softwartestens, Risikoidentifizierung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.3.1 Risikomanagement und risikobasiertes Testen)",
+        "options": [
+          {
+            "text": "Risikoidentifizierung",
+            "correct": true
+          },
+          {
+            "text": "Risikobewertung",
+            "correct": false
+          },
+          {
+            "text": "Risikostufe",
+            "correct": false
+          },
+          {
+            "text": "Risikosteuerung",
+            "correct": false
+          }
+        ]
+      } ,  {
+        "question": "Was ist die Definition des Begriffs Risikominderung?",
+        "explanation": "Risikominderung ist der Prozess, mit dem Entscheidungen getroffen und Schutzmaßnahmen umgesetzt werden, um das Risiko auf eine vorgegebene Stufe zu reduzieren oder um es auf einer Stufe zu halten. (Standardglossar_der_Begriffe_des_Softwartestens, Risikominderung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.3.1 Risikomanagement und risikobasiertes Testen)",
+        "options": [
+          {
+            "text": "Die Tätigkeit, die den Status bekannter Risiken überprüft und an Stakeholder berichtet.",
+            "correct": false
+          },
+          {
+            "text": "Der Prozess der Begutachtung von identifizierten Risiken und der Festlegung der Risikostufe.",
+            "correct": false
+          },
+          {
+            "text": "Der Prozess zur Behandlung von Risiken.",
+            "correct": false
+          },
+          {
+            "text": "Der Prozess, mit dem Entscheidungen getroffen und Schutzmaßnahmen umgesetzt werden, um das Risiko auf eine vorgegebene Stufe zu reduzieren oder um es auf einer Stufe zu halten.",
+            "correct": true
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Systemtest?",
+        "explanation": "Ein Systemtest ist eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt. (Standardglossar_der_Begriffe_des_Softwartestens, Systemtest; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.2.2 Teststufen)",
+        "options": [
+          {
+            "text": "Testen, welches durchgeführt wird, um die Erfüllung der funktionalen Anforderungen durch eine Komponente oder ein System zu bewerten.",
+            "correct": false
+          },
+          {
+            "text": "Eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt.",
+            "correct": true
+          },
+          {
+            "text": "Eine Teststufe mit dem Schwerpunkt auf einer einzelnen Hardware- oder Softwarekomponente.",
+            "correct": false
+          },
+          {
+            "text": "Eine Teststufe mit dem Schwerpunkt auf dem Zusammenwirken zwischen Komponenten oder Systemen.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Die Aktivität, die auf Basis der Testanalyse und des -Entwurfs die Testmittel vorbereitet, welche für die Testdurchführung benötigt werden.",
+        "explanation": "Die Testrealisierung ist die Aktivität, die auf Basis der Testanalyse und des -Entwurfs die Testmittel vorbereitet, welche für die Testdurchführung benötigt werden. (Standardglossar_der_Begriffe_des_Softwartestens, Testrealisierung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.1.3 Testrealisierung)",
+        "options": [
+          {
+            "text": "Teststrategie",
+            "correct": false
+          },
+          {
+            "text": "Testansatz",
+            "correct": false
+          },
+          {
+            "text": "Testrealisierung",
+            "correct": true
+          },
+          {
+            "text": "Testen",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Testobjekt?",
+        "explanation": "Ein Testobjekt ist das zu testende Arbeitsergebnis. (Standardglossar_der_Begriffe_des_Softwartestens, Testobjekt; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.1.1 Testbasis und Testorakel)",
+        "options": [
+          {
+            "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+            "correct": false
+          },
+          {
+            "text": "Das zu testende Arbeitsergebnis.",
+            "correct": true
+          },
+          {
+            "text": "Die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten.",
+            "correct": false
+          },
+          {
+            "text": "Die Aktivität der Ausführung eines Tests für eine Komponente oder ein System, die Istergebnisse erzeugt.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Teststrategie?",
+        "explanation": "Eine Teststrategie ist eine Beschreibung, wie Testen durchzuführen ist, um Testziele unter den gegebenen Umständen zu erreichen. (Standardglossar_der_Begriffe_des_Softwartestens, Teststrategie; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.1.1 Teststrategie und Testansatz)",
+        "options": [
+          {
+            "text": "Ein Testansatz, bei dem die Tester auf der Grundlage ihres Wissens, der Erkundung des Testobjekts und der Ergebnisse früherer Tests dynamisch Tests entwerfen und durchführen.",
+            "correct": false
+          },
+          {
+            "text": "Eine Beschreibung, wie Testen durchzuführen ist, um Testziele unter den gegebenen Umständen zu erreichen.",
+            "correct": true
+          },
+          {
+            "text": "Eine Gruppe von Testaktivitäten basierend auf bestimmten Testzielen mit dem Zweck, eine Komponente oder ein System auf spezifische Merkmale zu prüfen.",
+            "correct": false
+          },
+          {
+            "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Testmittel?",
+        "explanation": "Testmittel sind die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten. (Standardglossar_der_Begriffe_des_Softwartestens, Testmittel; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.1.4 Testmittel)",
+        "options": [
+          {
+            "text": "Das zu testende Arbeitsergebnis.",
+            "correct": false
+          },
+          {
+            "text": "Eine Gruppe von Testaktivitäten basierend auf bestimmten Testzielen mit dem Zweck, eine Komponente oder ein System auf spezifische Merkmale zu prüfen.",
+            "correct": false
+          },
+          {
+            "text": "Die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten.",
+            "correct": true
+          },
+          {
+            "text": "Der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Test, der auf der Analyse der internen Struktur einer Komponente oder eines Systems basiert.",
+        "explanation": "Ein White-Box-Test ist ein Test, der auf der Analyse der internen Struktur einer Komponente oder eines Systems basiert. (Standardglossar_der_Begriffe_des_Softwartestens, White-Box-Test; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.3.2 White-Box-Testverfahren)",
+        "options": [
+          {
+            "text": "Black-Box-Testverfahren",
+            "correct": false
+          },
+          {
+            "text": "Testverfahren",
+            "correct": false
+          },
+          {
+            "text": "White-Box-Test",
+            "correct": true
+          },
+          {
+            "text": "Black-Box-Test",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Black-Box-Testverfahren, bei dem die Testfälle unter Nutzung von Grenzwerten entworfen werden.",
+        "explanation": "Die Grenzwertanalyse ist ein Black-Box-Testverfahren, bei dem die Testfälle unter Nutzung von Grenzwerten entworfen werden. (Standardglossar_der_Begriffe_des_Softwartestens, Grenzwertanalyse; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.3.1 Black-Box-Testverfahren)",
+        "options": [
+          {
+            "text": "Grenzwertanalyse",
+            "correct": true
+          },
+          {
+            "text": "Risikoanalyse",
+            "correct": false
+          },
+          {
+            "text": "Testansatz",
+            "correct": false
+          },
+          {
+            "text": "Integrationstest",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs formales Review?",
+        "explanation": "Ein formales Review ist ein Review, das einem definierten Prozess folgt und ein formell dokumentiertes Ergebnis liefert. (Standardglossar_der_Begriffe_des_Softwartestens, formales Review; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 3.2.1 Arten von Reviews)",
+        "options": [
+          {
+            "text": "Ein Review, das einem definierten Prozess folgt und ein formell dokumentiertes Ergebnis liefert.",
+            "correct": true
+          },
+          {
+            "text": "Eine Folge von Testfällen in der Reihenfolge ihrer Durchführung, mit allen erforderlichen Aktionen zur Herstellung der Vorbedingungen und zum Aufräumen nach der Durchführung.",
+            "correct": false
+          },
+          {
+            "text": "Eine Reviewart, bei der ein Autor die Reviewteilnehmer durch ein Arbeitsergebnis leitet und die Teilnehmer Fragen stellen und Auffälligkeiten kommentieren.",
+            "correct": false
+          },
+          {
+            "text": "Der Prozess der Bewertung eines Testobjekts (Komponente oder System) basierend auf seiner Form, seiner Struktur, seines Inhalts oder seiner Dokumentation, ohne es auszuführen.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Risiko?",
+        "explanation": "Ein Risiko ist ein Faktor, der zu negativen Konsequenzen in der Zukunft führen könnte, gewöhnlich ausgedrückt durch das Schadensausmaß und die Eintrittswahrscheinlichkeit. (Standardglossar_der_Begriffe_des_Softwartestens, Risiko; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.3.1 Risikomanagement und risikobasiertes Testen)",
+        "options": [
+          {
+            "text": "Ein Faktor, der zu negativen Konsequenzen in der Zukunft führen könnte, gewöhnlich ausgedrückt durch das Schadensausmaß und die Eintrittswahrscheinlichkeit.",
+            "correct": true
+          },
+          {
+            "text": "Das Ergebnis und die Konsequenz der Durchführung eines Tests.",
+            "correct": false
+          },
+          {
+            "text": "Der Prozess zur Behandlung von Risiken.",
+            "correct": false
+          },
+          {
+            "text": "Ein Risiko, das den Projekterfolg beeinträchtigt.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Risikoidentifizierung?",
+        "explanation": "Die Risikoidentifizierung ist die Ermittlung, Erkennung und Beschreibung von Risiken. (Standardglossar_der_Begriffe_des_Softwartestens, Risikoidentifizierung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.3.1 Risikomanagement und risikobasiertes Testen)",
+        "options": [
+          {
+            "text": "Die Ermittlung, Erkennung und Beschreibung von Risiken.",
+            "correct": true
+          },
+          {
+            "text": "Der Prozess, der die Risikominderung und Risikoüberwachung umfasst.",
+            "correct": false
+          },
+          {
+            "text": "Der Prozess zur Behandlung von Risiken.",
+            "correct": false
+          },
+          {
+            "text": "Das Maß eines Risikos, definiert durch dessen Schadensausmaß und Eintrittswahrscheinlichkeit.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Risikostufe?",
+        "explanation": "Die Risikostufe ist das Maß eines Risikos, definiert durch dessen Schadensausmaß und Eintrittswahrscheinlichkeit. (Standardglossar_der_Begriffe_des_Softwartestens, Risikostufe; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.3.1 Risikomanagement und risikobasiertes Testen)",
+        "options": [
+          {
+            "text": "Der Prozess zur Behandlung von Risiken.",
+            "correct": false
+          },
+          {
+            "text": "Das Maß eines Risikos, definiert durch dessen Schadensausmaß und Eintrittswahrscheinlichkeit.",
+            "correct": true
+          },
+          {
+            "text": "Der Prozess, mit dem Entscheidungen getroffen und Schutzmaßnahmen umgesetzt werden, um das Risiko auf eine vorgegebene Stufe zu reduzieren oder um es auf einer Stufe zu halten.",
+            "correct": false
+          },
+          {
+            "text": "Der Prozess der Begutachtung von identifizierten Risiken und der Festlegung der Risikostufe.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs statische Analyse?",
+        "explanation": "Die statische Analyse ist der Prozess der Bewertung eines Testobjekts (Komponente oder System) basierend auf seiner Form, seiner Struktur, seines Inhalts oder seiner Dokumentation, ohne es auszuführen. (Standardglossar_der_Begriffe_des_Softwartestens, statische Analyse; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 3.1.1 Statische Analyse)",
+        "options": [
+          {
+            "text": "Der Prozess der Bewertung eines Testobjekts (Komponente oder System) basierend auf seiner Form, seiner Struktur, seines Inhalts oder seiner Dokumentation, ohne es auszuführen.",
+            "correct": true
+          },
+          {
+            "text": "Der Prozess der Aufdeckung, Analyse und Entfernung der Ursachen von Fehlerwirkungen in einer Komponente oder einem System.",
+            "correct": false
+          },
+          {
+            "text": "Testen, welches durchgeführt wird, um die Erfüllung der nicht-funktionalen Anforderungen durch eine Komponente oder ein System zu bewerten.",
+            "correct": false
+          },
+          {
+            "text": "Ein Review, das einem definierten Prozess folgt und ein formell dokumentiertes Ergebnis liefert.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Testansatz?",
+        "explanation": "Ein Testansatz ist die Art und Weise der Umsetzung von Testaufgaben. (Standardglossar_der_Begriffe_des_Softwartestens, Testansatz; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.1.1 Teststrategie und Testansatz)",
+        "options": [
+          {
+            "text": "Die Dokumentation der Testziele sowie der Maßnahmen und Zeitplanung, um diese zu erreichen, zum Zweck der Koordination des Testens.",
+            "correct": false
+          },
+          {
+            "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+            "correct": true
+          },
+          {
+            "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+            "correct": false
+          },
+          {
+            "text": "Eine Beschreibung, wie Testen durchzuführen ist, um Testziele unter den gegebenen Umständen zu erreichen.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert.",
+        "explanation": "Der Testentwurf ist die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert. (Standardglossar_der_Begriffe_des_Softwartestens, Testentwurf; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.1.2 Testentwurf)",
+        "options": [
+          {
+            "text": "Systemtest",
+            "correct": false
+          },
+          {
+            "text": "Teststrategie",
+            "correct": false
+          },
+          {
+            "text": "Testprozess",
+            "correct": false
+          },
+          {
+            "text": "Testentwurf",
+            "correct": true
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Testmittel?",
+        "explanation": "Testmittel sind die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten. (Standardglossar_der_Begriffe_des_Softwartestens, Testmittel; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.1.4 Testmittel)",
+        "options": [
+          {
+            "text": "Der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten.",
+            "correct": false
+          },
+          {
+            "text": "Eine Gruppe von Testaktivitäten basierend auf bestimmten Testzielen mit dem Zweck, eine Komponente oder ein System auf spezifische Merkmale zu prüfen.",
+            "correct": false
+          },
+          {
+            "text": "Die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten.",
+            "correct": true
+          },
+          {
+            "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Verfolgbarkeit?",
+        "explanation": "Verfolgbarkeit ist die Fähigkeit, explizite Beziehungen zwischen Arbeitsergebnissen oder zwischen Elementen von Arbeitsergebnissen darzustellen. (Standardglossar_der_Begriffe_des_Softwartestens, Verfolgbarkeit; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.1.1 Testbasis und Testorakel)",
+        "options": [
+          {
+            "text": "Eine Teststufe mit dem Schwerpunkt auf dem Zusammenwirken zwischen Komponenten oder Systemen.",
+            "correct": false
+          },
+          {
+            "text": "Die Fähigkeit, explizite Beziehungen zwischen Arbeitsergebnissen oder zwischen Elementen von Arbeitsergebnissen darzustellen.",
+            "correct": true
+          },
+          {
+            "text": "Ein formales Review durch technische Experten, die die Qualität eines Arbeitsergebnisses untersuchen und Abweichungen von Spezifikationen und Standards feststellen.",
+            "correct": false
+          },
+          {
+            "text": "Bestätigung durch Überprüfung, dass ein Arbeitsergebnis den Bedürfnissen eines Stakeholders entspricht.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs abnahmetestgetriebene Entwicklung?",
+        "explanation": "Die abnahmetestgetriebene Entwicklung ist ein auf Zusammenarbeit basierender Test-First-Ansatz, der Abnahmetests in der Fachsprache der Stakeholder definiert. (Standardglossar_der_Begriffe_des_Softwartestens, abnahmetestgetriebene Entwicklung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.2.5 Testen und agile Entwicklung)",
+        "options": [
+          {
+            "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+            "correct": false
+          },
+          {
+            "text": "Ein Testansatz, der durch Zusammenarbeit zwischen Stakeholdern auf Vermeidung von Fehlerzuständen fokussiert.",
+            "correct": false
+          },
+          {
+            "text": "Ein auf Zusammenarbeit basierender Test-First-Ansatz, der Abnahmetests in der Fachsprache der Stakeholder definiert.",
+            "correct": true
+          },
+          {
+            "text": "Ein Testansatz zur Ausübung von Test- und Qualitätssicherungsaktivitäten so früh wie möglich im Softwareentwicklungslebenszyklus.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Zustand, der von der Erwartung abweicht.",
+        "explanation": "Eine Anomalie ist ein Zustand, der von der Erwartung abweicht. (Standardglossar_der_Begriffe_des_Softwartestens, Anomalie; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.2.3 Fehlhandlungen, Fehlerzustände, Fehlerwirkungen und Grundursachen)",
+        "options": [
+          {
+            "text": "Verifizierung",
+            "correct": false
+          },
+          {
+            "text": "Anomalie",
+            "correct": true
+          },
+          {
+            "text": "Risikoidentifizierung",
+            "correct": false
+          },
+          {
+            "text": "Grundursache",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Überdeckungselement?",
+        "explanation": "Ein Überdeckungselement ist eine Eigenschaft oder eine Kombination von Eigenschaften, die aus einer oder mehreren Testbedingungen unter Verwendung eines Testverfahrens abgeleitet wurde(n). (Standardglossar_der_Begriffe_des_Softwartestens, Überdeckungselement; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.3.3 White-Box-Testverfahren und Überdeckung)",
+        "options": [
+          {
+            "text": "Ein Testverfahren, das auf der Erfahrung, dem Wissen und der Intuition der Tester basiert.",
+            "correct": false
+          },
+          {
+            "text": "Ein Testverfahren, das auf der Spezifikation einer Komponente oder eines Systems basiert.",
+            "correct": false
+          },
+          {
+            "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+            "correct": false
+          },
+          {
+            "text": "Eine Eigenschaft oder eine Kombination von Eigenschaften, die aus einer oder mehreren Testbedingungen unter Verwendung eines Testverfahrens abgeleitet wurde(n).",
+            "correct": true
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Entscheidungstabellentest?",
+        "explanation": "Der Entscheidungstabellentest ist ein Black-Box-Testverfahren, bei dem Testfälle im Hinblick auf die Ausführung von Kombinationen der Bedingungen und aus ihnen resultierender Aktionen einer Entscheidungstabelle entworfen werden. (Standardglossar_der_Begriffe_des_Softwartestens, Entscheidungstabellentest; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.3.1 Black-Box-Testverfahren)",
+        "options": [
+          {
+            "text": "Ein erfahrungsbasiertes Testverfahren, bei dem die Testfälle entworfen werden, um Elemente einer Checkliste auszuführen.",
+            "correct": false
+          },
+          {
+            "text": "Eine Menge von Vorbedingungen, Eingaben, Aktionen (falls anwendbar), erwarteten Ergebnissen und Nachbedingungen, welche auf Basis von Testbedingungen entwickelt wurden.",
+            "correct": false
+          },
+          {
+            "text": "Ein Black-Box-Testverfahren, bei dem Testfälle im Hinblick auf die Ausführung von Kombinationen der Bedingungen und aus ihnen resultierender Aktionen einer Entscheidungstabelle entworfen werden.",
+            "correct": true
+          },
+          {
+            "text": "Die Aktivität, die Testbedingungen durch eine Analyse der Testbasis identifiziert.",
+            "correct": false
+          }
+        ]
+      },{
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Testansatz, bei dem die Tester auf der Grundlage ihres Wissens, der Erkundung des Testobjekts und der Ergebnisse früherer Tests dynamisch Tests entwerfen und durchführen.",
+        "explanation": "Ein explorativer Test ist ein Testansatz, bei dem die Tester auf der Grundlage ihres Wissens, der Erkundung des Testobjekts und der Ergebnisse früherer Tests dynamisch Tests entwerfen und durchführen. (Standardglossar_der_Begriffe_des_Softwartestens, explorativer Test; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.3.4 Erfahrungsbasierte Testverfahren)",
+        "options": [
+          {
+            "text": "Testverfahren",
+            "correct": false
+          },
+          {
+            "text": "Testdurchführung",
+            "correct": false
+          },
+          {
+            "text": "Teststrategie",
+            "correct": false
+          },
+          {
+            "text": "explorativer Test",
+            "correct": true
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Fehlerwirkung?",
+        "explanation": "Eine Fehlerwirkung ist ein Ereignis, in welchem eine Komponente oder ein System eine geforderte Funktion nicht im spezifizierten Rahmen ausführt. (Standardglossar_der_Begriffe_des_Softwartestens, Fehlerwirkung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.2.3 Fehlhandlungen, Fehlerzustände, Fehlerwirkungen und Grundursachen)",
+        "options": [
+          {
+            "text": "Testen, welches durchgeführt wird, um die Erfüllung der funktionalen Anforderungen durch eine Komponente oder ein System zu bewerten.",
+            "correct": false
+          },
+          {
+            "text": "Ein Zustand, der von der Erwartung abweicht.",
+            "correct": false
+          },
+          {
+            "text": "Ein Ereignis in welchem eine Komponente oder ein System eine geforderte Funktion nicht im spezifizierten Rahmen ausführt.",
+            "correct": true
+          },
+          {
+            "text": "Eine Art änderungsbezogenes Testen, das nach der Behebung eines Fehlerzustands durchgeführt wird, um zu bestätigen, dass eine Fehlerwirkung nicht mehr auftritt.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Der Prozess, der die Risikominderung und Risikoüberwachung umfasst.",
+        "explanation": "Die Risikosteuerung ist der Prozess, der die Risikominderung und Risikoüberwachung umfasst. (Standardglossar_der_Begriffe_des_Softwartestens, Risikosteuerung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.3.1 Risikomanagement und risikobasiertes Testen)",
+        "options": [
+          {
+            "text": "Risikoüberwachung",
+            "correct": false
+          },
+          {
+            "text": "Risikosteuerung",
+            "correct": true
+          },
+          {
+            "text": "Risikomanagement",
+            "correct": false
+          },
+          {
+            "text": "Risiko",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Das zu testende Arbeitsergebnis.",
+        "explanation": "Ein Testobjekt ist das zu testende Arbeitsergebnis. (Standardglossar_der_Begriffe_des_Softwartestens, Testobjekt; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.1.1 Testbasis und Testorakel)",
+        "options": [
+          {
+            "text": "Testziel",
+            "correct": false
+          },
+          {
+            "text": "Testobjekt",
+            "correct": true
+          },
+          {
+            "text": "Testen",
+            "correct": false
+          },
+          {
+            "text": "Testdurchführung",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs White-Box-Testverfahren?",
+        "explanation": "Ein White-Box-Testverfahren ist ein Testverfahren, das auf der inneren Struktur einer Komponente oder eines Systems basiert. (Standardglossar_der_Begriffe_des_Softwartestens, White-Box-Testverfahren; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.3.2 White-Box-Testverfahren)",
+        "options": [
+          {
+            "text": "Testen auf der Grundlage einer Analyse der Spezifikation der Komponente oder des Systems.",
+            "correct": false
+          },
+          {
+            "text": "Ein Testverfahren, das auf der inneren Struktur einer Komponente oder eines Systems basiert.",
+            "correct": true
+          },
+          {
+            "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+            "correct": false
+          },
+          {
+            "text": "Testen, das die Ausführung eines Testelements nicht beinhaltet.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs White-Box-Test?",
+        "explanation": "Ein White-Box-Test ist ein Test, der auf der Analyse der internen Struktur einer Komponente oder eines Systems basiert. (Standardglossar_der_Begriffe_des_Softwartestens, White-Box-Test; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.3.2 White-Box-Testverfahren)",
+        "options": [
+          {
+            "text": "Ein Test, der auf der Analyse der internen Struktur einer Komponente oder eines Systems basiert.",
+            "correct": true
+          },
+          {
+            "text": "Ein Testverfahren, das auf der inneren Struktur einer Komponente oder eines Systems basiert.",
+            "correct": false
+          },
+          {
+            "text": "Testen auf der Grundlage einer Analyse der Spezifikation der Komponente oder des Systems.",
+            "correct": false
+          },
+          {
+            "text": "Testen, welches durchgeführt wird, um die Erfüllung der funktionalen Anforderungen durch eine Komponente oder ein System zu bewerten.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Die Überdeckung von Zweigen in einem Kontrollflussgraphen.",
+        "explanation": "Die Zweigüberdeckung ist die Überdeckung von Zweigen in einem Kontrollflussgraphen. (Standardglossar_der_Begriffe_des_Softwartestens, Zweigüberdeckung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.3.3 White-Box-Testverfahren und Überdeckung)",
+        "options": [
+          {
+            "text": "Testabschlussbericht",
+            "correct": false
+          },
+          {
+            "text": "Überdeckung",
+            "correct": false
+          },
+          {
+            "text": "Testplanung",
+            "correct": false
+          },
+          {
+            "text": "Zweigüberdeckung",
+            "correct": true
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Testansatz, bei dem die Tester auf der Grundlage ihres Wissens, der Erkundung des Testobjekts und der Ergebnisse früherer Tests dynamisch Tests entwerfen und durchführen.",
+        "explanation": "Ein explorativer Test ist ein Testansatz, bei dem die Tester auf der Grundlage ihres Wissens, der Erkundung des Testobjekts und der Ergebnisse früherer Tests dynamisch Tests entwerfen und durchführen. (Standardglossar_der_Begriffe_des_Softwartestens, explorativer Test; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.3.4 Erfahrungsbasierte Testverfahren)",
+        "options": [
+          {
+            "text": "Testentwurf",
+            "correct": false
+          },
+          {
+            "text": "explorativer Test",
+            "correct": true
+          },
+          {
+            "text": "Testplanung",
+            "correct": false
+          },
+          {
+            "text": "erfahrungsbasiertes Testverfahren",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Risiko, das den Projekterfolg beeinträchtigt.",
+        "explanation": "Ein Projektrisiko ist ein Risiko, das den Projekterfolg beeinträchtigt. (Standardglossar_der_Begriffe_des_Softwartestens, Projektrisiko; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 5.3.1 Risikomanagement und risikobasiertes Testen)",
+        "options": [
+          {
+            "text": "Produktrisiko",
+            "correct": false
+          },
+          {
+            "text": "Projektrisiko",
+            "correct": true
+          },
+          {
+            "text": "Risikostufe",
+            "correct": false
+          },
+          {
+            "text": "Risikomanagement",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Anweisungsüberdeckung?",
+        "explanation": "Die Anweisungsüberdeckung ist die Überdeckung von ausführbaren Anweisungen. (Standardglossar_der_Begriffe_des_Softwartestens, Anweisungsüberdeckung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.3.3 White-Box-Testverfahren und Überdeckung)",
+        "options": [
+          {
+            "text": "Die Aktivität, die auf Basis der Testanalyse und des -Entwurfs die Testmittel vorbereitet, welche für die Testdurchführung benötigt werden.",
+            "correct": false
+          },
+          {
+            "text": "Eine Menge von Vorbedingungen, Eingaben, Aktionen (falls anwendbar), erwarteten Ergebnissen und Nachbedingungen, welche auf Basis von Testbedingungen entwickelt wurden.",
+            "correct": false
+          },
+          {
+            "text": "Die Überdeckung von ausführbaren Anweisungen.",
+            "correct": true
+          },
+          {
+            "text": "Eine Folge von Testfällen in der Reihenfolge ihrer Durchführung, mit allen erforderlichen Aktionen zur Herstellung der Vorbedingungen und zum Aufräumen nach der Durchführung.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Alle Informationen, die als Grundlage für die Testanalyse und den Testentwurf verwendet werden können.",
+        "explanation": "Die Testbasis umfasst alle Informationen, die als Grundlage für die Testanalyse und den Testentwurf verwendet werden können. (Standardglossar_der_Begriffe_des_Softwartestens, Testbasis; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.1.1 Testbasis und Testorakel)",
+        "options": [
+          {
+            "text": "Testrealisierung",
+            "correct": false
+          },
+          {
+            "text": "Testbasis",
+            "correct": true
+          },
+          {
+            "text": "Testart",
+            "correct": false
+          },
+          {
+            "text": "Testverfahren",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Ein regelmäßiger Testbericht, der den Fortschritt der Testaktivitäten gegenüber einer Baseline, Risiken und Alternativen, die eine Entscheidung erfordern, enthält.",
+        "explanation": "Der Testfortschrittsbericht ist ein regelmäßiger Testbericht, der den Fortschritt der Testaktivitäten gegenüber einer Baseline, Risiken und Alternativen, die eine Entscheidung erfordern, enthält. (Standardglossar_der_Begriffe_des_Softwartestens, Testfortschrittsbericht; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.2.3 Testüberwachung und -steuerung)",
+        "options": [
+          {
+            "text": "Testanalyse",
+            "correct": false
+          },
+          {
+            "text": "Testfortschrittsbericht",
+            "correct": true
+          },
+          {
+            "text": "Testüberwachung",
+            "correct": false
+          },
+          {
+            "text": "Testablauf",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Testmittel?",
+        "explanation": "Testmittel sind die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten. (Standardglossar_der_Begriffe_des_Softwartestens, Testmittel; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 4.1.4 Testmittel)",
+        "options": [
+          {
+            "text": "Die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten.",
+            "correct": true
+          },
+          {
+            "text": "Die Dokumentation der Testziele sowie der Maßnahmen und Zeitplanung, um diese zu erreichen, zum Zweck der Koordination des Testens.",
+            "correct": false
+          },
+          {
+            "text": "Die Aktivität der Ausführung eines Tests für eine Komponente oder ein System, die Istergebnisse erzeugt.",
+            "correct": false
+          },
+          {
+            "text": "Das zu testende Arbeitsergebnis.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Eine Reviewart, bei der ein Autor die Reviewteilnehmer durch ein Arbeitsergebnis leitet und die Teilnehmer Fragen stellen und Auffälligkeiten kommentieren.",
+        "explanation": "Ein Walkthrough ist eine Reviewart, bei der ein Autor die Reviewteilnehmer durch ein Arbeitsergebnis leitet und die Teilnehmer Fragen stellen und Auffälligkeiten kommentieren. (Standardglossar_der_Begriffe_des_Softwartestens, Walkthrough; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 3.2.1 Arten von Reviews)",
+        "options": [
+          {
+            "text": "Verfolgbarkeit",
+            "correct": false
+          },
+          {
+            "text": "explorativer Test",
+            "correct": false
+          },
+          {
+            "text": "Walkthrough",
+            "correct": true
+          },
+          {
+            "text": "Debugging",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist die Definition des Begriffs Validierung?",
+        "explanation": "Validierung ist die Bestätigung durch Überprüfung, dass ein Arbeitsergebnis den Bedürfnissen eines Stakeholders entspricht. (Standardglossar_der_Begriffe_des_Softwartestens, Validierung; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 1.4.2 Verifizierung und Validierung)",
+        "options": [
+          {
+            "text": "Bestätigung durch Überprüfung, dass ein Arbeitsergebnis den Bedürfnissen eines Stakeholders entspricht.",
+            "correct": true
+          },
+          {
+            "text": "Die Aktivität, die den Status von Testaktivitäten überprüft, alle Abweichungen vom Plan oder der Erwartung identifiziert und den Status an die Stakeholder meldet.",
+            "correct": false
+          },
+          {
+            "text": "Der Grad, zu dem ein Arbeitsergebnis die expliziten und impliziten Bedürfnisse seiner Stakeholder erfüllt.",
+            "correct": false
+          },
+          {
+            "text": "Bestätigung durch Bereitstellung eines objektiven Nachweises, dass festgelegte Anforderungen erfüllt worden sind.",
+            "correct": false
+          }
+        ]
+      }, {
+        "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Testansatz zur Ausübung von Test- und Qualitätssicherungsaktivitäten so früh wie möglich im Softwareentwicklungslebenszyklus.",
+        "explanation": "Shift-Left ist ein Testansatz zur Ausübung von Test- und Qualitätssicherungsaktivitäten so früh wie möglich im Softwareentwicklungslebenszyklus. (Standardglossar_der_Begriffe_des_Softwartestens, Shift-Left; ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, 2.1 Grundsätze des Testens)",
+        "options": [
+          {
+            "text": "Anomalie",
+            "correct": false
+          },
+          {
+            "text": "Verifizierung",
+            "correct": false
+          },
+          {
+            "text": "Shift-Left",
+            "correct": true
+          },
+          {
+            "text": "Fehlerzustand",
+            "correct": false
+          }
         ]
       }
+
     ]
 }

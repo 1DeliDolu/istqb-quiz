@@ -200,4 +200,61 @@ button:focus-visible {
     background-color: hsl(var(--accent));
     color: hsl(var(--accent-foreground));
   }
+
+  /* Documentation prose styles - adapt to dark/light mode */
+  .prose {
+    color: hsl(var(--foreground));
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6 {
+    color: hsl(var(--foreground));
+    font-weight: 600;
+  }
+
+  .prose p {
+    color: hsl(var(--foreground));
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .prose ul,
+  .prose ol {
+    color: hsl(var(--foreground));
+    margin-left: 1.5rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.5rem;
+  }
+
+  .prose strong {
+    color: hsl(var(--foreground));
+    font-weight: 600;
+  }
+
+  .prose em {
+    color: hsl(var(--muted-foreground));
+    font-style: italic;
+  }
+
+  .prose code {
+    background-color: hsl(var(--muted));
+    color: hsl(var(--foreground));
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+  }
+
+  .prose blockquote {
+    border-left: 4px solid hsl(var(--border));
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: hsl(var(--muted-foreground));
+    font-style: italic;
+  }
 }

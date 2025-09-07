@@ -1,6 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from "@/components/Navbar";
+import ErrorBoundary from "@/components/ErrorBoundary";
 import QuizPage from './pages/QuizPage';
+import DocumentationPage from './pages/DocumentationPage';
+import DocumentationIndexPage from './pages/DocumentationIndexPage';
 import IstqbFormPage from './pages/IstqbFormPage';
 import UdemyPage from './pages/UdemyPage';
 import FragenPage from './pages/FragenPage';
@@ -13,7 +16,7 @@ import './App.css'
 
 function App() {
   return (
-    <>
+    <ErrorBoundary>
       <Navbar />
       <main>
         <Routes>
@@ -22,6 +25,8 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/user/stats" element={<UserStatsPage />} />
           <Route path="/quiz/:chapterId" element={<QuizPage />} />
+          <Route path="/documentation/:chapter/:section" element={<DocumentationPage />} />
+          <Route path="/docs" element={<DocumentationIndexPage />} />
           <Route path="/docs/istqb/:chapterId" element={<QuizPage />} />
           <Route path="/csm/istqb-form" element={<IstqbFormPage />} />
           <Route path="/csm/istqb-quiz" element={<IstqbQuizPage />} />
@@ -33,7 +38,7 @@ function App() {
           {/* Diğer sayfalar için de Route ekleyebilirsin */}
         </Routes>
       </main>
-    </>
+    </ErrorBoundary>
   )
 }
 
