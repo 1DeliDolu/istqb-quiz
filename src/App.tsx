@@ -26,6 +26,7 @@ function App() {
           <Route path="/user/stats" element={<UserStatsPage />} />
           <Route path="/quiz/:chapterId" element={<QuizPage />} />
           <Route path="/documentation/:chapter/:section" element={<DocumentationPage />} />
+          <Route path="/documentation/:chapter" element={<DocumentationPage />} />
           <Route path="/docs" element={<DocumentationIndexPage />} />
           <Route path="/docs/istqb/:chapterId" element={<QuizPage />} />
           <Route path="/csm/istqb-form" element={<IstqbFormPage />} />

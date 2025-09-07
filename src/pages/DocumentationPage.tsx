@@ -1,162 +1,49 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, BookOpen, ExternalLink } from 'lucide-react';
+import { useParams, useNavigate, Link, useLocation } from 'react-router-dom';
+import { ArrowLeft, BookOpen, ExternalLink, ArrowRight } from 'lucide-react';
 
 interface DocumentationPageProps { }
 
 const DocumentationPage: React.FC<DocumentationPageProps> = () => {
     const { chapter, section } = useParams<{ chapter: string; section: string }>();
+    const location = useLocation();
     const navigate = useNavigate();
     const [content, setContent] = useState<string>('');
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-        const loadDocumentation = async () => {
-            if (!chapter || !section) {
-                setError('Kapitel oder Abschnitt nicht gefunden');
-                setLoading(false);
-                return;
-            }
-
-            try {
-                setLoading(true);
-
-                // Decode URL parameters to handle special characters
-                const decodedChapter = decodeURIComponent(chapter);
-                const decodedSection = decodeURIComponent(section);
-
-                console.log('📖 Loading documentation:', {
-                    originalChapter: chapter,
-                    decodedChapter,
-                    originalSection: section,
-                    decodedSection
-                });
-
-                // Try to dynamically import the markdown file
-                const markdownPath = `/src/istqb-foundation-level/${decodedChapter}/${decodedSection}.md`;
-
-                try {
-                    // For development, try to fetch from the actual file system
-                    const response = await fetch(markdownPath);
-                    if (response.ok) {
-                        const markdownContent = await response.text();
-                        setContent(markdownContent);
-                    } else {
-                        throw new Error('File not found via fetch');
-                    }
-                } catch (fetchError) {
-                    // Fallback: Create a sample content based on the section
-                    const sampleContent = generateSampleContent(decodedSection);
-                    setContent(sampleContent);
-                }
-            } catch (err) {
-                setError('Fehler beim Laden der Dokumentation');
-                console.error('Documentation loading error:', err);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        loadDocumentation();
-    }, [chapter, section]);
-
-    // Generate sample content for the documentation
-    const generateSampleContent = (sectionParam: string) => {
-        const sectionTitle = getSectionTitle(sectionParam);
-
-        // Check if this is the specific section mentioned in the example
-        if (sectionParam.includes('1.2.3_Fehlhandlungen')) {
-            return `# ${sectionTitle}
-
-## Lernziele
-- [ ] Die Begriffe Fehlhandlung, Fehlerzustand und Fehlerwirkung unterscheiden
-- [ ] Den Zusammenhang zwischen diesen Begriffen verstehen
-- [ ] Grundursachenanalyse durchführen können
-
-## Inhalt
-
-### Definitionen
-
-**Fehlhandlung (Error):** Eine menschliche Handlung, die zu einem inkorrekten Ergebnis führt.
-
-**Fehlerzustand (Defect/Bug):** Ein Fehlerzustand ist eine Unzulänglichkeit oder ein Mangel in einem Arbeitsergebnis, sodass es seine Anforderungen oder Spezifikationen nicht erfüllt.
-
-**Fehlerwirkung (Failure):** Abweichung einer Komponente oder eines Systems von der erwarteten Lieferung, Dienstleistung oder vom erwarteten Ergebnis.
-
-### Zusammenhang
-
-Der Zusammenhang zwischen diesen Begriffen ist wie folgt:
-1. **Fehlhandlung** → führt zu → **Fehlerzustand** → führt zu → **Fehlerwirkung**
-
-### Grundursachenanalyse
-
-Die Grundursachenanalyse hilft dabei, die eigentliche Ursache eines Problems zu identifizieren:
-- **Was** ist passiert?
-- **Warum** ist es passiert?
-- **Wie** können wir es verhindern?
-
-## Zusammenfassung
-
-Das Verständnis der Unterschiede zwischen Fehlhandlung, Fehlerzustand und Fehlerwirkung ist fundamental für das Software-Testing. Diese Begriffe helfen dabei, Probleme systematisch zu analysieren und zu beheben.
-
-## Übungsaufgaben
-
-1. Definieren Sie die drei Begriffe mit eigenen Worten
-2. Geben Sie Beispiele für jeden Begriff aus der Praxis
-3. Führen Sie eine Grundursachenanalyse für einen selbst gewählten Fehler durch
-
-## Weiterführende Links
-
-- ISTQB Glossar
-- ISO/IEC/IEEE 29119 Standard
-- Basiswissen Softwaretest (Spillner & Linz)`;
-        } else {
-            return `# ${sectionTitle}
-
-## Lernziele
-- [ ] Wichtige Konzepte des Themas verstehen
-- [ ] Praktische Anwendung lernen
-- [ ] Zusammenhänge erkennen
-
-## Inhalt
-
-*Dieses Kapitel behandelt das Thema: ${sectionTitle}*
-
-Die Inhalte werden basierend auf dem ISTQB Foundation Level Lehrplan erstellt und kontinuierlich erweitert.
-
-## Zusammenfassung
-
-## Übungsaufgaben
-
-## Weiterführende Links
-
-- ISTQB Foundation Level Lehrplan
-- Relevante Standards und Normen`;
-        }
-    };
-
-    // Funktion zum Parsen des Markdown-Inhalts (sola dayalı)
-    const parseMarkdown = (markdown: string) => {
-        return markdown
-            // Headers
-            .replace(/^# (.*$)/gim, '<h1 class="text-3xl font-bold mb-6 text-gray-800 border-b border-gray-200 pb-3 text-left">$1</h1>')
-            .replace(/^## (.*$)/gim, '<h2 class="text-2xl font-semibold mb-4 text-gray-700 mt-8 text-left">$1</h2>')
-            .replace(/^### (.*$)/gim, '<h3 class="text-xl font-medium mb-3 text-gray-600 mt-6 text-left">$1</h3>')
-            // Checkboxes
-            .replace(/^- \[ \] (.*$)/gim, '<div class="flex items-center mb-2 ml-4 justify-start"><input type="checkbox" class="mr-2 text-amber-500" disabled> <span class="text-left">$1</span></div>')
-            .replace(/^- \[x\] (.*$)/gim, '<div class="flex items-center mb-2 ml-4 justify-start"><input type="checkbox" class="mr-2 text-amber-500" checked disabled> <span class="line-through text-gray-500 text-left">$1</span></div>')
-            // List items
-            .replace(/^(\d+)\. (.*$)/gim, '<li class="mb-2 ml-4 text-left"><span class="font-medium text-amber-600">$1.</span> $2</li>')
-            .replace(/^- (.*$)/gim, '<li class="mb-2 ml-4 list-disc text-left">$1</li>')
-            // Bold and italic
-            .replace(/\*\*(.*?)\*\*/gim, '<strong class="font-semibold text-gray-800">$1</strong>')
-            .replace(/\*(.*?)\*/gim, '<em class="italic text-gray-700">$1</em>')
-            // Code blocks
-            .replace(/`(.*?)`/gim, '<code class="bg-gray-100 px-2 py-1 rounded text-sm font-mono">$1</code>')
-            // Paragraphs
-            .replace(/\n\n/gim, '</p><p class="mb-4 text-gray-700 leading-relaxed text-left">')
-            .replace(/\n/gim, '<br>');
+    // Bölüm alt başlıkları (örnek: 0_Einführung)
+    const allSectionIndex: { [chapter: string]: { file: string; title: string; page: number }[] } = {
+        '0_Einführung': [
+            { file: '0.1_Zweck_dieses_Dokuments.md', title: '0.1 Zweck dieses Dokuments', page: 10 },
+            { file: '0.2_Certified_Tester_Foundation_Level_im_Softwaretest.md', title: '0.2 Certified Tester Foundation Level im Softwaretest', page: 10 },
+            { file: '0.3_Karriereweg_für_Tester.md', title: '0.3 Karriereweg für Tester', page: 10 },
+            { file: '0.4_Geschäftlicher_Nutzen.md', title: '0.4 Geschäftlicher Nutzen', page: 11 },
+            { file: '0.5_Prüfbare_Lernziele_und_kognitive_Stufen_des_Wissens.md', title: '0.5 Prüfbare Lernziele und kognitive Stufen des Wissens', page: 12 },
+            { file: '0.6_Die_Foundation-Level-Zertifizierungsprüfung.md', title: '0.6 Die Foundation-Level-Zertifizierungsprüfung', page: 12 },
+            { file: '0.7_Akkreditierung.md', title: '0.7 Akkreditierung', page: 12 },
+            { file: '0.8_Umgang_mit_Standards.md', title: '0.8 Umgang mit Standards', page: 12 },
+            { file: '0.9_Auf_dem_Laufenden_bleiben.md', title: '0.9 Auf dem Laufenden bleiben', page: 13 },
+            { file: '0.10_Detaillierungsgrad.md', title: '0.10 Detaillierungsgrad', page: 13 },
+            { file: '0.11_Aufbau_des_Lehrplans.md', title: '0.11 Aufbau des Lehrplans', page: 13 },
+        ],
+        '1_Grundlagen_des_Testens': [
+            { file: '1.1_Was_ist_Testen.md', title: '1.1 Was ist Testen?', page: 16 },
+            { file: '1.1.1_Testziele.md', title: '1.1.1 Testziele', page: 16 },
+            { file: '1.1.2_Testen_und_Debugging.md', title: '1.1.2 Testen und Debugging', page: 17 },
+            { file: '1.2_Warum_ist_Testen_notwendig.md', title: '1.2 Warum ist Testen notwendig?', page: 18 },
+            { file: '1.2.1_Der_Beitrag_des_Testens_zum_Erfolg.md', title: '1.2.1 Der Beitrag des Testens zum Erfolg', page: 18 },
+            { file: '1.2.2_Testen_und_Qualitätssicherung.md', title: '1.2.2 Testen und Qualitätssicherung', page: 18 },
+            { file: '1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md', title: '1.2.3 Fehlhandlungen, Fehlerzustände, Fehlerwirkungen und Grundursachen', page: 19 },
+            { file: '1.3_Grundsätze_des_Testens.md', title: '1.3 Grundsätze des Testens', page: 19 },
+            { file: '1.4_Testaktivitäten_Testmittel_und_Rollen_des_Testens.md', title: '1.4 Testaktivitäten, Testmittel und Rollen des Testens', page: 20 },
+            { file: '1.4.1_Testaktivitäten_und_-aufgaben.md', title: '1.4.1 Testaktivitäten und -aufgaben', page: 21 },
+            { file: '1.4.2_Testprozess_im_Kontext.md', title: '1.4.2 Testprozess im Kontext', page: 22 },
+            { file: '1.4.3_Testmittel.md', title: '1.4.3 Testmittel', page: 22 },
+            { file: '1.4.4_Verfolgbarkeit_zwischen_der_Testbasis_und_den_Testmitteln.md', title: '1.4.4 Verfolgbarkeit zwischen der Testbasis und den Testmitteln', page: 23 },
+            { file: '1.4.5_Rollen_des_Testens.md', title: '1.4.5 Rollen des Testens', page: 24 },
+            { file: '1.5_Wesentliche_Kompetenzen_und_bewährte_Praktiken_beim_Testen.md', title: '1.5 Wesentliche Kompetenzen und bewährte Praktiken beim Testen', page: 24 },
+            { file: '1.5.2_Whole-Team-Ansatz.md', title: '1.5.2 Whole-Team-Ansatz (Whole Team Approach)', page: 25 },
+            { file: '1.5.3_Unabhängigkeit_des_Testens.md', title: '1.5.3 Unabhängigkeit des Testens', page: 26 },
+        ],
     };
 
     const getChapterTitle = (chapterParam: string) => {
@@ -181,32 +68,245 @@ Die Inhalte werden basierend auf dem ISTQB Foundation Level Lehrplan erstellt un
         return sectionParam.replace(/_/g, ' ').replace(/\.md$/, '');
     };
 
-    if (loading) {
+    // Breadcrumb link helpers
+    const getBreadcrumbs = () => {
+        const breadcrumbs = [
+            {
+                label: 'ISTQB Foundation Level',
+                to: '/docs', // Ana dökümantasyon sayfası
+                match: /^\/docs$/,
+            },
+        ];
+        if (chapter) {
+            breadcrumbs.push({
+                label: getChapterTitle(decodeURIComponent(chapter)),
+                to: `/documentation/${encodeURIComponent(chapter)}`,
+                match: new RegExp(`^/documentation/${encodeURIComponent(chapter)}$`),
+            });
+        }
+        if (chapter && section) {
+            breadcrumbs.push({
+                label: getSectionTitle(decodeURIComponent(section)),
+                to: `/documentation/${encodeURIComponent(chapter)}/${encodeURIComponent(section)}`,
+                match: new RegExp(`^/documentation/${encodeURIComponent(chapter)}/${encodeURIComponent(section)}$`),
+            });
+        }
+        return breadcrumbs;
+    };
+
+    useEffect(() => {
+        if (!section) return;
+        const decodedChapter = decodeURIComponent(chapter || '');
+        const decodedSection = decodeURIComponent(section);
+        const markdownPath = `/src/istqb-foundation-level/${decodedChapter}/${decodedSection}.md`;
+        fetch(markdownPath)
+            .then(response => response.ok ? response.text() : Promise.reject())
+            .then(markdownContent => setContent(markdownContent))
+            .catch(() => setContent(`# ${getSectionTitle(decodedSection)}\n\nİçerik henüz mevcut değil.`));
+    }, [chapter, section]);
+
+    // Sadece chapter varsa ve section yoksa, alt başlıkları listele
+    if (chapter && !section) {
+        const sections = allSectionIndex[chapter] || [];
+        console.log('🔍 Chapter without section detected:', {
+            chapter,
+            decodedChapter: decodeURIComponent(chapter),
+            sections: sections.length,
+            allIndexKeys: Object.keys(allSectionIndex)
+        });
+
+        return (
+            <div className="min-h-screen bg-background text-foreground">
+                <div className="container mx-auto p-8 max-w-6xl">
+                    {/* Header */}
+                    <div className="text-center mb-12">
+                        <div className="flex items-center justify-center mb-4">
+                            <BookOpen className="w-12 h-12 text-amber-600 mr-4" />
+                            <h1 className="text-4xl font-bold">{getChapterTitle(decodeURIComponent(chapter))}</h1>
+                        </div>
+                        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                            Standardglossar der Begriffe des Softwaretestens - Vollständiger Lehrplan
+                        </p>
+                    </div>
+
+                    {/* Breadcrumb */}
+                    <nav className="flex justify-center text-sm text-muted-foreground mb-8 items-center gap-1">
+                        {getBreadcrumbs().map((bc, idx, arr) => {
+                            const isLast = idx === arr.length - 1;
+                            const isActive = bc.match.test(location.pathname);
+                            return (
+                                <React.Fragment key={bc.to}>
+                                    <Link
+                                        to={bc.to}
+                                        data-active={isActive}
+                                        className={`px-2 py-1 rounded transition-colors ${isActive
+                                            ? 'bg-amber-100 text-amber-700 font-semibold shadow-sm'
+                                            : 'hover:bg-accent text-muted-foreground'
+                                            } ${isLast ? 'text-foreground font-medium' : ''}`}
+                                        style={{ pointerEvents: isLast ? 'none' : 'auto' }}
+                                    >
+                                        {bc.label}
+                                    </Link>
+                                    {!isLast && <span className="mx-1">›</span>}
+                                </React.Fragment>
+                            );
+                        })}
+                    </nav>
+
+                    {/* Chapter Content */}
+                    <div className="space-y-8">
+                        <div className="bg-card rounded-lg border p-6">
+                            <div className="space-y-2">
+                                {sections.map(({ file, title, page }) => {
+                                    const sectionSlug = file.replace('.md', '');
+                                    return (
+                                        <div
+                                            key={file}
+                                            className="flex items-center justify-between p-3 hover:bg-accent/30 rounded cursor-pointer transition-colors group"
+                                            onClick={() => navigate(`/documentation/${encodeURIComponent(chapter)}/${encodeURIComponent(sectionSlug)}`)}
+                                        >
+                                            <div className="flex items-center">
+                                                <span className="text-sm font-medium text-primary mr-3 min-w-[3rem]">
+                                                    {title.split(' ')[0]}
+                                                </span>
+                                                <span className="text-foreground group-hover:text-primary transition-colors">
+                                                    {title.substring(title.indexOf(' ') + 1)}
+                                                </span>
+                                            </div>
+                                            <div className="flex items-center">
+                                                <span className="text-xs text-muted-foreground mr-2">
+                                                    {page}
+                                                </span>
+                                                <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Footer */}
+                    <div className="mt-12 text-center">
+                        <p className="text-sm text-muted-foreground">
+                            Klicken Sie auf einen Abschnitt, um zur entsprechenden Dokumentation zu gelangen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        );
+    } if (!section) {
         return (
             <div className="min-h-screen bg-background text-foreground">
                 <div className="container mx-auto p-8 max-w-4xl">
-                    <div className="flex items-center justify-center h-64">
-                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-amber-500"></div>
-                        <span className="ml-3 text-muted-foreground">Dokumentation wird geladen...</span>
+                    <div className="text-center py-12">
+                        <h1 className="text-2xl font-bold mb-4">Bölüm seçiniz</h1>
+                        <p className="text-muted-foreground">Lütfen bir bölüm ve alt başlık seçin.</p>
                     </div>
                 </div>
             </div>
         );
     }
 
-    if (error) {
+    // Funktion zum Parsen des Markdown-Inhalts (sola dayalı)
+    const parseMarkdown = (markdown: string) => {
+        return markdown
+            // Headers
+            .replace(/^# (.*$)/gim, '<h1 class="text-3xl font-bold mb-6 text-gray-800 border-b border-gray-200 pb-3 text-left">$1</h1>')
+            .replace(/^## (.*$)/gim, '<h2 class="text-2xl font-semibold mb-4 text-gray-700 mt-8 text-left">$1</h2>')
+            .replace(/^### (.*$)/gim, '<h3 class="text-xl font-medium mb-3 text-gray-600 mt-6 text-left">$1</h3>')
+            // Checkboxes
+            .replace(/^- \[ \] (.*$)/gim, '<div class="flex items-center mb-2 ml-4 justify-start"><input type="checkbox" class="mr-2 text-amber-500" disabled> <span class="text-left">$1</span></div>')
+            .replace(/^- \[x\] (.*$)/gim, '<div class="flex items-center mb-2 ml-4 justify-start"><input type="checkbox" class="mr-2 text-amber-500" checked disabled> <span class="line-through text-gray-500 text-left">$1</span></div>')
+            // List items
+            .replace(/^(\d+)\. (.*$)/gim, '<li class="mb-2 ml-4 text-left"><span class="font-medium text-amber-600">$1.</span> $2</li>')
+            .replace(/^- (.*$)/gim, '<li class="mb-2 ml-4 list-disc text-left">$1</li>')
+            // Bold and italic
+            .replace(/\*\*(.*?)\*\*/gim, '<strong class="font-semibold text-gray-800">$1</strong>')
+            .replace(/\*(.*?)\*/gim, '<em class="italic text-gray-700">$1</em>')
+            // Code blocks
+            .replace(/`(.*?)`/gim, '<code class="bg-gray-100 px-2 py-1 rounded text-sm font-mono">$1</code>')
+            // Paragraphs
+            .replace(/\n\n/gim, '</p><p class="mb-4 text-gray-700 leading-relaxed text-left">')
+            .replace(/\n/gim, '<br>');
+    };
+
+    // Sadece chapter varsa ve section yoksa, alt başlıkları listele
+    if (chapter && !section) {
+        const sections = allSectionIndex[chapter] || [];
         return (
             <div className="min-h-screen bg-background text-foreground">
                 <div className="container mx-auto p-8 max-w-4xl">
-                    <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6">
-                        <h2 className="text-xl font-semibold text-destructive mb-2">Fehler</h2>
-                        <p className="text-destructive/80">{error}</p>
+                    {/* Header */}
+                    <div className="flex items-center mb-6">
                         <button
                             onClick={() => navigate(-1)}
-                            className="mt-4 px-4 py-2 bg-destructive/10 text-destructive rounded-lg hover:bg-destructive/20 transition-colors"
+                            className="flex items-center px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-accent rounded-lg transition-colors mr-4"
                         >
+                            <ArrowLeft className="w-4 h-4 mr-2" />
                             Zurück
                         </button>
+                        <div className="flex items-center text-amber-600">
+                            <BookOpen className="w-5 h-5 mr-2" />
+                            <span className="font-medium">ISTQB Dokumentation</span>
+                        </div>
+                    </div>
+
+                    {/* Breadcrumb */}
+                    <nav className="flex text-sm text-muted-foreground mb-6 items-center gap-1">
+                        {getBreadcrumbs().map((bc, idx, arr) => {
+                            const isLast = idx === arr.length - 1;
+                            const isActive = bc.match.test(location.pathname);
+                            return (
+                                <React.Fragment key={bc.to}>
+                                    <Link
+                                        to={bc.to}
+                                        data-active={isActive}
+                                        className={`px-2 py-1 rounded transition-colors ${isActive
+                                            ? 'bg-amber-100 text-amber-700 font-semibold shadow-sm'
+                                            : 'hover:bg-accent text-muted-foreground'
+                                            } ${isLast ? 'text-foreground font-medium' : ''}`}
+                                        style={{ pointerEvents: isLast ? 'none' : 'auto' }}
+                                    >
+                                        {bc.label}
+                                    </Link>
+                                    {!isLast && <span className="mx-1">›</span>}
+                                </React.Fragment>
+                            );
+                        })}
+                    </nav>
+
+                    <h1 className="text-2xl font-bold mb-6">{getChapterTitle(decodeURIComponent(chapter))}</h1>
+                    <div className="bg-card rounded-lg border p-6">
+                        <ul className="divide-y divide-border">
+                            {sections.map(({ file, title, page }) => {
+                                const sectionSlug = file.replace('.md', '');
+                                return (
+                                    <li key={file} className="py-4 flex items-center justify-between">
+                                        <Link
+                                            to={`/documentation/${encodeURIComponent(chapter)}/${encodeURIComponent(sectionSlug)}`}
+                                            className="text-amber-700 hover:text-amber-800 hover:underline font-medium transition-colors"
+                                        >
+                                            {title}
+                                        </Link>
+                                        <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">{page}</span>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    if (!section) {
+        return (
+            <div className="min-h-screen bg-background text-foreground">
+                <div className="container mx-auto p-8 max-w-4xl">
+                    <div className="text-center py-12">
+                        <h1 className="text-2xl font-bold mb-4">Bölüm seçiniz</h1>
+                        <p className="text-muted-foreground">Lütfen bir bölüm ve alt başlık seçin.</p>
                     </div>
                 </div>
             </div>
@@ -232,12 +332,27 @@ Die Inhalte werden basierend auf dem ISTQB Foundation Level Lehrplan erstellt un
                 </div>
 
                 {/* Breadcrumb */}
-                <nav className="flex text-sm text-muted-foreground mb-6">
-                    <span>ISTQB Foundation Level</span>
-                    <span className="mx-2">›</span>
-                    <span>{getChapterTitle(decodeURIComponent(chapter || ''))}</span>
-                    <span className="mx-2">›</span>
-                    <span className="text-foreground font-medium">{getSectionTitle(decodeURIComponent(section || ''))}</span>
+                <nav className="flex text-sm text-muted-foreground mb-6 items-center gap-1">
+                    {getBreadcrumbs().map((bc, idx, arr) => {
+                        const isLast = idx === arr.length - 1;
+                        const isActive = bc.match.test(location.pathname);
+                        return (
+                            <React.Fragment key={bc.to}>
+                                <Link
+                                    to={bc.to}
+                                    data-active={isActive}
+                                    className={`px-2 py-1 rounded transition-colors ${isActive
+                                        ? 'bg-amber-100 text-amber-700 font-semibold shadow-sm'
+                                        : 'hover:bg-accent text-muted-foreground'
+                                        } ${isLast ? 'text-foreground font-medium' : ''}`}
+                                    style={{ pointerEvents: isLast ? 'none' : 'auto' }}
+                                >
+                                    {bc.label}
+                                </Link>
+                                {!isLast && <span className="mx-1">›</span>}
+                            </React.Fragment>
+                        );
+                    })}
                 </nav>
 
                 {/* Content */}
