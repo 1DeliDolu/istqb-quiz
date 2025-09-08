@@ -239,9 +239,9 @@ interface QuizPageProps {
 }
 
 // Route mapping:
-// /csm/istqb-quiz → IstqbQuizPage (default)
-// /csm/udemy-quiz → IstqbQuizPage quizType="udemy"
-// /csm/fragen-quiz → IstqbQuizPage quizType="fragen"
+// /cms/istqb-quiz → IstqbQuizPage (default)
+// /cms/udemy-quiz → IstqbQuizPage quizType="udemy"
+// /cms/fragen-quiz → IstqbQuizPage quizType="fragen"
 ```
 
 ## 🗂️ Project Structure
@@ -314,9 +314,9 @@ This project is licensed under the MIT License.
   - `quizType: 'istqb' | 'udemy' | 'fragen'`
   - `title: string`
 - Route mapping:
-  - `/csm/istqb-quiz` → IstqbQuizPage (default)
-  - `/csm/udemy-quiz` → IstqbQuizPage quizType="udemy"
-  - `/csm/fragen-quiz` → IstqbQuizPage quizType="fragen"
+  - `/cms/istqb-quiz` → IstqbQuizPage (default)
+  - `/cms/udemy-quiz` → IstqbQuizPage quizType="udemy"
+  - `/cms/fragen-quiz` → IstqbQuizPage quizType="fragen"
 
 **Benefits:**
 
@@ -785,7 +785,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Content Management System
 
-![CMS](public/img/cms.png)
+![cms](public/img/cms.png)
 
 ### Statistics Dashboard
 

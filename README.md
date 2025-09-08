@@ -114,7 +114,7 @@ npm run dev
 
 ### ⚙️ Soru Yönetimi (Admin)
 
-1. CSM menüsünden "Soru Ekle" seçeneklerini kullanın
+1. cms menüsünden "Soru Ekle" seçeneklerini kullanın
 2. Mevcut soruları "Soruları Görüntüle" sayfasından düzenleyin
 3. Toplu işlemler için veri yönetimi araçlarını kullanın
 
@@ -160,7 +160,6 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 Proje Sahibi - [@1DeliDolu](https://github.com/1DeliDolu)
 
 Proje Linki: [https://github.com/1DeliDolu/istqb-quiz](https://github.com/1DeliDolu/istqb-quiz)
-
 
 demo question.
 ![demo_question](image.png)

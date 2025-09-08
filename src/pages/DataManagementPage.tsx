@@ -95,7 +95,7 @@ const DataManagementPage: React.FC = () => {
                         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                             <p className="text-yellow-800">Henüz hiç soru eklenmemiş.</p>
                             <p className="text-yellow-600 text-sm mt-1">
-                                CSM menüsünden soru ekledikten sonra burada görünecekler.
+                                cms menüsünden soru ekledikten sonra burada görünecekler.
                             </p>
                         </div>
                     ) : (

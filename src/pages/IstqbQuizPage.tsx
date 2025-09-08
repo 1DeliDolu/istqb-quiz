@@ -316,7 +316,7 @@ const IstqbQuizPage: React.FC<QuizPageProps> = ({ quizType = 'istqb', title = 'I
                         } henüz soru bulunmamaktadır.
                     </p>
                     <a
-                        href={`/csm/${quizType}-form`}
+                        href={`/cms/${quizType}-form`}
                         className="inline-block px-4 py-2 bg-amber-100 text-black rounded hover:bg-amber-200 border border-amber-300"
                     >
                         Yeni Soru Ekle

@@ -163,7 +163,7 @@ export function NavigationMenuDemo() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>CSM</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>CMS</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <div className="grid w-[600px] gap-6 p-4">
                             <div className="grid grid-cols-3 gap-4">
@@ -171,10 +171,10 @@ export function NavigationMenuDemo() {
                                 <div>
                                     <h3 className="mb-3 text-sm font-semibold text-purple-600">ISTQB</h3>
                                     <ul className="space-y-2">
-                                        <ListItem href="/csm/istqb-form" title="Soru Ekle">
+                                        <ListItem href="/cms/istqb-form" title="Soru Ekle">
                                             Yeni ISTQB sorusu ekle
                                         </ListItem>
-                                        <ListItem href="/csm/istqb-quiz" title="Soruları Görüntüle">
+                                        <ListItem href="/cms/istqb-quiz" title="Soruları Görüntüle">
                                             ISTQB sorularını görüntüle ve çöz
                                         </ListItem>
                                     </ul>
@@ -184,10 +184,10 @@ export function NavigationMenuDemo() {
                                 <div>
                                     <h3 className="mb-3 text-sm font-semibold text-blue-600">Udemy</h3>
                                     <ul className="space-y-2">
-                                        <ListItem href="/docs/csm/udemy" title="Soru Ekle">
+                                        <ListItem href="/docs/cms/udemy" title="Soru Ekle">
                                             Yeni Udemy sorusu ekle
                                         </ListItem>
-                                        <ListItem href="/csm/udemy-quiz" title="Soruları Görüntüle">
+                                        <ListItem href="/cms/udemy-quiz" title="Soruları Görüntüle">
                                             Udemy sorularını görüntüle ve çöz
                                         </ListItem>
                                     </ul>
@@ -197,10 +197,10 @@ export function NavigationMenuDemo() {
                                 <div>
                                     <h3 className="mb-3 text-sm font-semibold text-green-600">Fragen</h3>
                                     <ul className="space-y-2">
-                                        <ListItem href="/docs/csm/fragen" title="Soru Ekle">
+                                        <ListItem href="/docs/cms/fragen" title="Soru Ekle">
                                             Yeni Fragen sorusu ekle
                                         </ListItem>
-                                        <ListItem href="/csm/fragen-quiz" title="Soruları Görüntüle">
+                                        <ListItem href="/cms/fragen-quiz" title="Soruları Görüntüle">
                                             Fragen sorularını görüntüle ve çöz
                                         </ListItem>
                                     </ul>

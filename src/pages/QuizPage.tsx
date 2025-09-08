@@ -14,6 +14,7 @@ import {
     PaginationEllipsis,
 } from "@/components/ui/pagination";
 
+
 const QuizPage: React.FC = () => {
     const { chapterId } = useParams<{ chapterId: string }>();
     const [searchParams] = useSearchParams();
@@ -366,7 +367,7 @@ const QuizPage: React.FC = () => {
                     <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
                         <p className="text-lg">Für dieses Kapitel wurden noch keine Fragen hinzugefügt.</p>
                         <p className="mt-2 text-gray-600">
-                            Sie können neue Fragen über das CSM-Menü hinzufügen.
+                            Sie können neue Fragen über das cms-Menü hinzufügen.
                         </p>
                     </div>
                 </div>
