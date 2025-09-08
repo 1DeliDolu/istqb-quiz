@@ -68,6 +68,19 @@ export class DataService {
               questions.length
             } soru sunucudan yüklendi`
           );
+
+          // Check for duplicate IDs
+          const ids = questions.map((q: Question) => q.id);
+          const uniqueIds = new Set(ids);
+          if (ids.length !== uniqueIds.size) {
+            console.warn(
+              `⚠️ Duplicate question IDs found in ${chapter}:`,
+              ids.filter(
+                (id: number, index: number) => ids.indexOf(id) !== index
+              )
+            );
+          }
+
           return questions;
         }
       }
@@ -455,6 +468,259 @@ export class DataService {
     } catch (error) {
       console.error("Wrong answers fetch error:", error);
       return [];
+    }
+  }
+
+  // ========== QUIZ PROGRESS METHODS ==========
+
+  // Quiz ilerlemesini kaydet (hangi soruda kaldığı, cevapları, skoru vs.)
+  static async saveQuizProgress(
+    userId: number,
+    quizType: string,
+    chapter: string,
+    subChapter: string | null,
+    currentQuestionIndex: number,
+    totalQuestions: number,
+    score: number,
+    answers: { [questionId: number]: string },
+    completedAt?: string
+  ): Promise<boolean> {
+    try {
+      if (await this.isBackendAvailable()) {
+        const response = await fetch(`${API_BASE_URL}/quiz-progress`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            userId,
+            quizType,
+            chapter,
+            subChapter: subChapter || null, // undefined durumunda null gönder
+            currentQuestionIndex,
+            totalQuestions,
+            score,
+            answers: JSON.stringify(answers),
+            completedAt: completedAt || null, // undefined durumunda null gönder
+          }),
+        });
+
+        if (response.ok) {
+          console.log(
+            `💾 Quiz progress saved: ${quizType}/${chapter} - Question ${
+              currentQuestionIndex + 1
+            }/${totalQuestions}`
+          );
+          return true;
+        }
+      }
+
+      // Backend yoksa localStorage'a kaydet
+      const progressKey = `quiz_progress_${userId}_${quizType}_${chapter}${
+        subChapter ? `_${subChapter}` : ""
+      }`;
+      const progressData = {
+        userId,
+        quizType,
+        chapter,
+        subChapter,
+        currentQuestionIndex,
+        totalQuestions,
+        score,
+        answers,
+        completedAt,
+        lastSaved: new Date().toISOString(),
+      };
+
+      localStorage.setItem(progressKey, JSON.stringify(progressData));
+      console.log(
+        `💾 Quiz progress saved to localStorage: ${quizType}/${chapter} - Question ${
+          currentQuestionIndex + 1
+        }/${totalQuestions}`
+      );
+      return true;
+    } catch (error) {
+      console.error("Quiz progress save error:", error);
+      return false;
+    }
+  }
+
+  // Quiz ilerlemesini yükle
+  static async loadQuizProgress(
+    userId: number,
+    quizType: string,
+    chapter: string,
+    subChapter: string | null
+  ): Promise<any> {
+    try {
+      if (await this.isBackendAvailable()) {
+        const response = await fetch(
+          `${API_BASE_URL}/quiz-progress/${userId}/${quizType}/${chapter}${
+            subChapter ? `?subChapter=${encodeURIComponent(subChapter)}` : ""
+          }`
+        );
+
+        if (response.ok) {
+          const result = await response.json();
+          console.log(
+            `📂 Quiz progress loaded from server: ${quizType}/${chapter} - Question ${
+              result.currentQuestionIndex + 1
+            }/${result.totalQuestions}`
+          );
+
+          // Safely handle answers field (could be object or JSON string)
+          let parsedAnswers = {};
+          try {
+            if (typeof result.answers === "string") {
+              parsedAnswers = JSON.parse(result.answers || "{}");
+            } else if (
+              typeof result.answers === "object" &&
+              result.answers !== null
+            ) {
+              parsedAnswers = result.answers;
+            } else {
+              parsedAnswers = {};
+            }
+          } catch (error) {
+            console.warn(
+              "⚠️ Invalid JSON in answers field, using empty object:",
+              result.answers
+            );
+            parsedAnswers = {};
+          }
+
+          return {
+            ...result,
+            answers: parsedAnswers,
+          };
+        } else if (response.status === 404) {
+          // 404 is expected when no progress exists - this is not an error
+          console.log(
+            `📂 No quiz progress found in database for: ${quizType}/${chapter}`
+          );
+          return null;
+        } else {
+          // Other errors (500, etc.) should be logged
+          console.warn(
+            `⚠️ Error loading quiz progress from server: ${response.status} ${response.statusText}`
+          );
+        }
+      }
+
+      // Backend yoksa localStorage'dan yükle
+      const progressKey = `quiz_progress_${userId}_${quizType}_${chapter}${
+        subChapter ? `_${subChapter}` : ""
+      }`;
+      const stored = localStorage.getItem(progressKey);
+
+      if (stored) {
+        const progressData = JSON.parse(stored);
+        console.log(
+          `📂 Quiz progress loaded from localStorage: ${quizType}/${chapter} - Question ${
+            progressData.currentQuestionIndex + 1
+          }/${progressData.totalQuestions}`
+        );
+        return progressData;
+      }
+
+      return null;
+    } catch (error) {
+      console.error("Quiz progress load error:", error);
+      return null;
+    }
+  }
+
+  // Tamamlanmış quiz'i işaretle (completedAt alanını güncelle)
+  static async markQuizCompleted(
+    userId: number,
+    quizType: string,
+    chapter: string,
+    subChapter: string | null,
+    finalScore: number
+  ): Promise<boolean> {
+    try {
+      const completedAt = new Date().toISOString();
+
+      if (await this.isBackendAvailable()) {
+        const response = await fetch(`${API_BASE_URL}/quiz-progress/complete`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            userId,
+            quizType,
+            chapter,
+            subChapter,
+            completedAt,
+            finalScore,
+          }),
+        });
+
+        if (response.ok) {
+          console.log(`✅ Quiz marked as completed: ${quizType}/${chapter}`);
+          return true;
+        }
+      }
+
+      // Backend yoksa localStorage'da güncelle
+      const progressKey = `quiz_progress_${userId}_${quizType}_${chapter}${
+        subChapter ? `_${subChapter}` : ""
+      }`;
+      const stored = localStorage.getItem(progressKey);
+
+      if (stored) {
+        const progressData = JSON.parse(stored);
+        progressData.completedAt = completedAt;
+        progressData.score = finalScore;
+        localStorage.setItem(progressKey, JSON.stringify(progressData));
+        console.log(
+          `✅ Quiz marked as completed in localStorage: ${quizType}/${chapter}`
+        );
+        return true;
+      }
+
+      return false;
+    } catch (error) {
+      console.error("Quiz completion marking error:", error);
+      return false;
+    }
+  }
+
+  // Quiz ilerlemesini sil (tekrar başlamak için)
+  static async clearQuizProgress(
+    userId: number,
+    quizType: string,
+    chapter: string,
+    subChapter: string | null
+  ): Promise<boolean> {
+    try {
+      if (await this.isBackendAvailable()) {
+        const response = await fetch(
+          `${API_BASE_URL}/quiz-progress/${userId}/${quizType}/${chapter}${
+            subChapter ? `?subChapter=${encodeURIComponent(subChapter)}` : ""
+          }`,
+          { method: "DELETE" }
+        );
+
+        if (response.ok) {
+          console.log(`🗑️ Quiz progress cleared: ${quizType}/${chapter}`);
+          return true;
+        }
+      }
+
+      // Backend yoksa localStorage'dan sil
+      const progressKey = `quiz_progress_${userId}_${quizType}_${chapter}${
+        subChapter ? `_${subChapter}` : ""
+      }`;
+      localStorage.removeItem(progressKey);
+      console.log(
+        `🗑️ Quiz progress cleared from localStorage: ${quizType}/${chapter}`
+      );
+      return true;
+    } catch (error) {
+      console.error("Quiz progress clear error:", error);
+      return false;
     }
   }
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 import { istqbChapters } from '@/constants/istqbChapters';
 import { udemyChapters } from '@/constants/udemyChapters';
 import { fragenChapters } from '@/constants/fragenChapters';
@@ -18,7 +18,6 @@ import {
 const QuizPage: React.FC = () => {
     const { chapterId } = useParams<{ chapterId: string }>();
     const [searchParams] = useSearchParams();
-    const navigate = useNavigate();
     const subChapterIndex = searchParams.get('sub');
 
     const [questions, setQuestions] = useState<Question[]>([]);
@@ -28,6 +27,94 @@ const QuizPage: React.FC = () => {
     const [quizCompleted, setQuizCompleted] = useState(false);
     const [score, setScore] = useState(0);
     const [answeredQuestions, setAnsweredQuestions] = useState<Set<number>>(new Set());
+    const [userAnswers, setUserAnswers] = useState<{ [questionId: number]: string }>({});
+
+    // Function to restore quiz state from database
+    const restoreQuizState = async (): Promise<boolean> => {
+        try {
+            const currentUser = getCurrentUser();
+            if (!currentUser || !chapterId) return false;
+
+            console.log('🔄 Attempting to restore quiz state from database...');
+
+            // Calculate subChapter ID for database lookup
+            let subChapterIdForDb = null;
+            if (subChapterTitle && chapterId.startsWith('udemy_')) {
+                const subChapterMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                if (subChapterMatch) {
+                    subChapterIdForDb = `udemy_${subChapterMatch[1]}_${subChapterMatch[2]}`;
+                }
+            } else if (subChapterTitle && chapterId.startsWith('fragen_')) {
+                if (subChapterTitle.startsWith('Genel.')) {
+                    const match = subChapterTitle.match(/^Genel\.(\d+)/);
+                    if (match) subChapterIdForDb = `fragen_genel_${match[1]}`;
+                } else if (subChapterTitle.startsWith('Deutsch.')) {
+                    const match = subChapterTitle.match(/^Deutsch\.(\d+)/);
+                    if (match) subChapterIdForDb = `fragen_deutsch_${match[1]}`;
+                } else if (subChapterTitle.startsWith('Praxis.')) {
+                    const match = subChapterTitle.match(/^Praxis\.(\d+)/);
+                    if (match) subChapterIdForDb = `fragen_praxis_${match[1]}`;
+                } else if (subChapterTitle.startsWith('Mixed.')) {
+                    const match = subChapterTitle.match(/^Mixed\.(\d+)/);
+                    if (match) subChapterIdForDb = `fragen_mixed_${match[1]}`;
+                }
+            } else if (subChapterTitle && !chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
+                const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                if (istqbMatch) {
+                    subChapterIdForDb = `${istqbMatch[1]}-${istqbMatch[2]}`;
+                }
+            }
+
+            // Determine quiz type
+            let quizType = 'istqb';
+            if (chapterId.startsWith('udemy_')) {
+                quizType = 'udemy';
+            } else if (chapterId.startsWith('fragen_')) {
+                quizType = 'fragen';
+            }
+
+            const savedProgress = await DataService.loadQuizProgress(
+                currentUser.id,
+                quizType,
+                chapterId,
+                subChapterIdForDb
+            );
+
+            if (savedProgress) {
+                // Check if quiz is completed
+                if (savedProgress.completedAt || savedProgress.currentQuestionIndex >= savedProgress.totalQuestions - 1) {
+                    console.log('🏁 Quiz already completed, starting fresh');
+                    return false;
+                }
+
+                console.log('📂 Restoring quiz progress from database:', savedProgress);
+
+                // Restore all state
+                setCurrentQuestionIndex(savedProgress.currentQuestionIndex);
+                setScore(savedProgress.score);
+                setAnsweredQuestions(new Set(Object.keys(savedProgress.answers).map(Number)));
+                setUserAnswers(savedProgress.answers);
+
+                // Since questions are now loaded, check if the current question is answered
+                if (questions.length > savedProgress.currentQuestionIndex) {
+                    const currentQuestion = questions[savedProgress.currentQuestionIndex];
+                    if (currentQuestion && savedProgress.answers && savedProgress.answers[currentQuestion.id]) {
+                        setSelectedAnswer(savedProgress.answers[currentQuestion.id]);
+                        setIsAnswered(true);
+                    } else {
+                        setSelectedAnswer(null);
+                        setIsAnswered(false);
+                    }
+                }
+
+                console.log('✅ Quiz state restored from database successfully');
+                return true;
+            }
+        } catch (error) {
+            console.error('❌ Error restoring quiz state from database:', error);
+        }
+        return false;
+    };
 
     // Debug logging to track state changes and potential issues
     useEffect(() => {
@@ -121,15 +208,36 @@ const QuizPage: React.FC = () => {
                 console.error("Quizdaten konnten nicht geladen werden:", error);
                 setQuestions([]);
             }
-        }; fetchQuestions();
-        // Status zurücksetzen, wenn ein neues Kapitel geladen wird
+        };
+
+        fetchQuestions();
+
+        // Quiz state'i reset et (veritabanı restore edeceği için)
         setCurrentQuestionIndex(0);
         setSelectedAnswer(null);
         setIsAnswered(false);
         setQuizCompleted(false);
         setScore(0);
         setAnsweredQuestions(new Set());
+        setUserAnswers({});
     }, [chapterId, subChapterIndex, subChapterTitle]);
+
+    // Questions yüklendikten sonra quiz progress'i restore et
+    useEffect(() => {
+        const restoreProgressAfterQuestionsLoad = async () => {
+            if (questions.length > 0 && chapterId) {
+                console.log('🔄 Questions loaded, attempting to restore quiz progress...');
+                const isRestored = await restoreQuizState();
+                if (isRestored) {
+                    console.log('✅ Quiz progress restored successfully');
+                } else {
+                    console.log('🆕 No saved progress found, starting new quiz');
+                }
+            }
+        };
+
+        restoreProgressAfterQuestionsLoad();
+    }, [questions, chapterId]);
 
     const handleAnswerSelect = async (option: string) => {
         if (isAnswered) return;
@@ -144,12 +252,17 @@ const QuizPage: React.FC = () => {
         setSelectedAnswer(option);
         setIsAnswered(true);
 
+        // Update userAnswers state
+        const newUserAnswers = { ...userAnswers, [currentQuestion.id]: option };
+        setUserAnswers(newUserAnswers);
+
         // Markiere diese Frage als beantwortet
         setAnsweredQuestions(prev => new Set([...prev, currentQuestionIndex]));
 
         const isCorrect = option === currentQuestion.correctAnswer;
+        const newScore = isCorrect ? score + 1 : score;
         if (isCorrect) {
-            setScore(prev => prev + 1);
+            setScore(newScore);
         }
 
         // Antwort des Benutzers speichern
@@ -190,6 +303,7 @@ const QuizPage: React.FC = () => {
                     }
                 }
 
+                // Record user answer
                 await DataService.recordUserAnswer(
                     currentUser.id,
                     currentQuestion.id,
@@ -198,19 +312,87 @@ const QuizPage: React.FC = () => {
                     option,
                     isCorrect
                 );
+
+                // Save quiz progress to database
+                const quizType = chapterId.startsWith('udemy_') ? 'udemy'
+                    : chapterId.startsWith('fragen_') ? 'fragen'
+                        : 'istqb';
+
+                await DataService.saveQuizProgress(
+                    currentUser.id,
+                    quizType,
+                    chapterId,
+                    subChapterId,
+                    currentQuestionIndex,
+                    questions.length,
+                    newScore,
+                    newUserAnswers
+                );
+
+                console.log(`💾 Quiz progress saved: Question ${currentQuestionIndex + 1}/${questions.length}, Score: ${newScore}`);
             } catch (error) {
-                console.error('Antwort konnte nicht gespeichert werden:', error);
+                console.error('Error saving answer or progress:', error);
             }
         }
     };
 
-    const handleNextQuestion = () => {
+    const handleNextQuestion = async () => {
         if (currentQuestionIndex < questions.length - 1) {
             setIsAnswered(false);
             setSelectedAnswer(null);
             setCurrentQuestionIndex(prev => prev + 1);
         } else {
             setQuizCompleted(true);
+
+            // Mark quiz as completed in database
+            const currentUser = getCurrentUser();
+            if (currentUser && chapterId) {
+                try {
+                    // Calculate subChapter ID for database
+                    let subChapterId = null;
+                    if (subChapterTitle && chapterId.startsWith('udemy_')) {
+                        const subChapterMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                        if (subChapterMatch) {
+                            subChapterId = `udemy_${subChapterMatch[1]}_${subChapterMatch[2]}`;
+                        }
+                    } else if (subChapterTitle && chapterId.startsWith('fragen_')) {
+                        if (subChapterTitle.startsWith('Genel.')) {
+                            const match = subChapterTitle.match(/^Genel\.(\d+)/);
+                            if (match) subChapterId = `fragen_genel_${match[1]}`;
+                        } else if (subChapterTitle.startsWith('Deutsch.')) {
+                            const match = subChapterTitle.match(/^Deutsch\.(\d+)/);
+                            if (match) subChapterId = `fragen_deutsch_${match[1]}`;
+                        } else if (subChapterTitle.startsWith('Praxis.')) {
+                            const match = subChapterTitle.match(/^Praxis\.(\d+)/);
+                            if (match) subChapterId = `fragen_praxis_${match[1]}`;
+                        } else if (subChapterTitle.startsWith('Mixed.')) {
+                            const match = subChapterTitle.match(/^Mixed\.(\d+)/);
+                            if (match) subChapterId = `fragen_mixed_${match[1]}`;
+                        }
+                    } else if (subChapterTitle && !chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
+                        const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                        if (istqbMatch) {
+                            subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}`;
+                        }
+                    }
+
+                    const quizType = chapterId.startsWith('udemy_') ? 'udemy'
+                        : chapterId.startsWith('fragen_') ? 'fragen'
+                            : 'istqb';
+
+                    await DataService.markQuizCompleted(
+                        currentUser.id,
+                        quizType,
+                        chapterId,
+                        subChapterId,
+                        score
+                    );
+
+                    console.log(`✅ Quiz completed and marked in database: ${score}/${questions.length}`);
+                } catch (error) {
+                    console.error('Error marking quiz as completed:', error);
+                }
+            }
         }
     };
 
@@ -221,29 +403,88 @@ const QuizPage: React.FC = () => {
 
         setCurrentQuestionIndex(questionIndex);
 
-        // Wenn diese Frage bereits beantwortet wurde, zeige dies an
+        // Wenn diese Frage bereits beantwortet wurde, zeige die gespeicherte Antwort an
         if (answeredQuestions.has(questionIndex)) {
             setIsAnswered(true);
-            // Wenn keine gespeicherte Antwort für diese Frage gefunden wird, Standardauswahl
-            setSelectedAnswer(null); // In einer echten App könnte diese Antwort aus der Datenbank kommen
+            // Find saved answer for this question from userAnswers state
+            const currentQuestion = questions[questionIndex];
+            if (currentQuestion && userAnswers[currentQuestion.id]) {
+                setSelectedAnswer(userAnswers[currentQuestion.id]);
+            } else {
+                setSelectedAnswer(null);
+            }
         } else {
             setSelectedAnswer(null);
             setIsAnswered(false);
         }
     };
 
-    const resetQuiz = () => {
+    const resetQuiz = async () => {
+        // Clear progress from database
+        const currentUser = getCurrentUser();
+        if (currentUser && chapterId) {
+            try {
+                // Calculate subChapter ID for database
+                let subChapterId = null;
+                if (subChapterTitle && chapterId.startsWith('udemy_')) {
+                    const subChapterMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                    if (subChapterMatch) {
+                        subChapterId = `udemy_${subChapterMatch[1]}_${subChapterMatch[2]}`;
+                    }
+                } else if (subChapterTitle && chapterId.startsWith('fragen_')) {
+                    if (subChapterTitle.startsWith('Genel.')) {
+                        const match = subChapterTitle.match(/^Genel\.(\d+)/);
+                        if (match) subChapterId = `fragen_genel_${match[1]}`;
+                    } else if (subChapterTitle.startsWith('Deutsch.')) {
+                        const match = subChapterTitle.match(/^Deutsch\.(\d+)/);
+                        if (match) subChapterId = `fragen_deutsch_${match[1]}`;
+                    } else if (subChapterTitle.startsWith('Praxis.')) {
+                        const match = subChapterTitle.match(/^Praxis\.(\d+)/);
+                        if (match) subChapterId = `fragen_praxis_${match[1]}`;
+                    } else if (subChapterTitle.startsWith('Mixed.')) {
+                        const match = subChapterTitle.match(/^Mixed\.(\d+)/);
+                        if (match) subChapterId = `fragen_mixed_${match[1]}`;
+                    }
+                } else if (subChapterTitle && !chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
+                    const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                    if (istqbMatch) {
+                        subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}`;
+                    }
+                }
+
+                const quizType = chapterId.startsWith('udemy_') ? 'udemy'
+                    : chapterId.startsWith('fragen_') ? 'fragen'
+                        : 'istqb';
+
+                await DataService.clearQuizProgress(
+                    currentUser.id,
+                    quizType,
+                    chapterId,
+                    subChapterId
+                );
+
+                console.log('🗑️ Quiz progress cleared from database');
+            } catch (error) {
+                console.error('Error clearing quiz progress:', error);
+            }
+        }
+
+        // Reset local state
         setCurrentQuestionIndex(0);
         setSelectedAnswer(null);
         setIsAnswered(false);
         setQuizCompleted(false);
         setScore(0);
         setAnsweredQuestions(new Set());
+        setUserAnswers({});
     };
 
-    // Function to extract ISTQB section reference and navigate to documentation
+    // Function to extract ISTQB section reference and open documentation in new window
     const handleDocumentationClick = (explanation: string) => {
         console.log(`🔍 Full explanation received:`, explanation);
+
+        // Note: Quiz progress is automatically saved to database with each answer
+        // No need to save to localStorage since we have persistent database storage
 
         // Extract ISTQB section reference - look for patterns like "2.2.3" after comma or in parentheses
         // Try multiple regex patterns to find the section number
@@ -335,8 +576,11 @@ const QuizPage: React.FC = () => {
             if (chapter && sectionFile) {
                 // Use encodeURIComponent to properly encode the URL parts
                 const documentationUrl = `/documentation/${encodeURIComponent(chapter)}/${encodeURIComponent(sectionFile)}`;
-                console.log(`📖 Navigating to: ${documentationUrl}`);
-                navigate(documentationUrl);
+                console.log(`📖 Opening documentation in new window: ${documentationUrl}`);
+
+                // Open documentation in new window/tab
+                const fullUrl = window.location.origin + documentationUrl;
+                window.open(fullUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
             } else {
                 console.warn('Could not map section to documentation file:', {
                     sectionNumber,
@@ -346,13 +590,15 @@ const QuizPage: React.FC = () => {
                     availableChapters: Object.keys(chapterMap),
                     availableSections: Object.keys(sectionFileMap)
                 });
-                // Fallback: Navigate to documentation index
-                navigate('/docs');
+                // Fallback: Open documentation index in new window
+                const docsUrl = window.location.origin + '/docs';
+                window.open(docsUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
             }
         } else {
             console.warn('Could not extract section reference from explanation:', explanation);
-            // Fallback: Navigate to documentation index
-            navigate('/docs');
+            // Fallback: Open documentation index in new window
+            const docsUrl = window.location.origin + '/docs';
+            window.open(docsUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
         }
     }; if (questions.length === 0) {
         return (
@@ -517,7 +763,7 @@ const QuizPage: React.FC = () => {
                 <div className="space-y-3">
                     {currentQuestion.options.map((option, index) => (
                         <div
-                            key={option}
+                            key={`${currentQuestion.id}-${index}`}
                             onClick={() => handleAnswerSelect(option)}
                             className={`p-4 border rounded-lg transition-all ${getOptionClass(option)}`}
                         >

@@ -85,6 +85,28 @@ CREATE TABLE IF NOT EXISTS user_question_attempts (
     INDEX idx_answered_at (answered_at)
 );
 
+-- Quiz ilerlemesi tablosu (hangi soruda kaldığı, cevapları vs.)
+CREATE TABLE IF NOT EXISTS quiz_progress (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    user_id BIGINT NOT NULL,
+    quiz_type VARCHAR(20) NOT NULL, -- 'istqb', 'udemy', 'fragen'
+    chapter_id VARCHAR(50) NOT NULL,
+    sub_chapter_id VARCHAR(50),
+    current_question_index INT NOT NULL DEFAULT 0,
+    total_questions INT NOT NULL,
+    score INT NOT NULL DEFAULT 0,
+    answers JSON, -- JSON object storing question_id -> selected_answer mappings
+    completed_at TIMESTAMP NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (chapter_id) REFERENCES chapters(id) ON DELETE CASCADE,
+    FOREIGN KEY (sub_chapter_id) REFERENCES sub_chapters(id) ON DELETE SET NULL,
+    INDEX idx_user_quiz (user_id, quiz_type, chapter_id),
+    INDEX idx_completed (completed_at),
+    UNIQUE KEY unique_user_quiz (user_id, quiz_type, chapter_id, sub_chapter_id)
+);
+
 -- Ana bölümler için başlangıç verileri
 INSERT INTO chapters (id, title, description) VALUES
 -- ISTQB Bölümleri

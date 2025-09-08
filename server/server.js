@@ -585,22 +585,8 @@ app.post("/api/user-stats/answer", async (req, res) => {
     );
 
     if (subChapterId) {
-      // Sub-chapter mapping logic
-      if (subChapterId.startsWith("udemy_")) {
-        // Format: udemy_2_1, udemy_2_2, etc.
-        // Udemy için şimdilik sub_chapter_id null olarak bırak
-        // Böylece foreign key hatası vermeyecek
-        dbSubChapterId = null;
-      } else if (subChapterId.startsWith("fragen_")) {
-        // Format: fragen_genel_1, fragen_deutsch_1, etc.
-        // Fragen için şimdilik sub_chapter_id null olarak bırak
-        // Böylece foreign key hatası vermeyecek
-        dbSubChapterId = null;
-      } else if (subChapterId.includes("-")) {
-        // ISTQB format: 1-1, 1-2, etc.
-        // Based on database: There's no ISTQB sub-chapter yet, so skip for now
-        dbSubChapterId = null;
-      }
+      // Sub-chapter ID'yi kullan, foreign key constraint'ler kaldırıldı
+      dbSubChapterId = subChapterId;
     }
 
     console.log(`Final dbSubChapterId: ${dbSubChapterId}`);
@@ -766,6 +752,214 @@ app.get(
     } catch (error) {
       console.error("Wrong answers fetch error:", error);
       res.status(500).json({ error: "Yanlış cevaplar getirilemedi" });
+    }
+  }
+);
+
+// ========== QUIZ PROGRESS ENDPOINTS ==========
+
+// Save quiz progress
+app.post("/api/quiz-progress", async (req, res) => {
+  try {
+    const {
+      userId,
+      quizType,
+      chapter,
+      subChapter,
+      currentQuestionIndex,
+      totalQuestions,
+      score,
+      answers,
+      completedAt,
+    } = req.body;
+
+    // undefined değerleri null'a çevir ve ISO date'i MySQL formatına çevir
+    const safeSubChapter = subChapter === undefined ? null : subChapter;
+    const safeCompletedAt =
+      completedAt === undefined
+        ? null
+        : completedAt
+        ? new Date(completedAt).toISOString().slice(0, 19).replace("T", " ")
+        : null;
+
+    if (
+      !userId ||
+      !quizType ||
+      !chapter ||
+      currentQuestionIndex === undefined ||
+      !totalQuestions ||
+      score === undefined
+    ) {
+      return res.status(400).json({ error: "Missing required parameters" });
+    }
+
+    // Check if progress already exists
+    let sql = `
+      SELECT id FROM quiz_progress 
+      WHERE user_id = ? AND quiz_type = ? AND chapter_id = ?
+    `;
+    let params = [userId, quizType, chapter];
+
+    if (safeSubChapter) {
+      sql += ` AND sub_chapter_id = ?`;
+      params.push(safeSubChapter);
+    } else {
+      sql += ` AND sub_chapter_id IS NULL`;
+    }
+
+    const existing = await query(sql, params);
+
+    if (existing.length > 0) {
+      // Update existing progress
+      sql = `
+        UPDATE quiz_progress 
+        SET current_question_index = ?, total_questions = ?, score = ?, answers = ?, completed_at = ?, updated_at = NOW()
+        WHERE id = ?
+      `;
+      await query(sql, [
+        currentQuestionIndex,
+        totalQuestions,
+        score,
+        answers,
+        safeCompletedAt,
+        existing[0].id,
+      ]);
+    } else {
+      // Insert new progress
+      sql = `
+        INSERT INTO quiz_progress 
+        (user_id, quiz_type, chapter_id, sub_chapter_id, current_question_index, total_questions, score, answers, completed_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+      `;
+      await query(sql, [
+        userId,
+        quizType,
+        chapter,
+        safeSubChapter,
+        currentQuestionIndex,
+        totalQuestions,
+        score,
+        answers,
+        safeCompletedAt,
+      ]);
+    }
+
+    res.json({ success: true, message: "Quiz progress saved successfully" });
+  } catch (error) {
+    console.error("Quiz progress save error:", error);
+    res.status(500).json({ error: "Failed to save quiz progress" });
+  }
+});
+
+// Load quiz progress
+app.get("/api/quiz-progress/:userId/:quizType/:chapter", async (req, res) => {
+  try {
+    const { userId, quizType, chapter } = req.params;
+    const { subChapter } = req.query;
+
+    let sql = `
+      SELECT * FROM quiz_progress 
+      WHERE user_id = ? AND quiz_type = ? AND chapter_id = ?
+    `;
+    let params = [userId, quizType, chapter];
+
+    if (subChapter) {
+      sql += ` AND sub_chapter_id = ?`;
+      params.push(subChapter);
+    } else {
+      sql += ` AND sub_chapter_id IS NULL`;
+    }
+
+    sql += ` ORDER BY updated_at DESC LIMIT 1`;
+
+    const results = await query(sql, params);
+
+    if (results.length > 0) {
+      const progress = results[0];
+      res.json({
+        currentQuestionIndex: progress.current_question_index,
+        totalQuestions: progress.total_questions,
+        score: progress.score,
+        answers: progress.answers || "{}",
+        completedAt: progress.completed_at,
+        userId: progress.user_id,
+        quizType: progress.quiz_type,
+        chapter: progress.chapter_id,
+        subChapter: progress.sub_chapter_id,
+      });
+    } else {
+      res.status(404).json({ error: "No quiz progress found" });
+    }
+  } catch (error) {
+    console.error("Quiz progress load error:", error);
+    res.status(500).json({ error: "Failed to load quiz progress" });
+  }
+});
+
+// Mark quiz as completed
+app.put("/api/quiz-progress/complete", async (req, res) => {
+  try {
+    const { userId, quizType, chapter, subChapter, completedAt, finalScore } =
+      req.body;
+
+    // Convert ISO date to MySQL DATETIME format
+    const mysqlDate = completedAt
+      ? new Date(completedAt).toISOString().slice(0, 19).replace("T", " ")
+      : null;
+
+    let sql = `
+      UPDATE quiz_progress 
+      SET completed_at = ?, score = ?, updated_at = NOW()
+      WHERE user_id = ? AND quiz_type = ? AND chapter_id = ?
+    `;
+    let params = [mysqlDate, finalScore, userId, quizType, chapter];
+
+    if (subChapter) {
+      sql += ` AND sub_chapter_id = ?`;
+      params.push(subChapter);
+    } else {
+      sql += ` AND sub_chapter_id IS NULL`;
+    }
+
+    const result = await query(sql, params);
+
+    if (result.affectedRows > 0) {
+      res.json({ success: true, message: "Quiz marked as completed" });
+    } else {
+      res.status(404).json({ error: "Quiz progress not found" });
+    }
+  } catch (error) {
+    console.error("Quiz completion error:", error);
+    res.status(500).json({ error: "Failed to mark quiz as completed" });
+  }
+});
+
+// Clear quiz progress (for reset)
+app.delete(
+  "/api/quiz-progress/:userId/:quizType/:chapter",
+  async (req, res) => {
+    try {
+      const { userId, quizType, chapter } = req.params;
+      const { subChapter } = req.query;
+
+      let sql = `
+      DELETE FROM quiz_progress 
+      WHERE user_id = ? AND quiz_type = ? AND chapter_id = ?
+    `;
+      let params = [userId, quizType, chapter];
+
+      if (subChapter) {
+        sql += ` AND sub_chapter_id = ?`;
+        params.push(subChapter);
+      } else {
+        sql += ` AND sub_chapter_id IS NULL`;
+      }
+
+      await query(sql, params);
+      res.json({ success: true, message: "Quiz progress cleared" });
+    } catch (error) {
+      console.error("Quiz progress clear error:", error);
+      res.status(500).json({ error: "Failed to clear quiz progress" });
     }
   }
 );

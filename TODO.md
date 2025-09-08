@@ -150,3 +150,9 @@ mysql -u root -p < server/database/schema.sql
 cd /d/istqb-quiz/server && node simple_import.cjs
 
 ### node check_udemy_db.cjs
+
+
+
+node import_fragen_questions.cjs # Fragen soruları
+node sync_import.cjs             # ISTQB soruları
+node import_udemy_fixed.cjs      # Udemy soruları

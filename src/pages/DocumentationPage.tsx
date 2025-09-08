@@ -442,13 +442,50 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
                     <div className="mt-8 pt-6 border-t border-border">
                         <div className="flex items-center justify-between text-sm text-muted-foreground">
                             <span>ISTQB Foundation Level Lehrplan</span>
-                            <button
-                                onClick={() => navigate('/quiz')}
-                                className="flex items-center text-amber-600 hover:text-amber-700 transition-colors"
-                            >
-                                <ExternalLink className="w-4 h-4 mr-1" />
-                                Zum Quiz
-                            </button>
+                            <div className="flex items-center gap-3">
+                                {/* Check for saved quiz state */}
+                                {(() => {
+                                    const savedState = localStorage.getItem('quizState');
+                                    if (savedState) {
+                                        try {
+                                            const state = JSON.parse(savedState);
+                                            const chapterInfo = state.chapterId ? (
+                                                state.chapterId.startsWith('udemy_') ? 'Udemy' :
+                                                    state.chapterId.startsWith('fragen_') ? 'Fragen' : 'ISTQB'
+                                            ) : 'Quiz';
+
+                                            return (
+                                                <button
+                                                    onClick={() => {
+                                                        // Navigate back to the exact quiz URL with state restoration
+                                                        const url = state.subChapterIndex ?
+                                                            `/quiz/${state.chapterId}?sub=${state.subChapterIndex}` :
+                                                            `/quiz/${state.chapterId}`;
+                                                        navigate(url);
+                                                    }}
+                                                    className="flex items-center text-green-600 hover:text-green-700 transition-colors font-medium"
+                                                >
+                                                    <ArrowLeft className="w-4 h-4 mr-1" />
+                                                    Zum {chapterInfo} Quiz zurückkehren
+                                                </button>
+                                            );
+                                        } catch (error) {
+                                            // Invalid saved state, clean it up
+                                            localStorage.removeItem('quizState');
+                                            return null;
+                                        }
+                                    }
+                                    return null;
+                                })()}
+
+                                <button
+                                    onClick={() => navigate('/quiz')}
+                                    className="flex items-center text-amber-600 hover:text-amber-700 transition-colors"
+                                >
+                                    <ExternalLink className="w-4 h-4 mr-1" />
+                                    Zum Quiz
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
