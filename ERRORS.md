@@ -1,82 +1,46 @@
-$ npm run e2e
-
-> vite-project@0.0.0 e2e
-> playwright test
-
-
-Running 4 tests using 4 workers
-
-  ✓  1 [chromium] › e2e\login.spec.ts:3:1 › login flow updates navbar with username (709ms)
-  ✓  2 [chromium] › e2e\home.spec.ts:3:1 › homepage shows welcome heading (525ms)
-  ✘  3 [chromium] › e2e\quiz-answer.spec.ts:18:1 › answer selection shows explanation and next (31.3s)
-  ✘  4 [chromium] › e2e\quiz.spec.ts:18:1 › quiz loads and paginates (mocked API) (5.6s)
-
-
-  1) [chromium] › e2e\quiz-answer.spec.ts:18:1 › answer selection shows explanation and next ───────
-
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.click: Test timeout of 30000ms exceeded.
-    Call log:
-      - waiting for getByText(/^A:/).first()
-
-
-      39 |
-      40 |   // Click option labeled with "A:" (first option)
-    > 41 |   await page.getByText(/^A:/).first().click()
-         |                                       ^
-      42 |   await expect(page.getByText('Erklärung:')).toBeVisible()
-      43 |   await expect(page.getByRole('button', { name: /Nächste Frage|Ergebnisse anzeigen/ })).toBeVisible()
-      44 |
-        at D:\istqb-quiz\e2e\quiz-answer.spec.ts:41:39
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\quiz-answer-answer-selection-shows-explanation-and-next-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\quiz-answer-answer-selection-shows-explanation-and-next-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: test-results\quiz-answer-answer-selection-shows-explanation-and-next-chromium\error-context.md
-
-  2) [chromium] › e2e\quiz.spec.ts:18:1 › quiz loads and paginates (mocked API) ────────────────────
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator:  getByText('Q 1: Example question?')
-    Expected: visible
-    Received: <element(s) not found>
-    Timeout:  5000ms
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('Q 1: Example question?')
-
-
-      38 |   await page.goto('/quiz/1')
-      39 |
-    > 40 |   await expect(page.getByText('Q 1: Example question?')).toBeVisible()
-         |                                                          ^
-      41 |   await expect(page.getByRole('link', { name: 'Next' })).toBeVisible()
-      42 |   await page.getByRole('link', { name: 'Next' }).click()
-      43 |   await expect(page.getByText('Q 2: Example question?')).toBeVisible()
-        at D:\istqb-quiz\e2e\quiz.spec.ts:40:58
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\quiz-quiz-loads-and-paginates-mocked-API--chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\quiz-quiz-loads-and-paginates-mocked-API--chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: test-results\quiz-quiz-loads-and-paginates-mocked-API--chromium\error-context.md
-
-  2 failed
-    [chromium] › e2e\quiz-answer.spec.ts:18:1 › answer selection shows explanation and next ────────
-    [chromium] › e2e\quiz.spec.ts:18:1 › quiz loads and paginates (mocked API) ─────────────────────
-  2 passed (32.4s)
-
 musta@Musta MINGW64 /d/istqb-quiz (main)
-$ 
+$ npm run test
+
+> vite-project@0.0.0 test
+> vitest
+
+
+ DEV  v2.1.9 D:/istqb-quiz
+
+stdout | server/__tests__/auth.test.ts > POST /api/auth/login > returns 401 with invalid credentials (no DB user)
+AUTH_RESPONSE 401 { message: 'Invalid username or password' }
+DB_QUERY_CALLS 0
+
+ ✓ server/__tests__/auth.test.ts (1)
+ ✓ server/__tests__/health.test.ts (1)
+ ❯ src/components/__tests__/Navbar.test.tsx (0)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/components/__tests__/Navbar.test.tsx [ src/components/__tests__/Navbar.test.tsx ]
+Error: Failed to resolve import "@/components/Navbar" from "src/components/__tests__/Navbar.test.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: D:/istqb-quiz/src/components/__tests__/Navbar.test.tsx:2:19
+  1  |  import { jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import { render, screen } from "@testing-library/react";
+  3  |  import Navbar from "@/components/Navbar";
+     |                      ^
+  4  |  describe("Navbar", () => {
+  5  |    it("shows login/register links when logged out", () => {
+ ❯ TransformPluginContext._formatError node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41
+ ❯ TransformPluginContext.error node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16
+ ❯ normalizeUrl node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64306:23
+ ❯ node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64438:39
+ ❯ TransformPluginContext.transform node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64365:7
+ ❯ PluginContainer.transform node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18
+ ❯ loadAndTransform node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed | 2 passed (3)
+      Tests  2 passed (2)
+   Start at  10:30:58
+   Duration  1.35s (transform 114ms, setup 267ms, collect 645ms, tests 81ms, environment 1.03s, prepare 281ms)
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit

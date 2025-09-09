@@ -965,7 +965,7 @@ Not: `@vitest/coverage-v8` paketi mevcut `vitest 2.x` sürümüyle uyumlu olmas�
   - `src/components/__tests__/Example.test.tsx`
   - `server/__tests__/health.test.ts`
   - `server/vitest.config.ts`
-- Karar: Root’ta kısa süreli eklenen `vitest.config.ts` ve `src/test/setup.ts` dosyaları, mevcut `vite.config.ts` (test ayarları) ve `src/setupTests.ts` ile çakışmayı önlemek için kaldırıldı.
+- Konfigürasyon ayrıştırması: `vite.config.ts` sadece Vite ayarlarını içerir; unit test ayarları `vitest.config.ts` içinde tutulur. Playwright E2E dosyaları Vitest tarafından dışlanır (`test.exclude: e2e/**`). `src/setupTests.ts` jest‑dom entegrasyonu için kullanılmaya devam eder.
 
 ### Kullanım
 
@@ -989,7 +989,7 @@ Bu proje için GitHub Actions iş akışları sade ve Vite/Node yapısına uygun
 ### e2e.yml (Playwright E2E)
 
 - Tetikleyiciler: `workflow_dispatch`, `pull_request`, günlük cron (11:00 UTC).
-- Adımlar: `npm ci` (root + server) → `npm run build` → `npx playwright install --with-deps` → `npx http-server dist -p 4173 -s` (SPA) → `npx playwright test`.
+- Adımlar: `npm ci` (root + server) → `npx playwright install --with-deps` → `npx playwright test` (Playwright, `webServer` ile build + serve işlemlerini otomatik yapar).
 - Rapor: `playwright-report` artifact olarak yüklenir.
 
 ### bundle-stats.yml (Vite Bundle Stats)
@@ -1027,12 +1027,20 @@ Bu proje için GitHub Actions iş akışları sade ve Vite/Node yapısına uygun
 ## E2E Test Yapılandırması (Playwright)
 
 - Kurulum: `npm i -D @playwright/test` ve CI’de `npx playwright install --with-deps`.
-- Konfig: `playwright.config.ts` (baseURL: `BASE_URL` env veya `http://localhost:4173`).
+- Konfig: `playwright.config.ts`
+  - `webServer`: `npm run build && npx http-server dist -p 4173 -s` (otomatik build + serve)
+  - `baseURL`: `BASE_URL` env veya `http://localhost:4173`
 - Testler: `e2e/` klasöründe (`home.spec.ts`, `login.spec.ts`, `quiz.spec.ts`).
 - Yerel çalıştırma:
-  - `npm run build`
-  - `npx http-server dist -p 4173 -s`
-  - `BASE_URL=http://localhost:4173 npm run e2e`
+  - Sadece `npm run e2e` (Playwright `webServer` ile build + serve başlatır)
+  - Alternatif: Manuel servis gerekiyorsa `npm run build && npx http-server dist -p 4173 -s` ardından `BASE_URL=http://localhost:4173 npm run e2e`
+
+### E2E Stabilite Notları
+
+- Quiz akışları deterministik olsun diye bazı istekler mock’lanır:
+  - `GET /api/health` → 200 (mock)
+  - `GET /api/questions/:chapter` → test içinde üretilen sabit veri (mock)
+- Paginasyon seçicileri: `aria-label="Go to next page"` ve `[data-slot="pagination-link"]` kullanılır (çoklu dil/ellipsis durumlarına dayanıklı).
 
 ## Backend Modernizasyon Notları
 
