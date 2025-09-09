@@ -1,0 +1,139 @@
+{
+    "chapter": "1",
+    "subChapter": "1-5-1",
+    "subChapterTitle": "1.5.1 Allgemeine Kompetenzen, die für das Testen erforderlich sind",
+    "questions": [
+        {
+            "question": "Welche Kompetenz hilft Testern am meisten, schwer erkennbare Fehlerzustände aufzudecken?",
+            "explanation": "Gründlichkeit, Sorgfalt, Neugier, Detailgenauigkeit und methodisches Vorgehen sind entscheidend, um schwer zu findende Fehler zu entdecken. (1.5.1_Allgemeine_Kompetenzen.md)",
+            "options": [
+                {
+                    "text": "Teamfähigkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Gründlichkeit und Detailgenauigkeit",
+                    "correct": true
+                },
+                {
+                    "text": "Wissen in der Anwendungsdomäne",
+                    "correct": false
+                },
+                {
+                    "text": "Kreativität",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist Kommunikationsfähigkeit für Tester von entscheidender Bedeutung?",
+            "explanation": "Tester sind oft Überbringer schlechter Nachrichten; die Ergebnisse können als Kritik verstanden werden. Daher ist konstruktive Kommunikation entscheidend. (1.5.1_Allgemeine_Kompetenzen.md)",
+            "options": [
+                {
+                    "text": "Weil Tester die Teststrategie erstellen müssen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Testergebnisse als Kritik wahrgenommen werden können",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Tester das Debugging durchführen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Tester immer Projektleiter informieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kompetenz ist notwendig, um Endanwender und Fachbereichsvertreter zu verstehen?",
+            "explanation": "Wissen in der Anwendungsdomäne ist entscheidend, um die Sprache der Anwender zu verstehen und mit ihnen kommunizieren zu können. (1.5.1_Allgemeine_Kompetenzen.md)",
+            "options": [
+                {
+                    "text": "Testwissen",
+                    "correct": false
+                },
+                {
+                    "text": "Technische Kenntnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Wissen in der Anwendungsdomäne",
+                    "correct": true
+                },
+                {
+                    "text": "Kritisches Denken",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kompetenz unterstützt die Effektivität des Testens am direktesten durch systematische Verfahren?",
+            "explanation": "Testwissen, insbesondere der Einsatz von Testverfahren, steigert die Effektivität des Testens. (1.5.1_Allgemeine_Kompetenzen.md)",
+            "options": [
+                {
+                    "text": "Testwissen",
+                    "correct": true
+                },
+                {
+                    "text": "Kreativität",
+                    "correct": false
+                },
+                {
+                    "text": "Teamfähigkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Geduld",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Denkweisen sind für Tester wichtig, um Fehlerzustände systematisch zu erkennen?",
+            "explanation": "Analytisches Denken, kritisches Denken und Kreativität steigern die Effektivität beim Auffinden von Fehlerzuständen. (1.5.1_Allgemeine_Kompetenzen.md)",
+            "options": [
+                {
+                    "text": "Analytisches, kritisches Denken und Kreativität",
+                    "correct": true
+                },
+                {
+                    "text": "Technisches Wissen und Programmierkenntnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Empathie und Konfliktlösung",
+                    "correct": false
+                },
+                {
+                    "text": "Teamfähigkeit und Zuhören",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kompetenz erhöht primär die Effizienz des Testens durch den Einsatz geeigneter Tools?",
+            "explanation": "Technische Kenntnisse steigern die Effizienz des Testens, z. B. durch den Einsatz geeigneter Testwerkzeuge. (1.5.1_Allgemeine_Kompetenzen.md)",
+            "options": [
+                {
+                    "text": "Kreativität",
+                    "correct": false
+                },
+                {
+                    "text": "Technische Kenntnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Kommunikationsfähigkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Neugier",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Wann finden Retrospektiven typischerweise statt?",
-            "explanation": "Retrospektiven werden häufig am Ende eines Projekts oder einer Iteration, bei einem Releasemeilenstein oder bei Bedarf abgehalten. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "explanation": "Retrospektiven werden häufig am Ende eines Projekts oder einer Iteration, bei einem Releasemeilenstein oder bei Bedarf abgehalten. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Nur am Projektanfang",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Von welchen Faktoren hängt Zeitpunkt und Organisation von Retrospektiven ab?",
-            "explanation": "Zeitpunkt und Organisation der Retrospektiven hängen von dem jeweiligen SDLC-Modell ab. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "explanation": "Zeitpunkt und Organisation der Retrospektiven hängen von dem jeweiligen SDLC-Modell ab. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Vom gewählten SDLC-Modell",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Teilnehmer nehmen typischerweise an Retrospektiven teil?",
-            "explanation": "In diesen Sitzungen diskutieren die Teilnehmer (nicht nur Tester, sondern z. B. auch Entwickler, Architekten, Product Owner, Businessanalysten). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "explanation": "In diesen Sitzungen diskutieren die Teilnehmer (nicht nur Tester, sondern z. B. auch Entwickler, Architekten, Product Owner, Businessanalysten). (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Nur Tester",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welcher Aspekt wird in einer Retrospektive thematisiert?",
-            "explanation": "Was war erfolgreich und sollte beibehalten werden? (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "explanation": "Was war erfolgreich und sollte beibehalten werden? (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Welche Punkte erfolgreich waren und beibehalten werden sollten",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Was ist ein zentrales Ziel von Retrospektiven?",
-            "explanation": "Was war nicht erfolgreich und könnte verbessert werden? (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "explanation": "Was war nicht erfolgreich und könnte verbessert werden? (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Neue Features definieren",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Frage wird in Retrospektiven zur Sicherung künftiger Qualität gestellt?",
-            "explanation": "Wie können die Verbesserungen eingearbeitet und die Erfolge in Zukunft beibehalten werden? (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "explanation": "Wie können die Verbesserungen eingearbeitet und die Erfolge in Zukunft beibehalten werden? (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Wie können die Erfolge in Zukunft beibehalten werden?",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Warum sind in Retrospektiven unterschiedliche Rollen wichtig?",
-            "explanation": "In diesen Sitzungen diskutieren die Teilnehmer (nicht nur Tester, sondern z. B. auch Entwickler, Architekten, Product Owner, Businessanalysten). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "explanation": "In diesen Sitzungen diskutieren die Teilnehmer (nicht nur Tester, sondern z. B. auch Entwickler, Architekten, Product Owner, Businessanalysten). (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Um verschiedene Perspektiven und Erfahrungen einzubringen",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche Aktivität gehört NICHT zu Retrospektiven?",
-            "explanation": "Abschnitt 2.1.6 behandelt Reflexion (Erfolge, Verbesserungen, Beibehaltung) – nicht technische Technologieentscheidungen.",
+            "explanation": "2.1.6_Retrospektiven_und_Prozessverbesserung.md behandelt Reflexion (Erfolge, Verbesserungen, Beibehaltung) – nicht technische Technologieentscheidungen.",
             "options": [
                 {
                     "text": "Erfolgreiche Praktiken identifizieren",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Was unterscheidet Retrospektiven von reinen Testabschluss-Meetings?",
-            "explanation": "In diesen Sitzungen diskutieren die Teilnehmer (nicht nur Tester, sondern …). Retrospektiven sind teamübergreifend. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "explanation": "In diesen Sitzungen diskutieren die Teilnehmer (nicht nur Tester, sondern …). Retrospektiven sind teamübergreifend. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Sie berücksichtigen ausschließlich Testergebnisse",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welches Thema ist KEIN Bestandteil einer Retrospektive?",
-            "explanation": "Abschnitt 2.1.6 listet Reflexionsfragen, nicht aber operative Release-Planung.",
+            "explanation": "2.1.6_Retrospektiven_und_Prozessverbesserung.md listet Reflexionsfragen, nicht aber operative Release-Planung.",
             "options": [
                 {
                     "text": "Was war erfolgreich?",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Wo werden die Ergebnisse von Retrospektiven üblicherweise dokumentiert?",
-            "explanation": "Die Ergebnisse sollten festgehalten werden und sind normalerweise Teil des Testabschlussberichts. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.1.6)",
+            "explanation": "Die Ergebnisse sollten festgehalten werden und sind normalerweise Teil des Testabschlussberichts. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Im Testabschlussbericht",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Warum sind Retrospektiven entscheidend?",
-            "explanation": "Retrospektiven sind entscheidend für die erfolgreiche Umsetzung der kontinuierlichen Verbesserung. (Abschnitt 2.1.6)",
+            "explanation": "Retrospektiven sind entscheidend für die erfolgreiche Umsetzung der kontinuierlichen Verbesserung. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Weil sie Testautomatisierung ersetzen",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Was ist wichtig im Umgang mit empfohlenen Verbesserungen aus Retrospektiven?",
-            "explanation": "Es ist wichtig, dass die empfohlenen Verbesserungen weiterverfolgt werden. (Abschnitt 2.1.6)",
+            "explanation": "Es ist wichtig, dass die empfohlenen Verbesserungen weiterverfolgt werden. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Sie sollten ignoriert werden",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welcher Vorteil betrifft direkt die Effizienz des Testens?",
-            "explanation": "Erhöhte Effektivität/Effizienz des Testens, z. B. durch die Umsetzung von Vorschlägen zur Prozessverbesserung. (Abschnitt 2.1.6)",
+            "explanation": "Erhöhte Effektivität/Effizienz des Testens, z. B. durch die Umsetzung von Vorschlägen zur Prozessverbesserung. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Teamzusammenhalt",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Welcher Vorteil bezieht sich auf die Qualität der Testmittel?",
-            "explanation": "Höhere Qualität der Testmittel, z. B. durch gemeinsames Review der Testprozesse. (Abschnitt 2.1.6)",
+            "explanation": "Höhere Qualität der Testmittel, z. B. durch gemeinsames Review der Testprozesse. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Erhöhte Effizienz",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Welcher Vorteil betrifft den Teamzusammenhalt?",
-            "explanation": "Teamzusammenhalt und Lernen, z. B. durch die Möglichkeit, Probleme anzusprechen und Verbesserungspunkte vorzuschlagen. (Abschnitt 2.1.6)",
+            "explanation": "Teamzusammenhalt und Lernen, z. B. durch die Möglichkeit, Probleme anzusprechen und Verbesserungspunkte vorzuschlagen. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Höhere Qualität der Testmittel",
@@ -357,7 +357,7 @@
         },
         {
             "question": "Welcher Vorteil bezieht sich auf die Testbasis?",
-            "explanation": "Verbesserte Qualität der Testbasis, z. B. weil Mängel im Umfang und in der Qualität der Anforderungen angesprochen und behoben werden konnten. (Abschnitt 2.1.6)",
+            "explanation": "Verbesserte Qualität der Testbasis, z. B. weil Mängel im Umfang und in der Qualität der Anforderungen angesprochen und behoben werden konnten. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Verbesserte Qualität der Testbasis",
@@ -379,7 +379,7 @@
         },
         {
             "question": "Welcher Vorteil betrifft die Zusammenarbeit zwischen Entwicklung und Test?",
-            "explanation": "Bessere Zusammenarbeit zwischen Entwicklung und Test, z. B. weil die Zusammenarbeit regelmäßig überprüft und optimiert wird. (Abschnitt 2.1.6)",
+            "explanation": "Bessere Zusammenarbeit zwischen Entwicklung und Test, z. B. weil die Zusammenarbeit regelmäßig überprüft und optimiert wird. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Verbesserte Qualität der Testbasis",
@@ -401,7 +401,7 @@
         },
         {
             "question": "Welches Dokument enthält die Ergebnisse der Retrospektiven meist?",
-            "explanation": "Die Ergebnisse sollten festgehalten werden und sind normalerweise Teil des Testabschlussberichts. (Abschnitt 2.1.6)",
+            "explanation": "Die Ergebnisse sollten festgehalten werden und sind normalerweise Teil des Testabschlussberichts. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Testabschlussbericht",
@@ -423,7 +423,7 @@
         },
         {
             "question": "Was unterstützt Retrospektiven als kontinuierliche Praxis am meisten?",
-            "explanation": "Retrospektiven sind entscheidend für die erfolgreiche Umsetzung der kontinuierlichen Verbesserung. (Abschnitt 2.1.6)",
+            "explanation": "Retrospektiven sind entscheidend für die erfolgreiche Umsetzung der kontinuierlichen Verbesserung. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
             "options": [
                 {
                     "text": "Kontinuierliche Verbesserung",

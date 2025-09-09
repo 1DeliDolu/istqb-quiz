@@ -1,0 +1,95 @@
+{
+    "chapter": "1",
+    "subChapter": "1-1",
+    "subChapterTitle": "1.1 Was ist Testen?",
+    "questions": [
+        {
+            "question": "Welches der folgenden Ziele beschreibt ein realistisches Testziel?",
+            "explanation": "Ein realistisches Ziel ist das Verringern des Risikos und das Aufbauen von Vertrauen in die Qualität. Testen kann niemals beweisen, dass ein System fehlerfrei ist (vgl. 1.1.1_Was_ist_Testen.md) .",
+            "options": [
+                {
+                    "text": "Nachweisen, dass ein System keine Fehlerzustände mehr hat",
+                    "correct": false
+                },
+                {
+                    "text": "Sicherstellen, dass es nach Inbetriebnahme keine Fehlerwirkungen geben wird",
+                    "correct": false
+                },
+                {
+                    "text": "Die Risikostufe verringern und Vertrauen in die Qualität aufbauen",
+                    "correct": true
+                },
+                {
+                    "text": "Beweisen, dass alle Eingabekombinationen getestet wurden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Hauptunterschied zwischen Testen und Debugging?",
+            "explanation": "Testen deckt Fehlerwirkungen oder Fehlerzustände auf, Debugging analysiert und beseitigt deren Ursachen (vgl. 1.1.2_Was_ist_Testen.md) .",
+            "options": [
+                {
+                    "text": "Testen ist das Suchen nach Fehlern, Debugging das Beseitigen der Ursachen",
+                    "correct": true
+                },
+                {
+                    "text": "Testen prüft Anforderungen, Debugging prüft Entwürfe",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ist Ausführen der Software, Debugging ist Analysieren der Software",
+                    "correct": false
+                },
+                {
+                    "text": "Testen verhindert Fehler, Debugging beseitigt Fehler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Missverständnis über das Testen ist weit verbreitet?",
+            "explanation": "Ein verbreitetes Missverständnis ist, dass Testen nur das Ausführen von Tests sei. Tatsächlich umfasst es auch Planung, Verwaltung und Analyse (vgl. 1.1_Was_ist_Testen.md).",
+            "options": [
+                {
+                    "text": "Testen besteht nur aus dem Ausführen der Software",
+                    "correct": true
+                },
+                {
+                    "text": "Testen beinhaltet sowohl Verifikation als auch Validierung",
+                    "correct": false
+                },
+                {
+                    "text": "Testen kann sowohl dynamisch als auch statisch sein",
+                    "correct": false
+                },
+                {
+                    "text": "Testen muss auf den Entwicklungslebenszyklus abgestimmt sein",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt die Rolle des Testers AM BESTEN?",
+            "explanation": "Testen ist eine weitgehend intellektuelle Aktivität, die Fachwissen, analytische Fähigkeiten und kritisches Denken erfordert (vgl. 1.1_Was_ist_Testen.md).",
+            "options": [
+                {
+                    "text": "Tester verlassen sich hauptsächlich auf automatisierte Werkzeuge",
+                    "correct": false
+                },
+                {
+                    "text": "Tester führen ausschließlich dynamische Tests aus",
+                    "correct": false
+                },
+                {
+                    "text": "Tester wenden Fachwissen, analytisches Denken und Systemdenken an",
+                    "correct": true
+                },
+                {
+                    "text": "Tester konzentrieren sich nur auf das Finden von Fehlerwirkungen",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

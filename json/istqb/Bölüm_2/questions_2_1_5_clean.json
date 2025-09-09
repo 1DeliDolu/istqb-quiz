@@ -1,1 +1,337 @@
-[]
+{
+    "chapter": "2",
+    "subChapter": "2-1-5",
+    "subChapterTitle": "2.1.5 Shift-Left",
+    "questions": [
+        {
+            "question": "Was beschreibt das Prinzip des Shift-Left am BESTEN?",
+            "explanation": "Shift-Left bedeutet, dass das Testen früher im SDLC beginnt, z. B. schon vor der Code-Implementierung (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Das Testen wird auf spätere Phasen verschoben",
+                    "correct": false
+                },
+                {
+                    "text": "Das Testen beginnt zu einem früheren Zeitpunkt im SDLC",
+                    "correct": true
+                },
+                {
+                    "text": "Testen ist nur in der Integrationsphase erforderlich",
+                    "correct": false
+                },
+                {
+                    "text": "Shift-Left ersetzt die Abnahmetests vollständig",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel verfolgt das Prinzip Shift-Left hauptsächlich?",
+            "explanation": "Shift-Left zielt darauf ab, Fehlerzustände so früh wie möglich zu finden und dadurch Kosten und Aufwand zu sparen (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Erhöhung des Testaufwands in späteren Projektphasen",
+                    "correct": false
+                },
+                {
+                    "text": "Frühes Auffinden von Fehlerzuständen und Reduzierung späterer Kosten",
+                    "correct": true
+                },
+                {
+                    "text": "Kompletter Ersatz dynamischer Tests durch Reviews",
+                    "correct": false
+                },
+                {
+                    "text": "Verringerung der Anzahl von Spezifikationsdokumenten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aktivitäten ist KEIN Beispiel für Shift-Left?",
+            "explanation": "Nicht-funktionale Tests erst auf Systemebene durchzuführen, ist kein Beispiel für Shift-Left (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Review der Spezifikationen",
+                    "correct": false
+                },
+                {
+                    "text": "Schreiben von Testfällen vor der Codierung",
+                    "correct": false
+                },
+                {
+                    "text": "Durchführung nicht-funktionaler Tests bereits auf Komponentenebene",
+                    "correct": false
+                },
+                {
+                    "text": "Nicht-funktionale Tests ausschließlich auf Systemebene",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Wie unterstützt Continuous Integration (CI) den Shift-Left-Ansatz?",
+            "explanation": "CI ermöglicht frühe automatisierte Tests und Feedback während der Entwicklung (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Durch die Verschiebung von Tests in die Abnahmephase",
+                    "correct": false
+                },
+                {
+                    "text": "Durch schnelles Feedback und automatisierte Tests während der Coderealisierung",
+                    "correct": true
+                },
+                {
+                    "text": "Durch Reduzierung der Testfälle auf ein Minimum",
+                    "correct": false
+                },
+                {
+                    "text": "Durch die vollständige Vermeidung von Reviews",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil ergibt sich aus einem Review der Spezifikation im Rahmen von Shift-Left?",
+            "explanation": "Frühe Reviews finden potenzielle Fehler wie Mehrdeutigkeiten und Inkonsistenzen (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Vermeidung von Systemintegrationstests",
+                    "correct": false
+                },
+                {
+                    "text": "Frühes Auffinden von Mehrdeutigkeiten und Inkonsistenzen",
+                    "correct": true
+                },
+                {
+                    "text": "Reduktion der Anzahl von Abnahmetests",
+                    "correct": false
+                },
+                {
+                    "text": "Ersatz von Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Maßnahme gehört NICHT zu Shift-Left?",
+            "explanation": "Die Vernachlässigung späterer Tests widerspricht dem Prinzip von Shift-Left (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Frühes Schreiben von Testfällen",
+                    "correct": false
+                },
+                {
+                    "text": "Statische Analyse des Codes vor dynamischem Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Verzicht auf spätere Testphasen im SDLC",
+                    "correct": true
+                },
+                {
+                    "text": "Nicht-funktionale Tests bereits auf Komponentenebene",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Nachteil kann beim Start von Shift-Left auftreten?",
+            "explanation": "Zu Beginn entstehen möglicherweise zusätzliche Schulungen, Aufwand oder Kosten (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Das Testen wird in allen Phasen vollständig abgeschafft",
+                    "correct": false
+                },
+                {
+                    "text": "Es entstehen zu Beginn höhere Kosten oder zusätzlicher Aufwand",
+                    "correct": true
+                },
+                {
+                    "text": "Fehler können nicht frühzeitig gefunden werden",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder werden nicht eingebunden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wirkt sich Shift-Left langfristig auf Kosten und Aufwand aus?",
+            "explanation": "Obwohl zu Beginn zusätzliche Kosten entstehen können, sollen später Aufwand und Kosten reduziert werden (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Die Gesamtkosten steigen kontinuierlich",
+                    "correct": false
+                },
+                {
+                    "text": "Der Aufwand in späteren Phasen verringert sich",
+                    "correct": true
+                },
+                {
+                    "text": "Es gibt keine Auswirkungen auf die Kosten",
+                    "correct": false
+                },
+                {
+                    "text": "Die Kosten steigen in der Testdurchführung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Zustimmung der Stakeholder für Shift-Left wichtig?",
+            "explanation": "Stakeholder müssen überzeugt sein, da Shift-Left zusätzliche frühe Aktivitäten erfordert (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Weil Tester keine Testfälle mehr entwerfen müssen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Stakeholder die frühe Einführung von Tests unterstützen und akzeptieren müssen",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Stakeholder die Tests selbst durchführen müssen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Stakeholder die Abnahmetests ersetzen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Form von Testen unterstützt Shift-Left BESONDERS?",
+            "explanation": "Shift-Left fördert frühe statische Tests wie Reviews und statische Analysen (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Systemintegrationstests",
+                    "correct": false
+                },
+                {
+                    "text": "Späte Regressionstests",
+                    "correct": false
+                },
+                {
+                    "text": "Frühe statische Tests wie Reviews und Analysen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Benutzerakzeptanztests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testart wird beim Shift-Left-Ansatz häufig FRÜHER durchgeführt als üblich?",
+            "explanation": "Nicht-funktionale Tests sollten nach Möglichkeit schon auf Komponentenebene erfolgen (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Nicht-funktionale Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Abnahmetests",
+                    "correct": false
+                },
+                {
+                    "text": "Regressionstests",
+                    "correct": false
+                },
+                {
+                    "text": "Explorative Tests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum werden Testfälle bereits vor der Codierung erstellt?",
+            "explanation": "Um Code im Testrahmen früh zu prüfen und schneller Feedback zu erhalten (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Um die Dokumentation zu reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um den Code frühzeitig mit Tests im Testrahmen auszuführen",
+                    "correct": true
+                },
+                {
+                    "text": "Um spätere Regressionstests zu vermeiden",
+                    "correct": false
+                },
+                {
+                    "text": "Um Abnahmetests zu ersetzen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie trägt die statische Analyse zum Shift-Left-Ansatz bei?",
+            "explanation": "Statische Analyse findet Fehler vor der Ausführung und wird frühzeitig oder automatisiert durchgeführt (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Sie ersetzt dynamische Tests vollständig",
+                    "correct": false
+                },
+                {
+                    "text": "Sie findet Fehler im Quellcode bereits vor dynamischen Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Sie dient nur der Überprüfung der Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Sie wird nur am Ende des Projekts durchgeführt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage ist eine Herausforderung beim Umsetzen von Shift-Left?",
+            "explanation": "Stakeholder müssen überzeugt werden, da zusätzliche frühe Investitionen erforderlich sind (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Stakeholder könnten den zusätzlichen frühen Aufwand ablehnen",
+                    "correct": true
+                },
+                {
+                    "text": "Shift-Left verhindert die Testautomatisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Shift-Left erfordert keine Beteiligung von Stakeholdern",
+                    "correct": false
+                },
+                {
+                    "text": "Shift-Left ersetzt funktionale Tests durch Reviews",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was beschreibt ein realistischer Vorteil des Shift-Left-Ansatzes?",
+            "explanation": "Frühere Fehlerfindung reduziert späte Fehlerkosten und verbessert die Qualität (2.1.5_Shift-Left.md).",
+            "options": [
+                {
+                    "text": "Erhöhte Fehlerbehebungszeit in späten Projektphasen",
+                    "correct": false
+                },
+                {
+                    "text": "Reduzierte Gesamtkosten durch frühes Erkennen von Fehlern",
+                    "correct": true
+                },
+                {
+                    "text": "Vollständige Beseitigung aller Fehlerzustände",
+                    "correct": false
+                },
+                {
+                    "text": "Verzicht auf Testdokumentation",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

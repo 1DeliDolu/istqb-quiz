@@ -1,0 +1,117 @@
+{
+    "chapter": "1",
+    "subChapter": "1-4",
+    "subChapterTitle": "1.4 Testaktivitäten, Testmittel und Rollen des Testens",
+    "questions": [
+        {
+            "question": "Was beschreibt der Begriff Testprozess auf einem hohen Abstraktionsniveau?",
+            "explanation": "Ein Testprozess besteht aus Gruppen von Testaktivitäten, die notwendig sind, um Testziele zu erreichen. (1.4_Testaktivitäten_Testmittel_Rollen.md)",
+            "options": [
+                {
+                    "text": "Eine Sammlung von spezifischen Testfällen",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Sequenz von Debugging-Schritten",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Gruppe von Testaktivitäten, die zusammenwirken",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Werkzeug zur Testautomatisierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist Testen laut Abschnitt 1.4 kontextabhängig?",
+            "explanation": "Die Auswahl, Durchführung und der Zeitpunkt der Testaktivitäten hängen von der spezifischen Situation und ihrem Kontext ab. (1.4_Testaktivitäten_Testmittel_Rollen.md)",
+            "options": [
+                {
+                    "text": "Weil die verwendeten Werkzeuge immer gleich sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Testen in jedem Projekt identisch durchgeführt wird",
+                    "correct": false
+                },
+                {
+                    "text": "Weil die Testaktivitäten an Projekt- und Organisationsfaktoren angepasst werden müssen",
+                    "correct": true
+                },
+                {
+                    "text": "Weil der Kontext die Existenz von Fehlerzuständen beweist",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt die Testplanung in Bezug auf den Testprozess?",
+            "explanation": "Die Testplanung legt fest, welche Testaktivitäten im Testprozess enthalten sind, wie und wann sie stattfinden. (1.4_Testaktivitäten_Testmittel_Rollen.md)",
+            "options": [
+                {
+                    "text": "Sie definiert ausschließlich die zu verwendenden Testwerkzeuge",
+                    "correct": false
+                },
+                {
+                    "text": "Sie entscheidet über die Auswahl, Durchführung und den Zeitpunkt der Testaktivitäten",
+                    "correct": true
+                },
+                {
+                    "text": "Sie überprüft die Wirksamkeit der Regressionstests",
+                    "correct": false
+                },
+                {
+                    "text": "Sie ersetzt die gesamte Testdurchführung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche zusätzlichen Informationen liefert die Norm ISO/IEC/IEEE 29119-2?",
+            "explanation": "Diese Norm enthält weiterführende Informationen über Testprozesse. (1.4_Testaktivitäten_Testmittel_Rollen.md)",
+            "options": [
+                {
+                    "text": "Detaillierte Beschreibungen der Teststufen",
+                    "correct": false
+                },
+                {
+                    "text": "Vorgaben für die Organisation von Reviews",
+                    "correct": false
+                },
+                {
+                    "text": "Weitere Informationen über Testprozesse",
+                    "correct": true
+                },
+                {
+                    "text": "Checklisten für die Abnahmetests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Konsequenz hätte es, wenn wesentliche Testaktivitäten im Testprozess fehlen?",
+            "explanation": "Ohne diese Aktivitäten sinkt die Wahrscheinlichkeit, dass die Testziele erreicht werden können. (1.4_Testaktivitäten_Testmittel_Rollen.md)",
+            "options": [
+                {
+                    "text": "Die Testziele werden mit höherer Wahrscheinlichkeit übertroffen",
+                    "correct": false
+                },
+                {
+                    "text": "Die Wahrscheinlichkeit, die Testziele zu erreichen, sinkt",
+                    "correct": true
+                },
+                {
+                    "text": "Der Testprozess wird automatisch durch Werkzeuge kompensiert",
+                    "correct": false
+                },
+                {
+                    "text": "Die Norm ISO/IEC/IEEE 29119-2 wird nicht mehr anwendbar",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

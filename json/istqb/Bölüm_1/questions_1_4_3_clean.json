@@ -1,0 +1,139 @@
+{
+    "chapter": "1",
+    "subChapter": "1-4-3",
+    "subChapterTitle": "1.4.3 Testmittel",
+    "questions": [
+        {
+            "question": "Welche Arbeitsergebnisse gehören zur Testplanung?",
+            "explanation": "Zu den Ergebnissen der Testplanung zählen u. a. Testkonzept, Testzeitplan, Risikoverzeichnis sowie Eingangskriterien und Endekriterien. (1.4.3_Testmittel.md)",
+            "options": [
+                {
+                    "text": "Testprotokolle und Fehlerberichte",
+                    "correct": false
+                },
+                {
+                    "text": "Testkonzept, Testzeitplan und Risikoverzeichnis",
+                    "correct": true
+                },
+                {
+                    "text": "Testabläufe und Testsuiten",
+                    "correct": false
+                },
+                {
+                    "text": "Maßnahmen zur Verbesserung nachfolgender Projekte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Arbeitsergebnis gehört zur Testüberwachung und Teststeuerung?",
+            "explanation": "Testfortschrittsberichte, Dokumentation der Steuerungsmaßnahmen und Informationen über Risiken sind typische Ergebnisse der Testüberwachung und -steuerung. (1.4.3_Testmittel.md)",
+            "options": [
+                {
+                    "text": "Testfortschrittsberichte",
+                    "correct": true
+                },
+                {
+                    "text": "Überdeckungselemente",
+                    "correct": false
+                },
+                {
+                    "text": "Testabschlussberichte",
+                    "correct": false
+                },
+                {
+                    "text": "Manuelle Testskripte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arbeitsergebnisse entstehen typischerweise bei der Testanalyse?",
+            "explanation": "Zu den Ergebnissen der Testanalyse gehören priorisierte Testbedingungen (z. B. Akzeptanzkriterien) und Fehlerberichte über Fehlerzustände in der Testbasis. (1.4.3_Testmittel.md)",
+            "options": [
+                {
+                    "text": "Testprotokolle",
+                    "correct": false
+                },
+                {
+                    "text": "Priorisierte Testbedingungen und Fehlerberichte",
+                    "correct": true
+                },
+                {
+                    "text": "Testdaten und Testausführungspläne",
+                    "correct": false
+                },
+                {
+                    "text": "Testabschlussberichte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arbeitsergebnisse gehören zum Testentwurf?",
+            "explanation": "Ergebnisse des Testentwurfs sind z. B. priorisierte Testfälle, Test-Chartas, Überdeckungselemente sowie Anforderungen an Testdaten und Testumgebungen. (1.4.3_Testmittel.md)",
+            "options": [
+                {
+                    "text": "Testfortschrittsberichte",
+                    "correct": false
+                },
+                {
+                    "text": "Test-Chartas, Testfälle und Überdeckungselemente",
+                    "correct": true
+                },
+                {
+                    "text": "Änderungsanträge",
+                    "correct": false
+                },
+                {
+                    "text": "Simulatoren und Treiber",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arbeitsergebnisse gehören zur Testrealisierung?",
+            "explanation": "Zur Testrealisierung zählen Testabläufe, manuelle und automatisierte Testskripte, Testsuiten, Testdaten, Testausführungspläne und Bestandteile der Testumgebung (z. B. Treiber, Simulatoren). (1.4.3_Testmittel.md)",
+            "options": [
+                {
+                    "text": "Testabschlussbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Testfortschrittsbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Testabläufe, Skripte, Testsuiten und Testumgebungsbestandteile",
+                    "correct": true
+                },
+                {
+                    "text": "Risikoverzeichnis",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche typischen Ergebnisse entstehen im Rahmen des Testabschlusses?",
+            "explanation": "Beim Testabschluss entstehen u. a. Testabschlussberichte, Lessons Learned, Änderungsanträge und Verbesserungsmaßnahmen für zukünftige Projekte. (1.4.3_Testmittel.md)",
+            "options": [
+                {
+                    "text": "Testabschlussberichte, Lessons Learned und Änderungsanträge",
+                    "correct": true
+                },
+                {
+                    "text": "Testkonzept und Eingangskriterien",
+                    "correct": false
+                },
+                {
+                    "text": "Testbedingungen und Fehlerberichte",
+                    "correct": false
+                },
+                {
+                    "text": "Testprotokolle",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "chapter": "1",
+    "subChapter": "1-1-2",
+    "subChapterTitle": "1.1.2 Testen und Debugging",
+    "questions": [
+        {
+            "question": "Was ist der Hauptunterschied zwischen Testen und Debugging?",
+            "explanation": "Testen deckt Fehlerwirkungen oder Fehlerzustände auf, Debugging hingegen findet, analysiert und beseitigt die Ursachen dieser Fehlerzustände. (1.1.2_Testen_und_Debugging.md)",
+            "options": [
+                {
+                    "text": "Testen ist der Prozess der Fehlersuche, während Debugging der Prozess der Fehlerbehebung ist.",
+                    "correct": true
+                },
+                {
+                    "text": "Beim Testen werden Anforderungen überprüft, während beim Debugging der Entwurf überprüft wird.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ist nur das Ausführen von Software, während Debugging nur die Analyse ist.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ist der Prozess der Fehlervermeidung, Debugging der Prozess der Fehlerbeseitigung.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aktivitäten gehört typischerweise zum Debugging-Prozess nach einem dynamischen Test?",
+            "explanation": "Beim Debugging werden Fehlerwirkungen reproduziert, Fehlerzustände diagnostiziert und anschließend behoben. (1.1.2_Testen_und_Debugging.md)",
+            "options": [
+                {
+                    "text": "Reproduzieren der Fehlerwirkung, Diagnose und Behebung des Fehlerzustands",
+                    "correct": true
+                },
+                {
+                    "text": "Ausführen eines Regressionstests, um sicherzustellen, dass keine neuen Fehler hinzugekommen sind",
+                    "correct": false
+                },
+                {
+                    "text": "Planung von Testzielen und Priorisierung von Testfällen",
+                    "correct": false
+                },
+                {
+                    "text": "Durchführen von Reviews zur Qualitätssteigerung der Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielen Fehlernachtests (Confirmation Tests) im Zusammenhang mit Debugging?",
+            "explanation": "Fehlernachtests prüfen, ob die vorgenommenen Korrekturen den ursprünglich gefundenen Fehlerzustand tatsächlich behoben haben. (1.1.2_Testen_und_Debugging.md)",
+            "options": [
+                {
+                    "text": "Sie überprüfen, ob die Korrektur erfolgreich war und die Fehlerwirkung nicht mehr auftritt.",
+                    "correct": true
+                },
+                {
+                    "text": "Sie stellen sicher, dass keine neuen Fehler in anderen Bereichen aufgetreten sind.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie dienen dazu, die Ursache der Fehlerwirkung zu finden und zu analysieren.",
+                    "correct": false
+                },
+                {
+                    "text": "Sie dienen zur präventiven Vermeidung neuer Fehlerzustände im Code.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist beim Debugging nach einem statischen Test keine Reproduktion einer Fehlerwirkung notwendig?",
+            "explanation": "Statische Tests lösen keine Fehlerwirkungen aus, sondern finden direkt Fehlerzustände. Daher entfällt die Notwendigkeit einer Reproduktion. (1.1.2_Testen_und_Debugging.md)",
+            "options": [
+                {
+                    "text": "Weil statische Tests direkt Fehlerzustände finden, ohne eine Fehlerwirkung auszulösen.",
+                    "correct": true
+                },
+                {
+                    "text": "Weil statische Tests automatisch alle Fehlerwirkungen dokumentieren.",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Debugging nach statischen Tests ausschließlich Regressionstests erfordert.",
+                    "correct": false
+                },
+                {
+                    "text": "Weil statische Tests immer durch dasselbe Team wie die dynamischen Tests durchgeführt werden.",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

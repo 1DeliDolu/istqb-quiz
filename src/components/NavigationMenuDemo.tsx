@@ -30,7 +30,7 @@ export function NavigationMenuDemo() {
                         <div className="w-[800px] gap-3 p-4 overflow-visible min-h-96">
                             <div className="grid grid-cols-2 gap-4 overflow-visible h-full" onMouseLeave={() => setSelectedChapter(null)}>
                                 <div>
-                                    <h3 className="mb-2 text-sm font-semibold text-purple-600">Ana Bölümler</h3>
+                                    <h3 className="mb-2 text-sm font-semibold text-purple-600">Hauptkapitel</h3>
                                     <ul className="space-y-1">
                                         {Object.entries(istqbChapters).map(([key, chapter]) => (
                                             <li key={key}>
@@ -46,7 +46,7 @@ export function NavigationMenuDemo() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h3 className="mb-2 text-sm font-semibold text-purple-600">Alt Bölümler</h3>
+                                    <h3 className="mb-2 text-sm font-semibold text-purple-600">Unterkapitel</h3>
                                     {selectedChapter && istqbChapters[selectedChapter as keyof typeof istqbChapters] ? (
                                         <div className="h-full max-h-96 overflow-y-auto">
                                             <ul className="space-y-1">
@@ -63,7 +63,7 @@ export function NavigationMenuDemo() {
                                             </ul>
                                         </div>
                                     ) : (
-                                        <p className="text-sm text-muted-foreground">Bir ana bölüm seçin</p>
+                                        <p className="text-sm text-muted-foreground">Wählen Sie ein Hauptkapitel</p>
                                     )}
                                 </div>
                             </div>
@@ -76,7 +76,7 @@ export function NavigationMenuDemo() {
                         <div className="w-[800px] gap-3 p-4 overflow-visible min-h-96">
                             <div className="grid grid-cols-2 gap-4 overflow-visible h-full" onMouseLeave={() => setSelectedUdemyChapter(null)}>
                                 <div>
-                                    <h3 className="mb-2 text-sm font-semibold text-blue-600">Udemy Kurs Bölümleri</h3>
+                                    <h3 className="mb-2 text-sm font-semibold text-blue-600">Udemy Kurskapitel</h3>
                                     <ul className="space-y-1">
                                         {Object.entries(udemyChapters).map(([key, chapter]) => (
                                             <li key={key}>
@@ -109,7 +109,7 @@ export function NavigationMenuDemo() {
                                             </ul>
                                         </div>
                                     ) : (
-                                        <p className="text-sm text-muted-foreground">Bir kurs bölümü seçin</p>
+                                        <p className="text-sm text-muted-foreground">Wählen Sie ein Kurskapitel</p>
                                     )}
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ export function NavigationMenuDemo() {
                         <div className="w-[800px] gap-3 p-4 overflow-visible min-h-96">
                             <div className="grid grid-cols-2 gap-4 overflow-visible h-full" onMouseLeave={() => setSelectedFragenChapter(null)}>
                                 <div>
-                                    <h3 className="mb-2 text-sm font-semibold text-green-600">Genel Soru Kategorileri</h3>
+                                    <h3 className="mb-2 text-sm font-semibold text-green-600">Allgemeine Fragenkategorien</h3>
                                     <ul className="space-y-1">
                                         {Object.entries(fragenChapters).map(([key, chapter]) => (
                                             <li key={key}>
@@ -138,7 +138,7 @@ export function NavigationMenuDemo() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h3 className="mb-2 text-sm font-semibold text-green-600">Alt Kategoriler</h3>
+                                    <h3 className="mb-2 text-sm font-semibold text-green-600">Unterkategorien</h3>
                                     {selectedFragenChapter && fragenChapters[selectedFragenChapter as keyof typeof fragenChapters] ? (
                                         <div className="h-full max-h-96 overflow-y-auto">
                                             <ul className="space-y-1">
@@ -155,7 +155,7 @@ export function NavigationMenuDemo() {
                                             </ul>
                                         </div>
                                     ) : (
-                                        <p className="text-sm text-muted-foreground">Bir kategori seçin</p>
+                                        <p className="text-sm text-muted-foreground">Wählen Sie eine Kategorie</p>
                                     )}
                                 </div>
                             </div>
@@ -171,11 +171,11 @@ export function NavigationMenuDemo() {
                                 <div>
                                     <h3 className="mb-3 text-sm font-semibold text-purple-600">ISTQB</h3>
                                     <ul className="space-y-2">
-                                        <ListItem href="/cms/istqb-form" title="Soru Ekle">
-                                            Yeni ISTQB sorusu ekle
+                                        <ListItem href="/cms/istqb-form" title="Frage hinzufügen">
+                                            Neue ISTQB-Frage hinzufügen
                                         </ListItem>
-                                        <ListItem href="/cms/istqb-quiz" title="Soruları Görüntüle">
-                                            ISTQB sorularını görüntüle ve çöz
+                                        <ListItem href="/cms/istqb-quiz" title="Fragen anzeigen">
+                                            ISTQB-Fragen anzeigen und lösen
                                         </ListItem>
                                     </ul>
                                 </div>
@@ -184,11 +184,11 @@ export function NavigationMenuDemo() {
                                 <div>
                                     <h3 className="mb-3 text-sm font-semibold text-blue-600">Udemy</h3>
                                     <ul className="space-y-2">
-                                        <ListItem href="/docs/cms/udemy" title="Soru Ekle">
-                                            Yeni Udemy sorusu ekle
+                                        <ListItem href="/docs/cms/udemy" title="Frage hinzufügen">
+                                            Neue Udemy-Frage hinzufügen
                                         </ListItem>
-                                        <ListItem href="/cms/udemy-quiz" title="Soruları Görüntüle">
-                                            Udemy sorularını görüntüle ve çöz
+                                        <ListItem href="/cms/udemy-quiz" title="Fragen anzeigen">
+                                            Udemy-Fragen anzeigen und lösen
                                         </ListItem>
                                     </ul>
                                 </div>
@@ -197,11 +197,11 @@ export function NavigationMenuDemo() {
                                 <div>
                                     <h3 className="mb-3 text-sm font-semibold text-green-600">Fragen</h3>
                                     <ul className="space-y-2">
-                                        <ListItem href="/docs/cms/fragen" title="Soru Ekle">
-                                            Yeni Fragen sorusu ekle
+                                        <ListItem href="/docs/cms/fragen" title="Frage hinzufügen">
+                                            Neue Fragen-Frage hinzufügen
                                         </ListItem>
-                                        <ListItem href="/cms/fragen-quiz" title="Soruları Görüntüle">
-                                            Fragen sorularını görüntüle ve çöz
+                                        <ListItem href="/cms/fragen-quiz" title="Fragen anzeigen">
+                                            Fragen anzeigen und lösen
                                         </ListItem>
                                     </ul>
                                 </div>
@@ -210,8 +210,8 @@ export function NavigationMenuDemo() {
                             {/* Veri Yönetimi Section */}
                             <div className="border-t pt-4">
                                 <ul className="grid w-[200px] gap-3">
-                                    <ListItem href="/data-management" title="Veri Yönetimi">
-                                        Tüm soruları görüntüle ve JSON'a aktar
+                                    <ListItem href="/data-management" title="Datenverwaltung">
+                                        Alle Fragen anzeigen und als JSON exportieren
                                     </ListItem>
                                 </ul>
                             </div>
@@ -220,7 +220,7 @@ export function NavigationMenuDemo() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <a href="/docs" className={navigationMenuTriggerStyle()}>
-                        Documentation
+                        Dokumentation
                     </a>
                 </NavigationMenuItem>
             </NavigationMenuList>

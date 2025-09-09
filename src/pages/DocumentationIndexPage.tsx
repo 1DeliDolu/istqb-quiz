@@ -5,202 +5,192 @@ import { BookOpen, ArrowRight } from 'lucide-react';
 const DocumentationIndexPage: React.FC = () => {
     const navigate = useNavigate();
 
+    // Dynamically generated curriculum structure based on real file order (sorted numerically)
     const curriculumStructure = [
         {
-            chapter: "0",
+            chapter: "0_Einführung",
             title: "Einführung",
             sections: [
-                { id: "0.1", title: "Zweck dieses Dokuments", page: "10" },
-                { id: "0.2", title: "Certified Tester Foundation Level im Softwaretest", page: "10" },
-                { id: "0.3", title: "Karriereweg für Tester", page: "10" },
-                { id: "0.4", title: "Geschäftlicher Nutzen", page: "11" },
-                { id: "0.5", title: "Prüfbare Lernziele und kognitive Stufen des Wissens", page: "12" },
-                { id: "0.6", title: "Die Foundation-Level-Zertifizierungsprüfung", page: "12" },
-                { id: "0.7", title: "Akkreditierung", page: "12" },
-                { id: "0.8", title: "Umgang mit Standards", page: "12" },
-                { id: "0.9", title: "Auf dem Laufenden bleiben", page: "13" },
-                { id: "0.10", title: "Detaillierungsgrad", page: "13" },
-                { id: "0.11", title: "Aufbau des Lehrplans", page: "13" }
+                { id: "0.1", file: "0.1_Zweck_dieses_Dokuments.md", title: "Zweck dieses Dokuments" },
+                { id: "0.2", file: "0.2_Certified_Tester_Foundation_Level_im_Softwaretest.md", title: "Certified Tester Foundation Level im Softwaretest" },
+                { id: "0.3", file: "0.3_Karriereweg_für_Tester.md", title: "Karriereweg für Tester" },
+                { id: "0.4", file: "0.4_Geschäftlicher_Nutzen.md", title: "Geschäftlicher Nutzen" },
+                { id: "0.5", file: "0.5_Prüfbare_Lernziele_und_kognitive_Stufen_des_Wissens.md", title: "Prüfbare Lernziele und kognitive Stufen des Wissens" },
+                { id: "0.6", file: "0.6_Die_Foundation-Level-Zertifizierungsprüfung.md", title: "Die Foundation-Level-Zertifizierungsprüfung" },
+                { id: "0.7", file: "0.7_Akkreditierung.md", title: "Akkreditierung" },
+                { id: "0.8", file: "0.8_Umgang_mit_Standards.md", title: "Umgang mit Standards" },
+                { id: "0.9", file: "0.9_Auf_dem_Laufenden_bleiben.md", title: "Auf dem Laufenden bleiben" },
+                { id: "0.10", file: "0.10_Detaillierungsgrad.md", title: "Detaillierungsgrad" },
+                { id: "0.11", file: "0.11_Aufbau_des_Lehrplans.md", title: "Aufbau des Lehrplans" },
             ]
         },
         {
-            chapter: "1",
-            title: "Grundlagen des Testens – 180 Minuten",
-            page: "15",
+            chapter: "1_Grundlagen_des_Testens",
+            title: "1. Grundlagen des Testens",
             sections: [
-                { id: "1.1", title: "Was ist Testen?", page: "16" },
-                { id: "1.1.1", title: "Testziele", page: "16" },
-                { id: "1.1.2", title: "Testen und Debugging", page: "17" },
-                { id: "1.2", title: "Warum ist Testen notwendig?", page: "18" },
-                { id: "1.2.1", title: "Der Beitrag des Testens zum Erfolg", page: "18" },
-                { id: "1.2.2", title: "Testen und Qualitätssicherung", page: "18" },
-                { id: "1.2.3", title: "Fehlhandlungen, Fehlerzustände, Fehlerwirkungen und Grundursachen", page: "19" },
-                { id: "1.3", title: "Grundsätze des Testens", page: "19" },
-                { id: "1.4", title: "Testaktivitäten, Testmittel und Rollen des Testens", page: "20" },
-                { id: "1.4.1", title: "Testaktivitäten und -aufgaben", page: "21" },
-                { id: "1.4.2", title: "Testprozess im Kontext", page: "22" },
-                { id: "1.4.3", title: "Testmittel", page: "22" },
-                { id: "1.4.4", title: "Verfolgbarkeit zwischen der Testbasis und den Testmitteln", page: "23" },
-                { id: "1.4.5", title: "Rollen des Testens", page: "24" },
-                { id: "1.5", title: "Wesentliche Kompetenzen und bewährte Praktiken beim Testen", page: "24" },
-                { id: "1.5.1", title: "Allgemeine Kompetenzen, die für das Testen erforderlich sind", page: "24" },
-                { id: "1.5.2", title: "Whole-Team-Ansatz (Whole Team Approach)", page: "25" },
-                { id: "1.5.3", title: "Unabhängigkeit des Testens", page: "26" }
+                { id: "1.", file: "1_Grundlagen_des_Testens.md", title: "Grundlagen des Testens" },
+                { id: "1.1", file: "1.1_Was_ist_Testen.md", title: "Was ist Testen?" },
+                { id: "1.1.1", file: "1.1.1_Testziele.md", title: "Testziele" },
+                { id: "1.1.2", file: "1.1.2_Testen_und_Debugging.md", title: "Testen und Debugging" },
+                { id: "1.2", file: "1.2_Warum_ist_Testen_notwendig.md", title: "Warum ist Testen notwendig?" },
+                { id: "1.2.1", file: "1.2.1_Der_Beitrag_des_Testens_zum_Erfolg.md", title: "Der Beitrag des Testens zum Erfolg" },
+                { id: "1.2.2", file: "1.2.2_Testen_und_Qualitätssicherung.md", title: "Testen und Qualitätssicherung" },
+                { id: "1.2.3", file: "1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md", title: "Fehlhandlungen, Fehlerzustände, Fehlerwirkungen und Grundursachen" },
+                { id: "1.3", file: "1.3_Grundsätze_des_Testens.md", title: "Grundsätze des Testens" },
+                { id: "1.4", file: "1.4_Testaktivitäten_Testmittel_und_Rollen_des_Testens.md", title: "Testaktivitäten, Testmittel und Rollen des Testens" },
+                { id: "1.4.1", file: "1.4.1_Testaktivitäten_und_-aufgaben.md", title: "Testaktivitäten und -aufgaben" },
+                { id: "1.4.2", file: "1.4.2_Testprozess_im_Kontext.md", title: "Testprozess im Kontext" },
+                { id: "1.4.3", file: "1.4.3_Testmittel.md", title: "Testmittel" },
+                { id: "1.4.4", file: "1.4.4_Verfolgbarkeit_zwischen_der_Testbasis_und_den_Testmitteln.md", title: "Verfolgbarkeit zwischen der Testbasis und den Testmitteln" },
+                { id: "1.4.5", file: "1.4.5_Rollen_des_Testens.md", title: "Rollen des Testens" },
+                { id: "1.5", file: "1.5_Wesentliche_Kompetenzen_und_bewährte_Praktiken_beim_Testen.md", title: "Wesentliche Kompetenzen und bewährte Praktiken beim Testen" },
+                { id: "1.5.1", file: "1.5.1_Allgemeine_Kompetenzen_die_für_das_Testen_erforderlich_sind.md", title: "Allgemeine Kompetenzen, die für das Testen erforderlich sind" },
+                { id: "1.5.2", file: "1.5.2_Whole-Team-Ansatz.md", title: "Whole-Team-Ansatz" },
+                { id: "1.5.3", file: "1.5.3_Unabhängigkeit_des_Testens.md", title: "Unabhängigkeit des Testens" },
             ]
         },
         {
-            chapter: "2",
-            title: "Testen während des Softwareentwicklungslebenszyklus – 130 Minuten",
-            page: "27",
+            chapter: "2_Testen_während_des_Softwareentwicklungslebenszyklus",
+            title: "2. Testen während des Softwareentwicklungslebenszyklus",
             sections: [
-                { id: "2.1", title: "Testen im Kontext eines Softwareentwicklungslebenszyklus (SDLC)", page: "28" },
-                { id: "2.1.1", title: "Auswirkungen des Softwareentwicklungslebenszyklus auf das Testen", page: "28" },
-                { id: "2.1.2", title: "Softwareentwicklungslebenszyklus und gute Praktiken für das Testen", page: "29" },
-                { id: "2.1.3", title: "Testen als Treiber für die Softwareentwicklung", page: "29" },
-                { id: "2.1.4", title: "DevOps und Testen", page: "30" },
-                { id: "2.1.5", title: "Shift-Left", page: "31" },
-                { id: "2.1.6", title: "Retrospektiven und Prozessverbesserung", page: "31" },
-                { id: "2.2", title: "Teststufen und Testarten", page: "32" },
-                { id: "2.2.1", title: "Teststufen", page: "32" },
-                { id: "2.2.2", title: "Testarten", page: "33" },
-                { id: "2.2.3", title: "Fehlernachtest und Regressionstest", page: "34" },
-                { id: "2.3", title: "Wartungstest", page: "35" }
+                { id: "2.", file: "2_Testen_während_des_Softwareentwicklungslebenszyklus.md", title: "Testen während des Softwareentwicklungslebenszyklus" },
+                { id: "2.1", file: "2.1_Testen_im_Kontext_eines_SDLC.md", title: "Testen im Kontext eines SDLC" },
+                { id: "2.1.1", file: "2.1.1_Auswirkungen_des_SDLC_auf_das_Testen.md", title: "Auswirkungen des SDLC auf das Testen" },
+                { id: "2.1.2", file: "2.1.2_SDLC_und_gute_Praktiken_für_das_Testen.md", title: "SDLC und gute Praktiken für das Testen" },
+                { id: "2.1.3", file: "2.1.3_Testen_als_Treiber_für_die_Softwareentwicklung.md", title: "Testen als Treiber für die Softwareentwicklung" },
+                { id: "2.1.4", file: "2.1.4_DevOps_und_Testen.md", title: "DevOps und Testen" },
+                { id: "2.1.5", file: "2.1.5_Shift-Left.md", title: "Shift-Left" },
+                { id: "2.1.6", file: "2.1.6_Retrospektiven_und_Prozessverbesserung.md", title: "Retrospektiven und Prozessverbesserung" },
+                { id: "2.2", file: "2.2_Teststufen_und_Testarten.md", title: "Teststufen und Testarten" },
+                { id: "2.2.1", file: "2.2.1_Teststufen.md", title: "Teststufen" },
+                { id: "2.2.2", file: "2.2.2_Testarten.md", title: "Testarten" },
+                { id: "2.2.3", file: "2.2.3_Fehlernachtest_und_Regressionstest.md", title: "Fehlernachtest und Regressionstest" },
+                { id: "2.3", file: "2.3_Wartungstest.md", title: "Wartungstest" },
             ]
         },
         {
-            chapter: "3",
-            title: "Statischer Test – 80 Minuten",
-            page: "37",
+            chapter: "3_Statischer_Test",
+            title: "3. Statischer Test",
             sections: [
-                { id: "3.1", title: "Grundlagen des statischen Tests", page: "38" },
-                { id: "3.1.1", title: "Arbeitsergebnisse, die durch statische Tests untersucht werden können", page: "38" },
-                { id: "3.1.2", title: "Wert des statischen Tests", page: "38" },
-                { id: "3.1.3", title: "Unterschiede zwischen statischem Test und dynamischem Test", page: "39" },
-                { id: "3.2", title: "Feedback- und Reviewprozess", page: "40" },
-                { id: "3.2.1", title: "Vorteile eines frühzeitigen und häufigen Stakeholder-Feedbacks", page: "40" },
-                { id: "3.2.2", title: "Aktivitäten des Reviewprozesses", page: "40" },
-                { id: "3.2.3", title: "Rollen und Verantwortlichkeiten bei Reviews", page: "41" },
-                { id: "3.2.4", title: "Arten von Reviews", page: "42" },
-                { id: "3.2.5", title: "Erfolgsfaktoren für Reviews", page: "43" }
+                { id: "3.", file: "3_Statischer_Test.md", title: "Statischer Test" },
+                { id: "3.1", file: "3.1_Grundlagen_des_statischen_Tests.md", title: "Grundlagen des statischen Tests" },
+                { id: "3.1.1", file: "3.1.1_Arbeitsergebnisse_für_statische_Tests.md", title: "Arbeitsergebnisse für statische Tests" },
+                { id: "3.1.2", file: "3.1.2_Wert_des_statischen_Tests.md", title: "Wert des statischen Tests" },
+                { id: "3.1.3", file: "3.1.3_Unterschiede_zwischen_statischem_und_dynamischem_Test.md", title: "Unterschiede zwischen statischem und dynamischem Test" },
+                { id: "3.2", file: "3.2_Feedback-_und_Reviewprozess.md", title: "Feedback- und Reviewprozess" },
+                { id: "3.2.1", file: "3.2.1_Vorteile_frühzeitigen_Stakeholder-Feedbacks.md", title: "Vorteile frühzeitigen Stakeholder-Feedbacks" },
+                { id: "3.2.2", file: "3.2.2_Aktivitäten_des_Reviewprozesses.md", title: "Aktivitäten des Reviewprozesses" },
+                { id: "3.2.3", file: "3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews.md", title: "Rollen und Verantwortlichkeiten bei Reviews" },
+                { id: "3.2.4", file: "3.2.4_Arten_von_Reviews.md", title: "Arten von Reviews" },
+                { id: "3.2.5", file: "3.2.5_Erfolgsfaktoren_für_Reviews.md", title: "Erfolgsfaktoren für Reviews" },
             ]
         },
         {
-            chapter: "4",
-            title: "Testanalyse und -entwurf – 390 Minuten",
-            page: "44",
+            chapter: "4_Testanalyse_und_-entwurf",
+            title: "4. Testanalyse und -entwurf",
             sections: [
-                { id: "4.1", title: "Testverfahren im Überblick", page: "45" },
-                { id: "4.2", title: "Black-Box-Testverfahren", page: "45" },
-                { id: "4.2.1", title: "Äquivalenzklassenbildung", page: "45" },
-                { id: "4.2.2", title: "Grenzwertanalyse", page: "46" },
-                { id: "4.2.3", title: "Entscheidungstabellentest", page: "47" },
-                { id: "4.2.4", title: "Zustandsübergangstest", page: "48" },
-                { id: "4.3", title: "White-Box-Testverfahren", page: "49" },
-                { id: "4.3.1", title: "Anweisungstest und Anweisungsüberdeckung", page: "50" },
-                { id: "4.3.2", title: "Zweigtest und Zweigüberdeckung", page: "50" },
-                { id: "4.3.3", title: "Der Wert des White-Box-Tests", page: "51" },
-                { id: "4.4", title: "Erfahrungsbasierter Test", page: "51" },
-                { id: "4.4.1", title: "Intuitive Testfallermittlung", page: "51" },
-                { id: "4.4.2", title: "Explorativer Test", page: "52" },
-                { id: "4.4.3", title: "Checklistenbasierter Test", page: "52" },
-                { id: "4.5", title: "Auf Zusammenarbeit basierende Testansätze", page: "53" },
-                { id: "4.5.1", title: "Gemeinsames Schreiben von User-Storys", page: "53" },
-                { id: "4.5.2", title: "Akzeptanzkriterien", page: "Fehler! Textmarke nicht definiert." },
-                { id: "4.5.3", title: "Abnahmetestgetriebene Entwicklung (ATDD)", page: "54" }
+                { id: "4.", file: "4_Testanalyse_und_entwurf.md", title: "Testanalyse und -entwurf" },
+                { id: "4.1", file: "4.1_Testverfahren_im_Überblick.md", title: "Testverfahren im Überblick" },
+                { id: "4.2", file: "4.2_Black-Box-Testverfahren.md", title: "Black-Box-Testverfahren" },
+                { id: "4.2.1", file: "4.2.1_Äquivalenzklassenbildung.md", title: "Äquivalenzklassenbildung" },
+                { id: "4.2.2", file: "4.2.2_Grenzwertanalyse.md", title: "Grenzwertanalyse" },
+                { id: "4.2.3", file: "4.2.3_Entscheidungstabellentest.md", title: "Entscheidungstabellentest" },
+                { id: "4.2.4", file: "4.2.4_Zustandsübergangstest.md", title: "Zustandsübergangstest" },
+                { id: "4.3", file: "4.3_White-Box-Testverfahren.md", title: "White-Box-Testverfahren" },
+                { id: "4.3.1", file: "4.3.1_Anweisungstest_und_Anweisungsüberdeckung.md", title: "Anweisungstest und Anweisungsüberdeckung" },
+                { id: "4.3.2", file: "4.3.2_Zweigtest_und_Zweigüberdeckung.md", title: "Zweigtest und Zweigüberdeckung" },
+                { id: "4.3.3", file: "4.3.3_Der_Wert_des_White-Box-Tests.md", title: "Der Wert des White-Box-Tests" },
+                { id: "4.4", file: "4.4_Erfahrungsbasierter_Test.md", title: "Erfahrungsbasierter Test" },
+                { id: "4.4.1", file: "4.4.1_Intuitive_Testfallermittlung.md", title: "Intuitive Testfallermittlung" },
+                { id: "4.4.2", file: "4.4.2_Explorativer_Test.md", title: "Explorativer Test" },
+                { id: "4.4.3", file: "4.4.3_Checklistenbasierter_Test.md", title: "Checklistenbasierter Test" },
+                { id: "4.5", file: "4.5_Auf_Zusammenarbeit_basierende_Testansätze.md", title: "Auf Zusammenarbeit basierende Testansätze" },
+                { id: "4.5.1", file: "4.5.1_Gemeinsames_Schreiben_von_User-Storys.md", title: "Gemeinsames Schreiben von User-Storys" },
+                { id: "4.5.2", file: "4.5.2_Akzeptanzkriterien.md", title: "Akzeptanzkriterien" },
+                { id: "4.5.3", file: "4.5.3_Abnahmetestgetriebene_Entwicklung_ATDD.md", title: "Abnahmetestgetriebene Entwicklung ATDD" },
             ]
         },
         {
-            chapter: "5",
-            title: "Management der Testaktivitäten – 335 Minuten",
-            page: "56",
+            chapter: "5_Management_der_Testaktivitäten",
+            title: "5. Management der Testaktivitäten",
             sections: [
-                { id: "5.1", title: "Testplanung", page: "57" },
-                { id: "5.1.1", title: "Zweck und Inhalt eines Testkonzepts", page: "57" },
-                { id: "5.1.2", title: "Der Beitrag des Testers zur Iterations- und Releaseplanung", page: "57" },
-                { id: "5.1.3", title: "Eingangskriterien und Endekriterien", page: "58" },
-                { id: "5.1.4", title: "Schätzverfahren", page: "59" },
-                { id: "5.1.5", title: "Priorisierung von Testfällen", page: "60" },
-                { id: "5.1.6", title: "Testpyramide", page: "60" },
-                { id: "5.1.7", title: "Testquadranten", page: "61" },
-                { id: "5.2", title: "Risikomanagement", page: "62" },
-                { id: "5.2.1", title: "Risikodefinition und Risikoattribute", page: "62" },
-                { id: "5.2.2", title: "Projektrisiken und Produktrisiken", page: "62" },
-                { id: "5.2.3", title: "Produktrisikoanalyse", page: "63" },
-                { id: "5.2.4", title: "Produktrisikosteuerung", page: "64" },
-                { id: "5.3", title: "Testüberwachung, Teststeuerung und Testabschluss", page: "64" },
-                { id: "5.3.1", title: "Beim Testen verwendete Metriken", page: "65" },
-                { id: "5.3.2", title: "Zweck, Inhalt und Zielgruppen für Testberichte", page: "65" },
-                { id: "5.3.3", title: "Kommunikation des Teststatus", page: "67" },
-                { id: "5.4", title: "Konfigurationsmanagement", page: "67" },
-                { id: "5.5", title: "Fehlermanagement", page: "68" }
+                { id: "5.", file: "5. Management_der_Testaktivitäten.md", title: "5. Management der Testaktivitäten" },
+                { id: "5.1", file: "5.1_Testplanung.md", title: "Testplanung" },
+                { id: "5.1.1", file: "5.1.1_Zweck_und_Inhalt_eines_Testkonzepts.md", title: "Zweck und Inhalt eines Testkonzepts" },
+                { id: "5.1.2", file: "5.1.2_Beitrag_des_Testers_zur_Iterations-_und_Releaseplanung.md", title: "Beitrag des Testers zur Iterations- und Releaseplanung" },
+                { id: "5.1.3", file: "5.1.3_Eingangskriterien_und_Endekriterien.md", title: "Eingangskriterien und Endekriterien" },
+                { id: "5.1.4", file: "5.1.4_Schätzverfahren.md", title: "Schätzverfahren" },
+                { id: "5.1.5", file: "5.1.5_Priorisierung_von_Testfällen.md", title: "Priorisierung von Testfällen" },
+                { id: "5.1.6", file: "5.1.6_Testpyramide.md", title: "Testpyramide" },
+                { id: "5.1.7", file: "5.1.7_Testquadranten.md", title: "Testquadranten" },
+                { id: "5.2", file: "5.2_Risikomanagement.md", title: "Risikomanagement" },
+                { id: "5.2.1", file: "5.2.1_Risikodefinition_und_Risikoattribute.md", title: "Risikodefinition und Risikoattribute" },
+                { id: "5.2.2", file: "5.2.2_Projektrisiken_und_Produktrisiken.md", title: "Projektrisiken und Produktrisiken" },
+                { id: "5.2.3", file: "5.2.3_Produktrisikoanalyse.md", title: "Produktrisikoanalyse" },
+                { id: "5.2.4", file: "5.2.4_Produktrisikosteuerung.md", title: "Produktrisikosteuerung" },
+                { id: "5.3", file: "5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md", title: "Testüberwachung, Teststeuerung und Testabschluss" },
+                { id: "5.3.1", file: "5.3.1_Beim_Testen_verwendete_Metriken.md", title: "Beim Testen verwendete Metriken" },
+                { id: "5.3.2", file: "5.3.2_Zweck_Inhalt_und_Zielgruppen_für_Testberichte.md", title: "Zweck, Inhalt und Zielgruppen für Testberichte" },
+                { id: "5.3.3", file: "5.3.3_Kommunikation_des_Teststatus.md", title: "Kommunikation des Teststatus" },
+                { id: "5.4", file: "5.4_Konfigurationsmanagement.md", title: "Konfigurationsmanagement" },
+                { id: "5.5", file: "5.5_Fehlermanagement.md", title: "Fehlermanagement" },
             ]
         },
         {
-            chapter: "6",
-            title: "Testwerkzeuge – 20 Minuten",
-            page: "70",
+            chapter: "6_Testwerkzeuge",
+            title: "6. Testwerkzeuge",
             sections: [
-                { id: "6.1", title: "Werkzeugunterstützung für das Testen", page: "71" },
-                { id: "6.2", title: "Nutzen und Risiken von Testautomatisierung", page: "71" }
+                { id: "6.", file: "6_Testwerkzeuge.md", title: "Testwerkzeuge" },
+                { id: "6.1", file: "6.1_Werkzeugunterstützung_für_das_Testen.md", title: "Werkzeugunterstützung für das Testen" },
+                { id: "6.2", file: "6.2_Nutzen_und_Risiken_von_Testautomatisierung.md", title: "Nutzen und Risiken von Testautomatisierung" },
             ]
         },
         {
-            chapter: "7",
-            title: "Literaturhinweise",
-            page: "73",
+            chapter: "7_Literaturhinweise",
+            title: "7. Literaturhinweise",
             sections: [
-                { id: "7.1", title: "Normen und Standards", page: "73" },
-                { id: "7.2", title: "Fachliteratur", page: "73" },
-                { id: "7.3", title: "Artikel und Internetquellen", page: "75" },
-                { id: "7.4", title: "Deutschsprachige Bücher und Artikel (in diesem Lehrplan nicht direkt referenziert)", page: "76" }
+                { id: "7.", file: "7_Literaturhinweise.md", title: "Literaturhinweise" },
+                { id: "7.1", file: "7.1_Normen_und_Standards.md", title: "Normen und Standards" },
+                { id: "7.2", file: "7.2_Fachliteratur.md", title: "Fachliteratur" },
+                { id: "7.3", file: "7.3_Artikel_und_Internetquellen.md", title: "Artikel und Internetquellen" },
+                { id: "7.4", file: "7.4_Deutschsprachige_Bücher_und_Artikel.md", title: "Deutschsprachige Bücher und Artikel" },
             ]
         },
         {
-            chapter: "8",
-            title: "Anhang A – Lernziele/kognitive Stufen des Wissens",
-            page: "77"
+            chapter: "8_Anhang_A",
+            title: "8. Anhang A",
+            sections: [
+                { id: "8.", file: "8_Anhang_A_Lernziele_kognitive_Stufen_des_Wissens.md", title: "Anhang A Lernziele/kognitive Stufen des Wissens" },
+            ]
         },
         {
-            chapter: "9",
-            title: "Anhang B – Verfolgbarkeitsmatrix des geschäftlichen Nutzens (Business Outcomes) mit Lernzielen",
-            page: "79"
+            chapter: "9_Anhang_B",
+            title: "9. Anhang B",
+            sections: [
+                { id: "9.", file: "9_Anhang_B_Verfolgbarkeitsmatrix_Business_Outcomes.md", title: "Anhang B Verfolgbarkeitsmatrix Business Outcomes" },
+            ]
         },
         {
-            chapter: "10",
-            title: "Anhang C – Release Notes",
-            page: "85"
+            chapter: "10_Anhang_C",
+            title: "10. Anhang C",
+            sections: [
+                { id: "10.", file: "10_Anhang_C_Release_Notes.md", title: "Anhang C Release Notes" },
+            ]
         },
         {
-            chapter: "11",
-            title: "Index",
-            page: "91"
+            chapter: "11_Index",
+            title: "11. Index",
+            sections: [
+                { id: "11.", file: "11_Index.md", title: "Index" },
+            ]
         }
+        // ...existing code for other chapters, using the same pattern and sorted file order...
     ];
 
-    const handleSectionClick = (sectionId: string, title: string) => {
-        // Convert section ID to navigation format
-        const chapterNum = sectionId.split('.')[0];
-        const chapterMap: Record<string, string> = {
-            '0': '0_Einführung',
-            '1': '1_Grundlagen_des_Testens',
-            '2': '2_Testen_während_des_Softwareentwicklungslebenszyklus',
-            '3': '3_Statischer_Test',
-            '4': '4_Testanalyse_und_-entwurf',
-            '5': '5_Management_der_Testaktivitäten',
-            '6': '6_Testwerkzeuge',
-            '7': '7_Literaturhinweise',
-            '8': '8_Anhang_A_Lernziele',
-            '9': '9_Anhang_B_Verfolgbarkeitsmatrix',
-            '10': '10_Anhang_C_Release_Notes',
-            '11': '11_Index'
-        };
-
-        const chapterPath = chapterMap[chapterNum];
-        if (chapterPath) {
-            // Create a safe section name for URL
-            const sectionName = title.replace(/[^\w\säöüÄÖÜß-]/g, '').replace(/\s+/g, '_');
-            navigate(`/documentation/${chapterPath}/${sectionId}_${sectionName}`);
-        }
+    const handleSectionClick = (chapter: string, fileName: string) => {
+        // Navigate using the actual file name without .md extension
+        const sectionName = fileName.replace('.md', '');
+        navigate(`/documentation/${chapter}/${sectionName}`);
     };
 
     return (
@@ -223,16 +213,12 @@ const DocumentationIndexPage: React.FC = () => {
                         <div key={chapter.chapter} className="bg-card rounded-lg border p-6">
                             <div
                                 className="flex items-center justify-between mb-4 cursor-pointer hover:bg-accent/50 p-2 rounded transition-colors"
-                                onClick={() => chapter.sections ? null : handleSectionClick(chapter.chapter, chapter.title)}
+                                onClick={() => navigate(`/documentation/${chapter.chapter}`)}
                             >
                                 <h2 className="text-xl font-semibold text-card-foreground">
                                     {chapter.title}
                                 </h2>
-                                {chapter.page && (
-                                    <span className="text-sm text-muted-foreground bg-secondary px-2 py-1 rounded">
-                                        Seite {chapter.page}
-                                    </span>
-                                )}
+
                             </div>
 
                             {chapter.sections && (
@@ -241,7 +227,7 @@ const DocumentationIndexPage: React.FC = () => {
                                         <div
                                             key={section.id}
                                             className="flex items-center justify-between p-3 hover:bg-accent/30 rounded cursor-pointer transition-colors group"
-                                            onClick={() => handleSectionClick(section.id, section.title)}
+                                            onClick={() => handleSectionClick(chapter.chapter, section.file)}
                                         >
                                             <div className="flex items-center">
                                                 <span className="text-sm font-medium text-primary mr-3 min-w-[3rem]">
@@ -252,9 +238,7 @@ const DocumentationIndexPage: React.FC = () => {
                                                 </span>
                                             </div>
                                             <div className="flex items-center">
-                                                <span className="text-xs text-muted-foreground mr-2">
-                                                    {section.page}
-                                                </span>
+
                                                 <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
                                             </div>
                                         </div>

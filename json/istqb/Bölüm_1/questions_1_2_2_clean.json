@@ -1,0 +1,95 @@
+{
+    "chapter": "1",
+    "subChapter": "1-2-2",
+    "subChapterTitle": "1.2.2 Testen und Qualitätssicherung",
+    "questions": [
+        {
+            "question": "Worin besteht der wesentliche Unterschied zwischen Testen und Qualitätssicherung?",
+            "explanation": "Testen ist ein produktorientierter, korrigierender Ansatz, während Qualitätssicherung ein prozessorientierter, präventiver Ansatz ist. (1.2.2_Testen_und_Qualitätssicherung.md) – Original: 'Testen ist ein produktorientierter, korrigierender Ansatz... Qualitätssicherung ist ein prozessorientierter, präventiver Ansatz.'",
+            "options": [
+                {
+                    "text": "Testen ist präventiv, QS korrigierend",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ist produktorientiert, QS prozessorientiert",
+                    "correct": true
+                },
+                {
+                    "text": "Beide sind identische Aktivitäten",
+                    "correct": false
+                },
+                {
+                    "text": "Testen liegt in der Verantwortung aller, QS nur beim Testteam",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt die Rolle von Testergebnissen in Testen und Qualitätssicherung AM BESTEN?",
+            "explanation": "Testergebnisse werden beim Testen zur Behebung von Fehlerzuständen und bei der QS zur Bewertung der Prozessqualität genutzt. (1.2.2_Testen_und_Qualitätssicherung.md) – Original: 'Beim Testen werden sie zur Behebung von Fehlerzuständen verwendet, während sie in der Qualitätssicherung Rückmeldungen darüber liefern, wie gut die Entwicklungs- und Testprozesse funktionieren.'",
+            "options": [
+                {
+                    "text": "Testergebnisse sind nur für QS relevant",
+                    "correct": false
+                },
+                {
+                    "text": "Testergebnisse werden sowohl zur Fehlerbehebung als auch zur Prozessbewertung genutzt",
+                    "correct": true
+                },
+                {
+                    "text": "Testergebnisse spielen in QS keine Rolle",
+                    "correct": false
+                },
+                {
+                    "text": "Testergebnisse dienen nur der Validierung, nicht der QS",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt Testen im Kontext der Qualitätssteuerung?",
+            "explanation": "Testen ist eine der wichtigsten Formen der Qualitätssteuerung, andere sind formale Methoden, Simulation und Prototyping. (1.2.2_Testen_und_Qualitätssicherung.md) – Original: 'Testen ist eine der wichtigsten Formen der Qualitätssteuerung, andere sind formale Methoden... Simulation und Prototyping.'",
+            "options": [
+                {
+                    "text": "Testen ersetzt alle anderen Formen der Qualitätssteuerung",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ist eine der wichtigsten Formen der Qualitätssteuerung",
+                    "correct": true
+                },
+                {
+                    "text": "Testen ist unabhängig von der Qualitätssteuerung",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ist nur im agilen Umfeld relevant",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wer trägt die Verantwortung für die Qualitätssicherung?",
+            "explanation": "Qualitätssicherung liegt in der Verantwortung aller Projektbeteiligten. (1.2.2_Testen_und_Qualitätssicherung.md) – Original: 'Qualitätssicherung bezieht sich sowohl auf den Entwicklungs- als auch auf den Testprozess und liegt in der Verantwortung aller Projektbeteiligten.'",
+            "options": [
+                {
+                    "text": "Nur das Testteam",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Projektbeteiligten",
+                    "correct": true
+                },
+                {
+                    "text": "Nur das Management",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

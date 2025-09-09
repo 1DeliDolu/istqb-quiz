@@ -26,6 +26,7 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
             { file: '0.11_Aufbau_des_Lehrplans.md', title: '0.11 Aufbau des Lehrplans' },
         ],
         '1_Grundlagen_des_Testens': [
+            { file: '1_Grundlagen_des_Testens.md', title: '1. Grundlagen des Testens' },
             { file: '1.1_Was_ist_Testen.md', title: '1.1 Was ist Testen?' },
             { file: '1.1.1_Testziele.md', title: '1.1.1 Testziele' },
             { file: '1.1.2_Testen_und_Debugging.md', title: '1.1.2 Testen und Debugging' },
@@ -46,6 +47,7 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
             { file: '1.5.3_Unabhängigkeit_des_Testens.md', title: '1.5.3 Unabhängigkeit des Testens' },
         ],
         '2_Testen_während_des_Softwareentwicklungslebenszyklus': [
+            { file: '2_Testen_während_des_Softwareentwicklungslebenszyklus.md', title: '2. Testen während des Softwareentwicklungslebenszyklus' },
             { file: '2.1_Testen_im_Kontext_eines_SDLC.md', title: '2.1 Testen im Kontext eines SDLC' },
             { file: '2.1.1_Auswirkungen_des_SDLC_auf_das_Testen.md', title: '2.1.1 Auswirkungen des SDLC auf das Testen' },
             { file: '2.1.2_SDLC_und_gute_Praktiken_für_das_Testen.md', title: '2.1.2 SDLC und gute Praktiken für das Testen' },
@@ -60,6 +62,7 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
             { file: '2.3_Wartungstest.md', title: '2.3 Wartungstest' },
         ],
         '3_Statischer_Test': [
+            { file: '3_Statischer_Test.md', title: '3. Statischer Test' },
             { file: '3.1_Grundlagen_des_statischen_Tests.md', title: '3.1 Grundlagen des statischen Tests' },
             { file: '3.1.1_Arbeitsergebnisse_für_statische_Tests.md', title: '3.1.1 Arbeitsergebnisse für statische Tests' },
             { file: '3.1.2_Wert_des_statischen_Tests.md', title: '3.1.2 Wert des statischen Tests' },
@@ -72,6 +75,7 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
             { file: '3.2.5_Erfolgsfaktoren_für_Reviews.md', title: '3.2.5 Erfolgsfaktoren für Reviews' },
         ],
         '4_Testanalyse_und_-entwurf': [
+            { file: '4_Testanalyse_und_entwurf.md', title: '4. Testanalyse und -entwurf' },
             { file: '4.1_Testverfahren_im_Überblick.md', title: '4.1 Testverfahren im Überblick' },
             { file: '4.2.1_Äquivalenzklassenbildung.md', title: '4.2.1 Äquivalenzklassenbildung' },
             { file: '4.2.2_Grenzwertanalyse.md', title: '4.2.2 Grenzwertanalyse' },
@@ -92,6 +96,8 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
             { file: '4.5_Auf_Zusammenarbeit_basierende_Testansätze.md', title: '4.5 Auf Zusammenarbeit basierende Testansätze' },
         ],
         '5_Management_der_Testaktivitäten': [
+            { file: '5. Management_der_Testaktivitäten.md', title: '5. Management der Testaktivitäten' },
+            { file: '5.1_Testplanung.md', title: '5.1 Testplanung' },
             { file: '5.1.1_Zweck_und_Inhalt_eines_Testkonzepts.md', title: '5.1.1 Zweck und Inhalt eines Testkonzepts' },
             { file: '5.1.2_Beitrag_des_Testers_zur_Iterations-_und_Releaseplanung.md', title: '5.1.2 Beitrag des Testers zur Iterations- und Releaseplanung' },
             { file: '5.1.3_Eingangskriterien_und_Endekriterien.md', title: '5.1.3 Eingangskriterien und Endekriterien' },
@@ -99,7 +105,7 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
             { file: '5.1.5_Priorisierung_von_Testfällen.md', title: '5.1.5 Priorisierung von Testfällen' },
             { file: '5.1.6_Testpyramide.md', title: '5.1.6 Testpyramide' },
             { file: '5.1.7_Testquadranten.md', title: '5.1.7 Testquadranten' },
-            { file: '5.1_Testplanung.md', title: '5.1 Testplanung' },
+            { file: '5.2_Risikomanagement.md', title: '5.2 Risikomanagement' },
             { file: '5.2.1_Risikodefinition_und_Risikoattribute.md', title: '5.2.1 Risikodefinition und Risikoattribute' },
             { file: '5.2.2_Projektrisiken_und_Produktrisiken.md', title: '5.2.2 Projektrisiken und Produktrisiken' },
             { file: '5.2.3_Produktrisikoanalyse.md', title: '5.2.3 Produktrisikoanalyse' },
@@ -113,15 +119,16 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
             { file: '5.5_Fehlermanagement.md', title: '5.5 Fehlermanagement' },
         ],
         '6_Testwerkzeuge': [
+            { file: '6_Testwerkzeuge.md', title: '6. Testwerkzeuge' },
             { file: '6.1_Werkzeugunterstützung_für_das_Testen.md', title: '6.1 Werkzeugunterstützung für das Testen' },
             { file: '6.2_Nutzen_und_Risiken_von_Testautomatisierung.md', title: '6.2 Nutzen und Risiken von Testautomatisierung' },
         ],
         '7_Literaturhinweise': [
+            { file: '7_Literaturhinweise.md', title: '7. Literaturhinweise' },
             { file: '7.1_Normen_und_Standards.md', title: '7.1 Normen und Standards' },
             { file: '7.2_Fachliteratur.md', title: '7.2 Fachliteratur' },
             { file: '7.3_Artikel_und_Internetquellen.md', title: '7.3 Artikel und Internetquellen' },
             { file: '7.4_Deutschsprachige_Bücher_und_Artikel.md', title: '7.4 Deutschsprachige Bücher und Artikel' },
-            { file: '7_Literaturhinweise.md', title: '7 Literaturhinweise' },
         ],
         '8_Anhang_A': [
             { file: '8_Anhang_A_Lernziele_kognitive_Stufen_des_Wissens.md', title: '8 Anhang A Lernziele/kognitive Stufen des Wissens' },

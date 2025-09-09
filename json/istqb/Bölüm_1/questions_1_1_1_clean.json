@@ -1,0 +1,337 @@
+{
+    "chapter": "1",
+    "subChapter": "1-1-1",
+    "subChapterTitle": "1.1.1 Testziele",
+    "questions": [
+        {
+            "question": "Welches der folgenden Ziele beschreibt ein erreichbares Testziel?",
+            "explanation": "Testen kann Risiken verringern und Vertrauen in die Qualität aufbauen, aber niemals die Abwesenheit von Fehlern beweisen (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Nachweisen, dass ein System keine Fehlerzustände mehr hat",
+                    "correct": false
+                },
+                {
+                    "text": "Nachweisen, dass es nach Inbetriebnahme keine Fehlerwirkungen geben wird",
+                    "correct": false
+                },
+                {
+                    "text": "Die Risikostufe verringern und Vertrauen in die Qualität aufbauen",
+                    "correct": true
+                },
+                {
+                    "text": "Beweisen, dass alle Eingabekombinationen getestet wurden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Testziel ist ein Beispiel für Validierung?",
+            "explanation": "Validierung prüft, ob das System die Bedürfnisse der Benutzer erfüllt (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Prüfen, ob spezifizierte Anforderungen erfüllt sind",
+                    "correct": false
+                },
+                {
+                    "text": "Prüfen, ob das System in der Betriebsumgebung wie erwartet funktioniert",
+                    "correct": true
+                },
+                {
+                    "text": "Prüfen, ob das System gesetzlichen Anforderungen entspricht",
+                    "correct": false
+                },
+                {
+                    "text": "Prüfen, ob alle Testfälle automatisiert wurden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel beschreibt Verifikation im Testen?",
+            "explanation": "Verifikation bedeutet, ob das System die spezifizierten Anforderungen erfüllt (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Prüfen, ob das System die Benutzerbedürfnisse erfüllt",
+                    "correct": false
+                },
+                {
+                    "text": "Prüfen, ob das System die spezifizierten Anforderungen erfüllt",
+                    "correct": true
+                },
+                {
+                    "text": "Prüfen, ob Stakeholder fundierte Entscheidungen treffen können",
+                    "correct": false
+                },
+                {
+                    "text": "Prüfen, ob das Projektbudget eingehalten wird",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Testziel unterstützt Stakeholder bei Entscheidungen?",
+            "explanation": "Ein Testziel ist, Informationen bereitzustellen, damit Stakeholder fundierte Entscheidungen treffen können (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Die Testautomatisierung vollständig abschließen",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholdern Informationen zur Verfügung stellen",
+                    "correct": true
+                },
+                {
+                    "text": "Alle Codezeilen abdecken",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler vollständig vermeiden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches der folgenden Ziele trägt am besten zur Risikominimierung bei?",
+            "explanation": "Das Finden von Fehlerzuständen verringert die Wahrscheinlichkeit schwerwiegender Fehlerwirkungen im Betrieb (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Evaluieren von Arbeitsergebnissen",
+                    "correct": false
+                },
+                {
+                    "text": "Finden von Fehlerzuständen",
+                    "correct": true
+                },
+                {
+                    "text": "Aufbau der Testumgebung",
+                    "correct": false
+                },
+                {
+                    "text": "Verfassen eines Testabschlussberichts",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel des Testens unterstützt die Einhaltung rechtlicher Vorschriften?",
+            "explanation": "Ein Testziel ist, die Konformität mit vertraglichen, rechtlichen und regulatorischen Anforderungen zu überprüfen (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Stakeholder mit Testmetriken versorgen",
+                    "correct": false
+                },
+                {
+                    "text": "Verifizieren der Erfüllung regulatorischer Anforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Validieren der Benutzerbedürfnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Verkürzen der Testzeit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Testziel prüft die Qualität von Anforderungen und Designs?",
+            "explanation": "Ein Ziel ist das Evaluieren von Arbeitsergebnissen wie Anforderungen, User-Stories, Entwürfe und Code (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Evaluieren von Arbeitsergebnissen",
+                    "correct": true
+                },
+                {
+                    "text": "Testdurchführung mit hoher Überdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder-Feedback dokumentieren",
+                    "correct": false
+                },
+                {
+                    "text": "Testumgebungen automatisieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel stellt sicher, dass die Abdeckung ausreichend ist?",
+            "explanation": "Ein Testziel ist das Sicherstellen der erforderlichen Überdeckung (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Stakeholder-Zufriedenheit sicherstellen",
+                    "correct": false
+                },
+                {
+                    "text": "Die erforderliche Testüberdeckung sicherstellen",
+                    "correct": true
+                },
+                {
+                    "text": "Entwicklungsprozesse beschleunigen",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Reviews automatisieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel stärkt das Vertrauen in das Testobjekt?",
+            "explanation": "Ein Testziel ist der Aufbau von Vertrauen in die Qualität des Testobjekts (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Den Testabschlussbericht erstellen",
+                    "correct": false
+                },
+                {
+                    "text": "Das Vertrauen in die Qualität aufbauen",
+                    "correct": true
+                },
+                {
+                    "text": "Alle Tests parallel ausführen",
+                    "correct": false
+                },
+                {
+                    "text": "Das Budget überwachen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel beschreibt den Zusammenhang von Testen und Qualität?",
+            "explanation": "Testen trägt dazu bei, das Risiko unzureichender Qualität zu verringern (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Risiko einer unzureichenden Qualität verringern",
+                    "correct": true
+                },
+                {
+                    "text": "Alle Funktionen automatisch implementieren",
+                    "correct": false
+                },
+                {
+                    "text": "Testdokumentation vollständig vermeiden",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Regressionstests durchführen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel beschreibt die Nutzung von Testergebnissen für Stakeholder?",
+            "explanation": "Testergebnisse sollen Informationen für fundierte Entscheidungen der Stakeholder bereitstellen (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Fehler vollständig beheben",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholder mit Informationen versorgen",
+                    "correct": true
+                },
+                {
+                    "text": "Automatisierung implementieren",
+                    "correct": false
+                },
+                {
+                    "text": "Projektziele neu definieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel unterstützt die Vollständigkeit des Systems aus Sicht der Nutzer?",
+            "explanation": "Ein Testziel ist die Validierung, ob das System vollständig ist und wie erwartet funktioniert (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Prüfen, ob die Anforderungen erfüllt sind",
+                    "correct": false
+                },
+                {
+                    "text": "Prüfen, ob das System wie erwartet funktioniert",
+                    "correct": true
+                },
+                {
+                    "text": "Prüfen, ob alle Testfälle dokumentiert wurden",
+                    "correct": false
+                },
+                {
+                    "text": "Prüfen, ob Entwickler ihre Aufgaben abgeschlossen haben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel bezieht sich auf die Bewertung von Code?",
+            "explanation": "Ein typisches Ziel ist das Evaluieren von Arbeitsergebnissen, wozu auch Code gehört (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Den Code evaluieren",
+                    "correct": true
+                },
+                {
+                    "text": "Den Code nur debuggen",
+                    "correct": false
+                },
+                {
+                    "text": "Den Code automatisch deployen",
+                    "correct": false
+                },
+                {
+                    "text": "Den Code ausschließlich dokumentieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel unterstützt die gesetzliche Konformität?",
+            "explanation": "Ein Ziel des Testens ist, vertragliche, rechtliche und regulatorische Anforderungen zu prüfen (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Testumgebung validieren",
+                    "correct": false
+                },
+                {
+                    "text": "Vertragliche und regulatorische Anforderungen verifizieren",
+                    "correct": true
+                },
+                {
+                    "text": "Testautomatisierung implementieren",
+                    "correct": false
+                },
+                {
+                    "text": "Projektziele priorisieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel dient primär der Informationsbereitstellung?",
+            "explanation": "Ein Testziel ist, Stakeholdern Informationen zu liefern, um Entscheidungen zu treffen (1.1.1_Testziele.md).",
+            "options": [
+                {
+                    "text": "Stakeholdern Informationen liefern",
+                    "correct": true
+                },
+                {
+                    "text": "Stakeholdern alle Fehler nachweisen",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholdern die Verantwortung übertragen",
+                    "correct": false
+                },
+                {
+                    "text": "Stakeholdern die Kosten garantieren",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

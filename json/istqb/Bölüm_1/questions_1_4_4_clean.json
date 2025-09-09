@@ -1,0 +1,117 @@
+{
+    "chapter": "1",
+    "subChapter": "1-4-4",
+    "subChapterTitle": "1.4.4 Verfolgbarkeit zwischen der Testbasis und den Testmitteln",
+    "questions": [
+        {
+            "question": "Warum ist die Verfolgbarkeit zwischen Testbasis und Testmitteln wichtig?",
+            "explanation": "Sie ermöglicht eine effektive Testüberwachung und Teststeuerung, indem Überdeckung, Testergebnisse und Fehlerzustände nachvollzogen werden können. (1.4.4_Verfolgbarkeit.md)",
+            "options": [
+                {
+                    "text": "Weil sie eine vollständige Automatisierung aller Tests garantiert",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie die Bewertung der Überdeckung und die Steuerung des Testprozesses unterstützt",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie den Bedarf an Testplanung eliminiert",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie Debugging überflüssig macht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Information liefert die Verfolgbarkeit von Testergebnissen zu Risiken?",
+            "explanation": "Sie ermöglicht die Bewertung des Restrisikos eines Testobjekts. (1.4.4_Verfolgbarkeit.md)",
+            "options": [
+                {
+                    "text": "Ob die Anforderungen überdeckt sind",
+                    "correct": false
+                },
+                {
+                    "text": "Das Ausmaß des Restrisikos eines Testobjekts",
+                    "correct": true
+                },
+                {
+                    "text": "Welche Tester Fehler mit dem höchsten Schweregrad gefunden haben",
+                    "correct": false
+                },
+                {
+                    "text": "Ob alle Regressionstests erfolgreich waren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil ergibt sich aus der Verfolgbarkeit für Änderungsmanagement und Audits?",
+            "explanation": "Sie erleichtert die Analyse der Auswirkungen von Änderungen und unterstützt Audits sowie IT-Governance-Anforderungen. (1.4.4_Verfolgbarkeit.md)",
+            "options": [
+                {
+                    "text": "Erstellung von neuen Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Erleichterte Änderungsanalyse und Auditunterstützung",
+                    "correct": true
+                },
+                {
+                    "text": "Automatische Generierung von Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Erhöhung der Testgeschwindigkeit ohne zusätzlichen Aufwand",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie kann Verfolgbarkeit Stakeholdern helfen?",
+            "explanation": "Sie erleichtert das Verständnis, indem der Status von Anforderungen und Testbasisbestandteilen klar dargestellt wird. (1.4.4_Verfolgbarkeit.md)",
+            "options": [
+                {
+                    "text": "Indem sie ausschließlich technische Details der Testautomatisierung zeigt",
+                    "correct": false
+                },
+                {
+                    "text": "Indem sie den Stakeholdern die technischen Aspekte des Testens verständlich vermittelt",
+                    "correct": true
+                },
+                {
+                    "text": "Indem sie die Fehlerursachen automatisch diagnostiziert",
+                    "correct": false
+                },
+                {
+                    "text": "Indem sie Regressionstests ersetzt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche zusätzlichen Erkenntnisse liefert eine gute Verfolgbarkeit neben der Überdeckung?",
+            "explanation": "Sie unterstützt die Bewertung von Produktqualität, Prozessfähigkeit und Projektfortschritt im Vergleich zu den Unternehmenszielen. (1.4.4_Verfolgbarkeit.md)",
+            "options": [
+                {
+                    "text": "Produktqualität, Prozessfähigkeit und Projektfortschritt",
+                    "correct": true
+                },
+                {
+                    "text": "Ausschließlich die Fehlerdichte im Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Anzahl der Regressionstests",
+                    "correct": false
+                },
+                {
+                    "text": "Den Bedarf an zusätzlichen Entwicklern im Projekt",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

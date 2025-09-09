@@ -1,0 +1,117 @@
+{
+    "chapter": "1",
+    "subChapter": "1-4-5",
+    "subChapterTitle": "1.4.5 Rollen des Testens",
+    "questions": [
+        {
+            "question": "Welche Hauptrollen im Testen werden im Lehrplan beschrieben?",
+            "explanation": "Es gibt zwei Hauptrollen: die Rolle des Testmanagements und die Rolle des Testens. (1.4.5_Rollen_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Rolle des Testmanagements und Rolle des Testens",
+                    "correct": true
+                },
+                {
+                    "text": "Rolle des Testmanagements und Rolle der Entwicklung",
+                    "correct": false
+                },
+                {
+                    "text": "Rolle des Testdesigns und Rolle des Testabschlusses",
+                    "correct": false
+                },
+                {
+                    "text": "Rolle der Stakeholder und Rolle der Entwickler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Auf welche Aktivitäten konzentriert sich die Rolle des Testmanagements?",
+            "explanation": "Das Testmanagement fokussiert auf Testplanung, Testüberwachung, Teststeuerung und Testabschluss. (1.4.5_Rollen_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Testanalyse, Testentwurf, Testrealisierung und Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Testplanung, Testüberwachung, Teststeuerung und Testabschluss",
+                    "correct": true
+                },
+                {
+                    "text": "Debugging und Wartungstests",
+                    "correct": false
+                },
+                {
+                    "text": "Automatisierung und Risikomanagement",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivitäten sind der Rolle des Testens hauptsächlich zugeordnet?",
+            "explanation": "Die Rolle des Testens umfasst Testanalyse, Testentwurf, Testrealisierung und Testdurchführung. (1.4.5_Rollen_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Testabschluss und Testüberwachung",
+                    "correct": false
+                },
+                {
+                    "text": "Testentwurf, Testdurchführung, Testanalyse und Testrealisierung",
+                    "correct": true
+                },
+                {
+                    "text": "Projektplanung und Stakeholder-Kommunikation",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerbehebung im Debugging",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wirkt sich der Kontext auf die Rolle des Testmanagements aus?",
+            "explanation": "Die Ausgestaltung hängt vom Projekt- und Produktkontext ab; im agilen Umfeld können Teile der Aufgaben vom Team übernommen werden. (1.4.5_Rollen_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Im agilen Umfeld werden alle Aufgaben vollständig abgeschafft",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aufgaben können je nach Kontext vom Team oder von Testmanagern übernommen werden",
+                    "correct": true
+                },
+                {
+                    "text": "Der Kontext beeinflusst die Rolle des Testens, nicht aber das Testmanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Der Kontext spielt für Rollen im Testen keine Rolle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage zur Kombination der Rollen ist korrekt?",
+            "explanation": "Eine Person kann gleichzeitig die Rolle des Testens und die des Testmanagements übernehmen. (1.4.5_Rollen_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Die Rollen müssen immer strikt voneinander getrennt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Person kann beide Rollen gleichzeitig übernehmen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Testmanager dürfen beide Rollen kombinieren",
+                    "correct": false
+                },
+                {
+                    "text": "Die Kombination ist nur in Großprojekten erlaubt",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

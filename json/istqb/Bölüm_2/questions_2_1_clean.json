@@ -1,0 +1,95 @@
+{
+    "chapter": "2",
+    "subChapter": "2-1",
+    "subChapterTitle": "2.1 Testen im Kontext eines Softwareentwicklungslebenszyklus (SDLC)",
+    "questions": [
+        {
+            "question": "Welches der folgenden Modelle gehört zu den sequentiellen SDLC-Modellen?",
+            "explanation": "Das Wasserfallmodell und das V-Modell sind klassische Beispiele für sequenzielle Entwicklungsmodelle. (2.1_Testen_im_Kontext_eines_Softwareentwicklungslebenszyklus.md)",
+            "options": [
+                {
+                    "text": "V-Modell",
+                    "correct": true
+                },
+                {
+                    "text": "Spiralmodell",
+                    "correct": false
+                },
+                {
+                    "text": "Prototyping",
+                    "correct": false
+                },
+                {
+                    "text": "Unified Process",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt ein iteratives Entwicklungsmodell?",
+            "explanation": "Iterative Modelle wie Spiralmodell oder Prototyping erlauben eine wiederholte Verfeinerung durch mehrere Zyklen. (2.1_Testen_im_Kontext_eines_Softwareentwicklungslebenszyklus.md)",
+            "options": [
+                {
+                    "text": "Es wird in klar getrennten Phasen ohne Wiederholung durchgeführt.",
+                    "correct": false
+                },
+                {
+                    "text": "Es basiert auf kleinen Zyklen, die mehrfach durchlaufen werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Es umfasst ausschließlich Wartungsaktivitäten.",
+                    "correct": false
+                },
+                {
+                    "text": "Es setzt auf vollständige Spezifikationen vor dem Testbeginn.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Merkmal von inkrementellen Entwicklungsmodellen wie dem Unified Process?",
+            "explanation": "Inkrementelle Modelle liefern schrittweise lauffähige Software, wobei jedes Inkrement einen Teil des Gesamtsystems darstellt. (2.1_Testen_im_Kontext_eines_Softwareentwicklungslebenszyklus.md)",
+            "options": [
+                {
+                    "text": "Das System wird erst am Ende in einem Schritt geliefert.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Entwicklung erfolgt schrittweise mit lauffähigen Teilprodukten.",
+                    "correct": true
+                },
+                {
+                    "text": "Nur das Design wird wiederholt, die Implementierung erfolgt einmalig.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Tests werden ausschließlich nach der Endlieferung durchgeführt.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Praktiken ist KEIN Beispiel für eine detaillierte Softwareentwicklungsmethode oder agile Praxis?",
+            "explanation": "Zu den Beispielen gehören ATDD, BDD, DDD, XP, FDD, Kanban, Lean IT, Scrum und TDD. (2.1_Testen_im_Kontext_eines_Softwareentwicklungslebenszyklus.md)",
+            "options": [
+                {
+                    "text": "Acceptance Test-Driven Development (ATDD)",
+                    "correct": false
+                },
+                {
+                    "text": "Behavior-Driven Development (BDD)",
+                    "correct": false
+                },
+                {
+                    "text": "Domain-Driven Design (DDD)",
+                    "correct": false
+                },
+                {
+                    "text": "Wasserfallmodell",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

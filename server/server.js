@@ -50,6 +50,30 @@ async function startServer() {
   }
 }
 
+// Veritabanı bağlantısını test et
+async function testConnection() {
+  try {
+    await db.query("SELECT 1");
+    console.log("✅ MySQL veritabanı bağlantısı başarılı");
+    return true;
+  } catch (error) {
+    console.error("❌ MySQL bağlantı hatası:", error.message);
+    return false;
+  }
+}
+
+// Veritabanı şemasını initialize et
+async function initializeDatabase() {
+  try {
+    console.log("🔧 Veritabanı şeması kontrol ediliyor...");
+    // Bu fonksiyon şimdilik boş - gerekirse schema kontrolü eklenebilir
+    return true;
+  } catch (error) {
+    console.error("❌ Veritabanı initialization hatası:", error);
+    return false;
+  }
+}
+
 // Health check
 app.get("/api/health", async (req, res) => {
   try {
@@ -123,31 +147,38 @@ app.get("/api/questions/:chapter", async (req, res) => {
 
     const questions = await db.query(sql, params);
 
-    // Sonuçları frontend formatına dönüştür
-    const formattedQuestions = questions.map((q) => {
-      let options = [];
-      let correctOption = null;
+    // Sonuçları frontend formatına dönüştür ve boş soruları filtrele
+    const formattedQuestions = questions
+      .filter((q) => q.question && q.question.trim() !== "") // Boş soruları filtrele
+      .map((q) => {
+        let options = [];
+        let correctOption = null;
 
-      try {
-        if (q.options && q.options.trim()) {
-          options = JSON.parse(`[${q.options}]`);
-          correctOption = options.find((opt) => opt.isCorrect);
+        try {
+          if (q.options && q.options.trim()) {
+            options = JSON.parse(`[${q.options}]`);
+            correctOption = options.find((opt) => opt.isCorrect);
+          }
+        } catch (error) {
+          console.error(
+            `❌ JSON parse hatası soru ${q.id} için:`,
+            error.message
+          );
+          console.error(`Problematik options verisi:`, q.options);
+          options = [];
         }
-      } catch (error) {
-        console.error(`❌ JSON parse hatası soru ${q.id} için:`, error.message);
-        console.error(`Problematik options verisi:`, q.options);
-        options = [];
-      }
 
-      return {
-        id: q.id,
-        question: q.question,
-        options: options.map((opt) => opt.text || opt),
-        correctAnswer: correctOption ? correctOption.text || correctOption : "",
-        explanation: q.explanation || "",
-        subChapter: q.subChapter || "",
-      };
-    });
+        return {
+          id: q.id,
+          question: q.question,
+          options: options.map((opt) => opt.text || opt),
+          correctAnswer: correctOption
+            ? correctOption.text || correctOption
+            : "",
+          explanation: q.explanation || "",
+          subChapter: q.subChapter || "",
+        };
+      });
 
     console.log(
       `📚 ${chapter} bölümü${subChapter ? ` (${subChapter})` : ""} için ${
@@ -298,9 +329,10 @@ app.delete("/api/questions/:chapter", async (req, res) => {
     );
 
     // Sonra questions'ı sil
-    const result = await db.query("DELETE FROM questions WHERE chapter_id = ?", [
-      chapter,
-    ]);
+    const result = await db.query(
+      "DELETE FROM questions WHERE chapter_id = ?",
+      [chapter]
+    );
 
     console.log(
       `🗑️ ${chapter} bölümündeki ${result.affectedRows} soru silindi`

@@ -1,0 +1,139 @@
+{
+    "chapter": "1",
+    "subChapter": "1-4-1",
+    "subChapterTitle": "1.4.1 Testaktivitäten und -aufgaben",
+    "questions": [
+        {
+            "question": "Welche Frage beantwortet die Testanalyse laut Lehrplan?",
+            "explanation": "Die Testanalyse beantwortet die Frage 'Was soll getestet werden?' durch Ableitung von Testbedingungen und Überdeckungskriterien. (1.4.1_Testaktivitäten_und_Aufgaben.md)",
+            "options": [
+                {
+                    "text": "Welche Werkzeuge für die Automatisierung ausgewählt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Wie die Testergebnisse an die Stakeholder kommuniziert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Was getestet werden soll, in Form messbarer Überdeckungskriterien",
+                    "correct": true
+                },
+                {
+                    "text": "Wann die Testumgebung abgebaut wird",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität umfasst die Erstellung von Testdaten, Testabläufen und Testsuiten?",
+            "explanation": "Die Testrealisierung beinhaltet die Erstellung oder Beschaffung der erforderlichen Testmittel, die Organisation von Testfällen in Abläufen und Testsuiten sowie die Vorbereitung der Testumgebung. (1.4.1_Testaktivitäten_und_Aufgaben.md)",
+            "options": [
+                {
+                    "text": "Testplanung",
+                    "correct": false
+                },
+                {
+                    "text": "Testüberwachung",
+                    "correct": false
+                },
+                {
+                    "text": "Testrealisierung",
+                    "correct": true
+                },
+                {
+                    "text": "Testabschluss",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität dient dazu, Abweichungen zwischen Ist- und Soll-Ergebnissen zu identifizieren?",
+            "explanation": "Die Testdurchführung umfasst die Ausführung von Testfällen, den Vergleich der Ist- mit den erwarteten Ergebnissen sowie die Analyse von Abweichungen. (1.4.1_Testaktivitäten_und_Aufgaben.md)",
+            "options": [
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "Testdurchführung",
+                    "correct": true
+                },
+                {
+                    "text": "Testplanung",
+                    "correct": false
+                },
+                {
+                    "text": "Testüberwachung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität vergleicht den tatsächlichen Fortschritt mit dem Plan und ergreift ggf. Korrekturmaßnahmen?",
+            "explanation": "Die Testüberwachung prüft laufend den Fortschritt. Die Teststeuerung leitet daraus Korrekturmaßnahmen ab, um die Testziele zu erreichen. (1.4.1_Testaktivitäten_und_Aufgaben.md)",
+            "options": [
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "Testüberwachung und Teststeuerung",
+                    "correct": true
+                },
+                {
+                    "text": "Testabschluss",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein typisches Ergebnis der Testabschlussaktivität?",
+            "explanation": "Beim Testabschluss werden u. a. Lessons Learned ermittelt, Testmittel archiviert oder übergeben und ein Testabschlussbericht erstellt. (1.4.1_Testaktivitäten_und_Aufgaben.md)",
+            "options": [
+                {
+                    "text": "Ein Testabschlussbericht wird erstellt und kommuniziert",
+                    "correct": true
+                },
+                {
+                    "text": "Die Testumgebung wird aufgebaut und verifiziert",
+                    "correct": false
+                },
+                {
+                    "text": "Überdeckungselemente für Testfälle werden identifiziert",
+                    "correct": false
+                },
+                {
+                    "text": "Testbedingungen werden priorisiert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Frage beantwortet der Testentwurf im Testprozess?",
+            "explanation": "Der Testentwurf beantwortet die Frage 'Wie soll getestet werden?' durch Ausarbeitung von Testfällen, Testdaten und Testumgebung. (1.4.1_Testaktivitäten_und_Aufgaben.md)",
+            "options": [
+                {
+                    "text": "Wie die Ergebnisse in das Fehlermanagement einfließen",
+                    "correct": false
+                },
+                {
+                    "text": "Wann die Regressionstests ausgeführt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Wie getestet werden soll, z. B. durch Testfälle und Testdaten",
+                    "correct": true
+                },
+                {
+                    "text": "Was in den Change Requests dokumentiert werden muss",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

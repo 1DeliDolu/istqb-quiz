@@ -1,0 +1,95 @@
+{
+    "chapter": "1",
+    "subChapter": "1-5-1",
+    "subChapterTitle": "1.5.1 Allgemeine Kompetenzen, die für das Testen erforderlich sind",
+    "questions": [
+        {
+            "question": "Welche der folgenden Kompetenzen ist für Tester besonders wichtig, da sie oft als Überbringer schlechter Nachrichten auftreten?",
+            "explanation": "Testergebnisse können als Kritik verstanden werden, daher ist Kommunikationsfähigkeit entscheidend. (1.5.1_Allgemeine_Kompetenzen.md)",
+            "options": [
+                {
+                    "text": "Technische Kenntnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Kommunikationsfähigkeit",
+                    "correct": true
+                },
+                {
+                    "text": "Detailgenauigkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Neugier",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind analytisches und kritisches Denken für Tester unverzichtbar?",
+            "explanation": "Diese Fähigkeiten steigern die Effektivität des Testens, da Tester Fehlerzustände systematisch erkennen. (1.5.1_Allgemeine_Kompetenzen.md)",
+            "options": [
+                {
+                    "text": "Weil Tester dadurch schneller arbeiten können",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie damit leichter mit Entwicklern zusammenarbeiten",
+                    "correct": false
+                },
+                {
+                    "text": "Weil sie dadurch effektiver Fehlerzustände finden",
+                    "correct": true
+                },
+                {
+                    "text": "Weil sie dadurch besser im Debugging sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kompetenz hilft Testern dabei, Endanwender besser zu verstehen und mit Fachbereichsvertretern zu kommunizieren?",
+            "explanation": "Domänenwissen unterstützt Tester dabei, die Sprache der Anwender zu sprechen und deren Bedürfnisse besser zu erfassen. (1.5.1_Allgemeine_Kompetenzen.md)",
+            "options": [
+                {
+                    "text": "Testwissen",
+                    "correct": false
+                },
+                {
+                    "text": "Technische Kenntnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Wissen in der Anwendungsdomäne",
+                    "correct": true
+                },
+                {
+                    "text": "Kreativität",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind Gründlichkeit und Detailgenauigkeit für Tester besonders wichtig?",
+            "explanation": "Nur so lassen sich auch schwer auffindbare Fehlerzustände entdecken. (1.5.1_Allgemeine_Kompetenzen.md)",
+            "options": [
+                {
+                    "text": "Um gute Testwerkzeuge entwickeln zu können",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Effizienz der Testdurchführung zu erhöhen",
+                    "correct": false
+                },
+                {
+                    "text": "Um auch schwer erkennbare Fehlerzustände aufzudecken",
+                    "correct": true
+                },
+                {
+                    "text": "Um Testberichte schneller zu schreiben",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

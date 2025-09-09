@@ -1,0 +1,227 @@
+{
+    "chapter": "1",
+    "subChapter": "1-2-3",
+    "subChapterTitle": "1.2.3 Fehlhandlungen, Fehlerzustände, Fehlerwirkungen und Grundursachen",
+    "questions": [
+        {
+            "question": "Was beschreibt eine Fehlhandlung (Irrtum) im Kontext des Testens?",
+            "explanation": "Menschen begehen Fehlhandlungen (Irrtümer), die zu Fehlerzuständen (Defekten) führen können. (1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md)",
+            "options": [
+                {
+                    "text": "Ein Defekt im Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Eine menschliche Handlung, die zu einem Fehlerzustand führt",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Umwelteinfluss, der Hardware beschädigt",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testergebnis, das unerwartet ausfällt",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Fehlerzustand (Defekt)?",
+            "explanation": "Ein Fehlerzustand ist ein Defekt in Dokumentation, Code oder anderen Arbeitsergebnissen. (1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md)",
+            "options": [
+                {
+                    "text": "Ein Mangel im Prozessmanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Defekt in einem Arbeitsergebnis wie Anforderungen oder Code",
+                    "correct": true
+                },
+                {
+                    "text": "Eine falsche Benutzereingabe",
+                    "correct": false
+                },
+                {
+                    "text": "Ein unvollständig ausgeführter Testfall",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wann tritt eine Fehlerwirkung auf?",
+            "explanation": "Eine Fehlerwirkung tritt auf, wenn ein Fehlerzustand im Code ausgeführt wird und das System nicht wie vorgesehen arbeitet. (1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md)",
+            "options": [
+                {
+                    "text": "Immer wenn ein Defekt im Quellcode gefunden wird",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn ein Fehlerzustand im Code ausgeführt wird",
+                    "correct": true
+                },
+                {
+                    "text": "Nur bei der statischen Analyse von Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Nur wenn Testergebnisse unvollständig dokumentiert sind",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor kann eine Fehlhandlung bei Menschen verursachen?",
+            "explanation": "Fehlhandlungen entstehen z. B. durch Zeitdruck, Komplexität, Erschöpfung oder unzureichende Schulung. (1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md)",
+            "options": [
+                {
+                    "text": "Hohe Testabdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Unzureichende Schulung oder Erschöpfung",
+                    "correct": true
+                },
+                {
+                    "text": "Optimierte Entwicklungsprozesse",
+                    "correct": false
+                },
+                {
+                    "text": "Automatisierte Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wo können Fehlerzustände gefunden werden?",
+            "explanation": "Fehlerzustände können in Dokumentationen, Quellcode oder unterstützenden Arbeitsergebnissen wie Build-Dateien gefunden werden. (1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md)",
+            "options": [
+                {
+                    "text": "Nur im ausgelieferten Endprodukt",
+                    "correct": false
+                },
+                {
+                    "text": "In Anforderungsspezifikationen, Code oder Build-Dateien",
+                    "correct": true
+                },
+                {
+                    "text": "Nur in Benutzerhandbüchern",
+                    "correct": false
+                },
+                {
+                    "text": "Ausschließlich im Testskript",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage zu Fehlerzuständen in frühen SDLC-Phasen ist korrekt?",
+            "explanation": "Fehlerzustände in frühen Arbeitsergebnissen führen oft zu fehlerhaften Arbeitsergebnissen im späteren Verlauf, wenn sie unentdeckt bleiben. (1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md)",
+            "options": [
+                {
+                    "text": "Frühe Fehlerzustände haben keine Auswirkungen auf spätere Arbeitsergebnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Unentdeckte Fehlerzustände propagieren sich in spätere Arbeitsergebnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Fehler in frühen Phasen werden automatisch korrigiert",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler in frühen Phasen betreffen nur Dokumentation, nie den Code",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Umweltbedingungen können Fehlerwirkungen verursachen?",
+            "explanation": "Fehlerwirkungen können durch Strahlung oder elektromagnetische Felder verursacht werden. (1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md)",
+            "options": [
+                {
+                    "text": "Ein unzureichender Testplan",
+                    "correct": false
+                },
+                {
+                    "text": "Strahlung oder elektromagnetische Felder",
+                    "correct": true
+                },
+                {
+                    "text": "Mangelhafte Regressionstests",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerhafte Anforderungsanalyse",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist eine Grundursache (root cause)?",
+            "explanation": "Eine Grundursache ist ein wesentlicher Grund für das Auftreten eines Problems, z. B. eine Situation, die zu einer Fehlhandlung führt. (1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md)",
+            "options": [
+                {
+                    "text": "Eine spezielle Form der Fehlerwirkung",
+                    "correct": false
+                },
+                {
+                    "text": "Der wesentliche Grund für das Auftreten eines Problems",
+                    "correct": true
+                },
+                {
+                    "text": "Ein zusätzlicher Testfall im Regressionstest",
+                    "correct": false
+                },
+                {
+                    "text": "Eine zufällige Anomalie im Testergebnis",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Ziel verfolgt eine Grundursachenanalyse?",
+            "explanation": "Durch die Grundursachenanalyse sollen ähnliche Fehlerwirkungen oder Fehlerzustände künftig verhindert oder reduziert werden. (1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md)",
+            "options": [
+                {
+                    "text": "Die Fehlerdokumentation im Testbericht zu verbessern",
+                    "correct": false
+                },
+                {
+                    "text": "Ähnliche Fehlerzustände und Fehlerwirkungen zu verhindern oder ihre Häufigkeit zu verringern",
+                    "correct": true
+                },
+                {
+                    "text": "Die Testautomatisierung effizienter zu gestalten",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Fehlerzustände endgültig zu beseitigen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage über die Beziehung zwischen Fehlhandlungen, Fehlerzuständen und Fehlerwirkungen ist korrekt?",
+            "explanation": "Fehlhandlungen führen zu Fehlerzuständen, die zu Fehlerwirkungen führen können. (1.2.3_Fehlhandlungen_Fehlerzustände_Fehlerwirkungen_und_Grundursachen.md)",
+            "options": [
+                {
+                    "text": "Fehlerwirkungen treten unabhängig von Fehlhandlungen auf",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlhandlungen führen zu Fehlerzuständen, die wiederum Fehlerwirkungen verursachen können",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerzustände entstehen nur durch externe Umwelteinflüsse",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlhandlungen führen ausschließlich zu sofortigen Fehlerwirkungen",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

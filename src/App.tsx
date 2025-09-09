@@ -50,20 +50,20 @@ function App() {
 // Ana sayfa için basit bir bileşen
 const HomePage = () => (
   <div className="container mx-auto p-8 text-center">
-    <h1 className="text-3xl font-bold mb-6">ISTQB Quiz Uygulamasına Hoş Geldiniz!</h1>
+    <h1 className="text-3xl font-bold mb-6">Willkommen zur ISTQB Quiz-Anwendung!</h1>
     <div className="max-w-2xl mx-auto">
       <p className="text-lg mb-4">
-        Bu uygulama ile ISTQB Foundation Level sertifikası için hazırlanabilirsiniz.
+        Mit dieser Anwendung kannst du dich auf die ISTQB Foundation Level Zertifizierung vorbereiten.
       </p>
       <div className="bg-blue-50 p-6 rounded-lg">
-        <h2 className="text-xl font-semibold mb-3">Nasıl Kullanılır:</h2>
+        <h2 className="text-xl font-semibold mb-3">Wie funktioniert es:</h2>
         <ul className="text-left space-y-2">
-          <li><strong>Home:</strong> Ana bölümler ve alt başlıkları görüntüleyin, quiz çözün</li>
-          <li><strong>cms:</strong> Yeni sorular ekleyin ve içerik yönetimi yapın</li>
-          <li><strong>Documentation:</strong> Ek dokümantasyon ve kaynaklar</li>
+          <li><strong>Home:</strong> Hauptkapitel und Unterthemen anzeigen, Quiz starten</li>
+          <li><strong>cms:</strong> Neue Fragen hinzufügen und Inhalte verwalten</li>
+          <li><strong>Dokumentation:</strong> Zusätzliche Dokumentation und Ressourcen</li>
         </ul>
       </div>
-      <p className="mt-4 text-gray-600">Başlamak için yukarıdaki menüden bir seçenek seçin.</p>
+      <p className="mt-4 text-gray-600">Wähle eine Option aus dem oberen Menü, um zu starten.</p>
     </div>
   </div>
 );
@@ -76,7 +76,7 @@ const QuizSelectionPage = () => {
     {
       key: 'istqb',
       title: 'ISTQB Foundation Level',
-      description: 'Resmi ISTQB konularına göre organize edilmiş sorular',
+      description: 'Fragen, die nach den offiziellen ISTQB-Themen organisiert sind',
       chapters: istqbChapters,
       color: 'blue',
       icon: '📚'
@@ -84,7 +84,7 @@ const QuizSelectionPage = () => {
     {
       key: 'udemy',
       title: 'Udemy Quiz',
-      description: 'Udemy kurslarından derlenen pratik sorular',
+      description: 'Übungsfragen aus Udemy-Kursen',
       chapters: udemyChapters,
       color: 'purple',
       icon: '🎓'
@@ -92,27 +92,19 @@ const QuizSelectionPage = () => {
     {
       key: 'fragen',
       title: 'Fragen Quiz',
-      description: 'Genel sınavlarda çıkan sorular ve örnekler',
+      description: 'Beispielfragen aus allgemeinen Prüfungen',
       chapters: fragenChapters,
       color: 'green',
       icon: '❓'
     }
   ];
 
-  const getFirstChapterId = (chapters: any) => {
-    return Object.keys(chapters)[0];
-  };
-
-  const navigateToQuiz = (chapters: any) => {
-    const firstChapter = getFirstChapterId(chapters);
-    navigate(`/quiz/${firstChapter}`);
-  };
 
   return (
     <div className="container mx-auto p-8 max-w-7xl">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Quiz Seçin</h1>
-        <p className="text-lg text-gray-600">Hangi quiz türünü çözmek istiyorsunuz?</p>
+        <h1 className="text-4xl font-bold mb-4">Quiz auswählen</h1>
+        <p className="text-lg text-gray-600">Welchen Quiz-Typ möchten Sie bearbeiten?</p>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8">
@@ -132,16 +124,9 @@ const QuizSelectionPage = () => {
                   {quiz.description}
                 </p>
                 <p className="text-sm text-gray-500">
-                  Toplam {Object.keys(quiz.chapters).length} bölüm mevcut
+                  Insgesamt {Object.keys(quiz.chapters).length} Kapitel verfügbar
                 </p>
               </div>
-
-              <button
-                className={`w-full py-3 px-4 bg-${quiz.color}-500 text-white rounded-lg hover:bg-${quiz.color}-600 transition-colors font-semibold mb-4`}
-                onClick={() => navigateToQuiz(quiz.chapters)}
-              >
-                Quiz Başlat
-              </button>
             </div>
 
             {/* Expandable Chapters Section */}
@@ -149,7 +134,7 @@ const QuizSelectionPage = () => {
               <details className="group">
                 <summary className={`cursor-pointer p-4 bg-${quiz.color}-50 hover:bg-${quiz.color}-100 transition-colors font-medium text-${quiz.color}-700 list-none`}>
                   <div className="flex items-center justify-between">
-                    <span>Bölümleri Görüntüle</span>
+                    <span>Kapitel anzeigen</span>
                     <span className="group-open:rotate-180 transition-transform">▼</span>
                   </div>
                 </summary>
@@ -161,7 +146,7 @@ const QuizSelectionPage = () => {
                         <div className="flex items-center justify-between">
                           <span className="truncate">{chapter.title}</span>
                           <span className="text-xs text-gray-500 ml-2">
-                            ({chapter.subChapters.length} alt bölüm)
+                            ({chapter.subChapters.length} Unterkapitel)
                           </span>
                         </div>
                       </summary>
@@ -191,11 +176,10 @@ const QuizSelectionPage = () => {
 
       <div className="mt-12 text-center">
         <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 max-w-3xl mx-auto">
-          <h3 className="text-lg font-semibold mb-2 text-amber-800">💡 İpucu</h3>
+          <h3 className="text-lg font-semibold mb-2 text-amber-800">💡 Tipp</h3>
           <p className="text-amber-700">
-            <strong>Quiz Başlat</strong> butonu ile tüm bölümleri çözebilir,
-            <strong> Bölümleri Görüntüle</strong> ile spesifik bölüm ve alt konuları seçebilirsiniz.
-            Her alt konuya tıklayarak o konuya özel quiz başlatabilirsiniz.
+            <strong>Kapitel anzeigen</strong> ermöglicht die Auswahl spezifischer Kapitel und Unterthemen.
+            Klicken Sie auf ein Unterthema, um ein Quiz zu diesem Thema zu starten.
           </p>
         </div>
       </div>

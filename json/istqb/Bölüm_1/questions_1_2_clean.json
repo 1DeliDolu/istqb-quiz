@@ -1,0 +1,95 @@
+{
+    "chapter": "1",
+    "subChapter": "1-2",
+    "subChapterTitle": "1.2 Warum ist Testen notwendig?",
+    "questions": [
+        {
+            "question": "Welchen Beitrag leistet Testen zum Projekterfolg?",
+            "explanation": "Testen ist ein kosteneffizientes Mittel zur Erkennung von Fehlerzuständen und trägt indirekt zu einer höheren Qualität des Testobjekts bei. (1.2.1_Der_Beitrag_des_Testens_zum_Erfolg.md) – Original: 'Testen ist ein kosteneffizientes Mittel zur Erkennung von Fehlerzuständen... so dass das Testen indirekt zu einer höheren Qualität der Testobjekte beiträgt.'",
+            "options": [
+                {
+                    "text": "Es beweist, dass keine Fehler mehr im System vorhanden sind",
+                    "correct": false
+                },
+                {
+                    "text": "Es ermöglicht die direkte Bewertung der Qualität in verschiedenen Projektphasen",
+                    "correct": true
+                },
+                {
+                    "text": "Es ersetzt Debugging vollständig",
+                    "correct": false
+                },
+                {
+                    "text": "Es verhindert automatisch alle Fehlhandlungen der Entwickler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sollte der Beitrag des Testens nicht nur auf das Testteam beschränkt sein?",
+            "explanation": "Der Lehrplan betont, dass jeder Stakeholder seine Testkompetenzen einbringen kann, um den Projekterfolg zu fördern. (1.2_Warum_ist_Testen_notwendig.md) – Original: 'Der Beitrag des Testens zum Erfolg sollte nicht auf die Aktivitäten des Testteams beschränkt sein.'",
+            "options": [
+                {
+                    "text": "Weil das Testteam meist keine ausreichenden Ressourcen hat",
+                    "correct": false
+                },
+                {
+                    "text": "Weil alle Stakeholder durch ihre Kompetenzen den Projekterfolg fördern können",
+                    "correct": true
+                },
+                {
+                    "text": "Weil nur Entwickler die Fehlerursachen wirklich verstehen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil externe Prüfer immer teurer sind als interne Stakeholder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In welchem Zusammenhang kann Testen verpflichtend sein?",
+            "explanation": "Testen kann erforderlich sein, um vertragliche, gesetzliche oder regulatorische Anforderungen zu erfüllen. (1.2.1_Der_Beitrag_des_Testens_zum_Erfolg.md) – Original: 'Testen kann auch erforderlich sein, um vertragliche oder gesetzliche Anforderungen zu erfüllen oder um regulatorischen Standards zu entsprechen.'",
+            "options": [
+                {
+                    "text": "Nur bei Open-Source-Projekten",
+                    "correct": false
+                },
+                {
+                    "text": "Nur bei Projekten mit internationaler Beteiligung",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Erfüllung vertraglicher, gesetzlicher oder regulatorischer Vorgaben",
+                    "correct": true
+                },
+                {
+                    "text": "Immer, wenn das Projekt verspätet ist",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt den Unterschied zwischen Testen und Debugging im Kontext von Qualitätssicherung?",
+            "explanation": "Testen ist eine Form der Qualitätssteuerung (produktorientiert, korrigierend), Debugging hingegen gehört nicht zum Testen, sondern beseitigt Fehlerursachen. (1.2.2_Testen_und_Qualitätssicherung.md) – Original: 'Testen ist ein produktorientierter, korrigierender Ansatz... Debugging – eine Aktivität, die nicht zum Testen gehört.'",
+            "options": [
+                {
+                    "text": "Testen beseitigt Fehler, Debugging zeigt nur deren Existenz",
+                    "correct": false
+                },
+                {
+                    "text": "Testen bewertet die Qualität, Debugging beseitigt Fehlerursachen",
+                    "correct": true
+                },
+                {
+                    "text": "Testen und Debugging sind identische Prozesse",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ist optional, Debugging immer verpflichtend",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

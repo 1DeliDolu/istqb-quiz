@@ -1,0 +1,117 @@
+{
+    "chapter": "1",
+    "subChapter": "1-4-2",
+    "subChapterTitle": "1.4.2 Testprozess im Kontext",
+    "questions": [
+        {
+            "question": "Warum wird Testen nicht isoliert durchgeführt?",
+            "explanation": "Testen ist Teil der Entwicklungsprozesse einer Organisation und trägt dazu bei, die Geschäftsanforderungen der Stakeholder zu erfüllen. (1.4.2_Testprozess_im_Kontext.md)",
+            "options": [
+                {
+                    "text": "Weil Testen immer vollständig automatisiert wird",
+                    "correct": false
+                },
+                {
+                    "text": "Weil es ein integraler Bestandteil der Entwicklungsprozesse ist",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Testergebnisse keine Dokumentation erfordern",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Debugging ohne Testen nicht möglich ist",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor gehört laut Lehrplan NICHT zu den Kontextfaktoren für den Testprozess?",
+            "explanation": "Die aufgeführten Kontextfaktoren sind Stakeholder, Team, Unternehmensbereich, Technik, Projektbedingungen, Organisation, SDLC und Werkzeuge. Debugging ist hier nicht genannt. (1.4.2_Testprozess_im_Kontext.md)",
+            "options": [
+                {
+                    "text": "Stakeholder",
+                    "correct": false
+                },
+                {
+                    "text": "Softwareentwicklungslebenszyklus",
+                    "correct": false
+                },
+                {
+                    "text": "Debugging-Methoden",
+                    "correct": true
+                },
+                {
+                    "text": "Projektbedingte Randbedingungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielen die Stakeholder im Kontext des Testprozesses?",
+            "explanation": "Stakeholder finanzieren das Testen und bringen Bedürfnisse, Erwartungen und Anforderungen ein. (1.4.2_Testprozess_im_Kontext.md)",
+            "options": [
+                {
+                    "text": "Sie definieren ausschließlich die eingesetzten Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Sie finanzieren das Testen und formulieren Anforderungen und Erwartungen",
+                    "correct": true
+                },
+                {
+                    "text": "Sie führen eigenständig Systemtests durch",
+                    "correct": false
+                },
+                {
+                    "text": "Sie legen die Testabdeckung technisch fest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor bezieht sich auf Budget, Ressourcen und zeitliche Einschränkungen?",
+            "explanation": "Projektbedingte Randbedingungen sind Faktoren wie Umfang, Zeit, Budget und Ressourcen. (1.4.2_Testprozess_im_Kontext.md)",
+            "options": [
+                {
+                    "text": "Projektbedingte Randbedingungen",
+                    "correct": true
+                },
+                {
+                    "text": "Technische Faktoren",
+                    "correct": false
+                },
+                {
+                    "text": "Organisatorische Faktoren",
+                    "correct": false
+                },
+                {
+                    "text": "Teammitglieder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche testbezogenen Aspekte werden durch Kontextfaktoren beeinflusst?",
+            "explanation": "Kontextfaktoren wirken sich u. a. auf Teststrategie, Testverfahren, Grad der Automatisierung, geforderte Überdeckung, Detaillierungsgrad und Testberichterstattung aus. (1.4.2_Testprozess_im_Kontext.md)",
+            "options": [
+                {
+                    "text": "Teststrategie, Testverfahren und Testautomatisierung",
+                    "correct": true
+                },
+                {
+                    "text": "Nur den Einsatz von Debugging-Werkzeugen",
+                    "correct": false
+                },
+                {
+                    "text": "Ausschließlich die Projektorganisation",
+                    "correct": false
+                },
+                {
+                    "text": "Nur die Schulungsmaßnahmen für Tester",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

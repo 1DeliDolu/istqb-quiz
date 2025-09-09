@@ -1,0 +1,117 @@
+{
+    "chapter": "1",
+    "subChapter": "1-5-3",
+    "subChapterTitle": "1.5.3 Unabhängigkeit des Testens",
+    "questions": [
+        {
+            "question": "Warum macht ein gewisser Grad an Unabhängigkeit Tester oft effektiver?",
+            "explanation": "Weil sich die Voreingenommenheit zwischen Autor und Tester unterscheidet, wodurch Fehler eher entdeckt werden. (1.5.3_Unabhängigkeit_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Weil Tester keinen Zugang zum System benötigen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Tester andere kognitive Verzerrungen haben als die Autoren",
+                    "correct": true
+                },
+                {
+                    "text": "Weil unabhängige Tester immer schneller arbeiten",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Entwickler ihre eigenen Fehler nie finden können",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Reihenfolge beschreibt die Stufen der Unabhängigkeit beim Testen vom niedrigsten zum höchsten Grad?",
+            "explanation": "Von Autor selbst (keine Unabhängigkeit) → Kollegen im selben Team (etwas) → Tester außerhalb des Teams, aber in der Organisation (hoch) → Tester außerhalb der Organisation (sehr hoch). (1.5.3_Unabhängigkeit_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Autor → Kollegen → interne Tester → externe Tester",
+                    "correct": true
+                },
+                {
+                    "text": "Externe Tester → interne Tester → Kollegen → Autor",
+                    "correct": false
+                },
+                {
+                    "text": "Kollegen → Autor → interne Tester → externe Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Autor → externe Tester → Kollegen → interne Tester",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil ergibt sich aus unabhängigem Testen?",
+            "explanation": "Unabhängige Tester erkennen andere Fehlerwirkungen und können Annahmen von Stakeholdern überprüfen oder in Frage stellen. (1.5.3_Unabhängigkeit_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Unabhängige Tester können das Debugging effizienter durchführen",
+                    "correct": false
+                },
+                {
+                    "text": "Unabhängige Tester erkennen Fehlerzustände aus einer anderen Perspektive",
+                    "correct": true
+                },
+                {
+                    "text": "Unabhängige Tester garantieren die Termintreue",
+                    "correct": false
+                },
+                {
+                    "text": "Unabhängige Tester ersetzen die Abnahmetests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Nachteil kann beim unabhängigen Testen auftreten?",
+            "explanation": "Unabhängige Tester können isoliert sein, was zu Kommunikationsproblemen oder zu einem Gegeneinander mit Entwicklern führen kann. (1.5.3_Unabhängigkeit_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Unabhängige Tester sind immer langsamer",
+                    "correct": false
+                },
+                {
+                    "text": "Unabhängige Tester können als isoliert oder als Engpass wahrgenommen werden",
+                    "correct": true
+                },
+                {
+                    "text": "Unabhängige Tester übernehmen automatisch das Testmanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Unabhängige Tester verhindern Regressionstests",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Kombination aus Unabhängigkeitsstufen wird typischerweise in Projekten empfohlen?",
+            "explanation": "Meist eine Mischung: Entwickler führen Komponenten- und Integrationstests durch, Testteams Systemtests, Fachbereichsvertreter Abnahmetests. (1.5.3_Unabhängigkeit_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Nur externe Tester sollten eingesetzt werden",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Mischung mehrerer Unabhängigkeitsstufen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur Kollegen des Autors testen die Arbeitsergebnisse",
+                    "correct": false
+                },
+                {
+                    "text": "Nur Entwickler testen ihre eigene Arbeit",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "chapter": "1",
+    "subChapter": "1-2-1",
+    "subChapterTitle": "1.2.1 Der Beitrag des Testens zum Erfolg",
+    "questions": [
+        {
+            "question": "Welchen direkten Beitrag leistet Testen in verschiedenen Phasen des SDLC?",
+            "explanation": "Testen bietet ein Mittel zur direkten Bewertung der Qualität eines Testobjekts in verschiedenen Phasen des SDLC. (1.2.1_Der_Beitrag_des_Testens_zum_Erfolg.md) – Original: 'Testen bietet ein Mittel zur direkten Bewertung der Qualität eines Testobjekts in verschiedenen Phasen des SDLC.'",
+            "options": [
+                {
+                    "text": "Es ersetzt Projektmanagemententscheidungen",
+                    "correct": false
+                },
+                {
+                    "text": "Es bewertet die Qualität des Testobjekts und liefert Messgrößen",
+                    "correct": true
+                },
+                {
+                    "text": "Es dokumentiert ausschließlich die Entwickleraktivitäten",
+                    "correct": false
+                },
+                {
+                    "text": "Es verhindert automatisch alle Fehlerwirkungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum trägt Testen indirekt zur Qualität eines Testobjekts bei?",
+            "explanation": "Fehlerzustände werden durch Testen gefunden und können durch Debugging beseitigt werden. Dadurch steigt die Qualität der Testobjekte. (1.2.1_Der_Beitrag_des_Testens_zum_Erfolg.md) – Original: '...so dass das Testen indirekt zu einer höheren Qualität der Testobjekte beiträgt.'",
+            "options": [
+                {
+                    "text": "Weil Tester auch für Debugging zuständig sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil gefundene Fehlerzustände beseitigt werden können",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Testen alle regulatorischen Standards ersetzt",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Testen die Benutzeranforderungen direkt definiert",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist es oft nicht möglich, Benutzer direkt in das Entwicklungsprojekt einzubeziehen?",
+            "explanation": "Der Lehrplan nennt hohe Kosten und die mangelnde Verfügbarkeit geeigneter Benutzer als Gründe. (1.2.1_Der_Beitrag_des_Testens_zum_Erfolg.md) – Original: '...was in der Regel aufgrund der hohen Kosten und der mangelnden Verfügbarkeit geeigneter Benutzer nicht möglich ist.'",
+            "options": [
+                {
+                    "text": "Weil Benutzer meist nicht am Produkt interessiert sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Benutzer oft zu teuer oder schwer verfügbar sind",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Benutzer keine Rückmeldung geben dürfen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil Benutzer keinen Zugang zu Testwerkzeugen haben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In welchem Kontext kann Testen verpflichtend sein?",
+            "explanation": "Testen kann notwendig sein, um vertragliche, gesetzliche oder regulatorische Anforderungen zu erfüllen. (1.2.1_Der_Beitrag_des_Testens_zum_Erfolg.md) – Original: 'Testen kann auch erforderlich sein, um vertragliche oder gesetzliche Anforderungen zu erfüllen oder um regulatorischen Standards zu entsprechen.'",
+            "options": [
+                {
+                    "text": "Nur in agilen Projekten",
+                    "correct": false
+                },
+                {
+                    "text": "Immer, wenn Budgetüberschreitungen auftreten",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Erfüllung von Verträgen, Gesetzen oder regulatorischen Standards",
+                    "correct": true
+                },
+                {
+                    "text": "Nur bei sicherheitskritischen Open-Source-Systemen",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

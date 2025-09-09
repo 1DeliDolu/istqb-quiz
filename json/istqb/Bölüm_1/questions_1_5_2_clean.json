@@ -1,0 +1,117 @@
+{
+    "chapter": "1",
+    "subChapter": "1-5-2",
+    "subChapterTitle": "1.5.2 Whole-Team-Ansatz",
+    "questions": [
+        {
+            "question": "Welches Prinzip liegt dem Whole-Team-Ansatz zugrunde?",
+            "explanation": "Jedes Teammitglied kann jede Aufgabe übernehmen, wenn es über die erforderlichen Kompetenzen verfügt, und alle sind gemeinsam für die Qualität verantwortlich. (1.5.2_Whole-Team-Ansatz.md)",
+            "options": [
+                {
+                    "text": "Nur Tester sind für Qualität verantwortlich",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Teammitglieder teilen Verantwortung für Qualität",
+                    "correct": true
+                },
+                {
+                    "text": "Entwickler übernehmen ausschließlich Codierung",
+                    "correct": false
+                },
+                {
+                    "text": "Fachbereichsvertreter übernehmen nur Reviews",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welchen Vorteil bietet es, wenn das Team einen gemeinsamen Arbeitsbereich (physisch oder virtuell) nutzt?",
+            "explanation": "Ein gemeinsamer Standort erleichtert die Kommunikation und Interaktion innerhalb des Teams. (1.5.2_Whole-Team-Ansatz.md)",
+            "options": [
+                {
+                    "text": "Es reduziert die Testkosten",
+                    "correct": false
+                },
+                {
+                    "text": "Es erleichtert die Kommunikation und Interaktion",
+                    "correct": true
+                },
+                {
+                    "text": "Es ersetzt die Notwendigkeit von Testautomatisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Es stellt die Unabhängigkeit der Tester sicher",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie tragen Tester im Whole-Team-Ansatz zur Zusammenarbeit mit Fachbereichsvertretern bei?",
+            "explanation": "Tester unterstützen Fachbereichsvertreter bei der Erstellung geeigneter Abnahmetests. (1.5.2_Whole-Team-Ansatz.md)",
+            "options": [
+                {
+                    "text": "Sie übernehmen die Projektleitung",
+                    "correct": false
+                },
+                {
+                    "text": "Sie schreiben ausschließlich technische Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Sie unterstützen bei der Erstellung geeigneter Abnahmetests",
+                    "correct": true
+                },
+                {
+                    "text": "Sie führen alle Regressionstests allein durch",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie können Tester durch Zusammenarbeit mit Entwicklern den Projekterfolg fördern?",
+            "explanation": "Tester stimmen mit Entwicklern die Teststrategie ab und entscheiden gemeinsam über Ansätze zur Testautomatisierung. (1.5.2_Whole-Team-Ansatz.md)",
+            "options": [
+                {
+                    "text": "Indem sie allein die Teststrategie vorgeben",
+                    "correct": false
+                },
+                {
+                    "text": "Indem sie gemeinsam mit Entwicklern Teststrategie und Automatisierung abstimmen",
+                    "correct": true
+                },
+                {
+                    "text": "Indem sie alle Testwerkzeuge selbst programmieren",
+                    "correct": false
+                },
+                {
+                    "text": "Indem sie die Entwickler von allen Tests ausschließen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In welchem Kontext könnte der Whole-Team-Ansatz nicht angemessen sein?",
+            "explanation": "In sicherheitskritischen Bereichen ist häufig ein hohes Maß an Unabhängigkeit des Testens erforderlich. (1.5.2_Whole-Team-Ansatz.md)",
+            "options": [
+                {
+                    "text": "In Projekten mit agiler Entwicklung",
+                    "correct": false
+                },
+                {
+                    "text": "In sicherheitskritischen Bereichen",
+                    "correct": true
+                },
+                {
+                    "text": "In Projekten mit vielen Stakeholdern",
+                    "correct": false
+                },
+                {
+                    "text": "In Teams mit hoher Kommunikationsfähigkeit",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

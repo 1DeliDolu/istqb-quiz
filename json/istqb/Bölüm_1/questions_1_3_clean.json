@@ -1,0 +1,227 @@
+{
+    "chapter": "1",
+    "subChapter": "1-3",
+    "subChapterTitle": "1.3 Grundsätze des Testens",
+    "questions": [
+        {
+            "question": "Welcher Grundsatz des Testens wird durch die Aussage 'Testen zeigt das Vorhandensein, nicht die Abwesenheit von Fehlerzuständen' beschrieben?",
+            "explanation": "Testen kann das Vorhandensein von Fehlerzuständen nachweisen, aber niemals deren Abwesenheit. (1.3_Grundsätze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Grundsatz 1",
+                    "correct": true
+                },
+                {
+                    "text": "Grundsatz 2",
+                    "correct": false
+                },
+                {
+                    "text": "Grundsatz 5",
+                    "correct": false
+                },
+                {
+                    "text": "Grundsatz 7",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist vollständiges Testen unmöglich?",
+            "explanation": "Es gibt zu viele Kombinationen von Eingaben und Zuständen, außer in trivialen Fällen. (1.3_Grundsätze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Weil Entwickler nicht alle Fehlerursachen kennen",
+                    "correct": false
+                },
+                {
+                    "text": "Weil es unendlich viele mögliche Eingaben und Zustände gibt",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Testumgebungen teuer sind",
+                    "correct": false
+                },
+                {
+                    "text": "Weil nur dynamische Tests existieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil ergibt sich aus frühem Testen?",
+            "explanation": "Frühes Testen spart Zeit und Kosten, da Fehlerzustände vor ihrer Weitervererbung im SDLC beseitigt werden. (1.3_Grundsätze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Fehlerzustände werden in späteren Phasen automatisch korrigiert",
+                    "correct": false
+                },
+                {
+                    "text": "Die Qualitätskosten sinken durch frühe Fehlererkennung",
+                    "correct": true
+                },
+                {
+                    "text": "Testen kann vollständig automatisiert werden",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerzustände treten gar nicht erst auf",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Phänomen wird durch den Grundsatz 'Fehlerzustände treten gehäuft auf' beschrieben?",
+            "explanation": "Eine kleine Anzahl von Komponenten enthält in der Regel die meisten Fehlerzustände – Pareto-Prinzip. (1.3_Grundsätze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Alle Komponenten enthalten gleich viele Fehlerzustände",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerzustände konzentrieren sich oft auf wenige Komponenten",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerzustände treten gleichmäßig verteilt auf",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerzustände hängen ausschließlich von der Testumgebung ab",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko besteht, wenn dieselben Tests zu oft wiederholt werden?",
+            "explanation": "Tests nutzen sich ab – ihre Wirksamkeit sinkt mit jeder Wiederholung. (1.3_Grundsätze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Die Testumgebung wird unbrauchbar",
+                    "correct": false
+                },
+                {
+                    "text": "Die Tests verlieren an Wirksamkeit und finden weniger neue Fehler",
+                    "correct": true
+                },
+                {
+                    "text": "Automatisierte Tests sind nicht mehr wiederholbar",
+                    "correct": false
+                },
+                {
+                    "text": "Die Testfälle werden automatisch gelöscht",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Grundsatz erklärt, warum Regressionstests trotzdem nützlich sein können, obwohl Tests sich abnutzen?",
+            "explanation": "Die Wiederholung derselben Tests kann z. B. bei automatisierten Regressionstests positiv sein. (1.3_Grundsätze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Grundsatz 1 – Testen zeigt Vorhandensein von Fehlern",
+                    "correct": false
+                },
+                {
+                    "text": "Grundsatz 5 – Tests nutzen sich ab",
+                    "correct": true
+                },
+                {
+                    "text": "Grundsatz 3 – Frühes Testen spart Zeit und Geld",
+                    "correct": false
+                },
+                {
+                    "text": "Grundsatz 7 – Keine Fehler bedeutet kein brauchbares System",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aussage beschreibt den Grundsatz 'Testen ist kontextabhängig'?",
+            "explanation": "Testen muss je nach Kontext (z. B. sicherheitskritisch, agil, embedded) unterschiedlich durchgeführt werden. (1.3_Grundsätze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Es gibt einen universell gültigen Testprozess",
+                    "correct": false
+                },
+                {
+                    "text": "Das Testen wird in verschiedenen Kontexten unterschiedlich praktiziert",
+                    "correct": true
+                },
+                {
+                    "text": "Testen ist unabhängig vom Projektkontext",
+                    "correct": false
+                },
+                {
+                    "text": "Das Testen wird nur durch gesetzliche Vorgaben beeinflusst",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was beschreibt der Trugschluss 'Keine Fehler bedeutet ein brauchbares System'?",
+            "explanation": "Auch wenn alle Anforderungen getestet und Fehlerzustände behoben wurden, kann ein System unbrauchbar sein, wenn es die Bedürfnisse der Benutzer nicht erfüllt. (1.3_Grundsätze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Keine Fehler bedeuten immer ein perfektes System",
+                    "correct": false
+                },
+                {
+                    "text": "Ein fehlerfreies System kann trotzdem unbrauchbar sein",
+                    "correct": true
+                },
+                {
+                    "text": "Die Abwesenheit von Fehlerzuständen ist beweisbar",
+                    "correct": false
+                },
+                {
+                    "text": "Benutzeranforderungen spielen beim Testen keine Rolle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Teststrategie ist angesichts der Unmöglichkeit vollständigen Testens sinnvoll?",
+            "explanation": "Risikobasiertes Testen, Priorisierung von Testfällen und geeignete Testverfahren sind notwendig. (1.3_Grundsätze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Alle Tests gleichmäßig über alle Komponenten verteilen",
+                    "correct": false
+                },
+                {
+                    "text": "Risikobasiertes Testen und Priorisierung der Testfälle",
+                    "correct": true
+                },
+                {
+                    "text": "Nur dynamische Tests auf Systemebene durchführen",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ausschließlich nach Zeitaufwand planen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum kann frühes Testen Qualitätskosten senken?",
+            "explanation": "Frühe Fehlererkennung verhindert, dass sich Fehlerzustände in spätere Arbeitsergebnisse übertragen. (1.3_Grundsätze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Weil Fehler in frühen Phasen automatisch behoben werden",
+                    "correct": false
+                },
+                {
+                    "text": "Weil späte Fehlerkorrekturen deutlich teurer sind",
+                    "correct": true
+                },
+                {
+                    "text": "Weil Testen die Projektplanung ersetzt",
+                    "correct": false
+                },
+                {
+                    "text": "Weil frühes Testen vollständiges Testen ermöglicht",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}
