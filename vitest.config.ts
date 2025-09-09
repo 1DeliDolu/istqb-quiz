@@ -1,25 +1,22 @@
-import { defineConfig, configDefaults } from 'vitest/config'
-import path from 'path'
+import { defineConfig, configDefaults } from "vitest/config";
+import path from "path";
 
 export default defineConfig({
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      "@": path.resolve(__dirname, "./src"),
     },
   },
   test: {
-    environment: 'jsdom',
+    environment: "happy-dom",
     globals: true,
-    setupFiles: ['./src/setupTests.ts'],
+    setupFiles: ["./src/setupTests.ts"],
     css: true,
-    exclude: [
-      ...configDefaults.exclude,
-      'e2e/**',
-    ],
+    exclude: [...configDefaults.exclude, "e2e/**"],
     coverage: {
-      provider: 'v8',
-      reporter: ['text', 'html', 'lcov'],
-      include: ['src/**/*.{ts,tsx}', 'server/**/*.js'],
+      provider: "v8",
+      reporter: ["text", "html", "lcov"],
+      include: ["src/**/*.{ts,tsx}", "server/**/*.js"],
     },
   },
-})
+});
