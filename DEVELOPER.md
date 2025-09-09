@@ -794,3 +794,143 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Question Update Interface
 
 ![Question Update](public/img/update.png)
+
+
+
+# TEST
+
+## Frontend Testing (Vitest + RTL)
+
+- Gerekli paketler: `vitest`, `jsdom`, `@testing-library/react`, `@testing-library/user-event`, `@testing-library/jest-dom`, `@vitest/coverage-v8`
+- Önerilen: `msw` (API mocklama), `whatwg-fetch` (fetch polyfill)
+
+Kurulum (root):
+
+```bash
+npm i -D vitest jsdom @testing-library/react @testing-library/user-event @testing-library/jest-dom @vitest/coverage-v8 msw whatwg-fetch
+```
+
+Konfigürasyon:
+
+1) `vitest.config.ts` (root)
+
+```ts
+import { defineConfig } from 'vitest/config'
+
+export default defineConfig({
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['src/test/setup.ts'],
+    globals: true,
+    coverage: { provider: 'v8' },
+  },
+})
+```
+
+2) `src/test/setup.ts`
+
+```ts
+import '@testing-library/jest-dom'
+import 'whatwg-fetch'
+```
+
+3) `package.json` scriptleri
+
+```jsonc
+{
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "coverage": "vitest run --coverage"
+  }
+}
+```
+
+Örnek React testi (`src/components/__tests__/Example.test.tsx`):
+
+```tsx
+import { render, screen } from '@testing-library/react'
+import React from 'react'
+
+function Example() {
+  return <button>Click me</button>
+}
+
+test('renders button', () => {
+  render(<Example />)
+  expect(screen.getByText('Click me')).toBeInTheDocument()
+})
+```
+
+## Backend Testing (Vitest + Supertest)
+
+- Gerekli paketler: `vitest`, `supertest`
+- Kurulum (server klasöründe):
+
+```bash
+cd server && npm i -D vitest supertest
+```
+
+Seçenek 1: Test dosyası başına ortam belirtimi
+
+```ts
+// @vitest-environment node
+import request from 'supertest'
+import app from './server' // express app export ediliyorsa
+
+test('GET /api/health', async () => {
+  const res = await request(app).get('/api/health')
+  expect(res.status).toBe(200)
+})
+```
+
+Seçenek 2: `server/vitest.config.ts`
+
+```ts
+import { defineConfig } from 'vitest/config'
+
+export default defineConfig({
+  test: {
+    environment: 'node',
+  },
+})
+```
+
+Server `package.json` scriptleri:
+
+```jsonc
+{
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run"
+  }
+}
+```
+
+Notlar:
+- Testlerde gerçek DB yerine mock veya test DB kullanın. `dotenv` ile `.env.test` yükleyebilir veya `msw`/in-memory yaklaşımlarını tercih edebilirsiniz.
+- HTTP testleri için sunucuyu portta dinletmek yerine Express `app` nesnesini export etmek genelde daha stabildir.
+
+## E2E (Opsiyonel)
+
+- Seçenekler: `cypress` veya `@playwright/test`
+
+Kurulum (örnek):
+
+```bash
+npm i -D cypress
+# veya
+npm i -D @playwright/test
+```
+
+## Çalıştırma Özetleri
+
+- Frontend unit: `npm test` (root)
+- Frontend coverage: `npm run coverage`
+- Backend unit/API: `cd server && npm test`
+- E2E: `npx cypress open` veya `npx playwright test`
+
+
+
+<h1>TEST</h1>
+<!-- testing  -->

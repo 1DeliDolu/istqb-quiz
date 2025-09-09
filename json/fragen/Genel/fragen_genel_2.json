@@ -2,5 +2,2228 @@
     "chapter": "fragen_genel",
     "subChapter": "genel_2",
     "subChapterTitle": "Genel.2 Test Teknikleri",
-    "questions": []
+    "questions": [
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein erfahrungsbasiertes Testverfahren, bei dem die Testfälle entworfen werden, um Elemente einer Checkliste auszuführen.",
+            "explanation": "Dies entspricht der Definition von 'checklistenbasierter Test'. (Standardglossar_der_Begriffe_des_Softwartestens, checklistenbasierter Test)",
+            "options": [
+                {
+                    "text": "Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Teststrategie",
+                    "correct": false
+                },
+                {
+                    "text": "dynamischer Test",
+                    "correct": false
+                },
+                {
+                    "text": "checklistenbasierter Test",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Debugging?",
+            "explanation": "Debugging ist definiert als der Prozess der Aufdeckung, Analyse und Entfernung der Ursachen von Fehlerwirkungen in einer Komponente oder einem System. (Standardglossar_der_Begriffe_des_Softwartestens, Debugging)",
+            "options": [
+                {
+                    "text": "Ein Testverfahren, das auf der Spezifikation einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess der Aufdeckung, Analyse und Entfernung der Ursachen von Fehlerwirkungen in einer Komponente oder einem System.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Ursache eines Fehlerzustands. Wenn man sie behebt, dann wird das Vorkommen der Fehlerart reduziert oder eliminiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess innerhalb des Softwareentwicklungslebenszyklus, der die Qualität einer Komponente oder eines Systems und der zugehörigen Arbeitsergebnisse bewertet.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Testen, das die Ausführung des Testelements beinhaltet.",
+            "explanation": "Dies entspricht der Definition von 'dynamischer Test'. (Standardglossar_der_Begriffe_des_Softwartestens, dynamischer Test)",
+            "options": [
+                {
+                    "text": "statischer Test",
+                    "correct": false
+                },
+                {
+                    "text": "dynamischer Test",
+                    "correct": true
+                },
+                {
+                    "text": "Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Teststrategie",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Menge an Bedingungen für den offiziellen Abschluss einer bestimmten Aufgabe.",
+            "explanation": "Dies entspricht der Definition von 'Endekriterien'. (Standardglossar_der_Begriffe_des_Softwartestens, Endekriterien)",
+            "options": [
+                {
+                    "text": "Validierung",
+                    "correct": false
+                },
+                {
+                    "text": "Eingangskriterien",
+                    "correct": false
+                },
+                {
+                    "text": "Endekriterien",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerwirkung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Integrationstest?",
+            "explanation": "Der Integrationstest ist eine Teststufe mit dem Schwerpunkt auf dem Zusammenwirken zwischen Komponenten oder Systemen. (Standardglossar_der_Begriffe_des_Softwartestens, Integrationstest)",
+            "options": [
+                {
+                    "text": "Die Aktivität der Ausführung eines Tests für eine Komponente oder ein System, die Istergebnisse erzeugt.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testverfahren, das auf der Spezifikation einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf einer einzelnen Hardware- oder Softwarekomponente.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf dem Zusammenwirken zwischen Komponenten oder Systemen.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Risikoanalyse?",
+            "explanation": "Die Risikoanalyse ist definiert als der Prozess, der die Risikoidentifikation und Risikobewertung umfasst. (Standardglossar_der_Begriffe_des_Softwartestens, Risikoanalyse)",
+            "options": [
+                {
+                    "text": "Der Prozess, der die Risikoidentifikation und Risikobewertung umfasst.",
+                    "correct": true
+                },
+                {
+                    "text": "Der Prozess der Begutachtung von identifizierten Risiken und der Festlegung der Risikostufe.",
+                    "correct": false
+                },
+                {
+                    "text": "Das Maß eines Risikos, definiert durch dessen Schadensausmaß und Eintrittswahrscheinlichkeit.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess, mit dem Entscheidungen getroffen und Schutzmaßnahmen umgesetzt werden, um das Risiko auf eine vorgegebene Stufe zu reduzieren oder um es auf einer Stufe zu halten.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Systemtest?",
+            "explanation": "Der Systemtest ist eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt. (Standardglossar_der_Begriffe_des_Softwartestens, Systemtest)",
+            "options": [
+                {
+                    "text": "Testen auf der Grundlage einer Analyse der Spezifikation der Komponente oder des Systems.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen, welches durchgeführt wird, um die Erfüllung der funktionalen Anforderungen durch eine Komponente oder ein System zu bewerten.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf dem Zusammenwirken zwischen Komponenten oder Systemen.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testabschluss?",
+            "explanation": "Der Testabschluss ist die Aktivität, die Testmittel für eine spätere Anwendung verfügbar macht, Testumgebungen in einem zufriedenstellenden Zustand hinterlässt und die Testergebnisse an die relevanten Stakeholder übermittelt. (Standardglossar_der_Begriffe_des_Softwartestens, Testabschluss)",
+            "options": [
+                {
+                    "text": "Der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Gruppe von Testaktivitäten basierend auf bestimmten Testzielen mit dem Zweck, eine Komponente oder ein System auf spezifische Merkmale zu prüfen.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die Testmittel für eine spätere Anwendung verfügbar macht, Testumgebungen in einem zufriedenstellenden Zustand hinterlässt, und die Testergebnisse an die relevanten Stakeholder übermittelt.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Das zu testende Arbeitsergebnis.",
+            "explanation": "Dies entspricht der Definition von 'Testobjekt'. (Standardglossar_der_Begriffe_des_Softwartestens, Testobjekt)",
+            "options": [
+                {
+                    "text": "Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Testobjekt",
+                    "correct": true
+                },
+                {
+                    "text": "Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Testverfahren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testquadranten?",
+            "explanation": "Die Testquadranten sind ein Klassifikationsmodell für Testarten bzw. Teststufen in vier Quadranten, das sich auf zwei Dimensionen von Testzielen bezieht: Unterstützung des Produktteams vs. Hinterfragen des Produkts und technologische Ausrichtung vs. geschäftliche Ausrichtung. (Standardglossar_der_Begriffe_des_Softwartestens, Testquadranten)",
+            "options": [
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf einer einzelnen Hardware- oder Softwarekomponente.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testvorgehen, bei welchem sich das Management, die Auswahl, die Priorisierung und die Anwendung von Testaktivitäten und Ressourcen an entsprechenden Risikotypen und Risikostufen orientieren.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Dokumentation der Testziele sowie der Maßnahmen und Zeitplanung, um diese zu erreichen, zum Zweck der Koordination des Testens.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Klassifikationsmodell für Testarten bzw. Teststufen in vier Quadranten, das sich auf zwei Dimensionen von Testzielen bezieht: Unterstützung des Produktteams vs. Hinterfragen des Produkts und technologische Ausrichtung vs. geschäftliche Ausrichtung.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Testansatz, der durch Zusammenarbeit zwischen Stakeholdern auf Vermeidung von Fehlerzuständen fokussiert.",
+            "explanation": "Dies entspricht der Definition von 'auf Zusammenarbeit basierender Testansatz'. (Standardglossar_der_Begriffe_des_Softwartestens, auf Zusammenarbeit basierender Testansatz)",
+            "options": [
+                {
+                    "text": "auf Zusammenarbeit basierender Testansatz",
+                    "correct": true
+                },
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Teststrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Testrealisierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Äquivalenzklassenbildung?",
+            "explanation": "Die Äquivalenzklassenbildung ist ein Black-Box-Testverfahren, bei dem die Testbedingungen Äquivalenzklassen sind, und für jede Klasse ein repräsentatives Element ausgeführt wird. (Standardglossar_der_Begriffe_des_Softwartestens, Äquivalenzklassenbildung)",
+            "options": [
+                {
+                    "text": "Ein Black-Box-Testverfahren, bei dem Testfälle im Hinblick auf die Ausführung von Kombinationen der Bedingungen und aus ihnen resultierender Aktionen einer Entscheidungstabelle entworfen werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Black-Box-Testverfahren, bei dem die Testbedingungen Äquivalenzklassen sind, und für jede Klasse ein repräsentatives Element ausgeführt wird.",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Testverfahren, das auf der inneren Struktur einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs formales Review?",
+            "explanation": "Ein formales Review ist ein Review, das einem definierten Prozess folgt und ein formell dokumentiertes Ergebnis liefert. (Standardglossar_der_Begriffe_des_Softwartestens, formales Review)",
+            "options": [
+                {
+                    "text": "Die Menge an Bedingungen für den offiziellen Abschluss einer bestimmten Aufgabe.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Reviewart, bei der ein Autor die Reviewteilnehmer durch ein Arbeitsergebnis leitet und die Teilnehmer Fragen stellen und Auffälligkeiten kommentieren.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Review, das keinem definierten Prozess folgt und kein formell dokumentiertes Ergebnis liefert.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Review, das einem definierten Prozess folgt und ein formell dokumentiertes Ergebnis liefert.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Projektrisiko?",
+            "explanation": "Ein Projektrisiko ist ein Risiko, das den Projekterfolg beeinträchtigt. (Standardglossar_der_Begriffe_des_Softwartestens, Projektrisiko)",
+            "options": [
+                {
+                    "text": "Ein Risiko, das den Projekterfolg beeinträchtigt.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Ermittlung, Erkennung und Beschreibung von Risiken.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess zur Behandlung von Risiken.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess, mit dem Entscheidungen getroffen und Schutzmaßnahmen umgesetzt werden, um das Risiko auf eine vorgegebene Stufe zu reduzieren oder um es auf einer Stufe zu halten.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Der Prozess der Begutachtung von identifizierten Risiken und der Festlegung der Risikostufe.",
+            "explanation": "Dies entspricht der Definition von 'Risikobewertung'. (Standardglossar_der_Begriffe_des_Softwartestens, Risikobewertung)",
+            "options": [
+                {
+                    "text": "Risiko",
+                    "correct": false
+                },
+                {
+                    "text": "Risikobewertung",
+                    "correct": true
+                },
+                {
+                    "text": "Risikominderung",
+                    "correct": false
+                },
+                {
+                    "text": "Risikoüberwachung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Teststeuerung?",
+            "explanation": "Die Teststeuerung ist die Aktivität, die Korrekturmaßnahmen entwickelt und anwendet, um ein Testprojekt auf den richtigen Weg zu bringen, wenn es vom Plan abweicht. (Standardglossar_der_Begriffe_des_Softwartestens, Teststeuerung)",
+            "options": [
+                {
+                    "text": "Die Aktivität, die Korrekturmaßnahmen entwickelt und anwendet, um ein Testprojekt auf den richtigen Weg zu bringen, wenn es vom Plan abweicht.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Aktivität, die den Status von Testaktivitäten überprüft, alle Abweichungen vom Plan oder der Erwartung identifiziert und den Status an die Stakeholder meldet.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität der Ausführung eines Tests für eine Komponente oder ein System, die Istergebnisse erzeugt.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testentwurf?",
+            "explanation": "Der Testentwurf ist die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert. (Standardglossar_der_Begriffe_des_Softwartestens, Testentwurf)",
+            "options": [
+                {
+                    "text": "Die Aktivität der Ausführung eines Tests für eine Komponente oder ein System, die Istergebnisse erzeugt.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Eigenschaft oder eine Kombination von Eigenschaften, die aus einer oder mehreren Testbedingungen unter Verwendung eines Testverfahrens abgeleitet wurde(n) .",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Beschreibung, wie Testen durchzuführen ist, um Testziele unter den gegebenen Umständen zu erreichen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testobjekt?",
+            "explanation": "Das Testobjekt ist definiert als das zu testende Arbeitsergebnis. (Standardglossar_der_Begriffe_des_Softwartestens, Testobjekt)",
+            "options": [
+                {
+                    "text": "Bestätigung durch Überprüfung, dass ein Arbeitsergebnis den Bedürfnissen eines Stakeholders entspricht.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert.",
+                    "correct": false
+                },
+                {
+                    "text": "Das zu testende Arbeitsergebnis.",
+                    "correct": true
+                },
+                {
+                    "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testverfahren?",
+            "explanation": "Ein Testverfahren ist eine Vorgehensweise zum Definieren von Testbedingungen, Entwerfen von Testfällen und Spezifizieren von Testdaten. (Standardglossar_der_Begriffe_des_Softwartestens, Testverfahren)",
+            "options": [
+                {
+                    "text": "Ein Testverfahren, das auf der Spezifikation einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die Testbedingungen durch eine Analyse der Testbasis identifiziert.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Vorgehensweise zum Definieren von Testbedingungen, Entwerfen von Testfällen und Spezifizieren von Testdaten.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Test, der auf der Analyse der internen Struktur einer Komponente oder eines Systems basiert.",
+            "explanation": "Dies entspricht der Definition von 'White-Box-Test'. (Standardglossar_der_Begriffe_des_Softwartestens, White-Box-Test)",
+            "options": [
+                {
+                    "text": "Black-Box-Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "White-Box-Test",
+                    "correct": true
+                },
+                {
+                    "text": "Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Diejenigen Kriterien, die eine Komponente oder ein System erfüllen muss, um durch den Benutzer, Kunden oder eine bevollmächtigte Instanz abgenommen zu werden.",
+            "explanation": "Dies entspricht der Definition von 'Akzeptanzkriterien'. (Standardglossar_der_Begriffe_des_Softwartestens, Akzeptanzkriterien)",
+            "options": [
+                {
+                    "text": "Eingangskriterien",
+                    "correct": false
+                },
+                {
+                    "text": "Akzeptanzkriterien",
+                    "correct": true
+                },
+                {
+                    "text": "Validierung",
+                    "correct": false
+                },
+                {
+                    "text": "Qualität",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs intuitive Testfallermittlung?",
+            "explanation": "Die intuitive Testfallermittlung ist ein Testverfahren, bei dem Tests auf Basis des Wissens der Tester über frühere Fehlerwirkungen oder auf Basis von allgemeinem Wissen über Fehlerauswirkungen abgeleitet werden. (Standardglossar_der_Begriffe_des_Softwartestens, intuitive Testfallermittlung)",
+            "options": [
+                {
+                    "text": "Ein Testverfahren, bei dem Tests auf Basis des Wissens der Tester über frühere Fehlerwirkungen oder auf Basis von allgemeinem Wissen über Fehlerauswirkungen abgeleitet werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Aktivität, die Testbedingungen durch eine Analyse der Testbasis identifiziert.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testverfahren, das auf der Erfahrung, dem Wissen und der Intuition der Tester basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testansatz, bei dem die Tester auf der Grundlage ihres Wissens, der Erkundung des Testobjekts und der Ergebnisse früherer Tests dynamisch Tests entwerfen und durchführen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Eine Art änderungsbezogenes Testen um festzustellen, ob in unveränderten Bereichen der Software Fehlerzustände eingebaut oder freigelegt wurden.",
+            "explanation": "Dies entspricht der Definition von 'Regressionstest'. (Standardglossar_der_Begriffe_des_Softwartestens, Regressionstest)",
+            "options": [
+                {
+                    "text": "Testrealisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "explorativer Test",
+                    "correct": false
+                },
+                {
+                    "text": "Regressionstest",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Der Prozess der Bewertung eines Testobjekts (Komponente oder System) basierend auf seiner Form, seiner Struktur, seines Inhalts oder seiner Dokumentation, ohne es auszuführen.",
+            "explanation": "Dies entspricht der Definition von 'statische Analyse'. (Standardglossar_der_Begriffe_des_Softwartestens, statische Analyse)",
+            "options": [
+                {
+                    "text": "Debugging",
+                    "correct": false
+                },
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "statischer Test",
+                    "correct": false
+                },
+                {
+                    "text": "statische Analyse",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testautomatisierung?",
+            "explanation": "Die Testautomatisierung ist definiert als der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten. (Standardglossar_der_Begriffe_des_Softwartestens, Testautomatisierung)",
+            "options": [
+                {
+                    "text": "Die Menge zusammenhängender Aktivitäten bestehend aus Testplanung, Testüberwachung, Teststeuerung, Testanalyse, Testentwurf, Testrealisierung, Testdurchführung und Testabschluss.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf einer einzelnen Hardware- oder Softwarekomponente.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten.",
+                    "correct": true
+                },
+                {
+                    "text": "Der Zweck des Testens.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Aktivität, die Korrekturmaßnahmen entwickelt und anwendet, um ein Testprojekt auf den richtigen Weg zu bringen, wenn es vom Plan abweicht.",
+            "explanation": "Dies entspricht der Definition von 'Teststeuerung'. (Standardglossar_der_Begriffe_des_Softwartestens, Teststeuerung)",
+            "options": [
+                {
+                    "text": "Teststeuerung",
+                    "correct": true
+                },
+                {
+                    "text": "Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Testrealisierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Für die Testdurchführung benötigte Daten.",
+            "explanation": "Dies entspricht der Definition von 'Testdaten'. (Standardglossar_der_Begriffe_des_Softwartestens, Testdaten)",
+            "options": [
+                {
+                    "text": "Testdaten",
+                    "correct": true
+                },
+                {
+                    "text": "Testablauf",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testüberwachung?",
+            "explanation": "Die Testüberwachung ist die Aktivität, die den Status von Testaktivitäten überprüft, alle Abweichungen vom Plan oder der Erwartung identifiziert und den Status an die Stakeholder meldet. (Standardglossar_der_Begriffe_des_Softwartestens, Testüberwachung)",
+            "options": [
+                {
+                    "text": "Die Aktivität, die den Status von Testaktivitäten überprüft, alle Abweichungen vom Plan oder der Erwartung identifiziert und den Status an die Stakeholder meldet.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Aktivität im Testprozess zur Erstellung und Fortschreibung des Testkonzepts.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Tätigkeit, die den Status bekannter Risiken überprüft und an Stakeholder berichtet.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testablauf?",
+            "explanation": "Der Testablauf ist eine Folge von Testfällen in der Reihenfolge ihrer Durchführung, mit allen erforderlichen Aktionen zur Herstellung der Vorbedingungen und zum Aufräumen nach der Durchführung. (Standardglossar_der_Begriffe_des_Softwartestens, Testablauf)",
+            "options": [
+                {
+                    "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Folge von Testfällen in der Reihenfolge ihrer Durchführung, mit allen erforderlichen Aktionen zur Herstellung der Vorbedingungen und zum Aufräumen nach der Durchführung.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Vorgehensweise zum Definieren von Testbedingungen, Entwerfen von Testfällen und Spezifizieren von Testdaten.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine spezifische Instanziierung eines Testprozesses.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten.",
+            "explanation": "Dies entspricht der Definition von 'Testmittel'. (Standardglossar_der_Begriffe_des_Softwartestens, Testmittel)",
+            "options": [
+                {
+                    "text": "Testüberwachung",
+                    "correct": false
+                },
+                {
+                    "text": "Testmittel",
+                    "correct": true
+                },
+                {
+                    "text": "Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein auf Zusammenarbeit basierender Test-First-Ansatz, der Abnahmetests in der Fachsprache der Stakeholder definiert.",
+            "explanation": "Dies entspricht der Definition von 'abnahmetestgetriebene Entwicklung (ATDD)'. (Standardglossar_der_Begriffe_des_Softwartestens, abnahmetestgetriebene Entwicklung)",
+            "options": [
+                {
+                    "text": "Akzeptanzkriterien",
+                    "correct": false
+                },
+                {
+                    "text": "abnahmetestgetriebene Entwicklung",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlernachtest",
+                    "correct": false
+                },
+                {
+                    "text": "risikobasierter Test",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Eine Teststufe mit dem Schwerpunkt zu bestimmen, ob ein System abgenommen werden kann.",
+            "explanation": "Dies entspricht der Definition von 'Abnahmetest'. (Standardglossar_der_Begriffe_des_Softwartestens, Abnahmetest)",
+            "options": [
+                {
+                    "text": "Abnahmetest",
+                    "correct": true
+                },
+                {
+                    "text": "Testrealisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationstest",
+                    "correct": false
+                },
+                {
+                    "text": "Testprozess",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Black-Box-Testverfahren, bei dem die Testfälle unter Nutzung von Grenzwerten entworfen werden.",
+            "explanation": "Dies entspricht der Definition von 'Grenzwertanalyse'. (Standardglossar_der_Begriffe_des_Softwartestens, Grenzwertanalyse)",
+            "options": [
+                {
+                    "text": "Integrationstest",
+                    "correct": false
+                },
+                {
+                    "text": "Grenzwertanalyse",
+                    "correct": true
+                },
+                {
+                    "text": "Testanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Zweigüberdeckung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs auf Zusammenarbeit basierender Testansatz?",
+            "explanation": "Der auf Zusammenarbeit basierende Testansatz ist ein Testansatz, der durch Zusammenarbeit zwischen Stakeholdern auf Vermeidung von Fehlerzuständen fokussiert. (Standardglossar_der_Begriffe_des_Softwartestens, auf Zusammenarbeit basierender Testansatz)",
+            "options": [
+                {
+                    "text": "Eine formale Reviewart, die festgelegte Teamrollen und Messungen verwendet, um Fehlerzustände in einem Arbeitsergebnis zu identifizieren und den Reviewprozess sowie den Softwareentwicklungsprozess zu verbessern.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testansatz, der durch Zusammenarbeit zwischen Stakeholdern auf Vermeidung von Fehlerzuständen fokussiert.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Art änderungsbezogenes Testen um festzustellen, ob in unveränderten Bereichen der Software Fehlerzustände eingebaut oder freigelegt wurden.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Testverfahren, bei dem Tests auf Basis des Wissens der Tester über frühere Fehlerwirkungen oder auf Basis von allgemeinem Wissen über Fehlerauswirkungen abgeleitet werden.",
+            "explanation": "Dies entspricht der Definition von 'intuitive Testfallermittlung'. (Standardglossar_der_Begriffe_des_Softwartestens, intuitive Testfallermittlung)",
+            "options": [
+                {
+                    "text": "intuitive Testfallermittlung",
+                    "correct": true
+                },
+                {
+                    "text": "Validierung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlhandlung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerwirkung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Testverfahren, bei dem Tests auf Basis des Wissens der Tester über frühere Fehlerwirkungen oder auf Basis von allgemeinem Wissen über Fehlerauswirkungen abgeleitet werden.",
+            "explanation": "Dies entspricht der Definition von 'intuitive Testfallermittlung'. (Standardglossar_der_Begriffe_des_Softwartestens, intuitive Testfallermittlung)",
+            "options": [
+                {
+                    "text": "intuitive Testfallermittlung",
+                    "correct": true
+                },
+                {
+                    "text": "Validierung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlhandlung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerwirkung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Eine spezifische Instanziierung eines Testprozesses.",
+            "explanation": "Dies entspricht der Definition von 'Teststufe'. (Standardglossar_der_Begriffe_des_Softwartestens, Teststufe)",
+            "options": [
+                {
+                    "text": "Teststeuerung",
+                    "correct": false
+                },
+                {
+                    "text": "Testplanung",
+                    "correct": false
+                },
+                {
+                    "text": "Teststufe",
+                    "correct": true
+                },
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testüberwachung?",
+            "explanation": "Die Testüberwachung ist die Aktivität, die den Status von Testaktivitäten überprüft, alle Abweichungen vom Plan oder der Erwartung identifiziert und den Status an die Stakeholder meldet. (Standardglossar_der_Begriffe_des_Softwartestens, Testüberwachung)",
+            "options": [
+                {
+                    "text": "Die Aktivität, die den Status von Testaktivitäten überprüft, alle Abweichungen vom Plan oder der Erwartung identifiziert und den Status an die Stakeholder meldet.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Aktivität, die Korrekturmaßnahmen entwickelt und anwendet, um ein Testprojekt auf den richtigen Weg zu bringen, wenn es vom Plan abweicht.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität der Ausführung eines Tests für eine Komponente oder ein System, die Istergebnisse erzeugt.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Dokumentation der Testziele sowie der Maßnahmen und Zeitplanung, um diese zu erreichen, zum Zweck der Koordination des Testens.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testkonzept?",
+            "explanation": "Das Testkonzept ist die Dokumentation der Testziele sowie der Maßnahmen und Zeitplanung, um diese zu erreichen, zum Zweck der Koordination des Testens. (Standardglossar_der_Begriffe_des_Softwartestens, Testkonzept)",
+            "options": [
+                {
+                    "text": "Ein regelmäßiger Testbericht, der den Fortschritt der Testaktivitäten gegenüber einer Baseline, Risiken und Alternativen, die eine Entscheidung erfordern, enthält.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Menge zusammenhängender Aktivitäten bestehend aus Testplanung, Testüberwachung, Teststeuerung, Testanalyse, Testentwurf, Testrealisierung, Testdurchführung und Testabschluss.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Dokumentation der Testziele sowie der Maßnahmen und Zeitplanung, um diese zu erreichen, zum Zweck der Koordination des Testens.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Art von Testbericht, der beim Erreichen von Abschlussmeilensteinen erstellt wird und eine Beurteilung der entsprechenden Testelemente anhand der Endekriterien liefert.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein graphisches Modell, welches das Verhältnis der Testumfänge der einzelnen Teststufen darstellt, mit mehr Umfang an der Basis als an der Spitze.",
+            "explanation": "Dies entspricht der Definition von 'Testpyramide'. (Standardglossar_der_Begriffe_des_Softwartestens, Testpyramide)",
+            "options": [
+                {
+                    "text": "Testobjekt",
+                    "correct": false
+                },
+                {
+                    "text": "Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Teststufe",
+                    "correct": false
+                },
+                {
+                    "text": "Testpyramide",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testmittel?",
+            "explanation": "Testmittel sind die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten. (Standardglossar_der_Begriffe_des_Softwartestens, Testmittel)",
+            "options": [
+                {
+                    "text": "Das zu testende Arbeitsergebnis.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Menge zusammenhängender Aktivitäten bestehend aus Testplanung, Testüberwachung, Teststeuerung, Testanalyse, Testentwurf, Testrealisierung, Testdurchführung und Testabschluss.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die auf Basis der Testanalyse und des -Entwurfs die Testmittel vorbereitet, welche für die Testdurchführung benötigt werden.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs abnahmetestgetriebene Entwicklung?",
+            "explanation": "Die abnahmetestgetriebene Entwicklung (ATDD) ist ein auf Zusammenarbeit basierender Test-First-Ansatz, der Abnahmetests in der Fachsprache der Stakeholder definiert. (Standardglossar_der_Begriffe_des_Softwartestens, abnahmetestgetriebene Entwicklung)",
+            "options": [
+                {
+                    "text": "Ein Testansatz zur Ausübung von Test- und Qualitätssicherungsaktivitäten so früh wie möglich im Softwareentwicklungslebenszyklus.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein auf Zusammenarbeit basierender Test-First-Ansatz, der Abnahmetests in der Fachsprache der Stakeholder definiert.",
+                    "correct": true
+                },
+                {
+                    "text": "Bestätigung durch Überprüfung, dass ein Arbeitsergebnis den Bedürfnissen eines Stakeholders entspricht.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Integrationstest von Systemen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Abnahmetest?",
+            "explanation": "Der Abnahmetest ist eine Teststufe mit dem Schwerpunkt zu bestimmen, ob ein System abgenommen werden kann. (Standardglossar_der_Begriffe_des_Softwartestens, Abnahmetest)",
+            "options": [
+                {
+                    "text": "Ein testbarer Aspekt einer Komponente oder eines Systems, der als Grundlage für das Testen identifiziert wurde.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt zu bestimmen, ob ein System abgenommen werden kann.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Black-Box-Test?",
+            "explanation": "Der Black-Box-Test ist definiert als Testen auf der Grundlage einer Analyse der Spezifikation der Komponente oder des Systems. (Standardglossar_der_Begriffe_des_Softwartestens, Black-Box-Test)",
+            "options": [
+                {
+                    "text": "Testen auf der Grundlage einer Analyse der Spezifikation der Komponente oder des Systems.",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Test, der auf der Analyse der internen Struktur einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Integrationstest von Komponenten.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testverfahren, das auf der inneren Struktur einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Grenzwertanalyse?",
+            "explanation": "Die Grenzwertanalyse ist ein Black-Box-Testverfahren, bei dem die Testfälle unter Nutzung von Grenzwerten entworfen werden. (Standardglossar_der_Begriffe_des_Softwartestens, Grenzwertanalyse)",
+            "options": [
+                {
+                    "text": "Ein Black-Box-Testverfahren, bei dem die Testfälle unter Nutzung von Grenzwerten entworfen werden.",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Testverfahren, das auf der Erfahrung, dem Wissen und der Intuition der Tester basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Black-Box-Testverfahren, bei dem Testfälle im Hinblick auf die Ausführung von Kombinationen der Bedingungen und aus ihnen resultierender Aktionen einer Entscheidungstabelle entworfen werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testverfahren, das auf der inneren Struktur einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Eingangskriterien?",
+            "explanation": "Eingangskriterien sind die Menge an Bedingungen für den offiziellen Start einer bestimmten Aufgabe. (Standardglossar_der_Begriffe_des_Softwartestens, Eingangskriterien)",
+            "options": [
+                {
+                    "text": "Die Menge an Bedingungen für den offiziellen Abschluss einer bestimmten Aufgabe.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Folge von Testfällen in der Reihenfolge ihrer Durchführung, mit allen erforderlichen Aktionen zur Herstellung der Vorbedingungen und zum Aufräumen nach der Durchführung.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Menge an Bedingungen für den offiziellen Start einer bestimmten Aufgabe.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine spezifische Instanziierung eines Testprozesses.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Fehlerwirkung?",
+            "explanation": "Eine Fehlerwirkung ist ein Ereignis, in welchem eine Komponente oder ein System eine geforderte Funktion nicht im spezifizierten Rahmen ausführt. (Standardglossar_der_Begriffe_des_Softwartestens, Fehlerwirkung)",
+            "options": [
+                {
+                    "text": "Ein Ereignis in welchem eine Komponente oder ein System eine geforderte Funktion nicht im spezifizierten Rahmen ausführt.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Menge an Bedingungen für den offiziellen Abschluss einer bestimmten Aufgabe.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Zustand, der von der Erwartung abweicht.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Unzulänglichkeit oder ein Mangel in einem Arbeitsergebnis, sodass es seine Anforderungen oder Spezifikationen nicht erfüllt.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Qualität?",
+            "explanation": "Qualität ist definiert als der Grad, zu dem ein Arbeitsergebnis die expliziten und impliziten Bedürfnisse seiner Stakeholder erfüllt. (Standardglossar_der_Begriffe_des_Softwartestens, Qualität)",
+            "options": [
+                {
+                    "text": "Diejenigen Kriterien, die eine Komponente oder ein System erfüllen muss, um durch den Benutzer, Kunden oder eine bevollmächtigte Instanz abgenommen zu werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein formales Review durch technische Experten, die die Qualität eines Arbeitsergebnisses untersuchen und Abweichungen von Spezifikationen und Standards feststellen.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Fähigkeit, explizite Beziehungen zwischen Arbeitsergebnissen oder zwischen Elementen von Arbeitsergebnissen darzustellen.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Grad, zu dem ein Arbeitsergebnis die expliziten und impliziten Bedürfnisse seiner Stakeholder erfüllt.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Risikobewertung?",
+            "explanation": "Die Risikobewertung ist der Prozess der Begutachtung von identifizierten Risiken und der Festlegung der Risikostufe. (Standardglossar_der_Begriffe_des_Softwartestens, Risikobewertung)",
+            "options": [
+                {
+                    "text": "Ein Testvorgehen, bei welchem sich das Management, die Auswahl, die Priorisierung und die Anwendung von Testaktivitäten und Ressourcen an entsprechenden Risikotypen und Risikostufen orientieren.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess der Begutachtung von identifizierten Risiken und der Festlegung der Risikostufe.",
+                    "correct": true
+                },
+                {
+                    "text": "Der Prozess zur Behandlung von Risiken.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess, der die Risikominderung und Risikoüberwachung umfasst.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testautomatisierung?",
+            "explanation": "Die Testautomatisierung ist der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten. (Standardglossar_der_Begriffe_des_Softwartestens, Testautomatisierung)",
+            "options": [
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf einer einzelnen Hardware- oder Softwarekomponente.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten.",
+                    "correct": true
+                },
+                {
+                    "text": "Der Zweck des Testens.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Gruppe von Testaktivitäten basierend auf bestimmten Testzielen mit dem Zweck, eine Komponente oder ein System auf spezifische Merkmale zu prüfen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testobjekt?",
+            "explanation": "Das Testobjekt ist definiert als das zu testende Arbeitsergebnis. (Standardglossar_der_Begriffe_des_Softwartestens, Testobjekt)",
+            "options": [
+                {
+                    "text": "Das zu testende Arbeitsergebnis.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Aktivität der Ausführung eines Tests für eine Komponente oder ein System, die Istergebnisse erzeugt.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Überdeckung?",
+            "explanation": "Überdeckung ist der Grad, zu dem bestimmte Überdeckungselemente von einer Testsuite ausgeführt wurden, ausgedrückt in Prozent. (Standardglossar_der_Begriffe_des_Softwartestens, Überdeckung)",
+            "options": [
+                {
+                    "text": "Eine Eigenschaft oder eine Kombination von Eigenschaften, die aus einer oder mehreren Testbedingungen unter Verwendung eines Testverfahrens abgeleitet wurde(n) .",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Aktivität im Testprozess zur Erstellung und Fortschreibung des Testkonzepts.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Grad, zu dem bestimmte Überdeckungselemente von einer Testsuite ausgeführt wurden, ausgedrückt in Prozent.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Gruppe von Testaktivitäten basierend auf bestimmten Testzielen mit dem Zweck, eine Komponente oder ein System auf spezifische Merkmale zu prüfen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Fehlermanagement?",
+            "explanation": "Fehlermanagement ist der Prozess der Erkennung, Aufzeichnung, Klassifizierung, Untersuchung, Lösung und Schließung von Fehlerzuständen. (Standardglossar_der_Begriffe_des_Softwartestens, Fehlermanagement)",
+            "options": [
+                {
+                    "text": "Eine Art änderungsbezogenes Testen um festzustellen, ob in unveränderten Bereichen der Software Fehlerzustände eingebaut oder freigelegt wurden.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Art änderungsbezogenes Testen, das nach der Behebung eines Fehlerzustands durchgeführt wird, um zu bestätigen, dass eine Fehlerwirkung nicht mehr auftritt.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess der Erkennung, Aufzeichnung, Klassifizierung, Untersuchung, Lösung und Schließung von Fehlerzuständen.",
+                    "correct": true
+                },
+                {
+                    "text": "Der Prozess der Aufdeckung, Analyse und Entfernung der Ursachen von Fehlerwirkungen in einer Komponente oder einem System.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Eine Art änderungsbezogenes Testen um festzustellen, ob in unveränderten Bereichen der Software Fehlerzustände eingebaut oder freigelegt wurden.",
+            "explanation": "Dies entspricht der Definition von 'Regressionstest'. (Standardglossar_der_Begriffe_des_Softwartestens, Regressionstest)",
+            "options": [
+                {
+                    "text": "Teststrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Regressionstest",
+                    "correct": true
+                },
+                {
+                    "text": "Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Testansatz",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Ermittlung, Erkennung und Beschreibung von Risiken.",
+            "explanation": "Dies entspricht der Definition von 'Risikoidentifizierung'. (Standardglossar_der_Begriffe_des_Softwartestens, Risikoidentifizierung)",
+            "options": [
+                {
+                    "text": "Risikomanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Risikosteuerung",
+                    "correct": false
+                },
+                {
+                    "text": "Risikobewertung",
+                    "correct": false
+                },
+                {
+                    "text": "Risikoidentifizierung",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Aktivität, die Testmittel für eine spätere Anwendung verfügbar macht, Testumgebungen in einem zufriedenstellenden Zustand hinterlässt, und die Testergebnisse an die relevanten Stakeholder übermittelt.",
+            "explanation": "Dies entspricht der Definition von 'Testabschluss'. (Standardglossar_der_Begriffe_des_Softwartestens, Testabschluss)",
+            "options": [
+                {
+                    "text": "explorativer Test",
+                    "correct": false
+                },
+                {
+                    "text": "Testkonzept",
+                    "correct": false
+                },
+                {
+                    "text": "Testplanung",
+                    "correct": false
+                },
+                {
+                    "text": "Testabschluss",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Teststufe?",
+            "explanation": "Eine Teststufe ist eine spezifische Instanziierung eines Testprozesses. (Standardglossar_der_Begriffe_des_Softwartestens, Teststufe)",
+            "options": [
+                {
+                    "text": "Die Aktivität, die Testbedingungen durch eine Analyse der Testbasis identifiziert.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine spezifische Instanziierung eines Testprozesses.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Vorgehensweise zum Definieren von Testbedingungen, Entwerfen von Testfällen und Spezifizieren von Testdaten.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Art statischer Test, bei dem ein Arbeitsergebnis oder -prozess von einer oder mehreren Personen bewertet wird, um Fehlerzustände zu erkennen oder Verbesserungen zu erzielen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Eine Folge von Testfällen in der Reihenfolge ihrer Durchführung, mit allen erforderlichen Aktionen zur Herstellung der Vorbedingungen und zum Aufräumen nach der Durchführung.",
+            "explanation": "Dies entspricht der Definition von 'Testablauf'. (Standardglossar_der_Begriffe_des_Softwartestens, Testablauf)",
+            "options": [
+                {
+                    "text": "Testrealisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Testprozess",
+                    "correct": false
+                },
+                {
+                    "text": "Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Testablauf",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testpyramide?",
+            "explanation": "Die Testpyramide ist ein graphisches Modell, welches das Verhältnis der Testumfänge der einzelnen Teststufen darstellt, mit mehr Umfang an der Basis als an der Spitze. (Standardglossar_der_Begriffe_des_Softwartestens, Testpyramide)",
+            "options": [
+                {
+                    "text": "Ein Testverfahren, das auf der Erfahrung, dem Wissen und der Intuition der Tester basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein regelmäßiger Testbericht, der den Fortschritt der Testaktivitäten gegenüber einer Baseline, Risiken und Alternativen, die eine Entscheidung erfordern, enthält.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein graphisches Modell, welches das Verhältnis der Testumfänge der einzelnen Teststufen darstellt, mit mehr Umfang an der Basis als an der Spitze.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testverfahren?",
+            "explanation": "Ein Testverfahren ist eine Vorgehensweise zum Definieren von Testbedingungen, Entwerfen von Testfällen und Spezifizieren von Testdaten. (Standardglossar_der_Begriffe_des_Softwartestens, Testverfahren)",
+            "options": [
+                {
+                    "text": "Ein Testverfahren, das auf der Spezifikation einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Vorgehensweise zum Definieren von Testbedingungen, Entwerfen von Testfällen und Spezifizieren von Testdaten.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Beschreibung, wie Testen durchzuführen ist, um Testziele unter den gegebenen Umständen zu erreichen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testverfahren?",
+            "explanation": "Ein Testverfahren ist eine Vorgehensweise zum Definieren von Testbedingungen, Entwerfen von Testfällen und Spezifizieren von Testdaten. (Standardglossar_der_Begriffe_des_Softwartestens, Testverfahren) – Die richtige Antwort ist also nicht 1, sondern 3.",
+            "options": [
+                {
+                    "text": "Ein Testverfahren, das auf der Spezifikation einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Vorgehensweise zum Definieren von Testbedingungen, Entwerfen von Testfällen und Spezifizieren von Testdaten.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Beschreibung, wie Testen durchzuführen ist, um Testziele unter den gegebenen Umständen zu erreichen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Überdeckungselement?",
+            "explanation": "Ein Überdeckungselement ist eine Eigenschaft oder eine Kombination von Eigenschaften, die aus einer oder mehreren Testbedingungen unter Verwendung eines Testverfahrens abgeleitet wurde(n). (Standardglossar_der_Begriffe_des_Softwartestens, Überdeckungselement)",
+            "options": [
+                {
+                    "text": "Eine Eigenschaft oder eine Kombination von Eigenschaften, die aus einer oder mehreren Testbedingungen unter Verwendung eines Testverfahrens abgeleitet wurde(n) .",
+                    "correct": true
+                },
+                {
+                    "text": "Die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testverfahren, das auf der Erfahrung, dem Wissen und der Intuition der Tester basiert.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Testen der Änderungen an einem laufenden System oder der Auswirkungen einer geänderten Umgebung auf ein laufendes System.",
+            "explanation": "Dies entspricht der Definition von 'Wartungstest'. (Standardglossar_der_Begriffe_des_Softwartestens, Wartungstest)",
+            "options": [
+                {
+                    "text": "Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Wartungstest",
+                    "correct": true
+                },
+                {
+                    "text": "Testprozess",
+                    "correct": false
+                },
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Eine Art änderungsbezogenes Testen um festzustellen, ob in unveränderten Bereichen der Software Fehlerzustände eingebaut oder freigelegt wurden.",
+            "explanation": "Dies entspricht der Definition von 'Regressionstest'. (Standardglossar_der_Begriffe_des_Softwartestens, Regressionstest)",
+            "options": [
+                {
+                    "text": "Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Regressionstest",
+                    "correct": true
+                },
+                {
+                    "text": "Testanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Testansatz",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Eine Art statischer Test, bei dem ein Arbeitsergebnis oder -prozess von einer oder mehreren Personen bewertet wird, um Fehlerzustände zu erkennen oder Verbesserungen zu erzielen.",
+            "explanation": "Dies entspricht der Definition von 'Review'. (Standardglossar_der_Begriffe_des_Softwartestens, Review)",
+            "options": [
+                {
+                    "text": "Qualität",
+                    "correct": false
+                },
+                {
+                    "text": "Review",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerwirkung",
+                    "correct": false
+                },
+                {
+                    "text": "formales Review",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Risikomanagement?",
+            "explanation": "Risikomanagement ist der Prozess zur Behandlung von Risiken. (Standardglossar_der_Begriffe_des_Softwartestens, Risikomanagement)",
+            "options": [
+                {
+                    "text": "Der Prozess der Begutachtung von identifizierten Risiken und der Festlegung der Risikostufe.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Risiko, das den Projekterfolg beeinträchtigt.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess zur Behandlung von Risiken.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Tätigkeit, die den Status bekannter Risiken überprüft und an Stakeholder berichtet.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Tätigkeit, die den Status bekannter Risiken überprüft und an Stakeholder berichtet.",
+            "explanation": "Dies entspricht der Definition von 'Risikoüberwachung'. (Standardglossar_der_Begriffe_des_Softwartestens, Risikoüberwachung)",
+            "options": [
+                {
+                    "text": "Risikoüberwachung",
+                    "correct": true
+                },
+                {
+                    "text": "Risikosteuerung",
+                    "correct": false
+                },
+                {
+                    "text": "Risikomanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Risikoidentifizierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Aktivität, die Testbedingungen durch eine Analyse der Testbasis identifiziert.",
+            "explanation": "Dies entspricht der Definition von 'Testanalyse'. (Standardglossar_der_Begriffe_des_Softwartestens, Testanalyse)",
+            "options": [
+                {
+                    "text": "Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyse",
+                    "correct": true
+                },
+                {
+                    "text": "Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Teststrategie",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Menge zusammenhängender Aktivitäten bestehend aus Testplanung, Testüberwachung, Teststeuerung, Testanalyse, Testentwurf, Testrealisierung, Testdurchführung und Testabschluss.",
+            "explanation": "Dies entspricht der Definition von 'Testprozess'. (Standardglossar_der_Begriffe_des_Softwartestens, Testprozess)",
+            "options": [
+                {
+                    "text": "Testablauf",
+                    "correct": false
+                },
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "Testrealisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Testprozess",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Der Prozess innerhalb des Softwareentwicklungslebenszyklus, der die Qualität einer Komponente oder eines Systems und der zugehörigen Arbeitsergebnisse bewertet.",
+            "explanation": "Dies entspricht der Definition von 'Testen'. (Standardglossar_der_Begriffe_des_Softwartestens, Testen)",
+            "options": [
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Testrealisierung",
+                    "correct": false
+                },
+                {
+                    "text": "Testen",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testmittel?",
+            "explanation": "Testmittel sind die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten. (Standardglossar_der_Begriffe_des_Softwartestens, Testmittel)",
+            "options": [
+                {
+                    "text": "Die Menge zusammenhängender Aktivitäten bestehend aus Testplanung, Testüberwachung, Teststeuerung, Testanalyse, Testentwurf, Testrealisierung, Testdurchführung und Testabschluss.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Dokumentation der Testziele sowie der Maßnahmen und Zeitplanung, um diese zu erreichen, zum Zweck der Koordination des Testens.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs abnahmetestgetriebene Entwicklung?",
+            "explanation": "Die abnahmetestgetriebene Entwicklung (ATDD) ist ein auf Zusammenarbeit basierender Test-First-Ansatz, der Abnahmetests in der Fachsprache der Stakeholder definiert. (Standardglossar_der_Begriffe_des_Softwartestens, abnahmetestgetriebene Entwicklung)",
+            "options": [
+                {
+                    "text": "Ein Testansatz, der durch Zusammenarbeit zwischen Stakeholdern auf Vermeidung von Fehlerzuständen fokussiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Beschreibung, wie Testen durchzuführen ist, um Testziele unter den gegebenen Umständen zu erreichen.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Integrationstest von Komponenten.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein auf Zusammenarbeit basierender Test-First-Ansatz, der Abnahmetests in der Fachsprache der Stakeholder definiert.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Überdeckung von Zweigen in einem Kontrollflussgraphen.",
+            "explanation": "Dies entspricht der Definition von 'Zweigüberdeckung'. (Standardglossar_der_Begriffe_des_Softwartestens, Zweigüberdeckung)",
+            "options": [
+                {
+                    "text": "Anweisungsüberdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Zweigüberdeckung",
+                    "correct": true
+                },
+                {
+                    "text": "Testabschlussbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Inspektion",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Überdeckung?",
+            "explanation": "Überdeckung ist der Grad, zu dem bestimmte Überdeckungselemente von einer Testsuite ausgeführt wurden, ausgedrückt in Prozent. (Standardglossar_der_Begriffe_des_Softwartestens, Überdeckung)",
+            "options": [
+                {
+                    "text": "Eine Eigenschaft oder eine Kombination von Eigenschaften, die aus einer oder mehreren Testbedingungen unter Verwendung eines Testverfahrens abgeleitet wurde(n) .",
+                    "correct": false
+                },
+                {
+                    "text": "Testen, das die Ausführung des Testelements beinhaltet.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Grad, zu dem bestimmte Überdeckungselemente von einer Testsuite ausgeführt wurden, ausgedrückt in Prozent.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Art von Testbericht, der beim Erreichen von Abschlussmeilensteinen erstellt wird und eine Beurteilung der entsprechenden Testelemente anhand der Endekriterien liefert.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Faktor, der zu negativen Konsequenzen in der Zukunft führen könnte, gewöhnlich ausgedrückt durch das Schadensausmaß und die Eintrittswahrscheinlichkeit.",
+            "explanation": "Dies entspricht der Definition von 'Risiko'. (Standardglossar_der_Begriffe_des_Softwartestens, Risiko)",
+            "options": [
+                {
+                    "text": "Risikomanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Risikominderung",
+                    "correct": false
+                },
+                {
+                    "text": "Risiko",
+                    "correct": true
+                },
+                {
+                    "text": "Risikoidentifizierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Testvorgehen, bei welchem sich das Management, die Auswahl, die Priorisierung und die Anwendung von Testaktivitäten und Ressourcen an entsprechenden Risikotypen und Risikostufen orientieren.",
+            "explanation": "Dies entspricht der Definition von 'risikobasierter Test'. (Standardglossar_der_Begriffe_des_Softwartestens, risikobasierter Test)",
+            "options": [
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "risikobasierter Test",
+                    "correct": true
+                },
+                {
+                    "text": "explorativer Test",
+                    "correct": false
+                },
+                {
+                    "text": "Teststrategie",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Grundursache?",
+            "explanation": "Die Grundursache ist die Ursache eines Fehlerzustands. Wenn man sie behebt, dann wird das Vorkommen der Fehlerart reduziert oder eliminiert. (Standardglossar_der_Begriffe_des_Softwartestens, Grundursache)",
+            "options": [
+                {
+                    "text": "Die Ursache eines Fehlerzustands. Wenn man sie behebt, dann wird das Vorkommen der Fehlerart reduziert oder eliminiert.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Dokumentation des Auftretens, der Art und des Status eines Fehlerzustands.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess der Erkennung, Aufzeichnung, Klassifizierung, Untersuchung, Lösung und Schließung von Fehlerzuständen.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Art änderungsbezogenes Testen um festzustellen, ob in unveränderten Bereichen der Software Fehlerzustände eingebaut oder freigelegt wurden.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt.",
+            "explanation": "Dies entspricht der Definition von 'Systemtest'. (Standardglossar_der_Begriffe_des_Softwartestens, Systemtest)",
+            "options": [
+                {
+                    "text": "Systemtest",
+                    "correct": true
+                },
+                {
+                    "text": "Testüberwachung",
+                    "correct": false
+                },
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "Testdurchführung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testautomatisierung?",
+            "explanation": "Die Testautomatisierung ist definiert als der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten. (Standardglossar_der_Begriffe_des_Softwartestens, Testautomatisierung)",
+            "options": [
+                {
+                    "text": "Die Aktivität, die Testmittel für eine spätere Anwendung verfügbar macht, Testumgebungen in einem zufriedenstellenden Zustand hinterlässt, und die Testergebnisse an die relevanten Stakeholder übermittelt.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Art und Weise der Umsetzung von Testaufgaben.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten.",
+                    "correct": true
+                },
+                {
+                    "text": "Der Zweck des Testens.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testmittel?",
+            "explanation": "Testmittel sind die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten. (Standardglossar_der_Begriffe_des_Softwartestens, Testmittel)",
+            "options": [
+                {
+                    "text": "Die Menge zusammenhängender Aktivitäten bestehend aus Testplanung, Testüberwachung, Teststeuerung, Testanalyse, Testentwurf, Testrealisierung, Testdurchführung und Testabschluss.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität der Ausführung eines Tests für eine Komponente oder ein System, die Istergebnisse erzeugt.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die auf Basis der Testanalyse und des -Entwurfs die Testmittel vorbereitet, welche für die Testdurchführung benötigt werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Testansatz zur Ausübung von Test- und Qualitätssicherungsaktivitäten so früh wie möglich im Softwareentwicklungslebenszyklus.",
+            "explanation": "Dies entspricht der Definition von 'Shift-Left'. (Standardglossar_der_Begriffe_des_Softwartestens, Shift-Left)",
+            "options": [
+                {
+                    "text": "Walkthrough",
+                    "correct": false
+                },
+                {
+                    "text": "Shift-Left",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlhandlung",
+                    "correct": false
+                },
+                {
+                    "text": "Risiko",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Zustand, der von der Erwartung abweicht.",
+            "explanation": "Dies entspricht der Definition von 'Anomalie'. (Standardglossar_der_Begriffe_des_Softwartestens, Anomalie)",
+            "options": [
+                {
+                    "text": "Fehlhandlung",
+                    "correct": false
+                },
+                {
+                    "text": "Grundursache",
+                    "correct": false
+                },
+                {
+                    "text": "Anomalie",
+                    "correct": true
+                },
+                {
+                    "text": "Verifizierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Testen auf der Grundlage einer Analyse der Spezifikation der Komponente oder des Systems.",
+            "explanation": "Dies entspricht der Definition von 'Black-Box-Test'. (Standardglossar_der_Begriffe_des_Softwartestens, Black-Box-Test)",
+            "options": [
+                {
+                    "text": "Regressionstest",
+                    "correct": false
+                },
+                {
+                    "text": "Black-Box-Test",
+                    "correct": true
+                },
+                {
+                    "text": "Systemtest",
+                    "correct": false
+                },
+                {
+                    "text": "White-Box-Test",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Komponententest?",
+            "explanation": "Der Komponententest ist eine Teststufe mit dem Schwerpunkt auf einer einzelnen Hardware- oder Softwarekomponente. (Standardglossar_der_Begriffe_des_Softwartestens, Komponententest)",
+            "options": [
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf dem Zusammenwirken zwischen Komponenten oder Systemen.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf einer einzelnen Hardware- oder Softwarekomponente.",
+                    "correct": true
+                },
+                {
+                    "text": "Ein testbarer Aspekt einer Komponente oder eines Systems, der als Grundlage für das Testen identifiziert wurde.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die auf Basis der Testanalyse und des -Entwurfs die Testmittel vorbereitet, welche für die Testdurchführung benötigt werden.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Black-Box-Testverfahren, bei dem die Testbedingungen Äquivalenzklassen sind, und für jede Klasse ein repräsentatives Element ausgeführt wird.",
+            "explanation": "Dies entspricht der Definition von 'Äquivalenzklassenbildung'. (Standardglossar_der_Begriffe_des_Softwartestens, Äquivalenzklassenbildung)",
+            "options": [
+                {
+                    "text": "Testansatz",
+                    "correct": false
+                },
+                {
+                    "text": "Testbasis",
+                    "correct": false
+                },
+                {
+                    "text": "Äquivalenzklassenbildung",
+                    "correct": true
+                },
+                {
+                    "text": "Verifizierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Testen der Änderungen an einem laufenden System oder der Auswirkungen einer geänderten Umgebung auf ein laufendes System.",
+            "explanation": "Dies entspricht der Definition von 'Wartungstest'. (Standardglossar_der_Begriffe_des_Softwartestens, Wartungstest)",
+            "options": [
+                {
+                    "text": "dynamischer Test",
+                    "correct": false
+                },
+                {
+                    "text": "statischer Test",
+                    "correct": false
+                },
+                {
+                    "text": "Wartungstest",
+                    "correct": true
+                },
+                {
+                    "text": "Testprozess",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Testvorgehen, bei welchem sich das Management, die Auswahl, die Priorisierung und die Anwendung von Testaktivitäten und Ressourcen an entsprechenden Risikotypen und Risikostufen orientieren.",
+            "explanation": "Dies entspricht der Definition von 'risikobasierter Test'. (Standardglossar_der_Begriffe_des_Softwartestens, risikobasierter Test)",
+            "options": [
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "risikobasierter Test",
+                    "correct": true
+                },
+                {
+                    "text": "Teststrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Risikobewertung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Systemintegrationstest?",
+            "explanation": "Der Systemintegrationstest ist definiert als der Integrationstest von Systemen. (Standardglossar_der_Begriffe_des_Softwartestens, Systemintegrationstest)",
+            "options": [
+                {
+                    "text": "Der Integrationstest von Systemen.",
+                    "correct": true
+                },
+                {
+                    "text": "Der Integrationstest von Komponenten.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Test, der auf der Analyse der internen Struktur einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen auf der Grundlage einer Analyse der Spezifikation der Komponente oder des Systems.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Systemtest?",
+            "explanation": "Der Systemtest ist eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt. (Standardglossar_der_Begriffe_des_Softwartestens, Systemtest)",
+            "options": [
+                {
+                    "text": "Testen, welches durchgeführt wird, um die Erfüllung der funktionalen Anforderungen durch eine Komponente oder ein System zu bewerten.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein testbarer Aspekt einer Komponente oder eines Systems, der als Grundlage für das Testen identifiziert wurde.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt zu verifizieren, dass ein System als Ganzes die spezifizierten Anforderungen erfüllt.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf dem Zusammenwirken zwischen Komponenten oder Systemen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testbasis?",
+            "explanation": "Die Testbasis umfasst alle Informationen, die als Grundlage für die Testanalyse und den Testentwurf verwendet werden können. (Standardglossar_der_Begriffe_des_Softwartestens, Testbasis)",
+            "options": [
+                {
+                    "text": "Testen auf der Grundlage einer Analyse der Spezifikation der Komponente oder des Systems.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Testverfahren, das auf der Spezifikation einer Komponente oder eines Systems basiert.",
+                    "correct": false
+                },
+                {
+                    "text": "Alle Informationen, die als Grundlage für die Testanalyse und den Testentwurf verwendet werden können.",
+                    "correct": true
+                },
+                {
+                    "text": "Ein Testverfahren, das auf der Erfahrung, dem Wissen und der Intuition der Tester basiert.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Teststeuerung?",
+            "explanation": "Die Teststeuerung ist die Aktivität, die Korrekturmaßnahmen entwickelt und anwendet, um ein Testprojekt auf den richtigen Weg zu bringen, wenn es vom Plan abweicht. (Standardglossar_der_Begriffe_des_Softwartestens, Teststeuerung)",
+            "options": [
+                {
+                    "text": "Die Aktivität, die den Status von Testaktivitäten überprüft, alle Abweichungen vom Plan oder der Erwartung identifiziert und den Status an die Stakeholder meldet.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die Korrekturmaßnahmen entwickelt und anwendet, um ein Testprojekt auf den richtigen Weg zu bringen, wenn es vom Plan abweicht.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Gruppe von Testaktivitäten basierend auf bestimmten Testzielen mit dem Zweck, eine Komponente oder ein System auf spezifische Merkmale zu prüfen.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Aktivität, die Testfälle aus Testbedingungen ableitet und spezifiziert.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs abnahmetestgetriebene Entwicklung?",
+            "explanation": "Die abnahmetestgetriebene Entwicklung (ATDD) ist ein auf Zusammenarbeit basierender Test-First-Ansatz, der Abnahmetests in der Fachsprache der Stakeholder definiert. (Standardglossar_der_Begriffe_des_Softwartestens, abnahmetestgetriebene Entwicklung)",
+            "options": [
+                {
+                    "text": "Der Integrationstest von Komponenten.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein auf Zusammenarbeit basierender Test-First-Ansatz, der Abnahmetests in der Fachsprache der Stakeholder definiert.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Aktivität, die Testmittel für eine spätere Anwendung verfügbar macht, Testumgebungen in einem zufriedenstellenden Zustand hinterlässt, und die Testergebnisse an die relevanten Stakeholder übermittelt.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Integrationstest von Systemen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs formales Review?",
+            "explanation": "Ein formales Review ist ein Review, das einem definierten Prozess folgt und ein formell dokumentiertes Ergebnis liefert. (Standardglossar_der_Begriffe_des_Softwartestens, formales Review)",
+            "options": [
+                {
+                    "text": "Eine spezifische Instanziierung eines Testprozesses.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Review, das einem definierten Prozess folgt und ein formell dokumentiertes Ergebnis liefert.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine formale Reviewart, die festgelegte Teamrollen und Messungen verwendet, um Fehlerzustände in einem Arbeitsergebnis zu identifizieren und den Reviewprozess sowie den Softwareentwicklungsprozess zu verbessern.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Menge an Bedingungen für den offiziellen Abschluss einer bestimmten Aufgabe.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Risiko, das den Projekterfolg beeinträchtigt.",
+            "explanation": "Dies entspricht der Definition von 'Projektrisiko'. (Standardglossar_der_Begriffe_des_Softwartestens, Projektrisiko)",
+            "options": [
+                {
+                    "text": "Risikomanagement",
+                    "correct": false
+                },
+                {
+                    "text": "Projektrisiko",
+                    "correct": true
+                },
+                {
+                    "text": "Risikobewertung",
+                    "correct": false
+                },
+                {
+                    "text": "Risikostufe",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Tätigkeit, die den Status bekannter Risiken überprüft und an Stakeholder berichtet.",
+            "explanation": "Dies entspricht der Definition von 'Risikoüberwachung'. (Standardglossar_der_Begriffe_des_Softwartestens, Risikoüberwachung)",
+            "options": [
+                {
+                    "text": "risikobasierter Test",
+                    "correct": false
+                },
+                {
+                    "text": "Risikoanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Risiko",
+                    "correct": false
+                },
+                {
+                    "text": "Risikoüberwachung",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Ein Testvorgehen, bei welchem sich das Management, die Auswahl, die Priorisierung und die Anwendung von Testaktivitäten und Ressourcen an entsprechenden Risikotypen und Risikostufen orientieren.",
+            "explanation": "Dies entspricht der Definition von 'risikobasierter Test'. (Standardglossar_der_Begriffe_des_Softwartestens, risikobasierter Test)",
+            "options": [
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "Teststrategie",
+                    "correct": false
+                },
+                {
+                    "text": "risikobasierter Test",
+                    "correct": true
+                },
+                {
+                    "text": "Risikoüberwachung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs statische Analyse?",
+            "explanation": "Die statische Analyse ist der Prozess der Bewertung eines Testobjekts (Komponente oder System) basierend auf seiner Form, Struktur, Inhalt oder Dokumentation, ohne es auszuführen. (Standardglossar_der_Begriffe_des_Softwartestens, statische Analyse)",
+            "options": [
+                {
+                    "text": "Der Prozess der Bewertung eines Testobjekts (Komponente oder System) basierend auf seiner Form, seiner Struktur, seines Inhalts oder seiner Dokumentation, ohne es auszuführen.",
+                    "correct": true
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf dem Zusammenwirken zwischen Komponenten oder Systemen.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess innerhalb des Softwareentwicklungslebenszyklus, der die Qualität einer Komponente oder eines Systems und der zugehörigen Arbeitsergebnisse bewertet.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Prozess der Aufdeckung, Analyse und Entfernung der Ursachen von Fehlerwirkungen in einer Komponente oder einem System.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Testautomatisierung?",
+            "explanation": "Die Testautomatisierung ist der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten. (Standardglossar_der_Begriffe_des_Softwartestens, Testautomatisierung)",
+            "options": [
+                {
+                    "text": "Eine Gruppe von Testaktivitäten basierend auf bestimmten Testzielen mit dem Zweck, eine Komponente oder ein System auf spezifische Merkmale zu prüfen.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Einsatz von Software zur Durchführung oder Unterstützung von Testaktivitäten.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Aktivität, die auf Basis der Testanalyse und des -Entwurfs die Testmittel vorbereitet, welche für die Testdurchführung benötigt werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Teststufe mit dem Schwerpunkt auf einer einzelnen Hardware- oder Softwarekomponente.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Aktivität, die auf Basis der Testanalyse und des -Entwurfs die Testmittel vorbereitet, welche für die Testdurchführung benötigt werden.",
+            "explanation": "Dies entspricht der Definition von 'Testrealisierung'. (Standardglossar_der_Begriffe_des_Softwartestens, Testrealisierung)",
+            "options": [
+                {
+                    "text": "Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Teststrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Testrealisierung",
+                    "correct": true
+                },
+                {
+                    "text": "Testverfahren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Name des Begriffs mit folgender Definition? Die Dokumentation der Testziele sowie der Maßnahmen und Zeitplanung, um diese zu erreichen, zum Zweck der Koordination des Testens.",
+            "explanation": "Dies entspricht der Definition von 'Testkonzept'. (Standardglossar_der_Begriffe_des_Softwartestens, Testkonzept)",
+            "options": [
+                {
+                    "text": "Testkonzept",
+                    "correct": true
+                },
+                {
+                    "text": "Testentwurf",
+                    "correct": false
+                },
+                {
+                    "text": "Testverfahren",
+                    "correct": false
+                },
+                {
+                    "text": "Testen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist die Definition des Begriffs Walkthrough?",
+            "explanation": "Ein Walkthrough ist eine Reviewart, bei der ein Autor die Reviewteilnehmer durch ein Arbeitsergebnis leitet und die Teilnehmer Fragen stellen und Auffälligkeiten kommentieren. (Standardglossar_der_Begriffe_des_Softwartestens, Walkthrough)",
+            "options": [
+                {
+                    "text": "Ein formales Review durch technische Experten, die die Qualität eines Arbeitsergebnisses untersuchen und Abweichungen von Spezifikationen und Standards feststellen.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Arbeitsergebnisse, die während des Testprozesses erstellt werden und dazu gebraucht werden, um die Tests zu planen, zu entwerfen, auszuführen, auszuwerten und darüber zu berichten.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein Review, das einem definierten Prozess folgt und ein formell dokumentiertes Ergebnis liefert.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Reviewart, bei der ein Autor die Reviewteilnehmer durch ein Arbeitsergebnis leitet und die Teilnehmer Fragen stellen und Auffälligkeiten kommentieren.",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

@@ -43,6 +43,7 @@ const DocumentationIndexPage: React.FC = () => {
                 { id: "1.4.4", title: "Verfolgbarkeit zwischen der Testbasis und den Testmitteln", page: "23" },
                 { id: "1.4.5", title: "Rollen des Testens", page: "24" },
                 { id: "1.5", title: "Wesentliche Kompetenzen und bewährte Praktiken beim Testen", page: "24" },
+                { id: "1.5.1", title: "Allgemeine Kompetenzen, die für das Testen erforderlich sind", page: "24" },
                 { id: "1.5.2", title: "Whole-Team-Ansatz (Whole Team Approach)", page: "25" },
                 { id: "1.5.3", title: "Unabhängigkeit des Testens", page: "26" }
             ]

@@ -964,7 +964,9 @@ app.delete(
   }
 );
 
-// Server'ı başlat
-startServer();
+// Server'ı başlat (sadece direkt çalıştırıldığında)
+if (require.main === module) {
+  startServer();
+}
 
 module.exports = app;

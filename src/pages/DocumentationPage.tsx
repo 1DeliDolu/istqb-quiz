@@ -41,6 +41,7 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
             { file: '1.4.4_Verfolgbarkeit_zwischen_der_Testbasis_und_den_Testmitteln.md', title: '1.4.4 Verfolgbarkeit zwischen der Testbasis und den Testmitteln', page: 23 },
             { file: '1.4.5_Rollen_des_Testens.md', title: '1.4.5 Rollen des Testens', page: 24 },
             { file: '1.5_Wesentliche_Kompetenzen_und_bewährte_Praktiken_beim_Testen.md', title: '1.5 Wesentliche Kompetenzen und bewährte Praktiken beim Testen', page: 24 },
+            { file: '1.5.1_Allgemeine_Kompetenzen_die_für_das_Testen_erforderlich_sind.md', title: '1.5.1 Allgemeine Kompetenzen, die für das Testen erforderlich sind', page: 24 },
             { file: '1.5.2_Whole-Team-Ansatz.md', title: '1.5.2 Whole-Team-Ansatz (Whole Team Approach)', page: 25 },
             { file: '1.5.3_Unabhängigkeit_des_Testens.md', title: '1.5.3 Unabhängigkeit des Testens', page: 26 },
         ],

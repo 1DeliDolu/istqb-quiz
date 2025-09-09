@@ -758,14 +758,14 @@ const QuizPage: React.FC = () => {
 
             {/* Frage */}
             <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-                <h3 className="text-xl font-semibold mb-6">{currentQuestion.question}</h3>
+                <h3 className="text-xl font-semibold mb-6 text-left">{currentQuestion.question}</h3>
 
                 <div className="space-y-3">
                     {currentQuestion.options.map((option, index) => (
                         <div
                             key={`${currentQuestion.id}-${index}`}
                             onClick={() => handleAnswerSelect(option)}
-                            className={`p-4 border rounded-lg transition-all ${getOptionClass(option)}`}
+                            className={`p-4 border rounded-lg transition-all text-left ${getOptionClass(option)}`}
                         >
                             <span className="font-semibold mr-2">{String.fromCharCode(65 + index)}:</span>
                             {option}
@@ -776,11 +776,11 @@ const QuizPage: React.FC = () => {
 
             {/* Erklärung */}
             {isAnswered && (
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
-                    <h4 className="font-bold text-blue-800 mb-2">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6 text-left">
+                    <h4 className="font-bold text-blue-800 mb-2 text-left">
                         {selectedAnswer === currentQuestion.correctAnswer ? '✅ Richtig!' : '❌ Falsch!'}
                     </h4>
-                    <p className="text-blue-700"><strong>Erklärung:</strong> {currentQuestion.explanation}</p>
+                    <p className="text-blue-700 text-left"><strong>Erklärung:</strong> {currentQuestion.explanation}</p>
                     {/* Documentation Link */}
                     {currentQuestion.explanation && (
                         <div className="mt-4 pt-3 border-t border-blue-200">
