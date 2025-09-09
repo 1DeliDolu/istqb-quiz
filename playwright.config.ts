@@ -11,6 +11,12 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },
+  webServer: {
+    command: 'npm run build && npx http-server dist -p 4173 -s',
+    url: 'http://localhost:4173',
+    reuseExistingServer: true,
+    timeout: 120_000,
+  },
   // Run on Chromium by default; can expand matrix later
   projects: [
     {
@@ -19,4 +25,3 @@ export default defineConfig({
     },
   ],
 })
-

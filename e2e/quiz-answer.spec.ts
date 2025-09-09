@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-const seedQuestions = (chapterId: string, count = 15) => {
+const seedQuestions = (chapterId: string, count = 3) => {
   const questions = Array.from({ length: count }, (_, i) => {
     const idx = i + 1
     return {
@@ -8,22 +8,22 @@ const seedQuestions = (chapterId: string, count = 15) => {
       question: `Q ${idx}: Example question?`,
       options: ['A', 'B', 'C', 'D'],
       correctAnswer: 'A',
-      explanation: 'See 1.1 section',
+      explanation: 'Erklärung: Siehe 1.1 Abschnitt',
       subChapter: '1.1 Was ist Testen?',
     }
   })
   localStorage.setItem(`istqb_chapter_${chapterId}`, JSON.stringify(questions))
 }
 
-test('quiz loads and paginates (mocked API)', async ({ page }) => {
-  const questions = Array.from({ length: 15 }, (_, i) => {
+test('answer selection shows explanation and next', async ({ page }) => {
+  const questions = Array.from({ length: 3 }, (_, i) => {
     const idx = i + 1
     return {
       id: idx,
       question: `Q ${idx}: Example question?`,
       options: ['A', 'B', 'C', 'D'],
       correctAnswer: 'A',
-      explanation: 'See 1.1 section',
+      explanation: 'Erklärung: Siehe 1.1 Abschnitt',
       subChapter: '1.1 Was ist Testen?',
     }
   })
@@ -41,11 +41,12 @@ test('quiz loads and paginates (mocked API)', async ({ page }) => {
 
   await page.goto('/quiz/1')
 
-  await expect(page.getByText('Q 1: Example question?')).toBeVisible()
-  const nextLink = page.locator('[aria-label="Go to next page"]')
-  await expect(nextLink).toBeVisible()
-  await nextLink.click()
+  // Click option labeled with "A:" (first option)
+  await page.getByText(/^A:/).first().click()
+  await expect(page.getByText('Erklärung:')).toBeVisible()
+  await expect(page.getByRole('button', { name: /Nächste Frage|Ergebnisse anzeigen/ })).toBeVisible()
+
+  // Go to next question
+  await page.getByRole('button', { name: /Nächste Frage|Ergebnisse anzeigen/ }).click()
   await expect(page.getByText('Q 2: Example question?')).toBeVisible()
-  await page.locator('[data-slot="pagination-link"]', { hasText: '15' }).click()
-  await expect(page.getByText('Q 15: Example question?')).toBeVisible()
 })

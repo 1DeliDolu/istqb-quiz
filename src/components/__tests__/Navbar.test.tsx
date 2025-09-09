@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react'
-import React from 'react'
 import Navbar from '@/components/Navbar'
 
 describe('Navbar', () => {
@@ -10,4 +9,3 @@ describe('Navbar', () => {
     expect(screen.getByText('Kayıt Ol')).toBeInTheDocument()
   })
 })
-
