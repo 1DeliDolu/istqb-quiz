@@ -1,46 +1,9 @@
-musta@Musta MINGW64 /d/istqb-quiz (main)
-$ npm run test
-
-> vite-project@0.0.0 test
-> vitest
-
-
- DEV  v2.1.9 D:/istqb-quiz
-
-stdout | server/__tests__/auth.test.ts > POST /api/auth/login > returns 401 with invalid credentials (no DB user)
-AUTH_RESPONSE 401 { message: 'Invalid username or password' }
-DB_QUERY_CALLS 0
-
- ✓ server/__tests__/auth.test.ts (1)
- ✓ server/__tests__/health.test.ts (1)
- ❯ src/components/__tests__/Navbar.test.tsx (0)
-
-⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
-
- FAIL  src/components/__tests__/Navbar.test.tsx [ src/components/__tests__/Navbar.test.tsx ]
-Error: Failed to resolve import "@/components/Navbar" from "src/components/__tests__/Navbar.test.tsx". Does the file exist?
-  Plugin: vite:import-analysis
-  File: D:/istqb-quiz/src/components/__tests__/Navbar.test.tsx:2:19
-  1  |  import { jsxDEV } from "react/jsx-dev-runtime";
-  2  |  import { render, screen } from "@testing-library/react";
-  3  |  import Navbar from "@/components/Navbar";
-     |                      ^
-  4  |  describe("Navbar", () => {
-  5  |    it("shows login/register links when logged out", () => {
- ❯ TransformPluginContext._formatError node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41
- ❯ TransformPluginContext.error node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16
- ❯ normalizeUrl node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64306:23
- ❯ node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64438:39
- ❯ TransformPluginContext.transform node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64365:7
- ❯ PluginContainer.transform node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18
- ❯ loadAndTransform node_modules/vitest/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27
-
-⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
-
- Test Files  1 failed | 2 passed (3)
-      Tests  2 passed (2)
-   Start at  10:30:58
-   Duration  1.35s (transform 114ms, setup 267ms, collect 645ms, tests 81ms, environment 1.03s, prepare 281ms)
-
- FAIL  Tests failed. Watching for file changes...
-       press h to show help, press q to quit
+Run npm ci
+  npm ci
+  shell: /usr/bin/bash -e {0}
+npm warn tarball tarball data for @humanfs/node@https://registry.npmjs.org/@humanfs/node/-/node-0.16.6.tgz (sha512-YuI2ZHQL78Q5HbhDiBA1X4LmYdXCKCMQIfw0pw7piHJwyREFebJUvrQN4cmssyES6x+vfUbx1CIpaQUKYdQZOw==) seems to be corrupted. Trying again.
+npm warn tarball tarball data for @humanfs/node@https://registry.npmjs.org/@humanfs/node/-/node-0.16.6.tgz (sha512-YuI2ZHQL78Q5HbhDiBA1X4LmYdXCKCMQIfw0pw7piHJwyREFebJUvrQN4cmssyES6x+vfUbx1CIpaQUKYdQZOw==) seems to be corrupted. Trying again.
+npm error code EINTEGRITY
+npm error sha512-YuI2ZHQL78Q5HbhDiBA1X4LmYdXCKCMQIfw0pw7piHJwyREFebJUvrQN4cmssyES6x+vfUbx1CIpaQUKYdQZOw== integrity checksum failed when using sha512: wanted sha512-YuI2ZHQL78Q5HbhDiBA1X4LmYdXCKCMQIfw0pw7piHJwyREFebJUvrQN4cmssyES6x+vfUbx1CIpaQUKYdQZOw== but got sha512-YuI2ZHQL78Q5HbhDiBA1X4LmYdXCKCMQIfw0pw7piHJwyREFebJUvrQN4cMssyES6x+vfUbx1CIpaQUKYdQZOw==. (9319 bytes)
+npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2025-09-09T08_37_43_987Z-debug-0.log
+Error: Process completed with exit code 1.

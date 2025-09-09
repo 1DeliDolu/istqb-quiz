@@ -985,29 +985,34 @@ Bu proje için GitHub Actions iş akışları sade ve Vite/Node yapısına uygun
   - `playwright.config.*` varsa Playwright E2E job’u çalışır.
   - `cypress.config.*` varsa Cypress E2E job’u çalışır.
 - Preview: Push’larda `deploy-pages` job’u ile `dist` GitHub Pages’a deploy edilir.
+- Dayanıklılık: NPM kurulum adımlarında ağ/registry sorunlarına karşı tekrar denemeler ve gerekirse `npm cache clean --force` ile yeniden kurulum önerilir.
 
 ### e2e.yml (Playwright E2E)
 
 - Tetikleyiciler: `workflow_dispatch`, `pull_request`, günlük cron (11:00 UTC).
 - Adımlar: `npm ci` (root + server) → `npx playwright install --with-deps` → `npx playwright test` (Playwright, `webServer` ile build + serve işlemlerini otomatik yapar).
 - Rapor: `playwright-report` artifact olarak yüklenir.
+- Dayanıklılık: `npm ci` için retry ve cache temizleme stratejisi uygulanabilir; tarayıcı indirmelerinde Playwright `--with-deps` bayrağı CI ortamında eksik bağımlılıkları indirir.
 
 ### bundle-stats.yml (Vite Bundle Stats)
 
 - `npm run build` sonrası `dist/assets` içeriğini analiz eder.
 - Toplam `dist` boyutu ve en büyük 10 dosya (ham ve gzip) `bundle-stats.md`/`bundle-stats.csv` olarak üretilir.
 - PR’larda yoruma rapor ekler/günceller; ayrıca artifact yükler.
+- Dayanıklılık: Node 20 kullanılır; `npm ci` aşamasında ağ/registry kaynaklı geçici `EINTEGRITY` sorunlarına karşı retry + `npm cache clean --force` ile tekrar deneme uygulanır (no-audit, fund=false ile daha hızlı kurulum).
 
 ### cp-update.yml (Aylık Bağımlılık Güncelleme)
 
 - Aylık (1’inde) ve `workflow_dispatch` ile çalışır.
 - `npm-check-updates` ile root ve `server/` bağımlılıklarını günceller, `npm i` kurar, `lint/build/test` çalıştırır.
 - `peter-evans/create-pull-request` ile `chore/deps-update-YYYYMMDD` branşında PR açar.
+- Dayanıklılık: Güncelleme ve kurulum adımlarında `npm ci`/`npm i` için retry + cache temizleme yaklaşımı önerilir; başarısızlıkta workflow PR oluşturmadan önce hata ile sonlanır.
 
 ### is-compatible.yml (Uyumluluk Matrisi)
 
 - Node sürümleri: 18 ve 20 üzerinde `lint`/`build`/`frontend & backend unit test` çalıştırır.
 - Amaç: Farklı Node sürümlerinde derlenebilirlik ve test geçişini doğrulamak.
+- Dayanıklılık: Her matrix job’ında `npm ci` için retry + cache temizleme önerilir; proxy/ağ dalgalanmalarında uygularsanız flaky hatalar azalır.
 
 ### release.yml (Sürüm Yayını)
 
@@ -1020,9 +1025,10 @@ Bu proje için GitHub Actions iş akışları sade ve Vite/Node yapısına uygun
   - `npm run build` (Vite)
   - Paketleme: `zip -r istqb-quiz-dist.zip dist`
   - Release notları: önceki etikete göre `git log` ile oluşturulur
-  - GitHub Release: `istqb-quiz-dist.zip` ve notlar ile yayınlanır
+- GitHub Release: `istqb-quiz-dist.zip` ve notlar ile yayınlanır
 - Kullanım:
   - `git tag v1.0.0 && git push origin v1.0.0`
+- Dayanıklılık: Yayın öncesi `npm ci` ve test/build adımlarında retry + `npm cache clean --force` fallback’i tercih edin; böylece geçici NPM bütünlük (integrity) hataları sürüm akışını kesmez.
 
 ## E2E Test Yapılandırması (Playwright)
 

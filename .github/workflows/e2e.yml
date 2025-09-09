@@ -22,14 +22,21 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: Improve npm network resilience
+        run: |
+          npm config set fetch-retries 5
+          npm config set fetch-retry-factor 2
+          npm config set fetch-retry-mintimeout 20000
+          npm config set fetch-retry-maxtimeout 120000
+
       - name: Install dependencies (root)
-        run: npm ci
+        run: npm ci --no-audit --fund=false || (npm cache clean --force && npm ci --no-audit --fund=false)
 
       - name: Install dependencies (server)
         run: |
           if [ -f server/package.json ]; then
             cd server
-            npm ci
+            npm ci --no-audit --fund=false || (npm cache clean --force && npm ci --no-audit --fund=false)
           fi
 
       - name: Build
