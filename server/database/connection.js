@@ -9,8 +9,8 @@ const dbConfig = {
   password: process.env.DB_PASSWORD || "",
   database: process.env.DB_NAME || "istqb_quiz_app",
   charset: "utf8mb4",
-  acquireTimeout: 60000,
-  timeout: 60000,
+  // Use valid mysql2 option for initial connection timeout
+  connectTimeout: 60000,
   multipleStatements: true,
 };
 

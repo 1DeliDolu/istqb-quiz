@@ -1,0 +1,163 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    outputs:
+      has-playwright: ${{ steps.check-e2e.outputs.has-playwright }}
+      has-cypress: ${{ steps.check-e2e.outputs.has-cypress }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies (root)
+        run: npm ci
+
+      - name: Install dependencies (server)
+        run: |
+          cd server
+          npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Frontend tests
+        run: npm test -- --run
+
+      - name: Backend tests
+        run: |
+          cd server
+          npm test -- --run
+
+      - name: Upload dist artifact
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist
+          if-no-files-found: warn
+
+      - name: Check for E2E configs
+        id: check-e2e
+        run: |
+          if ls playwright.config.* >/dev/null 2>&1; then echo "has-playwright=true" >> $GITHUB_OUTPUT; fi
+          if ls cypress.config.* >/dev/null 2>&1; then echo "has-cypress=true" >> $GITHUB_OUTPUT; fi
+
+  deploy-pages:
+    name: Deploy Preview (GitHub Pages)
+    if: github.event_name == 'push'
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm i; fi
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  e2e-playwright:
+    name: E2E (Playwright)
+    needs: build-and-test
+    if: needs.build-and-test.outputs.has-playwright == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm i; fi
+
+      - name: Build
+        run: npm run build
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Serve dist (SPA)
+        run: |
+          npx http-server dist -p 4173 -s &
+          sleep 3
+
+      - name: Run Playwright tests
+        env:
+          BASE_URL: http://localhost:4173
+        run: npx playwright test
+
+  e2e-cypress:
+    name: E2E (Cypress)
+    needs: build-and-test
+    if: needs.build-and-test.outputs.has-cypress == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm i; fi
+
+      - name: Build
+        run: npm run build
+
+      - name: Serve dist (SPA)
+        run: |
+          npx http-server dist -p 4173 -s &
+          sleep 3
+
+      - name: Run Cypress tests
+        run: npx cypress run --config baseUrl=http://localhost:4173

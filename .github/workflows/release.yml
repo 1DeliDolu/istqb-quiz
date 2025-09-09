@@ -1,0 +1,74 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*' # e.g. v1.0.0
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies (root)
+        run: npm ci
+
+      - name: Install dependencies (server)
+        run: |
+          if [ -f server/package.json ]; then
+            cd server
+            npm ci
+          fi
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Unit tests (frontend)
+        run: npm test -- --run
+
+      - name: Unit tests (backend)
+        run: |
+          if [ -f server/package.json ]; then
+            cd server
+            npm test -- --run
+          fi
+
+      - name: Build
+        run: npm run build
+
+      - name: Package dist
+        run: |
+          zip -r istqb-quiz-dist.zip dist
+
+      - name: Generate release notes
+        id: notes
+        run: |
+          PREV_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || true)
+          echo "prev_tag=${PREV_TAG}" >> $GITHUB_OUTPUT
+          echo "## Release $(echo ${GITHUB_REF#refs/tags/})" > RELEASE_NOTES.md
+          if [ -n "$PREV_TAG" ]; then
+            echo "\nChanges since $PREV_TAG:" >> RELEASE_NOTES.md
+            git log --pretty=format:'- %s (%h)' ${PREV_TAG}..HEAD >> RELEASE_NOTES.md
+          else
+            echo "\nInitial release." >> RELEASE_NOTES.md
+          fi
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            istqb-quiz-dist.zip
+          body_path: RELEASE_NOTES.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

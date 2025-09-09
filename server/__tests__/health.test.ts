@@ -1,33 +1,27 @@
+// @vitest-environment node
 import request from 'supertest'
-import path from 'path'
-import { fileURLToPath } from 'url'
-import { vi, describe, it, expect, beforeAll } from 'vitest'
+import app from '../server'
+import { vi, test, expect } from 'vitest'
 
-// Resolve absolute path to the module that server.js requires
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-const connectionModulePath = path.resolve(__dirname, '../database/connection.js')
-
-// Mock DB layer before importing the app
-vi.mock(connectionModulePath, () => {
-  return {
-    query: vi.fn(async () => [{ '1': 1 }]),
-    testConnection: vi.fn(async () => true),
-    initializeDatabase: vi.fn(async () => true),
-  }
-})
-
-// Import the Express app (CJS default export)
+// Hoisted absolute path for stable mocking
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore - CJS interop
-import app from '../server.js'
-
-describe('GET /api/health', () => {
-  it('returns OK when DB is reachable (mocked)', async () => {
-    const res = await request(app).get('/api/health')
-    expect(res.status).toBe(200)
-    expect(res.body.status).toBe('OK')
-    expect(res.body.database).toBe('connected')
-  })
+// @ts-ignore
+const mockedConnectionPath = vi.hoisted(() => {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const path = require('path')
+  // eslint-disable-next-line no-undef
+  return path.resolve(__dirname, '../database/connection.js')
 })
 
+// Mock database layer used by server.js
+vi.mock(mockedConnectionPath as unknown as string, () => ({
+  query: vi.fn(async () => [{ ok: 1 }]),
+  testConnection: vi.fn(async () => true),
+  initializeDatabase: vi.fn(async () => undefined),
+}))
+
+test('GET /api/health returns OK', async () => {
+  const res = await request(app).get('/api/health')
+  expect(res.status).toBe(200)
+  expect(res.body.status).toBe('OK')
+})

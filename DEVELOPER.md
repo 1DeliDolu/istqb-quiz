@@ -934,3 +934,107 @@ npm i -D @playwright/test
 
 <h1>TEST</h1>
 <!-- testing  -->
+
+## Uygulanan Adımlar ve Komutlar
+
+Bu projede test altyapısını hazırlamak için aşağıdaki işlemler yapıldı.
+
+### Çalıştırılan Komutlar
+
+```bash
+# Frontend test bağımlılıkları (root)
+npm i -D vitest jsdom @testing-library/react @testing-library/user-event @testing-library/jest-dom @vitest/coverage-v8@^2.1.0 msw whatwg-fetch
+
+# Backend test bağımlılıkları (server)
+cd server && npm i -D vitest supertest
+
+# (Hata çözümü) EINTEGRITY için npm cache temizleme + yeniden kurulum
+npm cache clean --force
+cd server && npm i -D vitest supertest
+```
+
+Not: `@vitest/coverage-v8` paketi mevcut `vitest 2.x` sürümüyle uyumlu olması için `^2.1.0` olarak kuruldu.
+
+### Yapılan Değişiklikler
+
+- Root `package.json` scriptleri güncellendi:
+  - `test`, `test:run`, `test:watch`, `coverage`
+- Server `package.json` scriptleri eklendi:
+  - `test`, `test:run`
+- Yeni dosyalar:
+  - `src/components/__tests__/Example.test.tsx`
+  - `server/__tests__/health.test.ts`
+  - `server/vitest.config.ts`
+- Karar: Root’ta kısa süreli eklenen `vitest.config.ts` ve `src/test/setup.ts` dosyaları, mevcut `vite.config.ts` (test ayarları) ve `src/setupTests.ts` ile çakışmayı önlemek için kaldırıldı.
+
+### Kullanım
+
+- Frontend testleri: `npm test` veya `npm run coverage`
+- Backend testleri: `cd server && npm test`
+
+## CI/CD ve Otomasyon
+
+Bu proje için GitHub Actions iş akışları sade ve Vite/Node yapısına uygun hale getirildi. Aşağıda her bir workflow’un amacı ve kullanım notları yer alır.
+
+### ci.yml (Ana CI)
+
+- Node 20 ile çalışır; root ve `server/` için ayrı `npm ci`.
+- Aşamalar: `lint` → `build` → frontend test (`vitest`) → backend test (`vitest` + `supertest`).
+- `dist` çıktısı artifact olarak yüklenir.
+- Koşullu E2E entegrasyonu:
+  - `playwright.config.*` varsa Playwright E2E job’u çalışır.
+  - `cypress.config.*` varsa Cypress E2E job’u çalışır.
+- Preview: Push’larda `deploy-pages` job’u ile `dist` GitHub Pages’a deploy edilir.
+
+### e2e.yml (Playwright E2E)
+
+- Tetikleyiciler: `workflow_dispatch`, `pull_request`, günlük cron (11:00 UTC).
+- Adımlar: `npm ci` (root + server) → `npm run build` → `npx playwright install --with-deps` → `npx http-server dist -p 4173 -s` (SPA) → `npx playwright test`.
+- Rapor: `playwright-report` artifact olarak yüklenir.
+
+### bundle-stats.yml (Vite Bundle Stats)
+
+- `npm run build` sonrası `dist/assets` içeriğini analiz eder.
+- Toplam `dist` boyutu ve en büyük 10 dosya (ham ve gzip) `bundle-stats.md`/`bundle-stats.csv` olarak üretilir.
+- PR’larda yoruma rapor ekler/günceller; ayrıca artifact yükler.
+
+### cp-update.yml (Aylık Bağımlılık Güncelleme)
+
+- Aylık (1’inde) ve `workflow_dispatch` ile çalışır.
+- `npm-check-updates` ile root ve `server/` bağımlılıklarını günceller, `npm i` kurar, `lint/build/test` çalıştırır.
+- `peter-evans/create-pull-request` ile `chore/deps-update-YYYYMMDD` branşında PR açar.
+
+### is-compatible.yml (Uyumluluk Matrisi)
+
+- Node sürümleri: 18 ve 20 üzerinde `lint`/`build`/`frontend & backend unit test` çalıştırır.
+- Amaç: Farklı Node sürümlerinde derlenebilirlik ve test geçişini doğrulamak.
+
+### release.yml (Sürüm Yayını)
+
+- Tetikleyici: `v*` etiket push’larında (örn. `v1.0.0`).
+- Ortam: Node 20 + npm cache.
+- Adımlar:
+  - Root ve `server/` için `npm ci` kurulumu
+  - `npm run lint`
+  - Unit testler: frontend (Vitest) ve backend (Vitest + Supertest)
+  - `npm run build` (Vite)
+  - Paketleme: `zip -r istqb-quiz-dist.zip dist`
+  - Release notları: önceki etikete göre `git log` ile oluşturulur
+  - GitHub Release: `istqb-quiz-dist.zip` ve notlar ile yayınlanır
+- Kullanım:
+  - `git tag v1.0.0 && git push origin v1.0.0`
+
+## E2E Test Yapılandırması (Playwright)
+
+- Kurulum: `npm i -D @playwright/test` ve CI’de `npx playwright install --with-deps`.
+- Konfig: `playwright.config.ts` (baseURL: `BASE_URL` env veya `http://localhost:4173`).
+- Testler: `e2e/` klasöründe (`home.spec.ts`, `login.spec.ts`, `quiz.spec.ts`).
+- Yerel çalıştırma:
+  - `npm run build`
+  - `npx http-server dist -p 4173 -s`
+  - `BASE_URL=http://localhost:4173 npm run e2e`
+
+## Backend Modernizasyon Notları
+
+- DB erişim katmanı `server/server.js` içinde `const db = require('./database/connection')` şeklinde birleştirildi; tüm sorgular `db.query(...)` ile çağrılır (testlerde kolay mock için).
+- MySQL2 uyarıları giderildi: `acquireTimeout/timeout` kaldırıldı, `connectTimeout` kullanıldı.

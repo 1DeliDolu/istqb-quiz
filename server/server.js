@@ -5,11 +5,8 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
-const {
-  query,
-  testConnection,
-  initializeDatabase,
-} = require("./database/connection");
+// Import DB module as an object to allow runtime mocking in tests
+const db = require("./database/connection");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -57,7 +54,7 @@ async function startServer() {
 app.get("/api/health", async (req, res) => {
   try {
     // Veritabanı bağlantısını test et
-    await query("SELECT 1");
+    await db.query("SELECT 1");
     res.json({
       status: "OK",
       message: "ISTQB Quiz Server MySQL ile çalışıyor",
@@ -124,7 +121,7 @@ app.get("/api/questions/:chapter", async (req, res) => {
 
     sql += ` GROUP BY q.id ORDER BY q.created_at ASC`;
 
-    const questions = await query(sql, params);
+    const questions = await db.query(sql, params);
 
     // Sonuçları frontend formatına dönüştür
     const formattedQuestions = questions.map((q) => {
@@ -219,7 +216,7 @@ app.post("/api/questions/:chapter", async (req, res) => {
     }
 
     // Soruyu ekle
-    const questionResult = await query(
+    const questionResult = await db.query(
       "INSERT INTO questions (chapter_id, sub_chapter_id, question, explanation) VALUES (?, ?, ?, ?)",
       [chapter, subChapterId, question, explanation || ""]
     );
@@ -229,14 +226,14 @@ app.post("/api/questions/:chapter", async (req, res) => {
     // Seçenekleri ekle
     for (let i = 0; i < options.length; i++) {
       const isCorrect = options[i] === correctAnswer;
-      await query(
+      await db.query(
         "INSERT INTO question_options (question_id, option_text, is_correct, option_order) VALUES (?, ?, ?, ?)",
         [questionId, options[i], isCorrect, i]
       );
     }
 
     // Toplam soru sayısını al
-    const countResult = await query(
+    const countResult = await db.query(
       "SELECT COUNT(*) as count FROM questions WHERE chapter_id = ?",
       [chapter]
     );
@@ -270,7 +267,7 @@ app.get("/api/chapters", async (req, res) => {
             ORDER BY c.id
         `;
 
-    const chapters = await query(sql);
+    const chapters = await db.query(sql);
 
     const formattedChapters = chapters.map((ch) => ({
       id: ch.id,
@@ -291,7 +288,7 @@ app.delete("/api/questions/:chapter", async (req, res) => {
     const { chapter } = req.params;
 
     // İlk önce question_options'ı sil (foreign key constraint)
-    await query(
+    await db.query(
       `
             DELETE qo FROM question_options qo
             INNER JOIN questions q ON qo.question_id = q.id
@@ -301,7 +298,7 @@ app.delete("/api/questions/:chapter", async (req, res) => {
     );
 
     // Sonra questions'ı sil
-    const result = await query("DELETE FROM questions WHERE chapter_id = ?", [
+    const result = await db.query("DELETE FROM questions WHERE chapter_id = ?", [
       chapter,
     ]);
 
@@ -421,7 +418,7 @@ app.post("/api/auth/register", async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, saltRounds);
 
     // Kullanıcıyı oluştur
-    const result = await query(
+    const result = await db.query(
       "INSERT INTO users (username, email, password_hash, first_name, last_name) VALUES (?, ?, ?, ?, ?)",
       [username, email, hashedPassword, firstName || null, lastName || null]
     );
@@ -468,7 +465,7 @@ app.post("/api/auth/login", async (req, res) => {
     }
 
     // Kullanıcıyı bul
-    const users = await query(
+    const users = await db.query(
       "SELECT id, username, email, password_hash, first_name, last_name FROM users WHERE username = ?",
       [username]
     );
@@ -519,7 +516,7 @@ app.post("/api/auth/login", async (req, res) => {
 // Kullanıcı profil bilgilerini getir
 app.get("/api/auth/profile", authenticateToken, async (req, res) => {
   try {
-    const users = await query(
+    const users = await db.query(
       "SELECT id, username, email, first_name, last_name, created_at FROM users WHERE id = ?",
       [req.user.id]
     );
