@@ -4,23 +4,881 @@
     "subChapterTitle": "8.1 Beispielprüfung 1",
     "questions": [
         {
-            "question": "Welches Tool hilft bei der effizienten Verwaltung großer Testmengen?",
-            "explanation": "Ein Test Runner Framework organisiert, führt automatisierte Test-Suiten aus und erstellt Berichte über die Ergebnisse. Es ermöglicht die effiziente Verwaltung großer Testmengen, reduziert manuellen Aufwand und sorgt für konsistente Testausführung. (6.1.12_Test-Runner-Frameworks.md)",
+            "question": "Welcher Faktor ist am WENIGSTEN relevant für die Testfalldesign?",
+            "explanation": "Marketingziele haben keinen direkten Einfluss auf das technische Design von Testfällen. Testfalldesign basiert hauptsächlich auf Risikoniveau, Anforderungskomplexität und erwarteten Ergebnissen. (4.1_Testverfahren_im_Überblick.md)",
             "options": [
                 {
-                    "text": "Dokumentationsmanager",
+                    "text": "Risikoniveau",
                     "correct": false
                 },
                 {
-                    "text": "Test Runner Framework",
+                    "text": "Anforderungskomplexität",
+                    "correct": false
+                },
+                {
+                    "text": "Erwartetes Ergebnis",
+                    "correct": false
+                },
+                {
+                    "text": "Marketingziele",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Warum ist es wichtig, offene Fehler zu verfolgen?",
+            "explanation": "Die Kenntnis offener Fehler hilft bei der Bewertung, ob ein Produkt bereit für die Veröffentlichung ist. Dies unterstützt Entscheidungen zur Release-Bereitschaft und gehört zum Fehlermanagement. (5.5_Fehlermanagement.md)",
+            "options": [
+                {
+                    "text": "Um die Leistung der Anwendung zu verbessern",
+                    "correct": false
+                },
+                {
+                    "text": "Um sicherzustellen, welche Tests übersprungen werden müssen",
+                    "correct": false
+                },
+                {
+                    "text": "Um Entscheidungen zur Release-Bereitschaft zu unterstützen",
                     "correct": true
                 },
                 {
-                    "text": "Helpdesk-Ticketing-Tool",
+                    "text": "Um Werbeanzeigen zu erstellen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Artefakt ist am hilfreichsten, um die Abdeckung von Geschäftsregeln zu überprüfen?",
+            "explanation": "Entscheidungstabellen zeigen, wie verschiedene Eingaben zu bestimmten Geschäftsergebnissen führen. Sie sind besonders nützlich, um die Abdeckung von Geschäftsregeln systematisch zu überprüfen. (4.2.3_Entscheidungstabellentest.md)",
+            "options": [
+                {
+                    "text": "Bericht zur Anweisungsabdeckung",
                     "correct": false
                 },
                 {
-                    "text": "Wireframing-Tool",
+                    "text": "Fehlerprotokoll",
+                    "correct": false
+                },
+                {
+                    "text": "Unit-Test-Plan",
+                    "correct": false
+                },
+                {
+                    "text": "Entscheidungstabelle",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was sollte beim Erstellen von Testfällen vermieden werden?",
+            "explanation": "Unklare Schritte führen zu Missverständnissen und inkonsistenter Testdurchführung. Testfälle sollten eindeutig, nachvollziehbar und reproduzierbar sein. (1.5.3_Unabhängigkeit_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Erwartete Ergebnisse angeben",
+                    "correct": false
+                },
+                {
+                    "text": "Vage Schritte verwenden",
+                    "correct": true
+                },
+                {
+                    "text": "Verlinkung mit Anforderungen",
+                    "correct": false
+                },
+                {
+                    "text": "Grenzwerte verwenden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testaktivität profitiert am meisten von Automatisierungstools?",
+            "explanation": "Regressions-Tests sind wiederkehrend und lassen sich gut automatisieren. Automatisierung erhöht die Effizienz und Konsistenz bei der Durchführung dieser Tests. (6.2_Nutzen_und_Risiken_von_Testautomatisierung.md)",
+            "options": [
+                {
+                    "text": "Kundeninterviews",
+                    "correct": false
+                },
+                {
+                    "text": "Regressions-Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Exploratives Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Release-Ankündigungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was kann durch häufiges Test-Monitoring frühzeitig erkannt werden?",
+            "explanation": "Monitoring hilft, Engpässe und ineffiziente Abläufe frühzeitig zu erkennen. Dies unterstützt die kontinuierliche Verbesserung der Testprozesse. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
+            "options": [
+                {
+                    "text": "Späte Performanceprobleme",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler nach dem Release",
+                    "correct": false
+                },
+                {
+                    "text": "Prozesseffizienzen",
+                    "correct": true
+                },
+                {
+                    "text": "Marketingvorlieben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte beim Entwurf von Testdaten berücksichtigt werden?",
+            "explanation": "Testdaten sollten normale, Rand- und ungültige Szenarien abdecken. Realistische Eingaben und Grenzwerte ermöglichen eine effektive Testabdeckung und Fehlererkennung. (4.2.2_Grenzwertanalyse.md)",
+            "options": [
+                {
+                    "text": "Serverkapazität",
+                    "correct": false
+                },
+                {
+                    "text": "Realistische Eingaben und Grenzwerte",
+                    "correct": true
+                },
+                {
+                    "text": "Netzwerkbandbreite",
+                    "correct": false
+                },
+                {
+                    "text": "Produktionsprotokolle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Nutzen, wenn Testziele mit Geschäftszielen abgestimmt werden?",
+            "explanation": "Tests, die mit Geschäftszielen übereinstimmen, liefern echten Mehrwert für die Organisation. Sie helfen sicherzustellen, dass die Testaktivitäten den geschäftlichen Zweck unterstützen und priorisieren. (1.1.1_Testziele.md)",
+            "options": [
+                {
+                    "text": "Um die Anzahl der Testfälle zu reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um Benutzerfeedback zu vermeiden",
+                    "correct": false
+                },
+                {
+                    "text": "Um sicherzustellen, dass Tests den Geschäftszweck unterstützen",
+                    "correct": true
+                },
+                {
+                    "text": "Um Fehlerberichte zu vermeiden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wofür wird ein Testzusammenfassungsbericht verwendet?",
+            "explanation": "Ein Testzusammenfassungsbericht bietet einen Überblick über durchgeführte Tests und deren Ergebnisse. Er dient der Kommunikation des Teststatus gegenüber Stakeholdern. (5.3.2_Zweck_Inhalt_und_Zielgruppen_für_Testberichte.md)",
+            "options": [
+                {
+                    "text": "Zur Bereitstellung von Schulungsanweisungen",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Zusammenfassung von Testaktivitäten und Ergebnissen",
+                    "correct": true
+                },
+                {
+                    "text": "Zum Protokollieren von Live-Problemen im System",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Genehmigung von Marketingmaterialien",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was kann aus Testmetriken abgeleitet werden?",
+            "explanation": "Metriken zeigen, welche Teile des Systems noch nicht ausreichend getestet wurden. Sie helfen dabei, Testaktivitäten gezielt zu planen und Bereiche mit unzureichender Testabdeckung zu identifizieren. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
+            "options": [
+                {
+                    "text": "Optimierung des Quellcodes",
+                    "correct": false
+                },
+                {
+                    "text": "Entwicklungsgeschwindigkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Bereiche, die mehr Tests benötigen",
+                    "correct": true
+                },
+                {
+                    "text": "Zeitplan für Hardware-Upgrades",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Bewertung eines Tools vor der Einführung wichtig?",
+            "explanation": "Ein passendes Tool unterstützt Arbeitsabläufe, lässt sich integrieren und wird vom Team akzeptiert. Die Bewertung stellt sicher, dass das Tool zur technischen und organisatorischen Umgebung passt. (6.1_Werkzeugunterstuetzung_für_das_Testen.md)",
+            "options": [
+                {
+                    "text": "Um das Testen zu verzögern",
+                    "correct": false
+                },
+                {
+                    "text": "Um das Team zu verärgern",
+                    "correct": false
+                },
+                {
+                    "text": "Um sicherzustellen, dass das Tool zur technischen und organisatorischen Umgebung passt",
+                    "correct": true
+                },
+                {
+                    "text": "Um die Dokumentation zu vermeiden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte in einem Testzusammenfassungsbericht enthalten sein?",
+            "explanation": "Ein guter Bericht dokumentiert Testumfang, Metriken, aufgetretene Probleme und Empfehlungen. Er bietet einen Überblick über Testaktivitäten und Ergebnisse für Stakeholder. (5.3.2_Zweck_Inhalt_und_Zielgruppen_für_Testberichte.md)",
+            "options": [
+                {
+                    "text": "Nur gefundene Fehler",
+                    "correct": false
+                },
+                {
+                    "text": "Die Struktur des Entwicklungsteams",
+                    "correct": false
+                },
+                {
+                    "text": "Überblick über Testaktivitäten und Ergebnisse",
+                    "correct": true
+                },
+                {
+                    "text": "Rückmeldungen aus dem Marketing",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wofür wird ein Testzusammenfassungsbericht verwendet?",
+            "explanation": "Der Bericht dokumentiert abgeschlossene Testaktivitäten und deren Ergebnisse. Er dient der Kommunikation des Teststatus gegenüber Stakeholdern und hilft bei der Bewertung der Testabdeckung und Qualität. (5.3.2_Zweck_Inhalt_und_Zielgruppen_für_Testberichte.md)",
+            "options": [
+                {
+                    "text": "Bereitstellung von Schulungsanleitungen",
+                    "correct": false
+                },
+                {
+                    "text": "Zusammenfassung von Testaktivitäten und Ergebnissen",
+                    "correct": true
+                },
+                {
+                    "text": "Protokollierung von Echtzeit-Systemproblemen",
+                    "correct": false
+                },
+                {
+                    "text": "Genehmigung von Marketingmaterialien",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Nutzen, wenn Testziele mit Geschäftszielen abgestimmt werden?",
+            "explanation": "Tests, die auf Unternehmensziele abgestimmt sind, liefern echten Mehrwert. Sie helfen sicherzustellen, dass Testaktivitäten den geschäftlichen Zweck unterstützen und priorisieren. (1.1.1_Testziele.md)",
+            "options": [
+                {
+                    "text": "Reduzierung der Anzahl an Tests",
+                    "correct": false
+                },
+                {
+                    "text": "Beseitigung von Benutzerfeedback",
+                    "correct": false
+                },
+                {
+                    "text": "Sicherstellung, dass Tests den Unternehmenswert unterstützen",
+                    "correct": true
+                },
+                {
+                    "text": "Vermeidung von Fehlerberichten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte beim Entwurf von Testdaten berücksichtigt werden?",
+            "explanation": "Testdaten sollten normale, Rand- und ungültige Fälle abdecken. Dies ermöglicht eine umfassende Testabdeckung und hilft, Fehler frühzeitig zu erkennen. (4.2.2_Grenzwertanalyse.md)",
+            "options": [
+                {
+                    "text": "Serverkapazität",
+                    "correct": false
+                },
+                {
+                    "text": "Realistische Eingabedaten und Grenzwerte",
+                    "correct": true
+                },
+                {
+                    "text": "Netzwerkbandbreite",
+                    "correct": false
+                },
+                {
+                    "text": "Produktionsprotokolle",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was kann durch häufiges Test-Monitoring frühzeitig erkannt werden?",
+            "explanation": "Monitoring hilft, Engpässe frühzeitig zu erkennen. Durch kontinuierliche Überwachung der Testaktivitäten lassen sich Prozesseineffizienzen identifizieren und gezielt verbessern. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
+            "options": [
+                {
+                    "text": "Späte Performanceprobleme",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler nach dem Release",
+                    "correct": false
+                },
+                {
+                    "text": "Prozesseineffizienzen",
+                    "correct": true
+                },
+                {
+                    "text": "Marketingpräferenzen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Testaktivität profitiert am meisten von Automatisierungstools?",
+            "explanation": "Regressions-Tests sind wiederholbar und daher ideal zur Automatisierung. Sie ermöglichen eine effiziente und konsistente Durchführung bei jeder Änderung im System. (6.2_Nutzen_und_Risiken_von_Testautomatisierung.md)",
+            "options": [
+                {
+                    "text": "Kundeninterviews",
+                    "correct": false
+                },
+                {
+                    "text": "Regressions-Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Exploratives Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Release-Ankündigungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte beim Design von Testfällen vermieden werden?",
+            "explanation": "Unklare Schritte führen zu Missverständnissen und Fehlern bei der Ausführung. Testfälle sollten eindeutig, nachvollziehbar und reproduzierbar sein. (1.5.3_Unabhängigkeit_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Erwartete Ergebnisse angeben",
+                    "correct": false
+                },
+                {
+                    "text": "Vage Schritte verwenden",
+                    "correct": true
+                },
+                {
+                    "text": "Anforderungen verlinken",
+                    "correct": false
+                },
+                {
+                    "text": "Grenzwerte verwenden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Artefakt ist am hilfreichsten zur Überprüfung der Geschäftsregelabdeckung?",
+            "explanation": "Entscheidungstabellen helfen dabei, Eingabekombinationen mit Regeln zu verknüpfen. Sie sind besonders geeignet, um die Abdeckung von Geschäftsregeln systematisch zu überprüfen. (4.2.3_Entscheidungstabellentest.md)",
+            "options": [
+                {
+                    "text": "Entscheidungstabelle",
+                    "correct": true
+                },
+                {
+                    "text": "Bericht zur Anweisungsabdeckung",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerprotokoll",
+                    "correct": false
+                },
+                {
+                    "text": "Unit-Test-Plan",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Toolbewertung vor der Einführung wichtig?",
+            "explanation": "Ein geeignetes Tool unterstützt Arbeitsabläufe und kann gut integriert werden. Die Bewertung stellt sicher, dass das Tool technisch und organisatorisch passt und vom Team akzeptiert wird. (6.1_Werkzeugunterstuetzung_für_das_Testen.md)",
+            "options": [
+                {
+                    "text": "Um Tests zu verzögern",
+                    "correct": false
+                },
+                {
+                    "text": "Um das Team zu verkleinern",
+                    "correct": false
+                },
+                {
+                    "text": "Um sicherzustellen, dass das Tool technisch und organisatorisch passt",
+                    "correct": true
+                },
+                {
+                    "text": "Um auf Dokumentation zu verzichten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wofür wird ein Testmanagement-Tool hauptsächlich verwendet?",
+            "explanation": "Testmanagement-Tools organisieren Testfälle, Ergebnisse und Fortschritte. Sie unterstützen die Planung, Verfolgung und Dokumentation von Testaktivitäten. (6.1_Werkzeugunterstuetzung_für_das_Testen.md)",
+            "options": [
+                {
+                    "text": "Entwicklung von Quellcode",
+                    "correct": false
+                },
+                {
+                    "text": "Verfolgung von Testaktivitäten und Dokumentation",
+                    "correct": true
+                },
+                {
+                    "text": "Ausführen von SQL-Skripten",
+                    "correct": false
+                },
+                {
+                    "text": "Entwurf von UI-Komponenten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was hilft sicherzustellen, dass alle geplanten Bereiche getestet wurden?",
+            "explanation": "Eine Traceability Matrix verbindet Anforderungen mit Testfällen. Sie stellt sicher, dass alle geplanten Bereiche durch entsprechende Tests abgedeckt sind. (1.4.4_Verfolgbarkeit_zwischen_Testbasis_und_Testmitteln.md)",
+            "options": [
+                {
+                    "text": "Systemarchitekturdokument",
+                    "correct": false
+                },
+                {
+                    "text": "Testzusammenfassungsbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Rückverfolgbarkeitsmatrix",
+                    "correct": true
+                },
+                {
+                    "text": "Code-Repository",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Metrik ist der 'Prozentsatz bestandener Testfälle'?",
+            "explanation": "Diese Metrik zeigt, wie viel der geplanten Tests erfolgreich abgeschlossen wurde. Sie gehört zur Kategorie der Fortschrittsmetriken, da sie den Fortschritt der Testaktivitäten darstellt. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
+            "options": [
+                {
+                    "text": "Aufwandmetrik",
+                    "correct": false
+                },
+                {
+                    "text": "Fortschrittsmetrik",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlermetrik",
+                    "correct": false
+                },
+                {
+                    "text": "Kostenmetrik",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was wird am ehesten in einer Teststrategie zu finden sein?",
+            "explanation": "Eine Teststrategie beschreibt das übergeordnete Testvorgehen, einschließlich Teststufen, Techniken und Verantwortlichkeiten. Sie dient als Leitfaden für die Organisation und Durchführung von Tests. (5.1.1_Zweck_und_Inhalt_eines_Testkonzepts.md)",
+            "options": [
+                {
+                    "text": "Preisgestaltung des Produkts",
+                    "correct": false
+                },
+                {
+                    "text": "Detaillierte Design-Diagramme",
+                    "correct": false
+                },
+                {
+                    "text": "Teststufen, Techniken und Verantwortlichkeiten",
+                    "correct": true
+                },
+                {
+                    "text": "Kundenliste",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was macht einen Testfall wiederverwendbar?",
+            "explanation": "Wiederverwendbare Testfälle sind modular und nicht von vorherigen Ausführungen abhängig. Sie können in verschiedenen Kontexten und Releases eingesetzt werden, ohne dass sie angepasst werden müssen. (1.5.3_Unabhängigkeit_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Er ist an ein bestimmtes Release gebunden",
+                    "correct": false
+                },
+                {
+                    "text": "Er enthält umgebungsspezifische Werte",
+                    "correct": false
+                },
+                {
+                    "text": "Er ist unabhängig von vorherigen Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Er testet nur das GUI-Layout",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Element ist im Testzusammenfassungsbericht am wenigsten relevant?",
+            "explanation": "Der Testzusammenfassungsbericht konzentriert sich auf Testergebnisse, Testfortschritt und Abnahmekriterien. Die Hierarchie des Entwicklungsteams ist für die Bewertung des Teststatus nicht relevant. (5.3.2_Zweck_Inhalt_und_Zielgruppen_für_Testberichte.md)",
+            "options": [
+                {
+                    "text": "Überblick über den Fehlerstatus",
+                    "correct": false
+                },
+                {
+                    "text": "Status der Testausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Hierarchie des Entwicklungsteams",
+                    "correct": true
+                },
+                {
+                    "text": "Bewertung der Abnahmekriterien",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein häufiger Auslöser für die Aktualisierung des Testplans?",
+            "explanation": "Wenn sich der Projektumfang ändert, sollte auch der Testplan angepasst werden. Änderungen an Anforderungen, Ressourcen oder Zeitplänen sind typische Auslöser für eine Aktualisierung. (5.1_Testplanung.md)",
+            "options": [
+                {
+                    "text": "Urlaub eines Stakeholders",
+                    "correct": false
+                },
+                {
+                    "text": "Neue Benutzerhandbücher",
+                    "correct": false
+                },
+                {
+                    "text": "Änderung des Projektumfangs",
+                    "correct": true
+                },
+                {
+                    "text": "Erfolgreiche Bereitstellung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte vor der Ausführung eines Testfalls erfolgen?",
+            "explanation": "Die Validierung von Eingaben und Setup verbessert die Testzuverlässigkeit. Vor der Ausführung eines Testfalls sollten Eingabedaten und die Testumgebung geprüft werden, um konsistente und reproduzierbare Ergebnisse zu gewährleisten. (1.5.3_Unabhängigkeit_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Fehler-Tracker aktualisieren",
+                    "correct": false
+                },
+                {
+                    "text": "Testmetriken zuweisen",
+                    "correct": false
+                },
+                {
+                    "text": "Eingabedaten und Testumgebung prüfen",
+                    "correct": true
+                },
+                {
+                    "text": "Systemlasttests ausführen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Testwerkzeugtyp simuliert Teile des Systems, die noch nicht entwickelt wurden?",
+            "explanation": "Stubs und Treiber simulieren fehlende Module während der Integrationstests. Sie ermöglichen das Testen von Komponenten, auch wenn abhängige Teile noch nicht verfügbar sind. (6.1_Werkzeugunterstützung_für_das_Testen.md)",
+            "options": [
+                {
+                    "text": "Performance-Überwachungstool",
+                    "correct": false
+                },
+                {
+                    "text": "Test-Orakel",
+                    "correct": false
+                },
+                {
+                    "text": "Stub oder Treiber",
+                    "correct": true
+                },
+                {
+                    "text": "Testdatengenerator",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Einschränkung haben Testtools?",
+            "explanation": "Testtools müssen gepflegt und regelmäßig aktualisiert werden. Sie erfordern aufwändige Wartung, was Zeit und Ressourcen beanspruchen kann. (6.2_Nutzen_und_Risiken_von_Testautomatisierung.md)",
+            "options": [
+                {
+                    "text": "Sie können keine Testfälle speichern",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erfordern aufwändige Wartung",
+                    "correct": true
+                },
+                {
+                    "text": "Sie machen Testplanung überflüssig",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erhöhen die Anzahl an Fehlern",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Tool hilft beim Erkennen von Speicherlecks und Ressourcennutzung?",
+            "explanation": "Profiler überwachen Speicher, CPU und Laufzeitleistung. Sie helfen, Speicherlecks und ineffiziente Ressourcennutzung zu identifizieren. (6.1_Werkzeugunterstützung_für_das_Testen.md)",
+            "options": [
+                {
+                    "text": "Fehler-Tracker",
+                    "correct": false
+                },
+                {
+                    "text": "Performance-Profiler",
+                    "correct": true
+                },
+                {
+                    "text": "Abdeckungsanalyse-Tool",
+                    "correct": false
+                },
+                {
+                    "text": "Testfallgenerator",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind Testmetriken für das Testmanagement nützlich?",
+            "explanation": "Testmetriken liefern messbare Indikatoren für Fortschritt und Qualität. Sie helfen dem Testmanagement, fundierte Entscheidungen zu treffen und den Teststatus transparent zu kommunizieren. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
+            "options": [
+                {
+                    "text": "Sie ersetzen alle Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Sie garantieren Systemverfügbarkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Sie liefern messbare Indikatoren für Fortschritt und Qualität",
+                    "correct": true
+                },
+                {
+                    "text": "Sie beschleunigen das Programmieren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko wird direkt durch Testmanagement adressiert?",
+            "explanation": "Testmanagement sorgt für konsistenten und abgestimmten Testumfang. Es hilft, Risiken wie uneinheitliche Testabdeckung zu vermeiden und stellt sicher, dass alle relevanten Bereiche getestet werden. (5.1_Testplanung.md)",
+            "options": [
+                {
+                    "text": "Unrealistische Deadlines",
+                    "correct": false
+                },
+                {
+                    "text": "Falsche Speicherzuweisung",
+                    "correct": false
+                },
+                {
+                    "text": "Ausfall der Testumgebung",
+                    "correct": false
+                },
+                {
+                    "text": "Uneinheitlicher Testumfang",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor kann die Wirksamkeit des Testmonitorings beeinträchtigen?",
+            "explanation": "Ohne Zugriff auf relevante Metriken ist Monitoring ineffizient. Testmonitoring basiert auf der Analyse von Kennzahlen, die den Fortschritt und die Qualität der Tests widerspiegeln. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
+            "options": [
+                {
+                    "text": "Eingeschränkter Zugriff auf Metriken",
+                    "correct": true
+                },
+                {
+                    "text": "Automatisierter Testlauf",
+                    "correct": false
+                },
+                {
+                    "text": "Datenbankleistung",
+                    "correct": false
+                },
+                {
+                    "text": "Anzahl der Designdokumente",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden ist KEINE zentrale Teststeuerungsaktivität?",
+            "explanation": "Die Ausführung gehört zur Durchführung, nicht zur Steuerung. Teststeuerung umfasst Aktivitäten wie Zeitplananpassungen, Risikobewertungen und Ressourcenmanagement. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Zeitpläne anpassen",
+                    "correct": false
+                },
+                {
+                    "text": "Risikolevel aktualisieren",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle ausführen",
+                    "correct": true
+                },
+                {
+                    "text": "Ressourcen neu zuweisen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Beispiel für eine Fortschrittsmetrik?",
+            "explanation": "Der Prozentsatz ausgeführter Testfälle zeigt, wie viel der geplanten Tests bereits durchgeführt wurde. Solche Metriken helfen, den Fortschritt der Testaktivitäten zu überwachen. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
+            "options": [
+                {
+                    "text": "Gesamtanzahl der Benutzer",
+                    "correct": false
+                },
+                {
+                    "text": "Prozentsatz ausgeführter Testfälle",
+                    "correct": true
+                },
+                {
+                    "text": "Durchschnittsgehalt der Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Anzahl der Anforderungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Zweck der Identifikation von Testbedingungen?",
+            "explanation": "Testbedingungen definieren, was auf Basis von Anforderungen getestet werden soll. Sie bilden die Grundlage für die Ableitung von Testfällen und helfen, die Testabdeckung sicherzustellen. (4.1_Testverfahren_im_Überblick.md)",
+            "options": [
+                {
+                    "text": "Um die Testumgebung zu definieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um das Benutzerschulung zu planen",
+                    "correct": false
+                },
+                {
+                    "text": "Um zu bestimmen, welche Aspekte des Systems getestet werden sollen",
+                    "correct": true
+                },
+                {
+                    "text": "Um Testzusammenfassungsberichte zu schreiben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches der folgenden ist eine typische Eingabe für die Testanalyse?",
+            "explanation": "Designdokumente liefern wichtige Informationen zur Ableitung von Testbedingungen. Sie gehören zu den typischen Eingaben für die Testanalyse, da sie die funktionalen und technischen Aspekte des Systems beschreiben. (4.1_Testverfahren_im_Überblick.md)",
+            "options": [
+                {
+                    "text": "Fehlerberichte",
+                    "correct": false
+                },
+                {
+                    "text": "Testzusammenfassungsbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Designdokumente",
+                    "correct": true
+                },
+                {
+                    "text": "Bereitstellungsplan",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Testwerkzeug misst die interne Struktur des Codes?",
+            "explanation": "Codeabdeckungs-Tools zeigen, wie viel Code durch Tests tatsächlich ausgeführt wird. Sie analysieren die interne Struktur des Codes und helfen, die Testabdeckung zu bewerten. (4.3.1_Anweisungstest_und_Anweisungsüberdeckung.md)",
+            "options": [
+                {
+                    "text": "Codeabdeckungs-Tool",
+                    "correct": true
+                },
+                {
+                    "text": "UI-Automatisierungstool",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungstracker",
+                    "correct": false
+                },
+                {
+                    "text": "Build-Server",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was kann die Fehlerdurchlaufquote (Defect Leakage Rate) anzeigen?",
+            "explanation": "Die Fehlerdurchlaufquote zeigt, wie viele Fehler von einer Teststufe zur nächsten durchrutschen. Sie ist ein Indikator für die Testeffektivität und hilft, übersehene Probleme zu erkennen. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
+            "options": [
+                {
+                    "text": "Schlechte Marketingstrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Testeffektivität und übersehene Probleme",
+                    "correct": true
+                },
+                {
+                    "text": "Häufigkeit von Releases",
+                    "correct": false
+                },
+                {
+                    "text": "Kundenzufriedenheit",
                     "correct": false
                 }
             ]
