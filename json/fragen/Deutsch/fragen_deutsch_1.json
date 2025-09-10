@@ -2,5 +2,484 @@
     "chapter": "fragen_deutsch",
     "subChapter": "deutsch_1",
     "subChapterTitle": "Deutsch.1 Grundlagen",
-    "questions": []
+    "questions": [
+        {
+            "question": "Welche der folgenden Aussagen beschreibt ein erreichbares Testziel?",
+            "explanation": "Durch das Testen werden Fehler aufgedeckt, was das Risiko verringert und gleichzeitig mehr Vertrauen in die Qualität des Testobjekts schafft. Dies ist ein realistisches und erreichbares Testziel. (1.1.1_Testziele.md)",
+            "options": [
+                {
+                    "text": "Es lässt sich nachweisen, dass das zu prüfende System keine Fehlerzustände mehr hat.",
+                    "correct": false
+                },
+                {
+                    "text": "Es lässt sich nachweisen, dass es nach der produktiven Inbetriebnahme des Systems keine Fehlerwirkungen geben wird.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Risikostufe des Testobjekts ist verringert und Vertrauen in das Qualitätsniveau ist aufgebaut.",
+                    "correct": true
+                },
+                {
+                    "text": "Durch eine Überprüfung lässt sich feststellen, dass alle Kombinationen von Eingabewerten getestet wurden.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Hauptunterschied zwischen Testen und Debuggen?",
+            "explanation": "Unter Debugging versteht man das Auffinden, Analysieren und Beseitigen der Ursachen von Fehlern in einer Komponente oder einem System u. a. nach einem dynamischen Test zwecks Fehlersuche. Testen hingegen ist der Prozess, bei dem Software ausgeführt wird, um Fehlerwirkungen aufzudecken. (1.1.2_Testen_und_Debugging.md)",
+            "options": [
+                {
+                    "text": "Testen ist der Prozess der Fehlersuche, während Debugging der Prozess der Fehlerbehebung ist.",
+                    "correct": true
+                },
+                {
+                    "text": "Beim Testen werden Anforderungen überprüft, während beim Debugging der Entwurf überprüft wird.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ist der Prozess des Ausführens von Software, während das Debugging der Prozess der Analyse der Software ist.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen ist der Prozess der Fehlervermeidung, während das Debugging der Prozess der Fehlerbeseitigung ist.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Sie sind Mitglied eines Teams, das ein neues System testet. Ihnen ist aufgefallen, dass seit mehreren Iterationen keine Änderungen an den bestehenden Regressionstestfällen vorgenommen und keine neuen Fehler durch einen Regressionstest aufgedeckt wurden. Ihr Vorgesetzter ist zufrieden, aber Sie sind es nicht. Welcher Grundsatz des Testens erklärt Ihre Skepsis in dieser Situation AM BESTEN?",
+            "explanation": "Der Grundsatz „Alte Tests verlieren an Wirksamkeit“ besagt, dass, wenn dieselben Tests immer wieder wiederholt werden, sie irgendwann keine neuen Fehler mehr finden. Das erklärt, warum Ihre Regressionstests keine neuen Fehler mehr aufdecken, obwohl Ihr Vorgesetzter zufrieden ist. (1.3_Grundsaetze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Alte Tests verlieren an Wirksamkeit.",
+                    "correct": true
+                },
+                {
+                    "text": "Trugschluss: “Keine Fehler” bedeuten ein brauchbares System.",
+                    "correct": false
+                },
+                {
+                    "text": "Häufung von Fehlerzuständen.",
+                    "correct": false
+                },
+                {
+                    "text": "Vollständiges Testen ist nicht möglich.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Sie arbeiten in einem Team, das eine mobile Anwendung für Essensbestellungen entwickelt. In der aktuellen Iteration hat das Team beschlossen, die Zahlungsfunktionalität zu implementieren. Welche der folgenden Aktivitäten gehören zur Testanalyse?",
+            "explanation": "Die Entscheidung, ob getestet wird, inwieweit Zahlungen zwischen mehreren Nutzern aufgeteilt werden können, ist ein Beispiel für die Definition von Testbedingungen und damit Teil der Testanalyse. (1.4.1_Testaktivitaeten_und_-aufgaben.md)",
+            "options": [
+                {
+                    "text": "Die Aufwandsschätzung für den Test der Integration der mobilen Anwendung mit dem Zahlungsdienst durchführen.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Entscheidung, ob getestet wird, inwieweit Zahlungen zwischen mehreren Nutzern aufgeteilt werden können.",
+                    "correct": true
+                },
+                {
+                    "text": "Mittels Grenzwertanalyse werden die Testdaten für die Testfälle abgeleitet, die die korrekte Zahlungsabwicklung für den zulässigen minimalen Betrag überprüfen.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Abweichung zwischen dem tatsächlichen und dem erwarteten Ergebnis nach der Ausführung eines Testfalls analysieren.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen beschreibt AM BESTEN, wie ein Mehrwert durch Etablierung und Aufrechterhaltung der Verfolgbarkeit zwischen Testbasis und den Testmitteln erzielt wird?",
+            "explanation": "Wenn die Testfälle mit den Anforderungen verknüpft sind, kann bei Hinzufügen eines neuen Testfalls festgestellt werden, ob zuvor nicht überdeckte Anforderungen oder Anforderungsteile durch den neuen Testfall abgedeckt werden. (1.4.4_Verfolgbarkeit_zwischen_Testbasis_und_Testmitteln.md)",
+            "options": [
+                {
+                    "text": "Wartungstests können basierend auf Änderungen der ursprünglichen Anforderungen vollständig automatisiert werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Es kann effizienter bestimmt werden, ob die angestrebte Überdeckung auch tatsächlich erreicht wurde.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Testmanagementrolle kann feststellen, welche Tester die Fehler mit dem höchsten Schweregrad gefunden haben.",
+                    "correct": false
+                },
+                {
+                    "text": "Codebereiche, die möglicherweise durch Seiteneffekte einer Änderung beeinflusst werden, können durch Regressionstests gezielt überprüft werden.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen vergleicht AM BESTEN die verschiedenen Rollen beim Testen?",
+            "explanation": "Die Rolle des Testens entwirft, erstellt und führt Testfälle aus und übernimmt die Aktivitäten der Testanalyse und des Testentwurfs. Die Rolle des Testmanagements koordiniert die Testressourcen und berichtet an die Stakeholder. (1.4.5_Rollen_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Die Rolle des Testens führt Testfälle aus, die Testmanagementrolle plant und überwacht die Testaktivitäten und meldet die Abweichungen an alle Tester.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Rolle des Testens führt die Aktivitäten der Testanalyse sowie des Testentwurfs aus und erstellt und führt Testfälle aus, die Testmanagementrolle koordiniert die Testressourcen und berichtet an die Stakeholder.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Rolle des Testens entscheidet über die zu automatisierenden Tests und priorisiert Testfälle, die Testmanagementrolle analysiert Risiken und setzt Prioritäten für die Tests.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Rolle des Testens führt statische und dynamische Komponententests durch, die Testmanagementrolle führt Systemtests und Abnahmetests durch.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen erklärt AM BESTEN einen Vorteil der Unabhängigkeit des Testens?",
+            "explanation": "Spezifikationen sind nie perfekt, was bedeutet, dass Entwickler Annahmen treffen müssen. Ein unabhängiges Testteam ist nützlich, da es diese Annahmen und die Interpretationen der Entwickler hinterfragen und überprüfen kann. (1.5.3_Unabhängigkeit_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Der Einsatz eines unabhängigen Testteams ermöglicht es der Projektleitung, dem Testteam die Verantwortung für die Qualität des Endprodukts zu übertragen.",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn man sich ein externes Testteam leisten kann, dann hat das den Vorteil, dass dieses externe Team nicht so leicht von den Bedenken des Projektmanagements und der Notwendigkeit, strikte Liefertermine einzuhalten, beeinflusst werden kann.",
+                    "correct": false
+                },
+                {
+                    "text": "Ein unabhängiges Testteam kann getrennt von den Entwicklern arbeiten, muss nicht durch Änderungen der Projektanforderungen abgelenkt werden und kann die Kommunikation mit den Entwicklern auf die Fehlerberichterstattung über das Fehlermanagementsystem beschränken.",
+                    "correct": false
+                },
+                {
+                    "text": "Wenn Spezifikationen Mehrdeutigkeiten und Ungereimtheiten enthalten, treffen Entwickler Annahmen über ihre Interpretation, und ein unabhängiges Testteam kann nützlich sein, um diese Annahmen und die Interpretation der Entwickler zu hinterfragen.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Wie zeigt sich der Whole-Team-Ansatz in der Interaktion zwischen Testern und Fachbereichsvertretern?",
+            "explanation": "Tester arbeiten eng mit Fachbereichsvertretern zusammen, um sicherzustellen, dass die gewünschten Qualitätsniveaus erreicht werden. Dazu gehört auch, dass sie diese bei der Erstellung geeigneter Abnahmetests unterstützen. (1.5.2_Whole-Team-Ansatz.md)",
+            "options": [
+                {
+                    "text": "Fachbereichsvertreter entscheiden gemeinsam mit der Projektleitung über die Ansätze zur Testautomatisierung.",
+                    "correct": false
+                },
+                {
+                    "text": "Tester helfen Fachbereichsvertretern bei der Festlegung der Teststrategie.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Beteiligung von Fachbereichsvertretern ist nicht Teil des Whole-Team-Ansatzes.",
+                    "correct": false
+                },
+                {
+                    "text": "Tester helfen Fachbereichsvertretern bei der Erstellung geeigneter Abnahmetests.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen beschreibt AM BESTEN eine gute Praktik für das Testen, die für alle Softwareentwicklungslebenszyklen gilt?",
+            "explanation": "Testen sollte frühzeitig im Entwicklungsprozess beginnen, um Fehler so früh wie möglich zu erkennen und die Kosten für die Fehlerbehebung zu minimieren. (2.1.2_Softwareentwicklungslebenszyklus_und_gute_Praktiken_fuer_das_Testen.md, 1.3_Grundsaetze_des_Testens.md)",
+            "options": [
+                {
+                    "text": "Testen sollte erst nach Abschluss der Entwicklung durchgeführt werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen sollte unter Federführung der Entwicklung durchgeführt werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Testen sollte frühzeitig im Entwicklungsprozess beginnen.",
+                    "correct": true
+                },
+                {
+                    "text": "Testen sollte in einer Entwicklungstestumgebung durchgeführt werden.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aussagen ist KEIN Beispiel für den Shift-Left-Ansatz?",
+            "explanation": "Frühe nicht-funktionale Tests sind zwar ein Beispiel für den Shift-Left-Ansatz, aber NICHT erst auf der Ebene der Systemtests. Erfolgen sie so spät, ist dies KEIN Beispiel für den Shift-Left-Ansatz. (2.1.5_Shift-Left.md)",
+            "options": [
+                {
+                    "text": "Benutzeranforderungen werden überprüft, bevor sie von den Stakeholdern formell akzeptiert werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Komponententestfälle werden erstellt, bevor der zugehörige Code programmiert wird.",
+                    "correct": false
+                },
+                {
+                    "text": "Der Performanztest einer Komponente wird während des Komponententests ausgeführt.",
+                    "correct": false
+                },
+                {
+                    "text": "Nicht-funktionale Tests werden, wenn möglich, beginnend auf der Ebene der Systemtests ausgeführt.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welches der folgenden Argumente ist AM BESTEN geeignet, um Ihren Vorgesetzten davon zu überzeugen, am Ende eines jeden Releasezyklus eine Retrospektive durchzuführen?",
+            "explanation": "Regelmäßig durchgeführte Retrospektiven mit entsprechenden Folgeaktivitäten sind entscheidend für die kontinuierliche Verbesserung von Entwicklung und Test. (2.1.6_Retrospektiven_und_Prozessverbesserung.md)",
+            "options": [
+                {
+                    "text": "Retrospektiven sind heutzutage sehr beliebt und unsere Kunden würden es zu schätzen wissen, wenn wir sie in unsere Prozesse aufnehmen würden.",
+                    "correct": false
+                },
+                {
+                    "text": "Die regelmäßige Durchführung von Retrospektiven spart dem Unternehmen Geld, da die Vertreter der Endnutzer kein unmittelbares Feedback über das Produkt geben.",
+                    "correct": false
+                },
+                {
+                    "text": "Die bei der Retrospektive festgestellten Prozessschwächen können während der Retrospektive analysiert werden und als Aufgabenliste für das Programm zur kontinuierlichen Prozessverbesserung des Unternehmens dienen.",
+                    "correct": true
+                },
+                {
+                    "text": "Retrospektiven ermöglichen es dem Team, sich gegenseitig zu loben und zu motivieren, was die Arbeitsmoral und die Produktivität erhöhen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Arten von Fehlerzuständen (1-4) werden in welchen Teststufen (A-D) AM EHESTEN gefunden?\n1. Fehlerzustände, wenn das Systemverhalten von den geschäftlichen Anforderungen abweicht\n2. Fehlerzustände in der Kommunikation zwischen Komponenten\n3. Fehlerzustände in einer isolierten Komponente\n4. Fehlerzustände in einer nicht korrekt implementierten User-Story\nA. Komponententest\nB. Komponentenintegrationstest\nC. Systemtest\nD. Abnahmetests\nWählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Die Testgrundlage für Abnahmetests sind die Geschäftsanforderungen des Benutzers (1D). Die Kommunikation zwischen den Komponenten wird beim Komponentenintegrationstest getestet (2B). Fehler in einer isolierten Komponente können beim Komponententest festgestellt werden (3A). User-Storys sind u. a. die Testbasis für Systemtests (4C). Daher ist die richtige Antwort a). (2.2.1_Teststufen.md)",
+            "options": [
+                {
+                    "text": "1D, 2B, 3A, 4C",
+                    "correct": true
+                },
+                {
+                    "text": "1D, 2B, 3C, 4A",
+                    "correct": false
+                },
+                {
+                    "text": "1B, 2A, 3D, 4C",
+                    "correct": false
+                },
+                {
+                    "text": "1C, 2A, 3B, 4D",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Die Teststrategie Ihres Unternehmens sieht vor, dass die Datenmigration zum Nachfolgesystem getestet werden muss, sobald ein System außer Betrieb genommen wird. Mit welcher Testaktivität wird diese Anforderung AM EHESTEN erfüllt? Wählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Wenn ein System außer Betrieb genommen wird, kann es erforderlich sein, die Datenmigration zu testen, was eine Art von Wartungstest ist. Dies fällt unter Migration bzw. Ablösung des Systems, beides sind Auslöser für Wartungstests. (2.3_Wartungstest.md)",
+            "options": [
+                {
+                    "text": "Wartungstest",
+                    "correct": true
+                },
+                {
+                    "text": "Regressionstest",
+                    "correct": false
+                },
+                {
+                    "text": "Komponententest",
+                    "correct": false
+                },
+                {
+                    "text": "Komponentenintegrationstest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Optionen ist KEIN Vorteil des statischen Testens? Wählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Die (manuelle) Bewertung und Behebung der durch eine statische Analyse aufgedeckten Anomalien kann erheblichen Zeit- und Ressourcenaufwand erfordern. Dies stellt einen möglichen Nachteil des statischen Testens dar, insbesondere wenn das Testobjekt sehr komplex ist. (3.1.2_Wert_des_statischen_Tests.md)",
+            "options": [
+                {
+                    "text": "Die Bewertung und Behebung der durch eine statische Analyse aufgedeckten Anomalien kann erheblichen Zeit- und Ressourcenaufwand erfordern.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Behebung von Fehlerzuständen, die bei statischen Tests gefunden werden, ist in der Regel wesentlich kostengünstiger als die Behebung von Fehlern, die bei dynamischen Tests gefunden werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Das Finden von Programmierfehlern, die bei dynamischen Tests möglicherweise nicht gefunden werden.",
+                    "correct": false
+                },
+                {
+                    "text": "Das Aufdecken von Lücken und Unstimmigkeiten in den Anforderungen.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher der folgenden Punkte ist ein Vorteil von frühem und häufigem Feedback durch Stakeholder? Wählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Frühes und häufiges Feedback ermöglicht die frühzeitige Aufdeckung potenzieller Qualitätsprobleme wie missverstandener Anforderungen. (3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder-Feedbacks.md)",
+            "options": [
+                {
+                    "text": "Es verbessert den Testprozess für zukünftige Projekte.",
+                    "correct": false
+                },
+                {
+                    "text": "Es zwingt die Kunden dazu, ihre Anforderungen basierend auf den abgestimmten Risiken zu priorisieren.",
+                    "correct": false
+                },
+                {
+                    "text": "Nur so lässt sich die Qualität der Änderungen im Prozess messen.",
+                    "correct": false
+                },
+                {
+                    "text": "Es hilft, Missverständnisse bei den Anforderungen zu vermeiden.",
+                    "correct": true
+                }
+            ]
+        },{
+            "question": "Die in Ihrem Unternehmen durchgeführten Reviews weisen die folgenden Eigenschaften auf:\n\n• Der Hauptzweck ist die Kommunikation oder die Schulung der Gutachter.\n• Die Sitzung wird vom Autor des Arbeitsergebnisses geleitet.\n• Es gibt eine individuelle Vorbereitung der Reviewer (Gutachter).\n• Ein Reviewbericht kann erstellt werden.\n\nWelche der folgenden Arten eines Reviews wird AM EHESTEN verwendet?\n\nWählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Ein Walkthrough zeichnet sich dadurch aus, dass der Autor die Sitzung leitet, Kommunikation und Schulung im Vordergrund stehen und ein Reviewbericht erstellt werden kann. Daher ist dies die zutreffende Art von Review in dieser Situation. (3.2.4_Arten_von_Reviews.md)",
+            "options": [
+                {
+                    "text": "Informelles Review",
+                    "correct": false
+                },
+                {
+                    "text": "Walkthrough",
+                    "correct": true
+                },
+                {
+                    "text": "Technisches Review",
+                    "correct": false
+                },
+                {
+                    "text": "Inspektion",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Welche der folgenden Aussagen ist KEIN Faktor, der zu einem erfolgreichen Review beiträgt? Wählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Das Management ist verantwortlich für das Budget und die Unterstützung des Reviewprozesses, sollte aber nicht persönlich bei der Kommunikation der Befunde beteiligt werden. (3.2.5_Erfolgsfaktoren_fuer_Reviews.md, 3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews.md)",
+            "options": [
+                {
+                    "text": "Die Teilnehmer sollten sich ausreichend Zeit für das Review nehmen.",
+                    "correct": false
+                },
+                {
+                    "text": "Eine Aufteilung großer Arbeitsprodukte in kleine Teile wird empfohlen, damit die Reviewer (Gutachter) nicht die Konzentration verlieren.",
+                    "correct": false
+                },
+                {
+                    "text": "Klare Ziele und messbare Endekriterien werden für das Review festgelegt.",
+                    "correct": false
+                },
+                {
+                    "text": "Das Management wirkt persönlich mit bei der Kommunikation der Befunde.",
+                    "correct": true
+                }
+            ]
+        },{
+            "question": "Welcher der folgenden Punkte ist ein Merkmal erfahrungsbasierter Testverfahren? Wählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Erfahrungsbasierte Testverfahren beruhen in hohem Maße auf den Kenntnissen des Testers über die Software und die Geschäftsdomäne. Dieses Wissen wird zur Definition von Tests genutzt. (4.1_Testverfahren_im_Überblick.md)",
+            "options": [
+                {
+                    "text": "Testfälle werden auf der Grundlage detaillierter Entwurfsinformationen erstellt.",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Messung des Überdeckungsgrads werden die Anzahl der im Test geprüften Schnittstellen verwendet.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Verfahren beruhen in hohem Maße auf den Kenntnissen des Testers über die Software und die Geschäftsdomäne.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Testfälle werden verwendet, um Abweichungen von den Anforderungen zu identifizieren.",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Sie testen die Software für eine unbeaufsichtigte amerikanische Zapfsäule. Nachdem die Zapfpistole abgehoben und die gewünschte Kraftstoffsorte ausgewählt wurde, gibt der Kunde die gewünschte Kraftstoffmenge in Gallonen über ein Tastenfeld ein. Das Tastenfeld erlaubt nur die Eingabe von Ziffern. Pro Zapfvorgang kann zwischen 0,1 und 50,0 Gallonen getankt werden. Welche der folgenden Antworten repräsentiert eine minimale Menge von Eingabewerten, die alle gültigen und ungültigen Äquivalenzklassen für die Kraftstoffmenge überdeckt? Wählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Es gibt drei Äquivalenzklassen: (1) ungültig – keine Menge wird eingegeben (0,0 Gallonen), (2) gültig – eine gültige Menge zwischen 0,1 und 50,0 Gallonen, (3) ungültig – eine Menge größer als 50,0 Gallonen. Die minimale Menge an Eingabewerten, die alle Klassen abdeckt, ist 0,0; 20,0; 60,0. (4.2.1_Äquivalenzklassenbildung.md)",
+            "options": [
+                {
+                    "text": "0,0; 20,0; 60,0",
+                    "correct": true
+                },
+                {
+                    "text": "0,0; 0,1; 50,0",
+                    "correct": false
+                },
+                {
+                    "text": "0,0; 0,1; 50,0; 70,0",
+                    "correct": false
+                },
+                {
+                    "text": "-0,1; 0,0; 0,1; 49,9; 50,0; 50,1",
+                    "correct": false
+                }
+            ]
+        }, {
+            "question": "Sie testen ein E-Commerce-System, das Lebensmittel wie Gewürze, Mehl und andere Artikel in großen Mengen verkauft. Die Einheiten, in denen die Artikel verkauft werden, sind entweder Gramm oder Kilogramm. Unabhängig von den Einheiten ist die kleinste gültige Bestellmenge 0,5 Einheiten (z. B. ein halbes Gramm Kardamomkapseln) und die größte gültige Bestellmenge 25,0 Einheiten (z. B. 25 Kilogramm Zucker). Die Genauigkeit der Bestellmenge beträgt 0,1 Einheiten. Welche der folgenden Eingabewerte decken nur die Grenzwerte mit der 2-Wert-Grenzwertanalyse für die Bestellmenge ab? Wählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Die 2-Wert-Grenzwertanalyse definiert je Grenzwert einer geordneten Klasse zwei Überdeckungselemente: den Grenzwert und seinen engsten Nachbarn aus der angrenzenden Klasse. Für die Bestellmenge bedeutet das: 0,4 (ungültig) und 0,5 (gültig) sowie 25,0 (gültig) und 25,1 (ungültig). (4.2.2_Grenzwertanalyse.md)",
+            "options": [
+                {
+                    "text": "0,3; 24,9; 25,2",
+                    "correct": false
+                },
+                {
+                    "text": "0,4; 0,5; 0,6; 24,9;25,0; 25,1",
+                    "correct": false
+                },
+                {
+                    "text": "0,4; 0,5; 25,0; 25,1",
+                    "correct": true
+                },
+                {
+                    "text": "0,5; 0,6; 24,9; 25,0",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Neu eingestellte Mitarbeitende einer Firma können individuelle Ziele mit ihren Vorgesetzten vereinbaren, an deren Erreichung die Auszahlung einer Prämie gekoppelt ist. Diese Prämie wird ihnen aber erst ausgezahlt, wenn sie länger als ein Jahr im Unternehmen beschäftigt sind.\n\nDieser Sachverhalt lässt sich in einer Entscheidungstabelle darstellen:\n\nTestfall-ID | T1 | T2 | T3 | T4 | T5\nBedingung1 Beschäftigung länger als ein Jahr? | J | N | N | J | N\nBedingung2 Ziel vereinbart? | N | N | J | J | J\nBedingung3 Ziel erreicht? | N | N | J | J | N\nAktion Auszahlung der Prämie? | N | N | N | J | N\n\nWelcher der folgenden Testfälle beschreibt eine in der Praxis gültige, durchführbare Situation und fehlt in der oben aufgeführten Entscheidungstabelle?\n\nWählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Der Testfall „Bedingung1 = J, Bedingung2 = J, Bedingung3 = N, Aktion = N“ beschreibt die fachlich korrekte Situation, dass das Nichterreichen des vereinbarten Ziels zur Nichtauszahlung der Prämie führt, wenn der Mitarbeiter länger als ein Jahr beschäftigt ist. Diese Situation kann in der Praxis vorkommen, fehlt aber in der Entscheidungstabelle. (4.2.3_Entscheidungstabellentest.md)",
+            "options": [
+                {
+                    "text": "Bedingung1 = „J“, Bedingung2 = „N“, Bedingung3 = „J“, Aktion = „N“",
+                    "correct": false
+                },
+                {
+                    "text": "Bedingung1 = „J“, Bedingung2 = „J“, Bedingung3 = „N“, Aktion = „J“",
+                    "correct": false
+                },
+                {
+                    "text": "Bedingung1 = „N“, Bedingung2 = „N“, Bedingung3 = „J“, Aktion = „N“",
+                    "correct": false
+                },
+                {
+                    "text": "Bedingung1 = „J“, Bedingung2 = „J“, Bedingung3 = „N“, Aktion = „N“",
+                    "correct": true
+                }
+            ]
+        },{
+            "question": "Welche der folgenden Aussagen zum Zustandsübergangsdiagramm und der dargestellten Tabelle von Testfällen ist WAHR?\n\nTestfall | 1 | 2 | 3 | 4 | 5\nStartzustand | S1 | S2 | S2 | S3 | S3\nEingabe | Power On | Power Off | RC On | RC Off | Power Off\nEndzustand | S2 | S1 | S3 | S2 | S1\n\nWählen Sie EINE Option! (1 aus 4)",
+            "explanation": "Die vorgeschlagenen Testfälle überdecken genau alle fünf möglichen gültigen Übergänge im Zustandsübergangsdiagramm (S1→S2, S2→S1, S2→S3, S3→S2, S3→S1). Damit wird 100% 0-Switch-Überdeckung erreicht. (4.2.4_Zustandsübergangstest.md)",
+            "options": [
+                {
+                    "text": "Die Testfälle führen alle Übergänge im Zustandsübergangsdiagramm aus, damit wird 100% Überdeckung aller Übergänge erreicht.",
+                    "correct": false
+                },
+                {
+                    "text": "Die Testfälle führen alle gültigen Übergänge im Zustandsübergangsdiagramm aus. Damit wird 100% 0-Switch-Überdeckung erreicht.",
+                    "correct": true
+                },
+                {
+                    "text": "Die Testfälle führen nur einige der gültigen Übergänge im Zustandsübergangsdiagramm aus. Damit liegt die 0-Switch-Überdeckung unter 100%.",
+                    "correct": false
+                },
+                {
+                    "text": "Testfall 2 ist für 100% 0-Switch-Überdeckung nicht erforderlich, da Zustand S1 bereits durch Testfall 5 überdeckt wurde.",
+                    "correct": false
+                }
+            ]
+        }
+
+    ]
 }
