@@ -115,6 +115,11 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
             { file: '5.3.2_Zweck_Inhalt_und_Zielgruppen_für_Testberichte.md', title: '5.3.2 Zweck, Inhalt und Zielgruppen für Testberichte' },
             { file: '5.3.3_Kommunikation_des_Teststatus.md', title: '5.3.3 Kommunikation des Teststatus' },
             { file: '5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md', title: '5.3 Testüberwachung, Teststeuerung und Testabschluss' },
+            //5.3.1_Beim_Testen_verwendete_Metriken.md 5.3.2_Zweck_Inhalt_und_Zielgruppen_für_Testberichte.md
+            { file: '5.3.1_Beim_Testen_verwendete_Metriken.md', title: '5.3.1 Beim Testen verwendete Metriken' },
+            { file: '5.3.2_Zweck_Inhalt_und_Zielgruppen_für_Testberichte.md', title: '5.3.2 Zweck, Inhalt und Zielgruppen für Testberichte' },
+            { file: '5.3.3_Kommunikation_des_Teststatus.md', title: '5.3.3 Kommunikation des Teststatus' },
+
             { file: '5.4_Konfigurationsmanagement.md', title: '5.4 Konfigurationsmanagement' },
             { file: '5.5_Fehlermanagement.md', title: '5.5 Fehlermanagement' },
         ],

@@ -1,6 +1,6 @@
 {
-    "chapter": "2",
-    "subChapter": "2-1-6",
+    "chapter": "istqb_2",
+    "subChapter": "istqb_2_2-1-6",
     "subChapterTitle": "2.1.6 Retrospektiven und Prozessverbesserung",
     "questions": [
         {
@@ -441,8 +441,7 @@
                     "text": "Testautomatisierung",
                     "correct": false
                 }
-                ]
-            }
-        ]
-    }
-    
+            ]
+        }
+    ]
+}

@@ -16,6 +16,23 @@ async function importFragenQuestions() {
     });
     console.log("✅ MySQL bağlandı");
 
+    // Önce mevcut Fragen sorularını sil
+    console.log("\n🗑️ Mevcut Fragen soruları siliniyor...");
+
+    // Önce question_options tablosundan Fragen sorularının seçeneklerini sil
+    const [deleteOptions] = await db.execute(`
+      DELETE qo FROM question_options qo
+      INNER JOIN questions q ON qo.question_id = q.id
+      WHERE q.source = 'fragen'
+    `);
+    console.log(`   ✅ ${deleteOptions.affectedRows} seçenek silindi`);
+
+    // Sonra questions tablosundan Fragen sorularını sil
+    const [deleteQuestions] = await db.execute(`
+      DELETE FROM questions WHERE source = 'fragen'
+    `);
+    console.log(`   ✅ ${deleteQuestions.affectedRows} Fragen sorusu silindi`);
+
     // Fragen JSON klasör yolu
     const fragenPath = path.join(__dirname, "..", "json", "fragen");
     const subFolders = ["Genel", "Deutsch", "Praxis", "Mixed"];

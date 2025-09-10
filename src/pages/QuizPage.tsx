@@ -42,7 +42,7 @@ const QuizPage: React.FC = () => {
             if (subChapterTitle && chapterId.startsWith('udemy_')) {
                 const subChapterMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
                 if (subChapterMatch) {
-                    subChapterIdForDb = `udemy_${subChapterMatch[1]}_${subChapterMatch[2]}`;
+                    subChapterIdForDb = `udemy_${subChapterMatch[1]}_quiz_${subChapterMatch[2]}`;
                 }
             } else if (subChapterTitle && chapterId.startsWith('fragen_')) {
                 if (subChapterTitle.startsWith('Genel.')) {
@@ -59,9 +59,9 @@ const QuizPage: React.FC = () => {
                     if (match) subChapterIdForDb = `fragen_mixed_${match[1]}`;
                 }
             } else if (subChapterTitle && !chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
-                const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)(?:\.(\d+))?/);
                 if (istqbMatch) {
-                    subChapterIdForDb = `${istqbMatch[1]}-${istqbMatch[2]}`;
+                    subChapterIdForDb = `${istqbMatch[1]}-${istqbMatch[2]}${istqbMatch[3] ? `-${istqbMatch[3]}` : ''}`;
                 }
             }
 
@@ -276,7 +276,7 @@ const QuizPage: React.FC = () => {
                     // subChapterTitle Format: "2.1 Quiz 1 - Grundlagen"
                     const subChapterMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
                     if (subChapterMatch) {
-                        subChapterId = `udemy_${subChapterMatch[1]}_${subChapterMatch[2]}`;
+                        subChapterId = `udemy_${subChapterMatch[1]}_quiz_${subChapterMatch[2]}`;
                     }
                 } else if (subChapterTitle && chapterId.startsWith('fragen_')) {
                     // Für Fragen: sub-chapter ID berechnen
@@ -295,11 +295,10 @@ const QuizPage: React.FC = () => {
                         if (match) subChapterId = `fragen_mixed_${match[1]}`;
                     }
                 } else if (subChapterTitle && !chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
-                    // Für ISTQB: sub-chapter ID berechnen
-                    // subChapterTitle Format: "1.1 Test Nedir ve Neden Gereklidir?"
-                    const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                    // Für ISTQB: sub-chapter ID berechnen (3-level destek)
+                    const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)(?:\.(\d+))?/);
                     if (istqbMatch) {
-                        subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}`;
+                        subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}${istqbMatch[3] ? `-${istqbMatch[3]}` : ''}`;
                     }
                 }
 
@@ -353,7 +352,7 @@ const QuizPage: React.FC = () => {
                     if (subChapterTitle && chapterId.startsWith('udemy_')) {
                         const subChapterMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
                         if (subChapterMatch) {
-                            subChapterId = `udemy_${subChapterMatch[1]}_${subChapterMatch[2]}`;
+                            subChapterId = `udemy_${subChapterMatch[1]}_quiz_${subChapterMatch[2]}`;
                         }
                     } else if (subChapterTitle && chapterId.startsWith('fragen_')) {
                         if (subChapterTitle.startsWith('Genel.')) {
@@ -370,9 +369,9 @@ const QuizPage: React.FC = () => {
                             if (match) subChapterId = `fragen_mixed_${match[1]}`;
                         }
                     } else if (subChapterTitle && !chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
-                        const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                        const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)(?:\.(\d+))?/);
                         if (istqbMatch) {
-                            subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}`;
+                            subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}${istqbMatch[3] ? `-${istqbMatch[3]}` : ''}`;
                         }
                     }
 
@@ -429,7 +428,7 @@ const QuizPage: React.FC = () => {
                 if (subChapterTitle && chapterId.startsWith('udemy_')) {
                     const subChapterMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
                     if (subChapterMatch) {
-                        subChapterId = `udemy_${subChapterMatch[1]}_${subChapterMatch[2]}`;
+                        subChapterId = `udemy_${subChapterMatch[1]}_quiz_${subChapterMatch[2]}`;
                     }
                 } else if (subChapterTitle && chapterId.startsWith('fragen_')) {
                     if (subChapterTitle.startsWith('Genel.')) {
@@ -446,9 +445,9 @@ const QuizPage: React.FC = () => {
                         if (match) subChapterId = `fragen_mixed_${match[1]}`;
                     }
                 } else if (subChapterTitle && !chapterId.startsWith('udemy_') && !chapterId.startsWith('fragen_')) {
-                    const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)/);
+                    const istqbMatch = subChapterTitle.match(/^(\d+)\.(\d+)(?:\.(\d+))?/);
                     if (istqbMatch) {
-                        subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}`;
+                        subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}${istqbMatch[3] ? `-${istqbMatch[3]}` : ''}`;
                     }
                 }
 

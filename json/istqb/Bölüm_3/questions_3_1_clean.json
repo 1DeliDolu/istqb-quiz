@@ -1,6 +1,6 @@
 {
-    "chapter": "3",
-    "subChapter": "3-1",
+    "chapter": "istqb_3",
+    "subChapter": "istqb_3_3-1",
     "subChapterTitle": "3.1 Grundlagen des statischen Tests",
     "questions": [
         {
@@ -222,7 +222,8 @@
                     "correct": false
                 }
             ]
-        },{
+        },
+        {
             "question": "Welche Rollen arbeiten typischerweise bei der Verfeinerung (Refinement) des Backlogs zusammen?",
             "explanation": "Tester, Fachbereichsvertreter (z. B. Product Owner, Businessanalysten) und Entwickler arbeiten gemeinsam an der Qualität der User-Storys. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1)",
             "options": [

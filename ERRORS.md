@@ -1,9 +1,16 @@
-Run npm ci
-  npm ci
-  shell: /usr/bin/bash -e {0}
-npm warn tarball tarball data for @humanfs/node@https://registry.npmjs.org/@humanfs/node/-/node-0.16.6.tgz (sha512-YuI2ZHQL78Q5HbhDiBA1X4LmYdXCKCMQIfw0pw7piHJwyREFebJUvrQN4cmssyES6x+vfUbx1CIpaQUKYdQZOw==) seems to be corrupted. Trying again.
-npm warn tarball tarball data for @humanfs/node@https://registry.npmjs.org/@humanfs/node/-/node-0.16.6.tgz (sha512-YuI2ZHQL78Q5HbhDiBA1X4LmYdXCKCMQIfw0pw7piHJwyREFebJUvrQN4cmssyES6x+vfUbx1CIpaQUKYdQZOw==) seems to be corrupted. Trying again.
-npm error code EINTEGRITY
-npm error sha512-YuI2ZHQL78Q5HbhDiBA1X4LmYdXCKCMQIfw0pw7piHJwyREFebJUvrQN4cmssyES6x+vfUbx1CIpaQUKYdQZOw== integrity checksum failed when using sha512: wanted sha512-YuI2ZHQL78Q5HbhDiBA1X4LmYdXCKCMQIfw0pw7piHJwyREFebJUvrQN4cmssyES6x+vfUbx1CIpaQUKYdQZOw== but got sha512-YuI2ZHQL78Q5HbhDiBA1X4LmYdXCKCMQIfw0pw7piHJwyREFebJUvrQN4cMssyES6x+vfUbx1CIpaQUKYdQZOw==. (9319 bytes)
-npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2025-09-09T08_37_43_987Z-debug-0.log
-Error: Process completed with exit code 1.
+Source-Map-Fehler: Error: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Stack in the worker:parseSourceMapInput@resource://devtools/client/shared/vendor/source-map/lib/util.js:163:15
+_factory@resource://devtools/client/shared/vendor/source-map/lib/source-map-consumer.js:1069:22
+SourceMapConsumer@resource://devtools/client/shared/vendor/source-map/lib/source-map-consumer.js:26:12
+_fetch@resource://devtools/client/shared/source-map-loader/utils/fetchSourceMap.js:83:19
+
+Ressourcen-Adresse: http://localhost:5173/quiz/%3Canonymous%20code%3E
+Source-Map-Adresse: installHook.js.map
+
+
+
+📚 0 Fragen für Kapitel 5 (5.1.4 Schätzverfahren) geladen
+
+
+📂 Quiz progress loaded from server: fragen/fragen_genel - Question 7/51 dataService.ts:565:19
+📂 Restoring quiz progress from database: 

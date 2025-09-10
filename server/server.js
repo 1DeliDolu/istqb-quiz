@@ -9,7 +9,7 @@ require("dotenv").config();
 const db = require("./database/connection");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 // Middleware
 app.use(
@@ -93,10 +93,43 @@ app.get("/api/health", async (req, res) => {
   }
 });
 
+// Yardımcı: chapter ID'yi normalize et (frontend '1' gönderirse DB'deki 'istqb_1' ile eşle)
+function normalizeChapterId(raw) {
+  if (!raw) return raw;
+  if (raw.startsWith("udemy_") || raw.startsWith("fragen_") || raw.startsWith("istqb_")) {
+    return raw;
+  }
+  // Salt sayısal ise ISTQB olarak kabul et
+  if (/^\d+$/.test(raw)) {
+    return `istqb_${raw}`;
+  }
+  return raw;
+}
+
+// Yardımcı: subChapter ID'yi normalize et
+// - ISTQB için frontend genelde '5-2' ya da '5-2-3' yollar; DB'de 'istqb_5_5-2' formatı kullanılıyor
+// - Eğer zaten 'istqb_', 'udemy_', 'fragen_' ile başlıyorsa olduğu gibi bırak
+function normalizeSubChapterId(chapterId, sub) {
+  if (!sub) return null;
+  if (typeof sub !== 'string') return sub;
+  if (sub.startsWith('istqb_') || sub.startsWith('udemy_') || sub.startsWith('fragen_')) {
+    return sub;
+  }
+  // Sadece ISTQB chapter'ları için dönüştürme yap
+  if (chapterId && chapterId.startsWith('istqb_')) {
+    // '5-2' veya '5-2-3' gibi desenleri kabul et
+    if (/^\d+(?:-\d+){1,3}$/.test(sub)) {
+      return `${chapterId}_${sub}`;
+    }
+  }
+  return sub;
+}
+
 // Bir bölümün sorularını getir
 app.get("/api/questions/:chapter", async (req, res) => {
   try {
-    const { chapter } = req.params;
+    const rawChapter = req.params.chapter;
+    const chapter = normalizeChapterId(rawChapter);
     const { subChapter } = req.query;
 
     let sql = `
@@ -128,14 +161,29 @@ app.get("/api/questions/:chapter", async (req, res) => {
       const chapterPrefix = subChapter.match(/^(\d+\.\d+(\.\d+)?)/);
       if (chapterPrefix) {
         const normalizedPrefix = chapterPrefix[1].replace(/\./g, "-");
-        sql += ` AND (sc.title = ? OR sc.title LIKE ? OR sc.id = ? OR sc.id LIKE ?)`;
+        // Bazı başlıklarda sayısal kısımdan sonra nokta bulunuyor (örn: "5.2. Risikomanagement").
+        // Hem noktalı hem noktasız varyantlara göre ara.
+        const dottedVariant = subChapter.replace(chapterPrefix[1], `${chapterPrefix[1]}.`);
+        // sc.id eşleştirmesinde, hem yalın prefix ("5-2") hem de chapter ile birlikte olan ("istqb_5_5-2") formatını dene.
+        const idPrefixWithChapter = `${chapter}_${normalizedPrefix}`;
+
+        sql += ` AND (
+          sc.title = ?
+          OR sc.title LIKE ?
+          OR sc.title LIKE ?
+          OR sc.id = ?
+          OR sc.id LIKE ?
+          OR sc.id LIKE ?
+        )`;
         params.push(
-          subChapter,
-          `%${subChapter}%`,
-          normalizedPrefix,
-          `${normalizedPrefix}%`
+          subChapter,                   // sc.title = ?
+          `%${subChapter}%`,            // sc.title LIKE ? (orijinal)
+          `%${dottedVariant}%`,         // sc.title LIKE ? (noktali varyant)
+          normalizedPrefix,             // sc.id = ? (yalın)
+          `${normalizedPrefix}%`,       // sc.id LIKE ? (yalın prefix)
+          `${idPrefixWithChapter}%`     // sc.id LIKE ? (chapter ile)
         );
-        console.log(`🔍 Normalized prefix için arama: "${normalizedPrefix}"`);
+        console.log(`🔍 Normalized prefix için arama: "${normalizedPrefix}", idPrefixWithChapter: "${idPrefixWithChapter}"`);
       } else {
         // Normal eşleştirme
         sql += ` AND (sc.title = ? OR sc.title LIKE ?)`;
@@ -195,7 +243,8 @@ app.get("/api/questions/:chapter", async (req, res) => {
 // Yeni soru ekle
 app.post("/api/questions/:chapter", async (req, res) => {
   try {
-    const { chapter } = req.params;
+    const rawChapter = req.params.chapter;
+    const chapter = normalizeChapterId(rawChapter);
     const { question, options, correctAnswer, explanation, subChapter } =
       req.body;
 
@@ -316,7 +365,8 @@ app.get("/api/chapters", async (req, res) => {
 // Bir bölümün tüm sorularını sil
 app.delete("/api/questions/:chapter", async (req, res) => {
   try {
-    const { chapter } = req.params;
+    const rawChapter = req.params.chapter;
+    const chapter = normalizeChapterId(rawChapter);
 
     // İlk önce question_options'ı sil (foreign key constraint)
     await db.query(
@@ -607,15 +657,29 @@ app.post("/api/user-stats/answer", async (req, res) => {
 
     const attemptNumber = previousAttempts[0].count + 1;
 
-    // Sub-chapter ID'sini veritabanından bul
-    let dbSubChapterId = null;
-    console.log(
-      `Mapping subChapterId: ${subChapterId} for chapterId: ${chapterId}`
-    );
+    // Chapter ID normalize et (ör. '1' -> 'istqb_1')
+    const normalizedChapterId = normalizeChapterId(chapterId);
 
-    if (subChapterId) {
-      // Sub-chapter ID'yi kullan, foreign key constraint'ler kaldırıldı
-      dbSubChapterId = subChapterId;
+    // Sub-chapter ID'yi normalize et ve doğrula
+    let dbSubChapterId = normalizeSubChapterId(
+      normalizedChapterId,
+      subChapterId
+    );
+    console.log(
+      `Mapping subChapterId: ${subChapterId} for chapterId: ${normalizedChapterId}`
+    );
+    try {
+      if (dbSubChapterId) {
+        const match = await db.query(
+          "SELECT 1 FROM sub_chapters WHERE id = ? LIMIT 1",
+          [dbSubChapterId]
+        );
+        if (match.length === 0) {
+          dbSubChapterId = null;
+        }
+      }
+    } catch (e) {
+      dbSubChapterId = null;
     }
 
     console.log(`Final dbSubChapterId: ${dbSubChapterId}`);
@@ -628,7 +692,7 @@ app.post("/api/user-stats/answer", async (req, res) => {
       [
         userId,
         questionId,
-        chapterId,
+        normalizedChapterId,
         dbSubChapterId,
         selectedAnswer,
         isCorrect,
@@ -822,16 +886,21 @@ app.post("/api/quiz-progress", async (req, res) => {
       return res.status(400).json({ error: "Missing required parameters" });
     }
 
+    // Chapter ve subChapter normalize
+    const normalizedChapter = normalizeChapterId(chapter);
+    const normalizedSubChapter = normalizeSubChapterId(normalizedChapter, safeSubChapter);
+
     // Check if progress already exists
     let sql = `
       SELECT id FROM quiz_progress 
       WHERE user_id = ? AND quiz_type = ? AND chapter_id = ?
     `;
-    let params = [userId, quizType, chapter];
+    let params = [userId, quizType, normalizedChapter];
 
     if (safeSubChapter) {
-      sql += ` AND sub_chapter_id = ?`;
-      params.push(safeSubChapter);
+      // Hem normalize edilmiş hem ham değere göre kontrol et (geriye dönük uyumluluk)
+      sql += ` AND (sub_chapter_id = ? OR sub_chapter_id = ?)`;
+      params.push(normalizedSubChapter || safeSubChapter, safeSubChapter);
     } else {
       sql += ` AND sub_chapter_id IS NULL`;
     }
@@ -863,8 +932,8 @@ app.post("/api/quiz-progress", async (req, res) => {
       await db.query(sql, [
         userId,
         quizType,
-        chapter,
-        safeSubChapter,
+        normalizedChapter,
+        normalizedSubChapter,
         currentQuestionIndex,
         totalQuestions,
         score,
@@ -883,7 +952,8 @@ app.post("/api/quiz-progress", async (req, res) => {
 // Load quiz progress
 app.get("/api/quiz-progress/:userId/:quizType/:chapter", async (req, res) => {
   try {
-    const { userId, quizType, chapter } = req.params;
+    const { userId, quizType } = req.params;
+    const chapter = normalizeChapterId(req.params.chapter);
     const { subChapter } = req.query;
 
     let sql = `
@@ -893,8 +963,10 @@ app.get("/api/quiz-progress/:userId/:quizType/:chapter", async (req, res) => {
     let params = [userId, quizType, chapter];
 
     if (subChapter) {
-      sql += ` AND sub_chapter_id = ?`;
-      params.push(subChapter);
+      const normalizedSub = normalizeSubChapterId(chapter, subChapter);
+      // Hem normalize edilmiş hem ham değere göre ara
+      sql += ` AND (sub_chapter_id = ? OR sub_chapter_id = ?)`;
+      params.push(normalizedSub || subChapter, subChapter);
     } else {
       sql += ` AND sub_chapter_id IS NULL`;
     }
@@ -941,11 +1013,12 @@ app.put("/api/quiz-progress/complete", async (req, res) => {
       SET completed_at = ?, score = ?, updated_at = NOW()
       WHERE user_id = ? AND quiz_type = ? AND chapter_id = ?
     `;
-    let params = [mysqlDate, finalScore, userId, quizType, chapter];
+    let params = [mysqlDate, finalScore, userId, quizType, normalizeChapterId(chapter)];
 
     if (subChapter) {
-      sql += ` AND sub_chapter_id = ?`;
-      params.push(subChapter);
+      const normalizedSub = normalizeSubChapterId(chapter, subChapter);
+      sql += ` AND (sub_chapter_id = ? OR sub_chapter_id = ?)`;
+      params.push(normalizedSub || subChapter, subChapter);
     } else {
       sql += ` AND sub_chapter_id IS NULL`;
     }
@@ -968,7 +1041,8 @@ app.delete(
   "/api/quiz-progress/:userId/:quizType/:chapter",
   async (req, res) => {
     try {
-      const { userId, quizType, chapter } = req.params;
+      const { userId, quizType } = req.params;
+      const chapter = normalizeChapterId(req.params.chapter);
       const { subChapter } = req.query;
 
       let sql = `

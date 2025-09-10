@@ -17,6 +17,23 @@ async function importUdemyQuestions() {
 
     console.log("✅ MySQL bağlantısı kuruldu");
 
+    // Önce mevcut Udemy sorularını sil
+    console.log("\n🗑️ Mevcut Udemy soruları siliniyor...");
+
+    // Önce question_options tablosundan Udemy sorularının seçeneklerini sil
+    const [deleteOptions] = await db.execute(`
+      DELETE qo FROM question_options qo
+      INNER JOIN questions q ON qo.question_id = q.id
+      WHERE q.source = 'udemy'
+    `);
+    console.log(`   ✅ ${deleteOptions.affectedRows} seçenek silindi`);
+
+    // Sonra questions tablosundan Udemy sorularını sil
+    const [deleteQuestions] = await db.execute(`
+      DELETE FROM questions WHERE source = 'udemy'
+    `);
+    console.log(`   ✅ ${deleteQuestions.affectedRows} Udemy sorusu silindi`);
+
     const udemyBaseDir = path.join(__dirname, "..", "json", "udemy");
     let totalImported = 0;
 
@@ -48,7 +65,33 @@ async function importUdemyQuestions() {
                   if (match) {
                     const [, ch, sub] = match;
                     const chapterId = `udemy_${ch}`;
-                    const subChapter = `udemy_${ch}_${sub}`;
+                    // Sub-chapter ID'yi başlığa göre bul (tercih edilen)
+                    let subChapter = null;
+                    const subTitle = data.subChapterTitle || null;
+                    if (subTitle) {
+                      try {
+                        const [rows] = await db.execute(
+                          "SELECT id FROM sub_chapters WHERE chapter_id = ? AND title = ? LIMIT 1",
+                          [chapterId, subTitle]
+                        );
+                        if (rows.length > 0) {
+                          subChapter = rows[0].id;
+                        } else {
+                          // LIKE ile dene
+                          const [likeRows] = await db.execute(
+                            "SELECT id FROM sub_chapters WHERE chapter_id = ? AND title LIKE ? LIMIT 1",
+                            [chapterId, `%${subTitle}%`]
+                          );
+                          if (likeRows.length > 0) {
+                            subChapter = likeRows[0].id;
+                          }
+                        }
+                      } catch {}
+                    }
+                    // Son çare: tahmini id (udemy_<chapter>_quiz_<n>)
+                    if (!subChapter) {
+                      subChapter = `udemy_${ch}_quiz_${sub}`;
+                    }
 
                     for (const q of data.questions) {
                       // Soru ekle

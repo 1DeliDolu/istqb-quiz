@@ -1,204 +1,180 @@
-const mysql = require("mysql2");
+const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
 
-function getAllJsonFiles(baseDir) {
-  const jsonFiles = [];
+async function importIstqbQuestions() {
+  try {
+    console.log("🚀 ISTQB sorularını database'e yükleme başlıyor...");
 
-  function scanDirectory(dir) {
-    if (!fs.existsSync(dir)) {
-      console.log(`⚠️ Klasör bulunamadı: ${dir}`);
-      return;
-    }
+    // MySQL bağlantısı
+    const db = await mysql.createConnection({
+      host: "127.0.0.1",
+      port: 3306,
+      user: "root",
+      password: "",
+      database: "istqb_quiz_app",
+    });
 
-    const items = fs.readdirSync(dir);
+    console.log("✅ MySQL bağlantısı kuruldu");
 
-    for (const item of items) {
-      const fullPath = path.join(dir, item);
-      const stat = fs.statSync(fullPath);
+    // Önce mevcut ISTQB sorularını sil
+    console.log("\n🗑️ Mevcut ISTQB soruları siliniyor...");
 
-      if (stat.isDirectory()) {
-        scanDirectory(fullPath);
-      } else if (item.endsWith(".json")) {
-        jsonFiles.push(fullPath);
-      }
-    }
-  }
+    // Önce question_options tablosundan ISTQB sorularının seçeneklerini sil
+    const [deleteOptions] = await db.execute(`
+      DELETE qo FROM question_options qo
+      INNER JOIN questions q ON qo.question_id = q.id
+      WHERE q.source = 'istqb'
+    `);
+    console.log(`   ✅ ${deleteOptions.affectedRows} seçenek silindi`);
 
-  scanDirectory(baseDir);
-  return jsonFiles;
-}
+    // Sonra questions tablosundan ISTQB sorularını sil
+    const [deleteQuestions] = await db.execute(`
+      DELETE FROM questions WHERE source = 'istqb'
+    `);
+    console.log(`   ✅ ${deleteQuestions.affectedRows} ISTQB sorusu silindi`);
 
-function parseChapterInfo(filePath, source) {
-  const fileName = path.basename(filePath, ".json");
+    const istqbBaseDir = path.join(__dirname, "..", "json", "istqb");
+    let totalImported = 0;
 
-  if (source === "istqb") {
-    const match = fileName.match(
-      /questions_(\d+)_(\d+)(?:_(\d+))?(?:_(\d+))?(?:_(\d+))?_clean/
-    );
-    if (match) {
-      const [, ch, sub1, sub2, sub3, sub4] = match;
-      let subChapter = `${ch}-${sub1}`;
-      if (sub2) subChapter += `-${sub2}`;
-      if (sub3) subChapter += `-${sub3}`;
-      if (sub4) subChapter += `-${sub4}`;
-      return { chapter: ch, subChapter };
-    }
-  }
-  return null;
-}
+    // ISTQB klasörünü işle
+    console.log("\n📁 ISTQB klasörü işleniyor...");
 
-// Synchronous version
-function importAllFiles() {
-  console.log("🚀 Senkron import başlıyor...");
+    if (fs.existsSync(istqbBaseDir)) {
+      const chapters = fs.readdirSync(istqbBaseDir);
 
-  // MySQL bağlan (synchronous)
-  const db = mysql.createConnection({
-    host: "127.0.0.1",
-    user: "root",
-    password: "",
-    database: "istqb_quiz_app",
-  });
+      for (const chapterDir of chapters) {
+        const chapterPath = path.join(istqbBaseDir, chapterDir);
 
-  console.log("✅ MySQL bağlantısı kuruldu");
+        if (fs.statSync(chapterPath).isDirectory()) {
+          console.log(`\n📂 ${chapterDir} işleniyor...`);
+          const files = fs.readdirSync(chapterPath);
 
-  const baseDir = "../json";
-  const sources = ["istqb"];
+          for (const file of files) {
+            if (file.endsWith(".json")) {
+              const filePath = path.join(chapterPath, file);
+              console.log(`  📄 ${file} yükleniyor...`);
 
-  let totalImported = 0;
-  let totalFiles = 0;
+              try {
+                const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
-  for (const source of sources) {
-    const sourceDir = path.join(baseDir, source);
-
-    if (!fs.existsSync(sourceDir)) {
-      console.log(`⚠️ ${source} klasörü bulunamadı, atlıyor...`);
-      continue;
-    }
-
-    console.log(`\n📁 ${source.toUpperCase()} klasörü işleniyor...`);
-    const jsonFiles = getAllJsonFiles(sourceDir);
-    console.log(`📊 ${jsonFiles.length} JSON dosyası bulundu`);
-
-    for (const filePath of jsonFiles) {
-      try {
-        console.log(`\n📄 İşleniyor: ${path.relative(baseDir, filePath)}`);
-
-        // JSON'u oku
-        const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
-
-        if (!data.questions || !Array.isArray(data.questions)) {
-          console.log(`⚠️ Geçersiz format, atlıyor...`);
-          continue;
-        }
-
-        // Chapter bilgilerini parse et
-        const chapterInfo = parseChapterInfo(filePath, source);
-        if (!chapterInfo) {
-          console.log(`⚠️ Chapter bilgisi parse edilemedi, atlıyor...`);
-          continue;
-        }
-
-        const { chapter, subChapter } = chapterInfo;
-        console.log(`📋 Chapter: ${chapter}, SubChapter: ${subChapter}`);
-
-        // Source kolonu ekle (synchronous)
-        try {
-          db.query(
-            "ALTER TABLE questions ADD COLUMN source VARCHAR(50) DEFAULT 'istqb'",
-            (err, result) => {
-              if (err && err.code !== "ER_DUP_FIELDNAME") {
-                console.log("⚠️ Source kolonu hatası:", err.message);
-              }
-            }
-          );
-        } catch (e) {}
-
-        // Eski soruları sil (synchronous)
-        db.query(
-          "DELETE FROM question_options WHERE question_id IN (SELECT id FROM questions WHERE chapter_id = ? AND sub_chapter_id = ?)",
-          [chapter, subChapter],
-          (err, result) => {
-            if (err) console.log("Silme hatası 1:", err.message);
-          }
-        );
-
-        db.query(
-          "DELETE FROM questions WHERE chapter_id = ? AND sub_chapter_id = ?",
-          [chapter, subChapter],
-          (err, result) => {
-            if (err) console.log("Silme hatası 2:", err.message);
-          }
-        );
-
-        // Alt bölümü ekle
-        const subChapterTitle =
-          data.subChapterTitle ||
-          `${source.toUpperCase()} Chapter ${chapter}.${subChapter
-            .split("-")
-            .slice(1)
-            .join(".")}`;
-
-        // Soruları ekle
-        let questionCount = 0;
-        for (const soru of data.questions) {
-          const question = soru.question || "";
-          const explanation = soru.explanation || "";
-
-          // Soru ekle
-          db.query(
-            "INSERT INTO questions (chapter_id, sub_chapter_id, question, explanation, source) VALUES (?, ?, ?, ?, ?)",
-            [chapter, subChapter, question, explanation, source],
-            (err, result) => {
-              if (err) {
-                console.log("Soru ekleme hatası:", err.message);
-                return;
-              }
-
-              const questionId = result.insertId;
-
-              // Seçenekleri ekle
-              if (soru.options && Array.isArray(soru.options)) {
-                for (let i = 0; i < soru.options.length; i++) {
-                  const secenek = soru.options[i];
-                  const optionText = secenek.text || "";
-                  const isCorrect = secenek.correct || false;
-
-                  db.query(
-                    "INSERT INTO question_options (question_id, option_text, option_order, is_correct) VALUES (?, ?, ?, ?)",
-                    [questionId, optionText, i + 1, isCorrect],
-                    (err, result) => {
-                      if (err)
-                        console.log("Seçenek ekleme hatası:", err.message);
-                    }
+                if (data.questions && Array.isArray(data.questions)) {
+                  // questions_1_1_clean.json -> chapter: istqb_1, subChapter: istqb_1_1
+                  const match = file.match(
+                    /questions_(\d+)_(\d+)(?:_(\d+))?(?:_(\d+))?_clean\.json/
                   );
+
+                  if (match) {
+                    const [, ch, sub1, sub2, sub3] = match;
+                    // Canlı veritabanında ISTQB chapter id'leri 'istqb_1' formatında tutuluyor
+                    const chapterId = `istqb_${ch}`;
+                    // Sub-chapter id'leri 'istqb_1_1-1' veya daha derin ('istqb_1_1-1-1') formatında
+                    let subChapterCore = `${ch}-${sub1}`;
+                    if (sub2) subChapterCore += `-${sub2}`;
+                    if (sub3) subChapterCore += `-${sub3}`;
+                    const subChapter = `istqb_${ch}_${subChapterCore}`;
+
+                    // Uyumlu sub_chapter_id'yi doğrula veya NULL'a düş
+                    let targetSubChapterId = subChapter;
+                    try {
+                      const [rows] = await db.execute(
+                        "SELECT 1 FROM sub_chapters WHERE id = ? LIMIT 1",
+                        [subChapter]
+                      );
+                      if (rows.length === 0) {
+                        // En yakın üst başlığa gerile (ör. 2-1-2 -> 2-1)
+                        const parts = subChapterCore.split("-");
+                        while (parts.length > 1) {
+                          parts.pop();
+                          const candidate = `istqb_${ch}_` + parts.join("-");
+                          const [cRows] = await db.execute(
+                            "SELECT 1 FROM sub_chapters WHERE id = ? LIMIT 1",
+                            [candidate]
+                          );
+                          if (cRows.length > 0) {
+                            targetSubChapterId = candidate;
+                            break;
+                          }
+                        }
+                        // Hâlâ bulunamadıysa NULL kullan (FK SET NULL)
+                        if (parts.length <= 1 && targetSubChapterId === subChapter) {
+                          targetSubChapterId = null;
+                        }
+                      }
+                    } catch (e) {
+                      targetSubChapterId = null;
+                    }
+
+                    for (const q of data.questions) {
+                      // Soru ekle
+                      const [result] = await db.execute(
+                        `INSERT INTO questions (
+                          chapter_id, sub_chapter_id, question, explanation, source
+                        ) VALUES (?, ?, ?, ?, ?)`,
+                        [
+                          chapterId,
+                          targetSubChapterId,
+                          q.question || "",
+                          q.explanation || "",
+                          "istqb",
+                        ]
+                      );
+
+                      const questionId = result.insertId;
+
+                      // Seçenekleri ekle
+                      if (q.options && Array.isArray(q.options)) {
+                        for (let i = 0; i < q.options.length; i++) {
+                          const option = q.options[i];
+                          await db.execute(
+                            `INSERT INTO question_options (
+                              question_id, option_text, option_order, is_correct
+                            ) VALUES (?, ?, ?, ?)`,
+                            [
+                              questionId,
+                              option.text || "",
+                              i + 1,
+                              option.correct || false,
+                            ]
+                          );
+                        }
+                      }
+                    }
+
+                    totalImported += data.questions.length;
+                    console.log(`    ✅ ${data.questions.length} soru eklendi`);
+                  }
                 }
+              } catch (fileError) {
+                console.error(
+                  `    ❌ Dosya hatası (${file}):`,
+                  fileError.message
+                );
               }
             }
-          );
-
-          questionCount++;
+          }
         }
-
-        console.log(`✅ ${questionCount} soru işlendi`);
-        totalImported += questionCount;
-        totalFiles++;
-      } catch (fileError) {
-        console.error(`❌ Dosya hatası (${filePath}):`, fileError.message);
       }
     }
+
+    console.log(`\n🎉 TAMAMLANDI!`);
+    console.log(`📊 Toplam ${totalImported} ISTQB sorusu database'e yüklendi`);
+
+    // Özet göster
+    const [summary] = await db.execute(
+      "SELECT source, COUNT(*) as toplam FROM questions GROUP BY source"
+    );
+
+    console.log("\n📈 DATABASE ÖZET:");
+    for (const row of summary) {
+      console.log(`  ${row.source}: ${row.toplam} soru`);
+    }
+
+    await db.end();
+  } catch (error) {
+    console.error("❌ GENEL HATA:", error.message);
+    console.error(error.stack);
   }
-
-  console.log(`\n🎉 TAMAMLANDI!`);
-  console.log(`📊 Toplam ${totalFiles} dosya işlendi`);
-  console.log(`📊 Toplam ${totalImported} soru işlendi`);
-
-  // Bağlantıyı kapat
-  setTimeout(() => {
-    db.end();
-    console.log("✅ MySQL bağlantısı kapatıldı");
-  }, 5000);
 }
 
-// Script'i çalıştır
-importAllFiles();
+importIstqbQuestions();

@@ -1,6 +1,6 @@
 {
-    "chapter": "2",
-    "subChapter": "2-2-2",
+    "chapter": "istqb_2",
+    "subChapter": "istqb_2_2-2-2",
     "subChapterTitle": "2.2.2 Testarten",
     "questions": [
         {
@@ -112,7 +112,8 @@
                     "correct": false
                 }
             ]
-        },{
+        },
+        {
             "question": "Worauf konzentriert sich der nicht-funktionale Test?",
             "explanation": "Beim nicht-funktionalen Test werden andere als die funktionalen Eigenschaften einer Komponente oder eines Systems bewertet. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
             "options": [
@@ -441,7 +442,7 @@
                     "correct": false
                 }
             ]
-        }, 
+        },
         {
             "question": "Worauf basiert der White-Box-Test?",
             "explanation": "Der White-Box-Test ist strukturbasiert und leitet Tests aus der Implementierung oder der internen Struktur des Systems ab. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",

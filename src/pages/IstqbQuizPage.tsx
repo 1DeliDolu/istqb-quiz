@@ -168,10 +168,10 @@ const IstqbQuizPage: React.FC<QuizPageProps> = ({ quizType = 'istqb', title = 'I
                 let subChapterId = null;
                 if (selectedSubChapter) {
                     if (quizType === 'udemy') {
-                        // Udemy için sub-chapter ID formatı: udemy_2_1, udemy_2_2 vs
+                        // Udemy için sub-chapter ID formatı: udemy_<chapter>_quiz_<n>
                         const subChapterMatch = selectedSubChapter.match(/^(\d+)\.(\d+)/);
                         if (subChapterMatch) {
-                            subChapterId = `udemy_${subChapterMatch[1]}_${subChapterMatch[2]}`;
+                            subChapterId = `udemy_${subChapterMatch[1]}_quiz_${subChapterMatch[2]}`;
                         }
                     } else if (quizType === 'fragen') {
                         // Fragen için sub-chapter ID formatı hesapla
@@ -189,10 +189,10 @@ const IstqbQuizPage: React.FC<QuizPageProps> = ({ quizType = 'istqb', title = 'I
                             if (match) subChapterId = `fragen_mixed_${match[1]}`;
                         }
                     } else {
-                        // ISTQB için sub-chapter ID formatı hesapla
-                        const istqbMatch = selectedSubChapter.match(/^(\d+)\.(\d+)/);
+                        // ISTQB için sub-chapter ID formatı hesapla (3 seviye destek)
+                        const istqbMatch = selectedSubChapter.match(/^(\d+)\.(\d+)(?:\.(\d+))?/);
                         if (istqbMatch) {
-                            subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}`;
+                            subChapterId = `${istqbMatch[1]}-${istqbMatch[2]}${istqbMatch[3] ? `-${istqbMatch[3]}` : ''}`;
                         }
                     }
                 }

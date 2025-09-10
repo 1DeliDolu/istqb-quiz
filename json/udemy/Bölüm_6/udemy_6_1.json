@@ -2,5 +2,512 @@
     "chapter": "udemy_6",
     "subChapter": "udemy_6_1",
     "subChapterTitle": "6.1 Quiz 14 - Testplanung",
-    "questions": []
+    "questions": [
+       {
+        "question": "Was ist normalerweise KEIN Ergebnis der Testanalyse und des Entwurfs?",
+        "explanation": "Zu den Arbeitsergebnissen der Testanalyse gehören priorisierte Testbedingungen und Fehlerberichte, zu den Ergebnissen des Testentwurfs gehören priorisierte Testfälle, Test-Chartas, Überdeckungselemente sowie Anforderungen an Testdaten und Testumgebungen. Ein Freigabeplan ist hingegen ein Ergebnis des Projektmanagements/Testplanung, nicht der Testanalyse oder des Testentwurfs. (1.4.3_Testmittel.md)",
+        "options": [
+            {
+                "text": "Testfälle",
+                "correct": false
+            },
+            {
+                "text": "Testdaten",
+                "correct": false
+            },
+            {
+                "text": "Testbedingungen",
+                "correct": false
+            },
+            {
+                "text": "Freigabeplan (Release schedule)",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Was ist ein Hauptzweck eines Testplans?",
+        "explanation": "Ein Testplan beschreibt die Ziele, Ressourcen und Prozesse eines Testprojekts. Er legt fest, was getestet wird, wie getestet wird und mit welchem Zeitplan die Testziele erreicht werden sollen. (5.1_Testplanung.md)",
+        "options": [
+            {
+                "text": "Testergebnisse dokumentieren",
+                "correct": false
+            },
+            {
+                "text": "Umfang, Vorgehen und Zeitplan des Testens festlegen",
+                "correct": true
+            },
+            {
+                "text": "Software bereitstellen",
+                "correct": false
+            },
+            {
+                "text": "Anwendung debuggen",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Was sollte in einem Testzusammenfassungsbericht enthalten sein?",
+        "explanation": "Ein Testzusammenfassungsbericht enthält einen Überblick über die durchgeführten Testaktivitäten und deren Ergebnisse, ergänzt durch Zahlen, Auswertungen, Erkenntnisse und Empfehlungen. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
+        "options": [
+            {
+                "text": "Nur gefundene Fehler",
+                "correct": false
+            },
+            {
+                "text": "Teamstruktur der Entwicklung",
+                "correct": false
+            },
+            {
+                "text": "Überblick über Testaktivitäten und Ergebnisse",
+                "correct": true
+            },
+            {
+                "text": "Marketingrückmeldungen",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Welches Ziel verfolgt die Testüberwachung (Test Monitoring)?",
+        "explanation": "Die Testüberwachung dient dazu, den Fortschritt der Testaktivitäten zu erfassen und mit dem Plan zu vergleichen. Dabei werden Metriken wie Testaufwand, Fortschritt, Abdeckung und Fehlerstatus nachverfolgt, um sicherzustellen, dass die Tests den Zielen folgen. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
+        "options": [
+            {
+                "text": "Software in Produktion bringen",
+                "correct": false
+            },
+            {
+                "text": "Fehlerquellen erheben",
+                "correct": false
+            },
+            {
+                "text": "Testaufwand und Abdeckung nachverfolgen",
+                "correct": true
+            },
+            {
+                "text": "Codebasis refaktorisieren",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Welcher Messwert eignet sich zur Verfolgung des Testfortschritts?",
+        "explanation": "Zur Verfolgung des Testfortschritts können verschiedene Metriken eingesetzt werden, z. B. Anzahl ausgeführter Testfälle, Abdeckung oder Fehlermetriken. Die Fehlerrate (z. B. Anzahl gefundener Fehler pro Zeiteinheit) ist eine typische Metrik, um den Fortschritt und die Effektivität der Tests zu beurteilen. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
+        "options": [
+            {
+                "text": "Anzahl der Testumgebungen",
+                "correct": false
+            },
+            {
+                "text": "Fehlerrate",
+                "correct": true
+            },
+            {
+                "text": "Projektbudget",
+                "correct": false
+            },
+            {
+                "text": "Besprechungsprotokolle",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Was ist ein Eintrittskriterium für Systemtests?",
+        "explanation": "Zu den Eintrittskriterien für Systemtests gehört unter anderem der Abschluss vorheriger Teststufen, wie der Komponententests, damit die Systemtests auf einer stabilen Basis aufbauen können. (2.2_Teststufen_und_Testarten.md)",
+        "options": [
+            {
+                "text": "Code wurde überprüft",
+                "correct": false
+            },
+            {
+                "text": "Komponententests (Unit-Tests) sind abgeschlossen",
+                "correct": true
+            },
+            {
+                "text": "Benutzerschulung hat begonnen",
+                "correct": false
+            },
+            {
+                "text": "System ist in Produktion",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Welche der folgenden Kennzahlen ist KEINE typische Testmetrik?",
+        "explanation": "Typische Testmetriken sind zum Beispiel Fehlerdichte, Testausführungsrate oder das Verhältnis von bestandenen zu nicht bestandenen Testfällen. Die Systemstartzeit ist hingegen eine Leistungskennzahl und keine typische Testmetrik im Sinne der Testüberwachung. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
+        "options": [
+            {
+                "text": "Fehlerdichte",
+                "correct": false
+            },
+            {
+                "text": "Testausführungsrate",
+                "correct": false
+            },
+            {
+                "text": "Systemstartzeit",
+                "correct": true
+            },
+            {
+                "text": "Verhältnis bestanden/nicht bestanden",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Was bedeutet Teststeuerung (Test Control)?",
+        "explanation": "Teststeuerung bedeutet, dass bei Abweichungen vom Testplan oder den Testzielen geeignete Maßnahmen ergriffen werden, um die Testaktivitäten neu auszurichten und die Testziele dennoch zu erreichen. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
+        "options": [
+            {
+                "text": "Alle Testaktivitäten stoppen",
+                "correct": false
+            },
+            {
+                "text": "Testumgebung konfigurieren",
+                "correct": false
+            },
+            {
+                "text": "Quellcode überprüfen",
+                "correct": false
+            },
+            {
+                "text": "Maßnahmen ergreifen basierend auf Abweichungen vom Plan",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Welche Rolle spielt Testüberwachung im Risikomanagement?",
+        "explanation": "Die Testüberwachung sammelt und bewertet Metriken, um Abweichungen vom Testplan sichtbar zu machen. Dadurch werden Risiken frühzeitig erkannt und können rechtzeitig adressiert werden, was das Risikomanagement effektiv unterstützt. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
+        "options": [
+            {
+                "text": "Ersetzt die Planung",
+                "correct": false
+            },
+            {
+                "text": "Ersetzt die Testdurchführung",
+                "correct": false
+            },
+            {
+                "text": "Erkennt frühzeitig Abweichungen und Risiken",
+                "correct": true
+            },
+            {
+                "text": "Vermeidet Metrikensammlung",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Warum sind Austrittskriterien (Exit Criteria) im Testmanagement wichtig?",
+        "explanation": "Austrittskriterien legen fest, wann eine Testaktivität oder Teststufe abgeschlossen ist. Sie helfen zu entscheiden, wann das Testen beendet werden kann, und verhindern, dass Tests zu früh oder zu spät gestoppt werden. (5.1_Testplanung.md)",
+        "options": [
+            {
+                "text": "Um zu entscheiden, wann die Entwicklung beginnt",
+                "correct": false
+            },
+            {
+                "text": "Um die Geschwindigkeit der Anwendung zu messen",
+                "correct": false
+            },
+            {
+                "text": "Um zu wissen, wann das Testen beendet werden kann",
+                "correct": true
+            },
+            {
+                "text": "Um Serverressourcen zuzuweisen",
+                "correct": false
+            }
+        ]
+    },
+        {
+            "question": "Welche Rolle spielt Testüberwachung im Risikomanagement?",
+            "explanation": "Testüberwachung erkennt frühzeitig Abweichungen und Risiken, sodass Warnzeichen rechtzeitig adressiert werden können. Dies unterstützt das Risikomanagement effektiv. (5.3_Testüberwachung,_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Ersetzt die Planung",
+                    "correct": false
+                },
+                {
+                    "text": "Ersetzt die Testdurchführung",
+                    "correct": false
+                },
+                {
+                    "text": "Erkennt frühzeitig Abweichungen und Risiken",
+                    "correct": true
+                },
+                {
+                    "text": "Vermeidet Metrikensammlung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind Austrittskriterien (Exit Criteria) im Testmanagement wichtig?",
+            "explanation": "Endekriterien helfen dabei zu entscheiden, wann das Testen beendet werden kann. Sie verhindern, dass Tests zu früh oder zu spät stoppen. (5.1_Testplanung.md)",
+            "options": [
+                {
+                    "text": "Um zu entscheiden, wann die Entwicklung beginnt",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Geschwindigkeit der Anwendung zu messen",
+                    "correct": false
+                },
+                {
+                    "text": "Um zu wissen, wann das Testen beendet werden kann",
+                    "correct": true
+                },
+                {
+                    "text": "Um Serverressourcen zuzuweisen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Worauf konzentriert sich die Testüberwachung?",
+            "explanation": "Testüberwachung konzentriert sich auf den Vergleich zwischen dem Ist-Zustand und dem geplanten Testverlauf, um Abweichungen frühzeitig zu erkennen. (5.3_Testüberwachung,_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Testfälle ausführen",
+                    "correct": false
+                },
+                {
+                    "text": "Fortschritt gegenüber dem Testplan verfolgen",
+                    "correct": true
+                },
+                {
+                    "text": "Benutzerhandbuch schreiben",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler beheben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktivität gehört zur Teststeuerung?",
+            "explanation": "Teststeuerung umfasst Maßnahmen wie die Anpassung von Testplänen und Zeitplänen, wenn Probleme auftreten oder Abweichungen vom ursprünglichen Plan erkannt werden. (5.3_Testüberwachung,_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Budget zuweisen",
+                    "correct": false
+                },
+                {
+                    "text": "Testausführung planen",
+                    "correct": false
+                },
+                {
+                    "text": "Testpläne und Zeitpläne anpassen",
+                    "correct": true
+                },
+                {
+                    "text": "Code entwickeln",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Dokument fasst die Testergebnisse und Erkenntnisse zusammen?",
+            "explanation": "Der Testzusammenfassungsbericht (Abschlussbericht) fasst die gesamte Testphase zusammen und enthält Testergebnisse, Erkenntnisse und Empfehlungen. (5.3_Testüberwachung,_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Fehlerbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Rückverfolgbarkeitsmatrix",
+                    "correct": false
+                },
+                {
+                    "text": "Testzusammenfassungsbericht",
+                    "correct": true
+                },
+                {
+                    "text": "Benutzerhandbuch",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Hauptzweck der Teststeuerung (Test Control)?",
+            "explanation": "Teststeuerung bedeutet, dass bei Abweichungen vom Plan während der Testdurchführung Anpassungen vorgenommen werden, um die Testziele zu erreichen. (5.3_Testüberwachung,_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Den Testplan erstellen",
+                    "correct": false
+                },
+                {
+                    "text": "Codeabdeckung verfolgen",
+                    "correct": false
+                },
+                {
+                    "text": "Anpassungen während der Testdurchführung vornehmen",
+                    "correct": true
+                },
+                {
+                    "text": "Testtechniken auswählen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Vorteil ergibt sich aus dem Einsatz von Dashboards im Testmanagement?",
+            "explanation": "Dashboards bieten einen Live-Überblick über wichtige Metriken und visualisieren den Testfortschritt und -status. Sie unterstützen die Kommunikation des Teststatus. (5.3_Testüberwachung,_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Sie ersetzen Dokumentation",
+                    "correct": false
+                },
+                {
+                    "text": "Sie visualisieren den Testfortschritt und -status",
+                    "correct": true
+                },
+                {
+                    "text": "Sie automatisieren die Codierung",
+                    "correct": false
+                },
+                {
+                    "text": "Sie machen Berichte überflüssig",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte getan werden, wenn Austrittskriterien nicht erfüllt sind?",
+            "explanation": "Wenn Austrittskriterien nicht erfüllt sind, sollte eine Risikoanalyse durchgeführt werden, um zu entscheiden, ob das Testen verlängert oder angepasst werden muss. Dies verhindert, dass Tests zu früh oder zu spät gestoppt werden. (5.1_Testplanung.md)",
+            "options": [
+                {
+                    "text": "Alle Tests sofort stoppen",
+                    "correct": false
+                },
+                {
+                    "text": "Produkt freigeben",
+                    "correct": false
+                },
+                {
+                    "text": "Risiko neu bewerten und Tests ggf. verlängern",
+                    "correct": true
+                },
+                {
+                    "text": "Ignorieren und fortfahren",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor ist entscheidend bei der Auswahl von Eintritts- und Austrittskriterien?",
+            "explanation": "Eintritts- und Austrittskriterien sollten die Geschäfts- und Qualitätsziele widerspiegeln, da sie den gewünschten Qualitätsgrad definieren und die Teststrategie daran ausrichten. (5.1_Testplanung.md)",
+            "options": [
+                {
+                    "text": "Teamgröße",
+                    "correct": false
+                },
+                {
+                    "text": "Geschäfts- und Qualitätsziele",
+                    "correct": true
+                },
+                {
+                    "text": "Code-Syntax",
+                    "correct": false
+                },
+                {
+                    "text": "Release Notes",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist die Überprüfung des Testfortschritts wichtig?",
+            "explanation": "Die Überprüfung des Testfortschritts ist wichtig, um sicherzustellen, dass die Testziele erreicht werden. Nur was gemessen wird, kann verbessert werden. (5.3_Testüberwachung,_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Um neue Tester zu schulen",
+                    "correct": false
+                },
+                {
+                    "text": "Um Budget zu reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um sicherzustellen, dass Testziele erreicht werden",
+                    "correct": true
+                },
+                {
+                    "text": "Um Testumgebungen zu wechseln",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Metriktyp ist ‚Prozentsatz bestandener Testfälle‘?",
+            "explanation": "Der Prozentsatz bestandener Testfälle ist eine typische Fortschrittsmetrik, da sie den aktuellen Erfüllungsgrad der Tests visualisiert. (5.3_Testüberwachung,_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Aufwandsmetrik",
+                    "correct": false
+                },
+                {
+                    "text": "Fortschrittsmetrik",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerbezogene Metrik",
+                    "correct": false
+                },
+                {
+                    "text": "Kostenmetrik",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wer ist hauptsächlich verantwortlich für die Erstellung des Testplans?",
+            "explanation": "Der Testmanager ist für die Erstellung des Testplans verantwortlich. Er definiert Ziele, Ressourcen und Zeitpläne, während der Testanalyst die Tests entwirft. (5.1_Testplanung.md)",
+            "options": [
+                {
+                    "text": "Projektmanager",
+                    "correct": false
+                },
+                {
+                    "text": "Testanalyst",
+                    "correct": false
+                },
+                {
+                    "text": "Testmanager",
+                    "correct": true
+                },
+                {
+                    "text": "Entwickler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was hilft, Engpässe im Testprozess zu erkennen?",
+            "explanation": "Testmetriken und Überwachung helfen dabei, Engpässe im Testprozess zu erkennen, indem sie den Fortschritt und die Leistung sichtbar machen. Monitoring zeigt, wo Prozesse ins Stocken geraten. (5.3_Testüberwachung,_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Risikoanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Testautomatisierungstools",
+                    "correct": false
+                },
+                {
+                    "text": "Testmetriken und Überwachung",
+                    "correct": true
+                },
+                {
+                    "text": "Abnahmetests",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }
