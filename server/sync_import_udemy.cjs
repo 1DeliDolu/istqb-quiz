@@ -58,7 +58,22 @@ async function importUdemyQuestions() {
               try {
                 const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
-                if (data.questions && Array.isArray(data.questions)) {
+                // questions dizisini esnekçe tespit et
+                let questions = [];
+                if (data && Array.isArray(data.questions)) {
+                  questions = data.questions;
+                } else if (Array.isArray(data)) {
+                  questions = data;
+                } else if (data && typeof data === "object") {
+                  const qKey = Object.keys(data || {}).find(
+                    (k) => k.trim().toLowerCase() === "questions"
+                  );
+                  if (qKey && Array.isArray(data[qKey])) {
+                    questions = data[qKey];
+                  }
+                }
+
+                if (Array.isArray(questions) && questions.length >= 0) {
                   // udemy_2_1.json -> chapter: udemy_2, subChapter: udemy_2_1
                   const match = file.match(/udemy_(\d+)_(\d+)\.json/);
 
@@ -93,7 +108,7 @@ async function importUdemyQuestions() {
                       subChapter = `udemy_${ch}_quiz_${sub}`;
                     }
 
-                    for (const q of data.questions) {
+                    for (const q of questions) {
                       // Soru ekle
                       const [result] = await db.execute(
                         `INSERT INTO questions (
@@ -129,8 +144,8 @@ async function importUdemyQuestions() {
                       }
                     }
 
-                    totalImported += data.questions.length;
-                    console.log(`    ✅ ${data.questions.length} soru eklendi`);
+                    totalImported += questions.length;
+                    console.log(`    ✅ ${questions.length} soru eklendi`);
                   }
                 }
               } catch (fileError) {

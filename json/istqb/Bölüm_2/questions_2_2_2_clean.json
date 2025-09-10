@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Wie viele Testarten werden in diesem Lehrplan behandelt?",
-            "explanation": "In diesem Lehrplan werden die folgenden vier Testarten behandelt. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "explanation": "In diesem Lehrplan werden die folgenden vier Testarten behandelt. (2.2.2_Testarten.md)",
             "options": [
                 {
                     "text": "Drei",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Worauf konzentriert sich der nicht-funktionale Test?",
-            "explanation": "Beim nicht-funktionalen Test werden andere als die funktionalen Eigenschaften einer Komponente oder eines Systems bewertet. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "explanation": "Beim nicht-funktionalen Test werden andere als die funktionalen Eigenschaften einer Komponente oder eines Systems bewertet. (2.2.2_Testarten.md)",
             "options": [
                 {
                     "text": "Auf die funktionalen Eigenschaften",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Wann kann es sinnvoll sein, nicht-funktionale Tests zu starten?",
-            "explanation": "Manchmal ist es sinnvoll, dass nicht-funktionale Tests schon früh im SDLC beginnen (z. B. im Rahmen von Reviews oder bereits in Komponententests). (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "explanation": "Manchmal ist es sinnvoll, dass nicht-funktionale Tests schon früh im SDLC beginnen (z. B. im Rahmen von Reviews oder bereits in Komponententests). (2.2.2_Testarten.md)",
             "options": [
                 {
                     "text": "Schon früh im SDLC, z. B. in Reviews oder Komponententests",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Worauf basiert der Black-Box-Test?",
-            "explanation": "Der Black-Box-Test basiert auf Spezifikationen und leitet die Tests aus der Dokumentation ab. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "explanation": "Der Black-Box-Test basiert auf Spezifikationen und leitet die Tests aus der Dokumentation ab. (2.2.2_Testarten.md)",
             "options": [
                 {
                     "text": "Auf Spezifikationen und Dokumentation",
@@ -445,7 +445,7 @@
         },
         {
             "question": "Worauf basiert der White-Box-Test?",
-            "explanation": "Der White-Box-Test ist strukturbasiert und leitet Tests aus der Implementierung oder der internen Struktur des Systems ab. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "explanation": "Der White-Box-Test ist strukturbasiert und leitet Tests aus der Implementierung oder der internen Struktur des Systems ab. (2.2.2_Testarten.md)",
             "options": [
                 {
                     "text": "Auf der Implementierung oder internen Struktur des Systems",
@@ -555,7 +555,7 @@
         },
         {
             "question": "Auf welchen Teststufen können die vier genannten Testarten angewendet werden?",
-            "explanation": "Alle vier oben genannten Testarten können auf allen Teststufen angewandt werden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.2)",
+            "explanation": "Alle vier oben genannten Testarten können auf allen Teststufen angewandt werden. (2.2.2_Testarten.md)",
             "options": [
                 {
                     "text": "Auf allen Teststufen",

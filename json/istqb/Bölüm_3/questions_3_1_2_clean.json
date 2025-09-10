@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welchen Grundsatz unterstützt der statische Test besonders?",
-            "explanation": "Der statische Test kann Fehler bereits in den frühesten Phasen des SDLC aufdecken und erfüllt damit den Grundsatz des frühen Testens. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.2)",
+            "explanation": "Der statische Test kann Fehler bereits in den frühesten Phasen des SDLC aufdecken und erfüllt damit den Grundsatz des frühen Testens. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Grundsatz des frühen Testens",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Warum ist der statische Test besonders wertvoll?",
-            "explanation": "Weil er Fehlerzustände frühzeitig erkennt, die später teurer zu beheben wären. (Abschnitt 3.1.2)",
+            "explanation": "Weil er Fehlerzustände frühzeitig erkennt, die später teurer zu beheben wären. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Weil Fehler frühzeitig erkannt werden",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Art von Fehlerzuständen kann durch statische Tests erkannt werden, die dynamische Tests nicht finden?",
-            "explanation": "Beispiele sind nicht erreichbarer Code, falsch implementierte Entwurfsmuster und Fehler in nicht ausführbaren Arbeitsergebnissen. (Abschnitt 3.1.2)",
+            "explanation": "Beispiele sind nicht erreichbarer Code, falsch implementierte Entwurfsmuster und Fehler in nicht ausführbaren Arbeitsergebnissen. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Nicht erreichbarer Code, fehlerhafte Entwurfsmuster, Fehler in Dokumenten",
@@ -71,7 +71,7 @@
         },
         {
             "question": "In welcher Phase des Softwareentwicklungslebenszyklus kann der statische Test eingesetzt werden?",
-            "explanation": "Der statische Test kann bereits in den frühesten Phasen des SDLC eingesetzt werden, noch bevor Code ausgeführt wird. (Abschnitt 3.1.2)",
+            "explanation": "Der statische Test kann bereits in den frühesten Phasen des SDLC eingesetzt werden, noch bevor Code ausgeführt wird. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "In den frühesten Phasen des SDLC",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welches Beispiel zeigt einen Fehlerzustand, den dynamische Tests schwer erkennen können?",
-            "explanation": "Nicht erreichbarer Code ist ein typisches Beispiel, das durch statische Analyse erkannt werden kann. (Abschnitt 3.1.2)",
+            "explanation": "Nicht erreichbarer Code ist ein typisches Beispiel, das durch statische Analyse erkannt werden kann. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Nicht erreichbarer Code",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Was ist ein Vorteil des statischen Tests gegenüber dynamischen Tests?",
-            "explanation": "Statische Tests können auch nicht-ausführbare Arbeitsergebnisse wie Dokumente oder Modelle prüfen. (Abschnitt 3.1.2)",
+            "explanation": "Statische Tests können auch nicht-ausführbare Arbeitsergebnisse wie Dokumente oder Modelle prüfen. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Er kann nicht-ausführbare Arbeitsergebnisse prüfen",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Art von Problemen können durch statische Tests in Entwurfsmustern erkannt werden?",
-            "explanation": "Statische Tests können aufzeigen, wenn Entwurfsmuster nicht wie vorgesehen implementiert sind. (Abschnitt 3.1.2)",
+            "explanation": "Statische Tests können aufzeigen, wenn Entwurfsmuster nicht wie vorgesehen implementiert sind. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Fehlerhafte Implementierung von Entwurfsmustern",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welches Ziel verfolgt der statische Test im Hinblick auf Kosten?",
-            "explanation": "Durch frühes Finden von Fehlern werden Nachbesserungskosten reduziert. (Abschnitt 3.1.2)",
+            "explanation": "Durch frühes Finden von Fehlern werden Nachbesserungskosten reduziert. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Reduktion der Kosten durch frühes Erkennen von Fehlern",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche Arbeitsergebnisse profitieren besonders vom statischen Test?",
-            "explanation": "Nicht ausführbare Arbeitsergebnisse wie Dokumentation, Verträge oder Modelle können durch statische Tests überprüft werden. (Abschnitt 3.1.2)",
+            "explanation": "Nicht ausführbare Arbeitsergebnisse wie Dokumentation, Verträge oder Modelle können durch statische Tests überprüft werden. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Nicht ausführbare Arbeitsergebnisse",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welche der folgenden Aussagen ist FALSCH?",
-            "explanation": "Statische Tests können zwar viel, aber sie ersetzen dynamische Tests nicht vollständig. (Abschnitt 3.1.2)",
+            "explanation": "Statische Tests können zwar viel, aber sie ersetzen dynamische Tests nicht vollständig. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Statische Tests unterstützen den Grundsatz des frühen Testens.",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Welchen Beitrag leistet der statische Test zur Qualitätssicherung?",
-            "explanation": "Der statische Test ermöglicht die Bewertung der Qualität von Arbeitsergebnissen und trägt zum Vertrauen in diese bei. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.2)",
+            "explanation": "Der statische Test ermöglicht die Bewertung der Qualität von Arbeitsergebnissen und trägt zum Vertrauen in diese bei. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Er bewertet die Qualität von Arbeitsergebnissen und baut Vertrauen auf",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Wie können Stakeholder durch den statischen Test profitieren?",
-            "explanation": "Durch die Überprüfung der dokumentierten Anforderungen können sie sicherstellen, dass ihre tatsächlichen Bedürfnisse abgedeckt sind. (Abschnitt 3.1.2)",
+            "explanation": "Durch die Überprüfung der dokumentierten Anforderungen können sie sicherstellen, dass ihre tatsächlichen Bedürfnisse abgedeckt sind. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Stakeholder können prüfen, ob Anforderungen ihre Bedürfnisse beschreiben",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Welches Ziel verfolgt der statische Test in Bezug auf Stakeholder?",
-            "explanation": "Ein gemeinsames Verständnis zwischen Stakeholdern kann früh geschaffen werden. (Abschnitt 3.1.2)",
+            "explanation": "Ein gemeinsames Verständnis zwischen Stakeholdern kann früh geschaffen werden. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Er fördert ein gemeinsames Verständnis zwischen den Stakeholdern",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welche Phase im SDLC wird durch den statischen Test besonders unterstützt?",
-            "explanation": "Da er früh eingesetzt wird, fördert er ein gemeinsames Verständnis schon in frühen Phasen des SDLC. (Abschnitt 3.1.2)",
+            "explanation": "Da er früh eingesetzt wird, fördert er ein gemeinsames Verständnis schon in frühen Phasen des SDLC. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Frühe Phasen des SDLC",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Warum ist es empfehlenswert, viele Stakeholder in statische Tests einzubeziehen?",
-            "explanation": "Eine breite Beteiligung verbessert Qualität, Verständnis und Kommunikation. (Abschnitt 3.1.2)",
+            "explanation": "Eine breite Beteiligung verbessert Qualität, Verständnis und Kommunikation. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Weil es Qualität, Verständnis und Kommunikation verbessert",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Welchen Effekt hat der statische Test auf die Kommunikation?",
-            "explanation": "Er verbessert die Kommunikation zwischen den beteiligten Stakeholdern. (Abschnitt 3.1.2)",
+            "explanation": "Er verbessert die Kommunikation zwischen den beteiligten Stakeholdern. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Verbesserung der Kommunikation zwischen Stakeholdern",
@@ -357,7 +357,7 @@
         },
         {
             "question": "Welche Art von Arbeitsergebnissen profitieren besonders von der Überprüfung durch Stakeholder?",
-            "explanation": "Dokumentierte Anforderungen profitieren stark, da Stakeholder ihre tatsächlichen Bedürfnisse bestätigen können. (Abschnitt 3.1.2)",
+            "explanation": "Dokumentierte Anforderungen profitieren stark, da Stakeholder ihre tatsächlichen Bedürfnisse bestätigen können. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Dokumentierte Anforderungen",
@@ -379,7 +379,7 @@
         },
         {
             "question": "Wie trägt der statische Test zum Vertrauen in Arbeitsergebnisse bei?",
-            "explanation": "Durch die Bewertung und Überprüfung entsteht Vertrauen in die Korrektheit und Qualität. (Abschnitt 3.1.2)",
+            "explanation": "Durch die Bewertung und Überprüfung entsteht Vertrauen in die Korrektheit und Qualität. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Durch die Bewertung und Überprüfung von Arbeitsergebnissen",
@@ -401,7 +401,7 @@
         },
         {
             "question": "Welche Aussage zum Nutzen des statischen Tests ist FALSCH?",
-            "explanation": "Der statische Test fördert die Kommunikation, statt sie zu ersetzen oder einzuschränken. (Abschnitt 3.1.2)",
+            "explanation": "Der statische Test fördert die Kommunikation, statt sie zu ersetzen oder einzuschränken. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Statischer Test fördert gemeinsames Verständnis",
@@ -423,7 +423,7 @@
         },
         {
             "question": "Was ist eine direkte Folge der Einbeziehung vieler Stakeholder in Reviews?",
-            "explanation": "Die Qualität steigt, da unterschiedliche Perspektiven berücksichtigt werden. (Abschnitt 3.1.2)",
+            "explanation": "Die Qualität steigt, da unterschiedliche Perspektiven berücksichtigt werden. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Steigerung der Qualität durch unterschiedliche Perspektiven",
@@ -445,7 +445,7 @@
         },
         {
             "question": "Warum lohnen sich Reviews trotz der entstehenden Kosten?",
-            "explanation": "Die Gesamtkosten des Projekts sinken, da weniger Aufwand für späte Fehlerbehebungen entsteht. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.2)",
+            "explanation": "Die Gesamtkosten des Projekts sinken, da weniger Aufwand für späte Fehlerbehebungen entsteht. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Weil spätere Fehlerbehebungen teurer sind",
@@ -467,7 +467,7 @@
         },
         {
             "question": "Welcher Hauptvorteil ergibt sich aus der frühen Fehlererkennung durch Reviews?",
-            "explanation": "Frühe Fehlererkennung reduziert den Aufwand für die Behebung im späteren Projektverlauf. (Abschnitt 3.1.2)",
+            "explanation": "Frühe Fehlererkennung reduziert den Aufwand für die Behebung im späteren Projektverlauf. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Reduzierter Aufwand für spätere Fehlerbehebung",
@@ -489,7 +489,7 @@
         },
         {
             "question": "Welche Kosten werden durch Reviews typischerweise gesenkt?",
-            "explanation": "Durch Reviews sinken die Gesamtkosten des Projekts, da weniger Fehler spät behoben werden müssen. (Abschnitt 3.1.2)",
+            "explanation": "Durch Reviews sinken die Gesamtkosten des Projekts, da weniger Fehler spät behoben werden müssen. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Gesamtkosten des Projekts",
@@ -511,7 +511,7 @@
         },
         {
             "question": "Was passiert, wenn in einem Projekt keine Reviews durchgeführt werden?",
-            "explanation": "Ohne Reviews entstehen höhere Kosten, da Fehler später mit mehr Aufwand behoben werden müssen. (Abschnitt 3.1.2)",
+            "explanation": "Ohne Reviews entstehen höhere Kosten, da Fehler später mit mehr Aufwand behoben werden müssen. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Die Fehlerbehebung im späteren Verlauf wird aufwändiger und teurer",
@@ -533,7 +533,7 @@
         },
         {
             "question": "Welcher Zusammenhang besteht zwischen Reviews und Fehlerbehebungskosten?",
-            "explanation": "Früh erkannte Fehler durch Reviews sind deutlich günstiger zu beheben als spät erkannte. (Abschnitt 3.1.2)",
+            "explanation": "Früh erkannte Fehler durch Reviews sind deutlich günstiger zu beheben als spät erkannte. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Früh erkannte Fehler sind günstiger zu beheben",
@@ -555,7 +555,7 @@
         },
         {
             "question": "Welcher Kostenfaktor sinkt durch den Einsatz von Reviews besonders?",
-            "explanation": "Der Aufwand für die Behebung von Fehlern im späteren Projektverlauf sinkt. (Abschnitt 3.1.2)",
+            "explanation": "Der Aufwand für die Behebung von Fehlern im späteren Projektverlauf sinkt. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Aufwand für späte Fehlerbehebungen",
@@ -577,7 +577,7 @@
         },
         {
             "question": "Warum sinken die Gesamtkosten des Projekts durch Reviews?",
-            "explanation": "Weil Fehler früher gefunden und billiger behoben werden können. (Abschnitt 3.1.2)",
+            "explanation": "Weil Fehler früher gefunden und billiger behoben werden können. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Früh gefundene Fehler sind billiger zu beheben",
@@ -599,7 +599,7 @@
         },
         {
             "question": "Welche Aussage zu den Kosten von Reviews ist korrekt?",
-            "explanation": "Reviews verursachen zwar Kosten, sparen aber langfristig mehr ein. (Abschnitt 3.1.2)",
+            "explanation": "Reviews verursachen zwar Kosten, sparen aber langfristig mehr ein. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Reviews verursachen Kosten, sparen aber langfristig mehr ein",
@@ -621,7 +621,7 @@
         },
         {
             "question": "Welche Aussage ist ein typisches Missverständnis zu Reviews?",
-            "explanation": "Es ist falsch zu glauben, dass Reviews kostenlos sind. Sie kosten Zeit und Ressourcen, sparen aber später ein Vielfaches ein. (Abschnitt 3.1.2)",
+            "explanation": "Es ist falsch zu glauben, dass Reviews kostenlos sind. Sie kosten Zeit und Ressourcen, sparen aber später ein Vielfaches ein. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Reviews sind völlig kostenlos",
@@ -643,7 +643,7 @@
         },
         {
             "question": "Welches Fazit kann man über den wirtschaftlichen Nutzen von Reviews ziehen?",
-            "explanation": "Auch wenn Reviews Kosten verursachen, sind die Gesamtkosten des Projekts mit ihnen geringer. (Abschnitt 3.1.2)",
+            "explanation": "Auch wenn Reviews Kosten verursachen, sind die Gesamtkosten des Projekts mit ihnen geringer. (3.1.2_Wert_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Mit Reviews sind die Gesamtkosten in der Regel geringer",

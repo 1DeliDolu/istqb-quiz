@@ -61,6 +61,38 @@ async function syncUdemySubChapters() {
             questions = data;
           }
 
+          // Dosya seviyesindeki subChapterTitle'a göre de sub_chapter oluştur (soru olmasa bile)
+          if ((!questions || questions.length === 0) && (data.subChapterTitle || data.subChapter)) {
+            let subChapterTitle = data.subChapterTitle || data.subChapter;
+            let subIdSrc = subChapterTitle;
+
+            const quizMatchTop = String(subIdSrc).match(/Quiz\s+(\d+)/i);
+            if (quizMatchTop) {
+              subIdSrc = "quiz_" + quizMatchTop[1];
+            } else {
+              const numericMatchTop = String(subIdSrc).match(/^(\d+\.\d+(\.\d+)?)/);
+              if (numericMatchTop) {
+                subIdSrc = numericMatchTop[1].replace(/\./g, "_");
+              } else {
+                subIdSrc = String(subIdSrc)
+                  .replace(/[^\w\s]/g, "_")
+                  .replace(/\s+/g, "_")
+                  .toLowerCase();
+              }
+            }
+
+            const subChapterKey = chapterId + "_" + subIdSrc;
+            const fullSubId = chapterId + "_" + subIdSrc;
+            if (!subChaptersMap.has(subChapterKey)) {
+              subChaptersMap.set(subChapterKey, {
+                id: fullSubId,
+                chapter_id: chapterId,
+                title: subChapterTitle,
+                description: subChapterTitle,
+              });
+            }
+          }
+
           // Her sorudan subChapter bilgisini çıkar
           for (const question of questions) {
             let subChapterTitle = question.subChapter;

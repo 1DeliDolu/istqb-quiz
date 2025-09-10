@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was unterscheidet den statischen Test vom dynamischen Test?",
-            "explanation": "Beim statischen Test wird das Testobjekt nicht ausgeführt, sondern z. B. durch Reviews oder statische Analyse untersucht. Dynamischer Test erfordert die Ausführung. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1)",
+            "explanation": "Beim statischen Test wird das Testobjekt nicht ausgeführt, sondern z. B. durch Reviews oder statische Analyse untersucht. Dynamischer Test erfordert die Ausführung. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Statischer Test benötigt keine Ausführung der Software.",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Arbeitsergebnisse können typischerweise durch statische Tests untersucht werden?",
-            "explanation": "Zu den möglichen Arbeitsergebnissen zählen Code, Prozessspezifikationen, Architekturspezifikationen oder andere Dokumente. (Abschnitt 3.1)",
+            "explanation": "Zu den möglichen Arbeitsergebnissen zählen Code, Prozessspezifikationen, Architekturspezifikationen oder andere Dokumente. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Code, Prozessspezifikationen, Architekturspezifikationen",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welches ist KEIN Ziel statischer Tests?",
-            "explanation": "Ziele sind u. a. Qualitätsverbesserung, Aufdeckung von Fehlerzuständen und Bewertung von Merkmalen. Die Laufzeit-Performance zu messen ist kein Ziel. (Abschnitt 3.1)",
+            "explanation": "Ziele sind u. a. Qualitätsverbesserung, Aufdeckung von Fehlerzuständen und Bewertung von Merkmalen. Die Laufzeit-Performance zu messen ist kein Ziel. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Verbesserung der Qualität",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche Aussage trifft auf statische Tests zu?",
-            "explanation": "Statische Tests können sowohl zur Verifizierung als auch zur Validierung beitragen. (Abschnitt 3.1)",
+            "explanation": "Statische Tests können sowohl zur Verifizierung als auch zur Validierung beitragen. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Statische Tests können nur zur Verifizierung eingesetzt werden.",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welches Merkmal wird NICHT typischerweise durch statische Tests bewertet?",
-            "explanation": "Zu den typischen Merkmalen gehören Lesbarkeit, Vollständigkeit, Korrektheit, Testbarkeit und Konsistenz. Performance wird nicht durch statische Tests bewertet. (Abschnitt 3.1)",
+            "explanation": "Zu den typischen Merkmalen gehören Lesbarkeit, Vollständigkeit, Korrektheit, Testbarkeit und Konsistenz. Performance wird nicht durch statische Tests bewertet. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Korrektheit",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welches Beispiel gehört zu statischen Testaktivitäten?",
-            "explanation": "Manuelle Reviews und statische Analysen sind typische Aktivitäten. (Abschnitt 3.1)",
+            "explanation": "Manuelle Reviews und statische Analysen sind typische Aktivitäten. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Manuelles Review von Quellcode",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Aussage beschreibt den Nutzen statischer Tests am besten?",
-            "explanation": "Sie dienen dazu, Fehlerzustände frühzeitig und kostengünstig zu erkennen. (Abschnitt 3.1)",
+            "explanation": "Sie dienen dazu, Fehlerzustände frühzeitig und kostengünstig zu erkennen. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Sie reduzieren das Risiko, indem Fehler früh erkannt werden.",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche Technik zählt zur statischen Analyse?",
-            "explanation": "Die statische Analyse untersucht Code und Dokumente ohne Ausführung, z. B. durch Werkzeuge. (Abschnitt 3.1)",
+            "explanation": "Die statische Analyse untersucht Code und Dokumente ohne Ausführung, z. B. durch Werkzeuge. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Automatische Codeanalyse mit einem Werkzeug",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Was ist ein gemeinsames Ziel von Reviews und statischer Analyse?",
-            "explanation": "Beide sollen Fehlerzustände in Arbeitsergebnissen identifizieren. (Abschnitt 3.1)",
+            "explanation": "Beide sollen Fehlerzustände in Arbeitsergebnissen identifizieren. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Ermittlung von Fehlerzuständen in Arbeitsergebnissen",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welche Aussage zu statischen Tests ist FALSCH?",
-            "explanation": "Statische Tests können NICHT Laufzeitverhalten messen. (Abschnitt 3.1)",
+            "explanation": "Statische Tests können NICHT Laufzeitverhalten messen. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Sie helfen, Fehlerzustände zu erkennen.",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Welche Rollen arbeiten typischerweise bei der Verfeinerung (Refinement) des Backlogs zusammen?",
-            "explanation": "Tester, Fachbereichsvertreter (z. B. Product Owner, Businessanalysten) und Entwickler arbeiten gemeinsam an der Qualität der User-Storys. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1)",
+            "explanation": "Tester, Fachbereichsvertreter (z. B. Product Owner, Businessanalysten) und Entwickler arbeiten gemeinsam an der Qualität der User-Storys. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Tester, Fachbereichsvertreter und Entwickler",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Welches Ziel hat das gemeinsame Schreiben von User-Storys?",
-            "explanation": "Das Ziel ist sicherzustellen, dass die User-Storys definierten Kriterien entsprechen, z. B. Definition-of-Ready, und testbare Akzeptanzkriterien enthalten. (Abschnitt 3.1)",
+            "explanation": "Das Ziel ist sicherzustellen, dass die User-Storys definierten Kriterien entsprechen, z. B. Definition-of-Ready, und testbare Akzeptanzkriterien enthalten. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Sicherstellung klarer und testbarer User-Storys",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Was beschreibt die Definition-of-Ready?",
-            "explanation": "Die Definition-of-Ready legt fest, wann eine User-Story ausreichend klar und vollständig ist, um in die Entwicklung aufgenommen zu werden. (Abschnitt 5.1.3, Bezug in Abschnitt 3.1)",
+            "explanation": "Die Definition-of-Ready legt fest, wann eine User-Story ausreichend klar und vollständig ist, um in die Entwicklung aufgenommen zu werden. (Abschnitt 5.1.3, Bezug in 3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Kriterien, die erfüllt sein müssen, bevor eine User-Story in die Entwicklung geht",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welches Verfahren kann angewendet werden, um User-Storys auf Vollständigkeit und Verständlichkeit zu prüfen?",
-            "explanation": "Reviewverfahren sind geeignet, um User-Storys zu prüfen und sicherzustellen, dass sie verständlich und testbar sind. (Abschnitt 3.1)",
+            "explanation": "Reviewverfahren sind geeignet, um User-Storys zu prüfen und sicherzustellen, dass sie verständlich und testbar sind. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Reviewverfahren",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Welche Rolle können Tester in der Arbeit mit User-Storys übernehmen?",
-            "explanation": "Tester stellen durch Fragen sicher, dass User-Storys analysiert, hinterfragt und verbessert werden. (Abschnitt 3.1)",
+            "explanation": "Tester stellen durch Fragen sicher, dass User-Storys analysiert, hinterfragt und verbessert werden. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Sie analysieren, hinterfragen und verbessern User-Storys",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Was ist ein Vorteil der Zusammenarbeit von Testern, Entwicklern und Fachvertretern bei User-Storys?",
-            "explanation": "Durch Zusammenarbeit werden User-Storys klarer, vollständiger und testbar, wodurch spätere Fehler vermieden werden. (Abschnitt 3.1)",
+            "explanation": "Durch Zusammenarbeit werden User-Storys klarer, vollständiger und testbar, wodurch spätere Fehler vermieden werden. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "User-Storys werden klarer und testbarer",
@@ -357,7 +357,7 @@
         },
         {
             "question": "Warum ist es wichtig, dass User-Storys testbare Akzeptanzkriterien enthalten?",
-            "explanation": "Testbare Akzeptanzkriterien stellen sicher, dass die Funktionalität überprüfbar ist und die Anforderungen messbar erfüllt werden. (Abschnitt 3.1)",
+            "explanation": "Testbare Akzeptanzkriterien stellen sicher, dass die Funktionalität überprüfbar ist und die Anforderungen messbar erfüllt werden. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Damit die Anforderungen überprüfbar und messbar sind",
@@ -379,7 +379,7 @@
         },
         {
             "question": "Was ist Example-Mapping im Zusammenhang mit User-Storys?",
-            "explanation": "Example-Mapping unterstützt die Zusammenarbeit, indem konkrete Beispiele genutzt werden, um Anforderungen und User-Storys zu verdeutlichen. (Abschnitt 3.1)",
+            "explanation": "Example-Mapping unterstützt die Zusammenarbeit, indem konkrete Beispiele genutzt werden, um Anforderungen und User-Storys zu verdeutlichen. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Ein Verfahren, bei dem Beispiele helfen, Anforderungen zu verdeutlichen",
@@ -401,7 +401,7 @@
         },
         {
             "question": "Welche Gefahr entsteht, wenn User-Storys keine klaren Akzeptanzkriterien haben?",
-            "explanation": "Fehlende Akzeptanzkriterien führen dazu, dass die Testbarkeit und Überprüfbarkeit der Story nicht gewährleistet ist. (Abschnitt 3.1)",
+            "explanation": "Fehlende Akzeptanzkriterien führen dazu, dass die Testbarkeit und Überprüfbarkeit der Story nicht gewährleistet ist. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Die Testbarkeit und Überprüfbarkeit ist nicht gewährleistet",
@@ -423,7 +423,7 @@
         },
         {
             "question": "Welche Rolle spielen die richtigen Fragen der Tester bei der Arbeit mit User-Storys?",
-            "explanation": "Durch gezielte Fragen können Tester Unklarheiten aufdecken und die Qualität der User-Storys verbessern. (Abschnitt 3.1)",
+            "explanation": "Durch gezielte Fragen können Tester Unklarheiten aufdecken und die Qualität der User-Storys verbessern. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Sie decken Unklarheiten auf und verbessern die User-Storys",
@@ -445,7 +445,7 @@
         },
         {
             "question": "Welches ist ein Hauptvorteil der statischen Analyse gegenüber dynamischen Tests?",
-            "explanation": "Die statische Analyse benötigt keine Testfälle und kann Fehler vor der Ausführung des Codes erkennen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1)",
+            "explanation": "Die statische Analyse benötigt keine Testfälle und kann Fehler vor der Ausführung des Codes erkennen. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Keine Testfälle erforderlich",
@@ -467,7 +467,7 @@
         },
         {
             "question": "In welchem Kontext wird die statische Analyse häufig integriert?",
-            "explanation": "Die statische Analyse wird oft in CI-Frameworks integriert, um kontinuierlich Feedback zu Codequalität zu geben. (Abschnitt 3.1, Bezug zu 2.1.4)",
+            "explanation": "Die statische Analyse wird oft in CI-Frameworks integriert, um kontinuierlich Feedback zu Codequalität zu geben. (3.1_Grundlagen_des_statischen_Tests.md, Bezug zu 2.1.4)",
             "options": [
                 {
                     "text": "In Continuous-Integration-Frameworks",
@@ -489,7 +489,7 @@
         },
         {
             "question": "Welches ist ein typisches Ziel der statischen Analyse?",
-            "explanation": "Die statische Analyse wird hauptsächlich zur Erkennung spezifischer Fehlerzustände im Code eingesetzt. (Abschnitt 3.1)",
+            "explanation": "Die statische Analyse wird hauptsächlich zur Erkennung spezifischer Fehlerzustände im Code eingesetzt. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Erkennung spezifischer Fehlerzustände im Code",
@@ -511,7 +511,7 @@
         },
         {
             "question": "Welche weiteren Qualitätsmerkmale können durch statische Analyse bewertet werden?",
-            "explanation": "Neben Fehlerzuständen können auch Wartbarkeit und Sicherheit analysiert werden. (Abschnitt 3.1)",
+            "explanation": "Neben Fehlerzuständen können auch Wartbarkeit und Sicherheit analysiert werden. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Wartbarkeit und Sicherheit",
@@ -533,7 +533,7 @@
         },
         {
             "question": "Welche der folgenden ist KEIN Beispiel für ein statisches Analysewerkzeug?",
-            "explanation": "Typische Beispiele sind Rechtschreibprüfung oder Werkzeuge zur Lesbarkeitsprüfung. Performance-Profiler gehören nicht dazu. (Abschnitt 3.1)",
+            "explanation": "Typische Beispiele sind Rechtschreibprüfung oder Werkzeuge zur Lesbarkeitsprüfung. Performance-Profiler gehören nicht dazu. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Rechtschreibprüfung",
@@ -555,7 +555,7 @@
         },
         {
             "question": "Warum ist die statische Analyse oft mit weniger Aufwand verbunden?",
-            "explanation": "Es werden keine Testfälle benötigt, und die Werkzeuge automatisieren die Analyse. (Abschnitt 3.1)",
+            "explanation": "Es werden keine Testfälle benötigt, und die Werkzeuge automatisieren die Analyse. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Weil keine Testfälle notwendig sind",
@@ -577,7 +577,7 @@
         },
         {
             "question": "Welche Aussage über die statische Analyse ist FALSCH?",
-            "explanation": "Statische Analyse prüft keine Laufzeitperformance, sondern Codequalität, Wartbarkeit und Sicherheit. (Abschnitt 3.1)",
+            "explanation": "Statische Analyse prüft keine Laufzeitperformance, sondern Codequalität, Wartbarkeit und Sicherheit. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Sie wird oft in CI-Frameworks integriert.",
@@ -599,7 +599,7 @@
         },
         {
             "question": "Welche Methode gehört zur statischen Analyse?",
-            "explanation": "Beispiele sind Rechtschreibprüfung oder automatische Codeanalyse. (Abschnitt 3.1)",
+            "explanation": "Beispiele sind Rechtschreibprüfung oder automatische Codeanalyse. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Rechtschreibprüfung von Dokumenten",
@@ -621,7 +621,7 @@
         },
         {
             "question": "Wie unterstützt die statische Analyse die Softwarequalität?",
-            "explanation": "Durch frühzeitige Identifikation von Fehlern und Bewertung von Wartbarkeit und Sicherheit. (Abschnitt 3.1)",
+            "explanation": "Durch frühzeitige Identifikation von Fehlern und Bewertung von Wartbarkeit und Sicherheit. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Sie identifiziert früh Fehler und bewertet Wartbarkeit sowie Sicherheit.",
@@ -643,7 +643,7 @@
         },
         {
             "question": "Warum eignet sich die statische Analyse besonders für frühe Phasen im SDLC?",
-            "explanation": "Fehler können vor dem dynamischen Testen erkannt und damit kostengünstig behoben werden. (Abschnitt 3.1)",
+            "explanation": "Fehler können vor dem dynamischen Testen erkannt und damit kostengünstig behoben werden. (3.1_Grundlagen_des_statischen_Tests.md)",
             "options": [
                 {
                     "text": "Fehler können früh und kostengünstig erkannt werden",

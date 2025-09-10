@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Worauf konzentrieren sich auf Zusammenarbeit basierende Testansätze im Unterschied zu den in 4.2–4.4 beschriebenen Verfahren?",
-            "explanation": "Während andere Verfahren primär Fehlerzustände aufdecken, zielen kollaborative Ansätze auch auf die Vermeidung von Fehlerzuständen. (Kap. 4.5)",
+            "explanation": "Während andere Verfahren primär Fehlerzustände aufdecken, zielen kollaborative Ansätze auch auf die Vermeidung von Fehlerzuständen. (4.5_Auf_Zusammenarbeit_basierende_Testansätze.md)",
             "options": [
                 {
                     "text": "Auf die Reduktion von Testaufwand",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welches gemeinsame Ziel haben die in den Abschnitten 4.2 bis 4.4 vorgestellten Testverfahren?",
-            "explanation": "Sie konzentrieren sich auf die Erkennung von Fehlerzuständen. (Kap. 4.5)",
+            "explanation": "Sie konzentrieren sich auf die Erkennung von Fehlerzuständen. (4.5_Auf_Zusammenarbeit_basierende_Testansätze.md)",
             "options": [
                 {
                     "text": "Erhöhung der Automatisierungsrate",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welcher zusätzliche Schwerpunkt kommt bei auf Zusammenarbeit basierenden Testansätzen hinzu?",
-            "explanation": "Zusätzlich zur Fehlererkennung steht die Fehlervermeidung durch Zusammenarbeit und Kommunikation im Vordergrund. (Kap. 4.5)",
+            "explanation": "Zusätzlich zur Fehlererkennung steht die Fehlervermeidung durch Zusammenarbeit und Kommunikation im Vordergrund. (4.5_Auf_Zusammenarbeit_basierende_Testansätze.md)",
             "options": [
                 {
                     "text": "Fehlererkennung durch zufällige Eingaben",

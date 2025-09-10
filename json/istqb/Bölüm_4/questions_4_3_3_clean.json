@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was ist eine grundlegende Stärke von White-Box-Testverfahren?",
-            "explanation": "Sie berücksichtigen die gesamte Softwareimplementierung und helfen auch dann, Fehlerzustände zu finden, wenn Spezifikationen unvollständig oder veraltet sind. (Kap. 4.3.3)",
+            "explanation": "Sie berücksichtigen die gesamte Softwareimplementierung und helfen auch dann, Fehlerzustände zu finden, wenn Spezifikationen unvollständig oder veraltet sind. (4.3.3_Der_Wert_des_White-Box-Tests.md)",
             "options": [
                 {
                     "text": "Sie benötigen keine Softwareimplementierung",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welcher Schwachpunkt von White-Box-Tests wird im Lehrplan genannt?",
-            "explanation": "Wenn die Software Anforderungen nicht erfüllt, erkennen White-Box-Tests die resultierenden Fehlerzustände möglicherweise nicht. (Kap. 4.3.3)",
+            "explanation": "Wenn die Software Anforderungen nicht erfüllt, erkennen White-Box-Tests die resultierenden Fehlerzustände möglicherweise nicht. (4.3.3_Der_Wert_des_White-Box-Tests.md)",
             "options": [
                 {
                     "text": "Sie messen keine Codeüberdeckung",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Wie können White-Box-Testverfahren im statischen Testen eingesetzt werden?",
-            "explanation": "Beispielsweise durch Dry Runs von Code oder Reviews von Pseudocode und High-Level-Logik. (Kap. 4.3.3)",
+            "explanation": "Beispielsweise durch Dry Runs von Code oder Reviews von Pseudocode und High-Level-Logik. (4.3.3_Der_Wert_des_White-Box-Tests.md)",
             "options": [
                 {
                     "text": "Nur durch automatisierte Toolunterstützung",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Warum liefern Black-Box-Tests allein keine Messgröße für die Codeüberdeckung?",
-            "explanation": "Weil Black-Box-Tests nur spezifikationsbasiert sind und nicht auf der tatsächlichen Implementierung beruhen. (Kap. 4.3.3)",
+            "explanation": "Weil Black-Box-Tests nur spezifikationsbasiert sind und nicht auf der tatsächlichen Implementierung beruhen. (4.3.3_Der_Wert_des_White-Box-Tests.md)",
             "options": [
                 {
                     "text": "Weil sie keine Fehler aufdecken können",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welchen Mehrwert bieten White-Box-Tests gegenüber Black-Box-Tests?",
-            "explanation": "Sie liefern objektive Messgrößen der Überdeckung und ermöglichen zusätzliche Tests zur Erhöhung des Vertrauens in den Code. (Kap. 4.3.3)",
+            "explanation": "Sie liefern objektive Messgrößen der Überdeckung und ermöglichen zusätzliche Tests zur Erhöhung des Vertrauens in den Code. (4.3.3_Der_Wert_des_White-Box-Tests.md)",
             "options": [
                 {
                     "text": "Sie reduzieren automatisch den Testaufwand",

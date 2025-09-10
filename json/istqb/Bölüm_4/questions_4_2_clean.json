@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was ist das Ziel der Äquivalenzklassenbildung?",
-            "explanation": "Mit Äquivalenzklassenbildung wird der Eingabebereich in Klassen eingeteilt, sodass ein Testfall je Klasse genügt. (Kap. 4.2.1, Glossar Äquivalenzklasse/ÄKB)",
+            "explanation": "Mit Äquivalenzklassenbildung wird der Eingabebereich in Klassen eingeteilt, sodass ein Testfall je Klasse genügt. (4.2_Black-Box-Testverfahren.md)",
             "options": [
                 {
                     "text": "Reduktion der Testfälle durch Repräsentanten je Klasse",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Klassenarten gibt es bei der Äquivalenzklassenbildung?",
-            "explanation": "Man unterscheidet gültige und ungültige Äquivalenzklassen. (Kap. 4.2.1)",
+            "explanation": "Man unterscheidet gültige und ungültige Äquivalenzklassen. (4.2_Black-Box-Testverfahren.md)",
             "options": [
                 {
                     "text": "Gültige und ungültige Klassen",

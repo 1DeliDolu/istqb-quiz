@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was ist das Hauptziel von Risikomanagement?",
-            "explanation": "Risikomanagement erhöht die Wahrscheinlichkeit der Zielerreichung, verbessert die Qualität und stärkt das Vertrauen der Stakeholder. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Risikomanagement erhöht die Wahrscheinlichkeit der Zielerreichung, verbessert die Qualität 5.2_Risikomanagement.md<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
             "options": [
                 {
                     "text": "Erhöhung der Wahrscheinlichkeit der Zielerreichung",

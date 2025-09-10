@@ -2,5 +2,28 @@
     "chapter": "udemy_8",
     "subChapter": "udemy_8_3",
     "subChapterTitle": "8.3 Beispielprüfung 3",
-    "questions": []
+    "questions": [
+        {
+            "question": "Welches Tool hilft bei der effizienten Verwaltung großer Testmengen?",
+            "explanation": "Ein Test Runner Framework organisiert, führt automatisierte Test-Suiten aus und erstellt Berichte über die Ergebnisse. Es ermöglicht die effiziente Verwaltung großer Testmengen, reduziert manuellen Aufwand und sorgt für konsistente Testausführung. (6.1.12_Test-Runner-Frameworks.md)",
+            "options": [
+                {
+                    "text": "Dokumentationsmanager",
+                    "correct": false
+                },
+                {
+                    "text": "Test Runner Framework",
+                    "correct": true
+                },
+                {
+                    "text": "Helpdesk-Ticketing-Tool",
+                    "correct": false
+                },
+                {
+                    "text": "Wireframing-Tool",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

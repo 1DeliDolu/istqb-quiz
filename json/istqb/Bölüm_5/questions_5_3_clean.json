@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was ist das Hauptziel der Testüberwachung?",
-            "explanation": "Die Testüberwachung sammelt Informationen über das Testen, um den Testfortschritt zu bewerten und zu messen, ob Endekriterien erfüllt sind. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Die Testüberwachung sammelt Informationen über das Testen, um den Testfortschritt zu bewerten und zu messen, ob Endekriterien erfüllt sind. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Bewertung des Testfortschritts und Erfüllung der Endekriterien",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Kriterien können bei der Testüberwachung geprüft werden?",
-            "explanation": "Beispiele: Überdeckung von Produktrisiken, Anforderungen oder Akzeptanzkriterien. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Beispiele: Überdeckung von Produktrisiken, Anforderungen oder Akzeptanzkriterien. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Überdeckung von Produktrisiken und Anforderungen",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Wofür werden die Informationen aus der Testüberwachung genutzt?",
-            "explanation": "Sie werden zur Teststeuerung verwendet, um Korrekturmaßnahmen einzuleiten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Sie werden zur Teststeuerung verwendet, um Korrekturmaßnahmen einzuleiten. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Zur Teststeuerung und Einleitung von Maßnahmen",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche Maßnahme ist ein Beispiel für Teststeuerung?",
-            "explanation": "Beispiel: Neupriorisierung von Tests, wenn ein Risiko zu einem Problem wird. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Beispiel: Neupriorisierung von Tests, wenn ein Risiko zu einem Problem wird. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Neupriorisierung von Tests bei geänderten Risiken",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welche weitere Maßnahme gehört zur Teststeuerung?",
-            "explanation": "Beispiel: Neubewertung, ob ein Testelement die Kriterien nach einer Überarbeitung erfüllt. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Beispiel: Neubewertung, ob ein Testelement die Kriterien nach einer Überarbeitung erfüllt. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Neubewertung von Eingangskriterien oder Endekriterien",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Wie kann die Teststeuerung auf Verzögerungen reagieren?",
-            "explanation": "Beispiel: Anpassung des Testzeitplans, um Verzögerungen auszugleichen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Beispiel: Anpassung des Testzeitplans, um Verzögerungen auszugleichen. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Anpassung des Testzeitplans",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Ressource kann laut Teststeuerung bei Bedarf hinzugefügt werden?",
-            "explanation": "Beispiel: Hinzufügen neuer Ressourcen, wenn erforderlich. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Beispiel: Hinzufügen neuer Ressourcen, wenn erforderlich. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Neue Ressourcen (z. B. Tester oder Tools)",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Wann finden Testabschlussaktivitäten typischerweise statt?",
-            "explanation": "An Projektmeilensteinen, z. B. nach einer Teststufe, Iteration oder Systemfreigabe. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "An Projektmeilensteinen, z. B. nach einer Teststufe, Iteration oder Systemfreigabe. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "An Projektmeilensteinen wie Teststufen oder Releases",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welches Ziel hat der Testabschluss?",
-            "explanation": "Beim Testabschluss werden Erfahrungen, Testmittel und relevante Informationen konsolidiert. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Beim Testabschluss werden Erfahrungen, Testmittel und relevante Informationen konsolidiert. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Konsolidierung von Erfahrungen und Testmitteln",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welche der folgenden Aktivitäten gehört zum Testabschluss?",
-            "explanation": "Dazu gehören z. B. Sammlung von Daten und Dokumentation von Ergebnissen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Dazu gehören z. B. Sammlung von Daten und Dokumentation von Ergebnissen. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Sammlung von Daten aus abgeschlossenen Testaktivitäten",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Welche Tests können durch die Testüberwachung auf Zielerfüllung geprüft werden?",
-            "explanation": "Es wird geprüft, ob Ziele für Überdeckung von Produktrisiken, Anforderungen oder Akzeptanzkriterien erfüllt sind. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Es wird geprüft, ob Ziele für Überdeckung von Produktrisiken, Anforderungen oder Akzeptanzkriterien erfüllt sind. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Ziele für Produktrisiken und Anforderungen",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Welche Steuerungsmaßnahme bezieht sich auf Änderungen an Testelementen?",
-            "explanation": "Die Neubewertung, ob Testelemente nach einer Überarbeitung Kriterien erfüllen, ist eine Steuerungsmaßnahme. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Die Neubewertung, ob Testelemente nach einer Überarbeitung Kriterien erfüllen, ist eine Steuerungsmaßnahme. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Neubewertung von Testelementen nach Überarbeitung",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Welche typische Situation löst eine Anpassung des Testzeitplans aus?",
-            "explanation": "Zum Beispiel eine Verzögerung bei der Bereitstellung der Testumgebung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Zum Beispiel eine Verzögerung bei der Bereitstellung der Testumgebung. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Verzögerung bei der Bereitstellung der Testumgebung",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welche Rolle spielen die gesammelten Daten im Testabschluss?",
-            "explanation": "Sie dienen dazu, relevante Informationen zu konsolidieren und für zukünftige Projekte zu nutzen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3)",
+            "explanation": "Sie dienen dazu, relevante Informationen zu konsolidieren und für zukünftige Projekte zu nutzen. (5.3_Testüberwachung_Teststeuerung_und_Testabschluss.md)",
             "options": [
                 {
                     "text": "Sie konsolidieren Informationen für zukünftige Projekte",

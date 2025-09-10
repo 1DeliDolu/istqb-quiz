@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was ist das Ziel des Konfigurationsmanagements im Testen?",
-            "explanation": "Das KM identifiziert, steuert und verfolgt Arbeitsergebnisse wie Testfälle, Testergebnisse und Berichte als Konfigurationselemente. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Das KM identifiziert, steuert und verfolgt Arbeitsergebnisse wie Testfälle, Testergebnisse und Berichte als Konfigurationselemente. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Identifizierung, Steuerung und Verfolgung von Arbeitsergebnissen",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Was gilt als Konfigurationselement im Testen?",
-            "explanation": "Beispiele: Testkonzepte, Teststrategien, Testfälle, Skripte, Ergebnisse, Berichte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Beispiele: Testkonzepte, Teststrategien, Testfälle, Skripte, Ergebnisse, Berichte. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Testfälle und Testergebnisse",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Aufgabe hat das KM bei komplexen Konfigurationselementen?",
-            "explanation": "Es zeichnet die Elemente, ihre Beziehungen und Versionen auf. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Es zeichnet die Elemente, ihre Beziehungen und Versionen auf. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Aufzeichnung der Elemente, Beziehungen und Versionen",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Wann wird ein Konfigurationselement zur Baseline?",
-            "explanation": "Wenn es zum Testen freigegeben wird, wird es zur Baseline. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Wenn es zum Testen freigegeben wird, wird es zur Baseline. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Wenn es zum Testen freigegeben wird",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Wie kann eine Baseline verändert werden?",
-            "explanation": "Nur durch einen formalen Änderungskontrollprozess kann eine Baseline geändert werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Nur durch einen formalen Änderungskontrollprozess kann eine Baseline geändert werden. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Durch einen formalen Änderungskontrollprozess",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Möglichkeit bietet KM bei Baselines?",
-            "explanation": "Es ist möglich, zu einer früheren Baseline zurückzukehren, um Ergebnisse zu reproduzieren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Es ist möglich, zu einer früheren Baseline zurückzukehren, um Ergebnisse zu reproduzieren. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Zurückkehren zu früheren Baselines zur Reproduktion",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Bedingung stellt das KM für Testelemente sicher?",
-            "explanation": "Alle Testelemente werden eindeutig identifiziert, versionskontrolliert und verfolgt. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Alle Testelemente werden eindeutig identifiziert, versionskontrolliert und verfolgt. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Eindeutige Identifizierung und Versionskontrolle",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Warum ist die Verfolgbarkeit ein wichtiges Ziel des KM?",
-            "explanation": "Die Verfolgbarkeit wird über alle Testprozesse hinweg aufrechterhalten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Die Verfolgbarkeit wird über alle Testprozesse hinweg aufrechterhalten. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Weil sie die Nachvollziehbarkeit während des gesamten Testprozesses sicherstellt",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche Dokumente werden als Testmittel eindeutig referenziert?",
-            "explanation": "Alle identifizierten Dokumentations- und Softwareelemente werden eindeutig referenziert. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Alle identifizierten Dokumentations- und Softwareelemente werden eindeutig referenziert. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Dokumentation und Softwareelemente",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Wie unterstützt KM die Reproduzierbarkeit von Tests?",
-            "explanation": "Durch Versionierung und Rückkehr zu früheren Baselines lassen sich frühere Testergebnisse reproduzieren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Durch Versionierung und Rückkehr zu früheren Baselines lassen sich frühere Testergebnisse reproduzieren. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Durch Rückkehr zu früheren Baselines",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Wie wird KM typischerweise in modernen DevOps-Prozessen umgesetzt?",
-            "explanation": "In DevOps ist KM oft automatisiert und Teil der Auslieferungskette. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "In DevOps ist KM oft automatisiert und Teil der Auslieferungskette. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Als automatisierter Teil der DevOps-Auslieferungskette",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Welche Arbeitsergebnisse gehören zu den KM-relevanten Konfigurationselementen?",
-            "explanation": "Beispiele: Testkonzepte, Strategien, Testfälle, Skripte, Protokolle. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Beispiele: Testkonzepte, Strategien, Testfälle, Skripte, Protokolle. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Testkonzepte, Strategien, Testfälle, Testergebnisse",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Was passiert, wenn ein Konfigurationselement freigegeben wurde?",
-            "explanation": "Es wird zur Baseline und darf nur über Änderungskontrolle verändert werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Es wird zur Baseline und darf nur über Änderungskontrolle verändert werden. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Es wird zur Baseline",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welche Rolle spielt die Versionskontrolle im KM?",
-            "explanation": "Alle Konfigurationselemente werden versionskontrolliert, um Änderungen nachzuvollziehen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Alle Konfigurationselemente werden versionskontrolliert, um Änderungen nachzuvollziehen. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Nachvollziehbarkeit durch Versionskontrolle",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Welche Aufgabe erfüllt KM bei Testelementen?",
-            "explanation": "Es stellt sicher, dass Testelemente eindeutig identifiziert und verfolgt werden können. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.4)",
+            "explanation": "Es stellt sicher, dass Testelemente eindeutig identifiziert und verfolgt werden können. (5.4_Konfigurationsmanagement.md)",
             "options": [
                 {
                     "text": "Eindeutige Identifizierung und Nachverfolgbarkeit",

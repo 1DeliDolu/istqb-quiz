@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welchen Vorteil bietet frühzeitiges und häufiges Feedback von Stakeholdern?",
-            "explanation": "Frühes Feedback ermöglicht die rechtzeitige Kommunikation über potenzielle Qualitätsprobleme. (Originalsatz: 'Ein frühzeitiges und häufiges Feedback ermöglicht die frühzeitige Kommunikation von potenziellen Qualitätsproblemen.')",
+            "explanation": "Frühes Feedback ermöglicht die rechtzeitige Kommunikation über potenzielle Qualitätsprobleme. (Originalsatz: 'Ein frühzeitiges und häufiges Feedback ermöglicht die frühzeitige Kommunikation von potenziellen Qualitätsproblemen.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Frühzeitige Kommunikation von Qualitätsproblemen",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Was passiert, wenn Stakeholder während des SDLC nur wenig einbezogen werden?",
-            "explanation": "Dann entspricht das Produkt möglicherweise nicht den Vorstellungen der Stakeholder. (Originalsatz: 'Wenn die Stakeholder ... nur wenig einbezogen werden, entspricht das ... Produkt möglicherweise nicht den Vorstellungen der Stakeholder.')",
+            "explanation": "Dann entspricht das Produkt möglicherweise nicht den Vorstellungen der Stakeholder. (Originalsatz: 'Wenn die Stakeholder ... nur wenig einbezogen werden, entspricht das ... Produkt möglicherweise nicht den Vorstellungen der Stakeholder.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Das Produkt entspricht möglicherweise nicht den Stakeholder-Vorstellungen",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welches Risiko entsteht, wenn die Wünsche der Stakeholder nicht erfüllt werden?",
-            "explanation": "Wenn die Wünsche nicht erfüllt werden, drohen kostspielige Nacharbeiten, verpasste Termine oder sogar Projektabbruch. (Originalsatz: 'Wenn die Wünsche der Stakeholder nicht erfüllt werden...')",
+            "explanation": "Wenn die Wünsche nicht erfüllt werden, drohen kostspielige Nacharbeiten, verpasste Termine oder sogar Projektabbruch. (Originalsatz: 'Wenn die Wünsche der Stakeholder nicht erfüllt werden...')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Das Projekt wird automatisch erfolgreich",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche der folgenden Folgen kann durch mangelndes Stakeholder-Feedback eintreten?",
-            "explanation": "Folgen sind Nacharbeiten, verpasste Termine, Schuldzuweisungen oder Projektscheitern. (Originalsatz: '... kann dies zu kostspieligen Nacharbeiten, verpassten Terminen, Schuldzuweisungen und sogar zu einem kompletten Scheitern ... führen.')",
+            "explanation": "Folgen sind Nacharbeiten, verpasste Termine, Schuldzuweisungen oder Projektscheitern. (Originalsatz: '... kann dies zu kostspieligen Nacharbeiten, verpassten Terminen, Schuldzuweisungen und sogar zu einem kompletten Scheitern ... führen.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Mehr Vertrauen in das Projekt",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Warum ist frühes Feedback von Stakeholdern kostensparend?",
-            "explanation": "Frühes Feedback reduziert die Wahrscheinlichkeit von teuren Nacharbeiten im späteren Verlauf. (Originaltext: '... kann dies zu kostspieligen Nacharbeiten ... führen.')",
+            "explanation": "Frühes Feedback reduziert die Wahrscheinlichkeit von teuren Nacharbeiten im späteren Verlauf. (Originaltext: '... kann dies zu kostspieligen Nacharbeiten ... führen.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Weil dadurch teure Nacharbeiten reduziert werden",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Auswirkung kann mangelndes Feedback auf Projekttermine haben?",
-            "explanation": "Ohne Feedback können wichtige Termine verpasst werden. (Originalsatz: '... verpassten Terminen ...')",
+            "explanation": "Ohne Feedback können wichtige Termine verpasst werden. (Originalsatz: '... verpassten Terminen ...')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Projekttermine werden automatisch eingehalten",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche der folgenden Aussagen beschreibt ein Scheitern durch mangelndes Feedback?",
-            "explanation": "Mangelndes Feedback kann zu einem kompletten Scheitern des Projekts führen. (Originalsatz: '... und sogar zu einem kompletten Scheitern des Projekts führen.')",
+            "explanation": "Mangelndes Feedback kann zu einem kompletten Scheitern des Projekts führen. (Originalsatz: '... und sogar zu einem kompletten Scheitern des Projekts führen.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Das Projekt scheitert möglicherweise komplett",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche Rolle spielt Stakeholder-Feedback im Hinblick auf Qualität?",
-            "explanation": "Frühes Feedback macht potenzielle Qualitätsprobleme frühzeitig sichtbar. (Originalsatz: '... ermöglicht die frühzeitige Kommunikation von potenziellen Qualitätsproblemen.')",
+            "explanation": "Frühes Feedback macht potenzielle Qualitätsprobleme frühzeitig sichtbar. (Originalsatz: '... ermöglicht die frühzeitige Kommunikation von potenziellen Qualitätsproblemen.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Es macht potenzielle Qualitätsprobleme früh sichtbar",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche Gefahr birgt es, wenn Stakeholder nicht regelmäßig Feedback geben?",
-            "explanation": "Das Produkt entspricht möglicherweise nicht den aktuellen Vorstellungen der Stakeholder. (Originalsatz: '... entspricht das zu entwickelnde Produkt möglicherweise nicht den ... Vorstellungen der Stakeholder.')",
+            "explanation": "Das Produkt entspricht möglicherweise nicht den aktuellen Vorstellungen der Stakeholder. (Originalsatz: '... entspricht das zu entwickelnde Produkt möglicherweise nicht den ... Vorstellungen der Stakeholder.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Das Produkt entspricht möglicherweise nicht den Stakeholder-Vorstellungen",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welche Kombination beschreibt die Folgen von fehlendem Feedback am besten?",
-            "explanation": "Folgen sind kostspielige Nacharbeiten, verpasste Termine, Schuldzuweisungen und Projektscheitern. (Originalsatz: '... kann dies zu kostspieligen Nacharbeiten, verpassten Terminen, Schuldzuweisungen und sogar ... Scheitern ... führen.')",
+            "explanation": "Folgen sind kostspielige Nacharbeiten, verpasste Termine, Schuldzuweisungen und Projektscheitern. (Originalsatz: '... kann dies zu kostspieligen Nacharbeiten, verpassten Terminen, Schuldzuweisungen und sogar ... Scheitern ... führen.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Kostspielige Nacharbeiten, verpasste Termine, Projektscheitern",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Welche Wirkung hat häufiges Stakeholder-Feedback auf Anforderungen?",
-            "explanation": "Es beugt Missverständnissen über Anforderungen vor. (Originalsatz: '... kann Missverständnisse über Anforderungen vorbeugen ...')",
+            "explanation": "Es beugt Missverständnissen über Anforderungen vor. (Originalsatz: '... kann Missverständnisse über Anforderungen vorbeugen ...')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Es beugt Missverständnissen über Anforderungen vor",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Wie unterstützt häufiges Feedback den Umgang mit Änderungen?",
-            "explanation": "Änderungen an den Anforderungen werden verstanden und früher umgesetzt. (Originalsatz: '... und sicherstellen, dass Änderungen ... früher umgesetzt werden.')",
+            "explanation": "Änderungen an den Anforderungen werden verstanden und früher umgesetzt. (Originalsatz: '... und sicherstellen, dass Änderungen ... früher umgesetzt werden.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Es macht Änderungen unnötig",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Welchen Vorteil bringt häufiges Feedback für das Entwicklungsteam?",
-            "explanation": "Das Team versteht besser, was es entwickelt. (Originalsatz: 'Dies hilft dem Entwicklungsteam dabei, besser zu verstehen, was es entwickelt.')",
+            "explanation": "Das Team versteht besser, was es entwickelt. (Originalsatz: 'Dies hilft dem Entwicklungsteam dabei, besser zu verstehen, was es entwickelt.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Das Team muss weniger dokumentieren",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Wie wirkt sich häufiges Feedback auf die Feature-Entwicklung aus?",
-            "explanation": "Das Team konzentriert sich auf Features, die den größten Nutzen für Stakeholder bringen. (Originalsatz: '... sich auf die Features zu konzentrieren, die ... den größten Nutzen bringen ...')",
+            "explanation": "Das Team konzentriert sich auf Features, die den größten Nutzen für Stakeholder bringen. (Originalsatz: '... sich auf die Features zu konzentrieren, die ... den größten Nutzen bringen ...')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Das Team entwickelt Features zufällig",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Warum ist häufiges Feedback besonders nützlich im Hinblick auf Anforderungen?",
-            "explanation": "Es sorgt dafür, dass Anforderungen klar sind und früh korrigiert werden können. (Originalsatz: '... Missverständnisse vorbeugen ... Änderungen ... früher umgesetzt ...')",
+            "explanation": "Es sorgt dafür, dass Anforderungen klar sind und früh korrigiert werden können. (Originalsatz: '... Missverständnisse vorbeugen ... Änderungen ... früher umgesetzt ...')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Es sorgt für Klarheit und frühe Korrekturen",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Welchen Effekt hat Stakeholder-Feedback auf das Entwicklungsverständnis?",
-            "explanation": "Das Entwicklungsteam versteht dadurch besser, was es entwickelt. (Originalsatz: '... hilft dem Entwicklungsteam dabei, besser zu verstehen ...')",
+            "explanation": "Das Entwicklungsteam versteht dadurch besser, was es entwickelt. (Originalsatz: '... hilft dem Entwicklungsteam dabei, besser zu verstehen ...')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Das Team versteht weniger vom Produkt",
@@ -357,7 +357,7 @@
         },
         {
             "question": "Welche Rolle spielt Feedback bei der Priorisierung von Features?",
-            "explanation": "Es ermöglicht, sich auf die Features zu konzentrieren, die den größten Nutzen bringen. (Originalsatz: '... sich auf die Features zu konzentrieren, die ... den größten Nutzen bringen ...')",
+            "explanation": "Es ermöglicht, sich auf die Features zu konzentrieren, die den größten Nutzen bringen. (Originalsatz: '... sich auf die Features zu konzentrieren, die ... den größten Nutzen bringen ...')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Es führt dazu, dass Features zufällig gewählt werden",
@@ -379,7 +379,7 @@
         },
         {
             "question": "Wie trägt häufiges Feedback zur Risikominimierung bei?",
-            "explanation": "Das Team fokussiert auf Features, die sich am positivsten auf die identifizierten Risiken auswirken. (Originalsatz: '... und die sich am positivsten auf die identifizierten Risiken auswirken.')",
+            "explanation": "Das Team fokussiert auf Features, die sich am positivsten auf die identifizierten Risiken auswirken. (Originalsatz: '... und die sich am positivsten auf die identifizierten Risiken auswirken.')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Es erhöht die Projektkosten",
@@ -401,7 +401,7 @@
         },
         {
             "question": "Welche Aussage beschreibt die Verbindung zwischen Feedback und Anforderungen korrekt?",
-            "explanation": "Häufiges Feedback stellt sicher, dass Änderungen an den Anforderungen verstanden und früh umgesetzt werden. (Originalsatz: '... Änderungen ... verstanden und früher umgesetzt ...')",
+            "explanation": "Häufiges Feedback stellt sicher, dass Änderungen an den Anforderungen verstanden und früh umgesetzt werden. (Originalsatz: '... Änderungen ... verstanden und früher umgesetzt ...')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Feedback ersetzt die Anforderungen",
@@ -423,7 +423,7 @@
         },
         {
             "question": "Welcher Aspekt von Feedback ist entscheidend für Stakeholder-Nutzen?",
-            "explanation": "Feedback ermöglicht die Konzentration auf die Features mit dem größten Nutzen. (Originalsatz: '... sich auf die Features zu konzentrieren, die ... den größten Nutzen bringen ...')",
+            "explanation": "Feedback ermöglicht die Konzentration auf die Features mit dem größten Nutzen. (Originalsatz: '... sich auf die Features zu konzentrieren, die ... den größten Nutzen bringen ...')(3.2.1_Vorteile_eines_frühzeitigen_und_häufigen_Stakeholder_Feedbacks.md)",
             "options": [
                 {
                     "text": "Zufällige Entwicklung aller Features",

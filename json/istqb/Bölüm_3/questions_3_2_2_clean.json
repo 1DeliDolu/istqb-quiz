@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welche Norm definiert einen generischen Reviewprozess?",
-            "explanation": "Die Norm ISO/IEC 20246 beschreibt einen generischen Reviewprozess. (Originalsatz: 'Die Norm ISO/IEC 20246 definiert einen generischen Reviewprozess...')",
+            "explanation": "Die Norm ISO/IEC 20246 beschreibt einen generischen Reviewprozess. (Originalsatz: 'Die Norm ISO/IEC 20246 definiert einen generischen Reviewprozess...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "ISO/IEC 20246",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Wie wird der in ISO/IEC 20246 definierte Reviewprozess beschrieben?",
-            "explanation": "Er ist ein strukturierter, aber flexibler Rahmen. (Originalsatz: '... der einen strukturierten, aber flexiblen Rahmen bietet...')",
+            "explanation": "Er ist ein strukturierter, aber flexibler Rahmen. (Originalsatz: '... der einen strukturierten, aber flexiblen Rahmen bietet...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Er ist vollständig unstrukturiert",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Wofür bietet der generische Reviewprozess die Grundlage?",
-            "explanation": "Er dient als Grundlage, um einen spezifischen Reviewprozess auf eine bestimmte Situation zuzuschneiden. (Originalsatz: '... auf dessen Grundlage ein spezifischer Reviewprozess auf eine bestimmte Situation zugeschnitten werden kann.')",
+            "explanation": "Er dient als Grundlage, um einen spezifischen Reviewprozess auf eine bestimmte Situation zuzuschneiden. (Originalsatz: '... auf dessen Grundlage ein spezifischer Reviewprozess auf eine bestimmte Situation zugeschnitten werden kann.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Für zufällige und unstrukturierte Tests",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Wann werden mehr der beschriebenen Aufgaben benötigt?",
-            "explanation": "Wenn das Review formaler ist, werden mehr Aufgaben benötigt. (Originalsatz: 'Wenn das geforderte Review eher formal ist, werden mehr ... Aufgaben ... benötigt.')",
+            "explanation": "Wenn das Review formaler ist, werden mehr Aufgaben benötigt. (Originalsatz: 'Wenn das geforderte Review eher formal ist, werden mehr ... Aufgaben ... benötigt.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Wenn das Review informell ist",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welches Ziel verfolgt der generische Reviewprozess?",
-            "explanation": "Er soll eine Basis schaffen, um Reviews an spezifische Situationen anzupassen. (Originaltext: '... Grundlage ... auf eine bestimmte Situation zugeschnitten ...')",
+            "explanation": "Er soll eine Basis schaffen, um Reviews an spezifische Situationen anzupassen. (Originaltext: '... Grundlage ... auf eine bestimmte Situation zugeschnitten ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Flexibilität bei der Anpassung an Situationen",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Wie unterscheidet sich ein formales Review von einem informellen?",
-            "explanation": "Bei einem formalen Review sind mehr Aktivitäten und Aufgaben vorgeschrieben. (Originalsatz: '... wenn das Review eher formal ist, werden mehr ... Aufgaben benötigt.')",
+            "explanation": "Bei einem formalen Review sind mehr Aktivitäten und Aufgaben vorgeschrieben. (Originalsatz: '... wenn das Review eher formal ist, werden mehr ... Aufgaben benötigt.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Formale Reviews benötigen mehr Aktivitäten",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Flexibilität bietet ISO/IEC 20246?",
-            "explanation": "Die Norm beschreibt einen Rahmen, der flexibel anwendbar ist. (Originalsatz: '... einen strukturierten, aber flexiblen Rahmen...')",
+            "explanation": "Die Norm beschreibt einen Rahmen, der flexibel anwendbar ist. (Originalsatz: '... einen strukturierten, aber flexiblen Rahmen...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Er ist völlig starr",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche Aussage trifft auf den generischen Reviewprozess zu?",
-            "explanation": "Er kann auf unterschiedliche Situationen zugeschnitten werden. (Originaltext: '... auf eine bestimmte Situation zugeschnitten ...')",
+            "explanation": "Er kann auf unterschiedliche Situationen zugeschnitten werden. (Originaltext: '... auf eine bestimmte Situation zugeschnitten ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Er ist universell ohne Anpassung einsetzbar",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche Konsequenz hat ein informelles Review im Vergleich zu einem formalen?",
-            "explanation": "Bei informellen Reviews werden weniger Aufgaben aus dem Prozess benötigt. (Ableitung aus: '... wenn ... eher formal ... mehr Aufgaben benötigt.')",
+            "explanation": "Bei informellen Reviews werden weniger Aufgaben aus dem Prozess benötigt. (Ableitung aus: '... wenn ... eher formal ... mehr Aufgaben benötigt.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Es werden weniger Aufgaben benötigt",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welche Norm legt die Aktivitäten für den Reviewprozess fest?",
-            "explanation": "Die Norm ISO/IEC 20246 definiert den generischen Reviewprozess und dessen Aktivitäten. (Originalsatz: 'Die Norm ISO/IEC 20246 definiert ...')",
+            "explanation": "Die Norm ISO/IEC 20246 definiert den generischen Reviewprozess und dessen Aktivitäten. (Originalsatz: 'Die Norm ISO/IEC 20246 definiert ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "IEEE 829",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Warum können viele Arbeitsergebnisse nicht in einem einzigen Review behandelt werden?",
-            "explanation": "Viele Arbeitsergebnisse sind zu umfangreich, um in einem einzigen Review betrachtet zu werden. (Originalsatz: 'Viele Arbeitsergebnisse sind zu umfangreich, als dass sie in einem einzigen Review behandelt werden könnten.')",
+            "explanation": "Viele Arbeitsergebnisse sind zu umfangreich, um in einem einzigen Review betrachtet zu werden. (Originalsatz: 'Viele Arbeitsergebnisse sind zu umfangreich, als dass sie in einem einzigen Review behandelt werden könnten.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Weil sie zu umfangreich sind",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Wie kann der Reviewprozess bei sehr großen Arbeitsergebnissen gestaltet werden?",
-            "explanation": "Er kann mehrfach durchgeführt werden, bis das gesamte Arbeitsergebnis geprüft ist. (Originalsatz: 'Der Reviewprozess kann daher mehrfach durchgeführt werden ...')",
+            "explanation": "Er kann mehrfach durchgeführt werden, bis das gesamte Arbeitsergebnis geprüft ist. (Originalsatz: 'Der Reviewprozess kann daher mehrfach durchgeführt werden ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Er wird immer in einem Schritt abgeschlossen",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Welches Ziel hat die mehrfache Durchführung von Reviews?",
-            "explanation": "Das Ziel ist, das gesamte Arbeitsergebnis vollständig zu überprüfen. (Originalsatz: '... um das Review für das gesamte Arbeitsergebnis zu vervollständigen.')",
+            "explanation": "Das Ziel ist, das gesamte Arbeitsergebnis vollständig zu überprüfen. (Originalsatz: '... um das Review für das gesamte Arbeitsergebnis zu vervollständigen.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Die Abdeckung des gesamten Arbeitsergebnisses",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Was passiert, wenn ein Arbeitsergebnis zu groß für ein einzelnes Review ist?",
-            "explanation": "Es wird in mehreren Reviews behandelt, bis alles geprüft wurde. (Originalsatz: '... mehrfach durchgeführt werden, um ... zu vervollständigen.')",
+            "explanation": "Es wird in mehreren Reviews behandelt, bis alles geprüft wurde. (Originalsatz: '... mehrfach durchgeführt werden, um ... zu vervollständigen.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Es wird nie geprüft",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Welche Konsequenz hat die Aufteilung eines Reviews auf mehrere Sitzungen?",
-            "explanation": "Sie ermöglicht eine vollständige Überprüfung sehr umfangreicher Arbeitsergebnisse. (Ableitung aus dem Originalsatz: '... um das Review für das gesamte Arbeitsergebnis zu vervollständigen.')",
+            "explanation": "Sie ermöglicht eine vollständige Überprüfung sehr umfangreicher Arbeitsergebnisse. (Ableitung aus dem Originalsatz: '... um das Review für das gesamte Arbeitsergebnis zu vervollständigen.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Die vollständige Überprüfung umfangreicher Arbeitsergebnisse",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Welches ist die erste Aktivität im Reviewprozess nach ISO/IEC 20246?",
-            "explanation": "Die erste Aktivität ist die Planung. (Originalsatz: 'Die Aktivitäten des Reviewprozesses sind: • Planung ...')",
+            "explanation": "Die erste Aktivität ist die Planung. (Originalsatz: 'Die Aktivitäten des Reviewprozesses sind: • Planung ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Planung",
@@ -357,7 +357,7 @@
         },
         {
             "question": "Was wird in der Planungsphase des Reviews festgelegt?",
-            "explanation": "In der Planungsphase wird der Umfang des Reviews festgelegt. (Originalsatz: 'In der Planungsphase wird der Umfang des Reviews festgelegt...')",
+            "explanation": "In der Planungsphase wird der Umfang des Reviews festgelegt. (Originalsatz: 'In der Planungsphase wird der Umfang des Reviews festgelegt...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Die Testdaten für dynamische Tests",
@@ -379,7 +379,7 @@
         },
         {
             "question": "Welche Aspekte gehören zum Umfang des Reviews?",
-            "explanation": "Zum Umfang zählen Zweck, Arbeitsergebnis, Qualitätsmerkmale, Bereiche, Endekriterien, unterstützende Infos, Aufwand und Zeitrahmen. (Originalsatz: '... Zweck, ... Arbeitsergebnis, ... Qualitätsmerkmale ...')",
+            "explanation": "Zum Umfang zählen Zweck, Arbeitsergebnis, Qualitätsmerkmale, Bereiche, Endekriterien, unterstützende Infos, Aufwand und Zeitrahmen. (Originalsatz: '... Zweck, ... Arbeitsergebnis, ... Qualitätsmerkmale ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Nur Zweck und Aufwand",
@@ -401,7 +401,7 @@
         },
         {
             "question": "Welche Art von Informationen können die Planung des Reviews unterstützen?",
-            "explanation": "Unterstützende Informationen sind z. B. Normen. (Originalsatz: '... unterstützende Informationen wie Normen...')",
+            "explanation": "Unterstützende Informationen sind z. B. Normen. (Originalsatz: '... unterstützende Informationen wie Normen...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Hardware-Spezifikationen",
@@ -423,7 +423,7 @@
         },
         {
             "question": "Welche Kriterien werden in der Reviewplanung definiert?",
-            "explanation": "In der Planung werden auch die Endekriterien festgelegt. (Originalsatz: '... die Endekriterien ... umfassen.')",
+            "explanation": "In der Planung werden auch die Endekriterien festgelegt. (Originalsatz: '... die Endekriterien ... umfassen.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Endekriterien",
@@ -445,7 +445,7 @@
         },
         {
             "question": "Welcher organisatorische Faktor wird in der Reviewplanung berücksichtigt?",
-            "explanation": "Auch Aufwand und Zeitrahmen gehören zur Planung. (Originalsatz: '... Aufwand und den Zeitrahmen ...')",
+            "explanation": "Auch Aufwand und Zeitrahmen gehören zur Planung. (Originalsatz: '... Aufwand und den Zeitrahmen ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Budget für Hardware",
@@ -467,7 +467,7 @@
         },
         {
             "question": "Was ist das Ziel des Reviewbeginns?",
-            "explanation": "Beim Reviewbeginn soll sichergestellt werden, dass alle Beteiligten und alle Voraussetzungen vorhanden sind, um mit dem Review zu starten. (Originalsatz: '... sicherzustellen, dass jeder Beteiligte und alles ... vorbereitet ist ...')",
+            "explanation": "Beim Reviewbeginn soll sichergestellt werden, dass alle Beteiligten und alle Voraussetzungen vorhanden sind, um mit dem Review zu starten. (Originalsatz: '... sicherzustellen, dass jeder Beteiligte und alles ... vorbereitet ist ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Alle Beteiligten und Voraussetzungen sind vorbereitet",
@@ -489,7 +489,7 @@
         },
         {
             "question": "Was muss jeder Teilnehmer beim Reviewbeginn haben?",
-            "explanation": "Jeder Teilnehmer benötigt Zugang zu dem zu prüfenden Arbeitsergebnis. (Originalsatz: '... dass jeder Teilnehmer Zugang zu dem zu prüfenden Arbeitsergebnis hat ...')",
+            "explanation": "Jeder Teilnehmer benötigt Zugang zu dem zu prüfenden Arbeitsergebnis. (Originalsatz: '... dass jeder Teilnehmer Zugang zu dem zu prüfenden Arbeitsergebnis hat ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Nur persönliche Notizen",
@@ -511,7 +511,7 @@
         },
         {
             "question": "Was muss jeder Teilnehmer beim Reviewbeginn verstehen?",
-            "explanation": "Jeder Teilnehmer muss seine Rolle und Verantwortlichkeiten verstehen. (Originalsatz: '... seine Rolle und Verantwortlichkeiten versteht ...')",
+            "explanation": "Jeder Teilnehmer muss seine Rolle und Verantwortlichkeiten verstehen. (Originalsatz: '... seine Rolle und Verantwortlichkeiten versteht ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Nur die Projektstrategie",
@@ -533,7 +533,7 @@
         },
         {
             "question": "Was muss zusätzlich jedem Teilnehmer zur Verfügung gestellt werden?",
-            "explanation": "Jeder Teilnehmer erhält alles, was er für die Durchführung des Reviews benötigt. (Originalsatz: '... und alles erhält, was er für die Durchführung ... benötigt.')",
+            "explanation": "Jeder Teilnehmer erhält alles, was er für die Durchführung des Reviews benötigt. (Originalsatz: '... und alles erhält, was er für die Durchführung ... benötigt.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Nichts, außer einer Einladung",
@@ -555,7 +555,7 @@
         },
         {
             "question": "Welche Voraussetzung gehört NICHT zum Reviewbeginn?",
-            "explanation": "Der Reviewbeginn bezieht sich auf Zugang, Rollenverständnis und benötigte Materialien – nicht auf Releaseplanung. (Originalsatz: '... Zugang ... Rolle ... alles ... was benötigt wird.')",
+            "explanation": "Der Reviewbeginn bezieht sich auf Zugang, Rollenverständnis und benötigte Materialien – nicht auf Releaseplanung. (Originalsatz: '... Zugang ... Rolle ... alles ... was benötigt wird.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Zugang zum Arbeitsergebnis",
@@ -599,7 +599,7 @@
         },
         {
             "question": "Was ist das Ziel eines individuellen Reviews?",
-            "explanation": "Ein Gutachter bewertet die Qualität des Arbeitsergebnisses und identifiziert Anomalien, Empfehlungen und Fragen. (Originalsatz: '... um die Qualität ... zu bewerten und Anomalien, Empfehlungen und Fragen zu identifizieren...')",
+            "explanation": "Ein Gutachter bewertet die Qualität des Arbeitsergebnisses und identifiziert Anomalien, Empfehlungen und Fragen. (Originalsatz: '... um die Qualität ... zu bewerten und Anomalien, Empfehlungen und Fragen zu identifizieren...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Die Qualität des Arbeitsergebnisses bewerten und Anomalien identifizieren",
@@ -621,7 +621,7 @@
         },
         {
             "question": "Welche Rolle übernimmt der Gutachter beim individuellen Review?",
-            "explanation": "Der Gutachter führt das Review durch, bewertet und protokolliert die Befunde. (Originalsatz: 'Die Gutachter protokollieren alle ... identifizierten Anomalien...')",
+            "explanation": "Der Gutachter führt das Review durch, bewertet und protokolliert die Befunde. (Originalsatz: 'Die Gutachter protokollieren alle ... identifizierten Anomalien...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Er erstellt neue Anforderungen",
@@ -643,7 +643,7 @@
         },
         {
             "question": "Welche Beispiele für Reviewverfahren nennt der Lehrplan?",
-            "explanation": "Beispiele sind checklistenbasiertes Review und szenariobasiertes Review. (Originalsatz: '... ein oder mehrere Reviewverfahren ... z. B. checklistenbasiertes Review, szenariobasiertes Review.')",
+            "explanation": "Beispiele sind checklistenbasiertes Review und szenariobasiertes Review. (Originalsatz: '... ein oder mehrere Reviewverfahren ... z. B. checklistenbasiertes Review, szenariobasiertes Review.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Unit-Tests und Integrationstests",
@@ -665,7 +665,7 @@
         },
         {
             "question": "Was wird beim individuellen Review identifiziert?",
-            "explanation": "Anomalien, Empfehlungen und Fragen werden durch den Gutachter erfasst. (Originalsatz: '... identifizieren, indem er ein oder mehrere Reviewverfahren anwendet.')",
+            "explanation": "Anomalien, Empfehlungen und Fragen werden durch den Gutachter erfasst. (Originalsatz: '... identifizieren, indem er ein oder mehrere Reviewverfahren anwendet.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Neue Releases",
@@ -687,7 +687,7 @@
         },
         {
             "question": "Auf welche Norm verweist der Lehrplan im Zusammenhang mit Reviewverfahren?",
-            "explanation": "Die Norm ISO/IEC 20246 beschreibt die verschiedenen Reviewverfahren. (Originalsatz: 'Die Norm ISO/IEC 20246 geht näher auf die verschiedenen Reviewverfahren ein.')",
+            "explanation": "Die Norm ISO/IEC 20246 beschreibt die verschiedenen Reviewverfahren. (Originalsatz: 'Die Norm ISO/IEC 20246 geht näher auf die verschiedenen Reviewverfahren ein.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "ISO/IEC 20246",
@@ -709,7 +709,7 @@
         },
         {
             "question": "Welche Aufgabe hat der Gutachter zusätzlich zur Bewertung der Qualität?",
-            "explanation": "Er protokolliert alle identifizierten Anomalien, Empfehlungen und Fragen. (Originalsatz: 'Die Gutachter protokollieren alle ... identifizierten Anomalien...')",
+            "explanation": "Er protokolliert alle identifizierten Anomalien, Empfehlungen und Fragen. (Originalsatz: 'Die Gutachter protokollieren alle ... identifizierten Anomalien...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Er schreibt die Testfälle neu",
@@ -731,7 +731,7 @@
         },
         {
             "question": "Was unterscheidet das individuelle Review von dynamischen Tests?",
-            "explanation": "Beim individuellen Review werden Arbeitsergebnisse mit Reviewverfahren überprüft, nicht durch Ausführung. (Originalsatz: '... ein oder mehrere Reviewverfahren anwendet ...')",
+            "explanation": "Beim individuellen Review werden Arbeitsergebnisse mit Reviewverfahren überprüft, nicht durch Ausführung. (Originalsatz: '... ein oder mehrere Reviewverfahren anwendet ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Es basiert auf Reviewverfahren ohne Codeausführung",
@@ -753,7 +753,7 @@
         },
         {
             "question": "Warum müssen während eines Reviews festgestellte Anomalien analysiert werden?",
-            "explanation": "Anomalien sind nicht automatisch Fehlerzustände, daher müssen sie analysiert und diskutiert werden. (Originalsatz: '... da es sich ... nicht unbedingt um Fehlerzustände handelt, müssen alle Anomalien analysiert und diskutiert werden.')",
+            "explanation": "Anomalien sind nicht automatisch Fehlerzustände, daher müssen sie analysiert und diskutiert werden. (Originalsatz: '... da es sich ... nicht unbedingt um Fehlerzustände handelt, müssen alle Anomalien analysiert und diskutiert werden.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Weil Anomalien nicht unbedingt Fehlerzustände sind",
@@ -775,7 +775,7 @@
         },
         {
             "question": "Welche Entscheidungen sollten für jede Anomalie getroffen werden?",
-            "explanation": "Es muss über Status, Verantwortlichkeit und Maßnahmen entschieden werden. (Originalsatz: '... Entscheidung über ihren Status, ihre Verantwortlichkeit und die erforderlichen Maßnahmen ...')",
+            "explanation": "Es muss über Status, Verantwortlichkeit und Maßnahmen entschieden werden. (Originalsatz: '... Entscheidung über ihren Status, ihre Verantwortlichkeit und die erforderlichen Maßnahmen ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Nur über die Kosten der Behebung",
@@ -797,7 +797,7 @@
         },
         {
             "question": "Wo findet die Analyse und Diskussion der Anomalien in der Regel statt?",
-            "explanation": "Dies geschieht üblicherweise in einer Reviewsitzung. (Originalsatz: 'Dies geschieht in der Regel in einer Reviewsitzung ...')",
+            "explanation": "Dies geschieht üblicherweise in einer Reviewsitzung. (Originalsatz: 'Dies geschieht in der Regel in einer Reviewsitzung ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "In einer Retrospektive",
@@ -819,7 +819,7 @@
         },
         {
             "question": "Über welche Aspekte entscheiden die Teilnehmer in einer Reviewsitzung?",
-            "explanation": "Sie entscheiden über die Qualität des geprüften Arbeitsergebnisses und die erforderlichen Folgemaßnahmen. (Originalsatz: '... über die Qualität ... und über die erforderlichen Folgemaßnahmen ...')",
+            "explanation": "Sie entscheiden über die Qualität des geprüften Arbeitsergebnisses und die erforderlichen Folgemaßnahmen. (Originalsatz: '... über die Qualität ... und über die erforderlichen Folgemaßnahmen ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Über die Qualität und die erforderlichen Folgemaßnahmen",
@@ -841,7 +841,7 @@
         },
         {
             "question": "Wann kann ein Folgereview erforderlich sein?",
-            "explanation": "Nach Abschluss der Maßnahmen kann ein Folgereview notwendig werden. (Originalsatz: 'Nach Abschluss der Maßnahmen kann ein Folgereview erforderlich sein.')",
+            "explanation": "Nach Abschluss der Maßnahmen kann ein Folgereview notwendig werden. (Originalsatz: 'Nach Abschluss der Maßnahmen kann ein Folgereview erforderlich sein.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Nach Abschluss der Maßnahmen",
@@ -863,7 +863,7 @@
         },
         {
             "question": "Warum sind Verantwortlichkeiten bei Anomalien wichtig?",
-            "explanation": "Es muss klar sein, wer für die Bearbeitung verantwortlich ist. (Originalsatz: '... Entscheidung über ... ihre Verantwortlichkeit ...')",
+            "explanation": "Es muss klar sein, wer für die Bearbeitung verantwortlich ist. (Originalsatz: '... Entscheidung über ... ihre Verantwortlichkeit ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Damit keine Dokumentation erstellt werden muss",
@@ -885,7 +885,7 @@
         },
         {
             "question": "Welche Aussage beschreibt den Unterschied zwischen Anomalien und Fehlerzuständen?",
-            "explanation": "Nicht jede Anomalie ist automatisch ein Fehlerzustand. (Originalsatz: '... da es sich ... nicht unbedingt um Fehlerzustände handelt ...')",
+            "explanation": "Nicht jede Anomalie ist automatisch ein Fehlerzustand. (Originalsatz: '... da es sich ... nicht unbedingt um Fehlerzustände handelt ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Jede Anomalie ist automatisch ein Fehlerzustand",
@@ -907,7 +907,7 @@
         },
         {
             "question": "Welche Themen stehen in der Reviewsitzung im Fokus?",
-            "explanation": "Im Fokus stehen Qualität, identifizierte Anomalien und Folgemaßnahmen. (Originalsatz: '... Qualität ... erforderliche Folgemaßnahmen ...')",
+            "explanation": "Im Fokus stehen Qualität, identifizierte Anomalien und Folgemaßnahmen. (Originalsatz: '... Qualität ... erforderliche Folgemaßnahmen ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Nur Budget und Ressourcen",
@@ -929,7 +929,7 @@
         },
         {
             "question": "Welches Dokument sollte für jeden identifizierten Fehlerzustand erstellt werden?",
-            "explanation": "Für jeden Fehlerzustand wird ein Fehlerbericht erstellt. (Originalsatz: 'Für jeden Fehlerzustand sollte ein Fehlerbericht erstellt werden...')",
+            "explanation": "Für jeden Fehlerzustand wird ein Fehlerbericht erstellt. (Originalsatz: 'Für jeden Fehlerzustand sollte ein Fehlerbericht erstellt werden...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Ein Fehlerbericht",
@@ -951,7 +951,7 @@
         },
         {
             "question": "Warum wird für jeden Fehlerzustand ein Fehlerbericht erstellt?",
-            "explanation": "Damit die Korrekturmaßnahmen nachverfolgt werden können. (Originalsatz: '... damit die Korrekturmaßnahmen nachverfolgt werden können.')",
+            "explanation": "Damit die Korrekturmaßnahmen nachverfolgt werden können. (Originalsatz: '... damit die Korrekturmaßnahmen nachverfolgt werden können.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Damit neue Anforderungen entstehen",
@@ -973,7 +973,7 @@
         },
         {
             "question": "Wann gilt ein Arbeitsergebnis nach einem Review als abgeschlossen?",
-            "explanation": "Wenn die Endekriterien erreicht sind, kann das Arbeitsergebnis abgeschlossen werden. (Originalsatz: 'Wenn die Endekriterien erreicht sind, kann das Arbeitsergebnis ...')",
+            "explanation": "Wenn die Endekriterien erreicht sind, kann das Arbeitsergebnis abgeschlossen werden. (Originalsatz: 'Wenn die Endekriterien erreicht sind, kann das Arbeitsergebnis ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Wenn alle Review-Teilnehmer zustimmen",
@@ -995,7 +995,7 @@
         },
         {
             "question": "Was ist der Zweck eines Fehlerberichts im Reviewprozess?",
-            "explanation": "Ein Fehlerbericht dient dazu, die Korrekturmaßnahmen nachvollziehbar zu dokumentieren. (Originalsatz: '... damit die Korrekturmaßnahmen nachverfolgt werden können.')",
+            "explanation": "Ein Fehlerbericht dient dazu, die Korrekturmaßnahmen nachvollziehbar zu dokumentieren. (Originalsatz: '... damit die Korrekturmaßnahmen nachverfolgt werden können.')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Er dokumentiert die Korrekturmaßnahmen nachvollziehbar",
@@ -1017,7 +1017,7 @@
         },
         {
             "question": "Welche Bedingung muss erfüllt sein, bevor ein Arbeitsergebnis abgeschlossen wird?",
-            "explanation": "Die Endekriterien müssen erfüllt sein. (Originalsatz: 'Wenn die Endekriterien erreicht sind ...')",
+            "explanation": "Die Endekriterien müssen erfüllt sein. (Originalsatz: 'Wenn die Endekriterien erreicht sind ...')(3.2.2_Aktivitäten_des_Reviewprozesses.md)",
             "options": [
                 {
                     "text": "Die Endekriterien müssen erfüllt sein",

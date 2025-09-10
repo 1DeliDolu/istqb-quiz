@@ -2,5 +2,237 @@
     "chapter": "udemy_6",
     "subChapter": "udemy_6_4",
     "subChapterTitle": "6.4 Quiz 17 - Risikomanagement",
-    "questions": []
+    "questions": [{
+            "question": "Was ist normalerweise KEIN Ergebnis der Testanalyse und des Entwurfs?",
+            "explanation": "Ergebnisse sind Testbedingungen, Testfälle und Testdaten. Ein Freigabeplan gehört zum Projektmanagement, nicht zum Testentwurf. (3.1.2_Wert_des_statischen_Tests.md)",
+            "options": [
+                {
+                    "text": "Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Testbedingungen",
+                    "correct": false
+                },
+                {
+                    "text": "Freigabeplan (Release schedule)",
+                    "correct": true
+                }
+            ]
+        },{
+            "question": "Welches der folgenden ist ein Beispiel für eine Fortschrittsmetrik?",
+            "explanation": "Der Prozentsatz der Testausführung ist eine typische Fortschrittsmetrik, da er zeigt, wie viel der geplanten Tests bereits durchgeführt wurde. (4.3.1_Testfortschrittsüberwachung_und_-steuerung.md)",
+            "options": [
+                {
+                    "text": "Gesamtanzahl der Benutzer",
+                    "correct": false
+                },
+                {
+                    "text": "Prozentsatz der Testausführung",
+                    "correct": true
+                },
+                {
+                    "text": "Durchschnittsgehalt der Entwickler",
+                    "correct": false
+                },
+                {
+                    "text": "Anzahl der Anforderungen",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Warum ist es wichtig, Testliefergegenstände im Testplan zu definieren?",
+            "explanation": "Das Definieren von Testliefergegenständen im Testplan hilft, die erwarteten Ergebnisse und Dokumente klar festzulegen und so Testausgaben und Erwartungen zu steuern. (4.1.4_Testplan.md)",
+            "options": [
+                {
+                    "text": "Um Interessenkonflikte zu lösen",
+                    "correct": false
+                },
+                {
+                    "text": "Um Testausgaben und Erwartungen zu steuern",
+                    "correct": true
+                },
+                {
+                    "text": "Um das Schreiben von Testfällen zu vermeiden",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Entwicklungszeit zu verkürzen",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Welche Aktivität hilft dabei, die Übereinstimmung mit dem ursprünglichen Testplan zu überwachen?",
+            "explanation": "Testüberwachung (Testmonitoring) ist die Aktivität, die sicherstellt, dass das Testen planmäßig verläuft und mit dem ursprünglichen Testplan übereinstimmt. (4.3.1_Testfortschrittsüberwachung_und_-steuerung.md)",
+            "options": [
+                {
+                    "text": "Automatisierte Testausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Exploratives Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Testüberwachung",
+                    "correct": true
+                },
+                {
+                    "text": "Systembereitstellung",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was ist ein gültiges Ziel der Teststeuerung?",
+            "explanation": "Ein gültiges Ziel der Teststeuerung ist es, den Testzeitplan bei Bedarf zu überarbeiten, um auf Abweichungen oder Änderungen zu reagieren. (4.3.2_Teststeuerung.md)",
+            "options": [
+                {
+                    "text": "Neue Produktdokumentation schreiben",
+                    "correct": false
+                },
+                {
+                    "text": "Verfügbarkeit von Testern verfolgen",
+                    "correct": false
+                },
+                {
+                    "text": "Testzeitplan überarbeiten",
+                    "correct": true
+                },
+                {
+                    "text": "Neue Funktionen erstellen",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Welches Element ist im Testzusammenfassungsbericht am wenigsten relevant?",
+            "explanation": "Die Hierarchie des Entwicklungsteams gehört nicht zum Kerninhalt eines Testzusammenfassungsberichts, der sich auf Testergebnisse, Fehlerstatus und Austrittskriterien konzentriert. (4.3.3_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Übersicht über den Fehlerstatus",
+                    "correct": false
+                },
+                {
+                    "text": "Status der Testausführung",
+                    "correct": false
+                },
+                {
+                    "text": "Hierarchie des Entwicklungsteams",
+                    "correct": true
+                },
+                {
+                    "text": "Bewertung der Austrittskriterien",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Wann sollte der Testplan aktualisiert werden?",
+            "explanation": "Der Testplan ist ein lebendes Dokument und sollte bei wesentlichen Änderungen aktualisiert werden, um sicherzustellen, dass er weiterhin die aktuellen Ziele, Ressourcen und Prozesse widerspiegelt. (5.1.1_Zweck_und_Inhalt_eines_Testkonzepts.md)",
+            "options": [
+                {
+                    "text": "Nur zu Projektbeginn",
+                    "correct": false
+                },
+                {
+                    "text": "Am Ende der Testphase",
+                    "correct": false
+                },
+                {
+                    "text": "Bei wesentlichen Änderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Nur nach der Produktfreigabe",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was sollte getan werden, wenn die Testziele nicht erreicht werden?",
+            "explanation": "Wenn die Testziele nicht erreicht werden, sollten Steuerungsmaßnahmen eingeleitet werden. Die Teststeuerung greift bei Zielabweichungen ein, um Korrekturmaßnahmen zu ergreifen und den Testplan anzupassen. (5.3_Testüberwachung,_Teststeuerung_und_Testabschluss.md)",
+            "options": [
+                {
+                    "text": "Ignorieren und weitermachen",
+                    "correct": false
+                },
+                {
+                    "text": "Codeabdeckungsstools erhöhen",
+                    "correct": false
+                },
+                {
+                    "text": "Steuerungsmaßnahmen einleiten",
+                    "correct": true
+                },
+                {
+                    "text": "Berichterstattung verzögern",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was ist ein Hinweis darauf, dass die Tests verlängert werden sollten?",
+            "explanation": "Das späte Auffinden vieler schwerer Fehler deutet auf unzureichendes Testen hin und kann ein Hinweis darauf sein, dass die Testphase verlängert werden sollte, um die Qualität sicherzustellen. (5.2.4_Produktrisikosteuerung.md)",
+            "options": [
+                {
+                    "text": "Alle Tester sind verfügbar",
+                    "correct": false
+                },
+                {
+                    "text": "Viele schwere Fehler werden spät entdeckt",
+                    "correct": true
+                },
+                {
+                    "text": "Die Benutzeroberfläche ist funktionsfähig",
+                    "correct": false
+                },
+                {
+                    "text": "Das Marketing fordert es",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was kann die Fehlerdurchlässigkeitsrate anzeigen?",
+            "explanation": "Die Fehlerdurchlässigkeitsrate (Defect Leakage Rate) kann Aufschluss über die Testeffektivität geben, indem sie zeigt, wie viele Fehler eine Teststufe passieren und somit unentdeckt bleiben. Dies weist auf übersehene Probleme hin. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
+            "options": [
+                {
+                    "text": "Schlechte Marketingstrategie",
+                    "correct": false
+                },
+                {
+                    "text": "Testeffektivität und übersehene Probleme",
+                    "correct": true
+                },
+                {
+                    "text": "Häufigkeit von Deployments",
+                    "correct": false
+                },
+                {
+                    "text": "Kundenzufriedenheit",
+                    "correct": false
+                }
+            ]
+        },{
+            "question": "Was bedeutet der Begriff 'Testabdeckung'?",
+            "explanation": "Testabdeckung beschreibt das Ausmaß, in dem Anforderungen oder andere definierte Elemente durch Tests abgedeckt werden. Sie misst, wie viel getestet wurde – z. B. Anforderungen oder Code. (4.2.4_Überdeckung.md)",
+            "options": [
+                {
+                    "text": "Geografische Verteilung der Tester",
+                    "correct": false
+                },
+                {
+                    "text": "Anzahl der Codezeilen",
+                    "correct": false
+                },
+                {
+                    "text": "Ausmaß der getesteten Anforderungen",
+                    "correct": true
+                },
+                {
+                    "text": "Berichte über Systemausfälle",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

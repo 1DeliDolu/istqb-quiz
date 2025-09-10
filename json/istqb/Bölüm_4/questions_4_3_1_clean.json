@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was sind die Überdeckungselemente beim Anweisungstest?",
-            "explanation": "Beim Anweisungstest sind die ausführbaren Anweisungen die Überdeckungselemente. (Kap. 4.3.1)",
+            "explanation": "Beim Anweisungstest sind die ausführbaren Anweisungen die Überdeckungselemente. (4.3.1_Anweisungstest_und_Anweisungsüberdeckung.md)",
             "options": [
                 {
                     "text": "Die Testfälle",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Wie wird die Anweisungsüberdeckung gemessen?",
-            "explanation": "Anzahl der ausgeführten Anweisungen geteilt durch die Gesamtzahl der ausführbaren Anweisungen × 100%. (Kap. 4.3.1)",
+            "explanation": "Anzahl der ausgeführten Anweisungen geteilt durch die Gesamtzahl der ausführbaren Anweisungen × 100%. (4.3.1_Anweisungstest_und_Anweisungsüberdeckung.md)",
             "options": [
                 {
                     "text": "Ausgeführte Anweisungen / Gesamtzahl ausführbarer Anweisungen × 100%",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Was bedeutet eine 100%ige Anweisungsüberdeckung?",
-            "explanation": "Alle ausführbaren Anweisungen wurden mindestens einmal ausgeführt. (Kap. 4.3.1)",
+            "explanation": "Alle ausführbaren Anweisungen wurden mindestens einmal ausgeführt. (4.3.1_Anweisungstest_und_Anweisungsüberdeckung.md)",
             "options": [
                 {
                     "text": "Alle Testfälle wurden ausgeführt",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Warum deckt eine 100%ige Anweisungsüberdeckung nicht alle Fehlerzustände auf?",
-            "explanation": "Einige Fehlerzustände sind datenabhängig (z. B. Division durch null) und treten nicht bei jeder Ausführung auf. (Kap. 4.3.1)",
+            "explanation": "Einige Fehlerzustände sind datenabhängig (z. B. Division durch null) und treten nicht bei jeder Ausführung auf. (4.3.1_Anweisungstest_und_Anweisungsüberdeckung.md)",
             "options": [
                 {
                     "text": "Weil nicht alle Anweisungen ausgeführt werden",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Warum stellt 100% Anweisungsüberdeckung nicht sicher, dass die gesamte Entscheidungslogik getestet wurde?",
-            "explanation": "Anweisungsüberdeckung garantiert nicht, dass alle Verzweigungen im Code ausgeführt wurden. (Kap. 4.3.1)",
+            "explanation": "Anweisungsüberdeckung garantiert nicht, dass alle Verzweigungen im Code ausgeführt wurden. (4.3.1_Anweisungstest_und_Anweisungsüberdeckung.md)",
             "options": [
                 {
                     "text": "Weil nur die Kommentare im Code überdeckt werden",

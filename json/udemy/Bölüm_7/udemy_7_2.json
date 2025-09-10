@@ -2,5 +2,468 @@
     "chapter": "udemy_7",
     "subChapter": "udemy_7_2",
     "subChapterTitle": "7.2 Quiz 19 - Testautomatisierung",
-    "questions": []
+    "questions": [
+        {
+            "question": "Was ist normalerweise KEIN Ergebnis der Testanalyse und des Entwurfs?",
+            "explanation": "Ergebnisse sind Testbedingungen, Testfälle und Testdaten. Ein Freigabeplan gehört zum Projektmanagement, nicht zum Testentwurf. (1.4.3_Testmittel.md)",
+            "options": [
+                {
+                    "text": "Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Testbedingungen",
+                    "correct": false
+                },
+                {
+                    "text": "Freigabeplan (Release schedule)",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Welche Testaktivität profitiert am meisten von Automatisierungstools?",
+            "explanation": "Regressionstests sind wiederholbar und daher besonders gut für die Automatisierung geeignet. Automatisierungstools können diese Tests effizient und konsistent ausführen, was Zeit spart und menschliche Fehler reduziert. (6.2.2_Regressionstests.md)",
+            "options": [
+                {
+                    "text": "Kundeninterviews",
+                    "correct": false
+                },
+                {
+                    "text": "Regressionstests",
+                    "correct": true
+                },
+                {
+                    "text": "Exploratives Testen",
+                    "correct": false
+                },
+                {
+                    "text": "Veröffentlichungsankündigungen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein wichtiger Aspekt bei der Auswahl eines Testtools?",
+            "explanation": "Ein Testtool sollte zur technischen Projektumgebung passen, um eine reibungslose Integration und effektive Nutzung zu gewährleisten. Technische Kompatibilität ist entscheidend, um Anpassungsaufwand und Integrationsprobleme zu vermeiden. (6.2.1_Auswahl_von_Testwerkzeugen.md)",
+            "options": [
+                {
+                    "text": "Auf USB-Stick verfügbar",
+                    "correct": false
+                },
+                {
+                    "text": "Passt zur technischen Projektumgebung",
+                    "correct": true
+                },
+                {
+                    "text": "Benötigt eine separate Tastatur",
+                    "correct": false
+                },
+                {
+                    "text": "Im Handel erhältlich",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Rolle spielt ein Konfigurationsmanagement-Tool im Testprozess?",
+            "explanation": "Ein Konfigurationsmanagement-Tool verwaltet Versionen von Testartefakten und stellt sicher, dass Testversionen und -umgebungen konsistent bleiben. Dies unterstützt die Nachvollziehbarkeit und reduziert Risiken durch falsche Versionen. (6.1.4_Konfigurationsmanagement.md)",
+            "options": [
+                {
+                    "text": "Führt Testskripte aus",
+                    "correct": false
+                },
+                {
+                    "text": "Verwalten von Versionen der Testartefakte",
+                    "correct": true
+                },
+                {
+                    "text": "Verfolgt Fehler-Schweregrade",
+                    "correct": false
+                },
+                {
+                    "text": "Simuliert Hardwareverhalten",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Tool verwaltet die Verknüpfung zwischen Testfällen und Anforderungen?",
+            "explanation": "Ein Rückverfolgbarkeitstool stellt sicher, dass alle Anforderungen durch entsprechende Testfälle abgedeckt sind. Es ermöglicht die Nachverfolgung der Beziehungen zwischen Anforderungen, Testfällen und ggf. Defekten, um Lücken zu vermeiden. (6.1.3_Rückverfolgbarkeit.md)",
+            "options": [
+                {
+                    "text": "Profiler",
+                    "correct": false
+                },
+                {
+                    "text": "Rückverfolgbarkeitstool",
+                    "correct": true
+                },
+                {
+                    "text": "Debugger",
+                    "correct": false
+                },
+                {
+                    "text": "Codengenerator",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist eine Einschränkung von Testtools?",
+            "explanation": "Testtools erfordern möglicherweise komplexe Wartung, da sie regelmäßig aktualisiert und an Änderungen in der Testumgebung angepasst werden müssen. Dies kann zusätzlichen Aufwand und Ressourcen beanspruchen. (6.2.3_Einschränkungen_von_Testwerkzeugen.md)",
+            "options": [
+                {
+                    "text": "Sie können keine Testfälle speichern",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erfordern möglicherweise komplexe Wartung",
+                    "correct": true
+                },
+                {
+                    "text": "Sie machen Testplanung überflüssig",
+                    "correct": false
+                },
+                {
+                    "text": "Sie erhöhen die Fehleranzahl",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was sollte bei der Integration eines Testtools in CI/CD-Pipelines beachtet werden?",
+            "explanation": "Bei der Integration eines Testtools in CI/CD-Pipelines ist es entscheidend, dass das Tool über geeignete API-Schnittstellen verfügt und mit den verwendeten CI-Servern kompatibel ist. Dies ermöglicht eine nahtlose Automatisierung und kontinuierliche Testausführung. (6.2.4_Integration_in_CI_CD.md)",
+            "options": [
+                {
+                    "text": "Farbschema des Tools",
+                    "correct": false
+                },
+                {
+                    "text": "Verfügbarkeit von Pizza bei Stand-ups",
+                    "correct": false
+                },
+                {
+                    "text": "API-Zugriff und Kompatibilität mit CI-Servern",
+                    "correct": true
+                },
+                {
+                    "text": "Marketing-Vorlieben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Tool misst, wie viel Code getestet wurde?",
+            "explanation": "Ein Code-Coverage-Tool zeigt an, welche Teile des Quellcodes durch Tests abgedeckt sind. Es hilft, Testlücken zu identifizieren und die Testabdeckung zu verbessern. (6.1.2_Testabdeckungswerkzeuge.md)",
+            "options": [
+                {
+                    "text": "UI-Automatisierungstool",
+                    "correct": false
+                },
+                {
+                    "text": "Code Coverage Tool",
+                    "correct": true
+                },
+                {
+                    "text": "Testvergleichstool",
+                    "correct": false
+                },
+                {
+                    "text": "Debugging-Proxy",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum sind Open-Source-Testtools beliebt?",
+            "explanation": "Open-Source-Testtools sind flexibel anpassbar und in der Regel kostengünstig oder kostenlos. Sie ermöglichen es Teams, Funktionen nach Bedarf zu erweitern und bieten oft eine aktive Community-Unterstützung. (6.2.5_Open-Source-Testwerkzeuge.md)",
+            "options": [
+                {
+                    "text": "Sie haben keinen Support",
+                    "correct": false
+                },
+                {
+                    "text": "Sie werden mit Hardware geliefert",
+                    "correct": false
+                },
+                {
+                    "text": "Sie sind flexibel und kostengünstig",
+                    "correct": true
+                },
+                {
+                    "text": "Sie bieten Spiele-Testfunktionen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Tool simuliert Systemkomponenten, um Schnittstellen zu testen?",
+            "explanation": "Stub- oder Mock-Tools simulieren fehlende oder schwer zugängliche Systemkomponenten, um Schnittstellen- und Integrationstests zu ermöglichen. Sie helfen, Abhängigkeiten zu isolieren und Tests frühzeitig durchzuführen. (6.1.5_Simulationswerkzeuge.md)",
+            "options": [
+                {
+                    "text": "Stub- oder Mock-Tool",
+                    "correct": true
+                },
+                {
+                    "text": "Fehlerverfolgungstool",
+                    "correct": false
+                },
+                {
+                    "text": "Explorationsbrowser",
+                    "correct": false
+                },
+                {
+                    "text": "Monitoring-Proxy",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was überwacht ein Performance-Monitoring-Tool?",
+            "explanation": "Ein Performance-Monitoring-Tool überwacht das Laufzeitverhalten einer Anwendung, einschließlich Metriken wie CPU-Auslastung, Speicherverbrauch und Antwortzeiten. Dies hilft, Leistungsengpässe zu identifizieren und die Systemstabilität zu verbessern. (6.1.1_Performance-Monitoring-Werkzeuge.md)",
+            "options": [
+                {
+                    "text": "Fehler im Testdesign",
+                    "correct": false
+                },
+                {
+                    "text": "Laufzeitverhalten der Anwendung",
+                    "correct": true
+                },
+                {
+                    "text": "Verwendete Tastenkombinationen",
+                    "correct": false
+                },
+                {
+                    "text": "Geschwindigkeit der E-Mail-Zustellung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Testtooltyp automatisiert GUI-basierte Tests?",
+            "explanation": "Ein UI-Testautomatisierungstool simuliert Benutzerinteraktionen mit grafischen Oberflächen, um funktionale Tests automatisiert durchzuführen. Dies ermöglicht wiederholbare, konsistente Tests und reduziert den manuellen Testaufwand. (6.1.6_UI-Testautomatisierung.md)",
+            "options": [
+                {
+                    "text": "Statischer Analysator",
+                    "correct": false
+                },
+                {
+                    "text": "Lasttest-Tool",
+                    "correct": false
+                },
+                {
+                    "text": "UI-Testautomatisierungstool",
+                    "correct": true
+                },
+                {
+                    "text": "Build-Tool",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Vorteil eines Testdatengenerierungs-Tools?",
+            "explanation": "Ein Testdatengenerierungs-Tool ermöglicht die strukturierte, konsistente und wiederverwendbare Erstellung von Testdaten. Dies unterstützt die Reproduzierbarkeit von Tests und reduziert den manuellen Aufwand bei der Datenerstellung. (6.1.7_Testdatengenerierung.md)",
+            "options": [
+                {
+                    "text": "Erhöht die Codekomplexität",
+                    "correct": false
+                },
+                {
+                    "text": "Macht Testplanung überflüssig",
+                    "correct": false
+                },
+                {
+                    "text": "Erzeugt konsistente und wiederverwendbare Testdaten",
+                    "correct": true
+                },
+                {
+                    "text": "Ersetzt das Schreiben von Testfällen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Art von Tool unterstützt Lasttests?",
+            "explanation": "Ein Performance-Testtool simuliert Benutzerlast, um Antwortzeiten, Durchsatz und Systemverhalten unter verschiedenen Lastbedingungen zu messen. Es hilft, Engpässe zu identifizieren und die Skalierbarkeit zu bewerten. (6.1.8_Performance-Testwerkzeuge.md)",
+            "options": [
+                {
+                    "text": "Anforderung-Tracker",
+                    "correct": false
+                },
+                {
+                    "text": "GUI-Vergleichstool",
+                    "correct": false
+                },
+                {
+                    "text": "Performance-Testtool",
+                    "correct": true
+                },
+                {
+                    "text": "Rückverfolgbarkeitsmatrix",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Hauptvorteil von Defect-Management-Tools?",
+            "explanation": "Defect-Management-Tools zentralisieren die Erfassung, Verfolgung und Behebung von Fehlern. Sie unterstützen den gesamten Lebenszyklus eines Defekts, verbessern die Zusammenarbeit im Team und sorgen für Transparenz im Fehlerstatus. (6.1.9_Defect-Management-Werkzeuge.md)",
+            "options": [
+                {
+                    "text": "Sie erstellen Release Notes",
+                    "correct": false
+                },
+                {
+                    "text": "Sie unterstützen Performance-Tuning",
+                    "correct": false
+                },
+                {
+                    "text": "Sie zentralisieren Fehlerverfolgung und -behebung",
+                    "correct": true
+                },
+                {
+                    "text": "Sie erstellen Marketingpläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was macht ein Testtool nachhaltig für den langfristigen Einsatz?",
+            "explanation": "Ein Testtool ist langfristig nachhaltig, wenn es sich gut in bestehende Systeme integrieren lässt und von einer aktiven Community unterstützt wird. Dies erleichtert die Wartung, sorgt für kontinuierliche Weiterentwicklung und reduziert das Risiko, dass das Tool veraltet. (6.2.6_Nachhaltigkeit_von_Testwerkzeugen.md)",
+            "options": [
+                {
+                    "text": "Geringe Lizenzkosten",
+                    "correct": false
+                },
+                {
+                    "text": "Integrationsfähigkeit und aktive Community-Unterstützung",
+                    "correct": true
+                },
+                {
+                    "text": "Eingeschränkte Funktionalität",
+                    "correct": false
+                },
+                {
+                    "text": "Exotische Programmiersprache",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Tool unterstützt kontinuierliches Testen in DevOps?",
+            "explanation": "Ein CI/CD-Integrations-Tool bindet Tests direkt in automatisierte Build- und Auslieferungsprozesse ein. Dadurch können Tests kontinuierlich ausgeführt werden, was eine schnelle Rückmeldung zu Änderungen ermöglicht und die Qualität im DevOps-Prozess sichert. (6.2.7_Kontinuierliches_Testen_in_DevOps.md)",
+            "options": [
+                {
+                    "text": "Test Harness",
+                    "correct": false
+                },
+                {
+                    "text": "Monitoring-Proxy",
+                    "correct": false
+                },
+                {
+                    "text": "CI/CD-Integrations-Tool",
+                    "correct": true
+                },
+                {
+                    "text": "Wireframe-Modellierer",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Tool zeigt den Testfortschritt in Echtzeit?",
+            "explanation": "Ein Test-Dashboard visualisiert in Echtzeit Metriken und den Fortschritt während der Testausführung. Es bietet Transparenz für das Team, erleichtert die Überwachung und unterstützt schnelle Entscheidungen bei Abweichungen. (6.1.10_Test-Dashboards.md)",
+            "options": [
+                {
+                    "text": "Testvergleichstool",
+                    "correct": false
+                },
+                {
+                    "text": "Versionskontrollsystem",
+                    "correct": false
+                },
+                {
+                    "text": "Test-Dashboard",
+                    "correct": true
+                },
+                {
+                    "text": "Stub-Generator",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Tool hilft Testern, Testfälle basierend auf Anforderungen zu schreiben?",
+            "explanation": "Ein Anforderungsmanagement-Tool unterstützt Tester dabei, Testbedingungen und Testfälle direkt aus den dokumentierten Anforderungen abzuleiten. Es erleichtert die Verwaltung der Anforderungen, stellt deren Rückverfolgbarkeit sicher und hilft, vollständige Testabdeckung zu gewährleisten. (6.1.11_Anforderungsmanagement-Werkzeuge.md)",
+            "options": [
+                {
+                    "text": "Statistischer Analysator",
+                    "correct": false
+                },
+                {
+                    "text": "Anforderungsmanagement-Tool",
+                    "correct": true
+                },
+                {
+                    "text": "Lastsimulator",
+                    "correct": false
+                },
+                {
+                    "text": "Profiler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Risiko bei der Einführung eines Testtools ohne Schulung?",
+            "explanation": "Ohne angemessene Schulung besteht das Risiko, dass ein Testtool ineffektiv genutzt wird. Dies kann zu geringerer Testeffizienz, Qualitätsverlust und fehlerhaften Testergebnissen führen. Schulung stellt sicher, dass das Team das Tool optimal einsetzen kann. (6.2.8_Schulung_und_Einführung_von_Testwerkzeugen.md)",
+            "options": [
+                {
+                    "text": "Bessere Zusammenarbeit",
+                    "correct": false
+                },
+                {
+                    "text": "Geringere Testeffizienz",
+                    "correct": true
+                },
+                {
+                    "text": "Verbesserte Qualitätskontrolle",
+                    "correct": false
+                },
+                {
+                    "text": "Schnellere Testzyklen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Tool hilft bei der effizienten Verwaltung großer Testmengen?",
+            "explanation": "Ein Test Runner Framework organisiert, führt automatisierte Test-Suiten aus und erstellt Berichte über die Ergebnisse. Es ermöglicht die effiziente Verwaltung großer Testmengen, reduziert manuellen Aufwand und sorgt für konsistente Testausführung. (6.1.12_Test-Runner-Frameworks.md)",
+            "options": [
+                {
+                    "text": "Dokumentationsmanager",
+                    "correct": false
+                },
+                {
+                    "text": "Test Runner Framework",
+                    "correct": true
+                },
+                {
+                    "text": "Helpdesk-Ticketing-Tool",
+                    "correct": false
+                },
+                {
+                    "text": "Wireframing-Tool",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

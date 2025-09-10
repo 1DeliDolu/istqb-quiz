@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Worauf basiert die intuitive Testfallermittlung?",
-            "explanation": "Sie basiert auf dem Wissen und der Erfahrung des Testers über typische Fehlerquellen. (Kap. 4.4.1)",
+            "explanation": "Sie basiert auf dem Wissen und der Erfahrung des Testers über typische Fehlerquellen. (4.4.1_Intuitive Testfallermittlung.md)",
             "options": [
                 {
                     "text": "Auf automatisierten Testtools",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Kenntnisse fließen typischerweise in die intuitive Testfallermittlung ein?",
-            "explanation": "Z. B. frühere Funktionsweise der Anwendung, typische Fehlhandlungen von Entwicklern oder Fehlerwirkungen in ähnlichen Systemen. (Kap. 4.4.1)",
+            "explanation": "Z. B. frühere Funktionsweise der Anwendung, typische Fehlhandlungen von Entwicklern oder Fehlerwirkungen in ähnlichen Systemen. (4.4.1_Intuitive Testfallermittlung.md)",
             "options": [
                 {
                     "text": "Kenntnisse über Tools und Frameworks",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Arten von Problemen können durch intuitive Testfallermittlung vorhergesagt werden?",
-            "explanation": "Sie zielt auf Fehlhandlungen, Fehlerzustände und Fehlerwirkungen ab. (Kap. 4.4.1)",
+            "explanation": "Sie zielt auf Fehlhandlungen, Fehlerzustände und Fehlerwirkungen ab. (4.4.1_Intuitive Testfallermittlung.md)",
             "options": [
                 {
                     "text": "Nur falsche Eingabedaten",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Auf welche Bereiche können sich Fehlhandlungen, Fehlerzustände und Fehlerwirkungen beziehen?",
-            "explanation": "Sie können Eingaben, Ausgaben, Logik, Berechnungen, Schnittstellen oder Daten betreffen. (Kap. 4.4.1)",
+            "explanation": "Sie können Eingaben, Ausgaben, Logik, Berechnungen, Schnittstellen oder Daten betreffen. (4.4.1_Intuitive Testfallermittlung.md)",
             "options": [
                 {
                     "text": "Nur Eingaben und Ausgaben",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welches Beispiel gehört zu einem Fehlerzustand im Bereich Logik?",
-            "explanation": "Ein Beispiel ist ein fehlender Fall oder ein falscher Operator in einer logischen Entscheidung. (Kap. 4.4.1)",
+            "explanation": "Ein Beispiel ist ein fehlender Fall oder ein falscher Operator in einer logischen Entscheidung. (4.4.1_Intuitive Testfallermittlung.md)",
             "options": [
                 {
                     "text": "Ein falsches Ergebnisformat",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Was sind Fehlerangriffe im Kontext der intuitiven Testfallermittlung?",
-            "explanation": "Fehlerangriffe sind eine Technik, bei der Tester gezielt Fehlhandlungen, Fehlerzustände und Fehlerwirkungen annehmen und entsprechende Tests entwerfen. (Kap. 4.4.1)",
+            "explanation": "Fehlerangriffe sind eine Technik, bei der Tester gezielt Fehlhandlungen, Fehlerzustände und Fehlerwirkungen annehmen und entsprechende Tests entwerfen. (4.4.1_Intuitive Testfallermittlung.md)",
             "options": [
                 {
                     "text": "Eine spezielle Form von White-Box-Tests",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Aufgabe hat der Tester bei einem Fehlerangriff?",
-            "explanation": "Der Tester muss eine Liste möglicher Fehlhandlungen, Fehlerzustände und Fehlerwirkungen erstellen oder übernehmen. (Kap. 4.4.1)",
+            "explanation": "Der Tester muss eine Liste möglicher Fehlhandlungen, Fehlerzustände und Fehlerwirkungen erstellen oder übernehmen. (4.4.1_Intuitive Testfallermittlung.md)",
             "options": [
                 {
                     "text": "Er muss nur zufällige Testdaten generieren",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Auf welcher Basis können Listen für Fehlerangriffe erstellt werden?",
-            "explanation": "Sie können auf Erfahrungswerten, Daten über Fehlerzustände und Fehlerwirkungen oder allgemeinem Wissen über Softwarefehler beruhen. (Kap. 4.4.1)",
+            "explanation": "Sie können auf Erfahrungswerten, Daten über Fehlerzustände und Fehlerwirkungen oder allgemeinem Wissen über Softwarefehler beruhen. (4.4.1_Intuitive Testfallermittlung.md)",
             "options": [
                 {
                     "text": "Auf Erfahrungswerten, Fehlerdaten oder allgemeinem Wissen über Fehlerursachen",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welches Ziel verfolgen Tests im Rahmen von Fehlerangriffen?",
-            "explanation": "Sie sollen die durch Fehlhandlungen entstehenden Fehlerzustände oder Fehlerwirkungen identifizieren und sichtbar machen. (Kap. 4.4.1)",
+            "explanation": "Sie sollen die durch Fehlhandlungen entstehenden Fehlerzustände oder Fehlerwirkungen identifizieren und sichtbar machen. (4.4.1_Intuitive Testfallermittlung.md)",
             "options": [
                 {
                     "text": "Die Anzahl der Testfälle zu minimieren",

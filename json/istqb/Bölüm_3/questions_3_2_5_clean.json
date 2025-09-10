@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welches Ziel sollte in einem Review NICHT verfolgt werden?",
-            "explanation": "Die Bewertung der Teilnehmer sollte niemals ein Ziel eines Reviews sein. (Kap. 3.2.5)",
+            "explanation": "Die Bewertung der Teilnehmer sollte niemals ein Ziel eines Reviews sein. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Die Aufdeckung von Anomalien",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Warum ist die Auswahl der geeigneten Reviewart wichtig?",
-            "explanation": "Die Reviewart muss den Zielen, der Art des Arbeitsergebnisses, den Teilnehmern, Projektanforderungen und dem Kontext entsprechen. (Kap. 3.2.5)",
+            "explanation": "Die Reviewart muss den Zielen, der Art des Arbeitsergebnisses, den Teilnehmern, Projektanforderungen und dem Kontext entsprechen. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Weil es gesetzlich vorgeschrieben ist",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Warum sollten Reviews in kleinen Einheiten durchgeführt werden?",
-            "explanation": "Damit die Gutachter ihre Konzentration behalten und effektiv Anomalien finden können. (Kap. 3.2.5)",
+            "explanation": "Damit die Gutachter ihre Konzentration behalten und effektiv Anomalien finden können. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Um den Zeitaufwand für die Moderation zu reduzieren",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welchen Nutzen hat Feedback aus Reviews?",
-            "explanation": "Feedback hilft Stakeholdern und Autoren, das Produkt und ihre Aktivitäten zu verbessern. (Kap. 3.2.5)",
+            "explanation": "Feedback hilft Stakeholdern und Autoren, das Produkt und ihre Aktivitäten zu verbessern. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Es dient nur der Projektplanung",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Warum ist ausreichend Zeit für die Vorbereitung der Teilnehmer wichtig?",
-            "explanation": "Nur gut vorbereitete Teilnehmer können effektiv zum Erfolg eines Reviews beitragen. (Kap. 3.2.5)",
+            "explanation": "Nur gut vorbereitete Teilnehmer können effektiv zum Erfolg eines Reviews beitragen. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Damit der Moderator entlastet wird",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Rolle spielt das Management für erfolgreiche Reviews?",
-            "explanation": "Managementunterstützung ist ein zentraler Erfolgsfaktor für Reviews. (Kap. 3.2.5)",
+            "explanation": "Managementunterstützung ist ein zentraler Erfolgsfaktor für Reviews. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Das Management sollte sich nicht einmischen",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Warum ist die Einbettung von Reviews in die Unternehmenskultur wichtig?",
-            "explanation": "Dadurch werden Lernen und kontinuierliche Prozessverbesserung gefördert. (Kap. 3.2.5)",
+            "explanation": "Dadurch werden Lernen und kontinuierliche Prozessverbesserung gefördert. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Um gesetzliche Anforderungen zu umgehen",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Warum sollten alle Teilnehmer geeignete Schulungen erhalten?",
-            "explanation": "Teilnehmer müssen wissen, wie sie ihre Rolle effektiv ausfüllen können. (Kap. 3.2.5)",
+            "explanation": "Teilnehmer müssen wissen, wie sie ihre Rolle effektiv ausfüllen können. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Damit sie den Autor besser bewerten können",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welcher Faktor unterstützt den Ablauf einer Reviewsitzung zusätzlich?",
-            "explanation": "Eine gute Moderation ist ein wesentlicher Erfolgsfaktor. (Kap. 3.2.5)",
+            "explanation": "Eine gute Moderation ist ein wesentlicher Erfolgsfaktor. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Automatisierte Testdurchführung",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welcher Faktor trägt zur Konzentration der Gutachter bei?",
-            "explanation": "Reviews sollten in kleinen Einheiten durchgeführt werden, um Konzentrationsverlust zu vermeiden. (Kap. 3.2.5)",
+            "explanation": "Reviews sollten in kleinen Einheiten durchgeführt werden, um Konzentrationsverlust zu vermeiden. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Große Reviews mit vielen Themen",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Was passiert, wenn die Teilnehmer keine ausreichende Vorbereitungszeit erhalten?",
-            "explanation": "Ohne ausreichende Vorbereitung sinkt die Effektivität und die Qualität der Ergebnisse. (Kap. 3.2.5)",
+            "explanation": "Ohne ausreichende Vorbereitung sinkt die Effektivität und die Qualität der Ergebnisse. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Die Reviewziele werden leichter erreicht",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Welcher Nutzen ergibt sich aus der Managementunterstützung?",
-            "explanation": "Das Management kann Ressourcen, Zeit und organisatorische Unterstützung bereitstellen. (Kap. 3.2.5)",
+            "explanation": "Das Management kann Ressourcen, Zeit und organisatorische Unterstützung bereitstellen. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Nur die Erstellung der Testbasis",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Warum ist die Moderation ein Erfolgsfaktor?",
-            "explanation": "Ein Moderator sorgt für effiziente Durchführung, Zeitmanagement und konstruktive Kommunikation. (Kap. 3.2.5)",
+            "explanation": "Ein Moderator sorgt für effiziente Durchführung, Zeitmanagement und konstruktive Kommunikation. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Weil er die Gutachter bewertet",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welche Maßnahme unterstützt die kontinuierliche Prozessverbesserung?",
-            "explanation": "Die Einbettung von Reviews in die Unternehmenskultur fördert Lernen und Verbesserung. (Kap. 3.2.5)",
+            "explanation": "Die Einbettung von Reviews in die Unternehmenskultur fördert Lernen und Verbesserung. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Reduzierung der Reviewanzahl",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Warum sind Schulungen für Reviewteilnehmer wichtig?",
-            "explanation": "Nur durch Schulungen verstehen Teilnehmer ihre Rollen und tragen wirksam zum Erfolg bei. (Kap. 3.2.5)",
+            "explanation": "Nur durch Schulungen verstehen Teilnehmer ihre Rollen und tragen wirksam zum Erfolg bei. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Damit Reviews kürzer werden",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Welches Beispiel beschreibt die richtige Zielsetzung eines Reviews?",
-            "explanation": "Ein klares Ziel sind z. B. Qualitätsbewertung oder Anomalienfindung, nicht die Bewertung von Personen. (Kap. 3.2.5)",
+            "explanation": "Ein klares Ziel sind z. B. Qualitätsbewertung oder Anomalienfindung, nicht die Bewertung von Personen. (3.2.5_Erfolgsfaktoren_für_Reviews.md)",
             "options": [
                 {
                     "text": "Bewertung der Teilnehmer",

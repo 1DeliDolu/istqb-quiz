@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Wie werden Tests im explorativen Testen typischerweise durchgeführt?",
-            "explanation": "Tests werden gleichzeitig entworfen, ausgeführt und bewertet, während der Tester das Testobjekt besser kennenlernt. (Kap. 4.4.2)",
+            "explanation": "Tests werden gleichzeitig entworfen, ausgeführt und bewertet, während der Tester das Testobjekt besser kennenlernt. (4.4.2_Explorativer_Test.md)",
             "options": [
                 {
                     "text": "Tests werden gleichzeitig entworfen, ausgeführt und bewertet",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Was ist ein Merkmal des sitzungsbasierten Testens?",
-            "explanation": "Exploratives Testen wird in einem festen Zeitrahmen durchgeführt, gesteuert durch eine Test-Charta. (Kap. 4.4.2)",
+            "explanation": "Exploratives Testen wird in einem festen Zeitrahmen durchgeführt, gesteuert durch eine Test-Charta. (4.4.2_Explorativer_Test.md)",
             "options": [
                 {
                     "text": "Es wird ausschließlich mit automatisierten Tools durchgeführt",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Rolle spielt die Test-Charta beim explorativen Test?",
-            "explanation": "Sie enthält die Testziele und dient als Steuerung für die Testsitzung. (Kap. 4.4.2)",
+            "explanation": "Sie enthält die Testziele und dient als Steuerung für die Testsitzung. (4.4.2_Explorativer_Test.md)",
             "options": [
                 {
                     "text": "Sie dokumentiert die gefundenen Fehlerzustände",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Wann sind explorative Tests besonders sinnvoll?",
-            "explanation": "Exploratives Testen eignet sich bei fehlenden oder unzureichenden Spezifikationen oder hohem Zeitdruck. (Kap. 4.4.2)",
+            "explanation": "Exploratives Testen eignet sich bei fehlenden oder unzureichenden Spezifikationen oder hohem Zeitdruck. (4.4.2_Explorativer_Test.md)",
             "options": [
                 {
                     "text": "Wenn Spezifikationen fehlen oder der Zeitdruck hoch ist",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welche Eigenschaften sollten Tester für exploratives Testen mitbringen?",
-            "explanation": "Analytische Fähigkeiten, Neugier, Kreativität und Fachkenntnisse erhöhen die Effektivität. (Kap. 4.4.2)",
+            "explanation": "Analytische Fähigkeiten, Neugier, Kreativität und Fachkenntnisse erhöhen die Effektivität. (4.4.2_Explorativer_Test.md)",
             "options": [
                 {
                     "text": "Nur Programmierkenntnisse",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Wie können andere Testverfahren in exploratives Testen integriert werden?",
-            "explanation": "Auch andere Verfahren wie z. B. Äquivalenzklassenbildung können während explorativen Testens eingesetzt werden. (Kap. 4.4.2)",
+            "explanation": "Auch andere Verfahren wie z. B. Äquivalenzklassenbildung können während explorativen Testens eingesetzt werden. (4.4.2_Explorativer_Test.md)",
             "options": [
                 {
                     "text": "Andere Verfahren können nicht kombiniert werden",

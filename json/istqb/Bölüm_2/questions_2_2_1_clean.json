@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welche Teststufe wird auch als Unittest bezeichnet?",
-            "explanation": "Der Komponententest (auch Unittest genannt) konzentriert sich auf das Testen von isolierten Komponenten. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "explanation": "Der Komponententest (auch Unittest genannt) konzentriert sich auf das Testen von isolierten Komponenten. (2.2.1_Teststufen.md)",
             "options": [
                 {
                     "text": "Systemtest",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Worauf konzentriert sich der Komponentenintegrationstest?",
-            "explanation": "Der Komponentenintegrationstest konzentriert sich auf das Testen der Schnittstellen und Interaktionen zwischen Komponenten. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "explanation": "Der Komponentenintegrationstest konzentriert sich auf das Testen der Schnittstellen und Interaktionen zwischen Komponenten. (2.2.1_Teststufen.md)",
             "options": [
                 {
                     "text": "Auf das Testen isolierter Komponenten",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Worauf konzentriert sich der Systemtest?",
-            "explanation": "Der Systemtest konzentriert sich auf das Gesamtverhalten und die Leistungsfähigkeiten eines gesamten Systems oder Produkts. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "explanation": "Der Systemtest konzentriert sich auf das Gesamtverhalten und die Leistungsfähigkeiten eines gesamten Systems oder Produkts. (2.2.1_Teststufen.md)",
             "options": [
                 {
                     "text": "Auf isolierte Komponenten",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Worauf konzentriert sich der Systemintegrationstest?",
-            "explanation": "Der Systemintegrationstest konzentriert sich auf das Testen der Schnittstellen zwischen dem System unter Test und anderen Systemen und externen Diensten. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "explanation": "Der Systemintegrationstest konzentriert sich auf das Testen der Schnittstellen zwischen dem System unter Test und anderen Systemen und externen Diensten. (2.2.1_Teststufen.md)",
             "options": [
                 {
                     "text": "Auf das Testen einzelner Komponenten",
@@ -445,7 +445,7 @@
         },
         {
             "question": "Worauf konzentriert sich der Abnahmetest?",
-            "explanation": "Der Abnahmetest konzentriert sich auf die Validierung und den Nachweis der Einsatzfähigkeit, d. h., dass das System die Geschäftsanforderungen des Benutzers erfüllt. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "explanation": "Der Abnahmetest konzentriert sich auf die Validierung und den Nachweis der Einsatzfähigkeit, d. h., dass das System die Geschäftsanforderungen des Benutzers erfüllt. (2.2.1_Teststufen.md)",
             "options": [
                 {
                     "text": "Auf das Testen isolierter Module",
@@ -555,7 +555,7 @@
         },
         {
             "question": "Warum werden die Teststufen durch bestimmte Attribute unterschieden?",
-            "explanation": "Die Teststufen werden in diesem Kapitel durch die folgende Liste von Attributen unterschieden, um Überschneidungen von Testaktivitäten zu vermeiden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.1)",
+            "explanation": "Die Teststufen werden in diesem Kapitel durch die folgende Liste von Attributen unterschieden, um Überschneidungen von Testaktivitäten zu vermeiden. (2.2.1_Teststufen.md)",
             "options": [
                 {
                     "text": "Um Überschneidungen von Testaktivitäten zu vermeiden",

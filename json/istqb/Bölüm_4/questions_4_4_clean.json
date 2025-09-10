@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welche Hauptkategorie von Testverfahren wird in Abschnitt 4.4 behandelt?",
-            "explanation": "Abschnitt 4.4 behandelt erfahrungsbasierte Testverfahren. (Kap. 4.4)",
+            "explanation": "Abschnitt 4.4 behandelt erfahrungsbasierte Testverfahren. (4.4_Erfahrungsbasierte_Testverfahren.md)",
             "options": [
                 {
                     "text": "Black-Box-Testverfahren",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche drei erfahrungsbasierten Testverfahren werden im Lehrplan hervorgehoben?",
-            "explanation": "Die drei Verfahren sind: intuitive Testfallermittlung, explorativer Test und checklistenbasierter Test. (Kap. 4.4)",
+            "explanation": "Die drei Verfahren sind: intuitive Testfallermittlung, explorativer Test und checklistenbasierter Test. (4.4_Erfahrungsbasierte_Testverfahren.md)",
             "options": [
                 {
                     "text": "Äquivalenzklassenbildung, Grenzwertanalyse, Entscheidungstabellentest",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Wodurch zeichnen sich erfahrungsbasierte Testverfahren grundsätzlich aus?",
-            "explanation": "Sie nutzen Wissen, Erfahrung und Intuition der Tester, um Testfälle zu entwerfen und durchzuführen. (Kap. 4.4)",
+            "explanation": "Sie nutzen Wissen, Erfahrung und Intuition der Tester, um Testfälle zu entwerfen und durchzuführen. (4.4_Erfahrungsbasierte_Testverfahren.md)",
             "options": [
                 {
                     "text": "Durch die Analyse der Code-Struktur",

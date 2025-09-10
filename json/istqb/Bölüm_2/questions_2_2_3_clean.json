@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Warum werden Änderungen in der Regel an einer Komponente oder einem System vorgenommen?",
-            "explanation": "Änderungen werden in der Regel an einer Komponente oder einem System vorgenommen, um entweder durch Hinzufügen eines neuen Features eine Verbesserung oder durch Beseitigung eines Fehlerzustands eine Korrektur zu erreichen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.3)",
+            "explanation": "Änderungen werden in der Regel an einer Komponente oder einem System vorgenommen, um entweder durch Hinzufügen eines neuen Features eine Verbesserung oder durch Beseitigung eines Fehlerzustands eine Korrektur zu erreichen. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Um neue Features hinzuzufügen oder Fehler zu beseitigen",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Arten von Änderungen werden im Text genannt?",
-            "explanation": "Genannt werden das Hinzufügen eines neuen Features oder die Beseitigung eines Fehlerzustands. (Abschnitt 2.2.3)",
+            "explanation": "Genannt werden das Hinzufügen eines neuen Features oder die Beseitigung eines Fehlerzustands. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Neue Features und Fehlerkorrekturen",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Was sollte nach Änderungen am System durchgeführt werden?",
-            "explanation": "Das Testen sollte dann auch Fehlernachtests und Regressionstests beinhalten. (Abschnitt 2.2.3)",
+            "explanation": "Das Testen sollte dann auch Fehlernachtests und Regressionstests beinhalten. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Fehlernachtests und Regressionstests",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welches Ziel hat die Beseitigung eines Fehlerzustands?",
-            "explanation": "Änderungen dienen entweder der Verbesserung durch Features oder der Korrektur durch die Beseitigung von Fehlerzuständen. (Abschnitt 2.2.3)",
+            "explanation": "Änderungen dienen entweder der Verbesserung durch Features oder der Korrektur durch die Beseitigung von Fehlerzuständen. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Eine Korrektur zu erreichen",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welche beiden Testarten sind bei Änderungen besonders relevant?",
-            "explanation": "Das Testen sollte nach Änderungen Fehlernachtests und Regressionstests beinhalten. (Abschnitt 2.2.3)",
+            "explanation": "Das Testen sollte nach Änderungen Fehlernachtests und Regressionstests beinhalten. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Fehlernachtests und Regressionstests",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Was bestätigt der Fehlernachtest?",
-            "explanation": "Der Fehlernachtest bestätigt, dass ein ursprünglicher Fehlerzustand erfolgreich behoben wurde. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.3)",
+            "explanation": "Der Fehlernachtest bestätigt, dass ein ursprünglicher Fehlerzustand erfolgreich behoben wurde. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Dass ein ursprünglicher Fehlerzustand erfolgreich behoben wurde",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Art von Tests können beim Fehlernachtest ausgeführt werden?",
-            "explanation": "Je nach Risiko kann man die behobene Version testen, indem man alle zuvor fehlgeschlagenen Tests erneut ausführt. (Abschnitt 2.2.3)",
+            "explanation": "Je nach Risiko kann man die behobene Version testen, indem man alle zuvor fehlgeschlagenen Tests erneut ausführt. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Alle Tests, die zuvor aufgrund des Fehlers fehlgeschlagen sind",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche zusätzliche Maßnahme kann beim Fehlernachtest durchgeführt werden?",
-            "explanation": "Neue Tests können hinzugefügt werden, um alle Änderungen zu überdecken, die zur Behebung des Fehlerzustands erforderlich waren. (Abschnitt 2.2.3)",
+            "explanation": "Neue Tests können hinzugefügt werden, um alle Änderungen zu überdecken, die zur Behebung des Fehlerzustands erforderlich waren. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Hinzufügen neuer Tests zur Abdeckung der Änderungen",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Wie kann der Fehlernachtest durchgeführt werden, wenn Zeit oder Geld knapp sind?",
-            "explanation": "In diesem Fall kann sich der Fehlernachtest darauf beschränken, die Testschritte auszuführen, die die ursprüngliche Fehlerwirkung produziert haben. (Abschnitt 2.2.3)",
+            "explanation": "In diesem Fall kann sich der Fehlernachtest darauf beschränken, die Testschritte auszuführen, die die ursprüngliche Fehlerwirkung produziert haben. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Nur die Testschritte ausführen, die die Fehlerwirkung ursprünglich produziert haben",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Was ist das Prüfziel bei reduzierten Fehlernachtests?",
-            "explanation": "Das Ziel ist zu prüfen, ob die durch den Fehlerzustand verursachte Fehlerwirkung nicht mehr auftritt. (Abschnitt 2.2.3)",
+            "explanation": "Das Ziel ist zu prüfen, ob die durch den Fehlerzustand verursachte Fehlerwirkung nicht mehr auftritt. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Ob die Fehlerwirkung nicht mehr auftritt",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Was bestätigt der Regressionstest?",
-            "explanation": "Der Regressionstest bestätigt, dass eine Änderung, einschließlich einer bereits getesteten Fehlerbehebung, keine nachteiligen Folgen hat. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2.3)",
+            "explanation": "Der Regressionstest bestätigt, dass eine Änderung, einschließlich einer bereits getesteten Fehlerbehebung, keine nachteiligen Folgen hat. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Dass eine Änderung keine nachteiligen Folgen hat",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Welche Bereiche können von nachteiligen Folgen betroffen sein?",
-            "explanation": "Die nachteiligen Folgen könnten die Komponente, andere Komponenten desselben Systems oder sogar andere verbundene Systeme betreffen. (Abschnitt 2.2.3)",
+            "explanation": "Die nachteiligen Folgen könnten die Komponente, andere Komponenten desselben Systems oder sogar andere verbundene Systeme betreffen. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Die geänderte Komponente, andere Komponenten oder verbundene Systeme",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Muss sich der Regressionstest ausschließlich auf das Testobjekt beschränken?",
-            "explanation": "Der Regressionstest muss sich nicht auf das Testobjekt selbst beschränken, sondern kann sich auch auf die Umgebung beziehen. (Abschnitt 2.2.3)",
+            "explanation": "Der Regressionstest muss sich nicht auf das Testobjekt selbst beschränken, sondern kann sich auch auf die Umgebung beziehen. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Nein, er kann sich auch auf die Umgebung beziehen",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welche Analyse ist ratsam, bevor Regressionstests durchgeführt werden?",
-            "explanation": "Es ist ratsam, zunächst eine Auswirkungsanalyse durchzuführen, um den Umfang der Regressionstests zu erkennen. (Abschnitt 2.2.3)",
+            "explanation": "Es ist ratsam, zunächst eine Auswirkungsanalyse durchzuführen, um den Umfang der Regressionstests zu erkennen. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Eine Auswirkungsanalyse",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Was zeigt die Auswirkungsanalyse im Zusammenhang mit Regressionstests?",
-            "explanation": "Die Auswirkungsanalyse zeigt, welche Teile der Software betroffen sein könnten. (Abschnitt 2.2.3)",
+            "explanation": "Die Auswirkungsanalyse zeigt, welche Teile der Software betroffen sein könnten. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Welche Teile der Software betroffen sein könnten",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Wie oft werden Regressionstestsuiten typischerweise durchlaufen?",
-            "explanation": "Regressionstestsuiten werden viele Male durchlaufen. (Abschnitt 2.2.3)",
+            "explanation": "Regressionstestsuiten werden viele Male durchlaufen. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Viele Male",
@@ -357,7 +357,7 @@
         },
         {
             "question": "Wie verändert sich die Anzahl der Testfälle in Regressionstestsuiten im Laufe der Zeit?",
-            "explanation": "Im Allgemeinen nimmt die Anzahl der Testfälle mit jeder Iteration oder jedem Release zu. (Abschnitt 2.2.3)",
+            "explanation": "Im Allgemeinen nimmt die Anzahl der Testfälle mit jeder Iteration oder jedem Release zu. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Sie nimmt zu",
@@ -379,7 +379,7 @@
         },
         {
             "question": "Warum eignen sich Regressionstests besonders gut für die Automatisierung?",
-            "explanation": "Regressionstestsuiten werden viele Male durchlaufen, daher eignen sie sich sehr gut für Automatisierung. (Abschnitt 2.2.3)",
+            "explanation": "Regressionstestsuiten werden viele Male durchlaufen, daher eignen sie sich sehr gut für Automatisierung. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Weil sie viele Male wiederholt werden",
@@ -401,7 +401,7 @@
         },
         {
             "question": "Wann sollte die Testautomatisierung für Regressionstests beginnen?",
-            "explanation": "Die Testautomatisierung sollte bereits in einem frühen Stadium des Projekts beginnen. (Abschnitt 2.2.3)",
+            "explanation": "Die Testautomatisierung sollte bereits in einem frühen Stadium des Projekts beginnen. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Bereits in einem frühen Stadium des Projekts",
@@ -423,7 +423,7 @@
         },
         {
             "question": "Welche gute Praxis gilt beim Einsatz von CI (z. B. bei DevOps) für Regressionstests?",
-            "explanation": "Wenn CI eingesetzt wird, wie z. B. bei DevOps, ist es gute Praxis, auch automatisierte Regressionstests einzubeziehen. (Abschnitt 2.2.3)",
+            "explanation": "Wenn CI eingesetzt wird, wie z. B. bei DevOps, ist es gute Praxis, auch automatisierte Regressionstests einzubeziehen. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Automatisierte Regressionstests einzubeziehen",
@@ -445,7 +445,7 @@
         },
         {
             "question": "Auf welchen Teststufen sind Fehlernachtests und/oder Regressionstests erforderlich?",
-            "explanation": "Fehlernachtests und/oder Regressionstests sind auf allen Teststufen erforderlich, wenn Fehlerzustände behoben oder Änderungen vorgenommen wurden. (Abschnitt 2.2.3)",
+            "explanation": "Fehlernachtests und/oder Regressionstests sind auf allen Teststufen erforderlich, wenn Fehlerzustände behoben oder Änderungen vorgenommen wurden. (2.2.3_Fehlernachtest_und_Regressionstest.md)",
             "options": [
                 {
                     "text": "Auf allen Teststufen",

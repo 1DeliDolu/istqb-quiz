@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welches Ziel teilen statische und dynamische Tests?",
-            "explanation": "Beide sollen helfen, Fehlerzustände in Arbeitsergebnissen zu erkennen. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 3.1.3)",
+            "explanation": "Beide sollen helfen, Fehlerzustände in Arbeitsergebnissen zu erkennen. (3.1.3_Unterschiede_zwischen_statischem_Test_und_dynamischem_Test.md)",
             "options": [
                 {
                     "text": "Erkennung von Fehlerzuständen",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Wie verhalten sich statische und dynamische Tests zueinander?",
-            "explanation": "Sie ergänzen sich gegenseitig, da sie unterschiedliche Arten von Fehlern aufdecken. (Abschnitt 3.1.3)",
+            "explanation": "Sie ergänzen sich gegenseitig, da sie unterschiedliche Arten von Fehlern aufdecken. (3.1.3_Unterschiede_zwischen_statischem_Test_und_dynamischem_Test.md)",
             "options": [
                 {
                     "text": "Sie ergänzen sich gegenseitig",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Was ist ein Unterschied zwischen statischem und dynamischem Test?",
-            "explanation": "Der statische Test benötigt keine Ausführung der Software, der dynamische Test schon. (Abschnitt 3.1.3)",
+            "explanation": "Der statische Test benötigt keine Ausführung der Software, der dynamische Test schon. (3.1.3_Unterschiede_zwischen_statischem_Test_und_dynamischem_Test.md)",
             "options": [
                 {
                     "text": "Statischer Test benötigt keine Ausführung, dynamischer Test schon",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche Art von Fehlern findet typischerweise die statische Analyse?",
-            "explanation": "Statische Tests finden strukturelle oder syntaktische Fehler, wie nicht erreichbaren Code. (Abschnitt 3.1.3)",
+            "explanation": "Statische Tests finden strukturelle oder syntaktische Fehler, wie nicht erreichbaren Code. (3.1.3_Unterschiede_zwischen_statischem_Test_und_dynamischem_Test.md)",
             "options": [
                 {
                     "text": "Strukturelle oder syntaktische Fehler",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welche Art von Fehlern decken dynamische Tests besser auf?",
-            "explanation": "Dynamische Tests erkennen Fehler im Laufzeitverhalten eines Systems. (Abschnitt 3.1.3)",
+            "explanation": "Dynamische Tests erkennen Fehler im Laufzeitverhalten eines Systems. (3.1.3_Unterschiede_zwischen_statischem_Test_und_dynamischem_Test.md)",
             "options": [
                 {
                     "text": "Fehler im Laufzeitverhalten",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welches Merkmal ist typisch für den statischen Test?",
-            "explanation": "Er untersucht Arbeitsergebnisse ohne deren Ausführung. (Abschnitt 3.1.3)",
+            "explanation": "Er untersucht Arbeitsergebnisse ohne deren Ausführung. (3.1.3_Unterschiede_zwischen_statischem_Test_und_dynamischem_Test.md)",
             "options": [
                 {
                     "text": "Untersuchung ohne Ausführung der Software",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welches Merkmal ist typisch für dynamische Tests?",
-            "explanation": "Dynamische Tests setzen die Ausführung der Software voraus. (Abschnitt 3.1.3)",
+            "explanation": "Dynamische Tests setzen die Ausführung der Software voraus. (3.1.3_Unterschiede_zwischen_statischem_Test_und_dynamischem_Test.md)",
             "options": [
                 {
                     "text": "Ausführung der Software ist erforderlich",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Warum sind statische und dynamische Tests beide notwendig?",
-            "explanation": "Weil sie unterschiedliche Fehlerarten abdecken und sich ergänzen. (Abschnitt 3.1.3)",
+            "explanation": "Weil sie unterschiedliche Fehlerarten abdecken und sich ergänzen. (3.1.3_Unterschiede_zwischen_statischem_Test_und_dynamischem_Test.md)",
             "options": [
                 {
                     "text": "Weil sie unterschiedliche Fehlerarten abdecken",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche Gemeinsamkeit haben statische und dynamische Tests?",
-            "explanation": "Beide tragen zur Fehlererkennung und Qualitätsverbesserung bei. (Abschnitt 3.1.3)",
+            "explanation": "Beide tragen zur Fehlererkennung und Qualitätsverbesserung bei. (3.1.3_Unterschiede_zwischen_statischem_Test_und_dynamischem_Test.md)",
             "options": [
                 {
                     "text": "Unterstützung bei der Erkennung von Fehlerzuständen",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welche der folgenden Aussagen ist FALSCH?",
-            "explanation": "Statische und dynamische Tests ergänzen sich, sie schließen sich nicht gegenseitig aus. (Abschnitt 3.1.3)",
+            "explanation": "Statische und dynamische Tests ergänzen sich, sie schließen sich nicht gegenseitig aus. (3.1.3_Unterschiede_zwischen_statischem_Test_und_dynamischem_Test.md)",
             "options": [
                 {
                     "text": "Statische und dynamische Tests haben ähnliche Ziele",

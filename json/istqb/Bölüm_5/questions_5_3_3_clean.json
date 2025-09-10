@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Wovon hängt die beste Art der Kommunikation des Teststatus ab?",
-            "explanation": "Die Kommunikation hängt von Testmanagement, Teststrategie, regulatorischen Vorgaben oder dem Team ab. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.3)",
+            "explanation": "Die Kommunikation hängt von Testmanagement, Teststrategie, regulatorischen Vorgaben oder dem Team ab. (5.3.3_Kommunikation_des_Teststatus.md)",
             "options": [
                 {
                     "text": "Von Testmanagement, Strategie, Vorgaben oder Team",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Kommunikationsoption gehört zu den möglichen Methoden?",
-            "explanation": "Optionen: mündlich, Dashboards, elektronische Kanäle, Online-Dokumentation, formale Testberichte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.3)",
+            "explanation": "Optionen: mündlich, Dashboards, elektronische Kanäle, Online-Dokumentation, formale Testberichte. (5.3.3_Kommunikation_des_Teststatus.md)",
             "options": [
                 {
                     "text": "Mündliche Kommunikation mit Teammitgliedern",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Rolle spielen Dashboards in der Teststatus-Kommunikation?",
-            "explanation": "Dashboards wie CI/CD-Dashboards oder Burn-down-Charts können den Teststatus visualisieren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.3)",
+            "explanation": "Dashboards wie CI/CD-Dashboards oder Burn-down-Charts können den Teststatus visualisieren. (5.3.3_Kommunikation_des_Teststatus.md)",
             "options": [
                 {
                     "text": "Sie visualisieren den Teststatus",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche Kommunikationsform ist für verteilte Teams oft sinnvoll?",
-            "explanation": "Für verteilte Teams empfiehlt sich eine formellere Kommunikation, da direkte Meetings nicht immer möglich sind. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.3)",
+            "explanation": "Für verteilte Teams empfiehlt sich eine formellere Kommunikation, da direkte Meetings nicht immer möglich sind. (5.3.3_Kommunikation_des_Teststatus.md)",
             "options": [
                 {
                     "text": "Formellere Kommunikation",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welche Kommunikationskanäle sind typische elektronische Optionen?",
-            "explanation": "Elektronische Kanäle können E-Mail oder Chat sein. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.3)",
+            "explanation": "Elektronische Kanäle können E-Mail oder Chat sein. (5.3.3_Kommunikation_des_Teststatus.md)",
             "options": [
                 {
                     "text": "E-Mail und Chat",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Dokumentationsform gehört zur Kommunikation des Teststatus?",
-            "explanation": "Online-Dokumentation ist eine mögliche Kommunikationsform. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.3)",
+            "explanation": "Online-Dokumentation ist eine mögliche Kommunikationsform. (5.3.3_Kommunikation_des_Teststatus.md)",
             "options": [
                 {
                     "text": "Online-Dokumentation",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Option ist die formalste Form der Kommunikation?",
-            "explanation": "Formale Testberichte stellen die formalste Art der Kommunikation dar. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.3)",
+            "explanation": "Formale Testberichte stellen die formalste Art der Kommunikation dar. (5.3.3_Kommunikation_des_Teststatus.md)",
             "options": [
                 {
                     "text": "Formale Testberichte",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche Art von Informationen interessiert unterschiedliche Stakeholder?",
-            "explanation": "Stakeholder sind an unterschiedlichen Informationen interessiert, daher muss die Kommunikation angepasst werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.3)",
+            "explanation": "Stakeholder sind an unterschiedlichen Informationen interessiert, daher muss die Kommunikation angepasst werden. (5.3.3_Kommunikation_des_Teststatus.md)",
             "options": [
                 {
                     "text": "Unterschiedliche Arten von Informationen",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Warum sollte die Kommunikation des Teststatus angepasst werden?",
-            "explanation": "Weil verschiedene Stakeholder unterschiedliche Bedürfnisse haben. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.3)",
+            "explanation": "Weil verschiedene Stakeholder unterschiedliche Bedürfnisse haben. (5.3.3_Kommunikation_des_Teststatus.md)",
             "options": [
                 {
                     "text": "Weil Stakeholder unterschiedliche Bedürfnisse haben",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welche Option kann zusätzlich zur mündlichen Kommunikation genutzt werden?",
-            "explanation": "Neben der mündlichen Kommunikation können Dashboards, elektronische Kanäle oder Dokumentation genutzt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.3)",
+            "explanation": "Neben der mündlichen Kommunikation können Dashboards, elektronische Kanäle oder Dokumentation genutzt werden. (5.3.3_Kommunikation_des_Teststatus.md)",
             "options": [
                 {
                     "text": "Dashboards oder elektronische Kanäle",

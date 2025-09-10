@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welche Kategorien von Wartung gibt es?",
-            "explanation": "Es gibt verschiedene Kategorien von Wartung, sie kann korrigierend sein, sich an Änderungen in der Umgebung anpassen oder die Leistung oder Wartbarkeit verbessern. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.3)",
+            "explanation": "Es gibt verschiedene Kategorien von Wartung, sie kann korrigierend sein, sich an Änderungen in der Umgebung anpassen oder die Leistung oder Wartbarkeit verbessern. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Korrigierend, adaptiv, leistungs-/wartbarkeitsverbessernd",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Kategorien von Wartung gibt es?",
-            "explanation": "Es gibt verschiedene Kategorien von Wartung, sie kann korrigierend sein, sich an Änderungen in der Umgebung anpassen oder die Leistung oder Wartbarkeit verbessern. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.3)",
+            "explanation": "Es gibt verschiedene Kategorien von Wartung, sie kann korrigierend sein, sich an Änderungen in der Umgebung anpassen oder die Leistung oder Wartbarkeit verbessern. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Korrigierend, adaptiv, leistungs-/wartbarkeitsverbessernd",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Arten von Releases können durch Wartung entstehen?",
-            "explanation": "Wartung kann geplante Releases/Bereitstellungen und ungeplante Releases/Bereitstellungen (Hotfixes) umfassen. (Abschnitt 2.3)",
+            "explanation": "Wartung kann geplante Releases/Bereitstellungen und ungeplante Releases/Bereitstellungen (Hotfixes) umfassen. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Geplante Releases und ungeplante Releases (Hotfixes)",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Was kann vor einer Änderung durchgeführt werden?",
-            "explanation": "Vor einer Änderung kann eine Auswirkungsanalyse durchgeführt werden. (Abschnitt 2.3)",
+            "explanation": "Vor einer Änderung kann eine Auswirkungsanalyse durchgeführt werden. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Eine Auswirkungsanalyse",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welchem Zweck dient die Auswirkungsanalyse im Wartungstest?",
-            "explanation": "Die Auswirkungsanalyse soll entscheiden, ob die Änderung durchgeführt werden sollte, basierend auf potenziellen Auswirkungen auf andere Bereiche des Systems. (Abschnitt 2.3)",
+            "explanation": "Die Auswirkungsanalyse soll entscheiden, ob die Änderung durchgeführt werden sollte, basierend auf potenziellen Auswirkungen auf andere Bereiche des Systems. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Entscheidung über die Durchführung einer Änderung basierend auf Auswirkungen",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Was umfasst das Testen der Änderungen im operativen System?",
-            "explanation": "Das Testen der Änderungen umfasst sowohl die Bewertung des Erfolgs der Implementierung als auch die Überprüfung auf mögliche nachteilige Folgen. (Abschnitt 2.3)",
+            "explanation": "Das Testen der Änderungen umfasst sowohl die Bewertung des Erfolgs der Implementierung als auch die Überprüfung auf mögliche nachteilige Folgen. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Bewertung des Erfolgs und Überprüfung auf nachteilige Folgen",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Was ist ein typischer Bestandteil der Überprüfung auf nachteilige Folgen?",
-            "explanation": "Dies umfasst die Überprüfung auf mögliche nachteilige Folgen (Regressionstest) in unveränderten Teilen des Systems. (Abschnitt 2.3)",
+            "explanation": "Dies umfasst die Überprüfung auf mögliche nachteilige Folgen (Regressionstest) in unveränderten Teilen des Systems. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Regressionstest in unveränderten Teilen des Systems",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welcher Teil des Systems bleibt in der Regel unverändert?",
-            "explanation": "Die Überprüfung auf nachteilige Folgen betrifft Teile des Systems, die unverändert bleiben (was in der Regel der größte Teil des Systems ist). (Abschnitt 2.3)",
+            "explanation": "Die Überprüfung auf nachteilige Folgen betrifft Teile des Systems, die unverändert bleiben (was in der Regel der größte Teil des Systems ist). (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Der größte Teil des Systems",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche Wartungsart umfasst die Verbesserung der Leistung oder Wartbarkeit?",
-            "explanation": "Eine Kategorie von Wartung ist die leistungs- oder wartbarkeitsverbessernde Wartung. (Abschnitt 2.3)",
+            "explanation": "Eine Kategorie von Wartung ist die leistungs- oder wartbarkeitsverbessernde Wartung. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Leistungs- oder wartbarkeitsverbessernde Wartung",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welche Art von Release ist ein Beispiel für ein ungeplantes Wartungsrelease?",
-            "explanation": "Ungeplante Releases/Bereitstellungen werden als Hotfixes bezeichnet. (Abschnitt 2.3)",
+            "explanation": "Ungeplante Releases/Bereitstellungen werden als Hotfixes bezeichnet. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Hotfix",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Wovon hängt der Umfang des Wartungstests in der Regel ab?",
-            "explanation": "Der Umfang des Wartungstests hängt in der Regel ab von: dem Grad des Risikos der Änderung, der Größe des bestehenden Systems, dem Umfang der Änderung. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.3)",
+            "explanation": "Der Umfang des Wartungstests hängt in der Regel ab von: dem Grad des Risikos der Änderung, der Größe des bestehenden Systems, dem Umfang der Änderung. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Risiko, Größe des Systems und Umfang der Änderung",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Was ist ein möglicher Auslöser für Wartung und Wartungstest?",
-            "explanation": "Änderungen, wie z. B. geplante Erweiterungen (releasebasiert), korrigierende Änderungen oder Hotfixes. (Abschnitt 2.3)",
+            "explanation": "Änderungen, wie z. B. geplante Erweiterungen (releasebasiert), korrigierende Änderungen oder Hotfixes. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Geplante Erweiterungen, Korrekturen oder Hotfixes",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Welche Form der Änderung erfordert typischerweise releasebasierte Tests?",
-            "explanation": "Geplante Erweiterungen (d. h. releasebasiert) sind ein Auslöser für Wartungstests. (Abschnitt 2.3)",
+            "explanation": "Geplante Erweiterungen (d. h. releasebasiert) sind ein Auslöser für Wartungstests. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Geplante Erweiterungen",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Was ist ein Beispiel für Änderungen in der Betriebsumgebung?",
-            "explanation": "Upgrades oder Migrationen der Betriebsumgebung, z. B. von einer Plattform auf eine andere. (Abschnitt 2.3)",
+            "explanation": "Upgrades oder Migrationen der Betriebsumgebung, z. B. von einer Plattform auf eine andere. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Upgrades oder Migrationen auf eine andere Plattform",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Welche Tests können bei Migrationen erforderlich sein?",
-            "explanation": "Dies kann Tests der neuen Umgebung, Tests der geänderten Software oder Tests der Datenkonvertierung erfordern. (Abschnitt 2.3)",
+            "explanation": "Dies kann Tests der neuen Umgebung, Tests der geänderten Software oder Tests der Datenkonvertierung erfordern. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Tests der neuen Umgebung, Software und Datenkonvertierung",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Was ist ein weiterer Auslöser für Wartungstests neben Änderungen und Migrationen?",
-            "explanation": "Außerbetriebnahme, z. B. wenn eine Anwendung das Ende ihres Lebens erreicht. (Abschnitt 2.3)",
+            "explanation": "Außerbetriebnahme, z. B. wenn eine Anwendung das Ende ihres Lebens erreicht. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Außerbetriebnahme des Systems",
@@ -357,7 +357,7 @@
         },
         {
             "question": "Welche Tests können bei der Außerbetriebnahme erforderlich sein?",
-            "explanation": "Dies kann Tests der Datenarchivierung erfordern, falls lange Datenaufbewahrungsfristen erforderlich sind. (Abschnitt 2.3)",
+            "explanation": "Dies kann Tests der Datenarchivierung erfordern, falls lange Datenaufbewahrungsfristen erforderlich sind. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Tests der Datenarchivierung",
@@ -379,7 +379,7 @@
         },
         {
             "question": "Warum können bei Außerbetriebnahme Datenarchivierungstests notwendig sein?",
-            "explanation": "Weil lange Datenaufbewahrungsfristen erforderlich sein können. (Abschnitt 2.3)",
+            "explanation": "Weil lange Datenaufbewahrungsfristen erforderlich sein können. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Um lange Datenaufbewahrungsfristen zu erfüllen",
@@ -401,7 +401,7 @@
         },
         {
             "question": "Was kann zusätzlich zum Archivierungstest geprüft werden?",
-            "explanation": "Das Testen von Wiederherstellungsverfahren nach der Archivierung kann ebenfalls erforderlich sein. (Abschnitt 2.3)",
+            "explanation": "Das Testen von Wiederherstellungsverfahren nach der Archivierung kann ebenfalls erforderlich sein. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Wiederherstellungsverfahren nach der Archivierung",
@@ -423,7 +423,7 @@
         },
         {
             "question": "Wann können Wiederherstellungsverfahren nach der Archivierung besonders wichtig sein?",
-            "explanation": "Wenn bestimmte Daten während der Archivierungszeit benötigt werden. (Abschnitt 2.3)",
+            "explanation": "Wenn bestimmte Daten während der Archivierungszeit benötigt werden. (2.3_Wartungstest.md)",
             "options": [
                 {
                     "text": "Wenn bestimmte Daten während der Archivierungszeit benötigt werden",

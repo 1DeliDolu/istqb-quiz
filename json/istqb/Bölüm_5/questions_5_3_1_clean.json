@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welches Ziel haben Testmetriken?",
-            "explanation": "Testmetriken zeigen Fortschritt, Qualität des Testobjekts und Effektivität der Testaktivitäten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Testmetriken zeigen Fortschritt, Qualität des Testobjekts und Effektivität der Testaktivitäten. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Fortschritt, Qualität und Effektivität sichtbar machen",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Art von Metriken zeigt den Projektfortschritt?",
-            "explanation": "Projektfortschrittsmetriken beinhalten abgeschlossene Aufgaben, Ressourcenverbrauch, Testaufwand. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Projektfortschrittsmetriken beinhalten abgeschlossene Aufgaben, Ressourcenverbrauch, Testaufwand. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Abgeschlossene Aufgaben und Ressourcenverbrauch",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Metriken gehören zum Testfortschritt?",
-            "explanation": "Beispiele: Fortschritt bei Testfallrealisierung, Vorbereitung der Testumgebung, ausgeführte Testfälle. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Beispiele: Fortschritt bei Testfallrealisierung, Vorbereitung der Testumgebung, ausgeführte Testfälle. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Anzahl ausgeführter und nicht ausgeführter Testfälle",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche Metrik gehört zur Produktqualität?",
-            "explanation": "Beispiele: Verfügbarkeit, Reaktionszeit, MTTF. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Beispiele: Verfügbarkeit, Reaktionszeit, MTTF. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Verfügbarkeit",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Was misst die Metrik MTTF (Mean Time To Failure)?",
-            "explanation": "MTTF gibt die mittlere Betriebsdauer bis zum Ausfall an. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "MTTF gibt die mittlere Betriebsdauer bis zum Ausfall an. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Mittlere Betriebsdauer bis zum Ausfall",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Metriken gehören zu Fehlerzuständen?",
-            "explanation": "Beispiele: Anzahl gefundener/behobener Fehler, Fehlerdichte, Defect Detection Percentage (DDP). (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Beispiele: Anzahl gefundener/behobener Fehler, Fehlerdichte, Defect Detection Percentage (DDP). (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Anzahl und Prioritäten der Fehlerzustände",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Was beschreibt die Metrik Fehlerdichte?",
-            "explanation": "Fehlerdichte = Anzahl der Fehlerzustände im Verhältnis zur Größe des Testobjekts. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Fehlerdichte = Anzahl der Fehlerzustände im Verhältnis zur Größe des Testobjekts. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Anzahl der Fehler im Verhältnis zur Größe des Testobjekts",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Was misst die Fehlerfindungsrate (Defect Detection Percentage, DDP)?",
-            "explanation": "Sie misst den Prozentsatz der tatsächlich gefundenen Fehler im Vergleich zu den vorhandenen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Sie misst den Prozentsatz der tatsächlich gefundenen Fehler im Vergleich zu den vorhandenen. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Prozentsatz gefundener Fehlerzustände",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche Metriken beziehen sich auf Risiken?",
-            "explanation": "Beispiel: verbleibende Risikostufe. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Beispiel: verbleibende Risikostufe. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Verbleibende Risikostufe",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welche Metrik zeigt die Überdeckung von Anforderungen?",
-            "explanation": "Beispiel: Anforderungsüberdeckung oder Codeüberdeckung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Beispiel: Anforderungsüberdeckung oder Codeüberdeckung. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Anforderungsüberdeckung",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Welche Metrik zeigt die Überdeckung des Codes?",
-            "explanation": "Beispiel: Codeüberdeckung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Beispiel: Codeüberdeckung. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Codeüberdeckung",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Welche Kostenmetriken können beim Testen erfasst werden?",
-            "explanation": "Beispiele: Kosten für das Testen, organisatorische Kosten für Qualität. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Beispiele: Kosten für das Testen, organisatorische Kosten für Qualität. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Kosten für das Testen und organisatorische Qualitätskosten",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Welche Metriken unterstützen die Teststeuerung direkt?",
-            "explanation": "Metriken zum Fortschritt, zur Qualität, zu Fehlern und zu Risiken helfen, die Steuerung zu optimieren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Metriken zum Fortschritt, zur Qualität, zu Fehlern und zu Risiken helfen, die Steuerung zu optimieren. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Metriken zu Fortschritt, Qualität, Fehlern, Risiken",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welche Art von Metriken misst bestandene und nicht bestandene Testfälle?",
-            "explanation": "Dies sind Metriken zum Testfortschritt. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Dies sind Metriken zum Testfortschritt. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Metriken zum Testfortschritt",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Welche Art von Metriken misst die Effektivität der Testaktivitäten?",
-            "explanation": "Die Effektivität kann mit Metriken zu Fehlern, Überdeckung und Risiken gemessen werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.3.1)",
+            "explanation": "Die Effektivität kann mit Metriken zu Fehlern, Überdeckung und Risiken gemessen werden. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
             "options": [
                 {
                     "text": "Metriken zu Fehlern, Überdeckung und Risiken",

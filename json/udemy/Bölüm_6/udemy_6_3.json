@@ -2,5 +2,468 @@
     "chapter": "udemy_6",
     "subChapter": "udemy_6_3",
     "subChapterTitle": "6.3 Quiz 16 - Testorganisation",
-    "questions": []
+    "questions": [
+        {
+            "question": "Was ist normalerweise KEIN Ergebnis der Testanalyse und des Entwurfs?",
+            "explanation": "Ergebnisse sind Testbedingungen, Testfälle und Testdaten. Ein Freigabeplan gehört zum Projektmanagement, nicht zum Testentwurf. (1.4.3_Testmittel.md)",
+            "options": [
+                {
+                    "text": "Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Testdaten",
+                    "correct": false
+                },
+                {
+                    "text": "Testbedingungen",
+                    "correct": false
+                },
+                {
+                    "text": "Freigabeplan (Release schedule)",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Hauptgrund für die Definition von Eintrittskriterien im Testplan?",
+            "explanation": "Eintrittskriterien stellen sicher, dass alle Voraussetzungen erfüllt sind, bevor Testaktivitäten beginnen. Sie dienen dazu, die Testbereitschaft sicherzustellen. (1.4.2_Eintritts-_und_Austrittskriterien.md)",
+            "options": [
+                {
+                    "text": "Um Tests zu verzögern",
+                    "correct": false
+                },
+                {
+                    "text": "Um die Testbereitschaft sicherzustellen",
+                    "correct": true
+                },
+                {
+                    "text": "Um die Entwicklungszeit zu verkürzen",
+                    "correct": false
+                },
+                {
+                    "text": "Um sofort mit dem Codieren zu beginnen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist am ehesten in einer Teststrategie zu finden?",
+            "explanation": "Die Teststrategie beschreibt den allgemeinen Testansatz, einschließlich der Teststufen, der anzuwendenden Testtechniken und der Verantwortlichkeiten. (5.2_Teststrategie_und_Testansatz.md)",
+            "options": [
+                {
+                    "text": "Preisstruktur des Produkts",
+                    "correct": false
+                },
+                {
+                    "text": "Detaillierte Entwurfsdiagramme",
+                    "correct": false
+                },
+                {
+                    "text": "Teststufen, -techniken und Verantwortlichkeiten",
+                    "correct": true
+                },
+                {
+                    "text": "Kundenliste",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was wird typischerweise bei Teststeuerungsaktivitäten überprüft?",
+            "explanation": "Bei der Teststeuerung werden Testprotokolle und der Fortschritt überprüft, um Abweichungen vom Plan zu erkennen und gegebenenfalls Anpassungen vorzunehmen. (5.3_Testüberwachung_und_-steuerung.md)",
+            "options": [
+                {
+                    "text": "Vorschläge für neue Funktionen",
+                    "correct": false
+                },
+                {
+                    "text": "Testprotokolle und Fortschritt",
+                    "correct": true
+                },
+                {
+                    "text": "Verkaufsprognosen",
+                    "correct": false
+                },
+                {
+                    "text": "Deployment-Zeitpläne",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welcher Faktor kann die Effektivität der Testüberwachung beeinträchtigen?",
+            "explanation": "Ohne ausreichenden Zugriff auf relevante Metriken fehlt die Grundlage für fundierte Entscheidungen in der Testüberwachung, was die Effektivität beeinträchtigen kann. (5.3_Testüberwachung_und_-steuerung.md)",
+            "options": [
+                {
+                    "text": "Eingeschränkter Zugriff auf Metriken",
+                    "correct": true
+                },
+                {
+                    "text": "Automatisierte Testfälle",
+                    "correct": false
+                },
+                {
+                    "text": "Datenbankleistung",
+                    "correct": false
+                },
+                {
+                    "text": "Anzahl der Entwurfsdokumente",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Metrik spiegelt die Softwarequalität am besten wider?",
+            "explanation": "Die Fehlerrate (Defect Density) zeigt die Häufigkeit von Fehlern pro Größeneinheit und ist ein zentraler Indikator für die Softwarequalität. (5.4_Messung_und_Metriken.md)",
+            "options": [
+                {
+                    "text": "Anzahl geschriebener Codezeilen",
+                    "correct": false
+                },
+                {
+                    "text": "Anzahl der Testumgebungen",
+                    "correct": false
+                },
+                {
+                    "text": "Fehlerrate",
+                    "correct": true
+                },
+                {
+                    "text": "Länge des Benutzerhandbuchs",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was kann durch häufiges Testmonitoring frühzeitig erkannt werden?",
+            "explanation": "Häufiges Testmonitoring ermöglicht es, Prozesseffizienzen oder Engpässe frühzeitig zu erkennen und rechtzeitig Gegenmaßnahmen einzuleiten. (5.3_Testüberwachung_und_-steuerung.md)",
+            "options": [
+                {
+                    "text": "Späte Performanceprobleme",
+                    "correct": false
+                },
+                {
+                    "text": "Fehler nach dem Release",
+                    "correct": false
+                },
+                {
+                    "text": "Prozesseffizienzen",
+                    "correct": true
+                },
+                {
+                    "text": "Marketingvorlieben",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welches Risiko wird direkt durch Testmanagement adressiert?",
+            "explanation": "Testmanagement stellt sicher, dass der Testumfang konsistent bleibt und mit den Projektzielen übereinstimmt, wodurch das Risiko eines inkonsistenten Testumfangs reduziert wird. (5.5_Risikomanagement_im_Test.md)",
+            "options": [
+                {
+                    "text": "Unrealistische Fristen",
+                    "correct": false
+                },
+                {
+                    "text": "Falsche Speicherzuweisung",
+                    "correct": false
+                },
+                {
+                    "text": "Ausfall der Testumgebung",
+                    "correct": false
+                },
+                {
+                    "text": "Inkonsistenter Testumfang",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein typischer Grund für die Aktualisierung des Testplans?",
+            "explanation": "Änderungen im Projektumfang erfordern eine Anpassung des Testplans, um sicherzustellen, dass alle neuen oder geänderten Anforderungen abgedeckt werden. (5.1_Testplanung.md)",
+            "options": [
+                {
+                    "text": "Urlaub eines Stakeholders",
+                    "correct": false
+                },
+                {
+                    "text": "Neue Benutzerhandbücher",
+                    "correct": false
+                },
+                {
+                    "text": "Änderung des Projektumfangs",
+                    "correct": true
+                },
+                {
+                    "text": "Erfolgreicher Go-Live",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Aktion gehört zur Teststeuerung?",
+            "explanation": "Teststeuerung umfasst die Anpassung von Ressourcen, Zeitplänen und Maßnahmen, um den Testfortschritt zu optimieren. Die Neuverteilung von Testressourcen ist ein typisches Beispiel dafür. (5.3_Testüberwachung_und_-steuerung.md)",
+            "options": [
+                {
+                    "text": "Schreiben neuer User Stories",
+                    "correct": false
+                },
+                {
+                    "text": "Analyse des Quellcodes",
+                    "correct": false
+                },
+                {
+                    "text": "Neuverteilung von Testressourcen",
+                    "correct": true
+                },
+                {
+                    "text": "Rechnungsversand",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche Defektmetrik eignet sich zur Bewertung der Testeffektivität?",
+            "explanation": "Die Metrik 'Defekte pro Testfall' zeigt, wie viele Fehler pro ausgeführtem Testfall gefunden werden. Je mehr Tests Fehler aufdecken, desto effektiver sind sie. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
+            "options": [
+                {
+                    "text": "Testausführungszeit",
+                    "correct": false
+                },
+                {
+                    "text": "Defekte pro Testfall",
+                    "correct": true
+                },
+                {
+                    "text": "Codezeilenanzahl",
+                    "correct": false
+                },
+                {
+                    "text": "Teamgröße",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was lässt sich durch die Analyse von Testmetriken ableiten?",
+            "explanation": "Die Analyse von Testmetriken kann aufzeigen, in welchen Bereichen zusätzlicher Testbedarf besteht. Metriken helfen, Lücken in der Testabdeckung zu erkennen und gezielt Maßnahmen zu planen. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
+            "options": [
+                {
+                    "text": "Codeoptimierungen",
+                    "correct": false
+                },
+                {
+                    "text": "Entwicklungsgeschwindigkeit",
+                    "correct": false
+                },
+                {
+                    "text": "Bereiche mit Testbedarf",
+                    "correct": true
+                },
+                {
+                    "text": "Zeitplan für Hardware-Upgrades",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie können Testmetriken nach Projektabschluss genutzt werden?",
+            "explanation": "Historische Testmetriken können nach Projektabschluss genutzt werden, um Aufwandsschätzungen zu verbessern und zukünftige Tests gezielter zu planen. (5.3.1_Beim_Testen_verwendete_Metriken.md)",
+            "options": [
+                {
+                    "text": "Zur Überarbeitung von Benutzerhandbüchern",
+                    "correct": false
+                },
+                {
+                    "text": "Zur Bewertung von Dokumentationswert",
+                    "correct": false
+                },
+                {
+                    "text": "Zur besseren Planung zukünftiger Tests",
+                    "correct": true
+                },
+                {
+                    "text": "Zur Schulung neuer Entwickler",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was kann verwendet werden, um Testfortschrittstrends über die Zeit darzustellen?",
+            "explanation": "Testausführungsdiagramme visualisieren den Fortschritt über die Zeit, indem sie erfolgreiche, fehlgeschlagene und blockierte Tests darstellen. So lassen sich Trends und mögliche Probleme frühzeitig erkennen. (5.3_Testüberwachung_und_-steuerung.md)",
+            "options": [
+                {
+                    "text": "Besprechungsnotizen",
+                    "correct": false
+                },
+                {
+                    "text": "Testausführungsdiagramme",
+                    "correct": true
+                },
+                {
+                    "text": "Tastenkombinationen",
+                    "correct": false
+                },
+                {
+                    "text": "Code-Einrückungsberichte",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Wie wird typischerweise ein Testzusammenfassungsbericht erstellt?",
+            "explanation": "Ein Testzusammenfassungsbericht wird nach Abschluss der Testdurchführung erstellt und fasst die Testergebnisse, Abweichungen, Restrisiken und Lessons Learned zusammen. (5.3.2_Zweck,_Inhalt_und_Zielgruppen_für_Testberichte.md)",
+            "options": [
+                {
+                    "text": "Vor der Testplanung",
+                    "correct": false
+                },
+                {
+                    "text": "Vor der Anforderungsanalyse",
+                    "correct": false
+                },
+                {
+                    "text": "Nach Abschluss der Testdurchführung",
+                    "correct": true
+                },
+                {
+                    "text": "Während der Implementierung",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist ein Ziel des Testmanagements?",
+            "explanation": "Ein zentrales Ziel des Testmanagements ist es, Testaktivitäten zu planen, zu überwachen und zu steuern, um sicherzustellen, dass die Testziele effizient und effektiv erreicht werden. (5.1_Testplanung.md, 5.3_Testüberwachung_und_-steuerung.md)",
+            "options": [
+                {
+                    "text": "Quellcode entwickeln",
+                    "correct": false
+                },
+                {
+                    "text": "Produkt verkaufen",
+                    "correct": false
+                },
+                {
+                    "text": "Testaktivitäten planen, überwachen und steuern",
+                    "correct": true
+                },
+                {
+                    "text": "UI-Layouts entwerfen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Nutzen davon, Testziele mit Geschäftsziele abzustimmen?",
+            "explanation": "Die Abstimmung von Testzielen mit den Geschäftsziele stellt sicher, dass das Testen den Geschäftswert unterstützt und auf die Bedürfnisse der Stakeholder ausgerichtet ist. (1.1.1_Testziele.md)",
+            "options": [
+                {
+                    "text": "Um die Anzahl der Testfälle zu reduzieren",
+                    "correct": false
+                },
+                {
+                    "text": "Um Nutzerfeedback zu vermeiden",
+                    "correct": false
+                },
+                {
+                    "text": "Um sicherzustellen, dass Testen dem Geschäftswert dient",
+                    "correct": true
+                },
+                {
+                    "text": "Um Fehlerberichte zu vermeiden",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Welche der folgenden Aktivitäten gehört nicht zu den Kernaufgaben der Teststeuerung?",
+            "explanation": "Die Teststeuerung umfasst Maßnahmen wie die Anpassung von Zeitplänen, die Neubewertung von Risiken oder die Umverteilung von Ressourcen. Die Ausführung von Testfällen gehört jedoch zum operativen Testen und nicht zu den Kernaufgaben der Steuerung. (5.3_Testüberwachung_und_-steuerung.md)",
+            "options": [
+                {
+                    "text": "Zeitpläne anpassen",
+                    "correct": false
+                },
+                {
+                    "text": "Risikeniveau aktualisieren",
+                    "correct": false
+                },
+                {
+                    "text": "Testfälle ausführen",
+                    "correct": true
+                },
+                {
+                    "text": "Ressourcen neu zuweisen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Warum ist es wichtig, offene Defekte zu verfolgen?",
+            "explanation": "Das Verfolgen offener Defekte liefert wichtige Informationen für die Entscheidung, ob ein System freigegeben werden kann. Es unterstützt die Bewertung der Freigabebereitschaft und des Restrisikos. (5.3_Testüberwachung_und_-steuerung.md)",
+            "options": [
+                {
+                    "text": "Um die Leistung der Anwendung zu verbessern",
+                    "correct": false
+                },
+                {
+                    "text": "Um zu entscheiden, welche Tests übersprungen werden",
+                    "correct": false
+                },
+                {
+                    "text": "Um Entscheidungen zur Freigabebereitschaft zu unterstützen",
+                    "correct": true
+                },
+                {
+                    "text": "Um Produktverbesserung zu erstellen",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was hilft, die Testabdeckung aller geplanten Bereiche sicherzustellen?",
+            "explanation": "Eine Rückverfolgbarkeitsmatrix verknüpft Anforderungen mit den entsprechenden Testfällen und stellt so sicher, dass alle geplanten Bereiche durch Tests abgedeckt werden. (1.4.4_Rückverfolgbarkeit.md)",
+            "options": [
+                {
+                    "text": "Systemarchitektur-Dokument",
+                    "correct": false
+                },
+                {
+                    "text": "Testzusammenfassungsbericht",
+                    "correct": false
+                },
+                {
+                    "text": "Rückverfolgbarkeitsmatrix",
+                    "correct": true
+                },
+                {
+                    "text": "Code-Repository",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist der Nutzen messbarer Testziele?",
+            "explanation": "Messbare Testziele ermöglichen es, Fortschritt und Qualität objektiv zu bewerten und den Erfolg des Testprozesses zu messen. (1.1.1_Testziele.md)",
+            "options": [
+                {
+                    "text": "Sie ersetzen Testskripte",
+                    "correct": false
+                },
+                {
+                    "text": "Sie unterstützen die Softwarearchitektur",
+                    "correct": false
+                },
+                {
+                    "text": "Sie helfen, den Testerfolg zu bewerten",
+                    "correct": true
+                },
+                {
+                    "text": "Sie machen Dokumentation überflüssig",
+                    "correct": false
+                }
+            ]
+        }
+    ]
 }

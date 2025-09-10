@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Worauf basiert der checklistenbasierte Test?",
-            "explanation": "Der Tester entwirft und führt Tests aus, um Testbedingungen aus einer Checkliste abzudecken. (Kap. 4.4.3)",
+            "explanation": "Der Tester entwirft und führt Tests aus, um Testbedingungen aus einer Checkliste abzudecken. (4.4.3_Checklistenbasierter_Test.md)",
             "options": [
                 {
                     "text": "Auf der Ausführung von Testfällen aus einer Checkliste",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Elemente sollten in Checklisten NICHT enthalten sein?",
-            "explanation": "Nicht geeignet sind automatisch prüfbare Elemente, Eingangskriterien/Endekriterien oder zu allgemeine Punkte. (Kap. 4.4.3)",
+            "explanation": "Nicht geeignet sind automatisch prüfbare Elemente, Eingangskriterien/Endekriterien oder zu allgemeine Punkte. (4.4.3_Checklistenbasierter_Test.md)",
             "options": [
                 {
                     "text": "Erfahrungsbasierte Fehlerarten",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Wie sind Elemente einer Checkliste typischerweise formuliert?",
-            "explanation": "Die Elemente sind häufig in Form von Fragen formuliert und müssen einzeln prüfbar sein. (Kap. 4.4.3)",
+            "explanation": "Die Elemente sind häufig in Form von Fragen formuliert und müssen einzeln prüfbar sein. (4.4.3_Checklistenbasierter_Test.md)",
             "options": [
                 {
                     "text": "Als Code-Snippets",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Wofür können Checklisten genutzt werden?",
-            "explanation": "Checklisten können funktionale und nicht-funktionale Tests unterstützen, z. B. Gebrauchstauglichkeitstests. (Kap. 4.4.3)",
+            "explanation": "Checklisten können funktionale und nicht-funktionale Tests unterstützen, z. B. Gebrauchstauglichkeitstests. (4.4.3_Checklistenbasierter_Test.md)",
             "options": [
                 {
                     "text": "Nur für funktionale Tests",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Warum sollten Checklisten regelmäßig aktualisiert werden?",
-            "explanation": "Weil Entwickler alte Fehler vermeiden lernen und neue Fehlerzustände hinzukommen können. (Kap. 4.4.3)",
+            "explanation": "Weil Entwickler alte Fehler vermeiden lernen und neue Fehlerzustände hinzukommen können. (4.4.3_Checklistenbasierter_Test.md)",
             "options": [
                 {
                     "text": "Weil Checklisten sonst zu kurz bleiben",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Eigenschaft hat checklistenbasiertes Testen bei generischen Checklisten?",
-            "explanation": "Generische Checklisten führen zu größerer Überdeckung, aber weniger Wiederholbarkeit. (Kap. 4.4.3)",
+            "explanation": "Generische Checklisten führen zu größerer Überdeckung, aber weniger Wiederholbarkeit. (4.4.3_Checklistenbasierter_Test.md)",
             "options": [
                 {
                     "text": "Mehr Überdeckung, aber weniger Wiederholbarkeit",

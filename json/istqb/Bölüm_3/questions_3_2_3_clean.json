@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welche Rolle spielt der Manager im Reviewprozess?",
-            "explanation": "Der Manager entscheidet, was geprüft wird, und stellt Ressourcen wie Personal und Zeit bereit. (Originalsatz: 'Manager – entscheidet, was geprüft werden soll, und stellt Ressourcen ... zur Verfügung.')",
+            "explanation": "Der Manager entscheidet, was geprüft wird, und stellt Ressourcen wie Personal und Zeit bereit. (Originalsatz: 'Manager – entscheidet, was geprüft werden soll, und stellt Ressourcen ... zur Verfügung.')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Er entscheidet über den Reviewumfang und stellt Ressourcen bereit",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Ressourcen stellt der Manager im Rahmen von Reviews zur Verfügung?",
-            "explanation": "Zu den Ressourcen gehören Personal und Zeit. (Originalsatz: '... stellt Ressourcen wie Personal und Zeit für das Review zur Verfügung.')",
+            "explanation": "Zu den Ressourcen gehören Personal und Zeit. (Originalsatz: '... stellt Ressourcen wie Personal und Zeit für das Review zur Verfügung.')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Werkzeuge für dynamische Tests",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche Aussage beschreibt die Verantwortung des Managers korrekt?",
-            "explanation": "Er legt fest, was geprüft wird, und ermöglicht das Review durch Ressourcenbereitstellung. (Originalsatz: '... entscheidet, was geprüft werden soll ... stellt Ressourcen ... zur Verfügung.')",
+            "explanation": "Er legt fest, was geprüft wird, und ermöglicht das Review durch Ressourcenbereitstellung. (Originalsatz: '... entscheidet, was geprüft werden soll ... stellt Ressourcen ... zur Verfügung.')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Er bewertet die Qualität des Arbeitsergebnisses",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Hauptaufgabe hat der Autor im Reviewprozess?",
-            "explanation": "Der Autor erstellt das Arbeitsergebnis, das geprüft wird. (Originalsatz: 'Autor – erstellt ... das zu prüfende Arbeitsergebnis.')",
+            "explanation": "Der Autor erstellt das Arbeitsergebnis, das geprüft wird. (Originalsatz: 'Autor – erstellt ... das zu prüfende Arbeitsergebnis.')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Das zu prüfende Arbeitsergebnis erstellen",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche weitere Verantwortung trägt der Autor neben dem Erstellen?",
-            "explanation": "Der Autor korrigiert das Arbeitsergebnis, wenn Anomalien festgestellt wurden. (Originalsatz: '... erstellt und korrigiert das zu prüfende Arbeitsergebnis.')",
+            "explanation": "Der Autor korrigiert das Arbeitsergebnis, wenn Anomalien festgestellt wurden. (Originalsatz: '... erstellt und korrigiert das zu prüfende Arbeitsergebnis.')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Er entscheidet, was geprüft wird",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Was gehört NICHT zu den Aufgaben des Autors?",
-            "explanation": "Der Autor ist nicht für die Moderation des Reviews zuständig. (Abgrenzung: '... erstellt und korrigiert ...')",
+            "explanation": "Der Autor ist nicht für die Moderation des Reviews zuständig. (Abgrenzung: '... erstellt und korrigiert ...')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Das Arbeitsergebnis erstellen",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche Verantwortung übernimmt der Autor, nachdem Anomalien im Review gefunden wurden?",
-            "explanation": "Der Autor korrigiert das Arbeitsergebnis. (Originalsatz: '... erstellt und korrigiert ...')",
+            "explanation": "Der Autor korrigiert das Arbeitsergebnis. (Originalsatz: '... erstellt und korrigiert ...')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Er moderiert das nächste Meeting",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Welche Hauptaufgabe hat der Moderator im Reviewprozess?",
-            "explanation": "Der Moderator sorgt für einen effektiven Ablauf der Reviewsitzungen, inkl. Mediation, Zeitmanagement und einer geschützten Umgebung. (Originalsatz: 'Moderator ... sorgt für einen effektiven Ablauf ...')",
+            "explanation": "Der Moderator sorgt für einen effektiven Ablauf der Reviewsitzungen, inkl. Mediation, Zeitmanagement und einer geschützten Umgebung. (Originalsatz: 'Moderator ... sorgt für einen effektiven Ablauf ...')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Effektiver Ablauf mit Mediation und Zeitmanagement",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Was stellt der Moderator in einer Reviewsitzung sicher?",
-            "explanation": "Er schafft eine geschützte Umgebung, in der jeder frei sprechen kann. (Originalsatz: '... eine geschützte Reviewumgebung, in der jeder frei sprechen kann.')",
+            "explanation": "Er schafft eine geschützte Umgebung, in der jeder frei sprechen kann. (Originalsatz: '... eine geschützte Reviewumgebung, in der jeder frei sprechen kann.')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Er verwaltet die Ressourcen",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Welche Aufgabe hat der Protokollant?",
-            "explanation": "Der Protokollant sammelt Anomalien und zeichnet Entscheidungen und Informationen auf. (Originalsatz: 'Protokollant – sammelt Anomalien ... und zeichnet Reviewinformationen auf.')",
+            "explanation": "Der Protokollant sammelt Anomalien und zeichnet Entscheidungen und Informationen auf. (Originalsatz: 'Protokollant – sammelt Anomalien ... und zeichnet Reviewinformationen auf.')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Er moderiert die Sitzung",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welche Information wird typischerweise vom Protokollanten festgehalten?",
-            "explanation": "Anomalien, Entscheidungen und neue Befunde während der Sitzung. (Originalsatz: '... z. B. Entscheidungen und neue Anomalien ...')",
+            "explanation": "Anomalien, Entscheidungen und neue Befunde während der Sitzung. (Originalsatz: '... z. B. Entscheidungen und neue Anomalien ...')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Nur die Projektlaufzeit",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Welche Rolle führt Reviews durch?",
-            "explanation": "Gutachter (Reviewer) führen die Reviews durch. (Originalsatz: 'Gutachter – führt Reviews durch ...')",
+            "explanation": "Gutachter (Reviewer) führen die Reviews durch. (Originalsatz: 'Gutachter – führt Reviews durch ...')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Der Gutachter",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Wer kann als Gutachter fungieren?",
-            "explanation": "Ein Gutachter kann ein Projektmitarbeiter, ein Fachexperte oder ein Stakeholder sein. (Originalsatz: '... kann ein Projektmitarbeiter, ein Fachexperte oder ein anderer Stakeholder sein.')",
+            "explanation": "Ein Gutachter kann ein Projektmitarbeiter, ein Fachexperte oder ein Stakeholder sein. (Originalsatz: '... kann ein Projektmitarbeiter, ein Fachexperte oder ein anderer Stakeholder sein.')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Nur der Projektmanager",
@@ -357,7 +357,7 @@
         },
         {
             "question": "Welche Verantwortung trägt der Reviewleiter?",
-            "explanation": "Der Reviewleiter hat die Gesamtverantwortung, z. B. wer teilnimmt und wann/wo das Review stattfindet. (Originalsatz: 'Reviewleiter – übernimmt die Gesamtverantwortung ...')",
+            "explanation": "Der Reviewleiter hat die Gesamtverantwortung, z. B. wer teilnimmt und wann/wo das Review stattfindet. (Originalsatz: 'Reviewleiter – übernimmt die Gesamtverantwortung ...')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Er dokumentiert nur die Anomalien",
@@ -379,7 +379,7 @@
         },
         {
             "question": "Welche organisatorischen Entscheidungen trifft der Reviewleiter?",
-            "explanation": "Der Reviewleiter entscheidet, wer teilnimmt und wo/wann das Review stattfindet. (Originalsatz: '... die Entscheidung, wer daran teilnimmt, und die Organisation, wann und wo ...')",
+            "explanation": "Der Reviewleiter entscheidet, wer teilnimmt und wo/wann das Review stattfindet. (Originalsatz: '... die Entscheidung, wer daran teilnimmt, und die Organisation, wann und wo ...')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Über Budget und Verträge",
@@ -401,7 +401,7 @@
         },
         {
             "question": "Welche Aussage zu Rollen bei Reviews ist korrekt?",
-            "explanation": "Neben den Hauptrollen können weitere Rollen nach ISO/IEC 20246 definiert werden. (Originalsatz: 'Andere, detailliertere Rollen sind möglich ...')",
+            "explanation": "Neben den Hauptrollen können weitere Rollen nach ISO/IEC 20246 definiert werden. (Originalsatz: 'Andere, detailliertere Rollen sind möglich ...')(3.2.3_Rollen_und_Verantwortlichkeiten_bei_Reviews_Manager.md)",
             "options": [
                 {
                     "text": "Nur die vier Hauptrollen sind erlaubt",

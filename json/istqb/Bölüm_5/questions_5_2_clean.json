@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was ist das Hauptziel von Risikomanagement?",
-            "explanation": "Risikomanagement erhöht die Wahrscheinlichkeit der Zielerreichung, verbessert die Qualität und stärkt das Vertrauen der Stakeholder. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Risikomanagement erhöht die Wahrscheinlichkeit der Zielerreichung, verbessert die Qualität und stärkt das Vertrauen der Stakeholder. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Erhöhung der Wahrscheinlichkeit der Zielerreichung",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Norm definiert Risikomanagement als Umgang mit Unsicherheiten?",
-            "explanation": "ISO 31000 beschreibt Risikomanagement als Umgang mit internen und externen Faktoren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "ISO 31000 beschreibt Risikomanagement als Umgang mit internen und externen Faktoren. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "ISO 25010",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche zwei Hauptaktivitäten umfasst die Risikoanalyse?",
-            "explanation": "Die Risikoanalyse besteht aus Risikoidentifizierung und Risikobewertung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Die Risikoanalyse besteht aus Risikoidentifizierung und Risikobewertung. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Risikoidentifizierung und Risikobewertung",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche zwei Hauptaktivitäten umfasst die Risikosteuerung?",
-            "explanation": "Die Risikosteuerung besteht aus Risikominderung und Risikoüberwachung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Die Risikosteuerung besteht aus Risikominderung und Risikoüberwachung. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Risikoidentifizierung und Risikobewertung",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Wie wirkt sich Risikomanagement auf die Stakeholder aus?",
-            "explanation": "Es stärkt das Vertrauen der Stakeholder in die Zielerreichung und Produktqualität. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Es stärkt das Vertrauen der Stakeholder in die Zielerreichung und Produktqualität. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Stakeholder verlieren Vertrauen in die Prozesse",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Was beschreibt ein risikobasierter Test?",
-            "explanation": "Ein Testansatz, bei dem Testaktivitäten auf Basis von Risikoanalyse und Risikosteuerung ausgewählt und priorisiert werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Ein Testansatz, bei dem Testaktivitäten auf Basis von Risikoanalyse und Risikosteuerung ausgewählt und priorisiert werden. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Ein Testansatz ohne Berücksichtigung von Risiken",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Faktoren machen Organisationen unsicher bei der Zielerreichung?",
-            "explanation": "Interne und externe Faktoren können die Zielerreichung unsicher machen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Interne und externe Faktoren können die Zielerreichung unsicher machen. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Interne und externe Faktoren",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche Aktivität gehört NICHT zum Risikomanagement?",
-            "explanation": "Testdurchführung gehört nicht zu den Kernaktivitäten des Risikomanagements. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Testdurchführung gehört nicht zu den Kernaktivitäten des Risikomanagements. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Risikoanalyse",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche Aktivität ist Teil der Risikosteuerung?",
-            "explanation": "Risikominderung gehört zur Risikosteuerung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Risikominderung gehört zur Risikosteuerung. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Risikominderung",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welcher Nutzen entsteht durch Risikoanalyse im Testprozess?",
-            "explanation": "Sie hilft, Risiken zu identifizieren und zu bewerten, um Testaktivitäten zu priorisieren. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Sie hilft, Risiken zu identifizieren und zu bewerten, um Testaktivitäten zu priorisieren. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Risiken werden identifiziert und bewertet",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Was bedeutet Risikominderung?",
-            "explanation": "Risikominderung beschreibt Maßnahmen, um Risiken zu reduzieren oder auf einem akzeptablen Niveau zu halten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "explanation": "Risikominderung beschreibt Maßnahmen, um Risiken zu reduzieren oder auf einem akzeptablen Niveau zu halten. (5.2_Risikomanagement.md.4)",
             "options": [
                 {
                     "text": "Risiken bewusst ignorieren",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Was bedeutet Risikoüberwachung?",
-            "explanation": "Risikoüberwachung beschreibt die laufende Kontrolle des Status bekannter Risiken und deren Kommunikation. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2.4)",
+            "explanation": "Risikoüberwachung beschreibt die laufende Kontrolle des Status bekannter Risiken und deren Kommunikation. (5.2_Risikomanagement.md.4)",
             "options": [
                 {
                     "text": "Neue Risiken erfinden",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Wie unterstützt ein risikobasierter Test die Testpriorisierung?",
-            "explanation": "Er sorgt dafür, dass Testaktivitäten mit Bezug auf die wichtigsten Risiken zuerst durchgeführt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Er sorgt dafür, dass Testaktivitäten mit Bezug auf die wichtigsten Risiken zuerst durchgeführt werden. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Testaktivitäten werden zufällig ausgeführt",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welcher Zusammenhang besteht zwischen Risikomanagement und Produktqualität?",
-            "explanation": "Durch Risikomanagement können Organisationen die Qualität ihrer Produkte verbessern. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Durch Risikomanagement können Organisationen die Qualität ihrer Produkte verbessern. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Es senkt die Produktqualität",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Wie beeinflusst Risikomanagement die Wahrscheinlichkeit der Zielerreichung?",
-            "explanation": "Risikomanagement erhöht die Wahrscheinlichkeit, dass Organisationsziele erreicht werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.2)",
+            "explanation": "Risikomanagement erhöht die Wahrscheinlichkeit, dass Organisationsziele erreicht werden. (5.2_Risikomanagement.md)",
             "options": [
                 {
                     "text": "Es verringert die Zielerreichung",

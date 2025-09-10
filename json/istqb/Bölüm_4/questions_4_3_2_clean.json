@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was ist ein Zweig im Kontext des Zweigtests?",
-            "explanation": "Ein Zweig ist ein Kontrollübergang zwischen zwei Knoten im Kontrollflussgraph. (Kap. 4.3.2)",
+            "explanation": "Ein Zweig ist ein Kontrollübergang zwischen zwei Knoten im Kontrollflussgraph. (4.3.2_Zweigtest_und_Zweigüberdeckung.md)",
             "options": [
                 {
                     "text": "Ein Datenfluss zwischen zwei Modulen",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Was sind die Überdeckungselemente beim Zweigtest?",
-            "explanation": "Beim Zweigtest sind die Zweige selbst die Überdeckungselemente. (Kap. 4.3.2)",
+            "explanation": "Beim Zweigtest sind die Zweige selbst die Überdeckungselemente. (4.3.2_Zweigtest_und_Zweigüberdeckung.md)",
             "options": [
                 {
                     "text": "Die Anweisungen",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Wie wird die Zweigüberdeckung gemessen?",
-            "explanation": "Anzahl der durch Testfälle ausgeführten Zweige geteilt durch die Gesamtzahl der Zweige × 100%. (Kap. 4.3.2)",
+            "explanation": "Anzahl der durch Testfälle ausgeführten Zweige geteilt durch die Gesamtzahl der Zweige × 100%. (4.3.2_Zweigtest_und_Zweigüberdeckung.md)",
             "options": [
                 {
                     "text": "Ausgeführte Zweige / Gesamtzahl der Zweige × 100%",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Was bedeutet eine 100%ige Zweigüberdeckung?",
-            "explanation": "Alle unbedingten und bedingten Zweige des Codes werden durch Testfälle ausgeführt. (Kap. 4.3.2)",
+            "explanation": "Alle unbedingten und bedingten Zweige des Codes werden durch Testfälle ausgeführt. (4.3.2_Zweigtest_und_Zweigüberdeckung.md)",
             "options": [
                 {
                     "text": "Alle Anweisungen wurden mindestens einmal ausgeführt",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Warum deckt die Ausführung eines Zweigs mit einem Testfall nicht unbedingt alle Fehlerzustände auf?",
-            "explanation": "Einige Fehler treten nur auf, wenn ein bestimmter Pfad durchlaufen wird, nicht bei jedem Zweig. (Kap. 4.3.2)",
+            "explanation": "Einige Fehler treten nur auf, wenn ein bestimmter Pfad durchlaufen wird, nicht bei jedem Zweig. (4.3.2_Zweigtest_und_Zweigüberdeckung.md)",
             "options": [
                 {
                     "text": "Weil Zweige keine Fehlerzustände enthalten können",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Beziehung besteht zwischen Anweisungs- und Zweigüberdeckung?",
-            "explanation": "100% Zweigüberdeckung impliziert auch 100% Anweisungsüberdeckung, aber nicht umgekehrt. (Kap. 4.3.2)",
+            "explanation": "100% Zweigüberdeckung impliziert auch 100% Anweisungsüberdeckung, aber nicht umgekehrt. (4.3.2_Zweigtest_und_Zweigüberdeckung.md)",
             "options": [
                 {
                     "text": "100% Anweisungsüberdeckung garantiert 100% Zweigüberdeckung",

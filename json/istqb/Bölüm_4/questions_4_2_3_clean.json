@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Wofür werden Entscheidungstabellen im Testen eingesetzt?",
-            "explanation": "Sie werden genutzt, um die Umsetzung von Anforderungen zu prüfen, die verschiedene Kombinationen von Bedingungen und Ergebnissen beschreiben. (Kap. 4.2.3)",
+            "explanation": "Sie werden genutzt, um die Umsetzung von Anforderungen zu prüfen, die verschiedene Kombinationen von Bedingungen und Ergebnissen beschreiben. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Zur Messung der Codeüberdeckung",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Warum sind Entscheidungstabellen ein effektives Mittel?",
-            "explanation": "Sie helfen, komplexe Logik wie Geschäftsregeln übersichtlich darzustellen und zu testen. (Kap. 4.2.3)",
+            "explanation": "Sie helfen, komplexe Logik wie Geschäftsregeln übersichtlich darzustellen und zu testen. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Weil sie den Testaufwand automatisch reduzieren",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Wie sind Bedingungen und Aktionen in einer Entscheidungstabelle angeordnet?",
-            "explanation": "Bedingungen und Aktionen bilden die Zeilen der Tabelle. (Kap. 4.2.3)",
+            "explanation": "Bedingungen und Aktionen bilden die Zeilen der Tabelle. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Sie bilden die Zeilen der Tabelle",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Was stellt eine Spalte in einer Entscheidungstabelle dar?",
-            "explanation": "Jede Spalte entspricht einer Entscheidungsregel, also einer Kombination von Bedingungen und zugehörigen Aktionen. (Kap. 4.2.3)",
+            "explanation": "Jede Spalte entspricht einer Entscheidungsregel, also einer Kombination von Bedingungen und zugehörigen Aktionen. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Eine zufällige Eingabe",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Wie unterscheiden sich eingeschränkte und erweiterte Eingaben in Entscheidungstabellen?",
-            "explanation": "Eingeschränkte Eingabe: boolesche Werte (wahr/falsch). Erweiterte Eingabe: Bedingungen/Aktionen können mehrere Werte annehmen. (Kap. 4.2.3)",
+            "explanation": "Eingeschränkte Eingabe: boolesche Werte (wahr/falsch). Erweiterte Eingabe: Bedingungen/Aktionen können mehrere Werte annehmen. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Eingeschränkt = boolesch, erweitert = mehrere Werte möglich",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Bedeutung hat die Notation \"J\" in einer Entscheidungstabelle?",
-            "explanation": "\"J\" bedeutet, dass die Bedingung erfüllt ist. (Kap. 4.2.3)",
+            "explanation": "\"J\" bedeutet, dass die Bedingung erfüllt ist. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "\"J\" bedeutet, dass die Bedingung erfüllt ist",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Was bedeutet das Symbol \"-\" in einer Entscheidungstabelle?",
-            "explanation": "\"-\" bedeutet, dass der Wert der Bedingung für das Ergebnis irrelevant ist. (Kap. 4.2.3)",
+            "explanation": "\"-\" bedeutet, dass der Wert der Bedingung für das Ergebnis irrelevant ist. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "\"-\" bedeutet, dass die Bedingung erfüllt ist",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche Notation wird für Aktionen verwendet, die ausgeführt werden sollen?",
-            "explanation": "\"X\" steht in Entscheidungstabellen für Aktionen, die stattfinden sollen. (Kap. 4.2.3)",
+            "explanation": "\"X\" steht in Entscheidungstabellen für Aktionen, die stattfinden sollen. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Ein leeres Feld",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Wann gilt eine Entscheidungstabelle als vollständig?",
-            "explanation": "Eine Tabelle ist vollständig, wenn genügend Spalten vorhanden sind, um jede Kombination von Bedingungen abzudecken. (Kap. 4.2.3)",
+            "explanation": "Eine Tabelle ist vollständig, wenn genügend Spalten vorhanden sind, um jede Kombination von Bedingungen abzudecken. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Wenn jede Kombination von Bedingungen abgedeckt ist",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Wie kann eine Entscheidungstabelle minimiert werden?",
-            "explanation": "Spalten, in denen bestimmte Bedingungen keinen Einfluss haben, können zusammengefasst werden. (Kap. 4.2.3)",
+            "explanation": "Spalten, in denen bestimmte Bedingungen keinen Einfluss haben, können zusammengefasst werden. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Indem irrelevante Bedingungen ignoriert werden",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Was sind die Überdeckungselemente beim Entscheidungstabellentest?",
-            "explanation": "Die Spalten mit ausführbaren Kombinationen von Bedingungen sind die Überdeckungselemente. (Kap. 4.2.3)",
+            "explanation": "Die Spalten mit ausführbaren Kombinationen von Bedingungen sind die Überdeckungselemente. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Die Testfälle",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Wann ist beim Entscheidungstabellentest eine 100%ige Überdeckung erreicht?",
-            "explanation": "Wenn Testfälle alle ausführbaren Spalten der Entscheidungstabelle ausführen. (Kap. 4.2.3)",
+            "explanation": "Wenn Testfälle alle ausführbaren Spalten der Entscheidungstabelle ausführen. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Wenn alle Bedingungswerte abgedeckt sind",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Welche Stärke hat der Entscheidungstabellentest?",
-            "explanation": "Er bietet einen systematischen Ansatz, um alle Kombinationen von Bedingungen zu identifizieren und deckt auch übersehene Fälle auf. (Kap. 4.2.3)",
+            "explanation": "Er bietet einen systematischen Ansatz, um alle Kombinationen von Bedingungen zu identifizieren und deckt auch übersehene Fälle auf. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Er identifiziert automatisch die Grenzwerte",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Welche weitere Stärke hat der Entscheidungstabellentest neben der Identifizierung von Kombinationen?",
-            "explanation": "Er hilft, Lücken oder Widersprüche in den Anforderungen zu finden. (Kap. 4.2.3)",
+            "explanation": "Er hilft, Lücken oder Widersprüche in den Anforderungen zu finden. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Er reduziert die Anzahl der Testfälle automatisch",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Warum kann die Anwendung des Entscheidungstabellentests zeitaufwendig sein?",
-            "explanation": "Die Anzahl der Entscheidungsregeln wächst exponentiell mit der Anzahl der Bedingungen. (Kap. 4.2.3)",
+            "explanation": "Die Anzahl der Entscheidungsregeln wächst exponentiell mit der Anzahl der Bedingungen. (4.2.3_Entscheidungstabellentest.md)",
             "options": [
                 {
                     "text": "Weil jede Bedingung nur manuell getestet werden kann",

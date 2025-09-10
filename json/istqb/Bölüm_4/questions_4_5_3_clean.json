@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was ist ATDD im Kontext des Testens?",
-            "explanation": "ATDD ist ein Test-First-Ansatz, bei dem Testfälle vor der Implementierung der User-Story erstellt werden. (Kap. 4.5.3)",
+            "explanation": "ATDD ist ein Test-First-Ansatz, bei dem Testfälle vor der Implementierung der User-Story erstellt werden. (4.5.3_Abnahmetestgetriebene_Entwicklung.md)",
             "options": [
                 {
                     "text": "Ein exploratives Testverfahren",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Wer erstellt die Testfälle im Rahmen von ATDD?",
-            "explanation": "Die Testfälle werden von Teammitgliedern mit unterschiedlichen Perspektiven erstellt, z. B. Kunden, Entwicklern und Testern. (Kap. 4.5.3)",
+            "explanation": "Die Testfälle werden von Teammitgliedern mit unterschiedlichen Perspektiven erstellt, z. B. Kunden, Entwicklern und Testern. (4.5.3_Abnahmetestgetriebene_Entwicklung.md)",
             "options": [
                 {
                     "text": "Nur das Testteam",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welcher erste Schritt ist typisch im ATDD-Prozess?",
-            "explanation": "Ein Spezifikationsworkshop, in dem User-Story und Akzeptanzkriterien analysiert und präzisiert werden. (Kap. 4.5.3)",
+            "explanation": "Ein Spezifikationsworkshop, in dem User-Story und Akzeptanzkriterien analysiert und präzisiert werden. (4.5.3_Abnahmetestgetriebene_Entwicklung.md)",
             "options": [
                 {
                     "text": "Die Implementierung des Features",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche Arten von Testfällen werden typischerweise zuerst im ATDD erstellt?",
-            "explanation": "Die ersten Testfälle sind meist positive Tests, die den korrekten Ablauf ohne Fehler bestätigen. (Kap. 4.5.3)",
+            "explanation": "Die ersten Testfälle sind meist positive Tests, die den korrekten Ablauf ohne Fehler bestätigen. (4.5.3_Abnahmetestgetriebene_Entwicklung.md)",
             "options": [
                 {
                     "text": "Negativtests mit ungültigen Eingaben",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Was folgt nach der Erstellung positiver Testfälle im ATDD?",
-            "explanation": "Nach den positiven Tests sollte das Team Negativtests und Tests für nicht-funktionale Merkmale durchführen. (Kap. 4.5.3)",
+            "explanation": "Nach den positiven Tests sollte das Team Negativtests und Tests für nicht-funktionale Merkmale durchführen. (4.5.3_Abnahmetestgetriebene_Entwicklung.md)",
             "options": [
                 {
                     "text": "Automatisierung der Testfälle",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Anforderung gilt für die Testfälle im ATDD?",
-            "explanation": "Sie müssen alle Merkmale der User-Story abdecken, dürfen aber nicht darüber hinausgehen, und keine zwei Testfälle dürfen dasselbe Merkmal beschreiben. (Kap. 4.5.3)",
+            "explanation": "Sie müssen alle Merkmale der User-Story abdecken, dürfen aber nicht darüber hinausgehen, und keine zwei Testfälle dürfen dasselbe Merkmal beschreiben. (4.5.3_Abnahmetestgetriebene_Entwicklung.md)",
             "options": [
                 {
                     "text": "Sie müssen zusätzliche Features enthalten",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Wie werden Abnahmetests im ATDD zu ausführbaren Anforderungen?",
-            "explanation": "Wenn die Testfälle in einem von Testautomatisierungsframeworks unterstützten Format vorliegen, können Entwickler sie automatisieren. (Kap. 4.5.3)",
+            "explanation": "Wenn die Testfälle in einem von Testautomatisierungsframeworks unterstützten Format vorliegen, können Entwickler sie automatisieren. (4.5.3_Abnahmetestgetriebene_Entwicklung.md)",
             "options": [
                 {
                     "text": "Indem sie als User-Stories ins Backlog geschrieben werden",

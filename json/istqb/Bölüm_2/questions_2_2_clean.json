@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was sind Teststufen im Wesentlichen?",
-            "explanation": "Teststufen sind Gruppen von Testaktivitäten, die gemeinsam organisiert und verwaltet werden. (ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE, Abschnitt 2.2)",
+            "explanation": "Teststufen sind Gruppen von Testaktivitäten, die gemeinsam organisiert und verwaltet werden. (2.2_Teststufen_und_Testarten.md)",
             "options": [
                 {
                     "text": "Einzelne Testfälle",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Was charakterisiert jede Teststufe?",
-            "explanation": "Jede Teststufe ist eine Instanz des Testprozesses, die in Bezug auf Software in einer bestimmten Entwicklungsphase durchgeführt wird. (Abschnitt 2.2)",
+            "explanation": "Jede Teststufe ist eine Instanz des Testprozesses, die in Bezug auf Software in einer bestimmten Entwicklungsphase durchgeführt wird. (2.2_Teststufen_und_Testarten.md)",
             "options": [
                 {
                     "text": "Sie ist eine Instanz des Testprozesses",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Bandbreite decken Teststufen ab?",
-            "explanation": "Von einzelnen Komponenten bis hin zu kompletten Systemen oder gegebenenfalls Systemen von Systemen. (Abschnitt 2.2)",
+            "explanation": "Von einzelnen Komponenten bis hin zu kompletten Systemen oder gegebenenfalls Systemen von Systemen. (2.2_Teststufen_und_Testarten.md)",
             "options": [
                 {
                     "text": "Nur Komponenten",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Wie stehen Teststufen im SDLC in Beziehung?",
-            "explanation": "Teststufen stehen in Beziehung zu anderen Aktivitäten innerhalb des SDLC. (Abschnitt 2.2)",
+            "explanation": "Teststufen stehen in Beziehung zu anderen Aktivitäten innerhalb des SDLC. (2.2_Teststufen_und_Testarten.md)",
             "options": [
                 {
                     "text": "Sie stehen in Beziehung zu anderen Aktivitäten im SDLC",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Wie werden Teststufen in sequenziellen SDLC-Modellen oft definiert?",
-            "explanation": "In sequenziellen SDLC-Modellen sind die Teststufen oft so definiert, dass die Endekriterien einer Stufe Teil der Eingangskriterien für die nächste Stufe sind. (Abschnitt 2.2)",
+            "explanation": "In sequenziellen SDLC-Modellen sind die Teststufen oft so definiert, dass die Endekriterien einer Stufe Teil der Eingangskriterien für die nächste Stufe sind. (2.2_Teststufen_und_Testarten.md)",
             "options": [
                 {
                     "text": "Endekriterien einer Stufe sind Teil der Eingangskriterien der nächsten Stufe",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Trifft die Abhängigkeit der End- und Eingangskriterien auch in iterativen Modellen zu?",
-            "explanation": "In einigen iterativen Modellen trifft dies nicht zu. (Abschnitt 2.2)",
+            "explanation": "In einigen iterativen Modellen trifft dies nicht zu. (2.2_Teststufen_und_Testarten.md)",
             "options": [
                 {
                     "text": "Ja, immer",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Wie verhalten sich Entwicklungsaktivitäten zu Teststufen?",
-            "explanation": "Entwicklungsaktivitäten können sich über mehrere Teststufen erstrecken. (Abschnitt 2.2)",
+            "explanation": "Entwicklungsaktivitäten können sich über mehrere Teststufen erstrecken. (2.2_Teststufen_und_Testarten.md)",
             "options": [
                 {
                     "text": "Sie sind strikt getrennt",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Können sich Teststufen zeitlich überschneiden?",
-            "explanation": "Teststufen können sich zeitlich überschneiden. (Abschnitt 2.2)",
+            "explanation": "Teststufen können sich zeitlich überschneiden. (2.2_Teststufen_und_Testarten.md)",
             "options": [
                 {
                     "text": "Ja, sie können sich überschneiden",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Was sind Testarten?",
-            "explanation": "Testarten sind Gruppen von Testaktivitäten, die sich auf bestimmte Qualitätsmerkmale beziehen. (Abschnitt 2.2)",
+            "explanation": "Testarten sind Gruppen von Testaktivitäten, die sich auf bestimmte Qualitätsmerkmale beziehen. (2.2_Teststufen_und_Testarten.md)",
             "options": [
                 {
                     "text": "Gruppen von Testaktivitäten zu Qualitätsmerkmalen",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Können Testarten in jeder Teststufe durchgeführt werden?",
-            "explanation": "Die meisten dieser Testaktivitäten können in jeder Teststufe durchgeführt werden. (Abschnitt 2.2)",
+            "explanation": "Die meisten dieser Testaktivitäten können in jeder Teststufe durchgeführt werden. (2.2_Teststufen_und_Testarten.md)",
             "options": [
                 {
                     "text": "Ja, die meisten können in jeder Stufe durchgeführt werden",

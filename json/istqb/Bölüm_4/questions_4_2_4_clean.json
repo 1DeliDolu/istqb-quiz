@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was modelliert ein Zustandsdiagramm?",
-            "explanation": "Es zeigt die möglichen Zustände eines Systems und die gültigen Übergänge zwischen ihnen. (Kap. 4.2.4)",
+            "explanation": "Es zeigt die möglichen Zustände eines Systems und die gültigen Übergänge zwischen ihnen. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Die Hierarchie der Testfälle",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Wie wird ein Übergang im Zustandsdiagramm typischerweise ausgelöst?",
-            "explanation": "Ein Übergang wird durch ein Ereignis ausgelöst, das optional durch eine Wächterbedingung qualifiziert sein kann. (Kap. 4.2.4)",
+            "explanation": "Ein Übergang wird durch ein Ereignis ausgelöst, das optional durch eine Wächterbedingung qualifiziert sein kann. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Durch das Erreichen des Endzustands",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Wie lautet die übliche Syntax zur Kennzeichnung eines Übergangs?",
-            "explanation": "Übergänge werden mit Ereignis [Wächterbedingung] / Aktion dargestellt. (Kap. 4.2.4)",
+            "explanation": "Übergänge werden mit Ereignis [Wächterbedingung] / Aktion dargestellt. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Aktion / Bedingung / Ereignis",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche Gemeinsamkeit haben Zustandsdiagramm und Zustandstabelle?",
-            "explanation": "Beide modellieren das Verhalten eines Systems durch Zustände und Übergänge. (Kap. 4.2.4)",
+            "explanation": "Beide modellieren das Verhalten eines Systems durch Zustände und Übergänge. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Beide zeigen ausschließlich gültige Übergänge",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welchen Unterschied hat eine Zustandstabelle gegenüber einem Zustandsdiagramm?",
-            "explanation": "Eine Zustandstabelle zeigt auch ungültige Übergänge, die durch leere Zellen dargestellt werden. (Kap. 4.2.4)",
+            "explanation": "Eine Zustandstabelle zeigt auch ungültige Übergänge, die durch leere Zellen dargestellt werden. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Sie stellt ungültige Übergänge explizit durch leere Zellen dar",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Wie wird ein Testfall im Zustandsübergangstest typischerweise dargestellt?",
-            "explanation": "Ein Testfall besteht aus einer Folge von Ereignissen, die zu Zustandsänderungen und ggf. Aktionen führen. (Kap. 4.2.4)",
+            "explanation": "Ein Testfall besteht aus einer Folge von Ereignissen, die zu Zustandsänderungen und ggf. Aktionen führen. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Als eine Abfolge von Ereignissen mit Zustandsänderungen und ggf. Aktionen",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Wie viele Übergänge deckt ein Testfall im Zustandsübergangstest in der Regel ab?",
-            "explanation": "Ein Testfall deckt üblicherweise mehrere Übergänge zwischen Zuständen ab. (Kap. 4.2.4)",
+            "explanation": "Ein Testfall deckt üblicherweise mehrere Übergänge zwischen Zuständen ab. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Immer nur genau einen Übergang",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche Aussage trifft auf Überdeckungskriterien im Zustandsübergangstest zu?",
-            "explanation": "Es existieren viele Kriterien, von denen im Lehrplan drei behandelt werden. (Kap. 4.2.4)",
+            "explanation": "Es existieren viele Kriterien, von denen im Lehrplan drei behandelt werden. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Es gibt viele Überdeckungskriterien, drei davon werden im Lehrplan behandelt",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Was sind die Überdeckungselemente bei der Überdeckung aller Zustände?",
-            "explanation": "Bei der Zustandsüberdeckung sind die Zustände selbst die Überdeckungselemente. (Kap. 4.2.4)",
+            "explanation": "Bei der Zustandsüberdeckung sind die Zustände selbst die Überdeckungselemente. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Die Übergänge",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Wann ist eine 100%ige Zustandsüberdeckung erreicht?",
-            "explanation": "Wenn die Testfälle sicherstellen, dass alle Zustände mindestens einmal ausgeführt werden. (Kap. 4.2.4)",
+            "explanation": "Wenn die Testfälle sicherstellen, dass alle Zustände mindestens einmal ausgeführt werden. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Wenn alle Übergänge mindestens einmal durchlaufen wurden",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Wie wird die Zustandsüberdeckung gemessen?",
-            "explanation": "Als Anzahl der ausgeführten Zustände geteilt durch die Gesamtzahl der Zustände in Prozent. (Kap. 4.2.4)",
+            "explanation": "Als Anzahl der ausgeführten Zustände geteilt durch die Gesamtzahl der Zustände in Prozent. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Ausgeführte Zustände / Gesamtzahl der Zustände × 100%",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Was sind die Überdeckungselemente bei der Überdeckung der gültigen Übergänge?",
-            "explanation": "Bei der 0-Switch-Überdeckung sind die gültigen Übergänge die Überdeckungselemente. (Kap. 4.2.4)",
+            "explanation": "Bei der 0-Switch-Überdeckung sind die gültigen Übergänge die Überdeckungselemente. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Die Zustände",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Wann ist eine 100%ige Überdeckung der gültigen Übergänge erreicht?",
-            "explanation": "Wenn alle gültigen Übergänge mindestens einmal ausgeführt wurden. (Kap. 4.2.4)",
+            "explanation": "Wenn alle gültigen Übergänge mindestens einmal ausgeführt wurden. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Wenn alle Zustände mindestens einmal ausgeführt wurden",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Was unterscheidet die Überdeckung aller Übergänge von der Überdeckung nur gültiger Übergänge?",
-            "explanation": "Bei der Überdeckung aller Übergänge werden auch ungültige Übergänge getestet bzw. versucht auszuführen. (Kap. 4.2.4)",
+            "explanation": "Bei der Überdeckung aller Übergänge werden auch ungültige Übergänge getestet bzw. versucht auszuführen. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Es werden nur Start- und Endzustände betrachtet",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Warum sollte beim Testen ungültiger Übergänge nur ein einziger Testfall genutzt werden?",
-            "explanation": "Um Fehlermaskierung zu vermeiden, d. h. dass ein Fehlerzustand die Entdeckung eines anderen verhindert. (Kap. 4.2.4)",
+            "explanation": "Um Fehlermaskierung zu vermeiden, d. h. dass ein Fehlerzustand die Entdeckung eines anderen verhindert. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Weil ungültige Übergänge nicht relevant sind",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Warum gilt die Überdeckung aller Zustände als schwächer als die Überdeckung aller gültigen Übergänge?",
-            "explanation": "Weil Zustandsüberdeckung erreicht werden kann, ohne alle Übergänge auszuführen. (Kap. 4.2.4)",
+            "explanation": "Weil Zustandsüberdeckung erreicht werden kann, ohne alle Übergänge auszuführen. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Weil sie keine Ereignisse berücksichtigt",
@@ -357,7 +357,7 @@
         },
         {
             "question": "Welches Überdeckungskriterium wird am häufigsten in der Praxis verwendet?",
-            "explanation": "Die Überdeckung der gültigen Übergänge (0-Switch) ist das am häufigsten verwendete Kriterium. (Kap. 4.2.4)",
+            "explanation": "Die Überdeckung der gültigen Übergänge (0-Switch) ist das am häufigsten verwendete Kriterium. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Die Überdeckung aller Zustände",
@@ -379,7 +379,7 @@
         },
         {
             "question": "Welche Beziehung besteht zwischen vollständiger Überdeckung aller gültigen Übergänge und der Zustandsüberdeckung?",
-            "explanation": "Eine vollständige Überdeckung aller gültigen Übergänge garantiert auch eine vollständige Zustandsüberdeckung. (Kap. 4.2.4)",
+            "explanation": "Eine vollständige Überdeckung aller gültigen Übergänge garantiert auch eine vollständige Zustandsüberdeckung. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Zustandsüberdeckung ist stärker",
@@ -401,7 +401,7 @@
         },
         {
             "question": "Warum sollte die Überdeckung aller Übergänge bei sicherheitskritischer Software gefordert werden?",
-            "explanation": "Sie garantiert sowohl die vollständige Zustands- als auch die vollständige Übergangsüberdeckung und ist daher Mindestanforderung. (Kap. 4.2.4)",
+            "explanation": "Sie garantiert sowohl die vollständige Zustands- als auch die vollständige Übergangsüberdeckung und ist daher Mindestanforderung. (4.2.4_Zustandsübergangstest.md)",
             "options": [
                 {
                     "text": "Weil sie die Testfallanzahl reduziert",

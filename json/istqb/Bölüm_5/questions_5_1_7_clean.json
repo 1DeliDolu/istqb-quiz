@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Welchen Zweck erfüllen die Testquadranten nach Brian Marick?",
-            "explanation": "Sie helfen, Testarten und Teststufen im SDLC zu visualisieren und sicherzustellen, dass alle relevanten Tests einbezogen werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Sie helfen, Testarten und Teststufen im SDLC zu visualisieren und sicherzustellen, dass alle relevanten Tests einbezogen werden. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Sie visualisieren Testarten und Teststufen im SDLC",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Dimensionen definieren die vier Testquadranten?",
-            "explanation": "Die Quadranten basieren auf zwei Dimensionen: geschäftlich vs. technologieorientiert und Unterstützung des Teams vs. kritische Betrachtung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Die Quadranten basieren auf zwei Dimensionen: geschäftlich vs. technologieorientiert und Unterstützung des Teams vs. kritische Betrachtung. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Geschäftlich/Technologieorientiert und Unterstützung/Kritik",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Tests gehören zu Quadrant Q1?",
-            "explanation": "Q1 enthält technologische Tests zur Teamunterstützung: Komponententests und Komponentenintegrationstests. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Q1 enthält technologische Tests zur Teamunterstützung: Komponententests und Komponentenintegrationstests. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Explorative Tests und Benutzerabnahmetests",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche Eigenschaft zeichnet die Tests in Q1 besonders aus?",
-            "explanation": "Die Tests in Q1 sollten automatisiert und in den CI-Prozess eingebunden werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Die Tests in Q1 sollten automatisiert und in den CI-Prozess eingebunden werden. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Sie sollten automatisiert und CI-integriert sein",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welche Tests sind in Quadrant Q2 enthalten?",
-            "explanation": "Q2 enthält geschäftlich orientierte Tests zur Teamunterstützung: funktionale Tests, Beispiele, User-Story-basierte Tests, API-Tests, Simulationen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Q2 enthält geschäftlich orientierte Tests zur Teamunterstützung: funktionale Tests, Beispiele, User-Story-basierte Tests, API-Tests, Simulationen. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Smoke-Tests und Lasttests",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Eigenschaft haben Tests in Q2?",
-            "explanation": "Q2-Tests prüfen Akzeptanzkriterien und können manuell oder automatisiert sein. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Q2-Tests prüfen Akzeptanzkriterien und können manuell oder automatisiert sein. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Sie prüfen Akzeptanzkriterien, manuell oder automatisiert",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Tests sind in Quadrant Q3 enthalten?",
-            "explanation": "Q3 enthält geschäftlich orientierte, kritische Tests: explorative Tests, Usability-Tests, Benutzerabnahmetests. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Q3 enthält geschäftlich orientierte, kritische Tests: explorative Tests, Usability-Tests, Benutzerabnahmetests. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Explorative Tests, Usability-Tests und Benutzerabnahmetests",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche Eigenschaft haben Tests in Q3?",
-            "explanation": "Q3-Tests sind benutzerorientiert und häufig manuell. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Q3-Tests sind benutzerorientiert und häufig manuell. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Sie sind benutzerorientiert und häufig manuell",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche Tests sind in Quadrant Q4 enthalten?",
-            "explanation": "Q4 enthält technologieorientierte, kritische Tests: Smoke-Tests und nicht-funktionale Tests (außer Usability). (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Q4 enthält technologieorientierte, kritische Tests: Smoke-Tests und nicht-funktionale Tests (außer Usability). (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Smoke-Tests und nicht-funktionale Tests",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Welche Eigenschaft haben Tests in Q4?",
-            "explanation": "Q4-Tests sind technologieorientiert, kritisch und häufig automatisiert. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Q4-Tests sind technologieorientiert, kritisch und häufig automatisiert. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Sie sind technologieorientiert, kritisch und oft automatisiert",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Wie helfen die Testquadranten den Stakeholdern?",
-            "explanation": "Sie differenzieren Testarten und machen sie für Entwickler, Tester und Fachbereiche verständlich. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Sie differenzieren Testarten und machen sie für Entwickler, Tester und Fachbereiche verständlich. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Sie machen Testarten für alle Stakeholder verständlich",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Welche Kombination beschreibt Q1 im Testquadrantenmodell?",
-            "explanation": "Q1: technologieorientiert + Unterstützung des Teams. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.1.7)",
+            "explanation": "Q1: technologieorientiert + Unterstützung des Teams. (5.1.7_Testquadranten.md)",
             "options": [
                 {
                     "text": "Geschäftlich orientiert + kritisch",

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useSearchParams } from 'react-router-dom';
+import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
 import { istqbChapters } from '@/constants/istqbChapters';
 import { udemyChapters } from '@/constants/udemyChapters';
 import { fragenChapters } from '@/constants/fragenChapters';
@@ -19,6 +19,7 @@ const QuizPage: React.FC = () => {
     const { chapterId } = useParams<{ chapterId: string }>();
     const [searchParams] = useSearchParams();
     const subChapterIndex = searchParams.get('sub');
+    const navigate = useNavigate();
 
     const [questions, setQuestions] = useState<Question[]>([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -478,14 +479,63 @@ const QuizPage: React.FC = () => {
         setUserAnswers({});
     };
 
-    // Function to extract ISTQB section reference and open documentation in new window
+    // Function to extract markdown filename or section and open documentation in same tab
     const handleDocumentationClick = (explanation: string) => {
         console.log(`🔍 Full explanation received:`, explanation);
 
         // Note: Quiz progress is automatically saved to database with each answer
         // No need to save to localStorage since we have persistent database storage
 
-        // Extract ISTQB section reference - look for patterns like "2.2.3" after comma or in parentheses
+        // 1) Prefer extracting the real markdown filename in parentheses, e.g. (2.1.3_Testen_als_Treiber_für_die_Softwareentwicklung.md)
+        const fileNameMatch = explanation.match(/\(([^)]+\.md)\)/);
+        if (fileNameMatch) {
+            const fileName = fileNameMatch[1];
+            console.log(`📄 Extracted markdown file name: ${fileName}`);
+
+            // Derive chapter folder from the leading number in filename (e.g., 2 from 2.1.3_... or 2_Testen_...)
+            const chapterNumberMatch = fileName.match(/^(\d+)/);
+            if (chapterNumberMatch) {
+                const chapterNumber = chapterNumberMatch[1]; // e.g., '2'
+                const chapterMap: { [key: string]: string } = {
+                    '0.': '0_Einführung',
+                    '1.': '1_Grundlagen_des_Testens',
+                    '2.': '2_Testen_während_des_Softwareentwicklungslebenszyklus',
+                    '3.': '3_Statischer_Test',
+                    '4.': '4_Testanalyse_und_-entwurf',
+                    '5.': '5_Management_der_Testaktivitäten',
+                    '6.': '6_Testwerkzeuge',
+                    '7.': '7_Literaturhinweise',
+                    '8.': '8_Anhang_A',
+                    '9.': '9_Anhang_B',
+                    '10.': '10_Anhang_C',
+                    '11.': '11_Index'
+                };
+
+                const chapterKey = `${chapterNumber}.`;
+                const chapterFolder = chapterMap[chapterKey];
+
+                if (chapterFolder) {
+                    const sectionSlug = fileName.replace('.md', '');
+
+                    // Save quiz state so DocumentationPage can show "Back to quiz" when coming from quiz
+                    if (chapterId) {
+                        localStorage.setItem('quizState', JSON.stringify({
+                            chapterId,
+                            subChapterIndex: subChapterIndex ?? null,
+                        }));
+                    }
+
+                    // Navigate in the same tab
+                    navigate(`/documentation/${encodeURIComponent(chapterFolder)}/${encodeURIComponent(sectionSlug)}`, {
+                        state: { fromQuiz: true }
+                    });
+                    return;
+                }
+            }
+            // If we could not derive chapter folder, fall through to section-based logic below
+        }
+
+        // 2) Fallback: Extract ISTQB section reference (e.g., 2.2.3) and map to known files
         // Try multiple regex patterns to find the section number
         let sectionMatch = null;
 
@@ -573,13 +623,18 @@ const QuizPage: React.FC = () => {
             console.log(`📖 Section file: ${sectionFile}`);
 
             if (chapter && sectionFile) {
-                // Use encodeURIComponent to properly encode the URL parts
-                const documentationUrl = `/documentation/${encodeURIComponent(chapter)}/${encodeURIComponent(sectionFile)}`;
-                console.log(`📖 Opening documentation in new window: ${documentationUrl}`);
+                // Save quiz state for back navigation
+                if (chapterId) {
+                    localStorage.setItem('quizState', JSON.stringify({
+                        chapterId,
+                        subChapterIndex: subChapterIndex ?? null,
+                    }));
+                }
 
-                // Open documentation in new window/tab
-                const fullUrl = window.location.origin + documentationUrl;
-                window.open(fullUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
+                // Open documentation in the same tab
+                navigate(`/documentation/${encodeURIComponent(chapter)}/${encodeURIComponent(sectionFile)}`, {
+                    state: { fromQuiz: true }
+                });
             } else {
                 console.warn('Could not map section to documentation file:', {
                     sectionNumber,
@@ -589,15 +644,13 @@ const QuizPage: React.FC = () => {
                     availableChapters: Object.keys(chapterMap),
                     availableSections: Object.keys(sectionFileMap)
                 });
-                // Fallback: Open documentation index in new window
-                const docsUrl = window.location.origin + '/docs';
-                window.open(docsUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
+                // Fallback: Go to documentation index in the same tab
+                navigate('/docs');
             }
         } else {
             console.warn('Could not extract section reference from explanation:', explanation);
-            // Fallback: Open documentation index in new window
-            const docsUrl = window.location.origin + '/docs';
-            window.open(docsUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
+            // Fallback: Go to documentation index in the same tab
+            navigate('/docs');
         }
     }; if (questions.length === 0) {
         return (
@@ -622,6 +675,50 @@ const QuizPage: React.FC = () => {
 
     if (quizCompleted) {
         const percentage = Math.round((score / questions.length) * 100);
+
+        const getNextQuizSuggestion = () => {
+            if (!chapterId) return null;
+
+            const currentChapter = getChapterInfo(chapterId);
+            // First prefer next sub-chapter in the same chapter
+            if (currentChapter && subChapterIndex !== null) {
+                const currentIndex = parseInt(subChapterIndex);
+                if (currentChapter.subChapters && currentIndex + 1 < currentChapter.subChapters.length) {
+                    return {
+                        url: `/quiz/${chapterId}?sub=${currentIndex + 1}`,
+                        label: currentChapter.subChapters[currentIndex + 1],
+                        context: currentChapter.title
+                    };
+                }
+            }
+
+            // Otherwise, suggest the first sub-chapter of the next chapter (if any)
+            const chaptersMap = chapterId.startsWith('udemy_') ? udemyChapters
+                : chapterId.startsWith('fragen_') ? fragenChapters
+                    : istqbChapters;
+            const keys = Object.keys(chaptersMap);
+            const idx = keys.indexOf(chapterId);
+            if (idx !== -1 && idx + 1 < keys.length) {
+                const nextKey = keys[idx + 1] as keyof typeof chaptersMap;
+                const nextChapter: any = (chaptersMap as any)[nextKey];
+                if (nextChapter?.subChapters?.length) {
+                    return {
+                        url: `/quiz/${nextKey}?sub=0`,
+                        label: nextChapter.subChapters[0],
+                        context: nextChapter.title
+                    };
+                }
+                return {
+                    url: `/quiz/${nextKey}`,
+                    label: nextChapter?.title || 'Nächstes Kapitel',
+                    context: nextChapter?.title || ''
+                };
+            }
+            return null;
+        };
+
+        const nextSuggestion = getNextQuizSuggestion();
+
         return (
             <div className="container mx-auto p-8 max-w-3xl">
                 <div className="text-center">
@@ -643,12 +740,31 @@ const QuizPage: React.FC = () => {
                             )}
                         </div>
                     </div>
+
+                    {/* Primary action: retry */}
                     <button
                         onClick={resetQuiz}
-                        className="px-6 py-3 bg-amber-100 text-black rounded-lg hover:bg-amber-200 border border-amber-300 transition-colors"
+                        className="px-6 py-3 bg-amber-100 text-black rounded-lg hover:bg-amber-200 border border-amber-300 transition-colors mb-6"
                     >
                         Erneut versuchen
                     </button>
+
+                    {/* Secondary: suggest next quiz */}
+                    {nextSuggestion && (
+                        <div className="bg-green-50 border border-green-200 rounded-lg p-5 text-center mx-auto max-w-xl">
+                            <div className="text-black font-semibold mb-1">Empfohlen: Nächstes Quiz</div>
+                            {nextSuggestion.context && (
+                                <div className="text-sm text-black">{nextSuggestion.context}</div>
+                            )}
+                            <div className="text-sm text-black font-medium mt-1 mb-3">{nextSuggestion.label}</div>
+                            <button
+                                onClick={() => navigate(nextSuggestion.url)}
+                                className="px-5 py-2 bg-green-600 text-black rounded-md hover:bg-green-700 transition-colors text-sm"
+                            >
+                                Nächstes Quiz starten
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
         );

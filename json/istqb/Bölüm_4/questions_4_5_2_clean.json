@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Was sind Akzeptanzkriterien für eine User-Story?",
-            "explanation": "Es sind die Bedingungen, die erfüllt sein müssen, damit die User-Story von Stakeholdern akzeptiert wird. (Kap. 4.5.2)",
+            "explanation": "Es sind die Bedingungen, die erfüllt sein müssen, damit die User-Story von Stakeholdern akzeptiert wird. (4.5.2_Akzeptanzkriterien.md)",
             "options": [
                 {
                     "text": "Die vom Projektmanager genehmigten Meilensteine",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Welche Rolle spielen Akzeptanzkriterien aus Testperspektive?",
-            "explanation": "Sie können als Testbedingungen betrachtet werden, die durch Tests ausgeführt werden sollen. (Kap. 4.5.2)",
+            "explanation": "Sie können als Testbedingungen betrachtet werden, die durch Tests ausgeführt werden sollen. (4.5.2_Akzeptanzkriterien.md)",
             "options": [
                 {
                     "text": "Sie definieren die Testumgebung",
@@ -49,7 +49,7 @@
         },
         {
             "question": "Welche Nutzen bieten Akzeptanzkriterien für das Projektteam?",
-            "explanation": "Sie definieren Umfang, schaffen Konsens, beschreiben Szenarien, dienen als Basis für Abnahmetests und ermöglichen Planung/Schätzung. (Kap. 4.5.2)",
+            "explanation": "Sie definieren Umfang, schaffen Konsens, beschreiben Szenarien, dienen als Basis für Abnahmetests und ermöglichen Planung/Schätzung. (4.5.2_Akzeptanzkriterien.md)",
             "options": [
                 {
                     "text": "Nur die Erstellung von Testberichten",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche zwei gängigen Formate für Akzeptanzkriterien nennt der Lehrplan?",
-            "explanation": "Szenarioorientiert (Given/When/Then, BDD) und regelorientiert (z. B. Verifizierungsliste, tabellarische Input-Output-Zuordnung). (Kap. 4.5.2)",
+            "explanation": "Szenarioorientiert (Given/When/Then, BDD) und regelorientiert (z. B. Verifizierungsliste, tabellarische Input-Output-Zuordnung). (4.5.2_Akzeptanzkriterien.md)",
             "options": [
                 {
                     "text": "Explorativ und intuitiv",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welches Format für Akzeptanzkriterien wird typischerweise in der BDD genutzt?",
-            "explanation": "In der verhaltensgetriebenen Entwicklung (BDD) wird das Gegeben/Wenn/Dann-Format verwendet. (Kap. 4.5.2)",
+            "explanation": "In der verhaltensgetriebenen Entwicklung (BDD) wird das Gegeben/Wenn/Dann-Format verwendet. (4.5.2_Akzeptanzkriterien.md)",
             "options": [
                 {
                     "text": "Das INVEST-Format",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Anforderung gilt unabhängig vom gewählten Format für Akzeptanzkriterien?",
-            "explanation": "Sie müssen klar definiert und eindeutig sein, unabhängig vom Format. (Kap. 4.5.2)",
+            "explanation": "Sie müssen klar definiert und eindeutig sein, unabhängig vom Format. (4.5.2_Akzeptanzkriterien.md)",
             "options": [
                 {
                     "text": "Sie müssen automatisiert sein",

@@ -5,7 +5,7 @@
     "questions": [
         {
             "question": "Warum ist ein Fehlermanagementprozess im Testen unerlässlich?",
-            "explanation": "Ein Ziel des Testens ist es, Fehlerzustände zu finden. Dazu braucht es einen etablierten Fehlermanagementprozess. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Ein Ziel des Testens ist es, Fehlerzustände zu finden. Dazu braucht es einen etablierten Fehlermanagementprozess. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Weil Fehlerzustände systematisch gefunden und bearbeitet werden müssen",
@@ -27,7 +27,7 @@
         },
         {
             "question": "Was können gemeldete Anomalien im Fehlermanagementprozess sein?",
-            "explanation": "Anomalien können tatsächliche Fehlerzustände, falsch positive Ergebnisse oder Änderungsanforderungen sein. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Anomalien können tatsächliche Fehlerzustände, falsch positive Ergebnisse oder Änderungsanforderungen sein. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Fehlerzustände, falsch positive Ergebnisse oder Änderungsanforderungen",
@@ -49,7 +49,7 @@
         },
         {
             "question": "In welcher Phase des SDLC können Anomalien gemeldet werden?",
-            "explanation": "Anomalien können in jeder Phase des SDLC gemeldet werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Anomalien können in jeder Phase des SDLC gemeldet werden. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "In jeder Phase des SDLC",
@@ -71,7 +71,7 @@
         },
         {
             "question": "Welche Aktivitäten umfasst der Workflow des Fehlermanagements?",
-            "explanation": "Protokollierung, Analyse, Klassifizierung, Entscheidung über Reaktion und Schließung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Protokollierung, Analyse, Klassifizierung, Entscheidung über Reaktion und Schließung. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Protokollierung, Analyse, Klassifizierung, Reaktion, Schließung",
@@ -93,7 +93,7 @@
         },
         {
             "question": "Welche Ziele haben typische Fehlerberichte?",
-            "explanation": "Ziele: Unterstützung bei der Behebung, Verfolgung der Qualität, Prozessverbesserung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Ziele: Unterstützung bei der Behebung, Verfolgung der Qualität, Prozessverbesserung. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Information für Behebung, Qualitätsverfolgung, Prozessverbesserung",
@@ -115,7 +115,7 @@
         },
         {
             "question": "Welche Angabe ist in einem Fehlerbericht üblich?",
-            "explanation": "Ein Fehlerbericht enthält eine eindeutige Kennung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Ein Fehlerbericht enthält eine eindeutige Kennung. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Eindeutige Kennung",
@@ -137,7 +137,7 @@
         },
         {
             "question": "Welche Information beschreibt den Kontext des Fehlerzustands?",
-            "explanation": "Beispiele: laufender Testfall, SDLC-Phase, Testdaten. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Beispiele: laufender Testfall, SDLC-Phase, Testdaten. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Laufender Testfall, SDLC-Phase, Testdaten",
@@ -159,7 +159,7 @@
         },
         {
             "question": "Welche Angaben erleichtern die Reproduktion eines Fehlers?",
-            "explanation": "Beschreibung der Fehlerwirkung, Testschritte, Protokolle, Screenshots. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Beschreibung der Fehlerwirkung, Testschritte, Protokolle, Screenshots. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Testschritte, Protokolle, Screenshots",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Welche zwei Ergebnisarten werden in Fehlerberichten gegenübergestellt?",
-            "explanation": "Erwartetes Ergebnis und tatsächliches Ergebnis werden dokumentiert. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Erwartetes Ergebnis und tatsächliches Ergebnis werden dokumentiert. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Erwartetes Ergebnis und tatsächliches Ergebnis",
@@ -203,7 +203,7 @@
         },
         {
             "question": "Was beschreibt der Fehlerschweregrad?",
-            "explanation": "Der Schweregrad beschreibt die Auswirkungen auf Stakeholder oder Anforderungen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Der Schweregrad beschreibt die Auswirkungen auf Stakeholder oder Anforderungen. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Auswirkungen auf Stakeholder oder Anforderungen",
@@ -225,7 +225,7 @@
         },
         {
             "question": "Was bedeutet die Priorität eines Fehlers?",
-            "explanation": "Die Priorität beschreibt, wie dringend ein Fehler behoben werden soll. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Die Priorität beschreibt, wie dringend ein Fehler behoben werden soll. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Dringlichkeit der Fehlerbehebung",
@@ -247,7 +247,7 @@
         },
         {
             "question": "Welche Statuswerte können Fehlerberichte haben?",
-            "explanation": "Beispiele: offen, zurückgestellt, doppelt, auf Behebung wartend, geschlossen. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Beispiele: offen, zurückgestellt, doppelt, auf Behebung wartend, geschlossen. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Offen, geschlossen, zurückgestellt, doppelt",
@@ -269,7 +269,7 @@
         },
         {
             "question": "Welche Information kann ein Fehlermanagementtool automatisch einfügen?",
-            "explanation": "Beispiele: Kennung, Datum, Autor, Anfangsstatus. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Beispiele: Kennung, Datum, Autor, Anfangsstatus. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Kennung, Datum, Autor, Anfangsstatus",
@@ -291,7 +291,7 @@
         },
         {
             "question": "Wie sollten Fehlerzustände aus statischen Tests behandelt werden?",
-            "explanation": "Fehlerzustände aus statischen Tests sollten ähnlich wie dynamische behandelt werden. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Fehlerzustände aus statischen Tests sollten ähnlich wie dynamische behandelt werden. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Auf ähnliche Weise wie dynamische Tests",
@@ -313,7 +313,7 @@
         },
         {
             "question": "Welches Ziel hat die Verfolgung von Fehlern?",
-            "explanation": "Sie dient der Qualitätsüberwachung und liefert Ideen zur Prozessverbesserung. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "Sie dient der Qualitätsüberwachung und liefert Ideen zur Prozessverbesserung. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Qualitätsüberwachung und Prozessverbesserung",
@@ -335,7 +335,7 @@
         },
         {
             "question": "Welche internationale Norm enthält Vorlagen für Fehlerberichte?",
-            "explanation": "ISO/IEC/IEEE 29119-3 enthält Vorlagen und Beispiele für Fehlerberichte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "ISO/IEC/IEEE 29119-3 enthält Vorlagen und Beispiele für Fehlerberichte. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "ISO/IEC/IEEE 29119-3",
@@ -357,7 +357,7 @@
         },
         {
             "question": "Wie werden Fehlerberichte in der Norm ISO/IEC/IEEE 29119-3 bezeichnet?",
-            "explanation": "In der Norm heißen sie Abweichungsberichte. (<ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE>, Abschnitt 5.5)",
+            "explanation": "In der Norm heißen sie Abweichungsberichte. (5.5_Fehlermanagement.md)",
             "options": [
                 {
                     "text": "Abweichungsberichte",
