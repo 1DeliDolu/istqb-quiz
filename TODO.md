@@ -95,6 +95,12 @@ src/
 - [x] Import-System für JSON-Fragen
 - [x] Database-Validierung und Struktur-Fix
 - [x] Udemy-Kapitel Import-System
+- [x] **udemy_4 Quiz-Probleme behoben** (September 2025)
+  - [x] Backend Filter für leere question fields implementiert
+  - [x] Udemy sorularını komplett aktualisiert (58→19 sorular für udemy_4_2)
+  - [x] JSON-Database Synchronisation durchgeführt
+  - [x] Server.js boş soru filtreleme özelliği eklendi
+  - [x] Frontend dependency probleme (caniuse-lite) çözüldü
 
 ## 🔧 Hilfsbefehle für Entwicklung
 
@@ -139,20 +145,43 @@ mysql -u root -p < server/database/schema.sql
 
 ## 🗄️ Database Import Status
 
-### Letzter Import (Erfolgreich)
+### Letzter Import (Erfolgreich) - September 2025
 
-- **Datum:** Aktuell
-- **Ergebnis:** 1,091 Fragen importiert
-- **ISTQB Fragen:** 901
-- **Udemy Fragen:** 190 (inkl. 79 neue aus Bölüm_5)
-- **Import Command:** `cd server && node fixed_import_clean.cjs`
+- **Datum:** 9. September 2025
+- **Ergebnis:** 1,437 Fragen importiert (aktualisiert)
+- **ISTQB Fragen:** 1,001
+- **Udemy Fragen:** 226 (komplett aktualisiert - sync_import_udemy.cjs)
+- **Fragen soruları:** 210
+- **Import Command:** `cd server && node sync_import_udemy.cjs`
+
+### Aktualisierte Udemy Soru Sayıları:
+
+- **udemy_2_1:** 23 soru
+- **udemy_2_2:** 23 soru
+- **udemy_3_1:** 22 soru
+- **udemy_3_2:** 21 soru
+- **udemy_3_3:** 10 soru
+- **udemy_4_1:** 19 soru ✅ (önceden 22, 3 boş soru filtrelendi)
+- **udemy_4_2:** 19 soru ✅ (önceden 58, JSON ile senkronize)
+- **udemy_4_3:** 10 soru
+- **udemy_5_1:** 20 soru
+- **udemy_5_2:** 30 soru
+- **udemy_5_3:** 20 soru
+- **udemy_5_4:** 9 soru
+
+### Fix İşlemleri (September 2025):
+
+1. **Backend Filter:** server.js'te boş question field'ları filtrelemek için `.filter((q) => q.question && q.question.trim() !== "")` eklendi
+2. **Database Cleanup:** `DELETE FROM questions WHERE source = "udemy"` ile eski veriler temizlendi
+3. **Fresh Import:** sync_import_udemy.cjs ile tüm Udemy soruları yeniden yüklendi
+4. **Frontend Fix:** `rm -rf node_modules && npm install` ile dependency problemi çözüldü
+5. **Validation:** JSON dosyaları ile database senkronizasyonu doğrulandı
 
 cd /d/istqb-quiz/server && node simple_import.cjs
 
 ### node check_udemy_db.cjs
 
-
-
 node import_fragen_questions.cjs # Fragen soruları
-node sync_import.cjs             # ISTQB soruları
-node import_udemy_fixed.cjs      # Udemy soruları
+node sync_import_udemy.cjs # Udemy soruları (güncellenmiş)
+node sync_import.cjs # ISTQB soruları
+node import_udemy_fixed.cjs # Udemy soruları (eski)

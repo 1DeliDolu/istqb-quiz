@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link, useLocation } from 'react-router-dom';
-import { ArrowLeft, BookOpen, ExternalLink, ArrowRight } from 'lucide-react';
+import { ArrowLeft, BookOpen, ExternalLink, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface DocumentationPageProps { }
 
@@ -166,6 +166,45 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
         return sectionParam.replace(/_/g, ' ').replace(/\.md$/, '');
     };
 
+    // Navigation helpers
+    const getAllSections = () => {
+        const allSections: { chapter: string; section: string; title: string }[] = [];
+        Object.entries(allSectionIndex).forEach(([chapterKey, sections]) => {
+            sections.forEach(({ file, title }) => {
+                const sectionSlug = file.replace('.md', '');
+                allSections.push({
+                    chapter: chapterKey,
+                    section: sectionSlug,
+                    title: title
+                });
+            });
+        });
+        return allSections;
+    };
+
+    const getCurrentSectionIndex = () => {
+        if (!chapter || !section) return -1;
+        const allSections = getAllSections();
+        return allSections.findIndex(s =>
+            s.chapter === decodeURIComponent(chapter) &&
+            s.section === decodeURIComponent(section)
+        );
+    };
+
+    const getPreviousSection = () => {
+        const currentIndex = getCurrentSectionIndex();
+        if (currentIndex <= 0) return null;
+        const allSections = getAllSections();
+        return allSections[currentIndex - 1];
+    };
+
+    const getNextSection = () => {
+        const currentIndex = getCurrentSectionIndex();
+        const allSections = getAllSections();
+        if (currentIndex >= allSections.length - 1) return null;
+        return allSections[currentIndex + 1];
+    };
+
     // Breadcrumb link helpers
     const getBreadcrumbs = () => {
         const breadcrumbs = [
@@ -220,6 +259,31 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
             .then(markdownContent => setContent(markdownContent))
             .catch(() => setContent(`# ${getSectionTitle(decodedSection)}\n\nİçerik henüz mevcut değil.`));
     }, [chapter, section]);
+
+    // Keyboard navigation
+    useEffect(() => {
+        const handleKeyDown = (event: KeyboardEvent) => {
+            // Only handle navigation if we're in a section (not chapter overview)
+            if (!chapter || !section) return;
+
+            if (event.key === 'ArrowLeft' && (event.ctrlKey || event.metaKey)) {
+                event.preventDefault();
+                const prevSection = getPreviousSection();
+                if (prevSection) {
+                    navigate(`/documentation/${encodeURIComponent(prevSection.chapter)}/${encodeURIComponent(prevSection.section)}`);
+                }
+            } else if (event.key === 'ArrowRight' && (event.ctrlKey || event.metaKey)) {
+                event.preventDefault();
+                const nextSection = getNextSection();
+                if (nextSection) {
+                    navigate(`/documentation/${encodeURIComponent(nextSection.chapter)}/${encodeURIComponent(nextSection.section)}`);
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [chapter, section, navigate, getPreviousSection, getNextSection]);
 
     // Sadece chapter varsa ve section yoksa, alt başlıkları listele
     if (chapter && !section) {
@@ -489,10 +553,60 @@ const DocumentationPage: React.FC<DocumentationPageProps> = () => {
                         }}
                     />
 
+                    {/* Navigation Buttons */}
+                    <div className="mt-8 pt-6 border-t border-border">
+                        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                            {/* Previous Section Button */}
+                            {(() => {
+                                const prevSection = getPreviousSection();
+                                return prevSection ? (
+                                    <Link
+                                        to={`/documentation/${encodeURIComponent(prevSection.chapter)}/${encodeURIComponent(prevSection.section)}`}
+                                        className="flex items-center px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-accent rounded-lg transition-colors group border border-border hover:border-amber-300"
+                                    >
+                                        <ChevronLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+                                        <div className="text-left">
+                                            <div className="text-xs text-muted-foreground uppercase tracking-wide">Vorherige</div>
+                                            <div className="font-medium text-foreground truncate max-w-[250px] sm:max-w-[200px]">{prevSection.title}</div>
+                                        </div>
+                                    </Link>
+                                ) : (
+                                    <div className="hidden sm:block"></div> // Empty div to maintain flex spacing on desktop
+                                );
+                            })()}
+
+                            {/* Next Section Button */}
+                            {(() => {
+                                const nextSection = getNextSection();
+                                return nextSection ? (
+                                    <Link
+                                        to={`/documentation/${encodeURIComponent(nextSection.chapter)}/${encodeURIComponent(nextSection.section)}`}
+                                        className="flex items-center px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-accent rounded-lg transition-colors group border border-border hover:border-amber-300 ml-auto"
+                                    >
+                                        <div className="text-right">
+                                            <div className="text-xs text-muted-foreground uppercase tracking-wide">Nächste</div>
+                                            <div className="font-medium text-foreground truncate max-w-[250px] sm:max-w-[200px]">{nextSection.title}</div>
+                                        </div>
+                                        <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                    </Link>
+                                ) : (
+                                    <div className="hidden sm:block"></div> // Empty div to maintain flex spacing on desktop
+                                );
+                            })()}
+                        </div>
+                    </div>
+
                     {/* Footer */}
                     <div className="mt-8 pt-6 border-t border-border">
-                        <div className="flex items-center justify-between text-sm text-muted-foreground">
-                            <span>ISTQB Foundation Level Lehrplan</span>
+                        <div className="flex flex-col sm:flex-row items-center justify-between text-sm text-muted-foreground gap-4">
+                            <div className="flex items-center gap-4">
+                                <span>ISTQB Foundation Level Lehrplan</span>
+                                {section && (
+                                    <span className="text-xs bg-gray-100 px-2 py-1 rounded">
+                                        Ctrl/Cmd + ← → für Navigation
+                                    </span>
+                                )}
+                            </div>
                             <div className="flex items-center gap-3">
                                 {/* Check for saved quiz state */}
                                 {(() => {

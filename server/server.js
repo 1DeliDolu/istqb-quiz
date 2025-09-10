@@ -207,7 +207,7 @@ app.post("/api/questions/:chapter", async (req, res) => {
       );
 
       // Önce tam eşleşme dene
-      let subChapterResult = await query(
+      let subChapterResult = await db.query(
         "SELECT id, title FROM sub_chapters WHERE title = ? AND chapter_id = ?",
         [subChapter, chapter]
       );
@@ -217,7 +217,7 @@ app.post("/api/questions/:chapter", async (req, res) => {
         const chapterPrefix = subChapter.match(/^(\d+\.\d+(\.\d+)?)/);
         if (chapterPrefix) {
           console.log(`🔍 Prefix ile arama: "${chapterPrefix[1]}"`);
-          subChapterResult = await query(
+          subChapterResult = await db.query(
             "SELECT id, title FROM sub_chapters WHERE title LIKE ? AND chapter_id = ?",
             [`${chapterPrefix[1]}%`, chapter]
           );
@@ -235,7 +235,7 @@ app.post("/api/questions/:chapter", async (req, res) => {
         console.log(`❌ Alt bölüm bulunamadi: "${subChapter}"`);
 
         // Tüm mevcut alt bölümleri listele debug için
-        const allSubChapters = await query(
+        const allSubChapters = await db.query(
           "SELECT id, title FROM sub_chapters WHERE chapter_id = ?",
           [chapter]
         );
@@ -365,7 +365,7 @@ app.put("/api/questions/:id", async (req, res) => {
     }
 
     // Önce soruyu güncelle (sadece question ve explanation)
-    await query(
+    await db.query(
       `UPDATE questions 
        SET question = ?, explanation = ?
        WHERE id = ?`,
@@ -373,14 +373,14 @@ app.put("/api/questions/:id", async (req, res) => {
     );
 
     // Mevcut seçenekleri sil
-    await query("DELETE FROM question_options WHERE question_id = ?", [
+    await db.query("DELETE FROM question_options WHERE question_id = ?", [
       questionId,
     ]);
 
     // Yeni seçenekleri ekle
     for (let i = 0; i < options.length; i++) {
       const isCorrect = options[i] === correctAnswer;
-      await query(
+      await db.query(
         "INSERT INTO question_options (question_id, option_text, option_order, is_correct) VALUES (?, ?, ?, ?)",
         [questionId, options[i], i + 1, isCorrect]
       );
@@ -434,7 +434,7 @@ app.post("/api/auth/register", async (req, res) => {
     }
 
     // Kullanıcı zaten var mı kontrol et
-    const existingUser = await query(
+    const existingUser = await db.query(
       "SELECT id FROM users WHERE username = ? OR email = ?",
       [username, email]
     );
@@ -600,7 +600,7 @@ app.post("/api/user-stats/answer", async (req, res) => {
     }
 
     // Önceki attempt sayısını kontrol et
-    const previousAttempts = await query(
+    const previousAttempts = await db.query(
       "SELECT COUNT(*) as count FROM user_question_attempts WHERE user_id = ? AND question_id = ?",
       [userId, questionId]
     );
@@ -621,7 +621,7 @@ app.post("/api/user-stats/answer", async (req, res) => {
     console.log(`Final dbSubChapterId: ${dbSubChapterId}`);
 
     // Cevabı kaydet
-    await query(
+    await db.query(
       `INSERT INTO user_question_attempts 
        (user_id, question_id, chapter_id, sub_chapter_id, selected_answer, is_correct, attempt_number) 
        VALUES (?, ?, ?, ?, ?, ?, ?)`,
@@ -654,7 +654,7 @@ app.get("/api/user-stats/:userId", async (req, res) => {
     const { userId } = req.params;
 
     // Bölüm bazında istatistikler
-    const chapterStats = await query(
+    const chapterStats = await db.query(
       `
       SELECT 
         ua.chapter_id,
@@ -677,7 +677,7 @@ app.get("/api/user-stats/:userId", async (req, res) => {
     );
 
     // Toplam istatistikler
-    const totalStats = await query(
+    const totalStats = await db.query(
       `
       SELECT 
         COUNT(DISTINCT ua.chapter_id) as chapters_attempted,
@@ -745,7 +745,7 @@ app.get(
 
       sql += ` GROUP BY q.id, ua.selected_answer, ua.answered_at ORDER BY ua.answered_at DESC`;
 
-      const wrongQuestions = await query(sql, params);
+      const wrongQuestions = await db.query(sql, params);
 
       // Options formatını düzelt
       const formattedQuestions = wrongQuestions.map((q) => {
@@ -836,7 +836,7 @@ app.post("/api/quiz-progress", async (req, res) => {
       sql += ` AND sub_chapter_id IS NULL`;
     }
 
-    const existing = await query(sql, params);
+    const existing = await db.query(sql, params);
 
     if (existing.length > 0) {
       // Update existing progress
@@ -845,7 +845,7 @@ app.post("/api/quiz-progress", async (req, res) => {
         SET current_question_index = ?, total_questions = ?, score = ?, answers = ?, completed_at = ?, updated_at = NOW()
         WHERE id = ?
       `;
-      await query(sql, [
+      await db.query(sql, [
         currentQuestionIndex,
         totalQuestions,
         score,
@@ -860,7 +860,7 @@ app.post("/api/quiz-progress", async (req, res) => {
         (user_id, quiz_type, chapter_id, sub_chapter_id, current_question_index, total_questions, score, answers, completed_at)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
       `;
-      await query(sql, [
+      await db.query(sql, [
         userId,
         quizType,
         chapter,
@@ -901,7 +901,7 @@ app.get("/api/quiz-progress/:userId/:quizType/:chapter", async (req, res) => {
 
     sql += ` ORDER BY updated_at DESC LIMIT 1`;
 
-    const results = await query(sql, params);
+    const results = await db.query(sql, params);
 
     if (results.length > 0) {
       const progress = results[0];
@@ -950,7 +950,7 @@ app.put("/api/quiz-progress/complete", async (req, res) => {
       sql += ` AND sub_chapter_id IS NULL`;
     }
 
-    const result = await query(sql, params);
+    const result = await db.query(sql, params);
 
     if (result.affectedRows > 0) {
       res.json({ success: true, message: "Quiz marked as completed" });
@@ -984,7 +984,7 @@ app.delete(
         sql += ` AND sub_chapter_id IS NULL`;
       }
 
-      await query(sql, params);
+      await db.query(sql, params);
       res.json({ success: true, message: "Quiz progress cleared" });
     } catch (error) {
       console.error("Quiz progress clear error:", error);

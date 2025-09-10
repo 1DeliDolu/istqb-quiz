@@ -1,6 +1,4 @@
-Hier ist dein gewünschtes Markdown mit `<div>` statt `<section>` für **Kapitel 1: Grundlagen des Testens – 180 Minuten** aus dem Lehrplan:
 
-```markdown
 <div class="rounded-lg border shadow-sm" style="background: linear-gradient(135deg,#DBEAFE 0%,#BFDBFE 100%); padding: 24px; border-color: #3B82F6">
   <header style="margin-bottom:12px">
     <h1 class="text-2xl font-bold text-gray-900">1. Grundlagen des Testens – 180 Minuten</h1>
@@ -51,6 +49,3 @@ Testziel, Überdeckung, Validierung, Verfolgbarkeit, Verifizierung</p>
    </ul>
   </article>
 </div>
-```
-
-Möchtest du, dass ich das für alle Unterkapitel (1.1–1.5 inkl. ausführlicher Inhalte aus dem PDF) einzeln in dieser Form baue?
